@@ -1,0 +1,17 @@
+# Web Crawling Framework
+scrapy>=2.11.0
+
+# HTML Parsing
+beautifulsoup4>=4.12.0
+lxml>=4.9.0
+
+# Machine Learning & Text Processing
+scikit-learn>=1.3.0
+numpy>=1.24.0
+
+# Konfiguration
+configparser>=6.0.0
+
+# Optional: Für bessere Performance
+twisted>=23.0.0
+cryptography>=41.0.0

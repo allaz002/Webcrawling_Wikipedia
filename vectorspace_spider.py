@@ -22,7 +22,7 @@ class VectorSpaceSpider(BaseTopicalSpider):
             lowercase=True,  # Case Folding
             ngram_range=(1, 2),  # Uni- und Bigrams
             min_df=1,
-            max_df=0.95
+            max_df=1
         )
         
         # Erstelle Themen-Vektor (einmalig)

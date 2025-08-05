@@ -6,13 +6,13 @@ SPIDER_MODULES = ['topical_crawler.spiders']
 NEWSPIDER_MODULE = 'topical_crawler.spiders'
 
 # Obey robots.txt rules
-ROBOTSTXT_OBEY = True
+ROBOTSTXT_OBEY = False
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 CONCURRENT_REQUESTS = 2
 
 # Configure a delay for requests for the same website (default: 0)
-DOWNLOAD_DELAY = 0.5
+DOWNLOAD_DELAY = 0
 
 # The download delay setting will honor only one of:
 CONCURRENT_REQUESTS_PER_DOMAIN = 2

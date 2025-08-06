@@ -1,0 +1,757 @@
+{
+  "spider": "vectorspace_crawler",
+  "timestamp": "20250806_151007",
+  "total_relevant": 150,
+  "pages": [
+    {
+      "url": "https://de.wikipedia.org/wiki/Informatik",
+      "score": 0.6708032815760948,
+      "title": "Informatik – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/K%C3%BCnstliche_Intelligenz",
+      "score": 0.6627953568839928,
+      "title": "Künstliche Intelligenz – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Deutsches_Zentrum_f%C3%BCr_Luft-_und_Raumfahrt",
+      "score": 0.6529942057256104,
+      "title": "Deutsches Zentrum für Luft- und Raumfahrt – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Perl_(Programmiersprache)",
+      "score": 0.6529942057256104,
+      "title": "Perl (Programmiersprache) – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Quellcode",
+      "score": 0.6529942057256104,
+      "title": "Quelltext – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Medizin",
+      "score": 0.6529942057256104,
+      "title": "Medizin – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/32-Bit-Architektur",
+      "score": 0.6529942057256104,
+      "title": "32-Bit-Architektur – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/AIDS",
+      "score": 0.6501280317718432,
+      "title": "AIDS – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Bioinformatik",
+      "score": 0.6490082970094573,
+      "title": "Bioinformatik – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Qt_Designer",
+      "score": 0.6360188027707555,
+      "title": "Qt (Bibliothek) – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Biometrische_Daten",
+      "score": 0.6360188027707555,
+      "title": "Biometrie – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Flynnsche_Klassifikation",
+      "score": 0.6292088613747011,
+      "title": "Flynnsche Klassifikation – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Automatische_Nummernschilderkennung",
+      "score": 0.6292088613747011,
+      "title": "Automatische Nummernschilderkennung – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Psychische_St%C3%B6rung",
+      "score": 0.6207554412119367,
+      "title": "Psychische Störung – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Computerlinguistik",
+      "score": 0.6175637907926896,
+      "title": "Computerlinguistik – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/3D-Computergrafik",
+      "score": 0.6141797522526763,
+      "title": "Computergrafik – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/TensorFlow_Processing_Unit",
+      "score": 0.6076795808137692,
+      "title": "Tensor Processing Unit – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Bonn",
+      "score": 0.6076795808137692,
+      "title": "Bonn – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/K%C3%B6ppen-Geiger-Klassifikation",
+      "score": 0.6061391892602181,
+      "title": "Effektive Klimaklassifikation – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Geoinformatik",
+      "score": 0.6046786022868391,
+      "title": "Geoinformatik – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Extensible_Markup_Language",
+      "score": 0.6046786022868391,
+      "title": "Extensible Markup Language – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Arbeitsanforderung",
+      "score": 0.5900468726392808,
+      "title": "Anforderungsermittlung – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Systematik_(Biologie)",
+      "score": 0.5801559414528517,
+      "title": "Systematik (Biologie) – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Software",
+      "score": 0.5770299637852556,
+      "title": "Software – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Roboter",
+      "score": 0.5723378846971153,
+      "title": "Roboter – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Harvard-Architektur",
+      "score": 0.5689886668853925,
+      "title": "Harvard-Architektur – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Blue_Brain",
+      "score": 0.567740420976129,
+      "title": "Blue Brain – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Maschinelles_Lernen",
+      "score": 0.5622437388395707,
+      "title": "Maschinelles Lernen – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Qualitative_Daten",
+      "score": 0.5586417808311845,
+      "title": "Qualitative Daten – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Robotik",
+      "score": 0.5564600848401843,
+      "title": "Robotik – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Python_(Programmiersprache)",
+      "score": 0.5537933053413595,
+      "title": "Python (Programmiersprache) – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Agrarinformatik",
+      "score": 0.5491004867761125,
+      "title": "Agrarinformatik – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Abstraktion",
+      "score": 0.5491004867761125,
+      "title": "Abstraktion – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Geoinformationssystem",
+      "score": 0.5491004867761125,
+      "title": "Geoinformationssystem – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Elektrotechnik",
+      "score": 0.5491004867761125,
+      "title": "Elektrotechnik – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Geoinformation",
+      "score": 0.5491004867761125,
+      "title": "Geoinformation – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Personenbezogene_Daten",
+      "score": 0.5491004867761125,
+      "title": "Personenbezogene Daten – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Anaconda_(Python-Distribution)",
+      "score": 0.5491004867761125,
+      "title": "Anaconda (Python-Distribution) – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Institut_f%C3%BCr_Robotik_und_Mechatronik",
+      "score": 0.5491004867761125,
+      "title": "Institut für Robotik und Mechatronik – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Netzwerkprotokoll",
+      "score": 0.5491004867761125,
+      "title": "Netzwerkprotokoll – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Neurologie",
+      "score": 0.5491004867761125,
+      "title": "Neurologie – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Rechenmaschine",
+      "score": 0.5491004867761125,
+      "title": "Rechenmaschine – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Geologie",
+      "score": 0.5491004867761125,
+      "title": "Geologie – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Google_Lunar_X-Prize",
+      "score": 0.5491004867761125,
+      "title": "Google Lunar X-Prize – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Fieseler_Fi_103",
+      "score": 0.5491004867761125,
+      "title": "Fieseler Fi 103 – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Verordnung_%C3%BCber_k%C3%BCnstliche_Intelligenz",
+      "score": 0.5491004867761125,
+      "title": "Verordnung über künstliche Intelligenz – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Deutschland",
+      "score": 0.5491004867761125,
+      "title": "Deutschland – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Lego",
+      "score": 0.5491004867761125,
+      "title": "Lego – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Duck-Typing",
+      "score": 0.5491004867761125,
+      "title": "Duck-Typing – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Cache-Koh%C3%A4renz",
+      "score": 0.5491004867761125,
+      "title": "Cache-Kohärenz – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/PyGTK",
+      "score": 0.5491004867761125,
+      "title": "PyGTK – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Interpreter",
+      "score": 0.5491004867761125,
+      "title": "Interpreter – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Guido_van_Rossum",
+      "score": 0.5491004867761125,
+      "title": "Guido van Rossum – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Flask",
+      "score": 0.5491004867761125,
+      "title": "Flask – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/ROM",
+      "score": 0.5491004867761125,
+      "title": "Festwertspeicher – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Astrobotic",
+      "score": 0.5491004867761125,
+      "title": "Astrobotic Technology – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Alin_Albu-Sch%C3%A4ffer",
+      "score": 0.5491004867761125,
+      "title": "Alin Albu-Schäffer – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/8-Bit-Architektur",
+      "score": 0.5491004867761125,
+      "title": "8-Bit-Architektur – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Armin_Ronacher",
+      "score": 0.5491004867761125,
+      "title": "Armin Ronacher – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Mehrprozessorsystem",
+      "score": 0.5491004867761125,
+      "title": "Mehrprozessorsystem – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Astrobotic_Technology",
+      "score": 0.5491004867761125,
+      "title": "Astrobotic Technology – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Alphonse_Bertillon",
+      "score": 0.5491004867761125,
+      "title": "Alphonse Bertillon – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Kalenderdatum",
+      "score": 0.5491004867761125,
+      "title": "Kalenderdatum – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Beobachtung",
+      "score": 0.5491004867761125,
+      "title": "Beobachtung – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Zwischencode",
+      "score": 0.5491004867761125,
+      "title": "Zwischencode – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Liste_der_psychischen_und_Verhaltensst%C3%B6rungen_nach_ICD-10",
+      "score": 0.5491004867761125,
+      "title": "Liste der psychischen und Verhaltensstörungen nach ICD-10 – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Bin%C3%A4rpr%C3%A4fix",
+      "score": 0.5491004867761125,
+      "title": "Binärpräfix – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Bildschirmspeicher",
+      "score": 0.5491004867761125,
+      "title": "Grafikspeicher – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Basisdaten",
+      "score": 0.5491004867761125,
+      "title": "Basisdaten – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Northbridge",
+      "score": 0.5491004867761125,
+      "title": "Northbridge – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Speichermodul",
+      "score": 0.5491004867761125,
+      "title": "Speichermodul – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Meerestiefe",
+      "score": 0.5491004867761125,
+      "title": "Bathymetrie – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Workstation",
+      "score": 0.5491004867761125,
+      "title": "Workstation – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/%C3%96NORM_A_1080",
+      "score": 0.5491004867761125,
+      "title": "ÖNORM – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Internationale_statistische_Klassifikation_der_Krankheiten_und_verwandter_Gesundheitsprobleme",
+      "score": 0.5491004867761125,
+      "title": "Internationale statistische Klassifikation der Krankheiten und verwandter Gesundheitsprobleme – Wiki"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Drucker_(Ger%C3%A4t)",
+      "score": 0.5491004867761125,
+      "title": "Drucker (Gerät) – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Dispositive_Daten",
+      "score": 0.5491004867761125,
+      "title": "Dispositive Daten – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/USB-Stick",
+      "score": 0.5491004867761125,
+      "title": "USB-Stick – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/%C3%96NORM",
+      "score": 0.5491004867761125,
+      "title": "ÖNORM – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Bathymetrie",
+      "score": 0.5491004867761125,
+      "title": "Bathymetrie – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Steuerger%C3%A4t",
+      "score": 0.5491004867761125,
+      "title": "Steuergerät – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Weiche_Daten",
+      "score": 0.5491004867761125,
+      "title": "Weiche Daten – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Unternehmensdaten",
+      "score": 0.5491004867761125,
+      "title": "Unternehmensdaten – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/%C3%96sterreichischer_Verband_f%C3%BCr_Elektrotechnik",
+      "score": 0.5491004867761125,
+      "title": "Österreichischer Verband für Elektrotechnik – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/GPS",
+      "score": 0.5491004867761125,
+      "title": "Global Positioning System – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/App_Store_(iOS)",
+      "score": 0.5491004867761125,
+      "title": "App Store (Apple) – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Amerikanisches_Englisch",
+      "score": 0.5491004867761125,
+      "title": "Amerikanisches Englisch – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Wikipedia:WikiProjekt_Ereignisse/Vergangenheit/fehlend",
+      "score": 0.5491004867761125,
+      "title": "Wikipedia:WikiProjekt Ereignisse/Vergangenheit – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Tumor",
+      "score": 0.5491004867761125,
+      "title": "Tumor – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Technische_Daten",
+      "score": 0.5491004867761125,
+      "title": "Technische Daten – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Wikipedia:WikiProjekt_Ereignisse/Vergangenheit",
+      "score": 0.5491004867761125,
+      "title": "Wikipedia:WikiProjekt Ereignisse/Vergangenheit – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Wetterdienst",
+      "score": 0.5491004867761125,
+      "title": "Wetterdienst – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Bitstopfen",
+      "score": 0.5491004867761125,
+      "title": "Bitstopfen – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Metastase",
+      "score": 0.5491004867761125,
+      "title": "Metastase – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/TNM-Klassifikation",
+      "score": 0.5491004867761125,
+      "title": "TNM-Klassifikation – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Atompilz",
+      "score": 0.5491004867761125,
+      "title": "Kernwaffenexplosion – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Datenarchiv",
+      "score": 0.5491004867761125,
+      "title": "Digitales Archiv – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Atlas_(Rakete)",
+      "score": 0.5491004867761125,
+      "title": "Atlas (Rakete) – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/High-Level_Data_Link_Control",
+      "score": 0.5491004867761125,
+      "title": "High-Level Data Link Control – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Bikini-Atoll",
+      "score": 0.5491004867761125,
+      "title": "Bikini-Atoll – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Cisco",
+      "score": 0.5491004867761125,
+      "title": "Cisco Systems – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Edition",
+      "score": 0.5491004867761125,
+      "title": "Edition – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Aspekt_(Linguistik)",
+      "score": 0.5491004867761125,
+      "title": "Aspekt (Linguistik) – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Auflage_(Publikation)",
+      "score": 0.5491004867761125,
+      "title": "Auflage (Publikation) – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Aktionsart",
+      "score": 0.5491004867761125,
+      "title": "Aktionsart – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Ada_County",
+      "score": 0.5491004867761125,
+      "title": "Ada County – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Website",
+      "score": 0.5491004867761125,
+      "title": "Website – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Arbeitslosenstatistik",
+      "score": 0.5491004867761125,
+      "title": "Arbeitslosenstatistik – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/%C3%84thiopischer_Kalender",
+      "score": 0.5491004867761125,
+      "title": "Äthiopischer Kalender – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Durativ_(Grammatik)",
+      "score": 0.5491004867761125,
+      "title": "Durativ (Grammatik) – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Ensembl",
+      "score": 0.5491004867761125,
+      "title": "Ensembl – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Artillerie-,_Daten-,_Lage-_und_Einsatz-Rechnerverbund",
+      "score": 0.5491004867761125,
+      "title": "Artillerie-, Daten-, Lage- und Einsatz-Rechnerverbund – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Bodenbeschaffenheit",
+      "score": 0.5491004867761125,
+      "title": "Boden (Bodenkunde) – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Afrikanischer_Elefant",
+      "score": 0.5491004867761125,
+      "title": "Afrikanischer Elefant – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Antike",
+      "score": 0.5491004867761125,
+      "title": "Antike – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/International_Business_Machines",
+      "score": 0.5491004867761125,
+      "title": "IBM – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Interlingue",
+      "score": 0.5491004867761125,
+      "title": "Interlingue – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Absolute_H%C3%A4ufigkeit",
+      "score": 0.5491004867761125,
+      "title": "Absolute Häufigkeit – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Afrikanische_Elefanten",
+      "score": 0.5491004867761125,
+      "title": "Afrikanische Elefanten – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/S%C3%A4ugetiere",
+      "score": 0.5491004867761125,
+      "title": "Säugetiere – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Deskriptive_Statistik",
+      "score": 0.5491004867761125,
+      "title": "Deskriptive Statistik – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Daten",
+      "score": 0.54906991069855,
+      "title": "Daten – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Von-Neumann-Architektur",
+      "score": 0.5484023283564293,
+      "title": "Von-Neumann-Architektur – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Arbeitsspeicher",
+      "score": 0.5481513034753093,
+      "title": "Arbeitsspeicher – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Firewall",
+      "score": 0.5479718056049396,
+      "title": "Firewall – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/DDR-SDRAM",
+      "score": 0.5437427682227519,
+      "title": "DDR-SDRAM – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/%C3%96lf%C3%B6rdermaximum",
+      "score": 0.5408409837011728,
+      "title": "Ölfördermaximum – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Vererbung_(Programmierung)",
+      "score": 0.5348259312838876,
+      "title": "Vererbung (Programmierung) – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Karte_(Kartografie)",
+      "score": 0.5348259312838876,
+      "title": "Karte (Kartografie) – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/B-Baum",
+      "score": 0.5290994759758576,
+      "title": "B-Baum – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Angewandte_Informatik",
+      "score": 0.5193071778680677,
+      "title": "Angewandte Informatik – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Thread_(Informatik)",
+      "score": 0.5193071778680677,
+      "title": "Thread (Informatik) – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/AMD_Saxony",
+      "score": 0.5193071778680677,
+      "title": "AMD Saxony – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Artillerie",
+      "score": 0.5193071778680677,
+      "title": "Artillerie – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Controller_Area_Network",
+      "score": 0.5136696419728386,
+      "title": "Controller Area Network – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/IPhone",
+      "score": 0.5133890685394852,
+      "title": "iPhone – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Arm-Architektur",
+      "score": 0.5008718428920987,
+      "title": "ARM-Architektur – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Autonomes_Fahren",
+      "score": 0.49616830003403634,
+      "title": "Autonomes Fahren – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Aufkl%C3%A4rung",
+      "score": 0.4911304059638447,
+      "title": "Aufklärung – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Enterprise_Resource_Planning",
+      "score": 0.46173663094410267,
+      "title": "Enterprise-Resource-Planning – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Furtwangen_im_Schwarzwald",
+      "score": 0.4617366309441026,
+      "title": "Furtwangen im Schwarzwald – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Neuronales_Netz",
+      "score": 0.4617366309441026,
+      "title": "Neuronales Netz – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Charles_E._Leiserson",
+      "score": 0.4617366309441026,
+      "title": "Charles E. Leiserson – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Hermeneutik",
+      "score": 0.4617366309441026,
+      "title": "Hermeneutik – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Wirtschaftsinformatik",
+      "score": 0.44428088917702807,
+      "title": "Wirtschaftsinformatik – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Raspberry_Pi",
+      "score": 0.37967090227101874,
+      "title": "Raspberry Pi – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Algorithmus",
+      "score": 0.3670338794749086,
+      "title": "Algorithmus – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Scanline-Algorithmus",
+      "score": 0.3156016488258681,
+      "title": "Scanline-Algorithmus – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Indogermanische_Sprachen",
+      "score": 0.3087818953963448,
+      "title": "Indogermanische Sprachen – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Quicksort",
+      "score": 0.2838702104880645,
+      "title": "Quicksort – Wikipedia"
+    }
+  ]
+}

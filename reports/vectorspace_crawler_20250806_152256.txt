@@ -1,0 +1,359 @@
+
+============================================================
+CRAWLER KONFIGURATION - vectorspace_crawler
+============================================================
+Strategie: VectorSpaceSpider
+Seed URLs: https://de.wikipedia.org/wiki/Informatik
+Batch-Größe: 32
+Max. Seiten: 5000
+Max. relevante Seiten: 30
+Relevanz-Schwellenwert: 0.6
+Max. Laufzeit: 30 Minuten
+Report-Intervall: 30 Sekunden
+
+GEWICHTUNGEN:
+- Link-Gewicht: 0.5
+- Elterndokument-Gewicht: 0.5
+- Titel-Gewicht: 0.4
+- Überschriften-Gewicht: 0.3
+- Paragraphen-Gewicht: 0.3
+============================================================
+
+Themenprofil: KÃ¼nstliche Intelligenz (KI) ist ein Teilgebiet der Informatik, das sich mit der Automatisierung intelligenten Verhaltens und dem maschinellen Lernen befasst. Machine Learning und Deep Learning sind w...
+
+
+--- ZWISCHENBERICHT [15:23:00] ---
+Laufzeit: 0:00:04.414710
+Harvest-Rate: 14.00%
+Relevante Seiten: 7
+Irrelevante Seiten: 43
+
+
+--- ZWISCHENBERICHT [15:23:04] ---
+Laufzeit: 0:00:07.901639
+Harvest-Rate: 12.00%
+Relevante Seiten: 12
+Irrelevante Seiten: 88
+
+
+--- ZWISCHENBERICHT [15:23:08] ---
+Laufzeit: 0:00:12.562734
+Harvest-Rate: 9.33%
+Relevante Seiten: 14
+Irrelevante Seiten: 136
+
+
+--- ZWISCHENBERICHT [15:23:15] ---
+Laufzeit: 0:00:19.373460
+Harvest-Rate: 8.50%
+Relevante Seiten: 17
+Irrelevante Seiten: 183
+
+
+--- ZWISCHENBERICHT [15:23:21] ---
+Laufzeit: 0:00:25.405585
+Harvest-Rate: 7.60%
+Relevante Seiten: 19
+Irrelevante Seiten: 231
+
+
+--- ZWISCHENBERICHT [15:23:28] ---
+Laufzeit: 0:00:32.172116
+Harvest-Rate: 6.33%
+Relevante Seiten: 19
+Irrelevante Seiten: 281
+
+
+--- ZWISCHENBERICHT [15:23:33] ---
+Laufzeit: 0:00:37.789753
+Harvest-Rate: 5.43%
+Relevante Seiten: 19
+Irrelevante Seiten: 331
+
+
+--- ZWISCHENBERICHT [15:23:38] ---
+Laufzeit: 0:00:42.321263
+Harvest-Rate: 4.75%
+Relevante Seiten: 19
+Irrelevante Seiten: 381
+
+
+--- ZWISCHENBERICHT [15:23:43] ---
+Laufzeit: 0:00:47.447738
+Harvest-Rate: 4.22%
+Relevante Seiten: 19
+Irrelevante Seiten: 431
+
+
+--- ZWISCHENBERICHT [15:23:47] ---
+Laufzeit: 0:00:50.978847
+Harvest-Rate: 3.80%
+Relevante Seiten: 19
+Irrelevante Seiten: 481
+
+
+--- ZWISCHENBERICHT [15:23:51] ---
+Laufzeit: 0:00:55.767726
+Harvest-Rate: 3.45%
+Relevante Seiten: 19
+Irrelevante Seiten: 531
+
+
+--- ZWISCHENBERICHT [15:23:56] ---
+Laufzeit: 0:01:00.747590
+Harvest-Rate: 3.17%
+Relevante Seiten: 19
+Irrelevante Seiten: 581
+
+
+--- ZWISCHENBERICHT [15:24:03] ---
+Laufzeit: 0:01:07.167028
+Harvest-Rate: 2.92%
+Relevante Seiten: 19
+Irrelevante Seiten: 631
+
+
+--- ZWISCHENBERICHT [15:24:07] ---
+Laufzeit: 0:01:10.968354
+Harvest-Rate: 2.71%
+Relevante Seiten: 19
+Irrelevante Seiten: 681
+
+
+--- ZWISCHENBERICHT [15:24:10] ---
+Laufzeit: 0:01:14.673144
+Harvest-Rate: 2.53%
+Relevante Seiten: 19
+Irrelevante Seiten: 731
+
+
+--- ZWISCHENBERICHT [15:24:14] ---
+Laufzeit: 0:01:18.482789
+Harvest-Rate: 2.38%
+Relevante Seiten: 19
+Irrelevante Seiten: 781
+
+
+--- ZWISCHENBERICHT [15:24:17] ---
+Laufzeit: 0:01:21.543776
+Harvest-Rate: 2.24%
+Relevante Seiten: 19
+Irrelevante Seiten: 831
+
+
+--- ZWISCHENBERICHT [15:24:21] ---
+Laufzeit: 0:01:25.747623
+Harvest-Rate: 2.11%
+Relevante Seiten: 19
+Irrelevante Seiten: 881
+
+
+--- ZWISCHENBERICHT [15:24:26] ---
+Laufzeit: 0:01:29.872382
+Harvest-Rate: 2.11%
+Relevante Seiten: 20
+Irrelevante Seiten: 930
+
+
+--- ZWISCHENBERICHT [15:24:29] ---
+Laufzeit: 0:01:33.458189
+Harvest-Rate: 2.20%
+Relevante Seiten: 22
+Irrelevante Seiten: 978
+
+
+--- ZWISCHENBERICHT [15:24:32] ---
+Laufzeit: 0:01:36.570542
+Harvest-Rate: 2.10%
+Relevante Seiten: 22
+Irrelevante Seiten: 1028
+
+
+--- ZWISCHENBERICHT [15:24:35] ---
+Laufzeit: 0:01:39.756757
+Harvest-Rate: 2.09%
+Relevante Seiten: 23
+Irrelevante Seiten: 1077
+
+
+--- ZWISCHENBERICHT [15:24:39] ---
+Laufzeit: 0:01:43.388897
+Harvest-Rate: 2.00%
+Relevante Seiten: 23
+Irrelevante Seiten: 1127
+
+
+--- ZWISCHENBERICHT [15:24:44] ---
+Laufzeit: 0:01:48.455730
+Harvest-Rate: 1.92%
+Relevante Seiten: 23
+Irrelevante Seiten: 1177
+
+
+--- ZWISCHENBERICHT [15:24:48] ---
+Laufzeit: 0:01:52.816930
+Harvest-Rate: 1.84%
+Relevante Seiten: 23
+Irrelevante Seiten: 1227
+
+
+--- ZWISCHENBERICHT [15:24:52] ---
+Laufzeit: 0:01:56.300498
+Harvest-Rate: 1.92%
+Relevante Seiten: 25
+Irrelevante Seiten: 1275
+
+
+--- ZWISCHENBERICHT [15:24:56] ---
+Laufzeit: 0:01:59.953543
+Harvest-Rate: 1.93%
+Relevante Seiten: 26
+Irrelevante Seiten: 1324
+
+
+--- ZWISCHENBERICHT [15:24:59] ---
+Laufzeit: 0:02:03.007202
+Harvest-Rate: 1.86%
+Relevante Seiten: 26
+Irrelevante Seiten: 1374
+
+
+--- ZWISCHENBERICHT [15:25:02] ---
+Laufzeit: 0:02:06.111038
+Harvest-Rate: 1.79%
+Relevante Seiten: 26
+Irrelevante Seiten: 1424
+
+
+--- ZWISCHENBERICHT [15:25:04] ---
+Laufzeit: 0:02:08.852160
+Harvest-Rate: 1.73%
+Relevante Seiten: 26
+Irrelevante Seiten: 1474
+
+
+--- ZWISCHENBERICHT [15:25:08] ---
+Laufzeit: 0:02:12.164543
+Harvest-Rate: 1.68%
+Relevante Seiten: 26
+Irrelevante Seiten: 1524
+
+
+--- ZWISCHENBERICHT [15:25:12] ---
+Laufzeit: 0:02:16.581681
+Harvest-Rate: 1.62%
+Relevante Seiten: 26
+Irrelevante Seiten: 1574
+
+
+--- ZWISCHENBERICHT [15:25:16] ---
+Laufzeit: 0:02:19.976903
+Harvest-Rate: 1.58%
+Relevante Seiten: 26
+Irrelevante Seiten: 1624
+
+
+--- ZWISCHENBERICHT [15:25:19] ---
+Laufzeit: 0:02:23.249957
+Harvest-Rate: 1.53%
+Relevante Seiten: 26
+Irrelevante Seiten: 1674
+
+
+--- ZWISCHENBERICHT [15:25:22] ---
+Laufzeit: 0:02:26.576272
+Harvest-Rate: 1.49%
+Relevante Seiten: 26
+Irrelevante Seiten: 1724
+
+
+--- ZWISCHENBERICHT [15:25:26] ---
+Laufzeit: 0:02:29.899586
+Harvest-Rate: 1.44%
+Relevante Seiten: 26
+Irrelevante Seiten: 1774
+
+
+--- ZWISCHENBERICHT [15:25:29] ---
+Laufzeit: 0:02:33.517283
+Harvest-Rate: 1.41%
+Relevante Seiten: 26
+Irrelevante Seiten: 1824
+
+
+--- ZWISCHENBERICHT [15:25:32] ---
+Laufzeit: 0:02:36.631917
+Harvest-Rate: 1.37%
+Relevante Seiten: 26
+Irrelevante Seiten: 1874
+
+
+--- ZWISCHENBERICHT [15:25:38] ---
+Laufzeit: 0:02:42.515098
+Harvest-Rate: 1.33%
+Relevante Seiten: 26
+Irrelevante Seiten: 1924
+
+
+--- ZWISCHENBERICHT [15:25:42] ---
+Laufzeit: 0:02:45.954639
+Harvest-Rate: 1.30%
+Relevante Seiten: 26
+Irrelevante Seiten: 1974
+
+
+--- ZWISCHENBERICHT [15:25:45] ---
+Laufzeit: 0:02:49.245776
+Harvest-Rate: 1.27%
+Relevante Seiten: 26
+Irrelevante Seiten: 2024
+
+
+--- ZWISCHENBERICHT [15:25:48] ---
+Laufzeit: 0:02:52.489684
+Harvest-Rate: 1.24%
+Relevante Seiten: 26
+Irrelevante Seiten: 2074
+
+
+--- ZWISCHENBERICHT [15:25:53] ---
+Laufzeit: 0:02:57.103956
+Harvest-Rate: 1.21%
+Relevante Seiten: 26
+Irrelevante Seiten: 2124
+
+
+--- ZWISCHENBERICHT [15:25:56] ---
+Laufzeit: 0:03:00.193234
+Harvest-Rate: 1.18%
+Relevante Seiten: 26
+Irrelevante Seiten: 2174
+
+
+--- ZWISCHENBERICHT [15:26:00] ---
+Laufzeit: 0:03:03.957843
+Harvest-Rate: 1.16%
+Relevante Seiten: 26
+Irrelevante Seiten: 2224
+
+
+--- ZWISCHENBERICHT [15:26:04] ---
+Laufzeit: 0:03:08.092634
+Harvest-Rate: 1.13%
+Relevante Seiten: 26
+Irrelevante Seiten: 2274
+
+
+--- ZWISCHENBERICHT [15:26:07] ---
+Laufzeit: 0:03:11.085469
+Harvest-Rate: 1.11%
+Relevante Seiten: 26
+Irrelevante Seiten: 2324
+
+
+--- ZWISCHENBERICHT [15:26:10] ---
+Laufzeit: 0:03:14.208455
+Harvest-Rate: 1.08%
+Relevante Seiten: 26
+Irrelevante Seiten: 2374
+

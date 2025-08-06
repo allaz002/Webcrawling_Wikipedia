@@ -1,0 +1,757 @@
+{
+  "spider": "vectorspace_crawler",
+  "timestamp": "20250806_151537",
+  "total_relevant": 150,
+  "pages": [
+    {
+      "url": "https://de.wikipedia.org/wiki/Tierwissenschaften",
+      "score": 0.6529942057256104,
+      "title": "Tierwissenschaften – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/AIDS",
+      "score": 0.6501280317718432,
+      "title": "AIDS – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/NUTS",
+      "score": 0.6175637907926896,
+      "title": "NUTS – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Datenanalyse",
+      "score": 0.6046786022868391,
+      "title": "Datenanalyse – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Verbraucherschutz",
+      "score": 0.5900468726392808,
+      "title": "Verbraucherschutz – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Robotik",
+      "score": 0.5564600848401843,
+      "title": "Robotik – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Python_(Programmiersprache)",
+      "score": 0.5537933053413595,
+      "title": "Python (Programmiersprache) – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/%C3%84thiopischer_Kalender",
+      "score": 0.5491004867761125,
+      "title": "Äthiopischer Kalender – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Aeropuerto_de_Alicante",
+      "score": 0.5491004867761125,
+      "title": "Aeropuerto de Alicante – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Angola",
+      "score": 0.5491004867761125,
+      "title": "Angola – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Somali_(Sprache)",
+      "score": 0.5491004867761125,
+      "title": "Somali (Sprache) – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Parlamentarisches_Regierungssystem",
+      "score": 0.5491004867761125,
+      "title": "Parlamentarisches Regierungssystem – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Oromo_(Sprache)",
+      "score": 0.5491004867761125,
+      "title": "Oromo (Sprache) – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/%C3%84thiopisch-Orthodoxe_Tewahedo-Kirche",
+      "score": 0.5491004867761125,
+      "title": "Äthiopisch-Orthodoxe Tewahedo-Kirche – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Sprachfamilie",
+      "score": 0.5491004867761125,
+      "title": "Sprachfamilie – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Tieflandostkuschitisch",
+      "score": 0.5491004867761125,
+      "title": "Tieflandostkuschitische Sprachen – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Digitale_Allmende",
+      "score": 0.5491004867761125,
+      "title": "Digitale Allmende – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/An-26",
+      "score": 0.5491004867761125,
+      "title": "Antonow An-26 – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/%C3%96sterreich",
+      "score": 0.5491004867761125,
+      "title": "Österreich – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Alpen",
+      "score": 0.5491004867761125,
+      "title": "Alpen – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/General_of_the_Army_(Vereinigte_Staaten)",
+      "score": 0.5491004867761125,
+      "title": "General of the Army (Vereinigte Staaten) – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Altgriechische_Sprache",
+      "score": 0.5491004867761125,
+      "title": "Altgriechische Sprache – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Grenada",
+      "score": 0.5491004867761125,
+      "title": "Grenada – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Slowenien",
+      "score": 0.5491004867761125,
+      "title": "Slowenien – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Personenbezogene_Daten",
+      "score": 0.5491004867761125,
+      "title": "Personenbezogene Daten – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/%C3%8Ele-de-France",
+      "score": 0.5491004867761125,
+      "title": "Île-de-France – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Internet_Archive",
+      "score": 0.5491004867761125,
+      "title": "Internet Archive – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Versicherungsnummer",
+      "score": 0.5491004867761125,
+      "title": "Versicherungsnummer – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Datenschutz-Grundverordnung",
+      "score": 0.5491004867761125,
+      "title": "Datenschutz-Grundverordnung – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Richtlinie_95/46/EG_(Datenschutzrichtlinie)",
+      "score": 0.5491004867761125,
+      "title": "Richtlinie 95/46/EG (Datenschutzrichtlinie) – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/1._April",
+      "score": 0.5491004867761125,
+      "title": "1. April – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/(30585)_Firenze",
+      "score": 0.5491004867761125,
+      "title": "(30585) Firenze – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Bundesdatenschutzgesetz",
+      "score": 0.5491004867761125,
+      "title": "Bundesdatenschutzgesetz – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/1._Oktober",
+      "score": 0.5491004867761125,
+      "title": "1. Oktober – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Coconino_County",
+      "score": 0.5491004867761125,
+      "title": "Coconino County – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/1._Arrondissement_(Paris)",
+      "score": 0.5491004867761125,
+      "title": "1. Arrondissement (Paris) – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/2._Arrondissement_(Paris)",
+      "score": 0.5491004867761125,
+      "title": "2. Arrondissement (Paris) – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Aborigines",
+      "score": 0.5491004867761125,
+      "title": "Aborigines – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Manga",
+      "score": 0.5491004867761125,
+      "title": "Manga – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/%C3%84gypten",
+      "score": 0.5491004867761125,
+      "title": "Ägypten – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Willis_Tower",
+      "score": 0.5491004867761125,
+      "title": "Willis Tower – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Bundesgerichtshof",
+      "score": 0.5491004867761125,
+      "title": "Bundesgerichtshof – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Aluminium",
+      "score": 0.5491004867761125,
+      "title": "Aluminium – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/12._Arrondissement_(Paris)",
+      "score": 0.5491004867761125,
+      "title": "12. Arrondissement (Paris) – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Adel_(Georgia)",
+      "score": 0.5491004867761125,
+      "title": "Adel (Georgia) – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Bundesamt_f%C3%BCr_G%C3%BCterverkehr",
+      "score": 0.5491004867761125,
+      "title": "Bundesamt für Logistik und Mobilität – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Amtliche_Statistik",
+      "score": 0.5491004867761125,
+      "title": "Amtliche Statistik – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Albany_(Georgia)",
+      "score": 0.5491004867761125,
+      "title": "Albany (Georgia) – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Bundesamt_f%C3%BCr_Logistik_und_Mobilit%C3%A4t",
+      "score": 0.5491004867761125,
+      "title": "Bundesamt für Logistik und Mobilität – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Ach%C3%A4menidenreich",
+      "score": 0.5491004867761125,
+      "title": "Achämenidenreich – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Weiche_Daten",
+      "score": 0.5491004867761125,
+      "title": "Weiche Daten – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Akkadische_Sprache",
+      "score": 0.5491004867761125,
+      "title": "Akkadische Sprache – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Technische_Daten",
+      "score": 0.5491004867761125,
+      "title": "Technische Daten – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Bezugsh%C3%B6he",
+      "score": 0.5491004867761125,
+      "title": "Bezugshöhe – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Alaska",
+      "score": 0.5491004867761125,
+      "title": "Alaska – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Library_of_Congress",
+      "score": 0.5491004867761125,
+      "title": "Library of Congress – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Antoine_Laurent_de_Lavoisier",
+      "score": 0.5491004867761125,
+      "title": "Antoine Laurent de Lavoisier – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Altorientalistik",
+      "score": 0.5491004867761125,
+      "title": "Altorientalistik – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Klassifikation",
+      "score": 0.5491004867761125,
+      "title": "Klassifikation – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/R%C3%A9union",
+      "score": 0.5491004867761125,
+      "title": "Réunion – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/International_Statistical_Classification_of_Diseases_and_Related_Health_Problems",
+      "score": 0.5491004867761125,
+      "title": "Internationale statistische Klassifikation der Krankheiten und verwandter Gesundheitsprobleme – Wiki"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/R%C3%B6mische_Kaiserzeit",
+      "score": 0.5491004867761125,
+      "title": "Römische Kaiserzeit – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Altgriechisch",
+      "score": 0.5491004867761125,
+      "title": "Altgriechische Sprache – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Nekrolog_1893",
+      "score": 0.5491004867761125,
+      "title": "Nekrolog 1893 – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/%C3%96lindustrie",
+      "score": 0.5491004867761125,
+      "title": "Mineralölunternehmen – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Auto_Union_1000",
+      "score": 0.5491004867761125,
+      "title": "Auto Union 1000 – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Boone_County_(Missouri)",
+      "score": 0.5491004867761125,
+      "title": "Boone County (Missouri) – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Risiko",
+      "score": 0.5491004867761125,
+      "title": "Risiko – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Diachronie_(Geologie)",
+      "score": 0.5491004867761125,
+      "title": "Diachronie (Geologie) – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Alternativmedizin",
+      "score": 0.5491004867761125,
+      "title": "Alternativmedizin – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Begriffsinhalt",
+      "score": 0.5491004867761125,
+      "title": "Extension und Intension – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Audrain_County",
+      "score": 0.5491004867761125,
+      "title": "Audrain County – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/United_States_Census_1840",
+      "score": 0.5491004867761125,
+      "title": "United States Census 1840 – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/United_States_Census_1850",
+      "score": 0.5491004867761125,
+      "title": "United States Census 1850 – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/United_States_Census_1830",
+      "score": 0.5491004867761125,
+      "title": "United States Census 1830 – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Regression_(Geologie)",
+      "score": 0.5491004867761125,
+      "title": "Regression (Geologie) – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/S%C3%BCdafrika",
+      "score": 0.5491004867761125,
+      "title": "Südafrika – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/United_States_Census_1790",
+      "score": 0.5491004867761125,
+      "title": "United States Census 1790 – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Mexico_(Missouri)",
+      "score": 0.5491004867761125,
+      "title": "Mexico (Missouri) – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Orinoco",
+      "score": 0.5491004867761125,
+      "title": "Orinoco – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Regi%C3%B3n_Patag%C3%B3nica",
+      "score": 0.5491004867761125,
+      "title": "Región Patagónica – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Santorin",
+      "score": 0.5491004867761125,
+      "title": "Santorin – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/ANSI",
+      "score": 0.5491004867761125,
+      "title": "American National Standards Institute – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Schwarze",
+      "score": 0.5491004867761125,
+      "title": "Schwarze – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Audio",
+      "score": 0.5491004867761125,
+      "title": "Audio – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Abh%C3%A4ngigkeit_(Medizin)",
+      "score": 0.5491004867761125,
+      "title": "Abhängigkeit (Medizin) – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/King_County_(Washington)",
+      "score": 0.5491004867761125,
+      "title": "King County (Washington) – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Bundestagswahlrecht",
+      "score": 0.5491004867761125,
+      "title": "Bundestagswahlrecht – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Albaner",
+      "score": 0.5491004867761125,
+      "title": "Albaner – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Anatomisch-Therapeutisch-Chemisches_Klassifikationssystem",
+      "score": 0.5491004867761125,
+      "title": "Anatomisch-Therapeutisch-Chemisches Klassifikationssystem – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Acate",
+      "score": 0.5491004867761125,
+      "title": "Acate – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Aalen",
+      "score": 0.5491004867761125,
+      "title": "Aalen – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Nekrolog_1607",
+      "score": 0.5491004867761125,
+      "title": "Nekrolog 1607 – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Absolute_Mehrheit",
+      "score": 0.5491004867761125,
+      "title": "Mehrheit – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/%C3%96kologische_Landwirtschaft",
+      "score": 0.5491004867761125,
+      "title": "Ökologische Landwirtschaft – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Arzneistoff",
+      "score": 0.5491004867761125,
+      "title": "Arzneistoff – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Stuttgart",
+      "score": 0.5491004867761125,
+      "title": "Stuttgart – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Spanien",
+      "score": 0.5491004867761125,
+      "title": "Spanien – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Python_Software_Foundation",
+      "score": 0.5491004867761125,
+      "title": "Python Software Foundation – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Alb-Donau-Kreis",
+      "score": 0.5491004867761125,
+      "title": "Alb-Donau-Kreis – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Archivar",
+      "score": 0.5491004867761125,
+      "title": "Archivar – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Abstimmung_(Buchf%C3%BChrung)",
+      "score": 0.5491004867761125,
+      "title": "Abstimmung (Buchführung) – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Lone",
+      "score": 0.5491004867761125,
+      "title": "Lone – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Bebauungsplan_(Deutschland)",
+      "score": 0.5491004867761125,
+      "title": "Bebauungsplan (Deutschland) – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Niederstotzingen",
+      "score": 0.5491004867761125,
+      "title": "Niederstotzingen – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Landesanstalt_f%C3%BCr_Umwelt_Baden-W%C3%BCrttemberg",
+      "score": 0.5491004867761125,
+      "title": "Landesanstalt für Umwelt Baden-Württemberg – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Naturdenkmal",
+      "score": 0.5491004867761125,
+      "title": "Naturdenkmal – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Nekrolog_1548",
+      "score": 0.5491004867761125,
+      "title": "Nekrolog 1548 – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Abgabenordnung",
+      "score": 0.5491004867761125,
+      "title": "Abgabenordnung – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Stra%C3%9Fenbaulast",
+      "score": 0.5491004867761125,
+      "title": "Straßenbaulast – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Sumer",
+      "score": 0.5491004867761125,
+      "title": "Sumer – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Steckbrief",
+      "score": 0.5491004867761125,
+      "title": "Steckbrief – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Radiokarbonmethode",
+      "score": 0.5491004867761125,
+      "title": "Radiokarbonmethode – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Wikipedia:Wie_schreibe_ich_gute_Artikel",
+      "score": 0.5491004867761125,
+      "title": "Wikipedia:Wie schreibe ich gute Artikel – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/%C3%89lie_Cartan",
+      "score": 0.5491004867761125,
+      "title": "Élie Cartan – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/%C3%96ffentlichkeitsfahndung",
+      "score": 0.5491004867761125,
+      "title": "Öffentlichkeitsfahndung – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Averroes",
+      "score": 0.5491004867761125,
+      "title": "Averroes – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Technische_Universit%C3%A4t_Dresden",
+      "score": 0.5491004867761125,
+      "title": "Technische Universität Dresden – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Empirische_Evidenz",
+      "score": 0.5491004867761125,
+      "title": "Empirische Evidenz – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/TU_M%C3%BCnchen",
+      "score": 0.5491004867761125,
+      "title": "Technische Universität München – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Stone_Mountain_(Stadt)",
+      "score": 0.5491004867761125,
+      "title": "Stone Mountain (Stadt) – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Nekrolog_1106",
+      "score": 0.5491004867761125,
+      "title": "Nekrolog 1106 – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Reblaus",
+      "score": 0.5491004867761125,
+      "title": "Reblaus – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Binnenwasserstra%C3%9Fe",
+      "score": 0.5491004867761125,
+      "title": "Binnenwasserstraße – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Geod%C3%A4tisches_Datum",
+      "score": 0.5491004867761125,
+      "title": "Geodätisches Datum – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Office_Open_XML",
+      "score": 0.5491004867761125,
+      "title": "Office Open XML – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Bessel-Ellipsoid",
+      "score": 0.5491004867761125,
+      "title": "Bessel-Ellipsoid – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Dateiformat",
+      "score": 0.5491004867761125,
+      "title": "Dateiformat – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Controlling",
+      "score": 0.5491004867761125,
+      "title": "Controlling – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Analoge_Daten",
+      "score": 0.5491004867761125,
+      "title": "Digitale Daten – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Android_(Betriebssystem)",
+      "score": 0.5491004867761125,
+      "title": "Android (Betriebssystem) – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Berichtswesen",
+      "score": 0.5491004867761125,
+      "title": "Berichtswesen – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Bangka-Belitung",
+      "score": 0.5491004867761125,
+      "title": "Bangka-Belitung – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Android_16",
+      "score": 0.5491004867761125,
+      "title": "Android 16 – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Bericht_(Informatik)",
+      "score": 0.5491004867761125,
+      "title": "Bericht (Informatik) – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Mediaplayer",
+      "score": 0.5491004867761125,
+      "title": "Mediaplayer – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/1._Dynastie",
+      "score": 0.5491004867761125,
+      "title": "Frühdynastische Periode – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/AIDS_(Trojanisches_Pferd)",
+      "score": 0.5491004867761125,
+      "title": "AIDS (Trojanisches Pferd) – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Google-Play-Dienste",
+      "score": 0.5491004867761125,
+      "title": "Google-Play-Dienste – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Brenner_(Hardware)",
+      "score": 0.5491004867761125,
+      "title": "Brenner (Hardware) – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Unix",
+      "score": 0.5491004867761125,
+      "title": "Unix – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Computer",
+      "score": 0.5463341494889868,
+      "title": "Computer – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Datenverarbeitung",
+      "score": 0.5463341494889868,
+      "title": "Datenverarbeitung – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Archiv",
+      "score": 0.5453521415177223,
+      "title": "Archiv – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Ausgrabung",
+      "score": 0.5437427682227519,
+      "title": "Ausgrabung – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Blockchain",
+      "score": 0.5425232465761056,
+      "title": "Blockchain – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/B%C3%B6sendorfer_(Unternehmen)",
+      "score": 0.5408409837011728,
+      "title": "Bösendorfer (Unternehmen) – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/%C3%84thiopien",
+      "score": 0.5193071778680677,
+      "title": "Äthiopien – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/%C3%96ffentlicher_Personennahverkehr",
+      "score": 0.5193071778680677,
+      "title": "Öffentlicher Personennahverkehr – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/%C3%96PNV",
+      "score": 0.5193071778680677,
+      "title": "Öffentlicher Personennahverkehr – Wikipedia"
+    }
+  ]
+}

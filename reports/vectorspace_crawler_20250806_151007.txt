@@ -1,0 +1,142 @@
+
+============================================================
+CRAWLER KONFIGURATION - vectorspace_crawler
+============================================================
+Strategie: VectorSpaceSpider
+Seed URLs: https://de.wikipedia.org/wiki/Informatik
+Batch-Größe: 15
+Max. Seiten: 500
+Max. relevante Seiten: 150
+Relevanz-Schwellenwert: 0.25
+Max. Laufzeit: 30 Minuten
+Report-Intervall: 30 Sekunden
+
+GEWICHTUNGEN:
+- Link-Gewicht: 0.5
+- Elterndokument-Gewicht: 0.5
+- Titel-Gewicht: 0.4
+- Überschriften-Gewicht: 0.3
+- Paragraphen-Gewicht: 0.3
+============================================================
+
+Themenprofil: KÃ¼nstliche Intelligenz (KI) ist ein Teilgebiet der Informatik, das sich mit der Automatisierung intelligenten Verhaltens und dem maschinellen Lernen befasst. Machine Learning und Deep Learning sind w...
+
+
+--- ZWISCHENBERICHT [15:10:13] ---
+Laufzeit: 0:00:05.637352
+Harvest-Rate: 52.00%
+Relevante Seiten: 26
+Irrelevante Seiten: 24
+
+
+--- ZWISCHENBERICHT [15:10:18] ---
+Laufzeit: 0:00:10.868421
+Harvest-Rate: 51.00%
+Relevante Seiten: 51
+Irrelevante Seiten: 49
+
+
+--- ZWISCHENBERICHT [15:10:24] ---
+Laufzeit: 0:00:16.767150
+Harvest-Rate: 47.33%
+Relevante Seiten: 71
+Irrelevante Seiten: 79
+
+
+--- ZWISCHENBERICHT [15:10:27] ---
+Laufzeit: 0:00:19.944595
+Harvest-Rate: 45.50%
+Relevante Seiten: 91
+Irrelevante Seiten: 109
+
+
+--- ZWISCHENBERICHT [15:10:36] ---
+Laufzeit: 0:00:28.180762
+Harvest-Rate: 42.80%
+Relevante Seiten: 107
+Irrelevante Seiten: 143
+
+
+--- ZWISCHENBERICHT [15:10:41] ---
+Laufzeit: 0:00:33.457035
+Harvest-Rate: 39.33%
+Relevante Seiten: 118
+Irrelevante Seiten: 182
+
+
+--- ZWISCHENBERICHT [15:10:47] ---
+Laufzeit: 0:00:39.198363
+Harvest-Rate: 36.29%
+Relevante Seiten: 127
+Irrelevante Seiten: 223
+
+
+--- ZWISCHENBERICHT [15:10:53] ---
+Laufzeit: 0:00:45.245092
+Harvest-Rate: 34.25%
+Relevante Seiten: 137
+Irrelevante Seiten: 263
+
+
+--- ZWISCHENBERICHT [15:10:59] ---
+Laufzeit: 0:00:51.631154
+Harvest-Rate: 32.44%
+Relevante Seiten: 146
+Irrelevante Seiten: 304
+
+
+============================================================
+ABSCHLUSSBERICHT - vectorspace_crawler
+============================================================
+Spider-Name: vectorspace_crawler
+Gesamtlaufzeit: 0:00:53.608493
+Anzahl gecrawlter Seiten: 475
+Anzahl relevanter Seiten: 150
+Anzahl irrelevanter Seiten: 325
+Harvest-Rate: 31.58%
+
+TOP 10 BESTE URLS:
+1. Score: 0.6708 - https://de.wikipedia.org/wiki/Informatik
+2. Score: 0.6628 - https://de.wikipedia.org/wiki/K%C3%BCnstliche_Intelligenz
+3. Score: 0.6530 - https://de.wikipedia.org/wiki/Deutsches_Zentrum_f%C3%BCr_Luft-_und_Raumfahrt
+4. Score: 0.6530 - https://de.wikipedia.org/wiki/Perl_(Programmiersprache)
+5. Score: 0.6530 - https://de.wikipedia.org/wiki/Quellcode
+6. Score: 0.6530 - https://de.wikipedia.org/wiki/Medizin
+7. Score: 0.6530 - https://de.wikipedia.org/wiki/32-Bit-Architektur
+8. Score: 0.6501 - https://de.wikipedia.org/wiki/AIDS
+9. Score: 0.6490 - https://de.wikipedia.org/wiki/Bioinformatik
+10. Score: 0.6360 - https://de.wikipedia.org/wiki/Qt_Designer
+
+TOP 10 MITTELFELD URLS:
+1. Score: 0.5491 - https://de.wikipedia.org/wiki/Speichermodul
+2. Score: 0.5491 - https://de.wikipedia.org/wiki/Meerestiefe
+3. Score: 0.5491 - https://de.wikipedia.org/wiki/Workstation
+4. Score: 0.5491 - https://de.wikipedia.org/wiki/%C3%96NORM_A_1080
+5. Score: 0.5491 - https://de.wikipedia.org/wiki/Internationale_statistische_Klassifikation_der_Krankheiten_und_verwandter_Gesundheitsprobleme
+6. Score: 0.5491 - https://de.wikipedia.org/wiki/Drucker_(Ger%C3%A4t)
+7. Score: 0.5491 - https://de.wikipedia.org/wiki/Dispositive_Daten
+8. Score: 0.5491 - https://de.wikipedia.org/wiki/USB-Stick
+9. Score: 0.5491 - https://de.wikipedia.org/wiki/%C3%96NORM
+10. Score: 0.5491 - https://de.wikipedia.org/wiki/Bathymetrie
+
+TOP 10 SCHLECHTESTE URLS:
+1. Score: 0.4617 - https://de.wikipedia.org/wiki/Furtwangen_im_Schwarzwald
+2. Score: 0.4617 - https://de.wikipedia.org/wiki/Neuronales_Netz
+3. Score: 0.4617 - https://de.wikipedia.org/wiki/Charles_E._Leiserson
+4. Score: 0.4617 - https://de.wikipedia.org/wiki/Hermeneutik
+5. Score: 0.4443 - https://de.wikipedia.org/wiki/Wirtschaftsinformatik
+6. Score: 0.3797 - https://de.wikipedia.org/wiki/Raspberry_Pi
+7. Score: 0.3670 - https://de.wikipedia.org/wiki/Algorithmus
+8. Score: 0.3156 - https://de.wikipedia.org/wiki/Scanline-Algorithmus
+9. Score: 0.3088 - https://de.wikipedia.org/wiki/Indogermanische_Sprachen
+10. Score: 0.2839 - https://de.wikipedia.org/wiki/Quicksort
+
+============================================================
+
+
+--- ZWISCHENBERICHT [15:11:04] ---
+Laufzeit: 0:00:56.831749
+Harvest-Rate: 30.40%
+Relevante Seiten: 152
+Irrelevante Seiten: 348
+

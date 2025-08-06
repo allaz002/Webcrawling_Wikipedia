@@ -1,0 +1,149 @@
+
+============================================================
+CRAWLER KONFIGURATION - vectorspace_crawler
+============================================================
+Strategie: VectorSpaceSpider
+Seed URLs: https://de.wikipedia.org/wiki/
+Batch-Größe: 15
+Max. Seiten: 5000
+Max. relevante Seiten: 150
+Relevanz-Schwellenwert: 4.0
+Max. Laufzeit: 30 Minuten
+Report-Intervall: 30 Sekunden
+
+GEWICHTUNGEN:
+- Link-Gewicht: 0.5
+- Elterndokument-Gewicht: 0.5
+- Titel-Gewicht: 0.4
+- Überschriften-Gewicht: 0.3
+- Paragraphen-Gewicht: 0.3
+============================================================
+
+Themenprofil: KÃ¼nstliche Intelligenz (KI) ist ein Teilgebiet der Informatik, das sich mit der Automatisierung intelligenten Verhaltens und dem maschinellen Lernen befasst. Machine Learning und Deep Learning sind w...
+
+
+--- ZWISCHENBERICHT [15:13:59] ---
+Laufzeit: 0:00:11.831542
+Harvest-Rate: 0.00%
+Relevante Seiten: 0
+Irrelevante Seiten: 50
+
+
+--- ZWISCHENBERICHT [15:14:05] ---
+Laufzeit: 0:00:18.076842
+Harvest-Rate: 0.00%
+Relevante Seiten: 0
+Irrelevante Seiten: 100
+
+
+--- ZWISCHENBERICHT [15:14:14] ---
+Laufzeit: 0:00:27.251348
+Harvest-Rate: 0.00%
+Relevante Seiten: 0
+Irrelevante Seiten: 150
+
+
+--- ZWISCHENBERICHT [15:14:19] ---
+Laufzeit: 0:00:32.601940
+Harvest-Rate: 0.00%
+Relevante Seiten: 0
+Irrelevante Seiten: 200
+
+
+--- ZWISCHENBERICHT [15:14:25] ---
+Laufzeit: 0:00:38.248365
+Harvest-Rate: 0.00%
+Relevante Seiten: 0
+Irrelevante Seiten: 250
+
+
+--- ZWISCHENBERICHT [15:14:32] ---
+Laufzeit: 0:00:45.032298
+Harvest-Rate: 0.00%
+Relevante Seiten: 0
+Irrelevante Seiten: 300
+
+
+--- ZWISCHENBERICHT [15:14:38] ---
+Laufzeit: 0:00:51.769084
+Harvest-Rate: 0.00%
+Relevante Seiten: 0
+Irrelevante Seiten: 350
+
+
+--- ZWISCHENBERICHT [15:14:44] ---
+Laufzeit: 0:00:56.975786
+Harvest-Rate: 0.00%
+Relevante Seiten: 0
+Irrelevante Seiten: 400
+
+
+--- ZWISCHENBERICHT [15:14:48] ---
+Laufzeit: 0:01:01.699326
+Harvest-Rate: 0.00%
+Relevante Seiten: 0
+Irrelevante Seiten: 450
+
+
+--- ZWISCHENBERICHT [15:14:53] ---
+Laufzeit: 0:01:05.986868
+Harvest-Rate: 0.00%
+Relevante Seiten: 0
+Irrelevante Seiten: 500
+
+
+--- ZWISCHENBERICHT [15:14:57] ---
+Laufzeit: 0:01:10.329000
+Harvest-Rate: 0.00%
+Relevante Seiten: 0
+Irrelevante Seiten: 550
+
+
+--- ZWISCHENBERICHT [15:15:02] ---
+Laufzeit: 0:01:14.974749
+Harvest-Rate: 0.00%
+Relevante Seiten: 0
+Irrelevante Seiten: 600
+
+
+--- ZWISCHENBERICHT [15:15:06] ---
+Laufzeit: 0:01:19.557916
+Harvest-Rate: 0.00%
+Relevante Seiten: 0
+Irrelevante Seiten: 650
+
+
+--- ZWISCHENBERICHT [15:15:11] ---
+Laufzeit: 0:01:23.982996
+Harvest-Rate: 0.00%
+Relevante Seiten: 0
+Irrelevante Seiten: 700
+
+
+--- ZWISCHENBERICHT [15:15:17] ---
+Laufzeit: 0:01:30.037698
+Harvest-Rate: 0.00%
+Relevante Seiten: 0
+Irrelevante Seiten: 750
+
+
+--- ZWISCHENBERICHT [15:15:20] ---
+Laufzeit: 0:01:33.722068
+Harvest-Rate: 0.00%
+Relevante Seiten: 0
+Irrelevante Seiten: 800
+
+
+--- ZWISCHENBERICHT [15:15:25] ---
+Laufzeit: 0:01:37.884819
+Harvest-Rate: 0.00%
+Relevante Seiten: 0
+Irrelevante Seiten: 850
+
+
+--- ZWISCHENBERICHT [15:15:29] ---
+Laufzeit: 0:01:42.617411
+Harvest-Rate: 0.00%
+Relevante Seiten: 0
+Irrelevante Seiten: 900
+

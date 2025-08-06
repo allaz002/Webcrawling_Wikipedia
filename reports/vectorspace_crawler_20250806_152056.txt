@@ -1,0 +1,93 @@
+
+============================================================
+CRAWLER KONFIGURATION - vectorspace_crawler
+============================================================
+Strategie: VectorSpaceSpider
+Seed URLs: https://de.wikipedia.org/wiki/
+Batch-Größe: 4
+Max. Seiten: 5000
+Max. relevante Seiten: 30
+Relevanz-Schwellenwert: 0.6
+Max. Laufzeit: 30 Minuten
+Report-Intervall: 30 Sekunden
+
+GEWICHTUNGEN:
+- Link-Gewicht: 0.5
+- Elterndokument-Gewicht: 0.5
+- Titel-Gewicht: 0.4
+- Überschriften-Gewicht: 0.3
+- Paragraphen-Gewicht: 0.3
+============================================================
+
+Themenprofil: KÃ¼nstliche Intelligenz (KI) ist ein Teilgebiet der Informatik, das sich mit der Automatisierung intelligenten Verhaltens und dem maschinellen Lernen befasst. Machine Learning und Deep Learning sind w...
+
+
+--- ZWISCHENBERICHT [15:21:07] ---
+Laufzeit: 0:00:10.198290
+Harvest-Rate: 0.00%
+Relevante Seiten: 0
+Irrelevante Seiten: 50
+
+
+--- ZWISCHENBERICHT [15:21:19] ---
+Laufzeit: 0:00:23.144356
+Harvest-Rate: 0.00%
+Relevante Seiten: 0
+Irrelevante Seiten: 100
+
+
+--- ZWISCHENBERICHT [15:21:29] ---
+Laufzeit: 0:00:32.282384
+Harvest-Rate: 0.00%
+Relevante Seiten: 0
+Irrelevante Seiten: 150
+
+
+--- ZWISCHENBERICHT [15:21:41] ---
+Laufzeit: 0:00:44.605017
+Harvest-Rate: 0.00%
+Relevante Seiten: 0
+Irrelevante Seiten: 200
+
+
+--- ZWISCHENBERICHT [15:21:50] ---
+Laufzeit: 0:00:53.444981
+Harvest-Rate: 0.00%
+Relevante Seiten: 0
+Irrelevante Seiten: 250
+
+
+--- ZWISCHENBERICHT [15:22:00] ---
+Laufzeit: 0:01:03.604973
+Harvest-Rate: 0.00%
+Relevante Seiten: 0
+Irrelevante Seiten: 300
+
+
+--- ZWISCHENBERICHT [15:22:09] ---
+Laufzeit: 0:01:12.190366
+Harvest-Rate: 0.00%
+Relevante Seiten: 0
+Irrelevante Seiten: 350
+
+
+--- ZWISCHENBERICHT [15:22:15] ---
+Laufzeit: 0:01:18.488135
+Harvest-Rate: 0.00%
+Relevante Seiten: 0
+Irrelevante Seiten: 400
+
+
+--- ZWISCHENBERICHT [15:22:22] ---
+Laufzeit: 0:01:25.207345
+Harvest-Rate: 0.00%
+Relevante Seiten: 0
+Irrelevante Seiten: 450
+
+
+--- ZWISCHENBERICHT [15:22:33] ---
+Laufzeit: 0:01:36.297359
+Harvest-Rate: 0.00%
+Relevante Seiten: 0
+Irrelevante Seiten: 500
+

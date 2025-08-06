@@ -1,0 +1,757 @@
+{
+  "spider": "vectorspace_crawler",
+  "timestamp": "20250806_150646",
+  "total_relevant": 150,
+  "pages": [
+    {
+      "url": "https://de.wikipedia.org/wiki/Clustering-Verfahren",
+      "score": 0.7097366043293544,
+      "title": "Clusteranalyse – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Ausrei%C3%9Fer",
+      "score": 0.7088856802260898,
+      "title": "Ausreißer – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Java_(Programmiersprache)",
+      "score": 0.7016879391277372,
+      "title": "Java (Programmiersprache) – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Ad-hoc-Netz",
+      "score": 0.6953371688722156,
+      "title": "Ad-hoc-Netz – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Mustererkennung",
+      "score": 0.6834466815318616,
+      "title": "Mustererkennung – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Lernende_Vektorquantisierung",
+      "score": 0.6751609480994526,
+      "title": "Lernende Vektorquantisierung – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Un%C3%BCberwachtes_Lernen",
+      "score": 0.6713570730993182,
+      "title": "Unüberwachtes Lernen – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Entscheidungsbaum",
+      "score": 0.6708877709387596,
+      "title": "Entscheidungsbaum – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Biostatistik",
+      "score": 0.6631738061274303,
+      "title": "Biostatistik – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Anpassungsg%C3%BCte",
+      "score": 0.6529942057256105,
+      "title": "Anpassungsgüte – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Anpassungstest",
+      "score": 0.6529942057256105,
+      "title": "Anpassungsgüte – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Quelltext",
+      "score": 0.6529942057256104,
+      "title": "Quelltext – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Tabelle",
+      "score": 0.6529942057256104,
+      "title": "Tabelle – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Rassentheorie",
+      "score": 0.647084148066781,
+      "title": "Rassentheorie – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Mathematische_Optimierung",
+      "score": 0.6421252834505349,
+      "title": "Mathematische Optimierung – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Optimierungsverfahren",
+      "score": 0.6421252834505349,
+      "title": "Mathematische Optimierung – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/J%C3%BCrgen_Schmidhuber",
+      "score": 0.6360188027707555,
+      "title": "Jürgen Schmidhuber – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Zuordnungstabelle",
+      "score": 0.6360188027707555,
+      "title": "Zuordnungstabelle – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Biometrie",
+      "score": 0.6360188027707555,
+      "title": "Biometrie – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Komplexit%C3%A4t_(Informatik)",
+      "score": 0.6347530874384859,
+      "title": "Komplexität (Informatik) – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Closure_(Funktion)",
+      "score": 0.6260389426138745,
+      "title": "Closure (Funktion) – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Auszeichnungssprache",
+      "score": 0.6260389426138745,
+      "title": "Auszeichnungssprache – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Routing",
+      "score": 0.62389860721175,
+      "title": "Routing – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/%C3%9Cberwachtes_Lernen",
+      "score": 0.6233188544021107,
+      "title": "Überwachtes Lernen – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Wahrscheinlichkeitsdichte",
+      "score": 0.6175637907926896,
+      "title": "Wahrscheinlichkeitsdichtefunktion – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Rechenzeit",
+      "score": 0.6175637907926896,
+      "title": "Laufzeit (Informatik) – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Regressionsanalyse",
+      "score": 0.6134783050952876,
+      "title": "Regressionsanalyse – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Diskriminanzanalyse",
+      "score": 0.6076795808137692,
+      "title": "Diskriminanzanalyse – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Fitnessfunktion",
+      "score": 0.6076795808137692,
+      "title": "Fitnessfunktion – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Bayes-Klassifikator",
+      "score": 0.5900468726392808,
+      "title": "Bayes-Klassifikator – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Programmiersprache",
+      "score": 0.5890476364162976,
+      "title": "Programmiersprache – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Baum_(Informatik)",
+      "score": 0.5890476364162976,
+      "title": "Datenstruktur – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Klassifikation_der_Berufe_2010",
+      "score": 0.5801559414528517,
+      "title": "Klassifikation der Berufe 2010 – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Bilderkennung",
+      "score": 0.5723378846971153,
+      "title": "Bilderkennung – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Erwartungstreue_Sch%C3%A4tzung_der_Varianz_der_St%C3%B6rgr%C3%B6%C3%9Fen",
+      "score": 0.5723378846971153,
+      "title": "Erwartungstreue Schätzung der Varianz der Störgrößen – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Hierarchisch_strukturierte_Daten",
+      "score": 0.5689886668853925,
+      "title": "Hierarchisch strukturierte Daten – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Hyperparameteroptimierung",
+      "score": 0.567740420976129,
+      "title": "Hyperparameteroptimierung – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Klassifizierungen_von_Musikinstrumenten",
+      "score": 0.5645464217009535,
+      "title": "Klassifizierungen von Musikinstrumenten – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Maschinelles_Lernen",
+      "score": 0.5622437388395707,
+      "title": "Maschinelles Lernen – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Balanced_iterative_reducing_and_clustering_using_hierarchies",
+      "score": 0.5616976265931148,
+      "title": "BIRCH – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Qualitative_Daten",
+      "score": 0.5586417808311845,
+      "title": "Qualitative Daten – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Python_(Programmiersprache)",
+      "score": 0.5537933053413595,
+      "title": "Python (Programmiersprache) – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Klassifikation",
+      "score": 0.5491004867761125,
+      "title": "Klassifikation – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Colon-Klassifikation",
+      "score": 0.5491004867761125,
+      "title": "Colon-Klassifikation – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Bedingte_Wahrscheinlichkeit",
+      "score": 0.5491004867761125,
+      "title": "Bedingte Wahrscheinlichkeit – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Autokorrelation",
+      "score": 0.5491004867761125,
+      "title": "Autokorrelation – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/LKW",
+      "score": 0.5491004867761125,
+      "title": "Lastkraftwagen – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Orthogonale_Regression",
+      "score": 0.5491004867761125,
+      "title": "Orthogonale Regression – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Wikipedia:Kategorien",
+      "score": 0.5491004867761125,
+      "title": "Wikipedia:Kategorien – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Matthews_Korrelationskoeffizient",
+      "score": 0.5491004867761125,
+      "title": "Korrelationskoeffizient nach Bravais-Pearson – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Anaconda_(Python-Distribution)",
+      "score": 0.5491004867761125,
+      "title": "Anaconda (Python-Distribution) – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/ArXiv",
+      "score": 0.5491004867761125,
+      "title": "arXiv – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Ethik_der_K%C3%BCnstlichen_Intelligenz",
+      "score": 0.5491004867761125,
+      "title": "Ethik der künstlichen Intelligenz – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Abstraktion",
+      "score": 0.5491004867761125,
+      "title": "Abstraktion – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Yoshua_Bengio",
+      "score": 0.5491004867761125,
+      "title": "Yoshua Bengio – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Qualitative_Sozialforschung",
+      "score": 0.5491004867761125,
+      "title": "Qualitative Sozialforschung – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Guido_van_Rossum",
+      "score": 0.5491004867761125,
+      "title": "Guido van Rossum – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Flask",
+      "score": 0.5491004867761125,
+      "title": "Flask – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Donald_Knuth",
+      "score": 0.5491004867761125,
+      "title": "Donald E. Knuth – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Standardfehler_der_Regression",
+      "score": 0.5491004867761125,
+      "title": "Standardfehler der Regression – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Parser",
+      "score": 0.5491004867761125,
+      "title": "Parser – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Algol_68",
+      "score": 0.5491004867761125,
+      "title": "Algol 68 – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Bitumen",
+      "score": 0.5491004867761125,
+      "title": "Bitumen – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Tk_(Toolkit)",
+      "score": 0.5491004867761125,
+      "title": "Tk (Toolkit) – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Allgemeine_Systematik_f%C3%BCr_%C3%96ffentliche_Bibliotheken",
+      "score": 0.5491004867761125,
+      "title": "Allgemeine Systematik für Öffentliche Bibliotheken – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Cascading_Style_Sheets",
+      "score": 0.5491004867761125,
+      "title": "Cascading Style Sheets – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Korrigierte_Stichprobenvarianz",
+      "score": 0.5491004867761125,
+      "title": "Empirische Varianz – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/KldB",
+      "score": 0.5491004867761125,
+      "title": "Klassifizierung der Berufe – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Clojure",
+      "score": 0.5491004867761125,
+      "title": "Clojure – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Klassifikation_f%C3%BCr_Allgemeinbibliotheken",
+      "score": 0.5491004867761125,
+      "title": "Klassifikation für Allgemeinbibliotheken – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Softwarebibliothek",
+      "score": 0.5491004867761125,
+      "title": "Programmbibliothek – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/The_Economist",
+      "score": 0.5491004867761125,
+      "title": "The Economist – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Stutzung",
+      "score": 0.5491004867761125,
+      "title": "Stutzung – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Versicherung_(Kollektiv)",
+      "score": 0.5491004867761125,
+      "title": "Versicherung (Kollektiv) – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Deutsche_Wiedervereinigung",
+      "score": 0.5491004867761125,
+      "title": "Deutsche Wiedervereinigung – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Zensierte_Daten",
+      "score": 0.5491004867761125,
+      "title": "Zensierte Daten – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Abstrakter_Datentyp",
+      "score": 0.5491004867761125,
+      "title": "Abstrakter Datentyp – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Analytical_Engine",
+      "score": 0.5491004867761125,
+      "title": "Analytical Engine – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Sensornetz",
+      "score": 0.5491004867761125,
+      "title": "Sensornetz – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/USA",
+      "score": 0.5491004867761125,
+      "title": "Vereinigte Staaten – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Urliste",
+      "score": 0.5491004867761125,
+      "title": "Urliste – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Verteilungsfunktion",
+      "score": 0.5491004867761125,
+      "title": "Verteilungsfunktion – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/D%C3%BCnnbesetzte_Matrix",
+      "score": 0.5491004867761125,
+      "title": "Dünnbesetzte Matrix – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Ada_Lovelace",
+      "score": 0.5491004867761125,
+      "title": "Ada Lovelace – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Bedingte_H%C3%A4ufigkeit",
+      "score": 0.5491004867761125,
+      "title": "Häufigkeit – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Anderson-Darling-Test",
+      "score": 0.5491004867761125,
+      "title": "Anderson-Darling-Test – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Gepoolte_Daten",
+      "score": 0.5491004867761125,
+      "title": "Gepoolte Daten – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Tabellenkalkulation",
+      "score": 0.5491004867761125,
+      "title": "Tabellenkalkulation – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Polynomklassifikator",
+      "score": 0.5491004867761125,
+      "title": "Polynomklassifikator – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Beobachtung",
+      "score": 0.5491004867761125,
+      "title": "Beobachtung – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Alphonse_Bertillon",
+      "score": 0.5491004867761125,
+      "title": "Alphonse Bertillon – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Alphanumerisch",
+      "score": 0.5491004867761125,
+      "title": "Alphanumerische Zeichen – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/L%C3%A4ngsschnitterhebung",
+      "score": 0.5491004867761125,
+      "title": "Längsschnittstudie – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Adaptives_Routing",
+      "score": 0.5491004867761125,
+      "title": "Adaptives Routing – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Untersuchungseinheit",
+      "score": 0.5491004867761125,
+      "title": "Grundgesamtheit – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Steuerger%C3%A4t",
+      "score": 0.5491004867761125,
+      "title": "Steuergerät – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Best%C3%A4rkendes_Lernen_durch_menschlich_beeinflusste_R%C3%BCckkopplung",
+      "score": 0.5491004867761125,
+      "title": "Reinforcement learning from human feedback – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Retrospektive_Studie",
+      "score": 0.5491004867761125,
+      "title": "Retrospektive Studie – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Nat%C3%BCrlicher_Logarithmus",
+      "score": 0.5491004867761125,
+      "title": "Logarithmus – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Prospektive_Studie",
+      "score": 0.5491004867761125,
+      "title": "Prospektive Studie – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Panelforschung",
+      "score": 0.5491004867761125,
+      "title": "Paneldaten – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Periodeneffekt",
+      "score": 0.5491004867761125,
+      "title": "Kohortenstudie – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Randomisierte_kontrollierte_Studie",
+      "score": 0.5491004867761125,
+      "title": "Randomisierte kontrollierte Studie – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Deming-Regression",
+      "score": 0.5487208802673474,
+      "title": "Deming-Regression – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Genetischer_Algorithmus",
+      "score": 0.5471578838540652,
+      "title": "Evolutionärer Algorithmus – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Evolution%C3%A4rer_Algorithmus",
+      "score": 0.5471578838540652,
+      "title": "Evolutionärer Algorithmus – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Computer",
+      "score": 0.5463341494889868,
+      "title": "Computer – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Datenverarbeitung",
+      "score": 0.5463341494889868,
+      "title": "Datenverarbeitung – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Klasseneinteilung_(Statistik)",
+      "score": 0.5453521415177223,
+      "title": "Klasseneinteilung (Statistik) – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Mittleres_Residuenquadrat",
+      "score": 0.5453521415177223,
+      "title": "Residuenquadratsumme – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Rekurrentes_neuronales_Netz",
+      "score": 0.5386366368831865,
+      "title": "Rekurrentes neuronales Netz – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/John_E._Hopcroft",
+      "score": 0.5348259312838876,
+      "title": "John E. Hopcroft – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Logistische_Regression",
+      "score": 0.5320716054976063,
+      "title": "Logistische Regression – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Multiple_lineare_Regression",
+      "score": 0.5312870595118188,
+      "title": "Multiple lineare Regression – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Lineare_Regression",
+      "score": 0.5304849561316818,
+      "title": "Lineare Regression – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Gradientenverfahren",
+      "score": 0.5193071778680677,
+      "title": "Gradientenverfahren – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Automatische_Klassifikation",
+      "score": 0.5193071778680677,
+      "title": "Klassifikationsverfahren – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Robuste_Statistik",
+      "score": 0.5193071778680677,
+      "title": "Robuste Schätzverfahren – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/International_Standard_Classification_of_Occupations",
+      "score": 0.5193071778680677,
+      "title": "International Standard Classification of Occupations – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Mercedes-Benz_LP_333",
+      "score": 0.5193071778680677,
+      "title": "Mercedes-Benz LP 333 – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/S._R._Ranganathan",
+      "score": 0.5193071778680677,
+      "title": "S. R. Ranganathan – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Klimaver%C3%A4nderung",
+      "score": 0.5193071778680677,
+      "title": "Klimawandel – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Differentialrechnung",
+      "score": 0.5193071778680677,
+      "title": "Differentialrechnung – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/%C3%9Cberanpassung",
+      "score": 0.5070796176275378,
+      "title": "Überanpassung – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/N%C3%A4chste-Nachbarn-Klassifikation",
+      "score": 0.4911304059638447,
+      "title": "Nächste-Nachbarn-Klassifikation – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Aufkl%C3%A4rung",
+      "score": 0.4911304059638447,
+      "title": "Aufklärung – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Vorrangwarteschlange",
+      "score": 0.4888517768195403,
+      "title": "Vorrangwarteschlange – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/K%C3%BCnstliches_neuronales_Netz",
+      "score": 0.46635919539643983,
+      "title": "Künstliches neuronales Netz – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Abh%C3%A4ngige_Variable",
+      "score": 0.46173663094410267,
+      "title": "Abhängige und unabhängige Variable – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Unabh%C3%A4ngige_Variable",
+      "score": 0.46173663094410267,
+      "title": "Abhängige und unabhängige Variable – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Halteproblem",
+      "score": 0.46173663094410267,
+      "title": "Halteproblem – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Ozonloch",
+      "score": 0.4617366309441026,
+      "title": "Ozonloch – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Balancierter_Baum",
+      "score": 0.4617366309441026,
+      "title": "Balancierter Baum – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Leerraum",
+      "score": 0.4617366309441026,
+      "title": "Leerraum – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Objektivit%C3%A4t",
+      "score": 0.4617366309441026,
+      "title": "Objektivität – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Wei%C3%9Flichtinterferometrie",
+      "score": 0.4617366309441026,
+      "title": "Weißlichtinterferometrie – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Spezifikation",
+      "score": 0.4617366309441026,
+      "title": "Spezifikation – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Zul%C3%A4ssige_Menge",
+      "score": 0.4617366309441026,
+      "title": "Optimierungsproblem – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Charles_E._Leiserson",
+      "score": 0.4617366309441026,
+      "title": "Charles E. Leiserson – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/OPTICS",
+      "score": 0.43668354428478123,
+      "title": "OPTICS – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Online-Algorithmus",
+      "score": 0.3862763510630675,
+      "title": "Online-Algorithmus – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/PRESS-Statistik",
+      "score": 0.37700638045494705,
+      "title": "PRESS-Statistik – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Mikroprozessor",
+      "score": 0.3672056269893592,
+      "title": "Mikroprozessor – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Algorithmus",
+      "score": 0.3670338794749086,
+      "title": "Algorithmus – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Klassisches_lineares_Modell_der_Normalregression",
+      "score": 0.360878186189822,
+      "title": "Klassisches lineares Modell der Normalregression – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Best%C3%A4rkendes_Lernen",
+      "score": 0.3360900161340426,
+      "title": "Bestärkendes Lernen – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Prognoseintervall",
+      "score": 0.3346318905770502,
+      "title": "Prognoseintervall – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/%C3%96konometrie",
+      "score": 0.2905857294915733,
+      "title": "Ökonometrie – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Allgemeines_lineares_Modell",
+      "score": 0.27221740459238797,
+      "title": "Allgemeines lineares Modell – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Graphentheorie",
+      "score": 0.2704204918505864,
+      "title": "Graphentheorie – Wikipedia"
+    }
+  ]
+}

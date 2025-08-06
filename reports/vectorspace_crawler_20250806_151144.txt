@@ -1,0 +1,142 @@
+
+============================================================
+CRAWLER KONFIGURATION - vectorspace_crawler
+============================================================
+Strategie: VectorSpaceSpider
+Seed URLs: https://de.wikipedia.org/wiki/
+Batch-Größe: 15
+Max. Seiten: 500
+Max. relevante Seiten: 150
+Relevanz-Schwellenwert: 0.25
+Max. Laufzeit: 30 Minuten
+Report-Intervall: 30 Sekunden
+
+GEWICHTUNGEN:
+- Link-Gewicht: 0.5
+- Elterndokument-Gewicht: 0.5
+- Titel-Gewicht: 0.4
+- Überschriften-Gewicht: 0.3
+- Paragraphen-Gewicht: 0.3
+============================================================
+
+Themenprofil: KÃ¼nstliche Intelligenz (KI) ist ein Teilgebiet der Informatik, das sich mit der Automatisierung intelligenten Verhaltens und dem maschinellen Lernen befasst. Machine Learning und Deep Learning sind w...
+
+
+--- ZWISCHENBERICHT [15:11:54] ---
+Laufzeit: 0:00:09.734123
+Harvest-Rate: 8.00%
+Relevante Seiten: 4
+Irrelevante Seiten: 46
+
+
+--- ZWISCHENBERICHT [15:12:04] ---
+Laufzeit: 0:00:19.762113
+Harvest-Rate: 6.00%
+Relevante Seiten: 6
+Irrelevante Seiten: 94
+
+
+--- ZWISCHENBERICHT [15:12:11] ---
+Laufzeit: 0:00:27.055290
+Harvest-Rate: 6.67%
+Relevante Seiten: 10
+Irrelevante Seiten: 140
+
+
+--- ZWISCHENBERICHT [15:12:19] ---
+Laufzeit: 0:00:35.417264
+Harvest-Rate: 7.50%
+Relevante Seiten: 15
+Irrelevante Seiten: 185
+
+
+--- ZWISCHENBERICHT [15:12:27] ---
+Laufzeit: 0:00:43.428683
+Harvest-Rate: 8.40%
+Relevante Seiten: 21
+Irrelevante Seiten: 229
+
+
+--- ZWISCHENBERICHT [15:12:34] ---
+Laufzeit: 0:00:50.176493
+Harvest-Rate: 8.00%
+Relevante Seiten: 24
+Irrelevante Seiten: 276
+
+
+--- ZWISCHENBERICHT [15:12:40] ---
+Laufzeit: 0:00:55.545892
+Harvest-Rate: 8.29%
+Relevante Seiten: 29
+Irrelevante Seiten: 321
+
+
+--- ZWISCHENBERICHT [15:12:47] ---
+Laufzeit: 0:01:02.621753
+Harvest-Rate: 8.50%
+Relevante Seiten: 34
+Irrelevante Seiten: 366
+
+
+--- ZWISCHENBERICHT [15:12:51] ---
+Laufzeit: 0:01:06.751761
+Harvest-Rate: 8.22%
+Relevante Seiten: 37
+Irrelevante Seiten: 413
+
+
+--- ZWISCHENBERICHT [15:12:56] ---
+Laufzeit: 0:01:12.165788
+Harvest-Rate: 8.20%
+Relevante Seiten: 41
+Irrelevante Seiten: 459
+
+
+============================================================
+ABSCHLUSSBERICHT - vectorspace_crawler
+============================================================
+Spider-Name: vectorspace_crawler
+Gesamtlaufzeit: 0:01:12.166290
+Anzahl gecrawlter Seiten: 500
+Anzahl relevanter Seiten: 41
+Anzahl irrelevanter Seiten: 459
+Harvest-Rate: 8.20%
+
+TOP 10 BESTE URLS:
+1. Score: 0.5491 - https://de.wikipedia.org/wiki/%C3%84thiopischer_Kalender
+2. Score: 0.5491 - https://de.wikipedia.org/wiki/AC_Mailand
+3. Score: 0.5491 - https://de.wikipedia.org/wiki/Aeropuerto_de_Alicante
+4. Score: 0.5491 - https://de.wikipedia.org/wiki/Atlantischer_Ozean
+5. Score: 0.5491 - https://de.wikipedia.org/wiki/UEFA_Champions_League
+6. Score: 0.5491 - https://de.wikipedia.org/wiki/AT%26T
+7. Score: 0.5491 - https://de.wikipedia.org/wiki/Diagnose
+8. Score: 0.5491 - https://de.wikipedia.org/wiki/1._Oktober
+9. Score: 0.5491 - https://de.wikipedia.org/wiki/Internationale_statistische_Klassifikation_der_Krankheiten_und_verwandter_Gesundheitsprobleme
+10. Score: 0.5491 - https://de.wikipedia.org/wiki/Flughafen_Berlin-Tempelhof
+
+TOP 10 MITTELFELD URLS:
+1. Score: 0.5491 - https://de.wikipedia.org/wiki/Cluster_(Physik)
+2. Score: 0.5491 - https://de.wikipedia.org/wiki/Sprachfamilie
+3. Score: 0.5491 - https://de.wikipedia.org/wiki/Aram%C3%A4ische_Sprachen
+4. Score: 0.5491 - https://de.wikipedia.org/wiki/Aborigines
+5. Score: 0.5491 - https://de.wikipedia.org/wiki/Liebesbeziehung
+6. Score: 0.5491 - https://de.wikipedia.org/wiki/%C3%9Cberfall_auf_Polen
+7. Score: 0.5491 - https://de.wikipedia.org/wiki/Adoption
+8. Score: 0.5491 - https://de.wikipedia.org/wiki/Bundesrepublik_Deutschland
+9. Score: 0.5491 - https://de.wikipedia.org/wiki/Alpine_F1_Team
+10. Score: 0.5491 - https://de.wikipedia.org/wiki/Zweiter_Weltkrieg
+
+TOP 10 SCHLECHTESTE URLS:
+1. Score: 0.5491 - https://de.wikipedia.org/wiki/Alexander_Van_der_Bellen
+2. Score: 0.5491 - https://de.wikipedia.org/wiki/Nekrolog_(Totenverzeichnis)
+3. Score: 0.5491 - https://de.wikipedia.org/wiki/Daten
+4. Score: 0.5193 - https://de.wikipedia.org/wiki/Demographie
+5. Score: 0.5193 - https://de.wikipedia.org/wiki/%C3%96ffentlicher_Personennahverkehr
+6. Score: 0.5193 - https://de.wikipedia.org/wiki/Afroasiatische_Sprachen
+7. Score: 0.4962 - https://de.wikipedia.org/wiki/U-Bahn_Berlin
+8. Score: 0.4090 - https://de.wikipedia.org/wiki/BMW_8er_(2018)
+9. Score: 0.3672 - https://de.wikipedia.org/wiki/DDR
+10. Score: 0.3672 - https://de.wikipedia.org/wiki/Deutsche_Demokratische_Republik
+
+============================================================
+

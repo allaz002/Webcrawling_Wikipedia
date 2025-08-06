@@ -11,7 +11,8 @@ import configparser
 from bs4 import BeautifulSoup
 import re
 from pathlib import Path
-import spacy
+import nltk
+from nltk.corpus import stopwords
 
 
 class BaseTopicalSpider(scrapy.Spider):
@@ -41,20 +42,18 @@ class BaseTopicalSpider(scrapy.Spider):
         self.report_pages_interval = int(self.config['REPORTING']['REPORT_PAGES_INTERVAL'])
         self.report_time_interval = int(self.config['REPORTING']['REPORT_TIME_INTERVAL_SECONDS'])
 
-        # Gewichtungen
+        # Gewichtungen für Link-Relevanz
         self.link_weight = float(self.config['WEIGHTS']['LINK_WEIGHT'])
         self.parent_weight = float(self.config['WEIGHTS']['PARENT_WEIGHT'])
-        self.title_weight = float(self.config['WEIGHTS']['TITLE_WEIGHT'])
-        self.heading_weight = float(self.config['WEIGHTS']['HEADING_WEIGHT'])
-        self.paragraph_weight = float(self.config['WEIGHTS']['PARAGRAPH_WEIGHT'])
 
-        # SpaCy deutsches Modell für Stoppwörter laden
+        # NLTK deutsche Stoppwörter laden
         try:
-            self.nlp = spacy.load("de_core_news_sm")
-        except:
-            print("Warnung: SpaCy Modell 'de_core_news_sm' nicht gefunden.")
-            print("Installation mit: python -m spacy download de_core_news_sm")
-            self.nlp = None
+            nltk.data.find('corpora/stopwords')
+            self.stop_words = set(stopwords.words('german'))
+        except LookupError:
+            print("Warnung: NLTK Stoppwörter nicht gefunden.")
+            print("Installation mit: nltk.download('stopwords')")
+            self.stop_words = set()
 
         # Seed URLs
         self.start_urls = [url.strip() for url in self.config['CRAWLER']['SEED_URLS'].split(',')]
@@ -91,9 +90,9 @@ class BaseTopicalSpider(scrapy.Spider):
     def print_config(self):
         """Ausgabe der Konfiguration beim Start"""
         config_text = f"""
-{'='*60}
+{'=' * 60}
 CRAWLER KONFIGURATION - {self.name}
-{'='*60}
+{'=' * 60}
 Strategie: {self.__class__.__name__}
 Seed URLs: {', '.join(self.start_urls)}
 Batch-Größe: {self.batch_size}
@@ -106,10 +105,7 @@ Report-Intervall: {self.report_interval} Sekunden
 GEWICHTUNGEN:
 - Link-Gewicht: {self.link_weight}
 - Elterndokument-Gewicht: {self.parent_weight}
-- Titel-Gewicht: {self.title_weight}
-- Überschriften-Gewicht: {self.heading_weight}
-- Paragraphen-Gewicht: {self.paragraph_weight}
-{'='*60}
+{'=' * 60}
 """
         print(config_text)
         self.write_to_report(config_text)
@@ -216,21 +212,15 @@ GEWICHTUNGEN:
         return self.link_weight * anchor_score + self.parent_weight * parent_relevance
 
     def calculate_parent_relevance(self, title, headings, paragraphs):
-        """Berechnet gewichtete Elterndokument-Relevanz"""
-        title_score = self.calculate_text_relevance(title)
-        heading_score = self.calculate_text_relevance(headings)
-        paragraph_score = self.calculate_text_relevance(paragraphs)
-
-        return (self.title_weight * title_score +
-                self.heading_weight * heading_score +
-                self.paragraph_weight * paragraph_score)
+        """Abstrakte Methode - muss von Subklassen implementiert werden"""
+        raise NotImplementedError("Subklassen müssen calculate_parent_relevance implementieren")
 
     def calculate_text_relevance(self, text):
         """Abstrakte Methode - wird von Subklassen implementiert"""
         raise NotImplementedError("Subklassen müssen calculate_text_relevance implementieren")
 
     def preprocess_text(self, text):
-        """Textvorverarbeitung: Case Folding und Stoppwort-Entfernung"""
+        """Textvorverarbeitung: Case Folding und Stoppwort-Entfernung mit NLTK"""
         # Case Folding
         text = text.lower()
 
@@ -240,10 +230,9 @@ GEWICHTUNGEN:
         # Tokenisierung
         tokens = text.split()
 
-        # Stoppwort-Entfernung mit SpaCy
-        if self.nlp:
-            # SpaCy deutsche Stoppwörter verwenden
-            tokens = [t for t in tokens if t not in self.nlp.Defaults.stop_words and len(t) > 2]
+        # Stoppwort-Entfernung mit NLTK
+        if self.stop_words:
+            tokens = [t for t in tokens if t not in self.stop_words and len(t) > 2]
         else:
             # Fallback ohne Stoppwort-Entfernung
             tokens = [t for t in tokens if len(t) > 2]
@@ -342,13 +331,13 @@ Irrelevante Seiten: {self.stats['irrelevant_pages']}
         # Top 10, Mittelfeld 10, Bottom 10
         top_10 = sorted_pages[:10] if len(sorted_pages) >= 10 else sorted_pages
         middle_start = max(0, len(sorted_pages) // 2 - 5)
-        middle_10 = sorted_pages[middle_start:middle_start+10] if len(sorted_pages) >= 20 else []
+        middle_10 = sorted_pages[middle_start:middle_start + 10] if len(sorted_pages) >= 20 else []
         bottom_10 = sorted_pages[-10:] if len(sorted_pages) >= 10 else sorted_pages[-len(sorted_pages):]
 
         report = f"""
-{'='*60}
+{'=' * 60}
 ABSCHLUSSBERICHT - {self.name}
-{'='*60}
+{'=' * 60}
 Spider-Name: {self.name}
 Gesamtlaufzeit: {runtime}
 Anzahl gecrawlter Seiten: {self.stats['total_crawled']}
@@ -371,7 +360,7 @@ TOP 10 BESTE URLS:
             for i, page in enumerate(bottom_10, 1):
                 report += f"{i}. Score: {page['score']:.4f} - {page['url']}\n"
 
-        report += f"\n{'='*60}\n"
+        report += f"\n{'=' * 60}\n"
 
         print(report)
         self.write_to_report(report)

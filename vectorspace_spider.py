@@ -7,7 +7,7 @@ import numpy as np
 
 class TfNormVectorizer:
     """TF-Norm Vektorisierer: f_t,d / max_t' f_t',d"""
-    
+
     def __init__(self, vocabulary=None, max_features=1000, ngram_range=(1, 2), min_df=1, max_df=0.95):
         # Wenn Vokabular übergeben, verwende es
         if vocabulary:
@@ -56,15 +56,15 @@ class VectorSpaceSpider(BaseTopicalSpider):
         self.mode = self.config['VECTORSPACE'].get('MODE', 'tf_norm').lower()
 
         # Lade Multiplikatoren aus Konfiguration
-        self.title_multiplier = int(self.config['MULTIPLIERS']['TITLE_MULTIPLIER'])
-        self.heading_multiplier = int(self.config['MULTIPLIERS']['HEADING_MULTIPLIER'])
-        self.paragraph_multiplier = int(self.config['MULTIPLIERS']['PARAGRAPH_MULTIPLIER'])
+        self.title_multiplier = int(self.config['VECTORSPACE']['TITLE_MULTIPLIER'])
+        self.heading_multiplier = int(self.config['VECTORSPACE']['HEADING_MULTIPLIER'])
+        self.paragraph_multiplier = int(self.config['VECTORSPACE']['PARAGRAPH_MULTIPLIER'])
 
         # Initialisiere Vectorizer basierend auf Modus
         if self.mode == 'tf_norm':
             # Verwende Keyword-Vokabular für TF-Norm
             keywords = [kw.strip().lower() for kw in
-                       self.config['KEYWORDS']['KEYWORDS'].split(',')]
+                        self.config['KEYWORD']['KEYWORDS'].split(',')]
             # Erstelle Vokabular-Dictionary für scikit-learn
             vocabulary = {keyword: idx for idx, keyword in enumerate(keywords)}
 

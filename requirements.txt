@@ -10,10 +10,13 @@ scikit-learn>=1.3.0
 numpy>=1.24.0
 
 # NLP & Stoppwörter
-spacy>=3.7.0
+nltk>=3.8.0
 
 # Konfiguration
 configparser>=6.0.0
+
+# Für Trainingsdaten-Skript
+requests>=2.31.0
 
 # Optional: Für bessere Performance
 twisted>=23.0.0

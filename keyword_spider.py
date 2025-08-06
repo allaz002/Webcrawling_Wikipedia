@@ -1,6 +1,5 @@
 from base_spider import BaseTopicalSpider
-import re
-from spacy.matcher import PhraseMatcher
+from collections import Counter
 
 
 class KeywordSpider(BaseTopicalSpider):
@@ -11,33 +10,30 @@ class KeywordSpider(BaseTopicalSpider):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
 
-        # Lade Keywords aus Konfiguration
-        self.keywords = [kw.strip().lower() for kw in
-                        self.config['KEYWORDS']['KEYWORDS'].split(',')]
+        # Lade Keywords aus Konfiguration (nur Einzelwörter für Performance)
+        keywords_raw = [kw.strip().lower() for kw in
+                        self.config['KEYWORD']['KEYWORDS'].split(',')]
+        # Filtere nur Einzelwort-Keywords
+        self.keywords = [kw for kw in keywords_raw if ' ' not in kw]
 
         # Lade Multiplikatoren aus Konfiguration
-        self.title_multiplier = int(self.config['MULTIPLIERS']['TITLE_MULTIPLIER'])
-        self.heading_multiplier = int(self.config['MULTIPLIERS']['HEADING_MULTIPLIER'])
-        self.paragraph_multiplier = int(self.config['MULTIPLIERS']['PARAGRAPH_MULTIPLIER'])
+        self.title_multiplier = int(self.config['KEYWORD']['TITLE_MULTIPLIER'])
+        self.heading_multiplier = int(self.config['KEYWORD']['HEADING_MULTIPLIER'])
+        self.paragraph_multiplier = int(self.config['KEYWORD']['PARAGRAPH_MULTIPLIER'])
 
-        # Initialisiere SpaCy PhraseMatcher
-        if self.nlp:
-            self.matcher = PhraseMatcher(self.nlp.vocab, attr="LOWER")
-            # Füge Keywords als Patterns hinzu
-            patterns = [self.nlp.make_doc(keyword) for keyword in self.keywords]
-            self.matcher.add("KEYWORDS", patterns)
-        else:
-            self.matcher = None
+        # Lade Normalisierungsfaktoren aus Konfiguration
+        self.text_norm_factor = float(self.config['KEYWORD']['TEXT_NORM_FACTOR'])
+        self.parent_norm_factor = float(self.config['KEYWORD']['PARENT_NORM_FACTOR'])
 
-        print(f"Keywords: {', '.join(self.keywords)}")
+        print(f"Keywords (Einzelwörter): {', '.join(self.keywords)}")
         self.write_to_report(f"Keywords: {', '.join(self.keywords)}\n")
 
     def calculate_text_relevance(self, text):
         """
-        Berechnet Relevanz basierend auf Keyword-Frequenz mit SpaCy PhraseMatcher
+        Berechnet Relevanz basierend auf Keyword-Frequenz mit Python-Bordmitteln
         Höhere Anzahl von Keyword-Treffern = höherer Score
         """
-        if not text or not self.matcher:
+        if not text:
             return 0.0
 
         # Textvorverarbeitung
@@ -46,34 +42,28 @@ class KeywordSpider(BaseTopicalSpider):
         if not processed_text:
             return 0.0
 
-        # Erstelle SpaCy Doc
-        doc = self.nlp(processed_text)
-
-        # Finde alle Keyword-Matches
-        matches = self.matcher(doc)
-        total_matches = len(matches)
-
-        # Berechne Wortanzahl
-        word_count = len([token for token in doc if not token.is_space])
+        # Tokenisiere und zähle mit Counter
+        words = processed_text.split()
+        word_count = len(words)
 
         if word_count == 0:
             return 0.0
 
+        # Zähle Keyword-Treffer effizient mit Counter
+        word_counter = Counter(words)
+        total_matches = sum(word_counter[keyword] for keyword in self.keywords)
+
         # Normalisiere Score (Treffer pro 100 Wörter)
         normalized_score = (total_matches / word_count) * 100
 
-        # Realistischere Normalisierung: 2 Treffer pro 100 Wörter = Score 1.0
-        # Die meisten relevanten Texte haben 0.5-2 Treffer pro 100 Wörter
-        return min(1.0, normalized_score / 2)
+        # Konfigurierbare Normalisierung
+        return min(1.0, normalized_score / self.text_norm_factor)
 
     def calculate_parent_relevance(self, title, headings, paragraphs):
         """
-        Optimierte Elterndokument-Bewertung nur mit Multiplikatoren
+        Optimierte Elterndokument-Bewertung mit Python-Bordmitteln
         Berechnet gewichtete Trefferanzahl / gewichtete Wortanzahl
         """
-        if not self.matcher:
-            return 0.0
-
         total_weighted_matches = 0
         total_weighted_words = 0
 
@@ -81,31 +71,34 @@ class KeywordSpider(BaseTopicalSpider):
         if title:
             processed_title = self.preprocess_text(title)
             if processed_title:
-                doc = self.nlp(processed_title)
-                matches = len(self.matcher(doc))
-                words = len([token for token in doc if not token.is_space])
+                words = processed_title.split()
+                word_counter = Counter(words)
+                matches = sum(word_counter[keyword] for keyword in self.keywords)
+                word_count = len(words)
                 total_weighted_matches += matches * self.title_multiplier
-                total_weighted_words += words * self.title_multiplier
+                total_weighted_words += word_count * self.title_multiplier
 
         # Verarbeite Überschriften
         if headings:
             processed_headings = self.preprocess_text(headings)
             if processed_headings:
-                doc = self.nlp(processed_headings)
-                matches = len(self.matcher(doc))
-                words = len([token for token in doc if not token.is_space])
+                words = processed_headings.split()
+                word_counter = Counter(words)
+                matches = sum(word_counter[keyword] for keyword in self.keywords)
+                word_count = len(words)
                 total_weighted_matches += matches * self.heading_multiplier
-                total_weighted_words += words * self.heading_multiplier
+                total_weighted_words += word_count * self.heading_multiplier
 
         # Verarbeite Paragraphen
         if paragraphs:
             processed_paragraphs = self.preprocess_text(paragraphs)
             if processed_paragraphs:
-                doc = self.nlp(processed_paragraphs)
-                matches = len(self.matcher(doc))
-                words = len([token for token in doc if not token.is_space])
+                words = processed_paragraphs.split()
+                word_counter = Counter(words)
+                matches = sum(word_counter[keyword] for keyword in self.keywords)
+                word_count = len(words)
                 total_weighted_matches += matches * self.paragraph_multiplier
-                total_weighted_words += words * self.paragraph_multiplier
+                total_weighted_words += word_count * self.paragraph_multiplier
 
         # Berechne finalen Score
         if total_weighted_words == 0:
@@ -114,6 +107,5 @@ class KeywordSpider(BaseTopicalSpider):
         # Relevanz = gewichtete Treffer / gewichtete Wörter
         relevance_score = total_weighted_matches / total_weighted_words
 
-        # Realistischere Normalisierung: 2% Keywords = Score 1.0
-        # Die meisten relevanten Texte haben 0.5-2% Keyword-Dichte
-        return min(1.0, relevance_score * 50)
+        # Konfigurierbare Normalisierung
+        return min(1.0, relevance_score * self.parent_norm_factor)

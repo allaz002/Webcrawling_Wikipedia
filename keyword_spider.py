@@ -1,5 +1,6 @@
 from base_spider import BaseTopicalSpider
 import re
+from spacy.matcher import PhraseMatcher
 
 
 class KeywordSpider(BaseTopicalSpider):
@@ -12,22 +13,31 @@ class KeywordSpider(BaseTopicalSpider):
 
         # Lade Keywords aus Konfiguration
         self.keywords = [kw.strip().lower() for kw in
-                         self.config['KEYWORDS']['KEYWORDS'].split(',')]
+                        self.config['KEYWORDS']['KEYWORDS'].split(',')]
 
         # Lade Multiplikatoren aus Konfiguration
         self.title_multiplier = int(self.config['MULTIPLIERS']['TITLE_MULTIPLIER'])
         self.heading_multiplier = int(self.config['MULTIPLIERS']['HEADING_MULTIPLIER'])
         self.paragraph_multiplier = int(self.config['MULTIPLIERS']['PARAGRAPH_MULTIPLIER'])
 
+        # Initialisiere SpaCy PhraseMatcher
+        if self.nlp:
+            self.matcher = PhraseMatcher(self.nlp.vocab, attr="LOWER")
+            # Füge Keywords als Patterns hinzu
+            patterns = [self.nlp.make_doc(keyword) for keyword in self.keywords]
+            self.matcher.add("KEYWORDS", patterns)
+        else:
+            self.matcher = None
+
         print(f"Keywords: {', '.join(self.keywords)}")
         self.write_to_report(f"Keywords: {', '.join(self.keywords)}\n")
 
     def calculate_text_relevance(self, text):
         """
-        Berechnet Relevanz basierend auf Keyword-Frequenz
+        Berechnet Relevanz basierend auf Keyword-Frequenz mit SpaCy PhraseMatcher
         Höhere Anzahl von Keyword-Treffern = höherer Score
         """
-        if not text:
+        if not text or not self.matcher:
             return 0.0
 
         # Textvorverarbeitung
@@ -36,30 +46,21 @@ class KeywordSpider(BaseTopicalSpider):
         if not processed_text:
             return 0.0
 
-        # Zähle Keyword-Treffer
-        total_matches = 0
-        text_words = processed_text.split()
-        text_length = len(text_words)
+        # Erstelle SpaCy Doc
+        doc = self.nlp(processed_text)
 
-        if text_length == 0:
+        # Finde alle Keyword-Matches
+        matches = self.matcher(doc)
+        total_matches = len(matches)
+
+        # Berechne Wortanzahl
+        word_count = len([token for token in doc if not token.is_space])
+
+        if word_count == 0:
             return 0.0
 
-        for keyword in self.keywords:
-            # Exakte Wort-Matches zählen
-            keyword_words = keyword.split()
-
-            if len(keyword_words) == 1:
-                # Einzelnes Keyword
-                total_matches += text_words.count(keyword)
-            else:
-                # Mehrwort-Keyword (Phrase)
-                for i in range(len(text_words) - len(keyword_words) + 1):
-                    if text_words[i:i + len(keyword_words)] == keyword_words:
-                        total_matches += 1
-
         # Normalisiere Score (Treffer pro 100 Wörter)
-        # Verhindert dass längere Texte automatisch höhere Scores bekommen
-        normalized_score = (total_matches / text_length) * 100
+        normalized_score = (total_matches / word_count) * 100
 
         # Begrenzen auf Bereich [0, 1]
         # Annahme: >10 Treffer pro 100 Wörter = maximale Relevanz
@@ -67,26 +68,51 @@ class KeywordSpider(BaseTopicalSpider):
 
     def calculate_parent_relevance(self, title, headings, paragraphs):
         """
-        Überschreibt Elterndokument-Bewertung für Keyword-Strategie
-        Verwendet konfigurierbare Multiplikatoren
+        Optimierte Elterndokument-Bewertung nur mit Multiplikatoren
+        Berechnet gewichtete Trefferanzahl / gewichtete Wortanzahl
         """
-        # Berechne individuelle Scores
-        title_score = self.calculate_text_relevance(title)
-        heading_score = self.calculate_text_relevance(headings)
-        paragraph_score = self.calculate_text_relevance(paragraphs)
+        if not self.matcher:
+            return 0.0
 
-        # Gewichtete Summe mit konfigurierbaren Multiplikatoren
-        weighted_score = (
-                self.title_weight * title_score * self.title_multiplier +
-                self.heading_weight * heading_score * self.heading_multiplier +
-                self.paragraph_weight * paragraph_score * self.paragraph_multiplier
-        )
+        total_weighted_matches = 0
+        total_weighted_words = 0
 
-        # Normalisiere auf [0, 1]
-        total_weight = (
-                self.title_weight * self.title_multiplier +
-                self.heading_weight * self.heading_multiplier +
-                self.paragraph_weight * self.paragraph_multiplier
-        )
+        # Verarbeite Titel
+        if title:
+            processed_title = self.preprocess_text(title)
+            if processed_title:
+                doc = self.nlp(processed_title)
+                matches = len(self.matcher(doc))
+                words = len([token for token in doc if not token.is_space])
+                total_weighted_matches += matches * self.title_multiplier
+                total_weighted_words += words * self.title_multiplier
 
-        return min(1.0, weighted_score / total_weight) if total_weight > 0 else 0.0
+        # Verarbeite Überschriften
+        if headings:
+            processed_headings = self.preprocess_text(headings)
+            if processed_headings:
+                doc = self.nlp(processed_headings)
+                matches = len(self.matcher(doc))
+                words = len([token for token in doc if not token.is_space])
+                total_weighted_matches += matches * self.heading_multiplier
+                total_weighted_words += words * self.heading_multiplier
+
+        # Verarbeite Paragraphen
+        if paragraphs:
+            processed_paragraphs = self.preprocess_text(paragraphs)
+            if processed_paragraphs:
+                doc = self.nlp(processed_paragraphs)
+                matches = len(self.matcher(doc))
+                words = len([token for token in doc if not token.is_space])
+                total_weighted_matches += matches * self.paragraph_multiplier
+                total_weighted_words += words * self.paragraph_multiplier
+
+        # Berechne finalen Score
+        if total_weighted_words == 0:
+            return 0.0
+
+        # Relevanz = gewichtete Treffer / gewichtete Wörter
+        relevance_score = total_weighted_matches / total_weighted_words
+
+        # Normalisiere auf [0, 1] - Annahme: >0.1 (10% Keywords) = maximale Relevanz
+        return min(1.0, relevance_score * 10)

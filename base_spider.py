@@ -33,6 +33,10 @@ class BaseTopicalSpider(scrapy.Spider):
         self.report_interval = int(self.config['CRAWLER']['REPORT_INTERVAL_SECONDS'])
         self.frontier_max_size = int(self.config['CRAWLER']['FRONTIER_MAX_SIZE'])
 
+        # Domain und Namespace Filter aus Config
+        self.allowed_domains = [d.strip() for d in self.config['CRAWLER']['ALLOWED_DOMAINS'].split(',')]
+        self.ignored_namespaces = [ns.strip() for ns in self.config['CRAWLER']['IGNORED_NAMESPACES'].split(',')]
+
         # Reporting Konfiguration
         self.report_pages_interval = int(self.config['REPORTING']['REPORT_PAGES_INTERVAL'])
         self.report_time_interval = int(self.config['REPORTING']['REPORT_TIME_INTERVAL_SECONDS'])
@@ -60,6 +64,9 @@ class BaseTopicalSpider(scrapy.Spider):
         self.visited_urls = set()
         self.url_scores = {}  # Cache für URL-Scores
 
+        # Flag für finalen Report
+        self.final_report_written = False
+
         # Statistiken
         self.stats = {
             'total_crawled': 0,
@@ -74,27 +81,19 @@ class BaseTopicalSpider(scrapy.Spider):
         Path("exports").mkdir(exist_ok=True)
         Path("reports").mkdir(exist_ok=True)
 
-        # Report-Datei initialisieren
-        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-        self.report_file = f"reports/{self.name}_{timestamp}.txt"
-
-        # Namespace-Filter für Wikipedia
-        self.ignored_namespaces = [
-            'Benutzer:', 'Datei:', 'Spezial:', 'Kategorie:',
-            'Hilfe:', 'Diskussion:', 'Vorlage:', 'Portal:', 'MediaWiki:'
-        ]
-
-        # Domain-Filter
-        self.allowed_domain = 'wikipedia.org'
+        # Report-Datei initialisieren (einmalig mit festem Timestamp)
+        self.timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+        self.report_file = f"reports/{self.name}_{self.timestamp}.txt"
+        self.export_file = f"exports/{self.name}_{self.timestamp}.json"
 
         self.print_config()
 
     def print_config(self):
         """Ausgabe der Konfiguration beim Start"""
         config_text = f"""
-{'=' * 60}
+{'='*60}
 CRAWLER KONFIGURATION - {self.name}
-{'=' * 60}
+{'='*60}
 Strategie: {self.__class__.__name__}
 Seed URLs: {', '.join(self.start_urls)}
 Batch-Größe: {self.batch_size}
@@ -110,7 +109,7 @@ GEWICHTUNGEN:
 - Titel-Gewicht: {self.title_weight}
 - Überschriften-Gewicht: {self.heading_weight}
 - Paragraphen-Gewicht: {self.paragraph_weight}
-{'=' * 60}
+{'='*60}
 """
         print(config_text)
         self.write_to_report(config_text)
@@ -255,8 +254,14 @@ GEWICHTUNGEN:
         """Prüft URL-Gültigkeit"""
         parsed = urlparse(url)
 
-        # Domain-Filter
-        if self.allowed_domain not in parsed.netloc:
+        # Domain-Filter - nur deutsche Wikipedia
+        valid_domain = False
+        for allowed in self.allowed_domains:
+            if allowed in parsed.netloc:
+                valid_domain = True
+                break
+
+        if not valid_domain:
             return False
 
         # URL-Dekodierung für Namespace-Filter
@@ -275,6 +280,10 @@ GEWICHTUNGEN:
 
     def check_termination(self):
         """Prüft Beendigungskriterien"""
+        # Verhindere mehrfache Aufrufe nach Beendigung
+        if self.final_report_written:
+            return True
+
         # Zeit-Limit
         runtime = datetime.now() - self.stats['start_time']
         if runtime > timedelta(minutes=self.max_runtime):
@@ -318,36 +327,64 @@ Irrelevante Seiten: {self.stats['irrelevant_pages']}
 
     def print_final_report(self):
         """Gibt Abschlussbericht aus"""
+        # Verhindere mehrfache Ausführung
+        if self.final_report_written:
+            return
+
+        self.final_report_written = True
+
         runtime = datetime.now() - self.stats['start_time']
         harvest_rate = (self.stats['relevant_pages'] / max(1, self.stats['total_crawled'])) * 100
 
+        # Sortiere alle Seiten nach Score
+        sorted_pages = sorted(self.stats['all_pages'], key=lambda x: x['score'], reverse=True)
+
+        # Top 10, Mittelfeld 10, Bottom 10
+        top_10 = sorted_pages[:10] if len(sorted_pages) >= 10 else sorted_pages
+        middle_start = max(0, len(sorted_pages) // 2 - 5)
+        middle_10 = sorted_pages[middle_start:middle_start+10] if len(sorted_pages) >= 20 else []
+        bottom_10 = sorted_pages[-10:] if len(sorted_pages) >= 10 else sorted_pages[-len(sorted_pages):]
+
         report = f"""
-{'=' * 60}
+{'='*60}
 ABSCHLUSSBERICHT - {self.name}
-{'=' * 60}
+{'='*60}
 Spider-Name: {self.name}
 Gesamtlaufzeit: {runtime}
 Anzahl gecrawlter Seiten: {self.stats['total_crawled']}
 Anzahl relevanter Seiten: {self.stats['relevant_pages']}
 Anzahl irrelevanter Seiten: {self.stats['irrelevant_pages']}
 Harvest-Rate: {harvest_rate:.2f}%
-{'=' * 60}
+
+TOP 10 BESTE URLS:
 """
+        for i, page in enumerate(top_10, 1):
+            report += f"{i}. Score: {page['score']:.4f} - {page['url']}\n"
+
+        if middle_10:
+            report += "\nTOP 10 MITTELFELD URLS:\n"
+            for i, page in enumerate(middle_10, 1):
+                report += f"{i}. Score: {page['score']:.4f} - {page['url']}\n"
+
+        if bottom_10:
+            report += "\nTOP 10 SCHLECHTESTE URLS:\n"
+            for i, page in enumerate(bottom_10, 1):
+                report += f"{i}. Score: {page['score']:.4f} - {page['url']}\n"
+
+        report += f"\n{'='*60}\n"
 
         print(report)
         self.write_to_report(report)
 
-        # Exportiere relevante Seiten als JSON
-        relevant_pages = [p for p in self.stats['all_pages'] if p['score'] >= self.relevance_threshold]
-        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-        export_file = f"exports/{self.name}_{timestamp}.json"
+        # Exportiere relevante Seiten als JSON (einmalig mit festem Dateinamen)
+        relevant_pages = [p for p in sorted_pages if p['score'] >= self.relevance_threshold]
 
-        with open(export_file, 'w', encoding='utf-8') as f:
+        with open(self.export_file, 'w', encoding='utf-8') as f:
             json.dump({
                 'spider': self.name,
-                'timestamp': timestamp,
+                'timestamp': self.timestamp,
                 'total_relevant': len(relevant_pages),
                 'pages': relevant_pages
             }, f, indent=2, ensure_ascii=False)
 
-        print(f"Relevante Seiten exportiert nach: {export_file}")
+        print(f"Relevante Seiten exportiert nach: {self.export_file}")

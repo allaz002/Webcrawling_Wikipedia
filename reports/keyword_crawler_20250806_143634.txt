@@ -1,0 +1,93 @@
+
+============================================================
+CRAWLER KONFIGURATION - keyword_crawler
+============================================================
+Strategie: KeywordSpider
+Seed URLs: https://de.wikipedia.org/wiki/KÃ¼nstliche_Intelligenz, https://de.wikipedia.org/wiki/Maschinelles_Lernen
+Batch-Größe: 16
+Max. Seiten: 1000
+Max. relevante Seiten: 100
+Relevanz-Schwellenwert: 0.05
+Max. Laufzeit: 30 Minuten
+Report-Intervall: 30 Sekunden
+
+GEWICHTUNGEN:
+- Link-Gewicht: 0.4
+- Elterndokument-Gewicht: 0.6
+- Titel-Gewicht: 0.4
+- Überschriften-Gewicht: 0.3
+- Paragraphen-Gewicht: 0.3
+============================================================
+
+Keywords: kã¼nstliche intelligenz, machine learning, deep learning, neuronale netze, algorithmus, datenanalyse, ki, artificial intelligence, neural network, datenwissenschaft
+
+
+--- ZWISCHENBERICHT [14:37:01] ---
+Laufzeit: 0:00:26.931114
+Harvest-Rate: 48.00%
+Relevante Seiten: 24
+Irrelevante Seiten: 26
+
+
+--- ZWISCHENBERICHT [14:37:24] ---
+Laufzeit: 0:00:49.674589
+Harvest-Rate: 43.00%
+Relevante Seiten: 43
+Irrelevante Seiten: 57
+
+
+--- ZWISCHENBERICHT [14:37:52] ---
+Laufzeit: 0:01:18.079633
+Harvest-Rate: 34.67%
+Relevante Seiten: 52
+Irrelevante Seiten: 98
+
+
+--- ZWISCHENBERICHT [14:38:46] ---
+Laufzeit: 0:02:11.708843
+Harvest-Rate: 28.50%
+Relevante Seiten: 57
+Irrelevante Seiten: 143
+
+
+--- ZWISCHENBERICHT [14:39:33] ---
+Laufzeit: 0:02:58.491461
+Harvest-Rate: 22.80%
+Relevante Seiten: 57
+Irrelevante Seiten: 193
+
+
+--- ZWISCHENBERICHT [14:40:25] ---
+Laufzeit: 0:03:51.099045
+Harvest-Rate: 19.33%
+Relevante Seiten: 58
+Irrelevante Seiten: 242
+
+
+--- ZWISCHENBERICHT [14:40:59] ---
+Laufzeit: 0:04:25.209524
+Harvest-Rate: 16.57%
+Relevante Seiten: 58
+Irrelevante Seiten: 292
+
+
+--- ZWISCHENBERICHT [14:41:44] ---
+Laufzeit: 0:05:09.374392
+Harvest-Rate: 14.75%
+Relevante Seiten: 59
+Irrelevante Seiten: 341
+
+
+--- ZWISCHENBERICHT [14:42:31] ---
+Laufzeit: 0:05:56.954967
+Harvest-Rate: 13.11%
+Relevante Seiten: 59
+Irrelevante Seiten: 391
+
+
+--- ZWISCHENBERICHT [14:43:00] ---
+Laufzeit: 0:06:25.962604
+Harvest-Rate: 11.80%
+Relevante Seiten: 59
+Irrelevante Seiten: 441
+

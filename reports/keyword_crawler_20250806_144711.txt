@@ -1,0 +1,142 @@
+
+============================================================
+CRAWLER KONFIGURATION - keyword_crawler
+============================================================
+Strategie: KeywordSpider
+Seed URLs: https://de.wikipedia.org/wiki/Informatik
+Batch-Größe: 16
+Max. Seiten: 1000
+Max. relevante Seiten: 100
+Relevanz-Schwellenwert: 0.05
+Max. Laufzeit: 30 Minuten
+Report-Intervall: 30 Sekunden
+
+GEWICHTUNGEN:
+- Link-Gewicht: 0.4
+- Elterndokument-Gewicht: 0.6
+- Titel-Gewicht: 0.4
+- Überschriften-Gewicht: 0.3
+- Paragraphen-Gewicht: 0.3
+============================================================
+
+Keywords: ["algorithmen", "datenstrukturen", "betriebssysteme", "compilerbau", "assembler", "netzwerktechnik", "tcp/ip", "http", "rest-api", "datenbanken", "sql", "nosql", "graphdatenbanken", "big data", "data mining", "data science", "kã¼nstliche intelligenz", "maschinelles lernen", "deep learning", "neuronale netze", "reinforcement learning", "computer vision", "natural language processing", "bildverarbeitung", "robotik", "quantencomputing", "cybersecurity", "kryptographie", "blockchain", "cloud computing", "edge computing", "virtualisierung", "docker", "kubernetes", "microservices", "devops", "ci/cd", "software-engineering", "agiles projektmanagement", "testautomatisierung", "unit testing", "tdd", "ui/ux-design", "mensch-computer-interaktion", "graphentheorie", "parallelverarbeitung", "verteilte systeme", "echtzeitsysteme", "fpga", "iot"]
+
+
+--- ZWISCHENBERICHT [14:47:45] ---
+Laufzeit: 0:00:34.484645
+Harvest-Rate: 0.00%
+Relevante Seiten: 0
+Irrelevante Seiten: 50
+
+
+--- ZWISCHENBERICHT [14:48:24] ---
+Laufzeit: 0:01:13.163539
+Harvest-Rate: 0.00%
+Relevante Seiten: 0
+Irrelevante Seiten: 100
+
+
+--- ZWISCHENBERICHT [14:49:12] ---
+Laufzeit: 0:02:01.014978
+Harvest-Rate: 0.00%
+Relevante Seiten: 0
+Irrelevante Seiten: 150
+
+
+--- ZWISCHENBERICHT [14:49:59] ---
+Laufzeit: 0:02:48.661846
+Harvest-Rate: 0.00%
+Relevante Seiten: 0
+Irrelevante Seiten: 200
+
+
+--- ZWISCHENBERICHT [14:50:54] ---
+Laufzeit: 0:03:43.327364
+Harvest-Rate: 0.00%
+Relevante Seiten: 0
+Irrelevante Seiten: 250
+
+
+--- ZWISCHENBERICHT [14:51:47] ---
+Laufzeit: 0:04:36.616583
+Harvest-Rate: 0.00%
+Relevante Seiten: 0
+Irrelevante Seiten: 300
+
+
+--- ZWISCHENBERICHT [14:52:41] ---
+Laufzeit: 0:05:30.197150
+Harvest-Rate: 0.00%
+Relevante Seiten: 0
+Irrelevante Seiten: 350
+
+
+--- ZWISCHENBERICHT [14:53:24] ---
+Laufzeit: 0:06:13.330201
+Harvest-Rate: 0.00%
+Relevante Seiten: 0
+Irrelevante Seiten: 400
+
+
+--- ZWISCHENBERICHT [14:54:09] ---
+Laufzeit: 0:06:58.568027
+Harvest-Rate: 0.00%
+Relevante Seiten: 0
+Irrelevante Seiten: 450
+
+
+--- ZWISCHENBERICHT [14:54:42] ---
+Laufzeit: 0:07:31.112218
+Harvest-Rate: 0.00%
+Relevante Seiten: 0
+Irrelevante Seiten: 500
+
+
+--- ZWISCHENBERICHT [14:55:16] ---
+Laufzeit: 0:08:05.044893
+Harvest-Rate: 0.00%
+Relevante Seiten: 0
+Irrelevante Seiten: 550
+
+
+--- ZWISCHENBERICHT [14:55:37] ---
+Laufzeit: 0:08:26.859058
+Harvest-Rate: 0.00%
+Relevante Seiten: 0
+Irrelevante Seiten: 600
+
+
+--- ZWISCHENBERICHT [14:55:56] ---
+Laufzeit: 0:08:45.339386
+Harvest-Rate: 0.00%
+Relevante Seiten: 0
+Irrelevante Seiten: 650
+
+
+--- ZWISCHENBERICHT [14:56:25] ---
+Laufzeit: 0:09:14.407816
+Harvest-Rate: 0.00%
+Relevante Seiten: 0
+Irrelevante Seiten: 700
+
+
+--- ZWISCHENBERICHT [14:56:43] ---
+Laufzeit: 0:09:32.242926
+Harvest-Rate: 0.00%
+Relevante Seiten: 0
+Irrelevante Seiten: 750
+
+
+--- ZWISCHENBERICHT [14:57:08] ---
+Laufzeit: 0:09:57.277808
+Harvest-Rate: 0.00%
+Relevante Seiten: 0
+Irrelevante Seiten: 800
+
+
+--- ZWISCHENBERICHT [14:57:33] ---
+Laufzeit: 0:10:22.412081
+Harvest-Rate: 0.00%
+Relevante Seiten: 0
+Irrelevante Seiten: 850
+

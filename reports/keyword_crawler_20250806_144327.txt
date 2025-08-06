@@ -1,0 +1,30 @@
+
+============================================================
+CRAWLER KONFIGURATION - keyword_crawler
+============================================================
+Strategie: KeywordSpider
+Seed URLs: https://de.wikipedia.org/wiki/Informatik
+Batch-Größe: 16
+Max. Seiten: 1000
+Max. relevante Seiten: 100
+Relevanz-Schwellenwert: 0.2
+Max. Laufzeit: 30 Minuten
+Report-Intervall: 30 Sekunden
+
+GEWICHTUNGEN:
+- Link-Gewicht: 0.4
+- Elterndokument-Gewicht: 0.6
+- Titel-Gewicht: 0.4
+- Überschriften-Gewicht: 0.3
+- Paragraphen-Gewicht: 0.3
+============================================================
+
+Keywords: ["algorithmen", "datenstrukturen", "betriebssysteme", "compilerbau", "assembler", "netzwerktechnik", "tcp/ip", "http", "rest-api", "datenbanken", "sql", "nosql", "graphdatenbanken", "big data", "data mining", "data science", "kã¼nstliche intelligenz", "maschinelles lernen", "deep learning", "neuronale netze", "reinforcement learning", "computer vision", "natural language processing", "bildverarbeitung", "robotik", "quantencomputing", "cybersecurity", "kryptographie", "blockchain", "cloud computing", "edge computing", "virtualisierung", "docker", "kubernetes", "microservices", "devops", "ci/cd", "software-engineering", "agiles projektmanagement", "testautomatisierung", "unit testing", "tdd", "ui/ux-design", "mensch-computer-interaktion", "graphentheorie", "parallelverarbeitung", "verteilte systeme", "echtzeitsysteme", "fpga", "iot"]
+
+
+--- ZWISCHENBERICHT [14:44:14] ---
+Laufzeit: 0:00:46.129899
+Harvest-Rate: 0.00%
+Relevante Seiten: 0
+Irrelevante Seiten: 50
+

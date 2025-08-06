@@ -1,3 +1,5 @@
+import math
+
 from base_spider import BaseTopicalSpider
 import re
 from spacy.matcher import PhraseMatcher
@@ -115,4 +117,4 @@ class KeywordSpider(BaseTopicalSpider):
         relevance_score = total_weighted_matches / total_weighted_words
 
         # Normalisiere auf [0, 1] - Annahme: >0.1 (10% Keywords) = maximale Relevanz
-        return min(1.0, relevance_score * 10)
+        return min(1.0, math.log(1 + relevance_score * 100) / math.log(11))

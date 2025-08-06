@@ -1,5 +1,3 @@
-import math
-
 from base_spider import BaseTopicalSpider
 import re
 from spacy.matcher import PhraseMatcher
@@ -64,9 +62,9 @@ class KeywordSpider(BaseTopicalSpider):
         # Normalisiere Score (Treffer pro 100 Wörter)
         normalized_score = (total_matches / word_count) * 100
 
-        # Begrenzen auf Bereich [0, 1]
-        # Annahme: >10 Treffer pro 100 Wörter = maximale Relevanz
-        return min(1.0, normalized_score / 10)
+        # Realistischere Normalisierung: 2 Treffer pro 100 Wörter = Score 1.0
+        # Die meisten relevanten Texte haben 0.5-2 Treffer pro 100 Wörter
+        return min(1.0, normalized_score / 2)
 
     def calculate_parent_relevance(self, title, headings, paragraphs):
         """
@@ -116,5 +114,6 @@ class KeywordSpider(BaseTopicalSpider):
         # Relevanz = gewichtete Treffer / gewichtete Wörter
         relevance_score = total_weighted_matches / total_weighted_words
 
-        # Normalisiere auf [0, 1] - Annahme: >0.1 (10% Keywords) = maximale Relevanz
-        return min(1.0, math.log(1 + relevance_score * 100) / math.log(11))
+        # Realistischere Normalisierung: 2% Keywords = Score 1.0
+        # Die meisten relevanten Texte haben 0.5-2% Keyword-Dichte
+        return min(1.0, relevance_score * 50)

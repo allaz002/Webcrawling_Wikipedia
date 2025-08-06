@@ -170,12 +170,14 @@ class VectorSpaceSpider(BaseTopicalSpider):
 
         # Berechne Cosinus-Ähnlichkeit zwischen kombiniertem Vektor und Themenprofil
         if np.any(combined_vector):
-            # Normalisiere kombinierten Vektor
-            from sklearn.preprocessing import normalize
-            combined_vector_normalized = normalize(combined_vector, norm='l2')
+            # Berechne Ähnlichkeit OHNE zusätzliche Normalisierung
+            # Die Multiplikatoren bleiben so erhalten
+            similarity = cosine_similarity(combined_vector, self.topic_vector)[0][0]
 
-            # Berechne Ähnlichkeit
-            similarity = cosine_similarity(combined_vector_normalized, self.topic_vector)[0][0]
-            return float(similarity)
+            # Leichte Verstärkung für bessere Score-Verteilung
+            # sqrt verschiebt niedrige Werte nach oben, behält hohe Werte
+            boosted_score = np.sqrt(similarity)
+
+            return float(min(1.0, boosted_score))
         else:
             return 0.0

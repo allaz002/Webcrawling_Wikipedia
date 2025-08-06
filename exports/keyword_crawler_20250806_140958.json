@@ -1,0 +1,227 @@
+{
+  "spider": "keyword_crawler",
+  "timestamp": "20250806_140958",
+  "total_relevant": 44,
+  "pages": [
+    {
+      "url": "https://de.wikipedia.org/wiki/Las-Vegas-Algorithmus",
+      "score": 0.888888888888889,
+      "title": "Las-Vegas-Algorithmus – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Deterministischer_Algorithmus",
+      "score": 0.7853403141361257,
+      "title": "Determinismus (Algorithmus) – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Determinismus_(Algorithmus)",
+      "score": 0.7853403141361257,
+      "title": "Determinismus (Algorithmus) – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Rete-Algorithmus",
+      "score": 0.7142857142857142,
+      "title": "Rete-Algorithmus – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Felzenszwalb-Huttenlocher-Algorithmus",
+      "score": 0.7079646017699115,
+      "title": "Felzenszwalb-Huttenlocher-Algorithmus – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Steinscher_Algorithmus",
+      "score": 0.6844106463878328,
+      "title": "Steinscher Algorithmus – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/K-Means-Algorithmus",
+      "score": 0.6804733727810651,
+      "title": "k-Means-Algorithmus – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Greedy-Algorithmus",
+      "score": 0.6756756756756757,
+      "title": "Greedy-Algorithmus – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Delta-Regel",
+      "score": 0.6030150753768844,
+      "title": "LMS-Algorithmus – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/MIT_Computer_Science_and_Artificial_Intelligence_Laboratory",
+      "score": 0.5806451612903226,
+      "title": "MIT Computer Science and Artificial Intelligence Laboratory – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Datenanalyse",
+      "score": 0.5583756345177665,
+      "title": "Datenanalyse – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/EM-Algorithmus",
+      "score": 0.5489260143198091,
+      "title": "EM-Algorithmus – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Euklidischer_Algorithmus",
+      "score": 0.5371642723297939,
+      "title": "Euklidischer Algorithmus – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Gepulste_neuronale_Netze",
+      "score": 0.5357142857142857,
+      "title": "Gepulste neuronale Netze – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Viterbi-Algorithmus",
+      "score": 0.5305039787798409,
+      "title": "Viterbi-Algorithmus – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/BCJR-Algorithmus",
+      "score": 0.5111111111111112,
+      "title": "BCJR-Algorithmus – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Strassen-Algorithmus",
+      "score": 0.4964539007092199,
+      "title": "Strassen-Algorithmus – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Dijkstra-Algorithmus",
+      "score": 0.4880817253121453,
+      "title": "Dijkstra-Algorithmus – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Algorithmus_von_Dijkstra",
+      "score": 0.4880817253121453,
+      "title": "Dijkstra-Algorithmus – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Metropolis-Algorithmus",
+      "score": 0.4878048780487805,
+      "title": "Metropolis-Algorithmus – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Randomisierter_Algorithmus",
+      "score": 0.4835924006908463,
+      "title": "Randomisierter Algorithmus – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/BKM-Algorithmus",
+      "score": 0.4778156996587031,
+      "title": "BKM-Algorithmus – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Floyd-Warshall-Algorithmus",
+      "score": 0.46938775510204084,
+      "title": "Algorithmus von Floyd und Warshall – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Cocke-Younger-Kasami-Algorithmus",
+      "score": 0.45634920634920634,
+      "title": "Cocke-Younger-Kasami-Algorithmus – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Algorithmus",
+      "score": 0.4363376251788269,
+      "title": "Algorithmus – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Luhn-Algorithmus",
+      "score": 0.4225352112676056,
+      "title": "Luhn-Algorithmus – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Bellman-Ford-Algorithmus",
+      "score": 0.41728763040238454,
+      "title": "Bellman-Ford-Algorithmus – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Monte-Carlo-Algorithmus",
+      "score": 0.41501976284584985,
+      "title": "Monte-Carlo-Algorithmus – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Earley-Algorithmus",
+      "score": 0.3523035230352303,
+      "title": "Earley-Algorithmus – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Explorative_Datenanalyse",
+      "score": 0.3508771929824561,
+      "title": "Explorative Datenanalyse – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Deep_Learning",
+      "score": 0.3404791929382094,
+      "title": "Deep Learning – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Caffe",
+      "score": 0.3389830508474576,
+      "title": "Caffe – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Erweiterter_euklidischer_Algorithmus",
+      "score": 0.3349282296650718,
+      "title": "Erweiterter euklidischer Algorithmus – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/A*-Algorithmus",
+      "score": 0.31974420463629094,
+      "title": "A*-Algorithmus – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Levenberg-Marquardt-Algorithmus",
+      "score": 0.3125,
+      "title": "Levenberg-Marquardt-Algorithmus – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Lempel-Ziv-Welch-Algorithmus",
+      "score": 0.3089887640449438,
+      "title": "Lempel-Ziv-Welch-Algorithmus – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Approximationsalgorithmus",
+      "score": 0.3053435114503817,
+      "title": "Approximationsalgorithmus – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Fuzzy-c-Means-Algorithmus",
+      "score": 0.3036876355748373,
+      "title": "Fuzzy-c-Means-Algorithmus – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/CART_(Algorithmus)",
+      "score": 0.28790786948176583,
+      "title": "CART (Algorithmus) – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Cluster_(Datenanalyse)",
+      "score": 0.2702702702702703,
+      "title": "Cluster (Datenanalyse) – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Nichtdeterminismus",
+      "score": 0.24096385542168675,
+      "title": "Nichtdeterminismus – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/Explainable_Artificial_Intelligence",
+      "score": 0.23404255319148937,
+      "title": "Explainable Artificial Intelligence – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/D*-Algorithmus",
+      "score": 0.22175290390707497,
+      "title": "D*-Algorithmus – Wikipedia"
+    },
+    {
+      "url": "https://de.wikipedia.org/wiki/AKS-Primzahltest",
+      "score": 0.2197802197802198,
+      "title": "AKS-Primzahltest – Wikipedia"
+    }
+  ]
+}

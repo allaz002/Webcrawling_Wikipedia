@@ -4,6 +4,10 @@ from sklearn.feature_extraction.text import TfidfVectorizer, CountVectorizer
 from sklearn.preprocessing import MaxAbsScaler
 import pickle
 import os
+import json
+
+
+os
 import numpy as np
 
 
@@ -80,8 +84,26 @@ class NaiveBayesSpider(BaseTopicalSpider):
             self.train_model()
 
     def train_model(self):
-        """Trainiert Naive Bayes Klassifikator mit Trainingsdaten"""
+        """Trainiert Naive Bayes Klassifikator mit JSON-Trainingsdaten"""
         print("Trainiere neues Naive Bayes Modell...")
+
+        # Lade JSON-Trainingsdaten
+        texts = []
+        labels = []
+
+        if os.path.exists(self.training_data_path):
+            with open(self.training_data_path, 'r', encoding='utf-8') as f:
+                training_data = json.load(f)
+
+            for sample in training_data:
+                processed_text = self.preprocess_text(sample['text'])
+                texts.append(processed_text)
+                labels.append(sample['label'])
+        else:
+            raise ValueError(f"Trainingsdaten nicht gefunden: {self.training_data_path}")
+
+        if not texts:
+            raise ValueError("Keine gültigen Trainingsdaten vorhanden!")
 
         # Initialisiere Vectorizer basierend auf Modus
         if self.mode == 'tf_norm':
@@ -92,33 +114,14 @@ class NaiveBayesSpider(BaseTopicalSpider):
             self.vectorizer = TfNormVectorizer(vocabulary=vocabulary)
             print("Verwende TF-Norm Vektorisierung")
         else:
+            # TF-IDF mit IDF aus Trainingsdaten
             self.vectorizer = TfidfVectorizer(
                 max_features=1000,
                 ngram_range=(1, 2),
                 min_df=2,
                 max_df=0.8
             )
-            print("Verwende TF-IDF Vektorisierung")
-
-        # Lade Trainingsdaten
-        texts = []
-        labels = []
-
-        if os.path.exists(self.training_data_path):
-            with open(self.training_data_path, 'r', encoding='utf-8') as f:
-                for line in f:
-                    if '\t' in line:
-                        label, text = line.strip().split('\t', 1)
-                        texts.append(self.preprocess_text(text))
-                        labels.append(int(label))
-        else:
-            # Erstelle Beispiel-Trainingsdaten wenn keine vorhanden
-            print("Keine Trainingsdaten gefunden, erstelle Beispieldaten...")
-            self.create_sample_training_data()
-            return self.train_model()  # Rekursiv mit neuen Daten
-
-        if not texts:
-            raise ValueError("Keine Trainingsdaten vorhanden!")
+            print("Verwende TF-IDF Vektorisierung basierend auf Trainingsdaten")
 
         # Vektorisiere Texte
         X = self.vectorizer.fit_transform(texts)
@@ -136,27 +139,6 @@ class NaiveBayesSpider(BaseTopicalSpider):
             pickle.dump(self.vectorizer, f)
 
         print(f"Modell trainiert mit {len(texts)} Beispielen")
-
-    def create_sample_training_data(self):
-        """Erstellt Beispiel-Trainingsdaten falls keine vorhanden"""
-        sample_data = [
-            # Relevante Beispiele (Label 1)
-            "1\tMachine Learning ist ein Teilgebiet der künstlichen Intelligenz",
-            "1\tDeep Learning nutzt neuronale Netze zur Mustererkennung",
-            "1\tKünstliche Intelligenz revolutioniert die Datenanalyse",
-            "1\tAlgorithmen des maschinellen Lernens verbessern sich kontinuierlich",
-            "1\tNeuronale Netzwerke simulieren das menschliche Gehirn",
-            # Irrelevante Beispiele (Label 0)
-            "0\tDas Wetter heute ist sonnig und warm",
-            "0\tFußball ist eine beliebte Sportart weltweit",
-            "0\tKochen macht Spaß und ist kreativ",
-            "0\tMusik beeinflusst unsere Stimmung positiv",
-            "0\tReisen erweitert den Horizont und bildet"
-        ]
-
-        os.makedirs(os.path.dirname(self.training_data_path), exist_ok=True)
-        with open(self.training_data_path, 'w', encoding='utf-8') as f:
-            f.write('\n'.join(sample_data))
 
     def calculate_text_relevance(self, text):
         """

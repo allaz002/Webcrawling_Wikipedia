@@ -3,6 +3,8 @@ from sklearn.feature_extraction.text import TfidfVectorizer, CountVectorizer
 from sklearn.preprocessing import MaxAbsScaler
 from sklearn.metrics.pairwise import cosine_similarity
 import numpy as np
+import json
+import os
 
 
 class TfNormVectorizer:
@@ -49,9 +51,6 @@ class VectorSpaceSpider(BaseTopicalSpider):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
 
-        # Lade Themenprofil-Text aus Konfiguration
-        self.topic_profile = self.config['VECTORSPACE']['TOPIC_PROFILE']
-
         # Lade Modus (tf_norm oder tfidf) - Default ist tf_norm
         self.mode = self.config['VECTORSPACE'].get('MODE', 'tf_norm').lower()
 
@@ -64,7 +63,7 @@ class VectorSpaceSpider(BaseTopicalSpider):
         if self.mode == 'tf_norm':
             # Verwende Keyword-Vokabular für TF-Norm
             keywords = [kw.strip().lower() for kw in
-                        self.config['KEYWORD']['KEYWORDS'].split(',')]
+                        self.config['VECTORSPACE']['KEYWORDS'].split(',')]
             # Erstelle Vokabular-Dictionary für scikit-learn
             vocabulary = {keyword: idx for idx, keyword in enumerate(keywords)}
 
@@ -73,6 +72,7 @@ class VectorSpaceSpider(BaseTopicalSpider):
             )
             print(f"Verwende TF-Norm Vektorisierung mit Keyword-Vokabular")
         else:
+            # TF-IDF Modus
             self.vectorizer = TfidfVectorizer(
                 max_features=1000,
                 ngram_range=(1, 2),
@@ -81,19 +81,50 @@ class VectorSpaceSpider(BaseTopicalSpider):
             )
             print(f"Verwende TF-IDF Vektorisierung")
 
-        # Erstelle Themen-Vektor (einmalig)
-        self.create_topic_vector()
+        # Lade Trainingsdaten für IDF-Berechnung bei TF-IDF
+        self.load_training_data_for_idf()
 
-        print(f"Themenprofil initialisiert mit {len(self.topic_profile)} Zeichen")
-        self.write_to_report(f"Themenprofil: {self.topic_profile[:200]}...\n")
+        print(f"VectorSpace Spider initialisiert im {self.mode} Modus")
+        self.write_to_report(f"Modus: {self.mode}\n")
 
-    def create_topic_vector(self):
-        """Erstellt einmalig den Themen-Vektor aus dem Profil"""
-        # Vorverarbeitung des Themenprofils
-        processed_profile = self.preprocess_text(self.topic_profile)
+    def load_training_data_for_idf(self):
+        """Lädt Trainingsdaten und erstellt Themen-Vektor basierend auf IDF"""
+        training_path = self.config['VECTORSPACE']['TRAINING_DATA_PATH']
 
-        # Fit Vectorizer mit Themenprofil und erstelle Vektor
-        self.topic_vector = self.vectorizer.fit_transform([processed_profile])
+        if self.mode == 'tfidf' and os.path.exists(training_path):
+            # Lade JSON-Trainingsdaten
+            with open(training_path, 'r', encoding='utf-8') as f:
+                training_data = json.load(f)
+
+            # Extrahiere nur relevante Texte (label=1)
+            relevant_texts = []
+            for sample in training_data:
+                if sample['label'] == 1:
+                    processed_text = self.preprocess_text(sample['text'])
+                    relevant_texts.append(processed_text)
+
+            if relevant_texts:
+                # Fit Vectorizer auf relevanten Trainingsdaten
+                self.vectorizer.fit(relevant_texts)
+
+                # Erstelle Themen-Vektor als Durchschnitt aller relevanten Dokumente
+                vectors = self.vectorizer.transform(relevant_texts)
+                self.topic_vector = vectors.mean(axis=0)
+
+                print(f"IDF aus {len(relevant_texts)} relevanten Trainingsdokumenten berechnet")
+            else:
+                # Fallback: Fit auf einzelnem Dummy-Dokument
+                dummy_text = "künstliche intelligenz machine learning"
+                self.vectorizer.fit([dummy_text])
+                self.topic_vector = self.vectorizer.transform([dummy_text])
+                print("Warnung: Keine relevanten Trainingsdaten gefunden, verwende Fallback")
+        else:
+            # TF-Norm oder keine Trainingsdaten: Fit auf Keywords
+            keywords_text = ' '.join([kw.strip().lower() for kw in
+                                      self.config['VECTORSPACE']['KEYWORDS'].split(',')])
+            processed_keywords = self.preprocess_text(keywords_text)
+            self.topic_vector = self.vectorizer.fit_transform([processed_keywords])
+            print("Vectorizer auf Keywords trainiert")
 
     def calculate_text_relevance(self, text):
         """

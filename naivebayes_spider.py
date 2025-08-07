@@ -5,9 +5,6 @@ from sklearn.preprocessing import MaxAbsScaler
 import pickle
 import os
 import json
-
-
-os
 import numpy as np
 
 
@@ -114,12 +111,13 @@ class NaiveBayesSpider(BaseTopicalSpider):
             self.vectorizer = TfNormVectorizer(vocabulary=vocabulary)
             print("Verwende TF-Norm Vektorisierung")
         else:
-            # TF-IDF mit IDF aus Trainingsdaten
+            # TF-IDF mit gemeinsamen Parametern und IDF aus Trainingsdaten
             self.vectorizer = TfidfVectorizer(
-                max_features=1000,
-                ngram_range=(1, 2),
-                min_df=2,
-                max_df=0.8
+                max_features=int(self.config['VECTORIZER_SETTINGS']['MAX_FEATURES']),
+                ngram_range=(int(self.config['VECTORIZER_SETTINGS']['NGRAM_MIN']),
+                             int(self.config['VECTORIZER_SETTINGS']['NGRAM_MAX'])),
+                min_df=int(self.config['VECTORIZER_SETTINGS']['MIN_DF']),
+                max_df=float(self.config['VECTORIZER_SETTINGS']['MAX_DF'])
             )
             print("Verwende TF-IDF Vektorisierung basierend auf Trainingsdaten")
 

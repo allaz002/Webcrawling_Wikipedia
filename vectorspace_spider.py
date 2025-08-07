@@ -72,12 +72,13 @@ class VectorSpaceSpider(BaseTopicalSpider):
             )
             print(f"Verwende TF-Norm Vektorisierung mit Keyword-Vokabular")
         else:
-            # TF-IDF Modus
+            # TF-IDF Modus mit gemeinsamen Parametern
             self.vectorizer = TfidfVectorizer(
-                max_features=1000,
-                ngram_range=(1, 2),
-                min_df=1,
-                max_df=0.95
+                max_features=int(self.config['VECTORIZER_SETTINGS']['MAX_FEATURES']),
+                ngram_range=(int(self.config['VECTORIZER_SETTINGS']['NGRAM_MIN']),
+                             int(self.config['VECTORIZER_SETTINGS']['NGRAM_MAX'])),
+                min_df=int(self.config['VECTORIZER_SETTINGS']['MIN_DF']),
+                max_df=float(self.config['VECTORIZER_SETTINGS']['MAX_DF'])
             )
             print(f"Verwende TF-IDF Vektorisierung")
 
@@ -118,13 +119,19 @@ class VectorSpaceSpider(BaseTopicalSpider):
                 self.vectorizer.fit([dummy_text])
                 self.topic_vector = self.vectorizer.transform([dummy_text])
                 print("Warnung: Keine relevanten Trainingsdaten gefunden, verwende Fallback")
-        else:
-            # TF-Norm oder keine Trainingsdaten: Fit auf Keywords
+        elif self.mode == 'tf_norm':
+            # TF-Norm: Fit auf Keywords
             keywords_text = ' '.join([kw.strip().lower() for kw in
                                       self.config['VECTORSPACE']['KEYWORDS'].split(',')])
             processed_keywords = self.preprocess_text(keywords_text)
             self.topic_vector = self.vectorizer.fit_transform([processed_keywords])
             print("Vectorizer auf Keywords trainiert")
+        else:
+            # Fallback für TF-IDF ohne Trainingsdaten
+            dummy_text = "künstliche intelligenz machine learning"
+            self.vectorizer.fit([dummy_text])
+            self.topic_vector = self.vectorizer.transform([dummy_text])
+            print("Warnung: Keine Trainingsdaten gefunden, verwende Fallback")
 
     def calculate_text_relevance(self, text):
         """
@@ -160,7 +167,7 @@ class VectorSpaceSpider(BaseTopicalSpider):
         Berechnet gewichtete Vektorsumme und Cosinus-Ähnlichkeit
         """
         # Initialisiere Null-Vektor mit gleicher Dimension wie Topic-Vektor
-        if hasattr(self.vectorizer, 'vocabulary'):
+        if hasattr(self.vectorizer, 'count_vectorizer'):
             # TF-Norm mit festem Vokabular
             vector_dim = len(self.vectorizer.count_vectorizer.vocabulary_)
         else:
@@ -203,6 +210,16 @@ class VectorSpaceSpider(BaseTopicalSpider):
         if np.any(combined_vector):
             # Berechne Ähnlichkeit OHNE zusätzliche Normalisierung
             # Die Multiplikatoren bleiben so erhalten
+            if isinstance(combined_vector, np.matrix):
+                combined_vector = np.asarray(combined_vector)
+            if isinstance(self.topic_vector, np.matrix):
+                self.topic_vector = np.asarray(self.topic_vector)
+
+            if combined_vector.ndim == 1:
+                combined_vector = combined_vector.reshape(1, -1)
+            if self.topic_vector.ndim == 1:
+                self.topic_vector = self.topic_vector.reshape(1, -1)
+
             similarity = cosine_similarity(combined_vector, self.topic_vector)[0][0]
 
             # Leichte Verstärkung für bessere Score-Verteilung

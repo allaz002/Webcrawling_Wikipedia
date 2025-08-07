@@ -18,6 +18,10 @@ configparser>=6.0.0
 # Für Trainingsdaten-Skript
 requests>=2.31.0
 
+# Für Visualisierungen
+matplotlib>=3.7.0
+matplotlib-venn>=0.11.0
+
 # Optional: Für bessere Performance
 twisted>=23.0.0
 cryptography>=41.0.0

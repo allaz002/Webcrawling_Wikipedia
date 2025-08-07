@@ -13,6 +13,7 @@ import re
 from pathlib import Path
 import nltk
 from nltk.corpus import stopwords
+import sys
 
 
 class BaseTopicalSpider(scrapy.Spider):
@@ -41,6 +42,7 @@ class BaseTopicalSpider(scrapy.Spider):
         # Reporting Konfiguration
         self.report_pages_interval = int(self.config['REPORTING']['REPORT_PAGES_INTERVAL'])
         self.report_time_interval = int(self.config['REPORTING']['REPORT_TIME_INTERVAL_SECONDS'])
+        self.evaluation_interval = int(self.config['REPORTING']['EVALUATION_INTERVAL'])
 
         # Gewichtungen für Link-Relevanz
         self.link_weight = float(self.config['WEIGHTS']['LINK_WEIGHT'])
@@ -73,7 +75,10 @@ class BaseTopicalSpider(scrapy.Spider):
             'irrelevant_pages': 0,
             'start_time': datetime.now(),
             'last_report': datetime.now(),
-            'all_pages': []  # Für Endstatistik
+            'last_evaluation': 0,
+            'all_pages': [],  # Für Endstatistik
+            'evaluation_log': [],  # Für Evaluierungsdaten
+            'total_relevance_sum': 0.0  # Für Durchschnittsberechnung
         }
 
         # Verzeichnisse erstellen
@@ -86,6 +91,24 @@ class BaseTopicalSpider(scrapy.Spider):
         self.export_file = f"exports/{self.name}_{self.timestamp}.json"
 
         self.print_config()
+
+    def check_evaluation_interval(self):
+        """Speichert Evaluierungsdaten in regelmäßigen Intervallen"""
+        if self.stats['total_crawled'] - self.stats['last_evaluation'] >= self.evaluation_interval:
+            runtime = (datetime.now() - self.stats['start_time']).total_seconds()
+            harvest_rate = self.stats['relevant_pages'] / max(1, self.stats['total_crawled'])
+            avg_relevance = self.stats['total_relevance_sum'] / max(1, self.stats['total_crawled'])
+
+            evaluation_entry = {
+                'pages_visited': self.stats['total_crawled'],
+                'relevant_pages_found': self.stats['relevant_pages'],
+                'harvest_rate': harvest_rate,
+                'average_relevance': avg_relevance,
+                'execution_time_in_seconds': runtime
+            }
+
+            self.stats['evaluation_log'].append(evaluation_entry)
+            self.stats['last_evaluation'] = self.stats['total_crawled']
 
     def print_config(self):
         """Ausgabe der Konfiguration beim Start"""
@@ -179,7 +202,7 @@ GEWICHTUNGEN:
         # Berechne Elterndokument-Relevanz (nur einmal pro Seite)
         parent_relevance = self.calculate_parent_relevance(title, headings, paragraphs)
 
-        # Speichere Seite wenn relevant
+        # Speichere Seite und aktualisiere Statistiken
         if parent_relevance >= self.relevance_threshold:
             self.stats['relevant_pages'] += 1
             self.stats['all_pages'].append({
@@ -190,6 +213,9 @@ GEWICHTUNGEN:
         else:
             self.stats['irrelevant_pages'] += 1
 
+        # Akkumuliere Relevanz für Durchschnitt
+        self.stats['total_relevance_sum'] += parent_relevance
+
         # Extrahiere und bewerte Links
         for link in soup.find_all('a', href=True):
             url = response.urljoin(link['href'])
@@ -199,6 +225,9 @@ GEWICHTUNGEN:
                 # Berechne Link-Relevanz (einmalig pro Link)
                 link_relevance = self.calculate_link_relevance(anchor_text, parent_relevance)
                 self.add_to_frontier(url, link_relevance)
+
+        # Evaluierung in Intervallen
+        self.check_evaluation_interval()
 
         # Periodische Reports
         self.print_progress_report()
@@ -315,7 +344,7 @@ Irrelevante Seiten: {self.stats['irrelevant_pages']}
             self.stats['last_report'] = now
 
     def print_final_report(self):
-        """Gibt Abschlussbericht aus"""
+        """Gibt Abschlussbericht aus und speichert JSON mit Evaluierungsdaten"""
         # Verhindere mehrfache Ausführung
         if self.final_report_written:
             return
@@ -323,7 +352,9 @@ Irrelevante Seiten: {self.stats['irrelevant_pages']}
         self.final_report_written = True
 
         runtime = datetime.now() - self.stats['start_time']
+        runtime_seconds = runtime.total_seconds()
         harvest_rate = (self.stats['relevant_pages'] / max(1, self.stats['total_crawled'])) * 100
+        avg_relevance = self.stats['total_relevance_sum'] / max(1, self.stats['total_crawled'])
 
         # Sortiere alle Seiten nach Score
         sorted_pages = sorted(self.stats['all_pages'], key=lambda x: x['score'], reverse=True)
@@ -344,6 +375,7 @@ Anzahl gecrawlter Seiten: {self.stats['total_crawled']}
 Anzahl relevanter Seiten: {self.stats['relevant_pages']}
 Anzahl irrelevanter Seiten: {self.stats['irrelevant_pages']}
 Harvest-Rate: {harvest_rate:.2f}%
+Durchschnittliche Relevanz: {avg_relevance:.4f}
 
 TOP 10 BESTE URLS:
 """
@@ -365,15 +397,41 @@ TOP 10 BESTE URLS:
         print(report)
         self.write_to_report(report)
 
-        # Exportiere relevante Seiten als JSON (einmalig mit festem Dateinamen)
+        # Erstelle finale Evaluierung
+        self.check_evaluation_interval()
+
+        # Exportiere JSON mit Evaluierungsdaten
         relevant_pages = [p for p in sorted_pages if p['score'] >= self.relevance_threshold]
 
-        with open(self.export_file, 'w', encoding='utf-8') as f:
-            json.dump({
+        export_data = {
+            'summary': {
                 'spider': self.name,
                 'timestamp': self.timestamp,
-                'total_relevant': len(relevant_pages),
+                'total_execution_time_in_seconds': runtime_seconds,
+                'total_pages_visited': self.stats['total_crawled'],
+                'total_relevant_found': self.stats['relevant_pages'],
+                'average_harvest_rate': harvest_rate / 100,
+                'average_relevance': avg_relevance,
+                'evaluation_log': self.stats['evaluation_log'],
                 'pages': relevant_pages
-            }, f, indent=2, ensure_ascii=False)
+            }
+        }
 
-        print(f"Relevante Seiten exportiert nach: {self.export_file}")
+        with open(self.export_file, 'w', encoding='utf-8') as f:
+            json.dump(export_data, f, ensure_ascii=False, indent=2)
+
+        print(f"Relevante Seiten und Evaluierungsdaten exportiert nach: {self.export_file}")
+
+        # Erstelle Plots wenn aktiviert
+        if self.config.getboolean('PLOTTING', 'CREATE_PLOTS', fallback=False):
+            self.create_plots()
+
+    # In der Datei base_spider.py
+    def create_plots(self):
+        """Ruft externes Plot-Skript auf"""
+        try:
+            import subprocess
+            subprocess.run([sys.executable, 'create_plots.py'], check=False)
+            print("Grafiken wurden erstellt")
+        except Exception as e:
+            print(f"Fehler beim Erstellen der Grafiken: {e}")

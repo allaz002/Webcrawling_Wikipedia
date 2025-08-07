@@ -1,0 +1,1662 @@
+{
+  "summary": {
+    "spider": "vectorspace_crawler",
+    "timestamp": "20250807_193307",
+    "total_execution_time_in_seconds": 46.842513,
+    "total_pages_visited": 529,
+    "total_relevant_found": 300,
+    "average_harvest_rate": 0.5671077504725898,
+    "average_relevance": 0.3634317255802157,
+    "evaluation_log": [
+      {
+        "pages_visited": 25,
+        "relevant_pages_found": 23,
+        "harvest_rate": 0.92,
+        "average_relevance": 0.40546512651740796,
+        "execution_time_in_seconds": 4.121798
+      },
+      {
+        "pages_visited": 50,
+        "relevant_pages_found": 39,
+        "harvest_rate": 0.78,
+        "average_relevance": 0.3960608415767723,
+        "execution_time_in_seconds": 6.597616
+      },
+      {
+        "pages_visited": 75,
+        "relevant_pages_found": 56,
+        "harvest_rate": 0.7466666666666667,
+        "average_relevance": 0.3995705738836202,
+        "execution_time_in_seconds": 8.902285
+      },
+      {
+        "pages_visited": 100,
+        "relevant_pages_found": 76,
+        "harvest_rate": 0.76,
+        "average_relevance": 0.4004393438033955,
+        "execution_time_in_seconds": 11.637969
+      },
+      {
+        "pages_visited": 125,
+        "relevant_pages_found": 93,
+        "harvest_rate": 0.744,
+        "average_relevance": 0.3949995662169035,
+        "execution_time_in_seconds": 14.194054
+      },
+      {
+        "pages_visited": 150,
+        "relevant_pages_found": 107,
+        "harvest_rate": 0.7133333333333334,
+        "average_relevance": 0.38959616903304295,
+        "execution_time_in_seconds": 15.657726
+      },
+      {
+        "pages_visited": 175,
+        "relevant_pages_found": 120,
+        "harvest_rate": 0.6857142857142857,
+        "average_relevance": 0.3861987517120007,
+        "execution_time_in_seconds": 17.833271
+      },
+      {
+        "pages_visited": 200,
+        "relevant_pages_found": 128,
+        "harvest_rate": 0.64,
+        "average_relevance": 0.3806869913394251,
+        "execution_time_in_seconds": 19.167068
+      },
+      {
+        "pages_visited": 225,
+        "relevant_pages_found": 141,
+        "harvest_rate": 0.6266666666666667,
+        "average_relevance": 0.37671156371960307,
+        "execution_time_in_seconds": 21.112752
+      },
+      {
+        "pages_visited": 250,
+        "relevant_pages_found": 155,
+        "harvest_rate": 0.62,
+        "average_relevance": 0.37439579610887863,
+        "execution_time_in_seconds": 22.726671
+      },
+      {
+        "pages_visited": 275,
+        "relevant_pages_found": 166,
+        "harvest_rate": 0.6036363636363636,
+        "average_relevance": 0.3723895972233835,
+        "execution_time_in_seconds": 25.225536
+      },
+      {
+        "pages_visited": 300,
+        "relevant_pages_found": 180,
+        "harvest_rate": 0.6,
+        "average_relevance": 0.370304187370375,
+        "execution_time_in_seconds": 27.317292
+      },
+      {
+        "pages_visited": 325,
+        "relevant_pages_found": 196,
+        "harvest_rate": 0.6030769230769231,
+        "average_relevance": 0.3698557420998405,
+        "execution_time_in_seconds": 29.155246
+      },
+      {
+        "pages_visited": 350,
+        "relevant_pages_found": 210,
+        "harvest_rate": 0.6,
+        "average_relevance": 0.36866245158556415,
+        "execution_time_in_seconds": 31.14657
+      },
+      {
+        "pages_visited": 375,
+        "relevant_pages_found": 220,
+        "harvest_rate": 0.5866666666666667,
+        "average_relevance": 0.3667302583128537,
+        "execution_time_in_seconds": 33.504608
+      },
+      {
+        "pages_visited": 400,
+        "relevant_pages_found": 236,
+        "harvest_rate": 0.59,
+        "average_relevance": 0.36623085834387864,
+        "execution_time_in_seconds": 36.245273
+      },
+      {
+        "pages_visited": 425,
+        "relevant_pages_found": 245,
+        "harvest_rate": 0.5764705882352941,
+        "average_relevance": 0.3645677800274624,
+        "execution_time_in_seconds": 37.921803
+      },
+      {
+        "pages_visited": 450,
+        "relevant_pages_found": 254,
+        "harvest_rate": 0.5644444444444444,
+        "average_relevance": 0.36329952661564263,
+        "execution_time_in_seconds": 40.201299
+      },
+      {
+        "pages_visited": 475,
+        "relevant_pages_found": 267,
+        "harvest_rate": 0.5621052631578948,
+        "average_relevance": 0.36293660120510873,
+        "execution_time_in_seconds": 42.019161
+      },
+      {
+        "pages_visited": 500,
+        "relevant_pages_found": 281,
+        "harvest_rate": 0.562,
+        "average_relevance": 0.3623872307359852,
+        "execution_time_in_seconds": 44.094404
+      },
+      {
+        "pages_visited": 525,
+        "relevant_pages_found": 296,
+        "harvest_rate": 0.5638095238095238,
+        "average_relevance": 0.36287618084625833,
+        "execution_time_in_seconds": 46.447692
+      }
+    ],
+    "pages": [
+      {
+        "url": "https://de.wikipedia.org/wiki/K%C3%BCnstliche_Intelligenz",
+        "score": 0.5727709129678137,
+        "title": "Künstliche Intelligenz – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Artificial_Intelligence",
+        "score": 0.5727709129678137,
+        "title": "Künstliche Intelligenz – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Spracherkennung",
+        "score": 0.5495750453750705,
+        "title": "Spracherkennung – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Probleml%C3%B6sen",
+        "score": 0.541743319425269,
+        "title": "Problemlösen – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Geschichte_der_k%C3%BCnstlichen_Intelligenz",
+        "score": 0.5380716753873512,
+        "title": "Geschichte der künstlichen Intelligenz – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Vulkanier",
+        "score": 0.534426342720558,
+        "title": "Völker und Gruppierungen im Star-Trek-Universum – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/V%C3%B6lker_und_Gruppierungen_im_Star-Trek-Universum",
+        "score": 0.534426342720558,
+        "title": "Völker und Gruppierungen im Star-Trek-Universum – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Anwendungen_k%C3%BCnstlicher_Intelligenz",
+        "score": 0.5265000308825378,
+        "title": "Anwendungen künstlicher Intelligenz – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Didaktik",
+        "score": 0.5212664713152374,
+        "title": "Didaktik – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/K%C3%BCnstliche_Intelligenz_in_der_Pflege",
+        "score": 0.5179510542307069,
+        "title": "Künstliche Intelligenz in der Pflege – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/K%C3%BCnstliche_Intelligenz_in_der_Medizin",
+        "score": 0.5173598036230445,
+        "title": "Künstliche Intelligenz in der Medizin – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Worf",
+        "score": 0.5070968892926034,
+        "title": "Figuren im Star-Trek-Universum – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Multimodale_k%C3%BCnstliche_Intelligenz",
+        "score": 0.5064084187329605,
+        "title": "Multimodale künstliche Intelligenz – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Modelltheorie",
+        "score": 0.5048472802837423,
+        "title": "Modelltheorie – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Regul%C3%A4rer_Ausdruck",
+        "score": 0.5048104129185481,
+        "title": "Regulärer Ausdruck – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Globale_Erw%C3%A4rmung",
+        "score": 0.502120495032648,
+        "title": "Globale Erwärmung – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Automatisierung",
+        "score": 0.5014361508506902,
+        "title": "Automatisierung – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Stuttgart",
+        "score": 0.49662436003805827,
+        "title": "Stuttgart – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Maschinelles_Lernen",
+        "score": 0.49641095676983155,
+        "title": "Maschinelles Lernen – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Ganganalyse",
+        "score": 0.4957025984467151,
+        "title": "Ganganalyse – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Sozialisation",
+        "score": 0.4942810146481694,
+        "title": "Sozialisation – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Technologische_Singularit%C3%A4t",
+        "score": 0.49336099726322663,
+        "title": "Technologische Singularität – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Deutsches_Forschungszentrum_f%C3%BCr_K%C3%BCnstliche_Intelligenz",
+        "score": 0.49099412932357106,
+        "title": "Deutsches Forschungszentrum für Künstliche Intelligenz – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Intelligenz",
+        "score": 0.49082331284638514,
+        "title": "Intelligenz – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Blade_Runner",
+        "score": 0.48798319652647665,
+        "title": "Blade Runner – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Mnemotechnik",
+        "score": 0.48544607204720575,
+        "title": "Mnemotechnik – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Ehrenamt",
+        "score": 0.4834200626172074,
+        "title": "Ehrenamt – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Lebenserwartung",
+        "score": 0.4829953154779549,
+        "title": "Lebenserwartung – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Texas",
+        "score": 0.4815294582490333,
+        "title": "Texas – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/L%C3%BCbeck",
+        "score": 0.4809624114884961,
+        "title": "Lübeck – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Metapher",
+        "score": 0.47967616843263156,
+        "title": "Metapher – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Kreativit%C3%A4t",
+        "score": 0.4788968341679142,
+        "title": "Kreativität – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Existenzielles_Risiko_durch_k%C3%BCnstliche_Intelligenz",
+        "score": 0.4770307973335424,
+        "title": "Existenzielles Risiko durch künstliche Intelligenz – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Metadaten",
+        "score": 0.4769706937419586,
+        "title": "Metadaten – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Textdatei",
+        "score": 0.4764094002204792,
+        "title": "Textdatei – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Hof_(Saale)",
+        "score": 0.476089462598886,
+        "title": "Hof (Saale) – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Unzufriedenheit",
+        "score": 0.4758215715476181,
+        "title": "Zufriedenheit – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Zufriedenheit",
+        "score": 0.4758215715476181,
+        "title": "Zufriedenheit – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Naturwissenschaft",
+        "score": 0.4736444699173247,
+        "title": "Naturwissenschaft – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Star_Wars",
+        "score": 0.4734723764750449,
+        "title": "Star Wars – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Autonomes_Fahren",
+        "score": 0.4733999100892119,
+        "title": "Autonomes Fahren – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Neolithische_Revolution",
+        "score": 0.47280160319598896,
+        "title": "Neolithische Revolution – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Term",
+        "score": 0.46901160034390704,
+        "title": "Term – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Structure_of_Intellect",
+        "score": 0.46860555555049155,
+        "title": "Structure of Intellect – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/San_Francisco",
+        "score": 0.46836752831388506,
+        "title": "San Francisco – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/MicroRNA",
+        "score": 0.4670054079416986,
+        "title": "microRNA – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/International_Committee_for_the_History_of_Technology",
+        "score": 0.4662935595905409,
+        "title": "Internationales Komitee für Technikgeschichte – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Deterministischer_endlicher_Automat",
+        "score": 0.4662722433701344,
+        "title": "Deterministischer endlicher Automat – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Graphgrammatik",
+        "score": 0.4660286165699625,
+        "title": "Graphersetzungssystem – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Graphersetzungssystem",
+        "score": 0.4660286165699625,
+        "title": "Graphersetzungssystem – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Rechnernetz",
+        "score": 0.4654384571535401,
+        "title": "Rechnernetz – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/World_Wide_Web",
+        "score": 0.4647261038535868,
+        "title": "World Wide Web – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Rosa_Luxemburg",
+        "score": 0.46302701908530874,
+        "title": "Rosa Luxemburg – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Genetik",
+        "score": 0.4628439017361039,
+        "title": "Genetik – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Netzwerk",
+        "score": 0.46277834027170417,
+        "title": "Netzwerk – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Renaissance",
+        "score": 0.4625036561600013,
+        "title": "Renaissance – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Klimamodell",
+        "score": 0.4609615772843941,
+        "title": "Klimamodell – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Mikroprozessor",
+        "score": 0.46032906663327056,
+        "title": "Mikroprozessor – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Senne",
+        "score": 0.4601754914832917,
+        "title": "Senne – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Korpuslinguistik",
+        "score": 0.4590943548595468,
+        "title": "Korpuslinguistik – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Superintelligenz",
+        "score": 0.45708532511316524,
+        "title": "Superintelligenz – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/United_States_Navy",
+        "score": 0.45702007527278105,
+        "title": "United States Navy – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Rasterfahndung",
+        "score": 0.4567645105233786,
+        "title": "Rasterfahndung – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Star_Trek:_Raumschiff_Voyager",
+        "score": 0.45484014060243455,
+        "title": "Star Trek: Raumschiff Voyager – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Wurmloch",
+        "score": 0.4541655638238381,
+        "title": "Wurmloch – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Ritzsches_Variationsverfahren",
+        "score": 0.45331797045166494,
+        "title": "Rayleigh-Ritz-Prinzip – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Claude_(Sprachmodell)",
+        "score": 0.4521238765354654,
+        "title": "Claude (Sprachmodell) – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Obdachlosigkeit",
+        "score": 0.4515054813175532,
+        "title": "Obdachlosigkeit – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Trilogie",
+        "score": 0.4504111256145117,
+        "title": "Werkzyklus – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Werkzyklus",
+        "score": 0.4504111256145117,
+        "title": "Werkzyklus – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Kollektive_Intelligenz",
+        "score": 0.45016828605248027,
+        "title": "Kollektive Intelligenz – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Deutsches_Reich_1933_bis_1945",
+        "score": 0.44934578962554733,
+        "title": "NS-Staat – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/NS-Staat",
+        "score": 0.44934578962554733,
+        "title": "NS-Staat – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/.NET_(Oberbegriff)",
+        "score": 0.4484836978193171,
+        "title": ".NET (Oberbegriff) – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/KI-Verordnung",
+        "score": 0.4484698792031766,
+        "title": "Verordnung über künstliche Intelligenz – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Verordnung_%C3%BCber_k%C3%BCnstliche_Intelligenz",
+        "score": 0.4484698792031766,
+        "title": "Verordnung über künstliche Intelligenz – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Geometrische_Modellierung",
+        "score": 0.4482997866442415,
+        "title": "Geometrische Modellierung – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Elsevier",
+        "score": 0.44602034660061446,
+        "title": "Elsevier – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Venezuela",
+        "score": 0.4459184361063095,
+        "title": "Venezuela – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Artificial_General_Intelligence",
+        "score": 0.4454103678330682,
+        "title": "Artificial General Intelligence – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Lernen_am_Modell",
+        "score": 0.4453773613412329,
+        "title": "Sozialkognitive Lerntheorie – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Gendern",
+        "score": 0.4448342892998219,
+        "title": "Gendern – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/W%C3%BCrfel_(Geometrie)",
+        "score": 0.44467232649185773,
+        "title": "Würfel (Geometrie) – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Fuzzylogik",
+        "score": 0.4445715473374179,
+        "title": "Fuzzylogik – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/RISC-V",
+        "score": 0.44328928240764887,
+        "title": "RISC-V – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Polynomialzeit",
+        "score": 0.44039182621179357,
+        "title": "Polynomialzeit – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/EQ._Emotionale_Intelligenz",
+        "score": 0.44012341916473635,
+        "title": "EQ. Emotionale Intelligenz – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Kreolische_Sprache",
+        "score": 0.43497525456267944,
+        "title": "Kreolsprache – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Kreolsprache",
+        "score": 0.43497525456267944,
+        "title": "Kreolsprache – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/%C3%84quivalenzklasse",
+        "score": 0.43449943097208915,
+        "title": "Äquivalenzrelation – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Sturz_im_Alter",
+        "score": 0.43068343890272287,
+        "title": "Sturz im Alter – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Surrogatschl%C3%BCssel",
+        "score": 0.43024231886236064,
+        "title": "Surrogatschlüssel – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Nerd",
+        "score": 0.4301166796951699,
+        "title": "Nerd – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/K%C3%BCnstliche_Intelligenz_in_der_Materialwissenschaft",
+        "score": 0.4297522052913944,
+        "title": "Künstliche Intelligenz in der Materialwissenschaft – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Ford_Mustang",
+        "score": 0.42881763583765614,
+        "title": "Ford Mustang – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Honda",
+        "score": 0.4286196876189527,
+        "title": "Honda – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Nichtdeterministische_Turingmaschine",
+        "score": 0.4281088140391114,
+        "title": "Nichtdeterministische Turingmaschine – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Konnektionismus",
+        "score": 0.4276110878632761,
+        "title": "Konnektionismus – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Neues_Testament",
+        "score": 0.4264540691777468,
+        "title": "Neues Testament – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Texteditor",
+        "score": 0.4253354374864756,
+        "title": "Texteditor – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Lernplattform",
+        "score": 0.4240171167373164,
+        "title": "Lernplattform – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Validit%C3%A4t",
+        "score": 0.423788668449885,
+        "title": "Validität – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Kladogramm",
+        "score": 0.4234773113964249,
+        "title": "Kladistik – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Kladistik",
+        "score": 0.4234773113964249,
+        "title": "Kladistik – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Ethik_der_k%C3%BCnstlichen_Intelligenz",
+        "score": 0.4231179112213006,
+        "title": "Ethik der künstlichen Intelligenz – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Ethik_der_K%C3%BCnstlichen_Intelligenz",
+        "score": 0.4231179112213006,
+        "title": "Ethik der künstlichen Intelligenz – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/ASIMO",
+        "score": 0.4230489887727761,
+        "title": "ASIMO – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Harbin-Sch%C3%A4del",
+        "score": 0.42300021367500523,
+        "title": "Harbin-Schädel – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/K%C3%BCnstliches_neuronales_Netz",
+        "score": 0.4212323738558035,
+        "title": "Künstliches neuronales Netz – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Zeitleisten_von_Star_Trek",
+        "score": 0.4211572848299467,
+        "title": "Zeitleisten von Star Trek – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Enquete-Kommission_K%C3%BCnstliche_Intelligenz",
+        "score": 0.4204943008505881,
+        "title": "Enquete-Kommission Künstliche Intelligenz – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Werkstatt_f%C3%BCr_behinderte_Menschen",
+        "score": 0.4204703302352273,
+        "title": "Werkstatt für behinderte Menschen – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Neue_Intelligenz",
+        "score": 0.41982029603687504,
+        "title": "Neue Intelligenz – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/A.I._(Lied)",
+        "score": 0.41827099104712867,
+        "title": "A.I. (Lied) – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Modellpflege",
+        "score": 0.41788509610774266,
+        "title": "Modellpflege – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Emotionale_Intelligenz",
+        "score": 0.41766240372656227,
+        "title": "Emotionale Intelligenz – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/F-14_CADC",
+        "score": 0.41710178747501225,
+        "title": "F-14 CADC – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Lernen_durch_Lehren",
+        "score": 0.41627540646277195,
+        "title": "Lernen durch Lehren – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Schl%C3%BCsselkompetenz",
+        "score": 0.41490703441648474,
+        "title": "Schlüsselqualifikation – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Fallbasiertes_Schlie%C3%9Fen",
+        "score": 0.41442478308601294,
+        "title": "Fallbasiertes Schließen – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Rehabilitation",
+        "score": 0.4136227392750479,
+        "title": "Rehabilitation – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Call-by-Call",
+        "score": 0.41143172775516157,
+        "title": "Call-by-Call – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Ford_Explorer",
+        "score": 0.4106260599156769,
+        "title": "Ford Explorer – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Explainable_Artificial_Intelligence",
+        "score": 0.40954236693433727,
+        "title": "Explainable Artificial Intelligence – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Leslie_Valiant",
+        "score": 0.4095295456372798,
+        "title": "Leslie Valiant – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Gender-Data-Gap",
+        "score": 0.4094654316778238,
+        "title": "Gender-Data-Gap – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Star-Trek-Belletristik",
+        "score": 0.40942420965471543,
+        "title": "Star-Trek-Belletristik – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Ortschaft",
+        "score": 0.40921780726682255,
+        "title": "Ortschaft – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Der_Ausdruck_der_Gem%C3%BCtsbewegungen_bei_dem_Menschen_und_den_Tieren",
+        "score": 0.4090353898996194,
+        "title": "Der Ausdruck der Gemütsbewegungen bei dem Menschen und den Tieren – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Ford_V8",
+        "score": 0.4089426304721078,
+        "title": "Ford V8 – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Computerlinguistik",
+        "score": 0.4085782783455432,
+        "title": "Computerlinguistik – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Agape",
+        "score": 0.4082082687937247,
+        "title": "Agape – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Homo_rudolfensis",
+        "score": 0.40797251311762006,
+        "title": "Homo rudolfensis – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Abakus_(Rechenhilfsmittel)",
+        "score": 0.40693075873645906,
+        "title": "Abakus (Rechenhilfsmittel) – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Ottomotor",
+        "score": 0.40673055740076136,
+        "title": "Ottomotor – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Fordson_WOT",
+        "score": 0.4059114996278617,
+        "title": "Fordson WOT – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Baum",
+        "score": 0.4055667588169608,
+        "title": "Baum – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Pelasgisch",
+        "score": 0.4053145877122933,
+        "title": "Pelasger – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Pelasger",
+        "score": 0.4053145877122933,
+        "title": "Pelasger – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Automobiles_Unic",
+        "score": 0.40500493115226494,
+        "title": "Automobiles Unic – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Wettstreit",
+        "score": 0.40484237696835335,
+        "title": "Wettkampf – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Wettkampf",
+        "score": 0.40484237696835335,
+        "title": "Wettkampf – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Webseite",
+        "score": 0.4048288796299424,
+        "title": "Webseite – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Stammesgeschichte_des_Menschen",
+        "score": 0.4046660478464882,
+        "title": "Stammesgeschichte des Menschen – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Messe_Stuttgart",
+        "score": 0.4036205122132308,
+        "title": "Messe Stuttgart – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Kanon_(Fiktion)",
+        "score": 0.40336290857679613,
+        "title": "Kanon (Fiktion) – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Typinferenz",
+        "score": 0.4025672122561111,
+        "title": "Typinferenz – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Lebenslanges_Lernen",
+        "score": 0.4025144747452581,
+        "title": "Lebenslanges Lernen – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Seit_es_Menschen_gibt",
+        "score": 0.4022055516333124,
+        "title": "Seit es Menschen gibt – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/KNIME",
+        "score": 0.4018220161039984,
+        "title": "KNIME – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Teilgraph",
+        "score": 0.4015767234573039,
+        "title": "Teilgraph – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Symbolischer_Link",
+        "score": 0.40105304131739694,
+        "title": "Symbolische Verknüpfung – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Symbolische_Verkn%C3%BCpfung",
+        "score": 0.40105304131739694,
+        "title": "Symbolische Verknüpfung – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Das_k%C3%BCnstliche_Paradies",
+        "score": 0.4008003681957125,
+        "title": "Das künstliche Paradies – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Pixar",
+        "score": 0.4003954274989499,
+        "title": "Pixar – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Kybernetische_Didaktik",
+        "score": 0.4000242586164996,
+        "title": "Kybernetische Didaktik – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Petri-Netz",
+        "score": 0.39967309994628447,
+        "title": "Petri-Netz – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Datenpanne",
+        "score": 0.3985495927271922,
+        "title": "Datenpanne – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Programmed_Data_Processor",
+        "score": 0.39852390567915735,
+        "title": "Programmed Data Processor – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Gesetz_zur_St%C3%A4rkung_der_Teilhabe_und_Selbstbestimmung_von_Menschen_mit_Behinderungen",
+        "score": 0.3976143490573344,
+        "title": "Bundesteilhabegesetz – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Daten",
+        "score": 0.3974834515444389,
+        "title": "Daten – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Stuttgart-S%C3%BCd",
+        "score": 0.3968074057190268,
+        "title": "Stuttgart-Süd – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Ausbreitung_des_Menschen",
+        "score": 0.39663612006456717,
+        "title": "Ausbreitung des Menschen – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Geschlechtergerechte_Sprache",
+        "score": 0.39596128162762323,
+        "title": "Geschlechtergerechte Sprache – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Church-Turing-These",
+        "score": 0.39594261588248697,
+        "title": "Church-Turing-These – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Ford_Cargo",
+        "score": 0.39570041624421065,
+        "title": "Ford Cargo – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Stuttgarter_Talkessel",
+        "score": 0.39535911728782414,
+        "title": "Stuttgarter Talkessel – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Ford_Falcon",
+        "score": 0.3952370305367781,
+        "title": "Ford Falcon – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Thomas_Samuel_Kuhn",
+        "score": 0.39357155251124454,
+        "title": "Thomas S. Kuhn – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Thomas_S._Kuhn",
+        "score": 0.39357155251124454,
+        "title": "Thomas S. Kuhn – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Modell_(Logik)",
+        "score": 0.39319290563049875,
+        "title": "Modell (Logik) – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Neurophysiologie",
+        "score": 0.3926650640698302,
+        "title": "Neurophysiologie – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/W2-Professur",
+        "score": 0.3917402757584397,
+        "title": "Besoldungsordnung W – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Besoldungsordnung_W",
+        "score": 0.3917402757584397,
+        "title": "Besoldungsordnung W – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Filder",
+        "score": 0.39154906015759644,
+        "title": "Filder – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Digital_Object_Identifier",
+        "score": 0.39142175109531874,
+        "title": "Digital Object Identifier – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Ford_Cortina",
+        "score": 0.391180877838763,
+        "title": "Ford Cortina – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Turkana-See",
+        "score": 0.39117236400854805,
+        "title": "Turkana-See – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Lernen_am_Erfolg",
+        "score": 0.39063746164616553,
+        "title": "Instrumentelle und operante Konditionierung – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Bundesvereinigung_Lebenshilfe",
+        "score": 0.3903668085108501,
+        "title": "Bundesvereinigung Lebenshilfe – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/David_A._Patterson",
+        "score": 0.3902671075168738,
+        "title": "David A. Patterson – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Telefonvorwahl",
+        "score": 0.3902289996918702,
+        "title": "Telefonvorwahl – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Brief_des_Judas",
+        "score": 0.38994500696143375,
+        "title": "Brief des Judas – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Genetischer_Algorithmus",
+        "score": 0.3896403717281034,
+        "title": "Evolutionärer Algorithmus – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Multiregionaler_Ursprung_des_modernen_Menschen",
+        "score": 0.3890431067134567,
+        "title": "Multiregionaler Ursprung des modernen Menschen – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Formale_Sprache",
+        "score": 0.38892174148374264,
+        "title": "Formale Sprache – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Regulierung_von_k%C3%BCnstlicher_Intelligenz",
+        "score": 0.38853005516231753,
+        "title": "Regulierung von künstlicher Intelligenz – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Brief_des_Jakobus",
+        "score": 0.3876683315807627,
+        "title": "Brief des Jakobus – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Die_Abstammung_des_Menschen_und_die_geschlechtliche_Zuchtwahl",
+        "score": 0.3873767258663698,
+        "title": "Die Abstammung des Menschen und die geschlechtliche Zuchtwahl – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Content-Management-System",
+        "score": 0.38728611481489705,
+        "title": "Content-Management-System – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Expertensystem",
+        "score": 0.3872600341605328,
+        "title": "Expertensystem – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Synchronsprecher",
+        "score": 0.38654611928652194,
+        "title": "Synchronsprecher – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Institut_f%C3%BCr_Arbeitsmarkt-_und_Berufsforschung",
+        "score": 0.3864541258311735,
+        "title": "Institut für Arbeitsmarkt- und Berufsforschung – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Altgriechisch",
+        "score": 0.3860886670461012,
+        "title": "Altgriechische Sprache – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Nat%C3%BCrliche_Sprache",
+        "score": 0.3853813941942088,
+        "title": "Natürliche Sprache – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Hamburger_Modell_(Rehabilitation)",
+        "score": 0.384982642333011,
+        "title": "Hamburger Modell (Rehabilitation) – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Entity-Relationship-Modell",
+        "score": 0.3849341460924178,
+        "title": "Entity-Relationship-Modell – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Programmcode",
+        "score": 0.3846703464856149,
+        "title": "Programmcode – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Menschen_im_Hotel_(1932)",
+        "score": 0.3843006395722604,
+        "title": "Menschen im Hotel (1932) – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Streit",
+        "score": 0.383532461087913,
+        "title": "Streit – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Wirtschaftstheorie",
+        "score": 0.3822645142122404,
+        "title": "Ökonomische Theoriengeschichte – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/%C3%96konomische_Theoriengeschichte",
+        "score": 0.3822645142122404,
+        "title": "Ökonomische Theoriengeschichte – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Amir_Pnueli",
+        "score": 0.38188237934637415,
+        "title": "Amir Pnueli – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Mazda_323",
+        "score": 0.38119246028677717,
+        "title": "Mazda 323 – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Menschen_im_Hotel",
+        "score": 0.38096479419823887,
+        "title": "Menschen im Hotel – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Das_Schiff_in_der_Flasche",
+        "score": 0.3799393943109621,
+        "title": "Das Schiff in der Flasche – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Domain_Name_System",
+        "score": 0.37978465949699697,
+        "title": "Domain Name System – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Andrew_File_System",
+        "score": 0.3794321512747006,
+        "title": "Andrew File System – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Stadtteil",
+        "score": 0.37789105590797833,
+        "title": "Ortsteil – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Ortsteil",
+        "score": 0.37789105590797833,
+        "title": "Ortsteil – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Dynamisches_System",
+        "score": 0.37770967800981703,
+        "title": "Dynamisches System – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Moshe_Tennenholtz",
+        "score": 0.377675876839357,
+        "title": "Moshe Tennenholtz – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Wissensrepr%C3%A4sentation",
+        "score": 0.37720978247832687,
+        "title": "Wissensrepräsentation – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Komplexes_System",
+        "score": 0.3771421623443936,
+        "title": "Komplexes System – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Frazer_(Auto)",
+        "score": 0.3768775231830201,
+        "title": "Kaiser Motors – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Dateiname",
+        "score": 0.3768707717103534,
+        "title": "Dateiname – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/MMIX",
+        "score": 0.37598451571150227,
+        "title": "MMIX – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Domain_Name_System_Security_Extensions",
+        "score": 0.3759218776260783,
+        "title": "Domain Name System Security Extensions – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Matford_F917WS",
+        "score": 0.37581867160750215,
+        "title": "Matford F917WS – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Jude_Watson",
+        "score": 0.3753903420143809,
+        "title": "Judy Blundell – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Westworld_(Film)",
+        "score": 0.37498498555116305,
+        "title": "Westworld (Film) – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Liste_der_Star-Trek-Romane",
+        "score": 0.3746863504375227,
+        "title": "Liste der Star-Trek-Romane – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Autokompaktklasse",
+        "score": 0.37400814986403597,
+        "title": "Kompaktklasse – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Gesetze_und_amtliche_Regelungen_zur_geschlechtergerechten_Sprache",
+        "score": 0.3726043891550956,
+        "title": "Gesetze und amtliche Regelungen zur geschlechtergerechten Sprache – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/OECD",
+        "score": 0.37179329388983634,
+        "title": "Organisation für wirtschaftliche Zusammenarbeit und Entwicklung – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Fahrzeugklasse",
+        "score": 0.37166825376054974,
+        "title": "Fahrzeugklasse – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Eingebettetes_System",
+        "score": 0.3713990786631146,
+        "title": "Eingebettetes System – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Full-Size_Car",
+        "score": 0.3713700576539479,
+        "title": "Full-Size Car – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Our_World_in_Data",
+        "score": 0.3713138898839488,
+        "title": "Our World in Data – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Pidgin-Sprache",
+        "score": 0.37106082284728564,
+        "title": "Pidgin-Sprache – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/International_Joint_Conference_on_Artificial_Intelligence",
+        "score": 0.37045270111803646,
+        "title": "International Joint Conference on Artificial Intelligence – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Leibniz-Institut_f%C3%BCr_Deutsche_Sprache",
+        "score": 0.36985945968224243,
+        "title": "Leibniz-Institut für Deutsche Sprache – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Simon_%26_Schuster",
+        "score": 0.36980746017699917,
+        "title": "Simon & Schuster – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Data-Warehouse-System",
+        "score": 0.36901175206432635,
+        "title": "Data-Warehouse-System – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Netzwerkprozessor",
+        "score": 0.3688759716380892,
+        "title": "Netzwerkprozessor – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Die_Tyrannei_des_Schmetterlings",
+        "score": 0.36780130731049243,
+        "title": "Die Tyrannei des Schmetterlings – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Technikgeschichte",
+        "score": 0.36773518677749123,
+        "title": "Technikgeschichte – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Turing-Vollst%C3%A4ndigkeit",
+        "score": 0.3673061841004179,
+        "title": "Turing-Vollständigkeit – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Elementare_Sprache",
+        "score": 0.36724493039927447,
+        "title": "Elementare Sprache – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Data-Warehouse",
+        "score": 0.36710664356981576,
+        "title": "Data Warehouse – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Multics",
+        "score": 0.3668779779618223,
+        "title": "Multics – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Gel%C3%A4nde",
+        "score": 0.36668670665032194,
+        "title": "Gelände – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/European_Association_for_Research_on_Learning_and_Instruction",
+        "score": 0.36652592312333926,
+        "title": "European Association for Research on Learning and Instruction – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/1._Brief_des_Johannes",
+        "score": 0.36637742705174764,
+        "title": "1. Brief des Johannes – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Buildingsmart_Data_Dictionary",
+        "score": 0.3655547306202361,
+        "title": "Buildingsmart Data Dictionary – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/ETIM",
+        "score": 0.3653386453313069,
+        "title": "ETIM – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Duplex_(Nachrichtentechnik)",
+        "score": 0.36528383132077863,
+        "title": "Duplex (Nachrichtentechnik) – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Service_Data_Unit",
+        "score": 0.36512498781526626,
+        "title": "Service Data Unit – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Weinsteige",
+        "score": 0.3650917636827974,
+        "title": "Weinsteige – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Google_LLC",
+        "score": 0.3646171693716194,
+        "title": "Google LLC – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Klingonische_Sprache",
+        "score": 0.3644762584189196,
+        "title": "Klingonische Sprache – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Dimension_Data",
+        "score": 0.36358307977712273,
+        "title": "Dimension Data – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Index_der_menschlichen_Entwicklung",
+        "score": 0.36352263988982053,
+        "title": "Index der menschlichen Entwicklung – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Griechische_Sprache",
+        "score": 0.3630737273034101,
+        "title": "Griechische Sprache – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Genetische_Variation_(Mensch)",
+        "score": 0.3630285220951023,
+        "title": "Genetische Variation (Mensch) – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Google_File_System",
+        "score": 0.36298265814046615,
+        "title": "Google File System – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Lemnische_Sprache",
+        "score": 0.36296396349516746,
+        "title": "Lemnische Sprache – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/De_jure/de_facto",
+        "score": 0.36283827417227255,
+        "title": "de jure / de facto – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Data-Dictionary",
+        "score": 0.36271355474138245,
+        "title": "Data-Dictionary – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Sherlock_Data_Holmes",
+        "score": 0.3626236143492519,
+        "title": "Sherlock Data Holmes – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Richard_Leakey",
+        "score": 0.362310196859226,
+        "title": "Richard Leakey – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Heidenchristen",
+        "score": 0.36211724532270523,
+        "title": "Heidenchristen – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Ford_Modell_T",
+        "score": 0.3619839224781222,
+        "title": "Ford Modell T – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Computerisierung",
+        "score": 0.3618961534340013,
+        "title": "Digitale Revolution – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Modell",
+        "score": 0.36170628667751,
+        "title": "Modell – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Bundesarbeitsgemeinschaft_Werkst%C3%A4tten_f%C3%BCr_behinderte_Menschen",
+        "score": 0.36161249334241635,
+        "title": "Bundesarbeitsgemeinschaft Werkstätten für behinderte Menschen – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Spekulation_(Philosophie)",
+        "score": 0.3614311941678089,
+        "title": "Spekulation (Philosophie) – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Gesprochene_Sprache",
+        "score": 0.3613047178040724,
+        "title": "Gesprochene Sprache – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Etruskische_Sprache",
+        "score": 0.36123730394595105,
+        "title": "Etruskische Sprache – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Ford_Anglia",
+        "score": 0.3610733758042496,
+        "title": "Ford Anglia – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Prosa",
+        "score": 0.3608205181082087,
+        "title": "Prosa – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/NTT_Data",
+        "score": 0.36062822066822636,
+        "title": "NTT Data – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Data-Mining",
+        "score": 0.3603213930343511,
+        "title": "Data-Mining – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Vektorprozessor",
+        "score": 0.36013821022183845,
+        "title": "Vektorprozessor – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Michael_Dorn_(Schauspieler,_1952)",
+        "score": 0.3599059232255661,
+        "title": "Michael Dorn (Schauspieler, 1952) – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Halbkettenfahrzeug",
+        "score": 0.3591333975903618,
+        "title": "Halbkettenfahrzeug – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/The_Art_of_Computer_Programming",
+        "score": 0.35878534358815245,
+        "title": "The Art of Computer Programming – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Wikipedia:WikiProjekt_Frauen/Geschlechtergerechte_Sprache",
+        "score": 0.3587676557354276,
+        "title": "Wikipedia:WikiProjekt Frauen/Geschlechtergerechte Sprache – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Turing_Award",
+        "score": 0.3584823191091388,
+        "title": "Turing Award – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Star_Trek_V:_Am_Rande_des_Universums",
+        "score": 0.35842259410899446,
+        "title": "Star Trek V: Am Rande des Universums – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Datas_Tag",
+        "score": 0.3582450034444364,
+        "title": "Datas Tag – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/The_New_York_Times",
+        "score": 0.358105143558647,
+        "title": "The New York Times – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Ford_Versailles",
+        "score": 0.3573382725716367,
+        "title": "Ford Versailles – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/OSI-Modell",
+        "score": 0.356970914352784,
+        "title": "OSI-Modell – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Neue_Z%C3%BCrcher_Zeitung",
+        "score": 0.35636767903299127,
+        "title": "Neue Zürcher Zeitung – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Learning_Content_Management_System",
+        "score": 0.3560489015089537,
+        "title": "Learning Content Management System – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Informatikunterricht",
+        "score": 0.35544068412000424,
+        "title": "Informatikunterricht – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Jean_Hersholt",
+        "score": 0.35498675641022953,
+        "title": "Jean Hersholt – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Gesellschaft_f%C3%BCr_deutsche_Sprache",
+        "score": 0.354745873878245,
+        "title": "Gesellschaft für deutsche Sprache – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Neuronales_Netz",
+        "score": 0.35411862129325583,
+        "title": "Neuronales Netz – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Neue_Sachlichkeit_(Literatur)",
+        "score": 0.3540232180183787,
+        "title": "Neue Sachlichkeit (Literatur) – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Eteokretische_Sprache",
+        "score": 0.3534029223097575,
+        "title": "Eteokretische Sprache – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Virtual_International_Authority_File",
+        "score": 0.3532512521149752,
+        "title": "Virtual International Authority File – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Ford_Elite",
+        "score": 0.3532242303253778,
+        "title": "Ford Elite – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Gel%C3%A4ndewagen",
+        "score": 0.3529261040504505,
+        "title": "Geländewagen – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Finite-Elemente-Methode",
+        "score": 0.3520767535818349,
+        "title": "Finite-Elemente-Methode – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/BMEcat",
+        "score": 0.35176884562359517,
+        "title": "BMEcat – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Ford_Modell_V8-51",
+        "score": 0.3515747786381581,
+        "title": "Ford Modell V8-51 – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Major-System",
+        "score": 0.3512331969519338,
+        "title": "Major-System – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Fridays_for_Future",
+        "score": 0.3510253957344619,
+        "title": "Fridays for Future – Wikipedia"
+      }
+    ]
+  }
+}

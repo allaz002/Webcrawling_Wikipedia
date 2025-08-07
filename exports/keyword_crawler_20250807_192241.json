@@ -1,0 +1,3734 @@
+{
+  "summary": {
+    "spider": "keyword_crawler",
+    "timestamp": "20250807_192241",
+    "total_execution_time_in_seconds": 412.858607,
+    "total_pages_visited": 7942,
+    "total_relevant_found": 300,
+    "average_harvest_rate": 0.03777386048854193,
+    "average_relevance": 0.05734816392022943,
+    "evaluation_log": [
+      {
+        "pages_visited": 25,
+        "relevant_pages_found": 0,
+        "harvest_rate": 0.0,
+        "average_relevance": 0.01372747326772251,
+        "execution_time_in_seconds": 2.318931
+      },
+      {
+        "pages_visited": 50,
+        "relevant_pages_found": 0,
+        "harvest_rate": 0.0,
+        "average_relevance": 0.030922259644459524,
+        "execution_time_in_seconds": 3.917002
+      },
+      {
+        "pages_visited": 75,
+        "relevant_pages_found": 1,
+        "harvest_rate": 0.013333333333333334,
+        "average_relevance": 0.039490927971736124,
+        "execution_time_in_seconds": 5.019283
+      },
+      {
+        "pages_visited": 100,
+        "relevant_pages_found": 3,
+        "harvest_rate": 0.03,
+        "average_relevance": 0.053091268537078073,
+        "execution_time_in_seconds": 6.408124
+      },
+      {
+        "pages_visited": 125,
+        "relevant_pages_found": 4,
+        "harvest_rate": 0.032,
+        "average_relevance": 0.05172835301463346,
+        "execution_time_in_seconds": 7.992476
+      },
+      {
+        "pages_visited": 150,
+        "relevant_pages_found": 6,
+        "harvest_rate": 0.04,
+        "average_relevance": 0.05658045720851621,
+        "execution_time_in_seconds": 10.253392
+      },
+      {
+        "pages_visited": 175,
+        "relevant_pages_found": 7,
+        "harvest_rate": 0.04,
+        "average_relevance": 0.05482428409941414,
+        "execution_time_in_seconds": 11.678917
+      },
+      {
+        "pages_visited": 200,
+        "relevant_pages_found": 7,
+        "harvest_rate": 0.035,
+        "average_relevance": 0.049479023759647564,
+        "execution_time_in_seconds": 13.466216
+      },
+      {
+        "pages_visited": 225,
+        "relevant_pages_found": 8,
+        "harvest_rate": 0.035555555555555556,
+        "average_relevance": 0.04895946840056357,
+        "execution_time_in_seconds": 14.842002
+      },
+      {
+        "pages_visited": 250,
+        "relevant_pages_found": 9,
+        "harvest_rate": 0.036,
+        "average_relevance": 0.05051166951085174,
+        "execution_time_in_seconds": 16.20519
+      },
+      {
+        "pages_visited": 275,
+        "relevant_pages_found": 11,
+        "harvest_rate": 0.04,
+        "average_relevance": 0.0584064692582436,
+        "execution_time_in_seconds": 17.53988
+      },
+      {
+        "pages_visited": 300,
+        "relevant_pages_found": 15,
+        "harvest_rate": 0.05,
+        "average_relevance": 0.06500856396528965,
+        "execution_time_in_seconds": 18.675077
+      },
+      {
+        "pages_visited": 325,
+        "relevant_pages_found": 15,
+        "harvest_rate": 0.046153846153846156,
+        "average_relevance": 0.06037836413048782,
+        "execution_time_in_seconds": 19.905692
+      },
+      {
+        "pages_visited": 350,
+        "relevant_pages_found": 15,
+        "harvest_rate": 0.04285714285714286,
+        "average_relevance": 0.05616826710791469,
+        "execution_time_in_seconds": 21.350571
+      },
+      {
+        "pages_visited": 375,
+        "relevant_pages_found": 15,
+        "harvest_rate": 0.04,
+        "average_relevance": 0.053927463966447486,
+        "execution_time_in_seconds": 22.676172
+      },
+      {
+        "pages_visited": 400,
+        "relevant_pages_found": 16,
+        "harvest_rate": 0.04,
+        "average_relevance": 0.05413085303526257,
+        "execution_time_in_seconds": 24.244753
+      },
+      {
+        "pages_visited": 425,
+        "relevant_pages_found": 18,
+        "harvest_rate": 0.042352941176470586,
+        "average_relevance": 0.05527412247827263,
+        "execution_time_in_seconds": 25.300935
+      },
+      {
+        "pages_visited": 450,
+        "relevant_pages_found": 19,
+        "harvest_rate": 0.042222222222222223,
+        "average_relevance": 0.05606970047570026,
+        "execution_time_in_seconds": 26.967619
+      },
+      {
+        "pages_visited": 475,
+        "relevant_pages_found": 19,
+        "harvest_rate": 0.04,
+        "average_relevance": 0.05462441205192246,
+        "execution_time_in_seconds": 28.115903
+      },
+      {
+        "pages_visited": 500,
+        "relevant_pages_found": 20,
+        "harvest_rate": 0.04,
+        "average_relevance": 0.05458469958535174,
+        "execution_time_in_seconds": 29.079513
+      },
+      {
+        "pages_visited": 525,
+        "relevant_pages_found": 20,
+        "harvest_rate": 0.0380952380952381,
+        "average_relevance": 0.052663571759535524,
+        "execution_time_in_seconds": 30.950394
+      },
+      {
+        "pages_visited": 550,
+        "relevant_pages_found": 21,
+        "harvest_rate": 0.038181818181818185,
+        "average_relevance": 0.05404487811863571,
+        "execution_time_in_seconds": 32.19253
+      },
+      {
+        "pages_visited": 575,
+        "relevant_pages_found": 22,
+        "harvest_rate": 0.03826086956521739,
+        "average_relevance": 0.05552998737707925,
+        "execution_time_in_seconds": 33.334646
+      },
+      {
+        "pages_visited": 600,
+        "relevant_pages_found": 24,
+        "harvest_rate": 0.04,
+        "average_relevance": 0.058325463414443,
+        "execution_time_in_seconds": 34.3693
+      },
+      {
+        "pages_visited": 625,
+        "relevant_pages_found": 24,
+        "harvest_rate": 0.0384,
+        "average_relevance": 0.05636077530482763,
+        "execution_time_in_seconds": 35.8038
+      },
+      {
+        "pages_visited": 650,
+        "relevant_pages_found": 24,
+        "harvest_rate": 0.036923076923076927,
+        "average_relevance": 0.05489320303693951,
+        "execution_time_in_seconds": 37.095339
+      },
+      {
+        "pages_visited": 675,
+        "relevant_pages_found": 25,
+        "harvest_rate": 0.037037037037037035,
+        "average_relevance": 0.05485901497448244,
+        "execution_time_in_seconds": 38.256126
+      },
+      {
+        "pages_visited": 700,
+        "relevant_pages_found": 25,
+        "harvest_rate": 0.03571428571428571,
+        "average_relevance": 0.05390646628327315,
+        "execution_time_in_seconds": 39.572529
+      },
+      {
+        "pages_visited": 725,
+        "relevant_pages_found": 25,
+        "harvest_rate": 0.034482758620689655,
+        "average_relevance": 0.05217040696639894,
+        "execution_time_in_seconds": 40.69255
+      },
+      {
+        "pages_visited": 750,
+        "relevant_pages_found": 26,
+        "harvest_rate": 0.034666666666666665,
+        "average_relevance": 0.05350233320182997,
+        "execution_time_in_seconds": 41.657108
+      },
+      {
+        "pages_visited": 775,
+        "relevant_pages_found": 30,
+        "harvest_rate": 0.03870967741935484,
+        "average_relevance": 0.05735930238474457,
+        "execution_time_in_seconds": 42.951694
+      },
+      {
+        "pages_visited": 800,
+        "relevant_pages_found": 33,
+        "harvest_rate": 0.04125,
+        "average_relevance": 0.05932443915287751,
+        "execution_time_in_seconds": 44.171674
+      },
+      {
+        "pages_visited": 825,
+        "relevant_pages_found": 38,
+        "harvest_rate": 0.04606060606060606,
+        "average_relevance": 0.0645621564515131,
+        "execution_time_in_seconds": 45.150804
+      },
+      {
+        "pages_visited": 850,
+        "relevant_pages_found": 41,
+        "harvest_rate": 0.04823529411764706,
+        "average_relevance": 0.06763770337979895,
+        "execution_time_in_seconds": 46.420828
+      },
+      {
+        "pages_visited": 875,
+        "relevant_pages_found": 43,
+        "harvest_rate": 0.04914285714285714,
+        "average_relevance": 0.06863584600355677,
+        "execution_time_in_seconds": 47.459311
+      },
+      {
+        "pages_visited": 900,
+        "relevant_pages_found": 46,
+        "harvest_rate": 0.051111111111111114,
+        "average_relevance": 0.07040768622578192,
+        "execution_time_in_seconds": 48.525738
+      },
+      {
+        "pages_visited": 925,
+        "relevant_pages_found": 49,
+        "harvest_rate": 0.05297297297297297,
+        "average_relevance": 0.07281151354289284,
+        "execution_time_in_seconds": 49.758292
+      },
+      {
+        "pages_visited": 950,
+        "relevant_pages_found": 52,
+        "harvest_rate": 0.05473684210526316,
+        "average_relevance": 0.07493388080679075,
+        "execution_time_in_seconds": 50.899734
+      },
+      {
+        "pages_visited": 975,
+        "relevant_pages_found": 54,
+        "harvest_rate": 0.055384615384615386,
+        "average_relevance": 0.07608577305631867,
+        "execution_time_in_seconds": 51.9349
+      },
+      {
+        "pages_visited": 1000,
+        "relevant_pages_found": 56,
+        "harvest_rate": 0.056,
+        "average_relevance": 0.07650047876589386,
+        "execution_time_in_seconds": 53.071889
+      },
+      {
+        "pages_visited": 1025,
+        "relevant_pages_found": 56,
+        "harvest_rate": 0.054634146341463415,
+        "average_relevance": 0.07538839748399026,
+        "execution_time_in_seconds": 54.153694
+      },
+      {
+        "pages_visited": 1050,
+        "relevant_pages_found": 59,
+        "harvest_rate": 0.05619047619047619,
+        "average_relevance": 0.07669942704103339,
+        "execution_time_in_seconds": 55.561844
+      },
+      {
+        "pages_visited": 1075,
+        "relevant_pages_found": 63,
+        "harvest_rate": 0.0586046511627907,
+        "average_relevance": 0.07897164472030689,
+        "execution_time_in_seconds": 56.624491
+      },
+      {
+        "pages_visited": 1100,
+        "relevant_pages_found": 66,
+        "harvest_rate": 0.06,
+        "average_relevance": 0.08038719347701447,
+        "execution_time_in_seconds": 57.760374
+      },
+      {
+        "pages_visited": 1125,
+        "relevant_pages_found": 70,
+        "harvest_rate": 0.06222222222222222,
+        "average_relevance": 0.08266322040271425,
+        "execution_time_in_seconds": 59.67323
+      },
+      {
+        "pages_visited": 1150,
+        "relevant_pages_found": 73,
+        "harvest_rate": 0.06347826086956522,
+        "average_relevance": 0.08412562981346246,
+        "execution_time_in_seconds": 60.692665
+      },
+      {
+        "pages_visited": 1175,
+        "relevant_pages_found": 77,
+        "harvest_rate": 0.06553191489361702,
+        "average_relevance": 0.08559328405711551,
+        "execution_time_in_seconds": 61.677432
+      },
+      {
+        "pages_visited": 1200,
+        "relevant_pages_found": 80,
+        "harvest_rate": 0.06666666666666667,
+        "average_relevance": 0.08710294406163871,
+        "execution_time_in_seconds": 62.695613
+      },
+      {
+        "pages_visited": 1225,
+        "relevant_pages_found": 83,
+        "harvest_rate": 0.06775510204081632,
+        "average_relevance": 0.08796908929075868,
+        "execution_time_in_seconds": 63.845194
+      },
+      {
+        "pages_visited": 1250,
+        "relevant_pages_found": 84,
+        "harvest_rate": 0.0672,
+        "average_relevance": 0.08801156135714386,
+        "execution_time_in_seconds": 64.853177
+      },
+      {
+        "pages_visited": 1275,
+        "relevant_pages_found": 85,
+        "harvest_rate": 0.06666666666666667,
+        "average_relevance": 0.08751904621836117,
+        "execution_time_in_seconds": 65.752323
+      },
+      {
+        "pages_visited": 1300,
+        "relevant_pages_found": 86,
+        "harvest_rate": 0.06615384615384616,
+        "average_relevance": 0.08730677511172631,
+        "execution_time_in_seconds": 66.721614
+      },
+      {
+        "pages_visited": 1325,
+        "relevant_pages_found": 88,
+        "harvest_rate": 0.06641509433962264,
+        "average_relevance": 0.08772595466184956,
+        "execution_time_in_seconds": 67.824682
+      },
+      {
+        "pages_visited": 1350,
+        "relevant_pages_found": 92,
+        "harvest_rate": 0.06814814814814815,
+        "average_relevance": 0.08909705101079737,
+        "execution_time_in_seconds": 68.835174
+      },
+      {
+        "pages_visited": 1375,
+        "relevant_pages_found": 93,
+        "harvest_rate": 0.06763636363636363,
+        "average_relevance": 0.08876913466743451,
+        "execution_time_in_seconds": 69.85728
+      },
+      {
+        "pages_visited": 1400,
+        "relevant_pages_found": 94,
+        "harvest_rate": 0.06714285714285714,
+        "average_relevance": 0.08846878892975168,
+        "execution_time_in_seconds": 71.208448
+      },
+      {
+        "pages_visited": 1425,
+        "relevant_pages_found": 95,
+        "harvest_rate": 0.06666666666666667,
+        "average_relevance": 0.08933183718879836,
+        "execution_time_in_seconds": 72.714999
+      },
+      {
+        "pages_visited": 1450,
+        "relevant_pages_found": 95,
+        "harvest_rate": 0.06551724137931035,
+        "average_relevance": 0.08820307880068982,
+        "execution_time_in_seconds": 73.924853
+      },
+      {
+        "pages_visited": 1475,
+        "relevant_pages_found": 96,
+        "harvest_rate": 0.06508474576271187,
+        "average_relevance": 0.08774398975029246,
+        "execution_time_in_seconds": 75.017199
+      },
+      {
+        "pages_visited": 1500,
+        "relevant_pages_found": 96,
+        "harvest_rate": 0.064,
+        "average_relevance": 0.08676593997242439,
+        "execution_time_in_seconds": 76.422981
+      },
+      {
+        "pages_visited": 1525,
+        "relevant_pages_found": 97,
+        "harvest_rate": 0.06360655737704918,
+        "average_relevance": 0.08639114615212971,
+        "execution_time_in_seconds": 77.817816
+      },
+      {
+        "pages_visited": 1550,
+        "relevant_pages_found": 98,
+        "harvest_rate": 0.06322580645161291,
+        "average_relevance": 0.08604703777762424,
+        "execution_time_in_seconds": 78.97709
+      },
+      {
+        "pages_visited": 1575,
+        "relevant_pages_found": 100,
+        "harvest_rate": 0.06349206349206349,
+        "average_relevance": 0.08622906367542932,
+        "execution_time_in_seconds": 80.543551
+      },
+      {
+        "pages_visited": 1600,
+        "relevant_pages_found": 102,
+        "harvest_rate": 0.06375,
+        "average_relevance": 0.0866538690180779,
+        "execution_time_in_seconds": 81.597537
+      },
+      {
+        "pages_visited": 1625,
+        "relevant_pages_found": 103,
+        "harvest_rate": 0.06338461538461539,
+        "average_relevance": 0.08584163404295829,
+        "execution_time_in_seconds": 82.76782
+      },
+      {
+        "pages_visited": 1650,
+        "relevant_pages_found": 103,
+        "harvest_rate": 0.062424242424242424,
+        "average_relevance": 0.0845922773870749,
+        "execution_time_in_seconds": 83.757613
+      },
+      {
+        "pages_visited": 1675,
+        "relevant_pages_found": 105,
+        "harvest_rate": 0.0626865671641791,
+        "average_relevance": 0.08471118269999542,
+        "execution_time_in_seconds": 85.028619
+      },
+      {
+        "pages_visited": 1700,
+        "relevant_pages_found": 105,
+        "harvest_rate": 0.061764705882352944,
+        "average_relevance": 0.08355567705963472,
+        "execution_time_in_seconds": 86.111463
+      },
+      {
+        "pages_visited": 1725,
+        "relevant_pages_found": 105,
+        "harvest_rate": 0.06086956521739131,
+        "average_relevance": 0.08234472521819075,
+        "execution_time_in_seconds": 87.521534
+      },
+      {
+        "pages_visited": 1750,
+        "relevant_pages_found": 107,
+        "harvest_rate": 0.061142857142857145,
+        "average_relevance": 0.08255441288453731,
+        "execution_time_in_seconds": 88.901398
+      },
+      {
+        "pages_visited": 1775,
+        "relevant_pages_found": 107,
+        "harvest_rate": 0.06028169014084507,
+        "average_relevance": 0.08177045895379345,
+        "execution_time_in_seconds": 90.355012
+      },
+      {
+        "pages_visited": 1800,
+        "relevant_pages_found": 108,
+        "harvest_rate": 0.06,
+        "average_relevance": 0.08133584825245097,
+        "execution_time_in_seconds": 91.394412
+      },
+      {
+        "pages_visited": 1825,
+        "relevant_pages_found": 110,
+        "harvest_rate": 0.06027397260273973,
+        "average_relevance": 0.08157122729719161,
+        "execution_time_in_seconds": 92.143517
+      },
+      {
+        "pages_visited": 1850,
+        "relevant_pages_found": 111,
+        "harvest_rate": 0.06,
+        "average_relevance": 0.08106461115335202,
+        "execution_time_in_seconds": 93.534969
+      },
+      {
+        "pages_visited": 1875,
+        "relevant_pages_found": 113,
+        "harvest_rate": 0.06026666666666667,
+        "average_relevance": 0.08105673104774304,
+        "execution_time_in_seconds": 94.904731
+      },
+      {
+        "pages_visited": 1900,
+        "relevant_pages_found": 114,
+        "harvest_rate": 0.06,
+        "average_relevance": 0.08062926020615588,
+        "execution_time_in_seconds": 96.119974
+      },
+      {
+        "pages_visited": 1925,
+        "relevant_pages_found": 115,
+        "harvest_rate": 0.05974025974025974,
+        "average_relevance": 0.08058915770192708,
+        "execution_time_in_seconds": 97.382653
+      },
+      {
+        "pages_visited": 1950,
+        "relevant_pages_found": 116,
+        "harvest_rate": 0.059487179487179485,
+        "average_relevance": 0.08039485405360122,
+        "execution_time_in_seconds": 98.758418
+      },
+      {
+        "pages_visited": 1975,
+        "relevant_pages_found": 117,
+        "harvest_rate": 0.05924050632911392,
+        "average_relevance": 0.08031965488395482,
+        "execution_time_in_seconds": 99.639338
+      },
+      {
+        "pages_visited": 2000,
+        "relevant_pages_found": 117,
+        "harvest_rate": 0.0585,
+        "average_relevance": 0.07988967609442298,
+        "execution_time_in_seconds": 100.83412
+      },
+      {
+        "pages_visited": 2025,
+        "relevant_pages_found": 118,
+        "harvest_rate": 0.058271604938271604,
+        "average_relevance": 0.07977879198059236,
+        "execution_time_in_seconds": 101.892672
+      },
+      {
+        "pages_visited": 2050,
+        "relevant_pages_found": 121,
+        "harvest_rate": 0.059024390243902436,
+        "average_relevance": 0.08030879281708425,
+        "execution_time_in_seconds": 102.686841
+      },
+      {
+        "pages_visited": 2075,
+        "relevant_pages_found": 122,
+        "harvest_rate": 0.05879518072289157,
+        "average_relevance": 0.08007415024265246,
+        "execution_time_in_seconds": 103.695421
+      },
+      {
+        "pages_visited": 2100,
+        "relevant_pages_found": 122,
+        "harvest_rate": 0.058095238095238096,
+        "average_relevance": 0.07940188689182608,
+        "execution_time_in_seconds": 105.0627
+      },
+      {
+        "pages_visited": 2125,
+        "relevant_pages_found": 122,
+        "harvest_rate": 0.05741176470588235,
+        "average_relevance": 0.07905211788282428,
+        "execution_time_in_seconds": 106.029034
+      },
+      {
+        "pages_visited": 2150,
+        "relevant_pages_found": 123,
+        "harvest_rate": 0.0572093023255814,
+        "average_relevance": 0.0791114124049654,
+        "execution_time_in_seconds": 107.124887
+      },
+      {
+        "pages_visited": 2175,
+        "relevant_pages_found": 124,
+        "harvest_rate": 0.057011494252873565,
+        "average_relevance": 0.07903326837603852,
+        "execution_time_in_seconds": 108.493544
+      },
+      {
+        "pages_visited": 2200,
+        "relevant_pages_found": 125,
+        "harvest_rate": 0.056818181818181816,
+        "average_relevance": 0.07866717435556908,
+        "execution_time_in_seconds": 109.639617
+      },
+      {
+        "pages_visited": 2225,
+        "relevant_pages_found": 125,
+        "harvest_rate": 0.056179775280898875,
+        "average_relevance": 0.07786733282366988,
+        "execution_time_in_seconds": 110.630054
+      },
+      {
+        "pages_visited": 2250,
+        "relevant_pages_found": 126,
+        "harvest_rate": 0.056,
+        "average_relevance": 0.07735443800755279,
+        "execution_time_in_seconds": 111.531585
+      },
+      {
+        "pages_visited": 2275,
+        "relevant_pages_found": 126,
+        "harvest_rate": 0.055384615384615386,
+        "average_relevance": 0.07683868235628524,
+        "execution_time_in_seconds": 112.744711
+      },
+      {
+        "pages_visited": 2300,
+        "relevant_pages_found": 127,
+        "harvest_rate": 0.05521739130434783,
+        "average_relevance": 0.07678356541164379,
+        "execution_time_in_seconds": 113.693777
+      },
+      {
+        "pages_visited": 2325,
+        "relevant_pages_found": 127,
+        "harvest_rate": 0.0546236559139785,
+        "average_relevance": 0.07629075934269042,
+        "execution_time_in_seconds": 115.292609
+      },
+      {
+        "pages_visited": 2350,
+        "relevant_pages_found": 127,
+        "harvest_rate": 0.05404255319148936,
+        "average_relevance": 0.07552784181555995,
+        "execution_time_in_seconds": 116.889257
+      },
+      {
+        "pages_visited": 2375,
+        "relevant_pages_found": 128,
+        "harvest_rate": 0.053894736842105266,
+        "average_relevance": 0.07534099903621488,
+        "execution_time_in_seconds": 117.930285
+      },
+      {
+        "pages_visited": 2400,
+        "relevant_pages_found": 130,
+        "harvest_rate": 0.05416666666666667,
+        "average_relevance": 0.0758820168927056,
+        "execution_time_in_seconds": 119.30061
+      },
+      {
+        "pages_visited": 2425,
+        "relevant_pages_found": 131,
+        "harvest_rate": 0.05402061855670103,
+        "average_relevance": 0.07592395471751176,
+        "execution_time_in_seconds": 120.516561
+      },
+      {
+        "pages_visited": 2450,
+        "relevant_pages_found": 132,
+        "harvest_rate": 0.053877551020408164,
+        "average_relevance": 0.07602459720020943,
+        "execution_time_in_seconds": 121.593416
+      },
+      {
+        "pages_visited": 2475,
+        "relevant_pages_found": 133,
+        "harvest_rate": 0.053737373737373736,
+        "average_relevance": 0.07598493911330953,
+        "execution_time_in_seconds": 122.711452
+      },
+      {
+        "pages_visited": 2500,
+        "relevant_pages_found": 134,
+        "harvest_rate": 0.0536,
+        "average_relevance": 0.07578535611188468,
+        "execution_time_in_seconds": 123.71647
+      },
+      {
+        "pages_visited": 2525,
+        "relevant_pages_found": 135,
+        "harvest_rate": 0.053465346534653464,
+        "average_relevance": 0.07572985180290143,
+        "execution_time_in_seconds": 125.123114
+      },
+      {
+        "pages_visited": 2550,
+        "relevant_pages_found": 135,
+        "harvest_rate": 0.052941176470588235,
+        "average_relevance": 0.07504285675396526,
+        "execution_time_in_seconds": 125.94429
+      },
+      {
+        "pages_visited": 2575,
+        "relevant_pages_found": 135,
+        "harvest_rate": 0.05242718446601942,
+        "average_relevance": 0.07433173139900609,
+        "execution_time_in_seconds": 127.244208
+      },
+      {
+        "pages_visited": 2600,
+        "relevant_pages_found": 136,
+        "harvest_rate": 0.052307692307692305,
+        "average_relevance": 0.07397702903396823,
+        "execution_time_in_seconds": 128.411748
+      },
+      {
+        "pages_visited": 2625,
+        "relevant_pages_found": 136,
+        "harvest_rate": 0.05180952380952381,
+        "average_relevance": 0.07333464209859744,
+        "execution_time_in_seconds": 129.903931
+      },
+      {
+        "pages_visited": 2650,
+        "relevant_pages_found": 136,
+        "harvest_rate": 0.05132075471698113,
+        "average_relevance": 0.07264280585238427,
+        "execution_time_in_seconds": 130.675634
+      },
+      {
+        "pages_visited": 2675,
+        "relevant_pages_found": 136,
+        "harvest_rate": 0.0508411214953271,
+        "average_relevance": 0.0719878877642337,
+        "execution_time_in_seconds": 131.87956
+      },
+      {
+        "pages_visited": 2700,
+        "relevant_pages_found": 136,
+        "harvest_rate": 0.05037037037037037,
+        "average_relevance": 0.07171203937045119,
+        "execution_time_in_seconds": 133.118538
+      },
+      {
+        "pages_visited": 2725,
+        "relevant_pages_found": 137,
+        "harvest_rate": 0.050275229357798164,
+        "average_relevance": 0.0717784397871912,
+        "execution_time_in_seconds": 134.268181
+      },
+      {
+        "pages_visited": 2750,
+        "relevant_pages_found": 137,
+        "harvest_rate": 0.04981818181818182,
+        "average_relevance": 0.07136930002264788,
+        "execution_time_in_seconds": 135.704027
+      },
+      {
+        "pages_visited": 2775,
+        "relevant_pages_found": 137,
+        "harvest_rate": 0.04936936936936937,
+        "average_relevance": 0.0708358250158412,
+        "execution_time_in_seconds": 137.282061
+      },
+      {
+        "pages_visited": 2800,
+        "relevant_pages_found": 138,
+        "harvest_rate": 0.04928571428571429,
+        "average_relevance": 0.07071884128167416,
+        "execution_time_in_seconds": 138.402854
+      },
+      {
+        "pages_visited": 2825,
+        "relevant_pages_found": 139,
+        "harvest_rate": 0.049203539823008846,
+        "average_relevance": 0.07049667144550884,
+        "execution_time_in_seconds": 139.650608
+      },
+      {
+        "pages_visited": 2850,
+        "relevant_pages_found": 140,
+        "harvest_rate": 0.04912280701754386,
+        "average_relevance": 0.07027296167671268,
+        "execution_time_in_seconds": 140.721352
+      },
+      {
+        "pages_visited": 2875,
+        "relevant_pages_found": 140,
+        "harvest_rate": 0.04869565217391304,
+        "average_relevance": 0.06975061504234155,
+        "execution_time_in_seconds": 141.856978
+      },
+      {
+        "pages_visited": 2900,
+        "relevant_pages_found": 141,
+        "harvest_rate": 0.04862068965517241,
+        "average_relevance": 0.06950090681054709,
+        "execution_time_in_seconds": 143.056177
+      },
+      {
+        "pages_visited": 2925,
+        "relevant_pages_found": 141,
+        "harvest_rate": 0.048205128205128206,
+        "average_relevance": 0.06903335997567253,
+        "execution_time_in_seconds": 144.366682
+      },
+      {
+        "pages_visited": 2950,
+        "relevant_pages_found": 141,
+        "harvest_rate": 0.04779661016949153,
+        "average_relevance": 0.06861267415462351,
+        "execution_time_in_seconds": 145.518231
+      },
+      {
+        "pages_visited": 2975,
+        "relevant_pages_found": 141,
+        "harvest_rate": 0.04739495798319328,
+        "average_relevance": 0.06818180847515322,
+        "execution_time_in_seconds": 146.703733
+      },
+      {
+        "pages_visited": 3000,
+        "relevant_pages_found": 141,
+        "harvest_rate": 0.047,
+        "average_relevance": 0.06777475578414338,
+        "execution_time_in_seconds": 147.977328
+      },
+      {
+        "pages_visited": 3025,
+        "relevant_pages_found": 143,
+        "harvest_rate": 0.04727272727272727,
+        "average_relevance": 0.06794719010704543,
+        "execution_time_in_seconds": 149.117882
+      },
+      {
+        "pages_visited": 3050,
+        "relevant_pages_found": 145,
+        "harvest_rate": 0.047540983606557376,
+        "average_relevance": 0.0681192268304451,
+        "execution_time_in_seconds": 150.314975
+      },
+      {
+        "pages_visited": 3075,
+        "relevant_pages_found": 146,
+        "harvest_rate": 0.047479674796747966,
+        "average_relevance": 0.06799512400254663,
+        "execution_time_in_seconds": 151.535891
+      },
+      {
+        "pages_visited": 3100,
+        "relevant_pages_found": 148,
+        "harvest_rate": 0.04774193548387097,
+        "average_relevance": 0.06805786524317875,
+        "execution_time_in_seconds": 152.623314
+      },
+      {
+        "pages_visited": 3125,
+        "relevant_pages_found": 148,
+        "harvest_rate": 0.04736,
+        "average_relevance": 0.06769711110420897,
+        "execution_time_in_seconds": 153.757795
+      },
+      {
+        "pages_visited": 3150,
+        "relevant_pages_found": 148,
+        "harvest_rate": 0.04698412698412698,
+        "average_relevance": 0.06715983244465176,
+        "execution_time_in_seconds": 155.129368
+      },
+      {
+        "pages_visited": 3175,
+        "relevant_pages_found": 149,
+        "harvest_rate": 0.04692913385826772,
+        "average_relevance": 0.0670714086978555,
+        "execution_time_in_seconds": 156.19659
+      },
+      {
+        "pages_visited": 3200,
+        "relevant_pages_found": 149,
+        "harvest_rate": 0.0465625,
+        "average_relevance": 0.06664485156228778,
+        "execution_time_in_seconds": 157.269061
+      },
+      {
+        "pages_visited": 3225,
+        "relevant_pages_found": 149,
+        "harvest_rate": 0.0462015503875969,
+        "average_relevance": 0.06612822480599097,
+        "execution_time_in_seconds": 158.22495
+      },
+      {
+        "pages_visited": 3250,
+        "relevant_pages_found": 150,
+        "harvest_rate": 0.046153846153846156,
+        "average_relevance": 0.06603870655576638,
+        "execution_time_in_seconds": 159.384041
+      },
+      {
+        "pages_visited": 3275,
+        "relevant_pages_found": 150,
+        "harvest_rate": 0.04580152671755725,
+        "average_relevance": 0.06575202112821919,
+        "execution_time_in_seconds": 160.302064
+      },
+      {
+        "pages_visited": 3300,
+        "relevant_pages_found": 152,
+        "harvest_rate": 0.04606060606060606,
+        "average_relevance": 0.06598702144045335,
+        "execution_time_in_seconds": 161.616838
+      },
+      {
+        "pages_visited": 3325,
+        "relevant_pages_found": 152,
+        "harvest_rate": 0.045714285714285714,
+        "average_relevance": 0.0655219980821372,
+        "execution_time_in_seconds": 162.708433
+      },
+      {
+        "pages_visited": 3350,
+        "relevant_pages_found": 152,
+        "harvest_rate": 0.04537313432835821,
+        "average_relevance": 0.06525562521399081,
+        "execution_time_in_seconds": 164.082946
+      },
+      {
+        "pages_visited": 3375,
+        "relevant_pages_found": 153,
+        "harvest_rate": 0.04533333333333334,
+        "average_relevance": 0.0651702190351339,
+        "execution_time_in_seconds": 165.229966
+      },
+      {
+        "pages_visited": 3400,
+        "relevant_pages_found": 154,
+        "harvest_rate": 0.045294117647058825,
+        "average_relevance": 0.06504030069672927,
+        "execution_time_in_seconds": 166.256392
+      },
+      {
+        "pages_visited": 3425,
+        "relevant_pages_found": 154,
+        "harvest_rate": 0.044963503649635035,
+        "average_relevance": 0.06478884281602314,
+        "execution_time_in_seconds": 167.413603
+      },
+      {
+        "pages_visited": 3450,
+        "relevant_pages_found": 154,
+        "harvest_rate": 0.04463768115942029,
+        "average_relevance": 0.06455140625251836,
+        "execution_time_in_seconds": 168.293644
+      },
+      {
+        "pages_visited": 3475,
+        "relevant_pages_found": 158,
+        "harvest_rate": 0.04546762589928058,
+        "average_relevance": 0.06542311829539277,
+        "execution_time_in_seconds": 169.585724
+      },
+      {
+        "pages_visited": 3500,
+        "relevant_pages_found": 159,
+        "harvest_rate": 0.04542857142857143,
+        "average_relevance": 0.06547083759031502,
+        "execution_time_in_seconds": 170.762965
+      },
+      {
+        "pages_visited": 3525,
+        "relevant_pages_found": 160,
+        "harvest_rate": 0.04539007092198582,
+        "average_relevance": 0.0654207752738552,
+        "execution_time_in_seconds": 172.084901
+      },
+      {
+        "pages_visited": 3550,
+        "relevant_pages_found": 160,
+        "harvest_rate": 0.04507042253521127,
+        "average_relevance": 0.0652934469800221,
+        "execution_time_in_seconds": 173.222253
+      },
+      {
+        "pages_visited": 3575,
+        "relevant_pages_found": 160,
+        "harvest_rate": 0.044755244755244755,
+        "average_relevance": 0.06494007440720083,
+        "execution_time_in_seconds": 174.769763
+      },
+      {
+        "pages_visited": 3600,
+        "relevant_pages_found": 161,
+        "harvest_rate": 0.04472222222222222,
+        "average_relevance": 0.0648276623295797,
+        "execution_time_in_seconds": 175.4454
+      },
+      {
+        "pages_visited": 3625,
+        "relevant_pages_found": 161,
+        "harvest_rate": 0.04441379310344828,
+        "average_relevance": 0.06449671716401727,
+        "execution_time_in_seconds": 176.680689
+      },
+      {
+        "pages_visited": 3650,
+        "relevant_pages_found": 161,
+        "harvest_rate": 0.04410958904109589,
+        "average_relevance": 0.06413279195305574,
+        "execution_time_in_seconds": 177.84672
+      },
+      {
+        "pages_visited": 3675,
+        "relevant_pages_found": 161,
+        "harvest_rate": 0.04380952380952381,
+        "average_relevance": 0.06369651445677646,
+        "execution_time_in_seconds": 178.950222
+      },
+      {
+        "pages_visited": 3700,
+        "relevant_pages_found": 161,
+        "harvest_rate": 0.04351351351351351,
+        "average_relevance": 0.06327631610913118,
+        "execution_time_in_seconds": 180.130741
+      },
+      {
+        "pages_visited": 3725,
+        "relevant_pages_found": 162,
+        "harvest_rate": 0.04348993288590604,
+        "average_relevance": 0.06315339269613954,
+        "execution_time_in_seconds": 181.521753
+      },
+      {
+        "pages_visited": 3750,
+        "relevant_pages_found": 162,
+        "harvest_rate": 0.0432,
+        "average_relevance": 0.06288207981388955,
+        "execution_time_in_seconds": 182.868283
+      },
+      {
+        "pages_visited": 3775,
+        "relevant_pages_found": 162,
+        "harvest_rate": 0.04291390728476821,
+        "average_relevance": 0.06267511308943048,
+        "execution_time_in_seconds": 183.96758
+      },
+      {
+        "pages_visited": 3800,
+        "relevant_pages_found": 162,
+        "harvest_rate": 0.04263157894736842,
+        "average_relevance": 0.06242658947147683,
+        "execution_time_in_seconds": 185.199372
+      },
+      {
+        "pages_visited": 3825,
+        "relevant_pages_found": 164,
+        "harvest_rate": 0.04287581699346405,
+        "average_relevance": 0.06245622256112175,
+        "execution_time_in_seconds": 186.434298
+      },
+      {
+        "pages_visited": 3850,
+        "relevant_pages_found": 164,
+        "harvest_rate": 0.0425974025974026,
+        "average_relevance": 0.062189360749269416,
+        "execution_time_in_seconds": 187.88821
+      },
+      {
+        "pages_visited": 3875,
+        "relevant_pages_found": 165,
+        "harvest_rate": 0.04258064516129032,
+        "average_relevance": 0.062486850381211156,
+        "execution_time_in_seconds": 189.204338
+      },
+      {
+        "pages_visited": 3900,
+        "relevant_pages_found": 167,
+        "harvest_rate": 0.04282051282051282,
+        "average_relevance": 0.06259911416081877,
+        "execution_time_in_seconds": 190.387915
+      },
+      {
+        "pages_visited": 3925,
+        "relevant_pages_found": 167,
+        "harvest_rate": 0.04254777070063694,
+        "average_relevance": 0.06224332158568749,
+        "execution_time_in_seconds": 191.377117
+      },
+      {
+        "pages_visited": 3950,
+        "relevant_pages_found": 167,
+        "harvest_rate": 0.04227848101265823,
+        "average_relevance": 0.06211940637206413,
+        "execution_time_in_seconds": 192.881936
+      },
+      {
+        "pages_visited": 3975,
+        "relevant_pages_found": 167,
+        "harvest_rate": 0.0420125786163522,
+        "average_relevance": 0.06230827778978423,
+        "execution_time_in_seconds": 194.673484
+      },
+      {
+        "pages_visited": 4000,
+        "relevant_pages_found": 172,
+        "harvest_rate": 0.043,
+        "average_relevance": 0.06337291059259194,
+        "execution_time_in_seconds": 196.069133
+      },
+      {
+        "pages_visited": 4025,
+        "relevant_pages_found": 174,
+        "harvest_rate": 0.04322981366459627,
+        "average_relevance": 0.06384696445906533,
+        "execution_time_in_seconds": 197.324999
+      },
+      {
+        "pages_visited": 4050,
+        "relevant_pages_found": 175,
+        "harvest_rate": 0.043209876543209874,
+        "average_relevance": 0.06409994962663007,
+        "execution_time_in_seconds": 198.535878
+      },
+      {
+        "pages_visited": 4075,
+        "relevant_pages_found": 177,
+        "harvest_rate": 0.04343558282208589,
+        "average_relevance": 0.06423837499892729,
+        "execution_time_in_seconds": 199.831151
+      },
+      {
+        "pages_visited": 4100,
+        "relevant_pages_found": 179,
+        "harvest_rate": 0.04365853658536585,
+        "average_relevance": 0.06439234095291933,
+        "execution_time_in_seconds": 201.203993
+      },
+      {
+        "pages_visited": 4125,
+        "relevant_pages_found": 181,
+        "harvest_rate": 0.04387878787878788,
+        "average_relevance": 0.06435406254749593,
+        "execution_time_in_seconds": 202.690313
+      },
+      {
+        "pages_visited": 4150,
+        "relevant_pages_found": 181,
+        "harvest_rate": 0.0436144578313253,
+        "average_relevance": 0.06412282652805473,
+        "execution_time_in_seconds": 203.852505
+      },
+      {
+        "pages_visited": 4175,
+        "relevant_pages_found": 181,
+        "harvest_rate": 0.043353293413173656,
+        "average_relevance": 0.06386323043413736,
+        "execution_time_in_seconds": 205.689315
+      },
+      {
+        "pages_visited": 4200,
+        "relevant_pages_found": 182,
+        "harvest_rate": 0.043333333333333335,
+        "average_relevance": 0.06383242588461108,
+        "execution_time_in_seconds": 207.124277
+      },
+      {
+        "pages_visited": 4225,
+        "relevant_pages_found": 182,
+        "harvest_rate": 0.043076923076923075,
+        "average_relevance": 0.06359398552128821,
+        "execution_time_in_seconds": 208.317253
+      },
+      {
+        "pages_visited": 4250,
+        "relevant_pages_found": 182,
+        "harvest_rate": 0.042823529411764705,
+        "average_relevance": 0.06326052654057056,
+        "execution_time_in_seconds": 209.533615
+      },
+      {
+        "pages_visited": 4275,
+        "relevant_pages_found": 182,
+        "harvest_rate": 0.04257309941520468,
+        "average_relevance": 0.06318238263477192,
+        "execution_time_in_seconds": 210.642143
+      },
+      {
+        "pages_visited": 4300,
+        "relevant_pages_found": 183,
+        "harvest_rate": 0.04255813953488372,
+        "average_relevance": 0.06321703417499297,
+        "execution_time_in_seconds": 211.850276
+      },
+      {
+        "pages_visited": 4325,
+        "relevant_pages_found": 184,
+        "harvest_rate": 0.04254335260115607,
+        "average_relevance": 0.06333096564919748,
+        "execution_time_in_seconds": 213.088133
+      },
+      {
+        "pages_visited": 4350,
+        "relevant_pages_found": 187,
+        "harvest_rate": 0.04298850574712643,
+        "average_relevance": 0.06367742539946387,
+        "execution_time_in_seconds": 214.10131
+      },
+      {
+        "pages_visited": 4375,
+        "relevant_pages_found": 187,
+        "harvest_rate": 0.042742857142857145,
+        "average_relevance": 0.06338038814822551,
+        "execution_time_in_seconds": 215.474544
+      },
+      {
+        "pages_visited": 4400,
+        "relevant_pages_found": 190,
+        "harvest_rate": 0.04318181818181818,
+        "average_relevance": 0.0636645481596426,
+        "execution_time_in_seconds": 216.631036
+      },
+      {
+        "pages_visited": 4425,
+        "relevant_pages_found": 190,
+        "harvest_rate": 0.04293785310734463,
+        "average_relevance": 0.06343265242643838,
+        "execution_time_in_seconds": 217.712433
+      },
+      {
+        "pages_visited": 4450,
+        "relevant_pages_found": 191,
+        "harvest_rate": 0.04292134831460674,
+        "average_relevance": 0.06338276582202886,
+        "execution_time_in_seconds": 218.819806
+      },
+      {
+        "pages_visited": 4475,
+        "relevant_pages_found": 191,
+        "harvest_rate": 0.04268156424581006,
+        "average_relevance": 0.06322567192705505,
+        "execution_time_in_seconds": 220.129357
+      },
+      {
+        "pages_visited": 4500,
+        "relevant_pages_found": 191,
+        "harvest_rate": 0.042444444444444444,
+        "average_relevance": 0.06312190789732498,
+        "execution_time_in_seconds": 221.452129
+      },
+      {
+        "pages_visited": 4525,
+        "relevant_pages_found": 191,
+        "harvest_rate": 0.04220994475138121,
+        "average_relevance": 0.06284844652262395,
+        "execution_time_in_seconds": 222.704343
+      },
+      {
+        "pages_visited": 4550,
+        "relevant_pages_found": 191,
+        "harvest_rate": 0.04197802197802198,
+        "average_relevance": 0.06261773544802657,
+        "execution_time_in_seconds": 223.994755
+      },
+      {
+        "pages_visited": 4575,
+        "relevant_pages_found": 191,
+        "harvest_rate": 0.04174863387978142,
+        "average_relevance": 0.062275562030277794,
+        "execution_time_in_seconds": 225.333027
+      },
+      {
+        "pages_visited": 4600,
+        "relevant_pages_found": 191,
+        "harvest_rate": 0.04152173913043478,
+        "average_relevance": 0.061956738415437695,
+        "execution_time_in_seconds": 226.670216
+      },
+      {
+        "pages_visited": 4625,
+        "relevant_pages_found": 191,
+        "harvest_rate": 0.041297297297297295,
+        "average_relevance": 0.06168188559614846,
+        "execution_time_in_seconds": 228.114578
+      },
+      {
+        "pages_visited": 4650,
+        "relevant_pages_found": 191,
+        "harvest_rate": 0.0410752688172043,
+        "average_relevance": 0.06137639777643695,
+        "execution_time_in_seconds": 229.484689
+      },
+      {
+        "pages_visited": 4675,
+        "relevant_pages_found": 191,
+        "harvest_rate": 0.04085561497326203,
+        "average_relevance": 0.061235362530282396,
+        "execution_time_in_seconds": 230.68761
+      },
+      {
+        "pages_visited": 4700,
+        "relevant_pages_found": 192,
+        "harvest_rate": 0.04085106382978723,
+        "average_relevance": 0.061178695764600104,
+        "execution_time_in_seconds": 232.066879
+      },
+      {
+        "pages_visited": 4725,
+        "relevant_pages_found": 193,
+        "harvest_rate": 0.040846560846560846,
+        "average_relevance": 0.06100891911553296,
+        "execution_time_in_seconds": 233.473022
+      },
+      {
+        "pages_visited": 4750,
+        "relevant_pages_found": 194,
+        "harvest_rate": 0.040842105263157895,
+        "average_relevance": 0.060836776840148335,
+        "execution_time_in_seconds": 234.385742
+      },
+      {
+        "pages_visited": 4775,
+        "relevant_pages_found": 194,
+        "harvest_rate": 0.0406282722513089,
+        "average_relevance": 0.06057816137937545,
+        "execution_time_in_seconds": 235.57359
+      },
+      {
+        "pages_visited": 4800,
+        "relevant_pages_found": 194,
+        "harvest_rate": 0.04041666666666666,
+        "average_relevance": 0.06026573471403802,
+        "execution_time_in_seconds": 236.896754
+      },
+      {
+        "pages_visited": 4825,
+        "relevant_pages_found": 194,
+        "harvest_rate": 0.04020725388601036,
+        "average_relevance": 0.05995347702121916,
+        "execution_time_in_seconds": 238.210756
+      },
+      {
+        "pages_visited": 4850,
+        "relevant_pages_found": 194,
+        "harvest_rate": 0.04,
+        "average_relevance": 0.05980387322944322,
+        "execution_time_in_seconds": 239.492499
+      },
+      {
+        "pages_visited": 4875,
+        "relevant_pages_found": 195,
+        "harvest_rate": 0.04,
+        "average_relevance": 0.059742168813599644,
+        "execution_time_in_seconds": 240.700676
+      },
+      {
+        "pages_visited": 4900,
+        "relevant_pages_found": 195,
+        "harvest_rate": 0.03979591836734694,
+        "average_relevance": 0.059578421234879435,
+        "execution_time_in_seconds": 242.112373
+      },
+      {
+        "pages_visited": 4925,
+        "relevant_pages_found": 195,
+        "harvest_rate": 0.03959390862944162,
+        "average_relevance": 0.0593277900693859,
+        "execution_time_in_seconds": 243.296819
+      },
+      {
+        "pages_visited": 4950,
+        "relevant_pages_found": 195,
+        "harvest_rate": 0.03939393939393939,
+        "average_relevance": 0.0591017701354661,
+        "execution_time_in_seconds": 244.397726
+      },
+      {
+        "pages_visited": 4975,
+        "relevant_pages_found": 196,
+        "harvest_rate": 0.03939698492462312,
+        "average_relevance": 0.059036075994187885,
+        "execution_time_in_seconds": 245.579598
+      },
+      {
+        "pages_visited": 5000,
+        "relevant_pages_found": 196,
+        "harvest_rate": 0.0392,
+        "average_relevance": 0.05876249181217535,
+        "execution_time_in_seconds": 246.995675
+      },
+      {
+        "pages_visited": 5025,
+        "relevant_pages_found": 196,
+        "harvest_rate": 0.03900497512437811,
+        "average_relevance": 0.05866248910892742,
+        "execution_time_in_seconds": 248.424936
+      },
+      {
+        "pages_visited": 5050,
+        "relevant_pages_found": 196,
+        "harvest_rate": 0.03881188118811881,
+        "average_relevance": 0.0584298605528162,
+        "execution_time_in_seconds": 249.757715
+      },
+      {
+        "pages_visited": 5075,
+        "relevant_pages_found": 196,
+        "harvest_rate": 0.038620689655172416,
+        "average_relevance": 0.05819897795719454,
+        "execution_time_in_seconds": 251.21062
+      },
+      {
+        "pages_visited": 5100,
+        "relevant_pages_found": 196,
+        "harvest_rate": 0.038431372549019606,
+        "average_relevance": 0.05797225091283512,
+        "execution_time_in_seconds": 252.683705
+      },
+      {
+        "pages_visited": 5125,
+        "relevant_pages_found": 196,
+        "harvest_rate": 0.03824390243902439,
+        "average_relevance": 0.05778834141672865,
+        "execution_time_in_seconds": 253.995743
+      },
+      {
+        "pages_visited": 5150,
+        "relevant_pages_found": 196,
+        "harvest_rate": 0.03805825242718447,
+        "average_relevance": 0.05768461931667292,
+        "execution_time_in_seconds": 255.157569
+      },
+      {
+        "pages_visited": 5175,
+        "relevant_pages_found": 198,
+        "harvest_rate": 0.03826086956521739,
+        "average_relevance": 0.05783999925810734,
+        "execution_time_in_seconds": 256.23835
+      },
+      {
+        "pages_visited": 5200,
+        "relevant_pages_found": 198,
+        "harvest_rate": 0.03807692307692308,
+        "average_relevance": 0.0576414365302519,
+        "execution_time_in_seconds": 257.518541
+      },
+      {
+        "pages_visited": 5225,
+        "relevant_pages_found": 201,
+        "harvest_rate": 0.038468899521531104,
+        "average_relevance": 0.057949442125287645,
+        "execution_time_in_seconds": 258.779788
+      },
+      {
+        "pages_visited": 5250,
+        "relevant_pages_found": 201,
+        "harvest_rate": 0.038285714285714284,
+        "average_relevance": 0.057673492400881515,
+        "execution_time_in_seconds": 260.168204
+      },
+      {
+        "pages_visited": 5275,
+        "relevant_pages_found": 202,
+        "harvest_rate": 0.03829383886255924,
+        "average_relevance": 0.057624352942336636,
+        "execution_time_in_seconds": 261.467246
+      },
+      {
+        "pages_visited": 5300,
+        "relevant_pages_found": 202,
+        "harvest_rate": 0.03811320754716981,
+        "average_relevance": 0.057396498140103044,
+        "execution_time_in_seconds": 262.508851
+      },
+      {
+        "pages_visited": 5325,
+        "relevant_pages_found": 202,
+        "harvest_rate": 0.03793427230046948,
+        "average_relevance": 0.05727393396651031,
+        "execution_time_in_seconds": 263.780682
+      },
+      {
+        "pages_visited": 5350,
+        "relevant_pages_found": 202,
+        "harvest_rate": 0.037757009345794394,
+        "average_relevance": 0.05704097008494582,
+        "execution_time_in_seconds": 265.128088
+      },
+      {
+        "pages_visited": 5375,
+        "relevant_pages_found": 203,
+        "harvest_rate": 0.037767441860465115,
+        "average_relevance": 0.057037645785432,
+        "execution_time_in_seconds": 266.425514
+      },
+      {
+        "pages_visited": 5400,
+        "relevant_pages_found": 203,
+        "harvest_rate": 0.037592592592592594,
+        "average_relevance": 0.056875429389427204,
+        "execution_time_in_seconds": 267.813704
+      },
+      {
+        "pages_visited": 5425,
+        "relevant_pages_found": 204,
+        "harvest_rate": 0.037603686635944704,
+        "average_relevance": 0.05677272725789589,
+        "execution_time_in_seconds": 269.300638
+      },
+      {
+        "pages_visited": 5450,
+        "relevant_pages_found": 204,
+        "harvest_rate": 0.03743119266055046,
+        "average_relevance": 0.05660911451238423,
+        "execution_time_in_seconds": 270.647798
+      },
+      {
+        "pages_visited": 5475,
+        "relevant_pages_found": 204,
+        "harvest_rate": 0.03726027397260274,
+        "average_relevance": 0.05643150893293231,
+        "execution_time_in_seconds": 271.849762
+      },
+      {
+        "pages_visited": 5500,
+        "relevant_pages_found": 204,
+        "harvest_rate": 0.03709090909090909,
+        "average_relevance": 0.05617500207414626,
+        "execution_time_in_seconds": 273.453122
+      },
+      {
+        "pages_visited": 5525,
+        "relevant_pages_found": 204,
+        "harvest_rate": 0.036923076923076927,
+        "average_relevance": 0.05610855355836746,
+        "execution_time_in_seconds": 274.965913
+      },
+      {
+        "pages_visited": 5550,
+        "relevant_pages_found": 205,
+        "harvest_rate": 0.036936936936936934,
+        "average_relevance": 0.05607587728261553,
+        "execution_time_in_seconds": 276.318541
+      },
+      {
+        "pages_visited": 5575,
+        "relevant_pages_found": 205,
+        "harvest_rate": 0.036771300448430494,
+        "average_relevance": 0.05582441594950963,
+        "execution_time_in_seconds": 277.63388
+      },
+      {
+        "pages_visited": 5600,
+        "relevant_pages_found": 205,
+        "harvest_rate": 0.03660714285714286,
+        "average_relevance": 0.055623739246360396,
+        "execution_time_in_seconds": 279.003927
+      },
+      {
+        "pages_visited": 5625,
+        "relevant_pages_found": 205,
+        "harvest_rate": 0.036444444444444446,
+        "average_relevance": 0.05540651590772967,
+        "execution_time_in_seconds": 280.511241
+      },
+      {
+        "pages_visited": 5650,
+        "relevant_pages_found": 205,
+        "harvest_rate": 0.036283185840707964,
+        "average_relevance": 0.05524500711346069,
+        "execution_time_in_seconds": 281.513313
+      },
+      {
+        "pages_visited": 5675,
+        "relevant_pages_found": 205,
+        "harvest_rate": 0.03612334801762115,
+        "average_relevance": 0.055094963458174655,
+        "execution_time_in_seconds": 282.777163
+      },
+      {
+        "pages_visited": 5700,
+        "relevant_pages_found": 205,
+        "harvest_rate": 0.035964912280701755,
+        "average_relevance": 0.05486841686753239,
+        "execution_time_in_seconds": 284.05455
+      },
+      {
+        "pages_visited": 5725,
+        "relevant_pages_found": 206,
+        "harvest_rate": 0.0359825327510917,
+        "average_relevance": 0.054803489282958015,
+        "execution_time_in_seconds": 285.034012
+      },
+      {
+        "pages_visited": 5750,
+        "relevant_pages_found": 206,
+        "harvest_rate": 0.03582608695652174,
+        "average_relevance": 0.054580322977043745,
+        "execution_time_in_seconds": 286.36551
+      },
+      {
+        "pages_visited": 5775,
+        "relevant_pages_found": 206,
+        "harvest_rate": 0.03567099567099567,
+        "average_relevance": 0.05440863735922853,
+        "execution_time_in_seconds": 288.274904
+      },
+      {
+        "pages_visited": 5800,
+        "relevant_pages_found": 206,
+        "harvest_rate": 0.035517241379310345,
+        "average_relevance": 0.05423583209107474,
+        "execution_time_in_seconds": 289.717584
+      },
+      {
+        "pages_visited": 5825,
+        "relevant_pages_found": 208,
+        "harvest_rate": 0.035708154506437766,
+        "average_relevance": 0.05449614986490714,
+        "execution_time_in_seconds": 291.010649
+      },
+      {
+        "pages_visited": 5850,
+        "relevant_pages_found": 209,
+        "harvest_rate": 0.03572649572649573,
+        "average_relevance": 0.054523188630981316,
+        "execution_time_in_seconds": 292.432008
+      },
+      {
+        "pages_visited": 5875,
+        "relevant_pages_found": 209,
+        "harvest_rate": 0.035574468085106385,
+        "average_relevance": 0.05440863686707863,
+        "execution_time_in_seconds": 293.496254
+      },
+      {
+        "pages_visited": 5900,
+        "relevant_pages_found": 209,
+        "harvest_rate": 0.03542372881355932,
+        "average_relevance": 0.054412535478447564,
+        "execution_time_in_seconds": 294.893126
+      },
+      {
+        "pages_visited": 5925,
+        "relevant_pages_found": 211,
+        "harvest_rate": 0.03561181434599156,
+        "average_relevance": 0.05461973848723872,
+        "execution_time_in_seconds": 296.453772
+      },
+      {
+        "pages_visited": 5950,
+        "relevant_pages_found": 211,
+        "harvest_rate": 0.03546218487394958,
+        "average_relevance": 0.054390243787712504,
+        "execution_time_in_seconds": 297.434723
+      },
+      {
+        "pages_visited": 5975,
+        "relevant_pages_found": 212,
+        "harvest_rate": 0.035481171548117155,
+        "average_relevance": 0.05447100373971175,
+        "execution_time_in_seconds": 298.79506
+      },
+      {
+        "pages_visited": 6000,
+        "relevant_pages_found": 212,
+        "harvest_rate": 0.035333333333333335,
+        "average_relevance": 0.054517684001041344,
+        "execution_time_in_seconds": 300.148574
+      },
+      {
+        "pages_visited": 6025,
+        "relevant_pages_found": 213,
+        "harvest_rate": 0.03535269709543568,
+        "average_relevance": 0.05472104391817865,
+        "execution_time_in_seconds": 301.551029
+      },
+      {
+        "pages_visited": 6050,
+        "relevant_pages_found": 214,
+        "harvest_rate": 0.035371900826446284,
+        "average_relevance": 0.05471371993818723,
+        "execution_time_in_seconds": 302.9045
+      },
+      {
+        "pages_visited": 6075,
+        "relevant_pages_found": 214,
+        "harvest_rate": 0.03522633744855967,
+        "average_relevance": 0.054769258443817616,
+        "execution_time_in_seconds": 304.311244
+      },
+      {
+        "pages_visited": 6100,
+        "relevant_pages_found": 214,
+        "harvest_rate": 0.035081967213114754,
+        "average_relevance": 0.054937881835412226,
+        "execution_time_in_seconds": 305.70214
+      },
+      {
+        "pages_visited": 6125,
+        "relevant_pages_found": 215,
+        "harvest_rate": 0.03510204081632653,
+        "average_relevance": 0.05492445080152405,
+        "execution_time_in_seconds": 306.761507
+      },
+      {
+        "pages_visited": 6150,
+        "relevant_pages_found": 220,
+        "harvest_rate": 0.03577235772357724,
+        "average_relevance": 0.05550739437782732,
+        "execution_time_in_seconds": 308.107228
+      },
+      {
+        "pages_visited": 6175,
+        "relevant_pages_found": 221,
+        "harvest_rate": 0.035789473684210524,
+        "average_relevance": 0.05559208239100342,
+        "execution_time_in_seconds": 309.427097
+      },
+      {
+        "pages_visited": 6200,
+        "relevant_pages_found": 222,
+        "harvest_rate": 0.035806451612903224,
+        "average_relevance": 0.055670845570534956,
+        "execution_time_in_seconds": 310.79021
+      },
+      {
+        "pages_visited": 6225,
+        "relevant_pages_found": 226,
+        "harvest_rate": 0.036305220883534134,
+        "average_relevance": 0.05625308940870886,
+        "execution_time_in_seconds": 311.86111
+      },
+      {
+        "pages_visited": 6250,
+        "relevant_pages_found": 234,
+        "harvest_rate": 0.03744,
+        "average_relevance": 0.05718121363368222,
+        "execution_time_in_seconds": 312.996505
+      },
+      {
+        "pages_visited": 6275,
+        "relevant_pages_found": 238,
+        "harvest_rate": 0.03792828685258964,
+        "average_relevance": 0.05771883026997563,
+        "execution_time_in_seconds": 314.286077
+      },
+      {
+        "pages_visited": 6300,
+        "relevant_pages_found": 240,
+        "harvest_rate": 0.0380952380952381,
+        "average_relevance": 0.05782045083333845,
+        "execution_time_in_seconds": 315.976788
+      },
+      {
+        "pages_visited": 6325,
+        "relevant_pages_found": 243,
+        "harvest_rate": 0.03841897233201581,
+        "average_relevance": 0.05792439239682897,
+        "execution_time_in_seconds": 317.370031
+      },
+      {
+        "pages_visited": 6350,
+        "relevant_pages_found": 243,
+        "harvest_rate": 0.03826771653543307,
+        "average_relevance": 0.057952684146646054,
+        "execution_time_in_seconds": 318.715116
+      },
+      {
+        "pages_visited": 6375,
+        "relevant_pages_found": 244,
+        "harvest_rate": 0.038274509803921566,
+        "average_relevance": 0.05800605726231015,
+        "execution_time_in_seconds": 319.722815
+      },
+      {
+        "pages_visited": 6400,
+        "relevant_pages_found": 244,
+        "harvest_rate": 0.038125,
+        "average_relevance": 0.05783587904336752,
+        "execution_time_in_seconds": 321.28248
+      },
+      {
+        "pages_visited": 6425,
+        "relevant_pages_found": 245,
+        "harvest_rate": 0.03813229571984436,
+        "average_relevance": 0.057764937725673635,
+        "execution_time_in_seconds": 322.590861
+      },
+      {
+        "pages_visited": 6450,
+        "relevant_pages_found": 245,
+        "harvest_rate": 0.03798449612403101,
+        "average_relevance": 0.05771116246411888,
+        "execution_time_in_seconds": 324.077713
+      },
+      {
+        "pages_visited": 6475,
+        "relevant_pages_found": 245,
+        "harvest_rate": 0.03783783783783784,
+        "average_relevance": 0.057562723623366334,
+        "execution_time_in_seconds": 325.53041
+      },
+      {
+        "pages_visited": 6500,
+        "relevant_pages_found": 245,
+        "harvest_rate": 0.03769230769230769,
+        "average_relevance": 0.05736309921465527,
+        "execution_time_in_seconds": 326.647302
+      },
+      {
+        "pages_visited": 6525,
+        "relevant_pages_found": 245,
+        "harvest_rate": 0.037547892720306515,
+        "average_relevance": 0.057143317225327096,
+        "execution_time_in_seconds": 328.117053
+      },
+      {
+        "pages_visited": 6550,
+        "relevant_pages_found": 245,
+        "harvest_rate": 0.03740458015267176,
+        "average_relevance": 0.05695162675967666,
+        "execution_time_in_seconds": 329.511395
+      },
+      {
+        "pages_visited": 6575,
+        "relevant_pages_found": 245,
+        "harvest_rate": 0.037262357414448666,
+        "average_relevance": 0.05682030695228066,
+        "execution_time_in_seconds": 330.953231
+      },
+      {
+        "pages_visited": 6600,
+        "relevant_pages_found": 246,
+        "harvest_rate": 0.03727272727272727,
+        "average_relevance": 0.0567775791464197,
+        "execution_time_in_seconds": 332.459064
+      },
+      {
+        "pages_visited": 6625,
+        "relevant_pages_found": 246,
+        "harvest_rate": 0.03713207547169811,
+        "average_relevance": 0.056563324130772835,
+        "execution_time_in_seconds": 333.864515
+      },
+      {
+        "pages_visited": 6650,
+        "relevant_pages_found": 246,
+        "harvest_rate": 0.03699248120300752,
+        "average_relevance": 0.056350680055093236,
+        "execution_time_in_seconds": 335.478077
+      },
+      {
+        "pages_visited": 6675,
+        "relevant_pages_found": 247,
+        "harvest_rate": 0.03700374531835206,
+        "average_relevance": 0.056289441553014234,
+        "execution_time_in_seconds": 336.417076
+      },
+      {
+        "pages_visited": 6700,
+        "relevant_pages_found": 247,
+        "harvest_rate": 0.03686567164179105,
+        "average_relevance": 0.056107817566614815,
+        "execution_time_in_seconds": 338.057481
+      },
+      {
+        "pages_visited": 6725,
+        "relevant_pages_found": 247,
+        "harvest_rate": 0.03672862453531599,
+        "average_relevance": 0.055948864575367914,
+        "execution_time_in_seconds": 339.382154
+      },
+      {
+        "pages_visited": 6750,
+        "relevant_pages_found": 248,
+        "harvest_rate": 0.03674074074074074,
+        "average_relevance": 0.055898559216559944,
+        "execution_time_in_seconds": 340.978976
+      },
+      {
+        "pages_visited": 6775,
+        "relevant_pages_found": 249,
+        "harvest_rate": 0.03675276752767528,
+        "average_relevance": 0.05585967778735119,
+        "execution_time_in_seconds": 342.688734
+      },
+      {
+        "pages_visited": 6800,
+        "relevant_pages_found": 249,
+        "harvest_rate": 0.03661764705882353,
+        "average_relevance": 0.05570055623795725,
+        "execution_time_in_seconds": 343.972936
+      },
+      {
+        "pages_visited": 6825,
+        "relevant_pages_found": 249,
+        "harvest_rate": 0.036483516483516484,
+        "average_relevance": 0.05558415916926226,
+        "execution_time_in_seconds": 345.389191
+      },
+      {
+        "pages_visited": 6850,
+        "relevant_pages_found": 249,
+        "harvest_rate": 0.03635036496350365,
+        "average_relevance": 0.05541014814433765,
+        "execution_time_in_seconds": 347.299601
+      },
+      {
+        "pages_visited": 6875,
+        "relevant_pages_found": 250,
+        "harvest_rate": 0.03636363636363636,
+        "average_relevance": 0.05533143122554624,
+        "execution_time_in_seconds": 349.357173
+      },
+      {
+        "pages_visited": 6900,
+        "relevant_pages_found": 251,
+        "harvest_rate": 0.0363768115942029,
+        "average_relevance": 0.05537084026541162,
+        "execution_time_in_seconds": 350.885459
+      },
+      {
+        "pages_visited": 6925,
+        "relevant_pages_found": 251,
+        "harvest_rate": 0.03624548736462094,
+        "average_relevance": 0.05529973613474601,
+        "execution_time_in_seconds": 352.363467
+      },
+      {
+        "pages_visited": 6950,
+        "relevant_pages_found": 251,
+        "harvest_rate": 0.036115107913669064,
+        "average_relevance": 0.055167739426213794,
+        "execution_time_in_seconds": 353.86558
+      },
+      {
+        "pages_visited": 6975,
+        "relevant_pages_found": 252,
+        "harvest_rate": 0.03612903225806452,
+        "average_relevance": 0.05526225451845419,
+        "execution_time_in_seconds": 355.658519
+      },
+      {
+        "pages_visited": 7000,
+        "relevant_pages_found": 253,
+        "harvest_rate": 0.03614285714285714,
+        "average_relevance": 0.05537216802341372,
+        "execution_time_in_seconds": 357.0292
+      },
+      {
+        "pages_visited": 7025,
+        "relevant_pages_found": 253,
+        "harvest_rate": 0.03601423487544484,
+        "average_relevance": 0.055191576892151685,
+        "execution_time_in_seconds": 359.238498
+      },
+      {
+        "pages_visited": 7050,
+        "relevant_pages_found": 253,
+        "harvest_rate": 0.03588652482269503,
+        "average_relevance": 0.0550715121986807,
+        "execution_time_in_seconds": 360.353797
+      },
+      {
+        "pages_visited": 7075,
+        "relevant_pages_found": 253,
+        "harvest_rate": 0.035759717314487634,
+        "average_relevance": 0.05488575120480364,
+        "execution_time_in_seconds": 362.254466
+      },
+      {
+        "pages_visited": 7100,
+        "relevant_pages_found": 253,
+        "harvest_rate": 0.03563380281690141,
+        "average_relevance": 0.05489137350214441,
+        "execution_time_in_seconds": 363.334159
+      },
+      {
+        "pages_visited": 7125,
+        "relevant_pages_found": 255,
+        "harvest_rate": 0.035789473684210524,
+        "average_relevance": 0.05498639157387645,
+        "execution_time_in_seconds": 365.102794
+      },
+      {
+        "pages_visited": 7150,
+        "relevant_pages_found": 255,
+        "harvest_rate": 0.03566433566433566,
+        "average_relevance": 0.054923283959622114,
+        "execution_time_in_seconds": 366.694653
+      },
+      {
+        "pages_visited": 7175,
+        "relevant_pages_found": 256,
+        "harvest_rate": 0.0356794425087108,
+        "average_relevance": 0.05481512128734094,
+        "execution_time_in_seconds": 367.681752
+      },
+      {
+        "pages_visited": 7200,
+        "relevant_pages_found": 257,
+        "harvest_rate": 0.035694444444444445,
+        "average_relevance": 0.05478422582746477,
+        "execution_time_in_seconds": 368.944391
+      },
+      {
+        "pages_visited": 7225,
+        "relevant_pages_found": 258,
+        "harvest_rate": 0.035709342560553636,
+        "average_relevance": 0.05468814593175835,
+        "execution_time_in_seconds": 370.045718
+      },
+      {
+        "pages_visited": 7250,
+        "relevant_pages_found": 258,
+        "harvest_rate": 0.035586206896551724,
+        "average_relevance": 0.05461536354817785,
+        "execution_time_in_seconds": 371.734012
+      },
+      {
+        "pages_visited": 7275,
+        "relevant_pages_found": 259,
+        "harvest_rate": 0.03560137457044674,
+        "average_relevance": 0.05460398688190767,
+        "execution_time_in_seconds": 373.249219
+      },
+      {
+        "pages_visited": 7300,
+        "relevant_pages_found": 263,
+        "harvest_rate": 0.03602739726027397,
+        "average_relevance": 0.05495650331331059,
+        "execution_time_in_seconds": 374.794031
+      },
+      {
+        "pages_visited": 7325,
+        "relevant_pages_found": 266,
+        "harvest_rate": 0.036313993174061435,
+        "average_relevance": 0.05522724446391856,
+        "execution_time_in_seconds": 375.929157
+      },
+      {
+        "pages_visited": 7350,
+        "relevant_pages_found": 268,
+        "harvest_rate": 0.0364625850340136,
+        "average_relevance": 0.05541618601784905,
+        "execution_time_in_seconds": 377.544193
+      },
+      {
+        "pages_visited": 7375,
+        "relevant_pages_found": 271,
+        "harvest_rate": 0.03674576271186441,
+        "average_relevance": 0.05566007732243755,
+        "execution_time_in_seconds": 378.793318
+      },
+      {
+        "pages_visited": 7400,
+        "relevant_pages_found": 272,
+        "harvest_rate": 0.036756756756756756,
+        "average_relevance": 0.05583131512806459,
+        "execution_time_in_seconds": 380.352558
+      },
+      {
+        "pages_visited": 7425,
+        "relevant_pages_found": 273,
+        "harvest_rate": 0.03676767676767677,
+        "average_relevance": 0.0558078979455866,
+        "execution_time_in_seconds": 381.211511
+      },
+      {
+        "pages_visited": 7450,
+        "relevant_pages_found": 274,
+        "harvest_rate": 0.036778523489932886,
+        "average_relevance": 0.05577047974381742,
+        "execution_time_in_seconds": 382.953036
+      },
+      {
+        "pages_visited": 7475,
+        "relevant_pages_found": 275,
+        "harvest_rate": 0.03678929765886288,
+        "average_relevance": 0.055692396193885246,
+        "execution_time_in_seconds": 384.444226
+      },
+      {
+        "pages_visited": 7500,
+        "relevant_pages_found": 276,
+        "harvest_rate": 0.0368,
+        "average_relevance": 0.05564732223629263,
+        "execution_time_in_seconds": 386.062315
+      },
+      {
+        "pages_visited": 7525,
+        "relevant_pages_found": 276,
+        "harvest_rate": 0.036677740863787375,
+        "average_relevance": 0.05550461240746893,
+        "execution_time_in_seconds": 387.656778
+      },
+      {
+        "pages_visited": 7550,
+        "relevant_pages_found": 276,
+        "harvest_rate": 0.036556291390728475,
+        "average_relevance": 0.05538618066362162,
+        "execution_time_in_seconds": 389.365563
+      },
+      {
+        "pages_visited": 7575,
+        "relevant_pages_found": 276,
+        "harvest_rate": 0.03643564356435643,
+        "average_relevance": 0.05541690012675517,
+        "execution_time_in_seconds": 391.119572
+      },
+      {
+        "pages_visited": 7600,
+        "relevant_pages_found": 278,
+        "harvest_rate": 0.03657894736842105,
+        "average_relevance": 0.05556384992294309,
+        "execution_time_in_seconds": 392.751991
+      },
+      {
+        "pages_visited": 7625,
+        "relevant_pages_found": 279,
+        "harvest_rate": 0.03659016393442623,
+        "average_relevance": 0.05564966083477061,
+        "execution_time_in_seconds": 394.354847
+      },
+      {
+        "pages_visited": 7650,
+        "relevant_pages_found": 281,
+        "harvest_rate": 0.03673202614379085,
+        "average_relevance": 0.055704702126097294,
+        "execution_time_in_seconds": 395.334399
+      },
+      {
+        "pages_visited": 7675,
+        "relevant_pages_found": 283,
+        "harvest_rate": 0.03687296416938111,
+        "average_relevance": 0.05578097881354497,
+        "execution_time_in_seconds": 396.759353
+      },
+      {
+        "pages_visited": 7700,
+        "relevant_pages_found": 283,
+        "harvest_rate": 0.03675324675324675,
+        "average_relevance": 0.05575731349955248,
+        "execution_time_in_seconds": 398.521872
+      },
+      {
+        "pages_visited": 7725,
+        "relevant_pages_found": 286,
+        "harvest_rate": 0.03702265372168285,
+        "average_relevance": 0.05609591317607396,
+        "execution_time_in_seconds": 400.202381
+      },
+      {
+        "pages_visited": 7750,
+        "relevant_pages_found": 288,
+        "harvest_rate": 0.03716129032258064,
+        "average_relevance": 0.05638159968807393,
+        "execution_time_in_seconds": 402.416234
+      },
+      {
+        "pages_visited": 7775,
+        "relevant_pages_found": 289,
+        "harvest_rate": 0.037170418006430866,
+        "average_relevance": 0.05641138526458619,
+        "execution_time_in_seconds": 403.905435
+      },
+      {
+        "pages_visited": 7800,
+        "relevant_pages_found": 291,
+        "harvest_rate": 0.037307692307692306,
+        "average_relevance": 0.05663719714248386,
+        "execution_time_in_seconds": 405.545866
+      },
+      {
+        "pages_visited": 7825,
+        "relevant_pages_found": 294,
+        "harvest_rate": 0.03757188498402556,
+        "average_relevance": 0.05688481115533033,
+        "execution_time_in_seconds": 407.020677
+      },
+      {
+        "pages_visited": 7850,
+        "relevant_pages_found": 296,
+        "harvest_rate": 0.037707006369426754,
+        "average_relevance": 0.05710969519112075,
+        "execution_time_in_seconds": 407.826117
+      },
+      {
+        "pages_visited": 7875,
+        "relevant_pages_found": 296,
+        "harvest_rate": 0.037587301587301586,
+        "average_relevance": 0.05701028744367298,
+        "execution_time_in_seconds": 409.408653
+      },
+      {
+        "pages_visited": 7900,
+        "relevant_pages_found": 297,
+        "harvest_rate": 0.03759493670886076,
+        "average_relevance": 0.05708324806725962,
+        "execution_time_in_seconds": 410.494107
+      },
+      {
+        "pages_visited": 7925,
+        "relevant_pages_found": 298,
+        "harvest_rate": 0.03760252365930599,
+        "average_relevance": 0.057109256954922916,
+        "execution_time_in_seconds": 411.888095
+      }
+    ],
+    "pages": [
+      {
+        "url": "https://de.wikipedia.org/wiki/Deep_Throat_(Film)",
+        "score": 1.0,
+        "title": "Deep Throat (Film) – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Inside_Deep_Throat",
+        "score": 1.0,
+        "title": "Inside Deep Throat – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/K%C3%BCnstliche_Intelligenz",
+        "score": 1.0,
+        "title": "Künstliche Intelligenz – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Monty_Python",
+        "score": 1.0,
+        "title": "Monty Python – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Transformer_(Maschinelles_Lernen)",
+        "score": 1.0,
+        "title": "Transformer (Maschinelles Lernen) – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Intelligenz",
+        "score": 1.0,
+        "title": "Intelligenz – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Klassifikation",
+        "score": 1.0,
+        "title": "Klassifikation – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/International_Statistical_Classification_of_Diseases_and_Related_Health_Problems",
+        "score": 1.0,
+        "title": "Internationale statistische Klassifikation der Krankheiten und verwandter Gesundheitsprobleme – Wiki"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Hessisches_Zentrum_f%C3%BCr_K%C3%BCnstliche_Intelligenz",
+        "score": 1.0,
+        "title": "Hessisches Zentrum für Künstliche Intelligenz – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Sprachfamilie",
+        "score": 1.0,
+        "title": "Sprachfamilie – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Exzellenzcluster_Reasonable_Artificial_Intelligence",
+        "score": 1.0,
+        "title": "Exzellenzcluster Reasonable Artificial Intelligence – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Sprachtypologie",
+        "score": 1.0,
+        "title": "Sprachtypologie – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Modell",
+        "score": 1.0,
+        "title": "Modell – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Daten",
+        "score": 1.0,
+        "title": "Daten – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Personenbezogene_Daten",
+        "score": 1.0,
+        "title": "Personenbezogene Daten – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/21st_Century_Community_Learning_Centers",
+        "score": 1.0,
+        "title": "21st Century Community Learning Centers – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Bresenham-Algorithmus",
+        "score": 1.0,
+        "title": "Bresenham-Algorithmus – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Aerodynamik",
+        "score": 1.0,
+        "title": "Aerodynamik – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Mathematisches_Modell",
+        "score": 1.0,
+        "title": "Mathematisches Modell – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Modell_(Architektur)",
+        "score": 1.0,
+        "title": "Modell (Architektur) – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Shunting-yard-Algorithmus",
+        "score": 1.0,
+        "title": "Shunting-yard-Algorithmus – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/%C3%9Cberwachungsstaat",
+        "score": 1.0,
+        "title": "Überwachungsstaat – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Datenwissenschaft",
+        "score": 1.0,
+        "title": "Data Science – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Data_Science",
+        "score": 1.0,
+        "title": "Data Science – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Spracherkennung",
+        "score": 1.0,
+        "title": "Spracherkennung – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Lerntheorie",
+        "score": 1.0,
+        "title": "Lerntheorie – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Shannon-Weaver-Modell",
+        "score": 1.0,
+        "title": "Sender-Empfänger-Modell – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Internationale_Normenklassifikation",
+        "score": 1.0,
+        "title": "Internationale Normenklassifikation – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Training",
+        "score": 1.0,
+        "title": "Training – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Transtheoretisches_Modell",
+        "score": 1.0,
+        "title": "Transtheoretisches Modell – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Vier-Seiten-Modell",
+        "score": 1.0,
+        "title": "Vier-Seiten-Modell – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Training_(Sport)",
+        "score": 1.0,
+        "title": "Training (Sport) – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Appell_(Kommunikation)",
+        "score": 1.0,
+        "title": "Appell (Kommunikation) – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/High_Intensity_Training",
+        "score": 1.0,
+        "title": "High Intensity Training – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Ford_Modell_B_(1932)",
+        "score": 1.0,
+        "title": "Ford Modell B (1932) – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Rockwell_Automation",
+        "score": 1.0,
+        "title": "Rockwell Automation – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Ford_Modell_A_(1928%E2%80%931931)",
+        "score": 1.0,
+        "title": "Ford Modell A (1928–1931) – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Ford_Modell_T",
+        "score": 1.0,
+        "title": "Ford Modell T – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Wiener_Modell",
+        "score": 1.0,
+        "title": "Wiener Modell – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Ford_Modell_A_(1903)",
+        "score": 1.0,
+        "title": "Ford Modell A (1903) – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Ford_Modell_AC",
+        "score": 1.0,
+        "title": "Ford Modell AC – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Ford_Modell_F",
+        "score": 1.0,
+        "title": "Ford Modell F – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Deep_Packet_Inspection",
+        "score": 1.0,
+        "title": "Deep Packet Inspection – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Colt_Modell_1903_Hammerless",
+        "score": 1.0,
+        "title": "Colt Modell 1903 Hammerless – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Arawak-Sprachen",
+        "score": 1.0,
+        "title": "Arawak-Sprachen – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Ford_Modell_C_Junior",
+        "score": 1.0,
+        "title": "Ford Modell C Junior – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/7-Zip",
+        "score": 1.0,
+        "title": "7-Zip – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/FN_Browning_Modell_1903",
+        "score": 1.0,
+        "title": "FN Browning Modell 1903 – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Tin_Lizzy",
+        "score": 1.0,
+        "title": "Ford Modell T – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Mobile_Learning",
+        "score": 1.0,
+        "title": "M-Learning – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Colt_Modell_1900",
+        "score": 1.0,
+        "title": "Colt Modell 1900 – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Ford_Modell_V8-51",
+        "score": 1.0,
+        "title": "Ford Modell V8-51 – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/E-Learning",
+        "score": 1.0,
+        "title": "E-Learning – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Deep_Purple",
+        "score": 1.0,
+        "title": "Deep Purple – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/.380_ACP",
+        "score": 1.0,
+        "title": ".380 ACP – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Ford_Modell_BB",
+        "score": 1.0,
+        "title": "Ford Modell BB – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Deep_Purple_(Begriffskl%C3%A4rung)",
+        "score": 1.0,
+        "title": "Deep Purple (Begriffsklärung) – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Selbstladepistole_Modell_1935A",
+        "score": 1.0,
+        "title": "Selbstladepistole Modell 1935A – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Ford_Modell_AA",
+        "score": 1.0,
+        "title": "Ford Modell A (1928–1931) – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Push-Pull-Modell_der_Migration",
+        "score": 1.0,
+        "title": "Push-Pull-Modell der Migration – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Selbstladepistole_Modell_1935S",
+        "score": 1.0,
+        "title": "Selbstladepistole Modell 1935S – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Lebel_Modell_1886",
+        "score": 1.0,
+        "title": "Lebel Modell 1886 – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Clustering-Illusion",
+        "score": 1.0,
+        "title": "Clustering-Illusion – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Carl_Walther_GmbH_Sportwaffen",
+        "score": 1.0,
+        "title": "Carl Walther GmbH – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Walther_P38",
+        "score": 1.0,
+        "title": "Walther P38 – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Regression_(Psychoanalyse)",
+        "score": 1.0,
+        "title": "Regression (Psychoanalyse) – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Walther_Modell_2",
+        "score": 1.0,
+        "title": "Walther Modell 2 – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Dardische_Sprachen",
+        "score": 1.0,
+        "title": "Dardische Sprachen – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Casmin-Klassifikation",
+        "score": 1.0,
+        "title": "Casmin-Klassifikation – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Walther_Modell_3",
+        "score": 1.0,
+        "title": "Walther Modell 3 – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Porsche_911_(1963)",
+        "score": 1.0,
+        "title": "Porsche 911 (1963) – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Mercedes_24/100/140_PS",
+        "score": 1.0,
+        "title": "Mercedes 24/100/140 PS – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/%C3%9Cberreden",
+        "score": 1.0,
+        "title": "Persuasive Kommunikation – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Sozialerhebung",
+        "score": 1.0,
+        "title": "Sozialerhebung – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Honnefer_Modell",
+        "score": 1.0,
+        "title": "Honnefer Modell – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/International_Research_and_Training_Institute_for_the_Advancement_of_Women",
+        "score": 1.0,
+        "title": "International Research and Training Institute for the Advancement of Women – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Wiedergabeger%C3%A4t",
+        "score": 1.0,
+        "title": "Wiedergabegerät – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Digitale_Daten",
+        "score": 1.0,
+        "title": "Digitale Daten – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Kookaburra_(Rakete)",
+        "score": 1.0,
+        "title": "Kookaburra (Rakete) – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Computational_learning_theory",
+        "score": 1.0,
+        "title": "Maschinelles Lernen – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Lineares_Modell",
+        "score": 1.0,
+        "title": "Lineares Modell – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Lineare_Regression",
+        "score": 1.0,
+        "title": "Lineare Regression – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/ACK_(Signal)",
+        "score": 1.0,
+        "title": "ACK (Signal) – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Klassisches_lineares_Modell_der_Normalregression",
+        "score": 1.0,
+        "title": "Klassisches lineares Modell der Normalregression – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Sportverletzung",
+        "score": 1.0,
+        "title": "Sportverletzung – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Torpedo_(Automobilbauart)",
+        "score": 1.0,
+        "title": "Torpedo (Automobilbauart) – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Ford_Model_T",
+        "score": 1.0,
+        "title": "Ford Modell T – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Anatomography",
+        "score": 1.0,
+        "title": "Anatomography – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Python_(Programmiersprache)",
+        "score": 1.0,
+        "title": "Python (Programmiersprache) – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Python_Software_Foundation",
+        "score": 1.0,
+        "title": "Python Software Foundation – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Cochemer_Modell",
+        "score": 1.0,
+        "title": "Cochemer Modell – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/TensorFlow_Processing_Unit",
+        "score": 1.0,
+        "title": "Tensor Processing Unit – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/TensorFlow",
+        "score": 1.0,
+        "title": "TensorFlow – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Wettervorhersage",
+        "score": 1.0,
+        "title": "Wettervorhersage – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Utrechter_Modell",
+        "score": 1.0,
+        "title": "Utrechter Modell – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Rolex_Learning_Center",
+        "score": 1.0,
+        "title": "Rolex Learning Center – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Bochumer_Modell",
+        "score": 1.0,
+        "title": "Bochumer Modell – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Python_(Mythologie)",
+        "score": 1.0,
+        "title": "Python (Mythologie) – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Zassenhaus-Algorithmus",
+        "score": 1.0,
+        "title": "Zassenhaus-Algorithmus – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/De-Casteljau-Algorithmus",
+        "score": 1.0,
+        "title": "De-Casteljau-Algorithmus – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Extraterrestrische_Intelligenz",
+        "score": 1.0,
+        "title": "Extraterrestrische Intelligenz – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Reiz-Reaktions-Modell",
+        "score": 1.0,
+        "title": "Reiz-Reaktions-Modell – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/SOEVK-Modell",
+        "score": 1.0,
+        "title": "SOEVK-Modell – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/%C3%96xar%C3%A1",
+        "score": 1.0,
+        "title": "Öxará – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/%C3%96kophysiologische_Klimaklassifikation",
+        "score": 1.0,
+        "title": "Integrative Klimaklassifikation – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/%C3%96lfus%C3%A1",
+        "score": 1.0,
+        "title": "Ölfusá – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Higher_Learning_%E2%80%93_Die_Rebellen",
+        "score": 1.0,
+        "title": "Higher Learning – Die Rebellen – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Dokumentations-_und_Informationssystem_f%C3%BCr_Parlamentsmaterialien",
+        "score": 1.0,
+        "title": "Dokumentations- und Informationssystem für Parlamentsmaterialien – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Mentales_Training",
+        "score": 1.0,
+        "title": "Mentales Training – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Reserve_Officer_Training_Corps",
+        "score": 1.0,
+        "title": "Reserve Officer Training Corps – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Python-3",
+        "score": 1.0,
+        "title": "Python-3 – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Python-4",
+        "score": 1.0,
+        "title": "Python-4 – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/10,5-cm-Schnelladekanone_C/33",
+        "score": 1.0,
+        "title": "10,5-cm-Schnelladekanone C/33 – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/United_States_Census_1810",
+        "score": 1.0,
+        "title": "United States Census 1810 – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/United_States_Census_1800",
+        "score": 1.0,
+        "title": "United States Census 1800 – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Nettoinlandsprodukt",
+        "score": 1.0,
+        "title": "Nettoinlandsprodukt – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Technische_Daten",
+        "score": 1.0,
+        "title": "Technische Daten – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Deep_South",
+        "score": 1.0,
+        "title": "Deep South – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/%C3%96koregionen_Neuseelands",
+        "score": 1.0,
+        "title": "Ökoregionen Neuseelands – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Ausgleichungsrechnung",
+        "score": 1.0,
+        "title": "Ausgleichungsrechnung – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Salisbury_Plain_Training_Area",
+        "score": 1.0,
+        "title": "Salisbury Plain Training Area – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Kulturtypologie",
+        "score": 1.0,
+        "title": "Kulturtypologie – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Kulturebenen-Modell",
+        "score": 1.0,
+        "title": "Kulturebenen-Modell – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Kettensilicate",
+        "score": 1.0,
+        "title": "Kettensilikate – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Inselsilikate",
+        "score": 1.0,
+        "title": "Inselsilikate – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Ger%C3%BCstsilikate",
+        "score": 1.0,
+        "title": "Gerüstsilikate – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/St%C3%A4bchenmodell",
+        "score": 1.0,
+        "title": "Stäbchenmodell – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Tadschiken_Chinas",
+        "score": 1.0,
+        "title": "Tadschiken Chinas – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Kugel-Stab-Modell",
+        "score": 1.0,
+        "title": "Stäbchenmodell – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Bohr-Sommerfeld-Modell",
+        "score": 1.0,
+        "title": "Bohr-sommerfeldsches Atommodell – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Bergbahn_Lech%E2%80%93Oberlech",
+        "score": 1.0,
+        "title": "Bergbahn Lech–Oberlech – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/V-Modell_(Entwicklungsstandard)",
+        "score": 1.0,
+        "title": "V-Modell (Entwicklungsstandard) – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Wasserweg",
+        "score": 1.0,
+        "title": "Transportweg – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/(151)_Abundantia",
+        "score": 1.0,
+        "title": "(151) Abundantia – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Armstrong_Siddeley_Python",
+        "score": 1.0,
+        "title": "Armstrong Siddeley Python – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Adolphe_K%C3%A9gresse",
+        "score": 1.0,
+        "title": "Adolphe Kégresse – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Joint_Force_Training_Centre",
+        "score": 1.0,
+        "title": "Joint Force Training Centre – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Volksz%C3%A4hlung_in_Deutschland_2022",
+        "score": 1.0,
+        "title": "Volkszählung in Deutschland 2022 – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Volksz%C3%A4hlung_in_der_Europ%C3%A4ischen_Union_2011",
+        "score": 1.0,
+        "title": "Volkszählung in der Europäischen Union 2011 – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Fahrgastinformationssystem",
+        "score": 1.0,
+        "title": "Fahrgastinformationssystem – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Spreu-und-Weizen-Algorithmus",
+        "score": 1.0,
+        "title": "Spreu-und-Weizen-Algorithmus – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Centraal_Bureau_voor_de_Statistiek",
+        "score": 1.0,
+        "title": "Centraal Bureau voor de Statistiek – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Supervised_Diver",
+        "score": 1.0,
+        "title": "Supervised Diver – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Beckhoff_Automation",
+        "score": 1.0,
+        "title": "Beckhoff Automation – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Kagoshima-Hauptlinie",
+        "score": 1.0,
+        "title": "Kagoshima-Hauptlinie – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/ASR-33",
+        "score": 1.0,
+        "title": "Teletype Modell 33 – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Paul_Meehl",
+        "score": 1.0,
+        "title": "Paul E. Meehl – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/James_C._Kaufman",
+        "score": 1.0,
+        "title": "James C. Kaufman – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Daten_deutscher_Dichtung",
+        "score": 1.0,
+        "title": "Daten deutscher Dichtung – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Direct_Memory_Access",
+        "score": 1.0,
+        "title": "Direct Memory Access – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/CAN_in_Automation",
+        "score": 1.0,
+        "title": "CAN in Automation – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Disk_on_Module",
+        "score": 1.0,
+        "title": "Disk on Module – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Cyclic_Redundancy_Check",
+        "score": 1.0,
+        "title": "Zyklische Redundanzprüfung – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Zyklische_Redundanzpr%C3%BCfung",
+        "score": 1.0,
+        "title": "Zyklische Redundanzprüfung – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Metakognitives_Training",
+        "score": 1.0,
+        "title": "Metakognitives Training – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Robert_Tarjan",
+        "score": 1.0,
+        "title": "Robert Tarjan – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Audiodatenkompression",
+        "score": 1.0,
+        "title": "Audiodatenkompression – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/ARIS",
+        "score": 1.0,
+        "title": "ARIS – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/SCOR-Modell",
+        "score": 1.0,
+        "title": "SCOR-Modell – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Sicherungskopie",
+        "score": 1.0,
+        "title": "Datensicherung – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Dewar-Chatt-Duncanson-Modell",
+        "score": 1.0,
+        "title": "Dewar-Chatt-Duncanson-Modell – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Ann_Arbor-Modell",
+        "score": 1.0,
+        "title": "Ann-Arbor-Modell – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Star_Trek:_Deep_Space_Nine/Episodenliste",
+        "score": 1.0,
+        "title": "Star Trek: Deep Space Nine/Episodenliste – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/%C5%A0koda_Kamiq_(China)",
+        "score": 1.0,
+        "title": "Škoda Kamiq (China) – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Rolling_in_the_Deep",
+        "score": 1.0,
+        "title": "Rolling in the Deep – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Air_Education_and_Training_Command",
+        "score": 1.0,
+        "title": "Air Education and Training Command – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/%C5%A0koda_Kamiq_GT",
+        "score": 1.0,
+        "title": "Škoda Kamiq GT – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Airborne_Laserscanning",
+        "score": 1.0,
+        "title": "Airborne Laserscanning – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Deep_Blue_Sea_2",
+        "score": 1.0,
+        "title": "Deep Blue Sea 2 – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Deep_Blue_Sea",
+        "score": 1.0,
+        "title": "Deep Blue Sea – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/The_Deep_Blue_Sea",
+        "score": 1.0,
+        "title": "The Deep Blue Sea – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/TNM-Klassifikation",
+        "score": 1.0,
+        "title": "TNM-Klassifikation – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Formel_Renault",
+        "score": 1.0,
+        "title": "Formel Renault – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Wikipedia:NOR",
+        "score": 1.0,
+        "title": "Wikipedia:Keine Theoriefindung – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Deep_Sanderson",
+        "score": 1.0,
+        "title": "Deep Sanderson – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/12-Stunden-Rennen_von_Sebring_1953",
+        "score": 1.0,
+        "title": "12-Stunden-Rennen von Sebring 1953 – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/1000-km-Rennen_auf_dem_N%C3%BCrburgring_1965",
+        "score": 1.0,
+        "title": "1000-km-Rennen auf dem Nürburgring 1965 – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Sommer_Motorradtechnik",
+        "score": 1.0,
+        "title": "Sommer Motorradtechnik – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Saporoshez_(Automarke)",
+        "score": 1.0,
+        "title": "Saporoshez (Automarke) – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Morris_Ten",
+        "score": 1.0,
+        "title": "Morris Ten – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Piper_PA-25",
+        "score": 1.0,
+        "title": "Piper PA-25 – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/CSS-6",
+        "score": 1.0,
+        "title": "CSS-6 – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Abh%C3%A4ngige_und_unabh%C3%A4ngige_Variable",
+        "score": 0.9917355371900827,
+        "title": "Abhängige und unabhängige Variable – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/16-Bit",
+        "score": 0.9900990099009901,
+        "title": "16-Bit-Architektur – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/%C3%96BB_4130",
+        "score": 0.9828009828009828,
+        "title": "ÖBB 4130 – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Anforderung_(Informatik)",
+        "score": 0.9803921568627451,
+        "title": "Anforderung (Informatik) – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Multicar_22",
+        "score": 0.9803921568627451,
+        "title": "Multicar 22 – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Pickmans_Modell",
+        "score": 0.9765625,
+        "title": "Pickmans Modell – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Kosten-Nutzen-Modell",
+        "score": 0.9666080843585236,
+        "title": "Kosten-Belohnungs-Modell – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Sunbeam_90",
+        "score": 0.9615384615384616,
+        "title": "Sunbeam-Talbot 90 – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/MG_15",
+        "score": 0.9569377990430622,
+        "title": "MG 15 – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Westtransdanubien",
+        "score": 0.9523809523809524,
+        "title": "Westtransdanubien – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Rega_(Fluss)",
+        "score": 0.9433962264150944,
+        "title": "Rega (Fluss) – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/CD-RW",
+        "score": 0.9411764705882352,
+        "title": "CD-RW – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Anglosph%C3%A4re",
+        "score": 0.9345794392523363,
+        "title": "Anglosphäre – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Prozessmodellierung",
+        "score": 0.9080325960419091,
+        "title": "Geschäftsprozessmodellierung – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Geometrische_Modellierung",
+        "score": 0.9029345372460496,
+        "title": "Geometrische Modellierung – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Albert_Bandura",
+        "score": 0.8944543828264758,
+        "title": "Albert Bandura – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Universit%C3%A4t_Kurdistan",
+        "score": 0.8928571428571428,
+        "title": "Universität Kurdistan – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Star_Trek:_Deep_Space_Nine",
+        "score": 0.8905579399141631,
+        "title": "Star Trek: Deep Space Nine – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/William_Kahan",
+        "score": 0.8849557522123894,
+        "title": "William Kahan – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Solarpotenzial",
+        "score": 0.8849557522123894,
+        "title": "Solarpotenzial – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Lernen_am_Modell",
+        "score": 0.8805723720418271,
+        "title": "Sozialkognitive Lerntheorie – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Sozialkognitive_Lerntheorie",
+        "score": 0.8805723720418271,
+        "title": "Sozialkognitive Lerntheorie – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/M42_(Stahlhelm)",
+        "score": 0.8771929824561403,
+        "title": "M42 (Stahlhelm) – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Adolf_Warchalowski",
+        "score": 0.8695652173913043,
+        "title": "Adolf Warchalowski – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Fordson_Thames_7V",
+        "score": 0.8667388949079089,
+        "title": "Fordson Thames 7V – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Reihenfeuerpistole",
+        "score": 0.8658008658008658,
+        "title": "Reihenfeuerpistole – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Gruppensilikate",
+        "score": 0.8583690987124464,
+        "title": "Gruppensilikate – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Vorbild",
+        "score": 0.847457627118644,
+        "title": "Vorbild – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Matra_MS84",
+        "score": 0.8403361344537815,
+        "title": "Matra MS84 – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/%C3%9Cberwachung",
+        "score": 0.831702544031311,
+        "title": "Überwachung – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Bank_von_Griechenland",
+        "score": 0.8264462809917356,
+        "title": "Bank von Griechenland – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Dachsprache",
+        "score": 0.819672131147541,
+        "title": "Dachsprache – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Sozialstruktur",
+        "score": 0.8174386920980926,
+        "title": "Sozialstruktur – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Wiedemann-Franzsches_Gesetz",
+        "score": 0.8064516129032258,
+        "title": "Wiedemann-Franzsches Gesetz – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Antiferromagnetismus",
+        "score": 0.8,
+        "title": "Antiferromagnetismus – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Sekund%C3%A4rspeicher",
+        "score": 0.8,
+        "title": "Sekundärspeicher – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/(141)_Lumen",
+        "score": 0.7957559681697612,
+        "title": "(141) Lumen – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/%C5%A0koda_Superb_(1934)",
+        "score": 0.7936507936507936,
+        "title": "Škoda Superb (1934) – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Vorgehensmodell_zur_Softwareentwicklung",
+        "score": 0.7894736842105263,
+        "title": "Vorgehensmodell zur Softwareentwicklung – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Tadao_Kasami",
+        "score": 0.78125,
+        "title": "Tadao Kasami – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Petterdit",
+        "score": 0.7731958762886598,
+        "title": "Petterdit – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/VW_Passat",
+        "score": 0.7682458386683738,
+        "title": "VW Passat – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Tschebyschow-Polynom",
+        "score": 0.7653061224489796,
+        "title": "Tschebyschow-Polynom – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/38-Meter-Klasse",
+        "score": 0.7604562737642585,
+        "title": "38-Meter-Klasse – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Odinit",
+        "score": 0.7575757575757576,
+        "title": "Odinit – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Porsche_997",
+        "score": 0.7497116493656286,
+        "title": "Porsche 997 – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Wikipedia:FzW",
+        "score": 0.7481296758104738,
+        "title": "Wikipedia:Fragen zur Wikipedia – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/(43)_Ariadne",
+        "score": 0.744047619047619,
+        "title": "(43) Ariadne – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Parlamentarische_Republik",
+        "score": 0.7421150278293136,
+        "title": "Parlamentarisches Regierungssystem – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Alphanumerisch",
+        "score": 0.7407407407407408,
+        "title": "Alphanumerische Zeichen – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Gentzen-Kalk%C3%BCl",
+        "score": 0.7380073800738007,
+        "title": "Sequenzenkalkül – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Vienna_Twin_Tower",
+        "score": 0.7272727272727273,
+        "title": "Vienna Twin Tower – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Musik-CD",
+        "score": 0.7258064516129032,
+        "title": "Compact Disc Digital Audio – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/1000-km-Rennen_auf_dem_N%C3%BCrburgring_1970",
+        "score": 0.7223113964686998,
+        "title": "1000-km-Rennen auf dem Nürburgring 1970 – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Bew%C3%B6lkung",
+        "score": 0.7211538461538461,
+        "title": "Bewölkung – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/RS04",
+        "score": 0.7168458781362007,
+        "title": "RS04 – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Suzuki_RE_5",
+        "score": 0.7117437722419928,
+        "title": "Suzuki RE 5 – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Silt",
+        "score": 0.7075471698113208,
+        "title": "Schluff – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/2K_(Bildaufl%C3%B6sung)",
+        "score": 0.6968641114982579,
+        "title": "2K (Bildauflösung) – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Chemnitzer_Modell",
+        "score": 0.6968641114982579,
+        "title": "Chemnitzer Modell – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Kanoit",
+        "score": 0.6944444444444444,
+        "title": "Kanoit – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Volvo_ES90",
+        "score": 0.6872852233676976,
+        "title": "Volvo ES90 – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/VW_Passat_B7",
+        "score": 0.6795016987542469,
+        "title": "VW Passat B7 – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Volkseinkommen",
+        "score": 0.6779661016949152,
+        "title": "Volkseinkommen – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Synthese_(Elektrotechnik)",
+        "score": 0.6734006734006733,
+        "title": "Synthese (Elektrotechnik) – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Wirtschaftsordnung",
+        "score": 0.6622516556291391,
+        "title": "Wirtschaftsordnung – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Selbstreplikation",
+        "score": 0.6622516556291391,
+        "title": "Selbstreplikation – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/North_American_Racing_Team",
+        "score": 0.6622516556291391,
+        "title": "North American Racing Team – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Abstract",
+        "score": 0.6600660066006601,
+        "title": "Abstract – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Alfred_V._Aho",
+        "score": 0.6600660066006601,
+        "title": "Alfred V. Aho – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Datenblock",
+        "score": 0.6514657980456027,
+        "title": "Datenblock – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/24-Stunden-Rennen_auf_dem_N%C3%BCrburgring_2013",
+        "score": 0.6493506493506493,
+        "title": "24-Stunden-Rennen auf dem Nürburgring 2013 – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Surveillance",
+        "score": 0.6451612903225806,
+        "title": "Epidemiologische Überwachung – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Tyndall_Air_Force_Base",
+        "score": 0.6451612903225806,
+        "title": "Tyndall Air Force Base – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Sigismundss%C3%A4ule",
+        "score": 0.641025641025641,
+        "title": "Sigismundssäule – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Automation",
+        "score": 0.6382978723404255,
+        "title": "Automatisierung – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Diamagnetismus",
+        "score": 0.6349206349206349,
+        "title": "Diamagnetismus – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/U-Boot-Klasse_UC",
+        "score": 0.6329113924050633,
+        "title": "U-Boot-Klasse UC – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/United_States_Army_Reserve",
+        "score": 0.628930817610063,
+        "title": "United States Army Reserve – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Blackburn_Skua",
+        "score": 0.625,
+        "title": "Blackburn Skua – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Erdabplattung",
+        "score": 0.6211180124223602,
+        "title": "Erdabplattung – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/%C3%9Cbersterblichkeit",
+        "score": 0.6211180124223602,
+        "title": "Übersterblichkeit – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/(10792)_Ecuador",
+        "score": 0.6211180124223602,
+        "title": "(10792) Ecuador – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Paceit",
+        "score": 0.6211180124223602,
+        "title": "Paceit – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Augenfarbe",
+        "score": 0.6204756980351602,
+        "title": "Augenfarbe – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/United_States_Navy_Reserve",
+        "score": 0.6134969325153374,
+        "title": "United States Navy Reserve – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Sieb_des_Eratosthenes",
+        "score": 0.6134969325153374,
+        "title": "Sieb des Eratosthenes – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Jefferson_County_(Ohio)",
+        "score": 0.6134969325153374,
+        "title": "Jefferson County (Ohio) – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Virtual_Network_Computing",
+        "score": 0.6085192697768762,
+        "title": "Virtual Network Computing – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Aston_Martin_Cygnet",
+        "score": 0.60790273556231,
+        "title": "Aston Martin Cygnet – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Liste_der_L%C3%A4nder_nach_Bruttoinlandsprodukt",
+        "score": 0.6060606060606061,
+        "title": "Liste der Länder nach Bruttoinlandsprodukt – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Verstand",
+        "score": 0.6060606060606061,
+        "title": "Verstand – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Allegheny_County",
+        "score": 0.6060606060606061,
+        "title": "Allegheny County – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Volvo_C70",
+        "score": 0.6038647342995169,
+        "title": "Volvo C70 – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Wissen.de",
+        "score": 0.6024096385542169,
+        "title": "wissen.de – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Betula_(Schiff)",
+        "score": 0.6006006006006006,
+        "title": "Betula (Schiff) – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Abelsonit",
+        "score": 0.6006006006006006,
+        "title": "Abelsonit – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Workshop",
+        "score": 0.6,
+        "title": "Workshop – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/BMW_M21",
+        "score": 0.5976095617529881,
+        "title": "BMW M21 – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Amazon_Web_Services",
+        "score": 0.5976095617529881,
+        "title": "Amazon Web Services – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Monroe_County_(Ohio)",
+        "score": 0.5970149253731344,
+        "title": "Monroe County (Ohio) – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Moderate-resolution_Imaging_Spectroradiometer",
+        "score": 0.5970149253731344,
+        "title": "Moderate-resolution Imaging Spectroradiometer – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Valhalla_(New_York)",
+        "score": 0.5952380952380952,
+        "title": "Valhalla (New York) – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Abw%C3%A4rtskompatibilit%C3%A4t",
+        "score": 0.5952380952380952,
+        "title": "Kompatibilität (Technik) – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Softwareaktualisierung",
+        "score": 0.5887300252312868,
+        "title": "Softwareaktualisierung – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Postfixnotation",
+        "score": 0.5843071786310517,
+        "title": "Umgekehrte polnische Notation – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Umgekehrte_polnische_Notation",
+        "score": 0.5843071786310517,
+        "title": "Umgekehrte polnische Notation – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Marsala",
+        "score": 0.5830903790087464,
+        "title": "Marsala – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Terra_(Satellit)",
+        "score": 0.5813953488372093,
+        "title": "Terra (Satellit) – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/NetDoktor",
+        "score": 0.5797101449275363,
+        "title": "NetDoktor – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Gro%C3%9Fer_Preis_von_Belgien_1972",
+        "score": 0.5747126436781609,
+        "title": "Großer Preis von Belgien 1972 – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Bipolartransistor",
+        "score": 0.5681818181818182,
+        "title": "Bipolartransistor – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Indian_Space_Research_Organisation",
+        "score": 0.5660377358490566,
+        "title": "Indische Weltraumforschungsorganisation – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Soziales_Netzwerk_(Internet)",
+        "score": 0.5659309564233164,
+        "title": "Soziales Netzwerk (Internet) – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Adel_(Georgia)",
+        "score": 0.5633802816901409,
+        "title": "Adel (Georgia) – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Landesamt_f%C3%BCr_Geoinformation_und_Landentwicklung_Baden-W%C3%BCrttemberg",
+        "score": 0.5602240896358543,
+        "title": "Landesamt für Geoinformation und Landentwicklung Baden-Württemberg – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/PZL_M18_Dromader",
+        "score": 0.5586592178770949,
+        "title": "PZL M18 Dromader – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Alfred_Pohlmann",
+        "score": 0.5524861878453038,
+        "title": "Alfred Pohlmann – Wikipedia"
+      }
+    ]
+  }
+}

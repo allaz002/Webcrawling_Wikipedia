@@ -1,0 +1,413 @@
+
+============================================================
+CRAWLER KONFIGURATION - vectorspace_crawler
+============================================================
+Strategie: VectorSpaceSpider
+Seed URLs: https://de.wikipedia.org/wiki/Informatik
+Batch-Größe: 16
+Max. Seiten: 50000
+Max. relevante Seiten: 300
+Relevanz-Schwellenwert: 0.4
+Max. Laufzeit: 30 Minuten
+Report-Intervall: 30 Sekunden
+
+GEWICHTUNGEN:
+- Link-Gewicht: 0.5
+- Elterndokument-Gewicht: 0.5
+============================================================
+
+Modus: tfidf
+
+
+--- ZWISCHENBERICHT [19:41:18] ---
+Laufzeit: 0:00:03.980585
+Harvest-Rate: 48.00%
+Relevante Seiten: 12
+Irrelevante Seiten: 13
+
+
+--- ZWISCHENBERICHT [19:41:20] ---
+Laufzeit: 0:00:06.422730
+Harvest-Rate: 42.00%
+Relevante Seiten: 21
+Irrelevante Seiten: 29
+
+
+--- ZWISCHENBERICHT [19:41:23] ---
+Laufzeit: 0:00:08.869654
+Harvest-Rate: 42.67%
+Relevante Seiten: 32
+Irrelevante Seiten: 43
+
+
+--- ZWISCHENBERICHT [19:41:26] ---
+Laufzeit: 0:00:11.723026
+Harvest-Rate: 44.00%
+Relevante Seiten: 44
+Irrelevante Seiten: 56
+
+
+--- ZWISCHENBERICHT [19:41:27] ---
+Laufzeit: 0:00:13.517267
+Harvest-Rate: 42.40%
+Relevante Seiten: 53
+Irrelevante Seiten: 72
+
+
+--- ZWISCHENBERICHT [19:41:30] ---
+Laufzeit: 0:00:15.890980
+Harvest-Rate: 40.67%
+Relevante Seiten: 61
+Irrelevante Seiten: 89
+
+
+--- ZWISCHENBERICHT [19:41:31] ---
+Laufzeit: 0:00:17.491807
+Harvest-Rate: 39.43%
+Relevante Seiten: 69
+Irrelevante Seiten: 106
+
+
+--- ZWISCHENBERICHT [19:41:33] ---
+Laufzeit: 0:00:19.249435
+Harvest-Rate: 38.50%
+Relevante Seiten: 77
+Irrelevante Seiten: 123
+
+
+--- ZWISCHENBERICHT [19:41:34] ---
+Laufzeit: 0:00:20.688745
+Harvest-Rate: 37.33%
+Relevante Seiten: 84
+Irrelevante Seiten: 141
+
+
+--- ZWISCHENBERICHT [19:41:36] ---
+Laufzeit: 0:00:22.237905
+Harvest-Rate: 35.60%
+Relevante Seiten: 89
+Irrelevante Seiten: 161
+
+
+--- ZWISCHENBERICHT [19:41:38] ---
+Laufzeit: 0:00:24.397452
+Harvest-Rate: 36.00%
+Relevante Seiten: 99
+Irrelevante Seiten: 176
+
+
+--- ZWISCHENBERICHT [19:41:41] ---
+Laufzeit: 0:00:26.820309
+Harvest-Rate: 35.67%
+Relevante Seiten: 107
+Irrelevante Seiten: 193
+
+
+--- ZWISCHENBERICHT [19:41:44] ---
+Laufzeit: 0:00:29.834980
+Harvest-Rate: 34.77%
+Relevante Seiten: 113
+Irrelevante Seiten: 212
+
+
+--- ZWISCHENBERICHT [19:41:45] ---
+Laufzeit: 0:00:31.174818
+Harvest-Rate: 33.71%
+Relevante Seiten: 118
+Irrelevante Seiten: 232
+
+
+--- ZWISCHENBERICHT [19:41:47] ---
+Laufzeit: 0:00:33.401023
+Harvest-Rate: 33.33%
+Relevante Seiten: 125
+Irrelevante Seiten: 250
+
+
+--- ZWISCHENBERICHT [19:41:51] ---
+Laufzeit: 0:00:37.063709
+Harvest-Rate: 33.00%
+Relevante Seiten: 132
+Irrelevante Seiten: 268
+
+
+--- ZWISCHENBERICHT [19:41:54] ---
+Laufzeit: 0:00:39.785812
+Harvest-Rate: 32.00%
+Relevante Seiten: 136
+Irrelevante Seiten: 289
+
+
+--- ZWISCHENBERICHT [19:41:56] ---
+Laufzeit: 0:00:42.521060
+Harvest-Rate: 31.56%
+Relevante Seiten: 142
+Irrelevante Seiten: 308
+
+
+--- ZWISCHENBERICHT [19:41:58] ---
+Laufzeit: 0:00:44.579957
+Harvest-Rate: 30.95%
+Relevante Seiten: 147
+Irrelevante Seiten: 328
+
+
+--- ZWISCHENBERICHT [19:42:01] ---
+Laufzeit: 0:00:47.535275
+Harvest-Rate: 30.40%
+Relevante Seiten: 152
+Irrelevante Seiten: 348
+
+
+--- ZWISCHENBERICHT [19:42:02] ---
+Laufzeit: 0:00:48.603515
+Harvest-Rate: 29.33%
+Relevante Seiten: 154
+Irrelevante Seiten: 371
+
+
+--- ZWISCHENBERICHT [19:42:04] ---
+Laufzeit: 0:00:50.316117
+Harvest-Rate: 29.64%
+Relevante Seiten: 163
+Irrelevante Seiten: 387
+
+
+--- ZWISCHENBERICHT [19:42:06] ---
+Laufzeit: 0:00:51.756027
+Harvest-Rate: 29.91%
+Relevante Seiten: 172
+Irrelevante Seiten: 403
+
+
+--- ZWISCHENBERICHT [19:42:07] ---
+Laufzeit: 0:00:53.388666
+Harvest-Rate: 29.33%
+Relevante Seiten: 176
+Irrelevante Seiten: 424
+
+
+--- ZWISCHENBERICHT [19:42:09] ---
+Laufzeit: 0:00:55.245222
+Harvest-Rate: 28.80%
+Relevante Seiten: 180
+Irrelevante Seiten: 445
+
+
+--- ZWISCHENBERICHT [19:42:11] ---
+Laufzeit: 0:00:57.142725
+Harvest-Rate: 28.31%
+Relevante Seiten: 184
+Irrelevante Seiten: 466
+
+
+--- ZWISCHENBERICHT [19:42:14] ---
+Laufzeit: 0:01:00.267871
+Harvest-Rate: 27.70%
+Relevante Seiten: 187
+Irrelevante Seiten: 488
+
+
+--- ZWISCHENBERICHT [19:42:17] ---
+Laufzeit: 0:01:03.193774
+Harvest-Rate: 27.57%
+Relevante Seiten: 193
+Irrelevante Seiten: 507
+
+
+--- ZWISCHENBERICHT [19:42:19] ---
+Laufzeit: 0:01:05.699859
+Harvest-Rate: 27.03%
+Relevante Seiten: 196
+Irrelevante Seiten: 529
+
+
+--- ZWISCHENBERICHT [19:42:21] ---
+Laufzeit: 0:01:07.397167
+Harvest-Rate: 26.93%
+Relevante Seiten: 202
+Irrelevante Seiten: 548
+
+
+--- ZWISCHENBERICHT [19:42:23] ---
+Laufzeit: 0:01:08.803220
+Harvest-Rate: 26.32%
+Relevante Seiten: 204
+Irrelevante Seiten: 571
+
+
+--- ZWISCHENBERICHT [19:42:24] ---
+Laufzeit: 0:01:10.192840
+Harvest-Rate: 26.38%
+Relevante Seiten: 211
+Irrelevante Seiten: 589
+
+
+--- ZWISCHENBERICHT [19:42:26] ---
+Laufzeit: 0:01:12.111596
+Harvest-Rate: 26.18%
+Relevante Seiten: 216
+Irrelevante Seiten: 609
+
+
+--- ZWISCHENBERICHT [19:42:28] ---
+Laufzeit: 0:01:14.216272
+Harvest-Rate: 26.24%
+Relevante Seiten: 223
+Irrelevante Seiten: 627
+
+
+--- ZWISCHENBERICHT [19:42:30] ---
+Laufzeit: 0:01:16.133516
+Harvest-Rate: 26.51%
+Relevante Seiten: 232
+Irrelevante Seiten: 643
+
+
+--- ZWISCHENBERICHT [19:42:32] ---
+Laufzeit: 0:01:18.559017
+Harvest-Rate: 26.44%
+Relevante Seiten: 238
+Irrelevante Seiten: 662
+
+
+--- ZWISCHENBERICHT [19:42:34] ---
+Laufzeit: 0:01:20.372869
+Harvest-Rate: 26.27%
+Relevante Seiten: 243
+Irrelevante Seiten: 682
+
+
+--- ZWISCHENBERICHT [19:42:36] ---
+Laufzeit: 0:01:21.780815
+Harvest-Rate: 26.00%
+Relevante Seiten: 247
+Irrelevante Seiten: 703
+
+
+--- ZWISCHENBERICHT [19:42:38] ---
+Laufzeit: 0:01:24.116895
+Harvest-Rate: 26.26%
+Relevante Seiten: 256
+Irrelevante Seiten: 719
+
+
+--- ZWISCHENBERICHT [19:42:40] ---
+Laufzeit: 0:01:25.794457
+Harvest-Rate: 26.20%
+Relevante Seiten: 262
+Irrelevante Seiten: 738
+
+
+--- ZWISCHENBERICHT [19:42:41] ---
+Laufzeit: 0:01:27.157172
+Harvest-Rate: 25.95%
+Relevante Seiten: 266
+Irrelevante Seiten: 759
+
+
+--- ZWISCHENBERICHT [19:42:43] ---
+Laufzeit: 0:01:29.209474
+Harvest-Rate: 25.81%
+Relevante Seiten: 271
+Irrelevante Seiten: 779
+
+
+--- ZWISCHENBERICHT [19:42:44] ---
+Laufzeit: 0:01:30.616408
+Harvest-Rate: 25.86%
+Relevante Seiten: 278
+Irrelevante Seiten: 797
+
+
+--- ZWISCHENBERICHT [19:42:46] ---
+Laufzeit: 0:01:32.332647
+Harvest-Rate: 25.91%
+Relevante Seiten: 285
+Irrelevante Seiten: 815
+
+
+--- ZWISCHENBERICHT [19:42:48] ---
+Laufzeit: 0:01:34.255672
+Harvest-Rate: 25.42%
+Relevante Seiten: 286
+Irrelevante Seiten: 839
+
+
+--- ZWISCHENBERICHT [19:42:51] ---
+Laufzeit: 0:01:36.859536
+Harvest-Rate: 25.22%
+Relevante Seiten: 290
+Irrelevante Seiten: 860
+
+
+--- ZWISCHENBERICHT [19:42:53] ---
+Laufzeit: 0:01:39.142045
+Harvest-Rate: 25.02%
+Relevante Seiten: 294
+Irrelevante Seiten: 881
+
+
+--- ZWISCHENBERICHT [19:42:55] ---
+Laufzeit: 0:01:40.976134
+Harvest-Rate: 24.83%
+Relevante Seiten: 298
+Irrelevante Seiten: 902
+
+
+============================================================
+ABSCHLUSSBERICHT - vectorspace_crawler
+============================================================
+Spider-Name: vectorspace_crawler
+Gesamtlaufzeit: 0:01:41.252406
+Anzahl gecrawlter Seiten: 1206
+Anzahl relevanter Seiten: 300
+Anzahl irrelevanter Seiten: 906
+Harvest-Rate: 24.88%
+Durchschnittliche Relevanz: 0.3523
+
+TOP 10 BESTE URLS:
+1. Score: 0.5728 - https://de.wikipedia.org/wiki/K%C3%BCnstliche_Intelligenz
+2. Score: 0.5728 - https://de.wikipedia.org/wiki/Artificial_Intelligence
+3. Score: 0.5496 - https://de.wikipedia.org/wiki/Spracherkennung
+4. Score: 0.5381 - https://de.wikipedia.org/wiki/Geschichte_der_k%C3%BCnstlichen_Intelligenz
+5. Score: 0.5265 - https://de.wikipedia.org/wiki/Anwendungen_k%C3%BCnstlicher_Intelligenz
+6. Score: 0.5180 - https://de.wikipedia.org/wiki/K%C3%BCnstliche_Intelligenz_in_der_Pflege
+7. Score: 0.5174 - https://de.wikipedia.org/wiki/K%C3%BCnstliche_Intelligenz_in_der_Medizin
+8. Score: 0.5153 - https://de.wikipedia.org/wiki/Israel
+9. Score: 0.5124 - https://de.wikipedia.org/wiki/Schweden
+10. Score: 0.5035 - https://de.wikipedia.org/wiki/Frankfurt_(Main)
+
+TOP 10 MITTELFELD URLS:
+1. Score: 0.4341 - https://de.wikipedia.org/wiki/Niederrhein_(Region)
+2. Score: 0.4338 - https://de.wikipedia.org/wiki/Zinn
+3. Score: 0.4337 - https://de.wikipedia.org/wiki/Ableitung_(Logik)
+4. Score: 0.4326 - https://de.wikipedia.org/wiki/Chevrolet_Malibu
+5. Score: 0.4323 - https://de.wikipedia.org/wiki/Martin_Heidegger
+6. Score: 0.4323 - https://de.wikipedia.org/wiki/Glycerol
+7. Score: 0.4313 - https://de.wikipedia.org/wiki/Toxizit%C3%A4t
+8. Score: 0.4312 - https://de.wikipedia.org/wiki/Ford_RS200
+9. Score: 0.4308 - https://de.wikipedia.org/wiki/Beruf
+10. Score: 0.4307 - https://de.wikipedia.org/wiki/Sturz_im_Alter
+
+TOP 10 SCHLECHTESTE URLS:
+1. Score: 0.4016 - https://de.wikipedia.org/wiki/Speedup-Theorem
+2. Score: 0.4016 - https://de.wikipedia.org/wiki/Turksprachen
+3. Score: 0.4015 - https://de.wikipedia.org/wiki/Modelle_%C3%BCberlappender_Generationen
+4. Score: 0.4013 - https://de.wikipedia.org/wiki/Syndikus
+5. Score: 0.4011 - https://de.wikipedia.org/wiki/Universal_Studios_Hollywood
+6. Score: 0.4009 - https://de.wikipedia.org/wiki/Personenfreiz%C3%BCgigkeit
+7. Score: 0.4008 - https://de.wikipedia.org/wiki/Das_k%C3%BCnstliche_Paradies
+8. Score: 0.4007 - https://de.wikipedia.org/wiki/Relativit%C3%A4tstheorie
+9. Score: 0.4004 - https://de.wikipedia.org/wiki/Neon
+10. Score: 0.4003 - https://de.wikipedia.org/wiki/Ford_Fiesta_%E2%80%9909
+
+============================================================
+
+
+--- ZWISCHENBERICHT [19:42:58] ---
+Laufzeit: 0:01:44.579828
+Harvest-Rate: 24.82%
+Relevante Seiten: 304
+Irrelevante Seiten: 921
+

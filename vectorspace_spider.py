@@ -35,12 +35,18 @@ class TfNormVectorizer:
     def transform(self, documents):
         """Transformiere Dokumente zu TF-Norm Vektoren"""
         count_matrix = self.count_vectorizer.transform(documents)
-        return self.scaler.transform(count_matrix)
+        array = self.scaler.transform(count_matrix).toarray()
+        if array.ndim == 1:
+            array = array.reshape(1, -1)
+        return array
 
     def fit_transform(self, documents):
         """Fit und Transform in einem Schritt"""
         count_matrix = self.count_vectorizer.fit_transform(documents)
-        return self.scaler.fit_transform(count_matrix)
+        array = self.scaler.fit_transform(count_matrix).toarray()
+        if array.ndim == 1:
+            array = array.reshape(1, -1)
+        return array
 
 
 class VectorSpaceSpider(BaseTopicalSpider):
@@ -182,7 +188,7 @@ class VectorSpaceSpider(BaseTopicalSpider):
             if processed_title:
                 try:
                     title_vector = self.vectorizer.transform([processed_title])
-                    combined_vector += title_vector.toarray() * self.title_multiplier
+                    combined_vector += title_vector * self.title_multiplier
                 except:
                     pass
 
@@ -192,7 +198,7 @@ class VectorSpaceSpider(BaseTopicalSpider):
             if processed_headings:
                 try:
                     heading_vector = self.vectorizer.transform([processed_headings])
-                    combined_vector += heading_vector.toarray() * self.heading_multiplier
+                    combined_vector += heading_vector * self.heading_multiplier
                 except:
                     pass
 
@@ -202,7 +208,7 @@ class VectorSpaceSpider(BaseTopicalSpider):
             if processed_paragraphs:
                 try:
                     paragraph_vector = self.vectorizer.transform([processed_paragraphs])
-                    combined_vector += paragraph_vector.toarray() * self.paragraph_multiplier
+                    combined_vector += paragraph_vector * self.paragraph_multiplier
                 except:
                     pass
 
@@ -210,16 +216,6 @@ class VectorSpaceSpider(BaseTopicalSpider):
         if np.any(combined_vector):
             # Berechne Ähnlichkeit OHNE zusätzliche Normalisierung
             # Die Multiplikatoren bleiben so erhalten
-            if isinstance(combined_vector, np.matrix):
-                combined_vector = np.asarray(combined_vector)
-            if isinstance(self.topic_vector, np.matrix):
-                self.topic_vector = np.asarray(self.topic_vector)
-
-            if combined_vector.ndim == 1:
-                combined_vector = combined_vector.reshape(1, -1)
-            if self.topic_vector.ndim == 1:
-                self.topic_vector = self.topic_vector.reshape(1, -1)
-
             similarity = cosine_similarity(combined_vector, self.topic_vector)[0][0]
 
             # Leichte Verstärkung für bessere Score-Verteilung

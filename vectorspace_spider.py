@@ -252,19 +252,31 @@ class VectorSpaceSpider(BaseTopicalSpider):
 
         # Berechne Cosinus-Ähnlichkeit zwischen kombiniertem Vektor und Themenprofil
         if np.any(combined_vector):
-            # Stelle sicher, dass beide Vektoren die richtige Form haben
-            if combined_vector.ndim == 1:
-                combined_vector = combined_vector.reshape(1, -1)
-            if self.topic_vector.ndim == 1:
-                self.topic_vector = self.topic_vector.reshape(1, -1)
-
             similarity = cosine_similarity(combined_vector, self.topic_vector)[0][0]
 
-            # Leichte Verstärkung für bessere Score-Verteilung
-            # Entfernt sqrt() Boost - verwende direkten Similarity-Wert
-            # Dies führt zu realistischeren Scores
-            boosted_score = np.sqrt(similarity)
+            # Neue Score-Transformation für bessere Verteilung
+            # Sigmoid-ähnliche Transformation
+            adjusted_score = self.transform_score(similarity)
 
-            return float(min(1.0, boosted_score))
+            return float(adjusted_score)
+        return 0.0
+
+
+    def transform_score(self, raw_score, steepness=5, midpoint=0.3):
+        """
+        Transformiert Raw-Scores zu besserer Verteilung [0,1]
+        steepness: Wie steil die Kurve ist (höher = schärfere Trennung)
+        midpoint: Wo die 0.5 Marke liegt
+        """
+        import math
+
+        # Sigmoid-Transformation
+        transformed = 1 / (1 + math.exp(-steepness * (raw_score - midpoint)))
+
+        # Zusätzliche Streckung für extremere Werte
+        if transformed < 0.5:
+            # Strecke untere Hälfte
+            return transformed * 0.5 / 0.5
         else:
-            return 0.0
+            # Strecke obere Hälfte
+            return 0.5 + (transformed - 0.5) * 0.5 / 0.5

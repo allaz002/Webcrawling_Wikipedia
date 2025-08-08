@@ -38,7 +38,7 @@ class CrawlerPlotter:
         # Definiere konsistente Farben für Strategien
         self.colors = {
             'keyword': '#FF6B6B',  # Rot
-            'vectorspace': '#4ECDC4',  # Türkis
+            'vectorspace': '#8B8C0A',  # Olivgrün (passende Sättigung)
             'naivebayes': '#45B7D1'  # Blau
         }
 
@@ -234,19 +234,80 @@ class CrawlerPlotter:
             if valid_data:
                 batch_numbers, avg_positions = zip(*valid_data)
 
-                # Plotte Linie
-                ax.plot(batch_numbers, avg_positions,
-                        color=self.colors[strategy],
-                        linewidth=2,
-                        marker='D',
-                        markersize=5,
-                        label=f'{strategy.capitalize()} Spider',
-                        alpha=0.8)
+                # Aggregiere über 5 Batches für glattere Darstellung
+                aggregation_window = 5
+                aggregated_batches = []
+                aggregated_positions = []
+
+                for i in range(0, len(batch_numbers), aggregation_window):
+                    window_batches = batch_numbers[i:i + aggregation_window]
+                    window_positions = avg_positions[i:i + aggregation_window]
+
+                    if window_batches:
+                        # Mittlerer Batch-Wert für X-Achse
+                        avg_batch = sum(window_batches) / len(window_batches)
+                        # Durchschnittliche Position für Y-Achse
+                        avg_pos = sum(window_positions) / len(window_positions)
+
+                        aggregated_batches.append(avg_batch)
+                        aggregated_positions.append(avg_pos)
+
+                # Plotte aggregierte Linie mit Interpolation
+                if len(aggregated_batches) > 1:
+                    # Verwende cubic interpolation für glattere Kurven
+                    from scipy.interpolate import interp1d
+                    import numpy as np
+
+                    # Erstelle interpolierte Kurve
+                    try:
+                        # Cubic interpolation wenn genug Punkte
+                        if len(aggregated_batches) > 3:
+                            f = interp1d(aggregated_batches, aggregated_positions,
+                                         kind='cubic', fill_value='extrapolate')
+                        else:
+                            # Linear bei wenigen Punkten
+                            f = interp1d(aggregated_batches, aggregated_positions,
+                                         kind='linear', fill_value='extrapolate')
+
+                        # Erstelle feinere X-Achse für glatte Kurve
+                        x_smooth = np.linspace(min(aggregated_batches),
+                                               max(aggregated_batches), 100)
+                        y_smooth = f(x_smooth)
+
+                        # Plotte glatte Linie
+                        ax.plot(x_smooth, y_smooth,
+                                color=self.colors[strategy],
+                                linewidth=2,
+                                label=f'{strategy.capitalize()} Spider',
+                                alpha=0.8)
+
+                        # Markiere aggregierte Datenpunkte
+                        ax.scatter(aggregated_batches, aggregated_positions,
+                                   color=self.colors[strategy],
+                                   s=30, alpha=0.6, zorder=5)
+
+                    except:
+                        # Fallback zu einfacher Linie bei Interpolationsfehler
+                        ax.plot(aggregated_batches, aggregated_positions,
+                                color=self.colors[strategy],
+                                linewidth=2,
+                                marker='D',
+                                markersize=5,
+                                label=f'{strategy.capitalize()} Spider',
+                                alpha=0.8)
+                else:
+                    # Nur ein Datenpunkt
+                    ax.scatter(aggregated_batches, aggregated_positions,
+                               color=self.colors[strategy],
+                               s=50,
+                               label=f'{strategy.capitalize()} Spider',
+                               alpha=0.8)
 
         # Formatierung
-        ax.set_xlabel('Batch-Nummer', fontsize=12)
+        ax.set_xlabel('Batch-Nummer (5er-Aggregation)', fontsize=12)
         ax.set_ylabel('Durchschnittliche Position in Frontier', fontsize=12)
-        ax.set_title('Durchschnittliche Platzierung neuer URLs in der Frontier', fontsize=14, fontweight='bold')
+        ax.set_title('Durchschnittliche Platzierung neuer URLs in der Frontier\n(Aggregiert über 5 Batches)',
+                     fontsize=14, fontweight='bold')
         ax.grid(True, alpha=0.3, linestyle='--')
         ax.legend(loc='best', frameon=True, shadow=True)
         ax.set_ylim(bottom=0)
@@ -305,7 +366,10 @@ class CrawlerPlotter:
 
     def create_comparison_table(self):
         """Erstellt Vergleichstabelle der Top/Mittel/Bottom Seiten"""
-        fig, ax = plt.subplots(figsize=(14, 10))
+        # Dynamische Figurengröße basierend auf Anzahl Strategien
+        num_strategies = len(self.data.keys())
+        fig_width = 10 + num_strategies * 2
+        fig, ax = plt.subplots(figsize=(fig_width, 12))
         ax.axis('tight')
         ax.axis('off')
 
@@ -318,7 +382,13 @@ class CrawlerPlotter:
             titles = []
             for i in indices:
                 if i < len(pages):
-                    title = pages[i].get('title', 'Kein Titel')[:50]  # Max 50 Zeichen
+                    # Extrahiere sauberen Titel
+                    title = pages[i].get('title', 'Kein Titel')
+                    # Entferne überflüssige Whitespaces
+                    title = ' '.join(title.split())
+                    # Kürze auf maximal 60 Zeichen mit Ellipsis
+                    if len(title) > 60:
+                        title = title[:57] + '...'
                     titles.append(title)
                 else:
                     titles.append('-')
@@ -333,78 +403,107 @@ class CrawlerPlotter:
                                       reverse=True)
                 sorted_pages_by_strategy[strategy] = sorted_pages
 
-        # Top 5
-        row_data = ['TOP 5 (Beste)']
-        for strategy in self.data.keys():
-            if strategy in sorted_pages_by_strategy:
-                pages = sorted_pages_by_strategy[strategy]
-                titles = get_titles(pages, range(5))
-                row_data.append('\n'.join(titles))
-            else:
-                row_data.append('-')
-        table_data.append(row_data)
+        # Erstelle Zeilen für Top 5
+        for i in range(5):
+            row_data = [f'Top {i + 1}']
+            for strategy in self.data.keys():
+                if strategy in sorted_pages_by_strategy:
+                    pages = sorted_pages_by_strategy[strategy]
+                    if i < len(pages):
+                        title = pages[i].get('title', 'Kein Titel')
+                        title = ' '.join(title.split())[:60]
+                        score = pages[i].get('score', 0)
+                        row_data.append(f'{title}\n(Score: {score:.3f})')
+                    else:
+                        row_data.append('-')
+                else:
+                    row_data.append('-')
+            table_data.append(row_data)
 
-        # Mittlere 5
-        row_data = ['MITTE 5']
-        for strategy in self.data.keys():
-            if strategy in sorted_pages_by_strategy:
-                pages = sorted_pages_by_strategy[strategy]
-                middle_start = max(0, len(pages) // 2 - 2)
-                titles = get_titles(pages, range(middle_start, middle_start + 5))
-                row_data.append('\n'.join(titles))
-            else:
-                row_data.append('-')
-        table_data.append(row_data)
+        # Erstelle Zeilen für Mittlere 5
+        for i in range(5):
+            row_data = [f'Mitte {i + 1}']
+            for strategy in self.data.keys():
+                if strategy in sorted_pages_by_strategy:
+                    pages = sorted_pages_by_strategy[strategy]
+                    middle_start = max(0, len(pages) // 2 - 2)
+                    idx = middle_start + i
+                    if idx < len(pages):
+                        title = pages[idx].get('title', 'Kein Titel')
+                        title = ' '.join(title.split())[:60]
+                        score = pages[idx].get('score', 0)
+                        row_data.append(f'{title}\n(Score: {score:.3f})')
+                    else:
+                        row_data.append('-')
+                else:
+                    row_data.append('-')
+            table_data.append(row_data)
 
-        # Bottom 5
-        row_data = ['BOTTOM 5 (Schlechteste)']
-        for strategy in self.data.keys():
-            if strategy in sorted_pages_by_strategy:
-                pages = sorted_pages_by_strategy[strategy]
-                start_idx = max(0, len(pages) - 5)
-                titles = get_titles(pages, range(start_idx, len(pages)))
-                row_data.append('\n'.join(titles))
-            else:
-                row_data.append('-')
-        table_data.append(row_data)
+        # Erstelle Zeilen für Bottom 5
+        for i in range(5):
+            row_data = [f'Bottom {i + 1}']
+            for strategy in self.data.keys():
+                if strategy in sorted_pages_by_strategy:
+                    pages = sorted_pages_by_strategy[strategy]
+                    start_idx = max(0, len(pages) - 5)
+                    idx = start_idx + i
+                    if idx < len(pages):
+                        title = pages[idx].get('title', 'Kein Titel')
+                        title = ' '.join(title.split())[:60]
+                        score = pages[idx].get('score', 0)
+                        row_data.append(f'{title}\n(Score: {score:.3f})')
+                    else:
+                        row_data.append('-')
+                else:
+                    row_data.append('-')
+            table_data.append(row_data)
 
-        # Erstelle Tabelle
+        # Erstelle Tabelle mit angepassten Spaltenbreiten
+        col_widths = [0.12] + [(0.88 / num_strategies)] * num_strategies
+
         table = ax.table(cellText=table_data,
                          colLabels=headers,
                          cellLoc='left',
                          loc='center',
-                         colWidths=[0.15] + [0.85 / len(self.data.keys())] * len(self.data.keys()))
+                         colWidths=col_widths)
 
         # Formatierung
         table.auto_set_font_size(False)
-        table.set_fontsize(9)
-        table.scale(1, 3)
+        table.set_fontsize(8)
+        table.scale(1, 2.5)  # Mehr Höhe für bessere Lesbarkeit
 
         # Farben für Zeilen
-        colors_rows = {
-            0: '#90EE90',  # Hellgrün für Top 5
-            1: '#FFFFE0',  # Hellgelb für Mitte
-            2: '#FFB6C1'  # Hellrot für Bottom 5
-        }
-
-        # Setze Farben und Rahmen
         for (row, col), cell in table.get_celld().items():
             if row == 0:  # Header
                 cell.set_facecolor('#4CAF50')
                 cell.set_text_props(weight='bold', color='white')
                 cell.set_linewidth(2)
+                cell.set_height(0.08)
             else:
                 row_idx = row - 1
-                if row_idx in colors_rows:
-                    cell.set_facecolor(colors_rows[row_idx])
-                cell.set_linewidth(1)
+                # Top 5 - Hellgrün
+                if row_idx < 5:
+                    cell.set_facecolor('#90EE90')
+                # Mitte 5 - Hellgelb
+                elif row_idx < 10:
+                    cell.set_facecolor('#FFFFE0')
+                # Bottom 5 - Hellrot
+                else:
+                    cell.set_facecolor('#FFB6C1')
 
-                # Dicke Linien zwischen Kategorien
-                if row in [1, 2, 3]:
+                cell.set_linewidth(0.5)
+
+                # Dicke Trennlinien zwischen Kategorien
+                if row_idx in [0, 5, 10]:
                     cell.set_linewidth(2)
 
+                # Textausrichtung
+                cell.set_text_props(linespacing=1.5)
+                cell.PAD = 0.05  # Padding innerhalb der Zelle
+
         # Titel
-        plt.title('Vergleich der Crawling-Strategien: Top/Mittel/Bottom Artikel',
+        plt.title('Vergleich der Crawling-Strategien: Top/Mittel/Bottom Artikel\n' +
+                  '(Sortiert nach Relevanz-Score)',
                   fontsize=16, fontweight='bold', pad=20)
 
         # Speichern

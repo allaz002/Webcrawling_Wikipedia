@@ -261,7 +261,8 @@ class VectorSpaceSpider(BaseTopicalSpider):
             similarity = cosine_similarity(combined_vector, self.topic_vector)[0][0]
 
             # Leichte Verstärkung für bessere Score-Verteilung
-            # sqrt verschiebt niedrige Werte nach oben, behält hohe Werte
+            # Entfernt sqrt() Boost - verwende direkten Similarity-Wert
+            # Dies führt zu realistischeren Scores
             boosted_score = np.sqrt(similarity)
 
             return float(min(1.0, boosted_score))

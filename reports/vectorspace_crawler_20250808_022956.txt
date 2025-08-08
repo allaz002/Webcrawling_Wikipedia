@@ -1,0 +1,86 @@
+
+============================================================
+CRAWLER KONFIGURATION - vectorspace_crawler
+============================================================
+Strategie: VectorSpaceSpider
+Seed URLs: https://de.wikipedia.org/wiki/Wikipedia:Hauptseite
+Batch-Größe: 16
+Max. Seiten: 50000
+Max. relevante Seiten: 30
+Relevanz-Schwellenwert: 0.25
+Max. Laufzeit: 30 Minuten
+Report-Intervall: 30 Sekunden
+
+GEWICHTUNGEN:
+- Link-Gewicht: 0.5
+- Elterndokument-Gewicht: 0.5
+============================================================
+
+Modus: tfidf
+
+IDF Relevant-Ratio: 0.75
+
+
+--- ZWISCHENBERICHT [02:30:03] ---
+Laufzeit: 0:00:07.111474
+Harvest-Rate: 0.00%
+Relevante Seiten: 0
+Irrelevante Seiten: 25
+Aktueller Batch: 25
+
+
+--- ZWISCHENBERICHT [02:30:09] ---
+Laufzeit: 0:00:12.159170
+Harvest-Rate: 0.00%
+Relevante Seiten: 0
+Irrelevante Seiten: 50
+Aktueller Batch: 50
+
+
+--- ZWISCHENBERICHT [02:30:10] ---
+Laufzeit: 0:00:13.800947
+Harvest-Rate: 0.00%
+Relevante Seiten: 0
+Irrelevante Seiten: 75
+Aktueller Batch: 75
+
+
+--- ZWISCHENBERICHT [02:30:13] ---
+Laufzeit: 0:00:16.404567
+Harvest-Rate: 0.00%
+Relevante Seiten: 0
+Irrelevante Seiten: 100
+Aktueller Batch: 100
+
+
+--- ZWISCHENBERICHT [02:30:18] ---
+Laufzeit: 0:00:22.076998
+Harvest-Rate: 0.00%
+Relevante Seiten: 0
+Irrelevante Seiten: 125
+Aktueller Batch: 125
+
+
+--- ZWISCHENBERICHT [02:30:20] ---
+Laufzeit: 0:00:23.628013
+Harvest-Rate: 0.00%
+Relevante Seiten: 0
+Irrelevante Seiten: 150
+Aktueller Batch: 150
+
+
+--- ZWISCHENBERICHT [02:30:22] ---
+Laufzeit: 0:00:25.829896
+Harvest-Rate: 0.00%
+Relevante Seiten: 0
+Irrelevante Seiten: 175
+Aktueller Batch: 175
+
+
+--- ZWISCHENBERICHT [02:30:24] ---
+Laufzeit: 0:00:27.543464
+Harvest-Rate: 0.50%
+Relevante Seiten: 1
+Irrelevante Seiten: 199
+Aktueller Batch: 200
+

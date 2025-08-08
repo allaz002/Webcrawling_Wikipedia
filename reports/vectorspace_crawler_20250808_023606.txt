@@ -1,0 +1,278 @@
+
+============================================================
+CRAWLER KONFIGURATION - vectorspace_crawler
+============================================================
+Strategie: VectorSpaceSpider
+Seed URLs: https://de.wikipedia.org/wiki/Wikipedia:Hauptseite
+Batch-Größe: 16
+Max. Seiten: 50000
+Max. relevante Seiten: 30
+Relevanz-Schwellenwert: 0.35
+Max. Laufzeit: 30 Minuten
+Report-Intervall: 30 Sekunden
+
+GEWICHTUNGEN:
+- Link-Gewicht: 0.5
+- Elterndokument-Gewicht: 0.5
+============================================================
+
+Modus: tfidf
+
+IDF Relevant-Ratio: 0.75
+
+
+--- ZWISCHENBERICHT [02:36:13] ---
+Laufzeit: 0:00:07.495995
+Harvest-Rate: 0.00%
+Relevante Seiten: 0
+Irrelevante Seiten: 25
+Aktueller Batch: 25
+
+
+--- ZWISCHENBERICHT [02:36:19] ---
+Laufzeit: 0:00:12.580625
+Harvest-Rate: 0.00%
+Relevante Seiten: 0
+Irrelevante Seiten: 50
+Aktueller Batch: 50
+
+
+--- ZWISCHENBERICHT [02:36:22] ---
+Laufzeit: 0:00:15.669986
+Harvest-Rate: 0.00%
+Relevante Seiten: 0
+Irrelevante Seiten: 75
+Aktueller Batch: 75
+
+
+--- ZWISCHENBERICHT [02:36:27] ---
+Laufzeit: 0:00:21.499081
+Harvest-Rate: 2.00%
+Relevante Seiten: 2
+Irrelevante Seiten: 98
+Aktueller Batch: 100
+
+
+--- ZWISCHENBERICHT [02:36:30] ---
+Laufzeit: 0:00:24.157519
+Harvest-Rate: 2.40%
+Relevante Seiten: 3
+Irrelevante Seiten: 122
+Aktueller Batch: 125
+
+
+--- ZWISCHENBERICHT [02:36:34] ---
+Laufzeit: 0:00:27.881868
+Harvest-Rate: 2.67%
+Relevante Seiten: 4
+Irrelevante Seiten: 146
+Aktueller Batch: 150
+
+
+--- ZWISCHENBERICHT [02:36:37] ---
+Laufzeit: 0:00:30.869330
+Harvest-Rate: 2.86%
+Relevante Seiten: 5
+Irrelevante Seiten: 170
+Aktueller Batch: 175
+
+
+--- ZWISCHENBERICHT [02:36:40] ---
+Laufzeit: 0:00:33.641677
+Harvest-Rate: 2.50%
+Relevante Seiten: 5
+Irrelevante Seiten: 195
+Aktueller Batch: 200
+
+
+--- ZWISCHENBERICHT [02:36:42] ---
+Laufzeit: 0:00:36.486298
+Harvest-Rate: 2.22%
+Relevante Seiten: 5
+Irrelevante Seiten: 220
+Aktueller Batch: 225
+
+
+--- ZWISCHENBERICHT [02:36:44] ---
+Laufzeit: 0:00:38.514492
+Harvest-Rate: 2.00%
+Relevante Seiten: 5
+Irrelevante Seiten: 245
+Aktueller Batch: 250
+
+
+--- ZWISCHENBERICHT [02:36:47] ---
+Laufzeit: 0:00:41.521225
+Harvest-Rate: 2.18%
+Relevante Seiten: 6
+Irrelevante Seiten: 269
+Aktueller Batch: 275
+
+
+--- ZWISCHENBERICHT [02:36:51] ---
+Laufzeit: 0:00:44.777277
+Harvest-Rate: 2.33%
+Relevante Seiten: 7
+Irrelevante Seiten: 293
+Aktueller Batch: 300
+
+
+--- ZWISCHENBERICHT [02:36:53] ---
+Laufzeit: 0:00:47.195811
+Harvest-Rate: 2.46%
+Relevante Seiten: 8
+Irrelevante Seiten: 317
+Aktueller Batch: 325
+
+
+--- ZWISCHENBERICHT [02:36:57] ---
+Laufzeit: 0:00:51.336097
+Harvest-Rate: 2.29%
+Relevante Seiten: 8
+Irrelevante Seiten: 342
+Aktueller Batch: 350
+
+
+--- ZWISCHENBERICHT [02:37:01] ---
+Laufzeit: 0:00:55.500241
+Harvest-Rate: 2.13%
+Relevante Seiten: 8
+Irrelevante Seiten: 367
+Aktueller Batch: 375
+
+
+--- ZWISCHENBERICHT [02:37:03] ---
+Laufzeit: 0:00:57.519648
+Harvest-Rate: 2.00%
+Relevante Seiten: 8
+Irrelevante Seiten: 392
+Aktueller Batch: 400
+
+
+--- ZWISCHENBERICHT [02:37:06] ---
+Laufzeit: 0:00:59.572704
+Harvest-Rate: 1.88%
+Relevante Seiten: 8
+Irrelevante Seiten: 417
+Aktueller Batch: 425
+
+
+--- ZWISCHENBERICHT [02:37:07] ---
+Laufzeit: 0:01:01.380112
+Harvest-Rate: 2.00%
+Relevante Seiten: 9
+Irrelevante Seiten: 441
+Aktueller Batch: 450
+
+
+--- ZWISCHENBERICHT [02:37:11] ---
+Laufzeit: 0:01:04.708857
+Harvest-Rate: 1.89%
+Relevante Seiten: 9
+Irrelevante Seiten: 466
+Aktueller Batch: 475
+
+
+--- ZWISCHENBERICHT [02:37:13] ---
+Laufzeit: 0:01:07.073813
+Harvest-Rate: 1.80%
+Relevante Seiten: 9
+Irrelevante Seiten: 491
+Aktueller Batch: 500
+
+
+--- ZWISCHENBERICHT [02:37:15] ---
+Laufzeit: 0:01:09.229688
+Harvest-Rate: 1.71%
+Relevante Seiten: 9
+Irrelevante Seiten: 516
+Aktueller Batch: 525
+
+
+--- ZWISCHENBERICHT [02:37:18] ---
+Laufzeit: 0:01:12.152036
+Harvest-Rate: 1.64%
+Relevante Seiten: 9
+Irrelevante Seiten: 541
+Aktueller Batch: 550
+
+
+--- ZWISCHENBERICHT [02:37:21] ---
+Laufzeit: 0:01:14.608781
+Harvest-Rate: 1.57%
+Relevante Seiten: 9
+Irrelevante Seiten: 566
+Aktueller Batch: 575
+
+
+--- ZWISCHENBERICHT [02:37:24] ---
+Laufzeit: 0:01:17.568293
+Harvest-Rate: 1.50%
+Relevante Seiten: 9
+Irrelevante Seiten: 591
+Aktueller Batch: 600
+
+
+--- ZWISCHENBERICHT [02:37:27] ---
+Laufzeit: 0:01:21.115428
+Harvest-Rate: 1.44%
+Relevante Seiten: 9
+Irrelevante Seiten: 616
+Aktueller Batch: 625
+
+
+--- ZWISCHENBERICHT [02:37:29] ---
+Laufzeit: 0:01:23.432975
+Harvest-Rate: 1.54%
+Relevante Seiten: 10
+Irrelevante Seiten: 640
+Aktueller Batch: 650
+
+
+--- ZWISCHENBERICHT [02:37:33] ---
+Laufzeit: 0:01:26.555857
+Harvest-Rate: 1.48%
+Relevante Seiten: 10
+Irrelevante Seiten: 665
+Aktueller Batch: 675
+
+
+--- ZWISCHENBERICHT [02:37:36] ---
+Laufzeit: 0:01:29.645592
+Harvest-Rate: 1.43%
+Relevante Seiten: 10
+Irrelevante Seiten: 690
+Aktueller Batch: 700
+
+
+--- ZWISCHENBERICHT [02:37:38] ---
+Laufzeit: 0:01:31.854896
+Harvest-Rate: 1.52%
+Relevante Seiten: 11
+Irrelevante Seiten: 714
+Aktueller Batch: 725
+
+
+--- ZWISCHENBERICHT [02:37:42] ---
+Laufzeit: 0:01:35.807584
+Harvest-Rate: 1.47%
+Relevante Seiten: 11
+Irrelevante Seiten: 739
+Aktueller Batch: 750
+
+
+--- ZWISCHENBERICHT [02:37:45] ---
+Laufzeit: 0:01:39.397522
+Harvest-Rate: 1.42%
+Relevante Seiten: 11
+Irrelevante Seiten: 764
+Aktueller Batch: 775
+
+
+--- ZWISCHENBERICHT [02:37:49] ---
+Laufzeit: 0:01:42.751990
+Harvest-Rate: 1.38%
+Relevante Seiten: 11
+Irrelevante Seiten: 789
+Aktueller Batch: 800
+

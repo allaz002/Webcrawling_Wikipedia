@@ -1,0 +1,119 @@
+
+============================================================
+CRAWLER KONFIGURATION - vectorspace_crawler
+============================================================
+Strategie: VectorSpaceSpider
+Seed URLs: https://de.wikipedia.org/wiki/Wikipedia:Hauptseite
+Batch-Größe: 16
+Max. Seiten: 50000
+Max. relevante Seiten: 30
+Relevanz-Schwellenwert: 0.35
+Max. Laufzeit: 30 Minuten
+Report-Intervall: 30 Sekunden
+
+GEWICHTUNGEN:
+- Link-Gewicht: 0.5
+- Elterndokument-Gewicht: 0.5
+============================================================
+
+Modus: tf_norm
+
+
+--- ZWISCHENBERICHT [02:42:28] ---
+Laufzeit: 0:00:05.790026
+Harvest-Rate: 4.00%
+Relevante Seiten: 1
+Irrelevante Seiten: 24
+Aktueller Batch: 25
+
+
+--- ZWISCHENBERICHT [02:42:31] ---
+Laufzeit: 0:00:08.180335
+Harvest-Rate: 10.00%
+Relevante Seiten: 5
+Irrelevante Seiten: 45
+Aktueller Batch: 50
+
+
+--- ZWISCHENBERICHT [02:42:33] ---
+Laufzeit: 0:00:10.441902
+Harvest-Rate: 14.67%
+Relevante Seiten: 11
+Irrelevante Seiten: 64
+Aktueller Batch: 75
+
+
+--- ZWISCHENBERICHT [02:42:37] ---
+Laufzeit: 0:00:14.086574
+Harvest-Rate: 16.00%
+Relevante Seiten: 16
+Irrelevante Seiten: 84
+Aktueller Batch: 100
+
+
+--- ZWISCHENBERICHT [02:42:40] ---
+Laufzeit: 0:00:17.143679
+Harvest-Rate: 19.20%
+Relevante Seiten: 24
+Irrelevante Seiten: 101
+Aktueller Batch: 125
+
+
+============================================================
+ABSCHLUSSBERICHT - vectorspace_crawler
+============================================================
+Spider-Name: vectorspace_crawler
+Gesamtlaufzeit: 0:00:19.412445
+Anzahl gecrawlter Seiten: 145
+Anzahl relevanter Seiten: 30
+Anzahl irrelevanter Seiten: 115
+Harvest-Rate: 20.69%
+Durchschnittliche Relevanz: 0.0945
+Gesamte Relevanzbewertungszeit: 0.20 Sekunden
+
+TOP 10 BESTE URLS:
+1. Score: 0.5318 - https://de.wikipedia.org/wiki/Todesstrafe
+2. Score: 0.5180 - https://de.wikipedia.org/wiki/Postleitzahl_(Deutschland)
+3. Score: 0.5030 - https://de.wikipedia.org/wiki/NUTS
+4. Score: 0.4925 - https://de.wikipedia.org/wiki/M%C3%BCnchen
+5. Score: 0.4797 - https://de.wikipedia.org/wiki/Atom
+6. Score: 0.4472 - https://de.wikipedia.org/wiki/Bosnien_und_Herzegowina
+7. Score: 0.4472 - https://de.wikipedia.org/wiki/16._Jahrhundert
+8. Score: 0.4472 - https://de.wikipedia.org/wiki/%C3%84gypten
+9. Score: 0.4472 - https://de.wikipedia.org/wiki/Allgemeine_Relativit%C3%A4tstheorie
+10. Score: 0.4472 - https://de.wikipedia.org/wiki/Bosnienkrieg
+
+TOP 10 MITTELFELD URLS:
+1. Score: 0.4472 - https://de.wikipedia.org/wiki/Bruttoinlandsprodukt
+2. Score: 0.4472 - https://de.wikipedia.org/wiki/Internet_Archive
+3. Score: 0.4472 - https://de.wikipedia.org/wiki/Index_f%C3%BCr_wirtschaftliche_Freiheit
+4. Score: 0.4472 - https://de.wikipedia.org/wiki/Journalist
+5. Score: 0.4472 - https://de.wikipedia.org/wiki/Lambda-CDM-Modell
+6. Score: 0.4472 - https://de.wikipedia.org/wiki/Lepa_Brena
+7. Score: 0.4472 - https://de.wikipedia.org/wiki/Raumzeit
+8. Score: 0.4472 - https://de.wikipedia.org/wiki/Slowenien
+9. Score: 0.4472 - https://de.wikipedia.org/wiki/Volkswirtschaftliche_Kennzahl
+10. Score: 0.4472 - https://de.wikipedia.org/wiki/Baryonische_Materie
+
+TOP 10 SCHLECHTESTE URLS:
+1. Score: 0.4472 - https://de.wikipedia.org/wiki/Tuzla
+2. Score: 0.4472 - https://de.wikipedia.org/wiki/Vereinigtes_K%C3%B6nigreich
+3. Score: 0.4472 - https://de.wikipedia.org/wiki/Windr%C3%B6schen
+4. Score: 0.4472 - https://de.wikipedia.org/wiki/Normalh%C3%B6hennull
+5. Score: 0.4472 - https://de.wikipedia.org/wiki/Strafrecht
+6. Score: 0.4472 - https://de.wikipedia.org/wiki/B%C3%BCrgermeister
+7. Score: 0.4472 - https://de.wikipedia.org/wiki/Sachverhalt
+8. Score: 0.4472 - https://de.wikipedia.org/wiki/Aggregation_(Wirtschaft)
+9. Score: 0.4472 - https://de.wikipedia.org/wiki/Molekulargenetik
+10. Score: 0.4472 - https://de.wikipedia.org/wiki/Amtliche_Statistik
+
+============================================================
+
+
+--- ZWISCHENBERICHT [02:42:44] ---
+Laufzeit: 0:00:21.719546
+Harvest-Rate: 20.67%
+Relevante Seiten: 31
+Irrelevante Seiten: 119
+Aktueller Batch: 150
+

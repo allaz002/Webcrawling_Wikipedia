@@ -1,0 +1,249 @@
+
+============================================================
+CRAWLER KONFIGURATION - vectorspace_crawler
+============================================================
+Strategie: VectorSpaceSpider
+Seed URLs: https://de.wikipedia.org/wiki/Wikipedia:Hauptseite
+Batch-Größe: 16
+Max. Seiten: 50000
+Max. relevante Seiten: 30
+Relevanz-Schwellenwert: 0.2
+Max. Laufzeit: 30 Minuten
+Report-Intervall: 30 Sekunden
+
+GEWICHTUNGEN:
+- Link-Gewicht: 0.5
+- Elterndokument-Gewicht: 0.5
+============================================================
+
+Modus: tfidf
+
+IDF Relevant-Ratio: 0.75
+
+
+--- ZWISCHENBERICHT [02:31:03] ---
+Laufzeit: 0:00:06.841016
+Harvest-Rate: 0.00%
+Relevante Seiten: 0
+Irrelevante Seiten: 25
+Aktueller Batch: 25
+
+
+--- ZWISCHENBERICHT [02:31:07] ---
+Laufzeit: 0:00:11.093791
+Harvest-Rate: 2.00%
+Relevante Seiten: 1
+Irrelevante Seiten: 49
+Aktueller Batch: 50
+
+
+--- ZWISCHENBERICHT [02:31:10] ---
+Laufzeit: 0:00:14.369927
+Harvest-Rate: 4.00%
+Relevante Seiten: 3
+Irrelevante Seiten: 72
+Aktueller Batch: 75
+
+
+--- ZWISCHENBERICHT [02:31:12] ---
+Laufzeit: 0:00:16.309350
+Harvest-Rate: 4.00%
+Relevante Seiten: 4
+Irrelevante Seiten: 96
+Aktueller Batch: 100
+
+
+--- ZWISCHENBERICHT [02:31:16] ---
+Laufzeit: 0:00:19.630894
+Harvest-Rate: 4.00%
+Relevante Seiten: 5
+Irrelevante Seiten: 120
+Aktueller Batch: 125
+
+
+--- ZWISCHENBERICHT [02:31:20] ---
+Laufzeit: 0:00:23.477572
+Harvest-Rate: 4.67%
+Relevante Seiten: 7
+Irrelevante Seiten: 143
+Aktueller Batch: 150
+
+
+--- ZWISCHENBERICHT [02:31:23] ---
+Laufzeit: 0:00:26.627593
+Harvest-Rate: 5.14%
+Relevante Seiten: 9
+Irrelevante Seiten: 166
+Aktueller Batch: 175
+
+
+--- ZWISCHENBERICHT [02:31:26] ---
+Laufzeit: 0:00:29.470995
+Harvest-Rate: 5.00%
+Relevante Seiten: 10
+Irrelevante Seiten: 190
+Aktueller Batch: 200
+
+
+--- ZWISCHENBERICHT [02:31:28] ---
+Laufzeit: 0:00:31.855142
+Harvest-Rate: 4.44%
+Relevante Seiten: 10
+Irrelevante Seiten: 215
+Aktueller Batch: 225
+
+
+--- ZWISCHENBERICHT [02:31:30] ---
+Laufzeit: 0:00:33.961845
+Harvest-Rate: 4.80%
+Relevante Seiten: 12
+Irrelevante Seiten: 238
+Aktueller Batch: 250
+
+
+--- ZWISCHENBERICHT [02:31:32] ---
+Laufzeit: 0:00:36.235453
+Harvest-Rate: 5.45%
+Relevante Seiten: 15
+Irrelevante Seiten: 260
+Aktueller Batch: 275
+
+
+--- ZWISCHENBERICHT [02:31:35] ---
+Laufzeit: 0:00:38.950881
+Harvest-Rate: 6.00%
+Relevante Seiten: 18
+Irrelevante Seiten: 282
+Aktueller Batch: 300
+
+
+--- ZWISCHENBERICHT [02:31:37] ---
+Laufzeit: 0:00:41.266938
+Harvest-Rate: 6.15%
+Relevante Seiten: 20
+Irrelevante Seiten: 305
+Aktueller Batch: 325
+
+
+--- ZWISCHENBERICHT [02:31:39] ---
+Laufzeit: 0:00:42.800131
+Harvest-Rate: 5.71%
+Relevante Seiten: 20
+Irrelevante Seiten: 330
+Aktueller Batch: 350
+
+
+--- ZWISCHENBERICHT [02:31:41] ---
+Laufzeit: 0:00:45.074882
+Harvest-Rate: 5.87%
+Relevante Seiten: 22
+Irrelevante Seiten: 353
+Aktueller Batch: 375
+
+
+--- ZWISCHENBERICHT [02:31:43] ---
+Laufzeit: 0:00:46.969035
+Harvest-Rate: 5.50%
+Relevante Seiten: 22
+Irrelevante Seiten: 378
+Aktueller Batch: 400
+
+
+--- ZWISCHENBERICHT [02:31:45] ---
+Laufzeit: 0:00:49.355196
+Harvest-Rate: 5.18%
+Relevante Seiten: 22
+Irrelevante Seiten: 403
+Aktueller Batch: 425
+
+
+--- ZWISCHENBERICHT [02:31:47] ---
+Laufzeit: 0:00:51.314341
+Harvest-Rate: 5.33%
+Relevante Seiten: 24
+Irrelevante Seiten: 426
+Aktueller Batch: 450
+
+
+--- ZWISCHENBERICHT [02:31:49] ---
+Laufzeit: 0:00:52.974631
+Harvest-Rate: 5.26%
+Relevante Seiten: 25
+Irrelevante Seiten: 450
+Aktueller Batch: 475
+
+
+--- ZWISCHENBERICHT [02:31:52] ---
+Laufzeit: 0:00:55.514389
+Harvest-Rate: 5.20%
+Relevante Seiten: 26
+Irrelevante Seiten: 474
+Aktueller Batch: 500
+
+
+--- ZWISCHENBERICHT [02:31:54] ---
+Laufzeit: 0:00:57.572273
+Harvest-Rate: 5.33%
+Relevante Seiten: 28
+Irrelevante Seiten: 497
+Aktueller Batch: 525
+
+
+============================================================
+ABSCHLUSSBERICHT - vectorspace_crawler
+============================================================
+Spider-Name: vectorspace_crawler
+Gesamtlaufzeit: 0:00:59.962114
+Anzahl gecrawlter Seiten: 545
+Anzahl relevanter Seiten: 30
+Anzahl irrelevanter Seiten: 515
+Harvest-Rate: 5.50%
+Durchschnittliche Relevanz: 0.1091
+Gesamte Relevanzbewertungszeit: 1.19 Sekunden
+
+TOP 10 BESTE URLS:
+1. Score: 0.4012 - https://de.wikipedia.org/wiki/K%C3%BCnstliche_Intelligenz
+2. Score: 0.3492 - https://de.wikipedia.org/wiki/Probleml%C3%B6sen
+3. Score: 0.3054 - https://de.wikipedia.org/wiki/Enquete-Kommission_K%C3%BCnstliche_Intelligenz
+4. Score: 0.2967 - https://de.wikipedia.org/wiki/Intelligenz
+5. Score: 0.2949 - https://de.wikipedia.org/wiki/Koh%C3%A4sion_(Chemie)
+6. Score: 0.2575 - https://de.wikipedia.org/wiki/Allgemeiner_Faktor_der_Intelligenz
+7. Score: 0.2544 - https://de.wikipedia.org/wiki/Fluide_und_kristalline_Intelligenz
+8. Score: 0.2398 - https://de.wikipedia.org/wiki/Erdbeben
+9. Score: 0.2387 - https://de.wikipedia.org/wiki/Nintendo_DS
+10. Score: 0.2356 - https://de.wikipedia.org/wiki/Umkehrfunktion
+
+TOP 10 MITTELFELD URLS:
+1. Score: 0.2238 - https://de.wikipedia.org/wiki/Blu-ray_Disc
+2. Score: 0.2229 - https://de.wikipedia.org/wiki/Atomkern
+3. Score: 0.2220 - https://de.wikipedia.org/wiki/Programmiersprache
+4. Score: 0.2185 - https://de.wikipedia.org/wiki/Sitzzuteilungsverfahren
+5. Score: 0.2141 - https://de.wikipedia.org/wiki/Digitale_Medien
+6. Score: 0.2130 - https://de.wikipedia.org/wiki/Arthropoden
+7. Score: 0.2130 - https://de.wikipedia.org/wiki/Gliederf%C3%BC%C3%9Fer
+8. Score: 0.2115 - https://de.wikipedia.org/wiki/Der_Process
+9. Score: 0.2113 - https://de.wikipedia.org/wiki/Fall_der_Mauer
+10. Score: 0.2113 - https://de.wikipedia.org/wiki/Berliner_Mauer
+
+TOP 10 SCHLECHTESTE URLS:
+1. Score: 0.2099 - https://de.wikipedia.org/wiki/Erd%C3%B6l
+2. Score: 0.2096 - https://de.wikipedia.org/wiki/Zustandsgr%C3%B6%C3%9Fe
+3. Score: 0.2095 - https://de.wikipedia.org/wiki/Spin
+4. Score: 0.2087 - https://de.wikipedia.org/wiki/Pest
+5. Score: 0.2068 - https://de.wikipedia.org/wiki/Europ%C3%A4ische_Union
+6. Score: 0.2064 - https://de.wikipedia.org/wiki/Sinus
+7. Score: 0.2054 - https://de.wikipedia.org/wiki/Rand_(Topologie)
+8. Score: 0.2033 - https://de.wikipedia.org/wiki/Operationalisierung
+9. Score: 0.2017 - https://de.wikipedia.org/wiki/T%C3%BCrkei
+10. Score: 0.2014 - https://de.wikipedia.org/wiki/Extremwert
+
+============================================================
+
+
+--- ZWISCHENBERICHT [02:31:58] ---
+Laufzeit: 0:01:02.220394
+Harvest-Rate: 5.45%
+Relevante Seiten: 30
+Irrelevante Seiten: 520
+Aktueller Batch: 550
+

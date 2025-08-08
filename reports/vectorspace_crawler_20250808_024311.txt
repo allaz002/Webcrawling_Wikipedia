@@ -1,0 +1,351 @@
+
+============================================================
+CRAWLER KONFIGURATION - vectorspace_crawler
+============================================================
+Strategie: VectorSpaceSpider
+Seed URLs: https://de.wikipedia.org/wiki/Wikipedia:Hauptseite
+Batch-Größe: 16
+Max. Seiten: 50000
+Max. relevante Seiten: 30
+Relevanz-Schwellenwert: 0.5
+Max. Laufzeit: 30 Minuten
+Report-Intervall: 30 Sekunden
+
+GEWICHTUNGEN:
+- Link-Gewicht: 0.5
+- Elterndokument-Gewicht: 0.5
+============================================================
+
+Modus: tf_norm
+
+
+--- ZWISCHENBERICHT [02:43:16] ---
+Laufzeit: 0:00:05.556450
+Harvest-Rate: 0.00%
+Relevante Seiten: 0
+Irrelevante Seiten: 25
+Aktueller Batch: 25
+
+
+--- ZWISCHENBERICHT [02:43:19] ---
+Laufzeit: 0:00:08.307022
+Harvest-Rate: 4.00%
+Relevante Seiten: 2
+Irrelevante Seiten: 48
+Aktueller Batch: 50
+
+
+--- ZWISCHENBERICHT [02:43:22] ---
+Laufzeit: 0:00:11.302084
+Harvest-Rate: 2.67%
+Relevante Seiten: 2
+Irrelevante Seiten: 73
+Aktueller Batch: 75
+
+
+--- ZWISCHENBERICHT [02:43:26] ---
+Laufzeit: 0:00:14.754105
+Harvest-Rate: 3.00%
+Relevante Seiten: 3
+Irrelevante Seiten: 97
+Aktueller Batch: 100
+
+
+--- ZWISCHENBERICHT [02:43:27] ---
+Laufzeit: 0:00:16.499583
+Harvest-Rate: 4.00%
+Relevante Seiten: 5
+Irrelevante Seiten: 120
+Aktueller Batch: 125
+
+
+--- ZWISCHENBERICHT [02:43:29] ---
+Laufzeit: 0:00:18.578957
+Harvest-Rate: 4.67%
+Relevante Seiten: 7
+Irrelevante Seiten: 143
+Aktueller Batch: 150
+
+
+--- ZWISCHENBERICHT [02:43:32] ---
+Laufzeit: 0:00:21.067929
+Harvest-Rate: 4.00%
+Relevante Seiten: 7
+Irrelevante Seiten: 168
+Aktueller Batch: 175
+
+
+--- ZWISCHENBERICHT [02:43:36] ---
+Laufzeit: 0:00:24.946820
+Harvest-Rate: 3.50%
+Relevante Seiten: 7
+Irrelevante Seiten: 193
+Aktueller Batch: 200
+
+
+--- ZWISCHENBERICHT [02:43:40] ---
+Laufzeit: 0:00:29.371547
+Harvest-Rate: 3.56%
+Relevante Seiten: 8
+Irrelevante Seiten: 217
+Aktueller Batch: 225
+
+
+--- ZWISCHENBERICHT [02:43:43] ---
+Laufzeit: 0:00:32.157114
+Harvest-Rate: 4.00%
+Relevante Seiten: 10
+Irrelevante Seiten: 240
+Aktueller Batch: 250
+
+
+--- ZWISCHENBERICHT [02:43:47] ---
+Laufzeit: 0:00:35.894626
+Harvest-Rate: 3.64%
+Relevante Seiten: 10
+Irrelevante Seiten: 265
+Aktueller Batch: 275
+
+
+--- ZWISCHENBERICHT [02:43:51] ---
+Laufzeit: 0:00:40.267951
+Harvest-Rate: 3.67%
+Relevante Seiten: 11
+Irrelevante Seiten: 289
+Aktueller Batch: 300
+
+
+--- ZWISCHENBERICHT [02:43:54] ---
+Laufzeit: 0:00:43.374139
+Harvest-Rate: 3.38%
+Relevante Seiten: 11
+Irrelevante Seiten: 314
+Aktueller Batch: 325
+
+
+--- ZWISCHENBERICHT [02:43:58] ---
+Laufzeit: 0:00:46.919501
+Harvest-Rate: 3.14%
+Relevante Seiten: 11
+Irrelevante Seiten: 339
+Aktueller Batch: 350
+
+
+--- ZWISCHENBERICHT [02:44:01] ---
+Laufzeit: 0:00:50.529138
+Harvest-Rate: 3.20%
+Relevante Seiten: 12
+Irrelevante Seiten: 363
+Aktueller Batch: 375
+
+
+--- ZWISCHENBERICHT [02:44:05] ---
+Laufzeit: 0:00:54.408685
+Harvest-Rate: 3.00%
+Relevante Seiten: 12
+Irrelevante Seiten: 388
+Aktueller Batch: 400
+
+
+--- ZWISCHENBERICHT [02:44:07] ---
+Laufzeit: 0:00:55.931201
+Harvest-Rate: 3.06%
+Relevante Seiten: 13
+Irrelevante Seiten: 412
+Aktueller Batch: 425
+
+
+--- ZWISCHENBERICHT [02:44:09] ---
+Laufzeit: 0:00:57.997880
+Harvest-Rate: 3.33%
+Relevante Seiten: 15
+Irrelevante Seiten: 435
+Aktueller Batch: 450
+
+
+--- ZWISCHENBERICHT [02:44:11] ---
+Laufzeit: 0:01:00.351856
+Harvest-Rate: 3.16%
+Relevante Seiten: 15
+Irrelevante Seiten: 460
+Aktueller Batch: 475
+
+
+--- ZWISCHENBERICHT [02:44:14] ---
+Laufzeit: 0:01:03.295297
+Harvest-Rate: 3.00%
+Relevante Seiten: 15
+Irrelevante Seiten: 485
+Aktueller Batch: 500
+
+
+--- ZWISCHENBERICHT [02:44:17] ---
+Laufzeit: 0:01:05.810315
+Harvest-Rate: 2.86%
+Relevante Seiten: 15
+Irrelevante Seiten: 510
+Aktueller Batch: 525
+
+
+--- ZWISCHENBERICHT [02:44:19] ---
+Laufzeit: 0:01:07.766779
+Harvest-Rate: 2.91%
+Relevante Seiten: 16
+Irrelevante Seiten: 534
+Aktueller Batch: 550
+
+
+--- ZWISCHENBERICHT [02:44:21] ---
+Laufzeit: 0:01:09.803433
+Harvest-Rate: 2.96%
+Relevante Seiten: 17
+Irrelevante Seiten: 558
+Aktueller Batch: 575
+
+
+--- ZWISCHENBERICHT [02:44:23] ---
+Laufzeit: 0:01:11.872738
+Harvest-Rate: 3.00%
+Relevante Seiten: 18
+Irrelevante Seiten: 582
+Aktueller Batch: 600
+
+
+--- ZWISCHENBERICHT [02:44:25] ---
+Laufzeit: 0:01:14.434691
+Harvest-Rate: 3.04%
+Relevante Seiten: 19
+Irrelevante Seiten: 606
+Aktueller Batch: 625
+
+
+--- ZWISCHENBERICHT [02:44:27] ---
+Laufzeit: 0:01:16.378077
+Harvest-Rate: 2.92%
+Relevante Seiten: 19
+Irrelevante Seiten: 631
+Aktueller Batch: 650
+
+
+--- ZWISCHENBERICHT [02:44:30] ---
+Laufzeit: 0:01:19.280879
+Harvest-Rate: 3.26%
+Relevante Seiten: 22
+Irrelevante Seiten: 653
+Aktueller Batch: 675
+
+
+--- ZWISCHENBERICHT [02:44:33] ---
+Laufzeit: 0:01:22.600421
+Harvest-Rate: 3.43%
+Relevante Seiten: 24
+Irrelevante Seiten: 676
+Aktueller Batch: 700
+
+
+--- ZWISCHENBERICHT [02:44:36] ---
+Laufzeit: 0:01:24.759986
+Harvest-Rate: 3.31%
+Relevante Seiten: 24
+Irrelevante Seiten: 701
+Aktueller Batch: 725
+
+
+--- ZWISCHENBERICHT [02:44:39] ---
+Laufzeit: 0:01:27.850087
+Harvest-Rate: 3.20%
+Relevante Seiten: 24
+Irrelevante Seiten: 726
+Aktueller Batch: 750
+
+
+--- ZWISCHENBERICHT [02:44:40] ---
+Laufzeit: 0:01:29.299368
+Harvest-Rate: 3.23%
+Relevante Seiten: 25
+Irrelevante Seiten: 750
+Aktueller Batch: 775
+
+
+--- ZWISCHENBERICHT [02:44:42] ---
+Laufzeit: 0:01:31.330675
+Harvest-Rate: 3.50%
+Relevante Seiten: 28
+Irrelevante Seiten: 772
+Aktueller Batch: 800
+
+
+--- ZWISCHENBERICHT [02:44:44] ---
+Laufzeit: 0:01:33.293023
+Harvest-Rate: 3.39%
+Relevante Seiten: 28
+Irrelevante Seiten: 797
+Aktueller Batch: 825
+
+
+--- ZWISCHENBERICHT [02:44:46] ---
+Laufzeit: 0:01:35.025589
+Harvest-Rate: 3.41%
+Relevante Seiten: 29
+Irrelevante Seiten: 821
+Aktueller Batch: 850
+
+
+============================================================
+ABSCHLUSSBERICHT - vectorspace_crawler
+============================================================
+Spider-Name: vectorspace_crawler
+Gesamtlaufzeit: 0:01:36.388338
+Anzahl gecrawlter Seiten: 869
+Anzahl relevanter Seiten: 30
+Anzahl irrelevanter Seiten: 839
+Harvest-Rate: 3.45%
+Durchschnittliche Relevanz: 0.1012
+Gesamte Relevanzbewertungszeit: 1.15 Sekunden
+
+TOP 10 BESTE URLS:
+1. Score: 0.5682 - https://de.wikipedia.org/wiki/Wissen
+2. Score: 0.5606 - https://de.wikipedia.org/wiki/Asymptotische_Laufzeit
+3. Score: 0.5598 - https://de.wikipedia.org/wiki/Effektive_Klimaklassifikation
+4. Score: 0.5527 - https://de.wikipedia.org/wiki/Interaktivit%C3%A4t
+5. Score: 0.5513 - https://de.wikipedia.org/wiki/Alkoholabh%C3%A4ngigkeit
+6. Score: 0.5507 - https://de.wikipedia.org/wiki/Search_for_Extraterrestrial_Intelligence
+7. Score: 0.5491 - https://de.wikipedia.org/wiki/Siegmund-Frankenberg-Klassifikation
+8. Score: 0.5491 - https://de.wikipedia.org/wiki/Volksbefreiungsarmee
+9. Score: 0.5318 - https://de.wikipedia.org/wiki/Central_Intelligence_Agency
+10. Score: 0.5318 - https://de.wikipedia.org/wiki/Serbien
+
+TOP 10 MITTELFELD URLS:
+1. Score: 0.5318 - https://de.wikipedia.org/wiki/Wehrpflicht
+2. Score: 0.5318 - https://de.wikipedia.org/wiki/Abh%C3%A4ngigkeit_von_psychoaktiven_Substanzen
+3. Score: 0.5318 - https://de.wikipedia.org/wiki/1._FC_Kaiserslautern
+4. Score: 0.5318 - https://de.wikipedia.org/wiki/Werbung
+5. Score: 0.5318 - https://de.wikipedia.org/wiki/Vollst%C3%A4ndigkeit_(Logik)
+6. Score: 0.5318 - https://de.wikipedia.org/wiki/Westgermanische_Sprachen
+7. Score: 0.5318 - https://de.wikipedia.org/wiki/Peter_Henning_(Physiker)
+8. Score: 0.5318 - https://de.wikipedia.org/wiki/Audi_80_B1
+9. Score: 0.5288 - https://de.wikipedia.org/wiki/Algorithmus
+10. Score: 0.5266 - https://de.wikipedia.org/wiki/B%C3%BCrgerbeteiligung
+
+TOP 10 SCHLECHTESTE URLS:
+1. Score: 0.5215 - https://de.wikipedia.org/wiki/BMW
+2. Score: 0.5180 - https://de.wikipedia.org/wiki/19._Jahrhundert
+3. Score: 0.5180 - https://de.wikipedia.org/wiki/Komplexit%C3%A4tsklasse
+4. Score: 0.5180 - https://de.wikipedia.org/wiki/Volksherrschaft
+5. Score: 0.5180 - https://de.wikipedia.org/wiki/Audi_F103
+6. Score: 0.5180 - https://de.wikipedia.org/wiki/CHF
+7. Score: 0.5099 - https://de.wikipedia.org/wiki/Ackermannfunktion
+8. Score: 0.5099 - https://de.wikipedia.org/wiki/Paralleler_Algorithmus
+9. Score: 0.5030 - https://de.wikipedia.org/wiki/Louis_van_Gaal
+10. Score: 0.5030 - https://de.wikipedia.org/wiki/Neutrum
+
+============================================================
+
+
+--- ZWISCHENBERICHT [02:44:50] ---
+Laufzeit: 0:01:39.399882
+Harvest-Rate: 3.43%
+Relevante Seiten: 30
+Irrelevante Seiten: 845
+Aktueller Batch: 875
+

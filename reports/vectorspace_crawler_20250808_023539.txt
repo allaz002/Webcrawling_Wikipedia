@@ -1,0 +1,105 @@
+
+============================================================
+CRAWLER KONFIGURATION - vectorspace_crawler
+============================================================
+Strategie: VectorSpaceSpider
+Seed URLs: https://de.wikipedia.org/wiki/Wikipedia:Hauptseite
+Batch-Größe: 16
+Max. Seiten: 50000
+Max. relevante Seiten: 30
+Relevanz-Schwellenwert: 0.2
+Max. Laufzeit: 30 Minuten
+Report-Intervall: 30 Sekunden
+
+GEWICHTUNGEN:
+- Link-Gewicht: 0.5
+- Elterndokument-Gewicht: 0.5
+============================================================
+
+Modus: tfidf
+
+IDF Relevant-Ratio: 0.75
+
+
+--- ZWISCHENBERICHT [02:35:46] ---
+Laufzeit: 0:00:07.031576
+Harvest-Rate: 20.00%
+Relevante Seiten: 5
+Irrelevante Seiten: 20
+Aktueller Batch: 25
+
+
+--- ZWISCHENBERICHT [02:35:52] ---
+Laufzeit: 0:00:12.901746
+Harvest-Rate: 32.00%
+Relevante Seiten: 16
+Irrelevante Seiten: 34
+Aktueller Batch: 50
+
+
+--- ZWISCHENBERICHT [02:35:55] ---
+Laufzeit: 0:00:16.351298
+Harvest-Rate: 37.33%
+Relevante Seiten: 28
+Irrelevante Seiten: 47
+Aktueller Batch: 75
+
+
+============================================================
+ABSCHLUSSBERICHT - vectorspace_crawler
+============================================================
+Spider-Name: vectorspace_crawler
+Gesamtlaufzeit: 0:00:16.724255
+Anzahl gecrawlter Seiten: 77
+Anzahl relevanter Seiten: 30
+Anzahl irrelevanter Seiten: 47
+Harvest-Rate: 38.96%
+Durchschnittliche Relevanz: 0.1843
+Gesamte Relevanzbewertungszeit: 0.25 Sekunden
+
+TOP 10 BESTE URLS:
+1. Score: 0.3577 - https://de.wikipedia.org/wiki/Rassismus
+2. Score: 0.3187 - https://de.wikipedia.org/wiki/Rechtspopulismus
+3. Score: 0.3131 - https://de.wikipedia.org/wiki/Franjo_Tu%C4%91man
+4. Score: 0.3017 - https://de.wikipedia.org/wiki/Verdachtsfall
+5. Score: 0.3001 - https://de.wikipedia.org/wiki/Rechtsextremismus
+6. Score: 0.2917 - https://de.wikipedia.org/wiki/Die_Linke
+7. Score: 0.2881 - https://de.wikipedia.org/wiki/Ausgleichsmandat
+8. Score: 0.2845 - https://de.wikipedia.org/wiki/Jenische_Sprache
+9. Score: 0.2841 - https://de.wikipedia.org/wiki/%C3%9Cberhangmandat
+10. Score: 0.2793 - https://de.wikipedia.org/wiki/Bundestagswahl_2021
+
+TOP 10 MITTELFELD URLS:
+1. Score: 0.2746 - https://de.wikipedia.org/wiki/Bosnien_und_Herzegowina
+2. Score: 0.2738 - https://de.wikipedia.org/wiki/Geschlechtergerechte_Sprache
+3. Score: 0.2735 - https://de.wikipedia.org/wiki/B%C3%BCndnis_90/Die_Gr%C3%BCnen
+4. Score: 0.2732 - https://de.wikipedia.org/wiki/Gemeinsame_Normdatei
+5. Score: 0.2703 - https://de.wikipedia.org/wiki/Tino_Chrupalla
+6. Score: 0.2698 - https://de.wikipedia.org/wiki/Demokratischer_Sozialismus
+7. Score: 0.2551 - https://de.wikipedia.org/wiki/Fikret_Abdi%C4%87
+8. Score: 0.2511 - https://de.wikipedia.org/wiki/Stephan_Brandner
+9. Score: 0.2413 - https://de.wikipedia.org/wiki/Bundestagswahl_2025
+10. Score: 0.2397 - https://de.wikipedia.org/wiki/Partei_des_Demokratischen_Sozialismus
+
+TOP 10 SCHLECHTESTE URLS:
+1. Score: 0.2340 - https://de.wikipedia.org/wiki/Jan_van_Aken
+2. Score: 0.2324 - https://de.wikipedia.org/wiki/B%C3%BCndnis_Sahra_Wagenknecht
+3. Score: 0.2288 - https://de.wikipedia.org/wiki/Peter_Boehringer
+4. Score: 0.2243 - https://de.wikipedia.org/wiki/Ines_Schwerdtner
+5. Score: 0.2212 - https://de.wikipedia.org/wiki/Neue_Z%C3%BCrcher_Zeitung
+6. Score: 0.2181 - https://de.wikipedia.org/wiki/Hannes_Hofbauer
+7. Score: 0.2129 - https://de.wikipedia.org/wiki/Neues_Deutschland
+8. Score: 0.2116 - https://de.wikipedia.org/wiki/Reichspr%C3%A4sidentenwahl_1925
+9. Score: 0.2104 - https://de.wikipedia.org/wiki/Neues_Palais
+10. Score: 0.2052 - https://de.wikipedia.org/wiki/AfD_Sachsen-Anhalt
+
+============================================================
+
+
+--- ZWISCHENBERICHT [02:36:01] ---
+Laufzeit: 0:00:22.084982
+Harvest-Rate: 44.00%
+Relevante Seiten: 44
+Irrelevante Seiten: 56
+Aktueller Batch: 100
+

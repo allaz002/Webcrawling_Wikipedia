@@ -1,0 +1,102 @@
+
+============================================================
+CRAWLER KONFIGURATION - vectorspace_crawler
+============================================================
+Strategie: VectorSpaceSpider
+Seed URLs: https://de.wikipedia.org/wiki/Informatik
+Batch-Größe: 16
+Max. Seiten: 50000
+Max. relevante Seiten: 300
+Relevanz-Schwellenwert: 0.45
+Max. Laufzeit: 30 Minuten
+Report-Intervall: 30 Sekunden
+
+GEWICHTUNGEN:
+- Link-Gewicht: 0.5
+- Elterndokument-Gewicht: 0.5
+============================================================
+
+Modus: tfidf
+
+IDF Relevant-Ratio: 0.6
+
+
+--- ZWISCHENBERICHT [02:10:25] ---
+Laufzeit: 0:00:05.061438
+Harvest-Rate: 0.00%
+Relevante Seiten: 0
+Irrelevante Seiten: 25
+Aktueller Batch: 25
+
+
+--- ZWISCHENBERICHT [02:10:27] ---
+Laufzeit: 0:00:07.346909
+Harvest-Rate: 0.00%
+Relevante Seiten: 0
+Irrelevante Seiten: 50
+Aktueller Batch: 50
+
+
+--- ZWISCHENBERICHT [02:10:29] ---
+Laufzeit: 0:00:09.866756
+Harvest-Rate: 0.00%
+Relevante Seiten: 0
+Irrelevante Seiten: 75
+Aktueller Batch: 75
+
+
+--- ZWISCHENBERICHT [02:10:31] ---
+Laufzeit: 0:00:11.793819
+Harvest-Rate: 0.00%
+Relevante Seiten: 0
+Irrelevante Seiten: 100
+Aktueller Batch: 100
+
+
+--- ZWISCHENBERICHT [02:10:34] ---
+Laufzeit: 0:00:13.928527
+Harvest-Rate: 0.00%
+Relevante Seiten: 0
+Irrelevante Seiten: 125
+Aktueller Batch: 125
+
+
+--- ZWISCHENBERICHT [02:10:35] ---
+Laufzeit: 0:00:15.716987
+Harvest-Rate: 0.00%
+Relevante Seiten: 0
+Irrelevante Seiten: 150
+Aktueller Batch: 150
+
+
+--- ZWISCHENBERICHT [02:10:38] ---
+Laufzeit: 0:00:18.329784
+Harvest-Rate: 0.00%
+Relevante Seiten: 0
+Irrelevante Seiten: 175
+Aktueller Batch: 175
+
+
+--- ZWISCHENBERICHT [02:10:40] ---
+Laufzeit: 0:00:19.905036
+Harvest-Rate: 0.00%
+Relevante Seiten: 0
+Irrelevante Seiten: 200
+Aktueller Batch: 200
+
+
+--- ZWISCHENBERICHT [02:10:41] ---
+Laufzeit: 0:00:21.863173
+Harvest-Rate: 0.00%
+Relevante Seiten: 0
+Irrelevante Seiten: 225
+Aktueller Batch: 225
+
+
+--- ZWISCHENBERICHT [02:10:44] ---
+Laufzeit: 0:00:23.964961
+Harvest-Rate: 0.00%
+Relevante Seiten: 0
+Irrelevante Seiten: 250
+Aktueller Batch: 250
+

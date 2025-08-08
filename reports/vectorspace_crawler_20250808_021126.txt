@@ -1,0 +1,142 @@
+
+============================================================
+CRAWLER KONFIGURATION - vectorspace_crawler
+============================================================
+Strategie: VectorSpaceSpider
+Seed URLs: https://de.wikipedia.org/wiki/Informatik
+Batch-Größe: 16
+Max. Seiten: 50000
+Max. relevante Seiten: 300
+Relevanz-Schwellenwert: 0.3
+Max. Laufzeit: 30 Minuten
+Report-Intervall: 30 Sekunden
+
+GEWICHTUNGEN:
+- Link-Gewicht: 0.5
+- Elterndokument-Gewicht: 0.5
+============================================================
+
+Modus: tfidf
+
+IDF Relevant-Ratio: 0.1
+
+
+--- ZWISCHENBERICHT [02:11:31] ---
+Laufzeit: 0:00:04.900485
+Harvest-Rate: 4.00%
+Relevante Seiten: 1
+Irrelevante Seiten: 24
+Aktueller Batch: 25
+
+
+--- ZWISCHENBERICHT [02:11:34] ---
+Laufzeit: 0:00:08.169927
+Harvest-Rate: 10.00%
+Relevante Seiten: 5
+Irrelevante Seiten: 45
+Aktueller Batch: 50
+
+
+--- ZWISCHENBERICHT [02:11:37] ---
+Laufzeit: 0:00:10.646883
+Harvest-Rate: 9.33%
+Relevante Seiten: 7
+Irrelevante Seiten: 68
+Aktueller Batch: 75
+
+
+--- ZWISCHENBERICHT [02:11:38] ---
+Laufzeit: 0:00:12.340241
+Harvest-Rate: 10.00%
+Relevante Seiten: 10
+Irrelevante Seiten: 90
+Aktueller Batch: 100
+
+
+--- ZWISCHENBERICHT [02:11:41] ---
+Laufzeit: 0:00:15.075559
+Harvest-Rate: 10.40%
+Relevante Seiten: 13
+Irrelevante Seiten: 112
+Aktueller Batch: 125
+
+
+--- ZWISCHENBERICHT [02:11:43] ---
+Laufzeit: 0:00:17.085248
+Harvest-Rate: 11.33%
+Relevante Seiten: 17
+Irrelevante Seiten: 133
+Aktueller Batch: 150
+
+
+--- ZWISCHENBERICHT [02:11:45] ---
+Laufzeit: 0:00:19.054207
+Harvest-Rate: 11.43%
+Relevante Seiten: 20
+Irrelevante Seiten: 155
+Aktueller Batch: 175
+
+
+--- ZWISCHENBERICHT [02:11:46] ---
+Laufzeit: 0:00:20.569263
+Harvest-Rate: 11.00%
+Relevante Seiten: 22
+Irrelevante Seiten: 178
+Aktueller Batch: 200
+
+
+--- ZWISCHENBERICHT [02:11:48] ---
+Laufzeit: 0:00:22.056664
+Harvest-Rate: 10.22%
+Relevante Seiten: 23
+Irrelevante Seiten: 202
+Aktueller Batch: 225
+
+
+--- ZWISCHENBERICHT [02:11:49] ---
+Laufzeit: 0:00:23.443886
+Harvest-Rate: 9.60%
+Relevante Seiten: 24
+Irrelevante Seiten: 226
+Aktueller Batch: 250
+
+
+--- ZWISCHENBERICHT [02:11:51] ---
+Laufzeit: 0:00:25.356199
+Harvest-Rate: 9.82%
+Relevante Seiten: 27
+Irrelevante Seiten: 248
+Aktueller Batch: 275
+
+
+--- ZWISCHENBERICHT [02:11:54] ---
+Laufzeit: 0:00:28.177915
+Harvest-Rate: 9.33%
+Relevante Seiten: 28
+Irrelevante Seiten: 272
+Aktueller Batch: 300
+
+
+--- ZWISCHENBERICHT [02:11:58] ---
+Laufzeit: 0:00:32.367148
+Harvest-Rate: 9.54%
+Relevante Seiten: 31
+Irrelevante Seiten: 294
+Aktueller Batch: 325
+
+
+--- ZWISCHENBERICHT [02:12:01] ---
+Laufzeit: 0:00:35.626562
+Harvest-Rate: 9.14%
+Relevante Seiten: 32
+Irrelevante Seiten: 318
+Aktueller Batch: 350
+
+
+--- ZWISCHENBERICHT [02:12:04] ---
+Laufzeit: 0:00:38.103035
+Harvest-Rate: 8.80%
+Relevante Seiten: 33
+Irrelevante Seiten: 342
+Aktueller Batch: 375
+

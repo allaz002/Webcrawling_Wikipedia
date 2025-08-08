@@ -307,7 +307,7 @@ GEWICHTUNGEN:
             tokens = [t for t in tokens if t not in self.stop_words and len(t) > 2]
         else:
             # Fallback ohne Stoppwort-Entfernung
-            tokens = [t for t in tokens if len(t) > 2]
+            tokens = [t for t in tokens if len(t) > 1]
 
         return ' '.join(tokens)
 

@@ -5,6 +5,8 @@ from sklearn.metrics.pairwise import cosine_similarity
 import numpy as np
 import json
 import os
+import scipy.sparse as sp
+import random
 
 
 class TfNormVectorizer:
@@ -54,6 +56,9 @@ class VectorSpaceSpider(BaseTopicalSpider):
         # Lade Modus (tf_norm oder tfidf) - Default ist tf_norm
         self.mode = self.config['VECTORSPACE'].get('MODE', 'tf_norm').lower()
 
+        # Lade IDF-Verhältnis für TF-IDF Modus
+        self.idf_relevant_ratio = float(self.config['VECTORSPACE'].get('IDF_RELEVANT_RATIO', '1.0'))
+
         # Lade Multiplikatoren aus Konfiguration
         self.title_multiplier = int(self.config['VECTORSPACE']['TITLE_MULTIPLIER'])
         self.heading_multiplier = int(self.config['VECTORSPACE']['HEADING_MULTIPLIER'])
@@ -80,13 +85,15 @@ class VectorSpaceSpider(BaseTopicalSpider):
                 min_df=int(self.config['VECTORIZER_SETTINGS']['MIN_DF']),
                 max_df=float(self.config['VECTORIZER_SETTINGS']['MAX_DF'])
             )
-            print(f"Verwende TF-IDF Vektorisierung")
+            print(f"Verwende TF-IDF Vektorisierung mit Relevant-Ratio: {self.idf_relevant_ratio}")
 
         # Lade Trainingsdaten für IDF-Berechnung bei TF-IDF
         self.load_training_data_for_idf()
 
         print(f"VectorSpace Spider initialisiert im {self.mode} Modus")
         self.write_to_report(f"Modus: {self.mode}\n")
+        if self.mode == 'tfidf':
+            self.write_to_report(f"IDF Relevant-Ratio: {self.idf_relevant_ratio}\n")
 
     def load_training_data_for_idf(self):
         """Lädt Trainingsdaten und erstellt Themen-Vektor basierend auf IDF"""
@@ -97,40 +104,73 @@ class VectorSpaceSpider(BaseTopicalSpider):
             with open(training_path, 'r', encoding='utf-8') as f:
                 training_data = json.load(f)
 
-            # Extrahiere nur relevante Texte (label=1)
+            # Separiere relevante und irrelevante Texte
             relevant_texts = []
+            irrelevant_texts = []
+
             for sample in training_data:
+                processed_text = self.preprocess_text(sample['text'])
                 if sample['label'] == 1:
-                    processed_text = self.preprocess_text(sample['text'])
                     relevant_texts.append(processed_text)
+                else:
+                    irrelevant_texts.append(processed_text)
 
-            if relevant_texts:
-                # Fit Vectorizer auf relevanten Trainingsdaten
-                self.vectorizer.fit(relevant_texts)
+            if relevant_texts and irrelevant_texts:
+                # Berechne gewünschte Anzahl irrelevanter Dokumente basierend auf Ratio
+                # Bei ratio=0.75: 75% relevant, 25% irrelevant
+                # Also: irrelevant_count = relevant_count * (1-ratio) / ratio
+                num_relevant = len(relevant_texts)
 
-                # Erstelle Themen-Vektor als Durchschnitt aller relevanten Dokumente
+                if self.idf_relevant_ratio < 1.0:
+                    # Berechne Anzahl der irrelevanten Dokumente für gewünschtes Verhältnis
+                    num_irrelevant_needed = int(num_relevant * (1 - self.idf_relevant_ratio) / self.idf_relevant_ratio)
+
+                    # Sample aus irrelevanten Texten (mit Wiederholung wenn nötig)
+                    if num_irrelevant_needed > len(irrelevant_texts):
+                        # Wenn wir mehr brauchen als vorhanden, sample mit replacement
+                        sampled_irrelevant = random.choices(irrelevant_texts, k=num_irrelevant_needed)
+                    else:
+                        # Sonst sample ohne replacement
+                        sampled_irrelevant = random.sample(irrelevant_texts, num_irrelevant_needed)
+
+                    # Kombiniere für IDF-Berechnung
+                    idf_training_texts = relevant_texts + sampled_irrelevant
+
+                    print(
+                        f"IDF-Training mit {num_relevant} relevanten und {len(sampled_irrelevant)} irrelevanten Dokumenten")
+                else:
+                    # Ratio = 1.0, nur relevante Dokumente verwenden
+                    idf_training_texts = relevant_texts
+                    print(f"IDF-Training nur mit {num_relevant} relevanten Dokumenten")
+
+                # Fit Vectorizer auf angepasstem Trainingsset
+                self.vectorizer.fit(idf_training_texts)
+
+                # Erstelle Themen-Vektor NUR aus relevanten Dokumenten
                 vectors = self.vectorizer.transform(relevant_texts)
-                self.topic_vector = vectors.mean(axis=0)
+                # Konvertiere zu dense Array und berechne Durchschnitt
+                self.topic_vector = np.asarray(vectors.mean(axis=0)).reshape(1, -1)
 
-                print(f"IDF aus {len(relevant_texts)} relevanten Trainingsdokumenten berechnet")
+                print(f"Themen-Vektor aus {len(relevant_texts)} relevanten Dokumenten erstellt")
             else:
                 # Fallback: Fit auf einzelnem Dummy-Dokument
                 dummy_text = "künstliche intelligenz machine learning"
                 self.vectorizer.fit([dummy_text])
-                self.topic_vector = self.vectorizer.transform([dummy_text])
-                print("Warnung: Keine relevanten Trainingsdaten gefunden, verwende Fallback")
+                self.topic_vector = self.vectorizer.transform([dummy_text]).toarray()
+                print("Warnung: Keine gültigen Trainingsdaten gefunden, verwende Fallback")
+
         elif self.mode == 'tf_norm':
             # TF-Norm: Fit auf Keywords
             keywords_text = ' '.join([kw.strip().lower() for kw in
                                       self.config['VECTORSPACE']['KEYWORDS'].split(',')])
             processed_keywords = self.preprocess_text(keywords_text)
-            self.topic_vector = self.vectorizer.fit_transform([processed_keywords])
+            self.topic_vector = self.vectorizer.fit_transform([processed_keywords]).toarray()
             print("Vectorizer auf Keywords trainiert")
         else:
             # Fallback für TF-IDF ohne Trainingsdaten
             dummy_text = "künstliche intelligenz machine learning"
             self.vectorizer.fit([dummy_text])
-            self.topic_vector = self.vectorizer.transform([dummy_text])
+            self.topic_vector = self.vectorizer.transform([dummy_text]).toarray()
             print("Warnung: Keine Trainingsdaten gefunden, verwende Fallback")
 
     def calculate_text_relevance(self, text):
@@ -151,6 +191,10 @@ class VectorSpaceSpider(BaseTopicalSpider):
             # Transformiere Text in Vektor mit gleichem Vokabular
             text_vector = self.vectorizer.transform([processed_text])
 
+            # Konvertiere zu dense wenn nötig
+            if sp.issparse(text_vector):
+                text_vector = text_vector.toarray()
+
             # Berechne Cosinus-Ähnlichkeit
             similarity = cosine_similarity(text_vector, self.topic_vector)[0][0]
 
@@ -167,13 +211,7 @@ class VectorSpaceSpider(BaseTopicalSpider):
         Berechnet gewichtete Vektorsumme und Cosinus-Ähnlichkeit
         """
         # Initialisiere Null-Vektor mit gleicher Dimension wie Topic-Vektor
-        if hasattr(self.vectorizer, 'count_vectorizer'):
-            # TF-Norm mit festem Vokabular
-            vector_dim = len(self.vectorizer.count_vectorizer.vocabulary_)
-        else:
-            # TF-IDF
-            vector_dim = self.topic_vector.shape[1]
-
+        vector_dim = self.topic_vector.shape[1]
         combined_vector = np.zeros((1, vector_dim))
 
         # Verarbeite Titel mit Multiplikator
@@ -182,7 +220,9 @@ class VectorSpaceSpider(BaseTopicalSpider):
             if processed_title:
                 try:
                     title_vector = self.vectorizer.transform([processed_title])
-                    combined_vector += title_vector.toarray() * self.title_multiplier
+                    if sp.issparse(title_vector):
+                        title_vector = title_vector.toarray()
+                    combined_vector += title_vector * self.title_multiplier
                 except:
                     pass
 
@@ -192,7 +232,9 @@ class VectorSpaceSpider(BaseTopicalSpider):
             if processed_headings:
                 try:
                     heading_vector = self.vectorizer.transform([processed_headings])
-                    combined_vector += heading_vector.toarray() * self.heading_multiplier
+                    if sp.issparse(heading_vector):
+                        heading_vector = heading_vector.toarray()
+                    combined_vector += heading_vector * self.heading_multiplier
                 except:
                     pass
 
@@ -202,19 +244,15 @@ class VectorSpaceSpider(BaseTopicalSpider):
             if processed_paragraphs:
                 try:
                     paragraph_vector = self.vectorizer.transform([processed_paragraphs])
-                    combined_vector += paragraph_vector.toarray() * self.paragraph_multiplier
+                    if sp.issparse(paragraph_vector):
+                        paragraph_vector = paragraph_vector.toarray()
+                    combined_vector += paragraph_vector * self.paragraph_multiplier
                 except:
                     pass
 
         # Berechne Cosinus-Ähnlichkeit zwischen kombiniertem Vektor und Themenprofil
         if np.any(combined_vector):
-            # Berechne Ähnlichkeit OHNE zusätzliche Normalisierung
-            # Die Multiplikatoren bleiben so erhalten
-            if isinstance(combined_vector, np.matrix):
-                combined_vector = np.asarray(combined_vector)
-            if isinstance(self.topic_vector, np.matrix):
-                self.topic_vector = np.asarray(self.topic_vector)
-
+            # Stelle sicher, dass beide Vektoren die richtige Form haben
             if combined_vector.ndim == 1:
                 combined_vector = combined_vector.reshape(1, -1)
             if self.topic_vector.ndim == 1:

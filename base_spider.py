@@ -14,6 +14,7 @@ from pathlib import Path
 import nltk
 from nltk.corpus import stopwords
 import sys
+import time
 
 
 class BaseTopicalSpider(scrapy.Spider):
@@ -42,7 +43,6 @@ class BaseTopicalSpider(scrapy.Spider):
         # Reporting Konfiguration
         self.report_pages_interval = int(self.config['REPORTING']['REPORT_PAGES_INTERVAL'])
         self.report_time_interval = int(self.config['REPORTING']['REPORT_TIME_INTERVAL_SECONDS'])
-        self.evaluation_interval = int(self.config['REPORTING']['EVALUATION_INTERVAL'])
 
         # Gewichtungen für Link-Relevanz
         self.link_weight = float(self.config['WEIGHTS']['LINK_WEIGHT'])
@@ -68,6 +68,11 @@ class BaseTopicalSpider(scrapy.Spider):
         # Flag für finalen Report
         self.final_report_written = False
 
+        # Batch-Tracking für Evaluierung
+        self.current_batch_number = 0
+        self.batch_new_urls = []  # URLs die in diesem Batch zur Frontier hinzugefügt wurden
+        self.batch_positions = []  # Positionen der neuen URLs in der Frontier
+
         # Statistiken
         self.stats = {
             'total_crawled': 0,
@@ -75,10 +80,11 @@ class BaseTopicalSpider(scrapy.Spider):
             'irrelevant_pages': 0,
             'start_time': datetime.now(),
             'last_report': datetime.now(),
-            'last_evaluation': 0,
             'all_pages': [],  # Für Endstatistik
             'evaluation_log': [],  # Für Evaluierungsdaten
-            'total_relevance_sum': 0.0  # Für Durchschnittsberechnung
+            'total_relevance_sum': 0.0,  # Für Durchschnittsberechnung
+            'batch_frontier_positions': [],  # Durchschnittliche Positionen pro Batch
+            'relevance_calculation_time': 0.0  # Zeit für Relevanzbewertung
         }
 
         # Verzeichnisse erstellen
@@ -92,23 +98,34 @@ class BaseTopicalSpider(scrapy.Spider):
 
         self.print_config()
 
-    def check_evaluation_interval(self):
-        """Speichert Evaluierungsdaten in regelmäßigen Intervallen"""
-        if self.stats['total_crawled'] - self.stats['last_evaluation'] >= self.evaluation_interval:
-            runtime = (datetime.now() - self.stats['start_time']).total_seconds()
-            harvest_rate = self.stats['relevant_pages'] / max(1, self.stats['total_crawled'])
-            avg_relevance = self.stats['total_relevance_sum'] / max(1, self.stats['total_crawled'])
+    def log_batch_evaluation(self):
+        """Loggt Evaluierungsdaten nach jedem Batch"""
+        runtime = (datetime.now() - self.stats['start_time']).total_seconds()
+        harvest_rate = self.stats['relevant_pages'] / max(1, self.stats['total_crawled'])
+        avg_relevance = self.stats['total_relevance_sum'] / max(1, self.stats['total_crawled'])
 
-            evaluation_entry = {
-                'pages_visited': self.stats['total_crawled'],
-                'relevant_pages_found': self.stats['relevant_pages'],
-                'harvest_rate': harvest_rate,
-                'average_relevance': avg_relevance,
-                'execution_time_in_seconds': runtime
-            }
+        # Berechne durchschnittliche Position der neuen URLs in der Frontier
+        avg_position = 0
+        if self.batch_positions:
+            avg_position = sum(self.batch_positions) / len(self.batch_positions)
 
-            self.stats['evaluation_log'].append(evaluation_entry)
-            self.stats['last_evaluation'] = self.stats['total_crawled']
+        evaluation_entry = {
+            'batch_number': self.current_batch_number,
+            'pages_visited': self.stats['total_crawled'],
+            'relevant_pages_found': self.stats['relevant_pages'],
+            'harvest_rate': harvest_rate,
+            'average_relevance': avg_relevance,
+            'execution_time_in_seconds': runtime,
+            'avg_frontier_position': avg_position,
+            'new_urls_added': len(self.batch_positions),
+            'relevance_calculation_time': self.stats['relevance_calculation_time']
+        }
+
+        self.stats['evaluation_log'].append(evaluation_entry)
+
+        # Reset für nächsten Batch
+        self.batch_positions = []
+        self.batch_new_urls = []
 
     def print_config(self):
         """Ausgabe der Konfiguration beim Start"""
@@ -148,7 +165,7 @@ GEWICHTUNGEN:
         yield from self.process_batch()
 
     def add_to_frontier(self, url, score):
-        """Fügt URL zur Frontier hinzu"""
+        """Fügt URL zur Frontier hinzu und trackt Position"""
         if url not in self.visited_urls and self.is_valid_url(url):
             # Frontier-Größe begrenzen
             if len(self.frontier) >= self.frontier_max_size:
@@ -156,13 +173,31 @@ GEWICHTUNGEN:
                 if score > -self.frontier[0][0]:  # Besserer Score als schlechtester
                     heapq.heapreplace(self.frontier, (-score, url))
                     self.url_scores[url] = score
+                    # Tracke Position (approximiert)
+                    position = self.get_url_position_in_frontier(score)
+                    self.batch_positions.append(position)
             else:
                 heapq.heappush(self.frontier, (-score, url))
                 self.url_scores[url] = score
+                # Tracke Position
+                position = self.get_url_position_in_frontier(score)
+                self.batch_positions.append(position)
+                self.batch_new_urls.append(url)
+
+    def get_url_position_in_frontier(self, score):
+        """Berechnet die Position einer URL in der Frontier basierend auf ihrem Score"""
+        position = 1
+        for neg_score, _ in self.frontier:
+            if -neg_score > score:
+                position += 1
+        return position
 
     def process_batch(self):
         """Verarbeitet nächste Batch aus Frontier"""
         batch = []
+
+        # Erhöhe Batch-Nummer
+        self.current_batch_number += 1
 
         # Prüfe Beendigungskriterien
         if self.check_termination():
@@ -184,6 +219,10 @@ GEWICHTUNGEN:
                 meta={'parent_score': score}
             )
 
+        # Logge Batch-Evaluierung nach Verarbeitung
+        if self.stats['total_crawled'] > 0:  # Nicht beim ersten Aufruf
+            self.log_batch_evaluation()
+
     def parse(self, response):
         """Hauptparser für gecrawlte Seiten"""
         self.stats['total_crawled'] += 1
@@ -199,8 +238,15 @@ GEWICHTUNGEN:
         headings = ' '.join([h.text for h in soup.find_all(['h1', 'h2', 'h3', 'h4', 'h5', 'h6'])])
         paragraphs = ' '.join([p.text for p in soup.find_all('p')])
 
+        # Zeitmessung für Relevanzbewertung
+        calc_start = time.time()
+
         # Berechne Elterndokument-Relevanz (nur einmal pro Seite)
         parent_relevance = self.calculate_parent_relevance(title, headings, paragraphs)
+
+        # Akkumuliere Berechnungszeit
+        calc_time = time.time() - calc_start
+        self.stats['relevance_calculation_time'] += calc_time
 
         # Speichere Seite und aktualisiere Statistiken
         if parent_relevance >= self.relevance_threshold:
@@ -225,9 +271,6 @@ GEWICHTUNGEN:
                 # Berechne Link-Relevanz (einmalig pro Link)
                 link_relevance = self.calculate_link_relevance(anchor_text, parent_relevance)
                 self.add_to_frontier(url, link_relevance)
-
-        # Evaluierung in Intervallen
-        self.check_evaluation_interval()
 
         # Periodische Reports
         self.print_progress_report()
@@ -338,6 +381,7 @@ Laufzeit: {runtime}
 Harvest-Rate: {harvest_rate:.2f}%
 Relevante Seiten: {self.stats['relevant_pages']}
 Irrelevante Seiten: {self.stats['irrelevant_pages']}
+Aktueller Batch: {self.current_batch_number}
 """
             print(report)
             self.write_to_report(report)
@@ -350,6 +394,9 @@ Irrelevante Seiten: {self.stats['irrelevant_pages']}
             return
 
         self.final_report_written = True
+
+        # Letzte Batch-Evaluierung
+        self.log_batch_evaluation()
 
         runtime = datetime.now() - self.stats['start_time']
         runtime_seconds = runtime.total_seconds()
@@ -376,6 +423,7 @@ Anzahl relevanter Seiten: {self.stats['relevant_pages']}
 Anzahl irrelevanter Seiten: {self.stats['irrelevant_pages']}
 Harvest-Rate: {harvest_rate:.2f}%
 Durchschnittliche Relevanz: {avg_relevance:.4f}
+Gesamte Relevanzbewertungszeit: {self.stats['relevance_calculation_time']:.2f} Sekunden
 
 TOP 10 BESTE URLS:
 """
@@ -397,9 +445,6 @@ TOP 10 BESTE URLS:
         print(report)
         self.write_to_report(report)
 
-        # Erstelle finale Evaluierung
-        self.check_evaluation_interval()
-
         # Exportiere JSON mit Evaluierungsdaten
         relevant_pages = [p for p in sorted_pages if p['score'] >= self.relevance_threshold]
 
@@ -412,6 +457,7 @@ TOP 10 BESTE URLS:
                 'total_relevant_found': self.stats['relevant_pages'],
                 'average_harvest_rate': harvest_rate / 100,
                 'average_relevance': avg_relevance,
+                'relevance_calculation_time': self.stats['relevance_calculation_time'],
                 'evaluation_log': self.stats['evaluation_log'],
                 'pages': relevant_pages
             }
@@ -426,7 +472,6 @@ TOP 10 BESTE URLS:
         if self.config.getboolean('PLOTTING', 'CREATE_PLOTS', fallback=False):
             self.create_plots()
 
-    # In der Datei base_spider.py
     def create_plots(self):
         """Ruft externes Plot-Skript auf"""
         try:

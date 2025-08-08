@@ -19,7 +19,7 @@ class TrainingDataGenerator:
 
     def __init__(self, config_file='training_config.ini'):
         """Initialisiert Konfigurationen für Trainingsdaten"""
-        self.config = configparser.ConfigParser()
+        self.config = configparser.ConfigParser(interpolation=None)
         self.config.read(config_file)
 
         # Konfiguration laden
@@ -28,6 +28,13 @@ class TrainingDataGenerator:
         self.user_agent = self.config['SETTINGS']['USER_AGENT']
         self.timeout = int(self.config['SETTINGS']['TIMEOUT'])
         self.min_text_length = int(self.config['SETTINGS']['MIN_TEXT_LENGTH'])
+
+        # URLs Laden
+        relevant_raw = self.config['URLS']['RELEVANT_URLS'].split(',')
+        irrelevant_raw = self.config['URLS']['IRRELEVANT_URLS'].split(',')
+        self.relevant_urls = sorted(list(set([url.strip() for url in relevant_raw if url.strip()])))
+        self.irrelevant_urls = sorted(list(set([url.strip() for url in irrelevant_raw if url.strip()])))
+
 
         # Verzeichnisse erstellen
         Path(os.path.dirname(self.output_path)).mkdir(parents=True, exist_ok=True)
@@ -167,114 +174,6 @@ Balance: {self.stats['relevant'] / max(1, total) * 100:.1f}% relevant / {self.st
 def main():
     """Hauptfunktion"""
 
-    # Relevante URLs mit Label = 1
-    relevant_urls = [
-        "https://de.wikipedia.org/wiki/K%C3%BCnstliche_Intelligenz",
-        "https://de.wikipedia.org/wiki/Maschinelles_Lernen",
-        "https://de.wikipedia.org/wiki/Generatives_KI-Modell",
-        "https://de.wikipedia.org/wiki/Support_Vector_Machine",
-        "https://de.wikipedia.org/wiki/Random_Forest",
-        "https://de.wikipedia.org/wiki/K%C3%BCnstliches_neuronales_Netz",
-        "https://de.wikipedia.org/wiki/Multimodale_k%C3%BCnstliche_Intelligenz",
-        "https://de.wikipedia.org/wiki/Geschichte_der_k%C3%BCnstlichen_Intelligenz",
-        "https://de.wikipedia.org/wiki/Halluzination_%28K%C3%BCnstliche_Intelligenz%29",
-        "https://de.wikipedia.org/wiki/K%C3%BCnstliche_Intelligenz_in_der_Medizin",
-        "https://de.wikipedia.org/wiki/K%C3%BCnstliche_Intelligenz_in_der_Materialwissenschaft",
-        "https://de.wikipedia.org/wiki/Anwendungen_k%C3%BCnstlicher_Intelligenz",
-        "https://de.wikipedia.org/wiki/Parameter_%28K%C3%BCnstliche_Intelligenz%29",
-        "https://de.wikipedia.org/wiki/Ethik_der_k%C3%BCnstlichen_Intelligenz",
-        "https://de.wikipedia.org/wiki/Existenzielles_Risiko_durch_k%C3%BCnstliche_Intelligenz",
-        "https://de.wikipedia.org/wiki/European_Association_for_Artificial_Intelligence",
-        "https://de.wikipedia.org/wiki/Enquete-Kommission_K%C3%BCnstliche_Intelligenz",
-        "https://de.wikipedia.org/wiki/Emotionserkennung",
-        "https://de.wikipedia.org/wiki/Embodiment",
-        "https://de.wikipedia.org/wiki/ELIZA-Effekt",
-        "https://de.wikipedia.org/wiki/Erica_%28Androidin%29",
-        "https://de.wikipedia.org/wiki/European_Conference_on_Artificial_Intelligence",
-        "https://de.wikipedia.org/wiki/Expertensystem",
-        "https://de.wikipedia.org/wiki/IBM_Watson",
-        "https://de.wikipedia.org/wiki/Chatbot",
-        "https://de.wikipedia.org/wiki/Computer_Vision",
-        "https://de.wikipedia.org/wiki/Natural_language_processing",
-        "https://de.wikipedia.org/wiki/Neuronales_Netz",
-        "https://de.wikipedia.org/wiki/Deep_Learning",
-        "https://de.wikipedia.org/wiki/Turing-Test",
-        "https://de.wikipedia.org/wiki/John_McCarthy",
-        "https://de.wikipedia.org/wiki/Alan_Turing",
-        "https://de.wikipedia.org/wiki/Peter_Norvig",
-        "https://de.wikipedia.org/wiki/J%C3%BCrgen_Schmidhuber",
-        "https://de.wikipedia.org/wiki/GPT-3",
-        "https://de.wikipedia.org/wiki/DeepMind",
-        "https://de.wikipedia.org/wiki/Reinforcement_Learning",
-        "https://de.wikipedia.org/wiki/Bayes%27sche_Optimierung",
-        "https://de.wikipedia.org/wiki/Emotionserkennung",
-        "https://de.wikipedia.org/wiki/Computerlinguistik",
-        "https://de.wikipedia.org/wiki/Nat%C3%BCrliche_Sprache",
-        "https://de.wikipedia.org/wiki/Big_Data",
-        "https://de.wikipedia.org/wiki/Merkmalsauswahl",
-        "https://de.wikipedia.org/wiki/TensorFlow",
-        "https://de.wikipedia.org/wiki/Yann_LeCun",
-        "https://de.wikipedia.org/wiki/Gemini_(Sprachmodell)",
-        "https://de.wikipedia.org/wiki/Datenwissenschaft",
-        "https://de.wikipedia.org/wiki/Data_Mining",
-        "https://de.wikipedia.org/wiki/Support_Vector_Machine",
-        "https://de.wikipedia.org/wiki/Random_Forest",
-    ]
-
-    # Irrelevante URLs mit Label = 0
-    irrelevant_urls = [
-        "https://de.wikipedia.org/wiki/Deutschland",
-        "https://de.wikipedia.org/wiki/Kalifornien",
-        "https://de.wikipedia.org/wiki/Boston",
-        "https://de.wikipedia.org/wiki/Memphis_%28Tennessee%29",
-        "https://de.wikipedia.org/wiki/Los_Angeles",
-        "https://de.wikipedia.org/wiki/New_York_City",
-        "https://de.wikipedia.org/wiki/San_Francisco",
-        "https://de.wikipedia.org/wiki/New_Orleans",
-        "https://de.wikipedia.org/wiki/San_Diego",
-        "https://de.wikipedia.org/wiki/Paris",
-        "https://de.wikipedia.org/wiki/London",
-        "https://de.wikipedia.org/wiki/Musik",
-        "https://de.wikipedia.org/wiki/Sport",
-        "https://de.wikipedia.org/wiki/Geschichte",
-        "https://de.wikipedia.org/wiki/Geographie",
-        "https://de.wikipedia.org/wiki/Politik",
-        "https://de.wikipedia.org/wiki/Kultur",
-        "https://de.wikipedia.org/wiki/Filme",
-        "https://de.wikipedia.org/wiki/Literatur",
-        "https://de.wikipedia.org/wiki/Kunst",
-        "https://de.wikipedia.org/wiki/Reisen",
-        "https://de.wikipedia.org/wiki/Architektur",
-        "https://de.wikipedia.org/wiki/Philosophie",
-        "https://de.wikipedia.org/wiki/Biologie",
-        "https://de.wikipedia.org/wiki/Chemie",
-        "https://de.wikipedia.org/wiki/Physik",
-        "https://de.wikipedia.org/wiki/Vogel",
-        "https://de.wikipedia.org/wiki/Baum",
-        "https://de.wikipedia.org/wiki/Haustier",
-        "https://de.wikipedia.org/wiki/Auto",
-        "https://de.wikipedia.org/wiki/Fußball",
-        "https://de.wikipedia.org/wiki/Basketball",
-        "https://de.wikipedia.org/wiki/Tennis",
-        "https://de.wikipedia.org/wiki/Klavier",
-        "https://de.wikipedia.org/wiki/Oper",
-        "https://de.wikipedia.org/wiki/Papierflugzeug",
-        "https://de.wikipedia.org/wiki/Wetter",
-        "https://de.wikipedia.org/wiki/Gastronomie",
-        "https://de.wikipedia.org/wiki/Mode",
-        "https://de.wikipedia.org/wiki/Tourismus",
-        "https://de.wikipedia.org/wiki/Schokolade",
-        "https://de.wikipedia.org/wiki/Wein",
-        "https://de.wikipedia.org/wiki/Bier",
-        "https://de.wikipedia.org/wiki/Rugby",
-        "https://de.wikipedia.org/wiki/Baseball",
-        "https://de.wikipedia.org/wiki/Cricket",
-        "https://de.wikipedia.org/wiki/Lyrik",
-        "https://de.wikipedia.org/wiki/Malerei",
-        "https://de.wikipedia.org/wiki/Theater",
-        "https://de.wikipedia.org/wiki/Sehensw%C3%BCrdigkeit"
-    ]
-
     # Generator erstellen
     generator = TrainingDataGenerator()
 
@@ -282,13 +181,13 @@ def main():
 {'=' * 50}
 TRAININGSDATEN-GENERATOR
 {'=' * 50}
-Relevante URLs: {len(relevant_urls)}
-Irrelevante URLs: {len(irrelevant_urls)}
+Relevante URLs: {len(generator.relevant_urls)}
+Irrelevante URLs: {len(generator.irrelevant_urls)}
 {'=' * 50}
 """)
 
     # Inhalte extrahieren und Erfolg ausgeben
-    generator.process_urls(relevant_urls, irrelevant_urls)
+    generator.process_urls(generator.relevant_urls, generator.irrelevant_urls)
     generator.print_statistics()
 
 

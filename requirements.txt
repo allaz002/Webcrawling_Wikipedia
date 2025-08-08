@@ -1,27 +1,25 @@
-# Web Crawling Framework
+# Web Crawling
 scrapy>=2.11.0
+twisted>=23.0.0
+cryptography>=41.0.0
 
 # HTML Parsing
 beautifulsoup4>=4.12.0
 lxml>=4.9.0
 
-# Machine Learning & Text Processing
+# Machine Learning + Text Processing
 scikit-learn>=1.3.0
 numpy>=1.24.0
 
-# NLP & Stoppwörter
+# NLP + Stoppwörter
 nltk>=3.8.0
 
 # Konfiguration
 configparser>=6.0.0
 
-# Für Trainingsdaten-Skript
+# Trainingsdaten-Skript
 requests>=2.31.0
 
-# Für Visualisierungen
+# Visualisierungen
 matplotlib>=3.7.0
 matplotlib-venn>=0.11.0
-
-# Optional: Für bessere Performance
-twisted>=23.0.0
-cryptography>=41.0.0

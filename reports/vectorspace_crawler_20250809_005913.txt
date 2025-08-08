@@ -1,0 +1,161 @@
+
+============================================================
+CRAWLER KONFIGURATION - vectorspace_crawler
+============================================================
+Strategie: VectorSpaceSpider
+Seed URLs: https://de.wikipedia.org/wiki/Wikipedia:Hauptseite
+Batch-Größe: 16
+Max. Seiten: 50000
+Max. relevante Seiten: 250
+Relevanz-Schwellenwert: 0.01
+Max. Laufzeit: 30 Minuten
+Report-Intervall: 30 Sekunden
+
+GEWICHTUNGEN:
+- Link-Gewicht: 0.5
+- Elterndokument-Gewicht: 0.5
+============================================================
+
+Modus: tf_norm
+
+Relevant-Ratio: 0.9
+
+
+--- ZWISCHENBERICHT [00:59:21] ---
+Laufzeit: 0:00:08.200386
+Harvest-Rate: 100.00%
+Relevante Seiten: 25
+Irrelevante Seiten: 0
+Aktueller Batch: 25
+
+
+--- ZWISCHENBERICHT [00:59:23] ---
+Laufzeit: 0:00:10.153105
+Harvest-Rate: 100.00%
+Relevante Seiten: 50
+Irrelevante Seiten: 0
+Aktueller Batch: 50
+
+
+--- ZWISCHENBERICHT [00:59:27] ---
+Laufzeit: 0:00:14.230239
+Harvest-Rate: 98.67%
+Relevante Seiten: 74
+Irrelevante Seiten: 1
+Aktueller Batch: 75
+
+
+--- ZWISCHENBERICHT [00:59:30] ---
+Laufzeit: 0:00:17.894888
+Harvest-Rate: 98.00%
+Relevante Seiten: 98
+Irrelevante Seiten: 2
+Aktueller Batch: 100
+
+
+--- ZWISCHENBERICHT [00:59:32] ---
+Laufzeit: 0:00:19.847308
+Harvest-Rate: 98.40%
+Relevante Seiten: 123
+Irrelevante Seiten: 2
+Aktueller Batch: 125
+
+
+--- ZWISCHENBERICHT [00:59:36] ---
+Laufzeit: 0:00:23.055869
+Harvest-Rate: 98.67%
+Relevante Seiten: 148
+Irrelevante Seiten: 2
+Aktueller Batch: 150
+
+
+--- ZWISCHENBERICHT [00:59:38] ---
+Laufzeit: 0:00:25.679637
+Harvest-Rate: 98.86%
+Relevante Seiten: 173
+Irrelevante Seiten: 2
+Aktueller Batch: 175
+
+
+--- ZWISCHENBERICHT [00:59:41] ---
+Laufzeit: 0:00:28.489429
+Harvest-Rate: 99.00%
+Relevante Seiten: 198
+Irrelevante Seiten: 2
+Aktueller Batch: 200
+
+
+--- ZWISCHENBERICHT [00:59:43] ---
+Laufzeit: 0:00:30.729664
+Harvest-Rate: 99.11%
+Relevante Seiten: 223
+Irrelevante Seiten: 2
+Aktueller Batch: 225
+
+
+--- ZWISCHENBERICHT [00:59:45] ---
+Laufzeit: 0:00:32.256498
+Harvest-Rate: 99.20%
+Relevante Seiten: 248
+Irrelevante Seiten: 2
+Aktueller Batch: 250
+
+
+============================================================
+ABSCHLUSSBERICHT - vectorspace_crawler
+============================================================
+Spider-Name: vectorspace_crawler
+Gesamtlaufzeit: 0:00:32.346446
+Anzahl gecrawlter Seiten: 252
+Anzahl relevanter Seiten: 250
+Anzahl irrelevanter Seiten: 2
+Harvest-Rate: 99.21%
+Durchschnittliche Relevanz: 0.1258
+Gesamte Relevanzbewertungszeit: 0.63 Sekunden
+
+TOP 10 BESTE URLS:
+1. Score: 0.3344 - https://de.wikipedia.org/wiki/K%C3%BCnstliche_Intelligenz
+2. Score: 0.2874 - https://de.wikipedia.org/wiki/Geschichte_der_k%C3%BCnstlichen_Intelligenz
+3. Score: 0.2402 - https://de.wikipedia.org/wiki/Problem_des_Handlungsreisenden
+4. Score: 0.2363 - https://de.wikipedia.org/wiki/Partido_Socialista_Obrero_Espa%C3%B1ol
+5. Score: 0.2333 - https://de.wikipedia.org/wiki/Allgemeine_Relativit%C3%A4tstheorie
+6. Score: 0.2313 - https://de.wikipedia.org/wiki/Oxford_English_Dictionary
+7. Score: 0.2307 - https://de.wikipedia.org/wiki/Verschw%C3%B6rungstheorien_zum_11._September_2001
+8. Score: 0.2223 - https://de.wikipedia.org/wiki/Mensch
+9. Score: 0.2207 - https://de.wikipedia.org/wiki/Konstantin_der_Gro%C3%9Fe
+10. Score: 0.2170 - https://de.wikipedia.org/wiki/Texas
+
+TOP 10 MITTELFELD URLS:
+1. Score: 0.1278 - https://de.wikipedia.org/wiki/Anwendungsprogramm
+2. Score: 0.1270 - https://de.wikipedia.org/wiki/Werk_(Urheberrecht)
+3. Score: 0.1254 - https://de.wikipedia.org/wiki/Herausgeber
+4. Score: 0.1249 - https://de.wikipedia.org/wiki/Three_Kingdoms_%E2%80%93_Der_Krieg_der_drei_K%C3%B6nigreiche
+5. Score: 0.1249 - https://de.wikipedia.org/wiki/Terroranschlag_am_1._Januar_2011_in_Alexandria
+6. Score: 0.1244 - https://de.wikipedia.org/wiki/Domain_(Internet)
+7. Score: 0.1233 - https://de.wikipedia.org/wiki/Liniennetzplan
+8. Score: 0.1231 - https://de.wikipedia.org/wiki/Tropisches_Jahr
+9. Score: 0.1226 - https://de.wikipedia.org/wiki/Minuszeichen
+10. Score: 0.1226 - https://de.wikipedia.org/wiki/Filmjahr_2001
+
+TOP 10 SCHLECHTESTE URLS:
+1. Score: 0.0389 - https://de.wikipedia.org/wiki/Pr%C3%A4sident_(Verwaltung)
+2. Score: 0.0382 - https://de.wikipedia.org/wiki/1907
+3. Score: 0.0355 - https://de.wikipedia.org/wiki/August_2025
+4. Score: 0.0333 - https://de.wikipedia.org/wiki/Wikipedia:Statistik/Artikelanzahl_nach_Bundesland_oder_Kanton
+5. Score: 0.0332 - https://de.wikipedia.org/wiki/Wikipedia:Statistik/Artikelanzahl_nach_Stadt
+6. Score: 0.0320 - https://de.wikipedia.org/wiki/%C3%96ffentlich-rechtlich
+7. Score: 0.0300 - https://de.wikipedia.org/wiki/Wikipedia_Diskussion:Hauptseite
+8. Score: 0.0269 - https://de.wikipedia.org/wiki/PDF_(Begriffskl%C3%A4rung)
+9. Score: 0.0253 - https://de.wikipedia.org/wiki/Fat_Man_(Begriffskl%C3%A4rung)
+10. Score: 0.0218 - https://de.wikipedia.org/wiki/Benutzer_Diskussion:Dirk_Franke
+
+============================================================
+
+
+--- ZWISCHENBERICHT [00:59:49] ---
+Laufzeit: 0:00:36.384393
+Harvest-Rate: 99.27%
+Relevante Seiten: 273
+Irrelevante Seiten: 2
+Aktueller Batch: 275
+

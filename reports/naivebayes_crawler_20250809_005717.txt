@@ -1,0 +1,151 @@
+
+============================================================
+CRAWLER KONFIGURATION - naivebayes_crawler
+============================================================
+Strategie: NaiveBayesSpider
+Seed URLs: https://de.wikipedia.org/wiki/Wikipedia:Hauptseite
+Batch-Größe: 16
+Max. Seiten: 50000
+Max. relevante Seiten: 250
+Relevanz-Schwellenwert: 0.01
+Max. Laufzeit: 30 Minuten
+Report-Intervall: 30 Sekunden
+
+GEWICHTUNGEN:
+- Link-Gewicht: 0.5
+- Elterndokument-Gewicht: 0.5
+============================================================
+
+Modell-Pfad: models/naive_bayes_model.pkl
+
+
+--- ZWISCHENBERICHT [00:57:20] ---
+Laufzeit: 0:00:02.942073
+Harvest-Rate: 100.00%
+Relevante Seiten: 25
+Irrelevante Seiten: 0
+Aktueller Batch: 25
+
+
+--- ZWISCHENBERICHT [00:57:25] ---
+Laufzeit: 0:00:07.712545
+Harvest-Rate: 100.00%
+Relevante Seiten: 50
+Irrelevante Seiten: 0
+Aktueller Batch: 50
+
+
+--- ZWISCHENBERICHT [00:57:27] ---
+Laufzeit: 0:00:09.897389
+Harvest-Rate: 100.00%
+Relevante Seiten: 75
+Irrelevante Seiten: 0
+Aktueller Batch: 75
+
+
+--- ZWISCHENBERICHT [00:57:30] ---
+Laufzeit: 0:00:12.439909
+Harvest-Rate: 100.00%
+Relevante Seiten: 100
+Irrelevante Seiten: 0
+Aktueller Batch: 100
+
+
+--- ZWISCHENBERICHT [00:57:31] ---
+Laufzeit: 0:00:14.292409
+Harvest-Rate: 100.00%
+Relevante Seiten: 125
+Irrelevante Seiten: 0
+Aktueller Batch: 125
+
+
+--- ZWISCHENBERICHT [00:57:33] ---
+Laufzeit: 0:00:15.426622
+Harvest-Rate: 100.00%
+Relevante Seiten: 150
+Irrelevante Seiten: 0
+Aktueller Batch: 150
+
+
+--- ZWISCHENBERICHT [00:57:34] ---
+Laufzeit: 0:00:16.976341
+Harvest-Rate: 100.00%
+Relevante Seiten: 175
+Irrelevante Seiten: 0
+Aktueller Batch: 175
+
+
+--- ZWISCHENBERICHT [00:57:36] ---
+Laufzeit: 0:00:18.920261
+Harvest-Rate: 100.00%
+Relevante Seiten: 200
+Irrelevante Seiten: 0
+Aktueller Batch: 200
+
+
+--- ZWISCHENBERICHT [00:57:38] ---
+Laufzeit: 0:00:21.094931
+Harvest-Rate: 100.00%
+Relevante Seiten: 225
+Irrelevante Seiten: 0
+Aktueller Batch: 225
+
+
+--- ZWISCHENBERICHT [00:57:40] ---
+Laufzeit: 0:00:22.922390
+Harvest-Rate: 100.00%
+Relevante Seiten: 250
+Irrelevante Seiten: 0
+Aktueller Batch: 250
+
+
+============================================================
+ABSCHLUSSBERICHT - naivebayes_crawler
+============================================================
+Spider-Name: naivebayes_crawler
+Gesamtlaufzeit: 0:00:22.922908
+Anzahl gecrawlter Seiten: 250
+Anzahl relevanter Seiten: 250
+Anzahl irrelevanter Seiten: 0
+Harvest-Rate: 100.00%
+Durchschnittliche Relevanz: 0.6555
+Gesamte Relevanzbewertungszeit: 0.53 Sekunden
+
+TOP 10 BESTE URLS:
+1. Score: 0.9973 - https://de.wikipedia.org/wiki/Anwendungen_k%C3%BCnstlicher_Intelligenz
+2. Score: 0.9969 - https://de.wikipedia.org/wiki/Parameter_(K%C3%BCnstliche_Intelligenz)
+3. Score: 0.9968 - https://de.wikipedia.org/wiki/K%C3%BCnstliche_Intelligenz_in_der_Materialwissenschaft
+4. Score: 0.9951 - https://de.wikipedia.org/wiki/K%C3%BCnstliche_Intelligenz
+5. Score: 0.9951 - https://de.wikipedia.org/wiki/Artificial_Intelligence
+6. Score: 0.9936 - https://de.wikipedia.org/wiki/Maschinelles_Lernen
+7. Score: 0.9912 - https://de.wikipedia.org/wiki/Support_Vector_Machine
+8. Score: 0.9888 - https://de.wikipedia.org/wiki/Turing-Test
+9. Score: 0.9851 - https://de.wikipedia.org/wiki/K%C3%BCnstliches_neuronales_Netz
+10. Score: 0.9811 - https://de.wikipedia.org/wiki/Artificial_Intelligence_Markup_Language
+
+TOP 10 MITTELFELD URLS:
+1. Score: 0.7051 - https://de.wikipedia.org/wiki/Benutzer_Diskussion:SK_Sturm_Fan
+2. Score: 0.7011 - https://de.wikipedia.org/wiki/Open_Textbook
+3. Score: 0.7006 - https://de.wikipedia.org/wiki/Wikipedia:Administratoren/Probleme
+4. Score: 0.6952 - https://de.wikipedia.org/wiki/Zwischencode
+5. Score: 0.6932 - https://de.wikipedia.org/wiki/Antialiasing_(Signalverarbeitung)
+6. Score: 0.6919 - https://de.wikipedia.org/wiki/Allplan
+7. Score: 0.6872 - https://de.wikipedia.org/wiki/Benutzer_Diskussion:Kulac
+8. Score: 0.6850 - https://de.wikipedia.org/wiki/Online
+9. Score: 0.6832 - https://de.wikipedia.org/wiki/Benutzerin_Diskussion:Ra%27ike
+10. Score: 0.6812 - https://de.wikipedia.org/wiki/Open_Publication_License
+
+TOP 10 SCHLECHTESTE URLS:
+1. Score: 0.1781 - https://de.wikipedia.org/wiki/Aljaksandr_Lukaschenka
+2. Score: 0.1769 - https://de.wikipedia.org/wiki/Wissenschaft
+3. Score: 0.1546 - https://de.wikipedia.org/wiki/Augsburger_Hohes_Friedensfest
+4. Score: 0.1357 - https://de.wikipedia.org/wiki/Menschenrechte
+5. Score: 0.1356 - https://de.wikipedia.org/wiki/D%C3%A9partement_Aude
+6. Score: 0.1333 - https://de.wikipedia.org/wiki/Atombombenabw%C3%BCrfe_auf_Hiroshima_und_Nagasaki
+7. Score: 0.1177 - https://de.wikipedia.org/wiki/Dmitri_Dmitrijewitsch_Schostakowitsch
+8. Score: 0.0458 - https://de.wikipedia.org/wiki/Rugby
+9. Score: 0.0403 - https://de.wikipedia.org/wiki/Senat_der_Vereinigten_Staaten
+10. Score: 0.0360 - https://de.wikipedia.org/wiki/Philosophie
+
+============================================================
+

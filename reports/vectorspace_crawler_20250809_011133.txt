@@ -1,0 +1,161 @@
+
+============================================================
+CRAWLER KONFIGURATION - vectorspace_crawler
+============================================================
+Strategie: VectorSpaceSpider
+Seed URLs: https://de.wikipedia.org/wiki/Wikipedia:Hauptseite
+Batch-Größe: 16
+Max. Seiten: 50000
+Max. relevante Seiten: 250
+Relevanz-Schwellenwert: 0.01
+Max. Laufzeit: 30 Minuten
+Report-Intervall: 30 Sekunden
+
+GEWICHTUNGEN:
+- Link-Gewicht: 0.5
+- Elterndokument-Gewicht: 0.5
+============================================================
+
+Modus: tf_norm
+
+Relevant-Ratio: 0.1
+
+
+--- ZWISCHENBERICHT [01:11:43] ---
+Laufzeit: 0:00:10.227448
+Harvest-Rate: 100.00%
+Relevante Seiten: 25
+Irrelevante Seiten: 0
+Aktueller Batch: 25
+
+
+--- ZWISCHENBERICHT [01:11:47] ---
+Laufzeit: 0:00:14.080009
+Harvest-Rate: 100.00%
+Relevante Seiten: 50
+Irrelevante Seiten: 0
+Aktueller Batch: 50
+
+
+--- ZWISCHENBERICHT [01:11:49] ---
+Laufzeit: 0:00:16.419976
+Harvest-Rate: 100.00%
+Relevante Seiten: 75
+Irrelevante Seiten: 0
+Aktueller Batch: 75
+
+
+--- ZWISCHENBERICHT [01:11:52] ---
+Laufzeit: 0:00:18.834054
+Harvest-Rate: 100.00%
+Relevante Seiten: 100
+Irrelevante Seiten: 0
+Aktueller Batch: 100
+
+
+--- ZWISCHENBERICHT [01:11:55] ---
+Laufzeit: 0:00:21.825635
+Harvest-Rate: 100.00%
+Relevante Seiten: 125
+Irrelevante Seiten: 0
+Aktueller Batch: 125
+
+
+--- ZWISCHENBERICHT [01:11:57] ---
+Laufzeit: 0:00:24.555449
+Harvest-Rate: 100.00%
+Relevante Seiten: 150
+Irrelevante Seiten: 0
+Aktueller Batch: 150
+
+
+--- ZWISCHENBERICHT [01:12:00] ---
+Laufzeit: 0:00:27.049480
+Harvest-Rate: 100.00%
+Relevante Seiten: 175
+Irrelevante Seiten: 0
+Aktueller Batch: 175
+
+
+--- ZWISCHENBERICHT [01:12:03] ---
+Laufzeit: 0:00:30.448746
+Harvest-Rate: 100.00%
+Relevante Seiten: 200
+Irrelevante Seiten: 0
+Aktueller Batch: 200
+
+
+--- ZWISCHENBERICHT [01:12:06] ---
+Laufzeit: 0:00:32.821300
+Harvest-Rate: 100.00%
+Relevante Seiten: 225
+Irrelevante Seiten: 0
+Aktueller Batch: 225
+
+
+--- ZWISCHENBERICHT [01:12:08] ---
+Laufzeit: 0:00:34.990483
+Harvest-Rate: 100.00%
+Relevante Seiten: 250
+Irrelevante Seiten: 0
+Aktueller Batch: 250
+
+
+============================================================
+ABSCHLUSSBERICHT - vectorspace_crawler
+============================================================
+Spider-Name: vectorspace_crawler
+Gesamtlaufzeit: 0:00:34.990981
+Anzahl gecrawlter Seiten: 250
+Anzahl relevanter Seiten: 250
+Anzahl irrelevanter Seiten: 0
+Harvest-Rate: 100.00%
+Durchschnittliche Relevanz: 0.1613
+Gesamte Relevanzbewertungszeit: 0.66 Sekunden
+
+TOP 10 BESTE URLS:
+1. Score: 0.3724 - https://de.wikipedia.org/wiki/K%C3%BCnstliche_Intelligenz
+2. Score: 0.3497 - https://de.wikipedia.org/wiki/Oxford_English_Dictionary
+3. Score: 0.3307 - https://de.wikipedia.org/wiki/K%C3%BCnstliches_neuronales_Netz
+4. Score: 0.2877 - https://de.wikipedia.org/wiki/Kreativit%C3%A4t
+5. Score: 0.2829 - https://de.wikipedia.org/wiki/Probleml%C3%B6sen
+6. Score: 0.2807 - https://de.wikipedia.org/wiki/Malaria
+7. Score: 0.2690 - https://de.wikipedia.org/wiki/Dictionary_of_the_English_Language
+8. Score: 0.2649 - https://de.wikipedia.org/wiki/Lastverteilung_(Informatik)
+9. Score: 0.2610 - https://de.wikipedia.org/wiki/Transformer_(Maschinelles_Lernen)
+10. Score: 0.2541 - https://de.wikipedia.org/wiki/Rekurrentes_neuronales_Netz
+
+TOP 10 MITTELFELD URLS:
+1. Score: 0.1608 - https://de.wikipedia.org/wiki/Regierungsbezirk
+2. Score: 0.1598 - https://de.wikipedia.org/wiki/FC_Bayern_M%C3%BCnchen
+3. Score: 0.1595 - https://de.wikipedia.org/wiki/Nekrolog_September_2020
+4. Score: 0.1591 - https://de.wikipedia.org/wiki/Nekrolog_Juni_2020
+5. Score: 0.1591 - https://de.wikipedia.org/wiki/Nekrolog_Oktober_2020
+6. Score: 0.1591 - https://de.wikipedia.org/wiki/Lee_Teng-hui
+7. Score: 0.1590 - https://de.wikipedia.org/wiki/Nekrolog_M%C3%A4rz_2020
+8. Score: 0.1584 - https://de.wikipedia.org/wiki/George_Blake_(Geheimagent)
+9. Score: 0.1571 - https://de.wikipedia.org/wiki/Aufgabe_(Pflicht)
+10. Score: 0.1566 - https://de.wikipedia.org/wiki/Olympische_Winterspiele_2018
+
+TOP 10 SCHLECHTESTE URLS:
+1. Score: 0.0598 - https://de.wikipedia.org/wiki/Zentralkomitee
+2. Score: 0.0547 - https://de.wikipedia.org/wiki/9._August
+3. Score: 0.0542 - https://de.wikipedia.org/wiki/Datenleitung
+4. Score: 0.0452 - https://de.wikipedia.org/wiki/Wikipedia:Hauptseite
+5. Score: 0.0438 - https://de.wikipedia.org/wiki/Protokoll_von_Minsk
+6. Score: 0.0429 - https://de.wikipedia.org/wiki/Achte_Norwegische_Antarktisexpedition
+7. Score: 0.0336 - https://de.wikipedia.org/wiki/August_2025
+8. Score: 0.0321 - https://de.wikipedia.org/wiki/Wikipedia_Diskussion:Hauptseite
+9. Score: 0.0233 - https://de.wikipedia.org/wiki/Perwoje_glawnoje_uprawlenije
+10. Score: 0.0194 - https://de.wikipedia.org/wiki/Stuttgart_(Begriffskl%C3%A4rung)
+
+============================================================
+
+
+--- ZWISCHENBERICHT [01:12:12] ---
+Laufzeit: 0:00:39.209259
+Harvest-Rate: 100.00%
+Relevante Seiten: 275
+Irrelevante Seiten: 0
+Aktueller Batch: 275
+

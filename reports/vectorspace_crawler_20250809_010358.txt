@@ -1,0 +1,161 @@
+
+============================================================
+CRAWLER KONFIGURATION - vectorspace_crawler
+============================================================
+Strategie: VectorSpaceSpider
+Seed URLs: https://de.wikipedia.org/wiki/Wikipedia:Hauptseite
+Batch-Größe: 16
+Max. Seiten: 50000
+Max. relevante Seiten: 250
+Relevanz-Schwellenwert: 0.01
+Max. Laufzeit: 30 Minuten
+Report-Intervall: 30 Sekunden
+
+GEWICHTUNGEN:
+- Link-Gewicht: 0.5
+- Elterndokument-Gewicht: 0.5
+============================================================
+
+Modus: tf_norm
+
+Relevant-Ratio: 1.0
+
+
+--- ZWISCHENBERICHT [01:04:06] ---
+Laufzeit: 0:00:08.029908
+Harvest-Rate: 100.00%
+Relevante Seiten: 25
+Irrelevante Seiten: 0
+Aktueller Batch: 25
+
+
+--- ZWISCHENBERICHT [01:04:09] ---
+Laufzeit: 0:00:11.186071
+Harvest-Rate: 100.00%
+Relevante Seiten: 50
+Irrelevante Seiten: 0
+Aktueller Batch: 50
+
+
+--- ZWISCHENBERICHT [01:04:12] ---
+Laufzeit: 0:00:14.470735
+Harvest-Rate: 100.00%
+Relevante Seiten: 75
+Irrelevante Seiten: 0
+Aktueller Batch: 75
+
+
+--- ZWISCHENBERICHT [01:04:16] ---
+Laufzeit: 0:00:17.725785
+Harvest-Rate: 100.00%
+Relevante Seiten: 100
+Irrelevante Seiten: 0
+Aktueller Batch: 100
+
+
+--- ZWISCHENBERICHT [01:04:18] ---
+Laufzeit: 0:00:20.159789
+Harvest-Rate: 100.00%
+Relevante Seiten: 125
+Irrelevante Seiten: 0
+Aktueller Batch: 125
+
+
+--- ZWISCHENBERICHT [01:04:20] ---
+Laufzeit: 0:00:22.605322
+Harvest-Rate: 100.00%
+Relevante Seiten: 150
+Irrelevante Seiten: 0
+Aktueller Batch: 150
+
+
+--- ZWISCHENBERICHT [01:04:23] ---
+Laufzeit: 0:00:25.225533
+Harvest-Rate: 99.43%
+Relevante Seiten: 174
+Irrelevante Seiten: 1
+Aktueller Batch: 175
+
+
+--- ZWISCHENBERICHT [01:04:26] ---
+Laufzeit: 0:00:27.937227
+Harvest-Rate: 99.50%
+Relevante Seiten: 199
+Irrelevante Seiten: 1
+Aktueller Batch: 200
+
+
+--- ZWISCHENBERICHT [01:04:28] ---
+Laufzeit: 0:00:30.510992
+Harvest-Rate: 99.56%
+Relevante Seiten: 224
+Irrelevante Seiten: 1
+Aktueller Batch: 225
+
+
+--- ZWISCHENBERICHT [01:04:32] ---
+Laufzeit: 0:00:34.130421
+Harvest-Rate: 99.60%
+Relevante Seiten: 249
+Irrelevante Seiten: 1
+Aktueller Batch: 250
+
+
+============================================================
+ABSCHLUSSBERICHT - vectorspace_crawler
+============================================================
+Spider-Name: vectorspace_crawler
+Gesamtlaufzeit: 0:00:34.249797
+Anzahl gecrawlter Seiten: 251
+Anzahl relevanter Seiten: 250
+Anzahl irrelevanter Seiten: 1
+Harvest-Rate: 99.60%
+Durchschnittliche Relevanz: 0.1280
+Gesamte Relevanzbewertungszeit: 0.62 Sekunden
+
+TOP 10 BESTE URLS:
+1. Score: 0.2503 - https://de.wikipedia.org/wiki/Saudi-Arabien
+2. Score: 0.2399 - https://de.wikipedia.org/wiki/IP-Telefonie
+3. Score: 0.2306 - https://de.wikipedia.org/wiki/Oxford_English_Dictionary
+4. Score: 0.2284 - https://de.wikipedia.org/wiki/Katharina_II.
+5. Score: 0.2189 - https://de.wikipedia.org/wiki/Wikipedia:Weblinks
+6. Score: 0.2176 - https://de.wikipedia.org/wiki/Litauen
+7. Score: 0.2158 - https://de.wikipedia.org/wiki/Litauische_Sprache
+8. Score: 0.2140 - https://de.wikipedia.org/wiki/Br%C3%BCssel
+9. Score: 0.2101 - https://de.wikipedia.org/wiki/Verordnung_(EG)_Nr._1907/2006
+10. Score: 0.2099 - https://de.wikipedia.org/wiki/Frankfurter_Allgemeine_Zeitung
+
+TOP 10 MITTELFELD URLS:
+1. Score: 0.1301 - https://de.wikipedia.org/wiki/John_F._Kennedy_International_Airport
+2. Score: 0.1293 - https://de.wikipedia.org/wiki/Allgemeiner_Deutscher_Frauenverein
+3. Score: 0.1287 - https://de.wikipedia.org/wiki/Times_Square_%E2%80%93_Ihr_k%C3%B6nnt_uns_alle_mal
+4. Score: 0.1286 - https://de.wikipedia.org/wiki/Benutzer_Diskussion:Drake_KL
+5. Score: 0.1280 - https://de.wikipedia.org/wiki/Universit%C3%A4t_Vilnius
+6. Score: 0.1280 - https://de.wikipedia.org/wiki/Nobelpreis_f%C3%BCr_Physik
+7. Score: 0.1279 - https://de.wikipedia.org/wiki/2020
+8. Score: 0.1277 - https://de.wikipedia.org/wiki/George_Bush_Intercontinental_Airport
+9. Score: 0.1271 - https://de.wikipedia.org/wiki/Freeden_(Berg)
+10. Score: 0.1268 - https://de.wikipedia.org/wiki/Mensch-Computer-Interaktion
+
+TOP 10 SCHLECHTESTE URLS:
+1. Score: 0.0457 - https://de.wikipedia.org/wiki/6._August
+2. Score: 0.0455 - https://de.wikipedia.org/wiki/6._September
+3. Score: 0.0446 - https://de.wikipedia.org/wiki/17._September
+4. Score: 0.0445 - https://de.wikipedia.org/wiki/21._September
+5. Score: 0.0421 - https://de.wikipedia.org/wiki/2._April
+6. Score: 0.0420 - https://de.wikipedia.org/wiki/Liste_der_Gouverneure_von_Kalifornien
+7. Score: 0.0406 - https://de.wikipedia.org/wiki/Mittellitauen_(Region)
+8. Score: 0.0360 - https://de.wikipedia.org/wiki/Alfred_Mendelsohn
+9. Score: 0.0350 - https://de.wikipedia.org/wiki/August_2025
+10. Score: 0.0271 - https://de.wikipedia.org/wiki/Truman_(Begriffskl%C3%A4rung)
+
+============================================================
+
+
+--- ZWISCHENBERICHT [01:04:37] ---
+Laufzeit: 0:00:39.265108
+Harvest-Rate: 99.64%
+Relevante Seiten: 274
+Irrelevante Seiten: 1
+Aktueller Batch: 275
+

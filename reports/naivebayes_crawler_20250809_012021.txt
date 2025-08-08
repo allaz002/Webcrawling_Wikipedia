@@ -1,0 +1,159 @@
+
+============================================================
+CRAWLER KONFIGURATION - naivebayes_crawler
+============================================================
+Strategie: NaiveBayesSpider
+Seed URLs: https://de.wikipedia.org/wiki/Wikipedia:Hauptseite
+Batch-Größe: 16
+Max. Seiten: 50000
+Max. relevante Seiten: 250
+Relevanz-Schwellenwert: 0.01
+Max. Laufzeit: 30 Minuten
+Report-Intervall: 30 Sekunden
+
+GEWICHTUNGEN:
+- Link-Gewicht: 0.5
+- Elterndokument-Gewicht: 0.5
+============================================================
+
+Modell-Pfad: models/naive_bayes_model.pkl
+
+
+--- ZWISCHENBERICHT [01:20:24] ---
+Laufzeit: 0:00:03.416313
+Harvest-Rate: 100.00%
+Relevante Seiten: 25
+Irrelevante Seiten: 0
+Aktueller Batch: 25
+
+
+--- ZWISCHENBERICHT [01:20:28] ---
+Laufzeit: 0:00:07.514667
+Harvest-Rate: 100.00%
+Relevante Seiten: 50
+Irrelevante Seiten: 0
+Aktueller Batch: 50
+
+
+--- ZWISCHENBERICHT [01:20:30] ---
+Laufzeit: 0:00:09.451417
+Harvest-Rate: 100.00%
+Relevante Seiten: 75
+Irrelevante Seiten: 0
+Aktueller Batch: 75
+
+
+--- ZWISCHENBERICHT [01:20:34] ---
+Laufzeit: 0:00:12.789047
+Harvest-Rate: 100.00%
+Relevante Seiten: 100
+Irrelevante Seiten: 0
+Aktueller Batch: 100
+
+
+--- ZWISCHENBERICHT [01:20:35] ---
+Laufzeit: 0:00:14.522504
+Harvest-Rate: 100.00%
+Relevante Seiten: 125
+Irrelevante Seiten: 0
+Aktueller Batch: 125
+
+
+--- ZWISCHENBERICHT [01:20:37] ---
+Laufzeit: 0:00:16.279845
+Harvest-Rate: 100.00%
+Relevante Seiten: 150
+Irrelevante Seiten: 0
+Aktueller Batch: 150
+
+
+--- ZWISCHENBERICHT [01:20:39] ---
+Laufzeit: 0:00:18.539398
+Harvest-Rate: 100.00%
+Relevante Seiten: 175
+Irrelevante Seiten: 0
+Aktueller Batch: 175
+
+
+--- ZWISCHENBERICHT [01:20:41] ---
+Laufzeit: 0:00:19.677783
+Harvest-Rate: 100.00%
+Relevante Seiten: 200
+Irrelevante Seiten: 0
+Aktueller Batch: 200
+
+
+--- ZWISCHENBERICHT [01:20:43] ---
+Laufzeit: 0:00:22.336040
+Harvest-Rate: 100.00%
+Relevante Seiten: 225
+Irrelevante Seiten: 0
+Aktueller Batch: 225
+
+
+--- ZWISCHENBERICHT [01:20:47] ---
+Laufzeit: 0:00:25.728534
+Harvest-Rate: 100.00%
+Relevante Seiten: 250
+Irrelevante Seiten: 0
+Aktueller Batch: 250
+
+
+============================================================
+ABSCHLUSSBERICHT - naivebayes_crawler
+============================================================
+Spider-Name: naivebayes_crawler
+Gesamtlaufzeit: 0:00:25.729021
+Anzahl gecrawlter Seiten: 250
+Anzahl relevanter Seiten: 250
+Anzahl irrelevanter Seiten: 0
+Harvest-Rate: 100.00%
+Durchschnittliche Relevanz: 0.6218
+Gesamte Relevanzbewertungszeit: 0.56 Sekunden
+
+TOP 10 BESTE URLS:
+1. Score: 0.9973 - https://de.wikipedia.org/wiki/Anwendungen_k%C3%BCnstlicher_Intelligenz
+2. Score: 0.9968 - https://de.wikipedia.org/wiki/K%C3%BCnstliche_Intelligenz_in_der_Materialwissenschaft
+3. Score: 0.9951 - https://de.wikipedia.org/wiki/K%C3%BCnstliche_Intelligenz
+4. Score: 0.9912 - https://de.wikipedia.org/wiki/Support_Vector_Machine
+5. Score: 0.9851 - https://de.wikipedia.org/wiki/K%C3%BCnstliches_neuronales_Netz
+6. Score: 0.9820 - https://de.wikipedia.org/wiki/Algorithmus
+7. Score: 0.9770 - https://de.wikipedia.org/wiki/Parameter_(Informatik)
+8. Score: 0.9710 - https://de.wikipedia.org/wiki/LLL-Algorithmus
+9. Score: 0.9708 - https://de.wikipedia.org/wiki/Paralleler_Algorithmus
+10. Score: 0.9684 - https://de.wikipedia.org/wiki/Probabilistisches_neuronales_Netz
+
+TOP 10 MITTELFELD URLS:
+1. Score: 0.6692 - https://de.wikipedia.org/wiki/Wikipedia:Wette_f%C3%BCr_2011
+2. Score: 0.6663 - https://de.wikipedia.org/wiki/Benutzer_Diskussion:Svebert
+3. Score: 0.6655 - https://de.wikipedia.org/wiki/Neumann-Bernays-G%C3%B6del-Mengenlehre
+4. Score: 0.6644 - https://de.wikipedia.org/wiki/Baum_(Graphentheorie)
+5. Score: 0.6550 - https://de.wikipedia.org/wiki/Programmierwerkzeug
+6. Score: 0.6499 - https://de.wikipedia.org/wiki/Pr%C3%A4dikatenlogik
+7. Score: 0.6467 - https://de.wikipedia.org/wiki/George_A._Miller
+8. Score: 0.6452 - https://de.wikipedia.org/wiki/Benutzer_Diskussion:Leoll
+9. Score: 0.6434 - https://de.wikipedia.org/wiki/Benutzer_Diskussion:Itsnotuitsme/b
+10. Score: 0.6364 - https://de.wikipedia.org/wiki/Wikipedia:Datei%C3%BCberpr%C3%BCfung/Freigabe_in_Arbeit
+
+TOP 10 SCHLECHTESTE URLS:
+1. Score: 0.1333 - https://de.wikipedia.org/wiki/Atombombenabw%C3%BCrfe_auf_Hiroshima_und_Nagasaki
+2. Score: 0.1327 - https://de.wikipedia.org/wiki/Stra%C3%9Fentunnel
+3. Score: 0.1302 - https://de.wikipedia.org/wiki/Fjodor_Dostojewskij
+4. Score: 0.1288 - https://de.wikipedia.org/wiki/Wesen_(Philosophie)
+5. Score: 0.1196 - https://de.wikipedia.org/wiki/Energie_AG_Ober%C3%B6sterreich
+6. Score: 0.1177 - https://de.wikipedia.org/wiki/Dmitri_Dmitrijewitsch_Schostakowitsch
+7. Score: 0.1019 - https://de.wikipedia.org/wiki/Aalen
+8. Score: 0.0991 - https://de.wikipedia.org/wiki/Sowjetunion
+9. Score: 0.0934 - https://de.wikipedia.org/wiki/Chemie
+10. Score: 0.0849 - https://de.wikipedia.org/wiki/Ungarn
+
+============================================================
+
+
+--- ZWISCHENBERICHT [01:20:50] ---
+Laufzeit: 0:00:29.178510
+Harvest-Rate: 100.00%
+Relevante Seiten: 275
+Irrelevante Seiten: 0
+Aktueller Batch: 275
+

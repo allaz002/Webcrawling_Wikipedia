@@ -1,0 +1,153 @@
+
+============================================================
+CRAWLER KONFIGURATION - vectorspace_crawler
+============================================================
+Strategie: VectorSpaceSpider
+Seed URLs: https://de.wikipedia.org/wiki/Wikipedia:Hauptseite
+Batch-Größe: 16
+Max. Seiten: 50000
+Max. relevante Seiten: 250
+Relevanz-Schwellenwert: 0.01
+Max. Laufzeit: 30 Minuten
+Report-Intervall: 30 Sekunden
+
+GEWICHTUNGEN:
+- Link-Gewicht: 0.5
+- Elterndokument-Gewicht: 0.5
+============================================================
+
+Modus: tf_norm
+
+Relevant-Ratio: 1.0
+
+
+--- ZWISCHENBERICHT [01:10:55] ---
+Laufzeit: 0:00:08.121614
+Harvest-Rate: 100.00%
+Relevante Seiten: 25
+Irrelevante Seiten: 0
+Aktueller Batch: 25
+
+
+--- ZWISCHENBERICHT [01:10:59] ---
+Laufzeit: 0:00:11.755664
+Harvest-Rate: 100.00%
+Relevante Seiten: 50
+Irrelevante Seiten: 0
+Aktueller Batch: 50
+
+
+--- ZWISCHENBERICHT [01:11:04] ---
+Laufzeit: 0:00:16.773449
+Harvest-Rate: 100.00%
+Relevante Seiten: 75
+Irrelevante Seiten: 0
+Aktueller Batch: 75
+
+
+--- ZWISCHENBERICHT [01:11:06] ---
+Laufzeit: 0:00:19.557239
+Harvest-Rate: 100.00%
+Relevante Seiten: 100
+Irrelevante Seiten: 0
+Aktueller Batch: 100
+
+
+--- ZWISCHENBERICHT [01:11:09] ---
+Laufzeit: 0:00:21.937153
+Harvest-Rate: 100.00%
+Relevante Seiten: 125
+Irrelevante Seiten: 0
+Aktueller Batch: 125
+
+
+--- ZWISCHENBERICHT [01:11:11] ---
+Laufzeit: 0:00:23.997358
+Harvest-Rate: 100.00%
+Relevante Seiten: 150
+Irrelevante Seiten: 0
+Aktueller Batch: 150
+
+
+--- ZWISCHENBERICHT [01:11:13] ---
+Laufzeit: 0:00:25.968417
+Harvest-Rate: 100.00%
+Relevante Seiten: 175
+Irrelevante Seiten: 0
+Aktueller Batch: 175
+
+
+--- ZWISCHENBERICHT [01:11:15] ---
+Laufzeit: 0:00:27.833896
+Harvest-Rate: 100.00%
+Relevante Seiten: 200
+Irrelevante Seiten: 0
+Aktueller Batch: 200
+
+
+--- ZWISCHENBERICHT [01:11:17] ---
+Laufzeit: 0:00:30.558207
+Harvest-Rate: 100.00%
+Relevante Seiten: 225
+Irrelevante Seiten: 0
+Aktueller Batch: 225
+
+
+--- ZWISCHENBERICHT [01:11:21] ---
+Laufzeit: 0:00:33.765444
+Harvest-Rate: 100.00%
+Relevante Seiten: 250
+Irrelevante Seiten: 0
+Aktueller Batch: 250
+
+
+============================================================
+ABSCHLUSSBERICHT - vectorspace_crawler
+============================================================
+Spider-Name: vectorspace_crawler
+Gesamtlaufzeit: 0:00:33.765895
+Anzahl gecrawlter Seiten: 250
+Anzahl relevanter Seiten: 250
+Anzahl irrelevanter Seiten: 0
+Harvest-Rate: 100.00%
+Durchschnittliche Relevanz: 0.1239
+Gesamte Relevanzbewertungszeit: 0.64 Sekunden
+
+TOP 10 BESTE URLS:
+1. Score: 0.2844 - https://de.wikipedia.org/wiki/Russland
+2. Score: 0.2330 - https://de.wikipedia.org/wiki/Digitale_Revolution
+3. Score: 0.2264 - https://de.wikipedia.org/wiki/Finite-Elemente-Methode
+4. Score: 0.2260 - https://de.wikipedia.org/wiki/Turkmenistan
+5. Score: 0.2248 - https://de.wikipedia.org/wiki/Akkumulator
+6. Score: 0.2225 - https://de.wikipedia.org/wiki/Rudolf_He%C3%9F
+7. Score: 0.2209 - https://de.wikipedia.org/wiki/Polen
+8. Score: 0.2209 - https://de.wikipedia.org/wiki/Antriebsbatterie
+9. Score: 0.2193 - https://de.wikipedia.org/wiki/Zweites_Vatikanisches_Konzil
+10. Score: 0.2189 - https://de.wikipedia.org/wiki/Wikipedia:Weblinks
+
+TOP 10 MITTELFELD URLS:
+1. Score: 0.1224 - https://de.wikipedia.org/wiki/Batterie_(Milit%C3%A4r)
+2. Score: 0.1215 - https://de.wikipedia.org/wiki/%C5%81acinka
+3. Score: 0.1214 - https://de.wikipedia.org/wiki/Augsburger_Hohes_Friedensfest
+4. Score: 0.1213 - https://de.wikipedia.org/wiki/Zentrum_f%C3%BCr_Sonnenenergie-_und_Wasserstoff-Forschung_Baden-W%C3%BCrttemberg
+5. Score: 0.1211 - https://de.wikipedia.org/wiki/Aljaksandr_Turtschyn
+6. Score: 0.1195 - https://de.wikipedia.org/wiki/Benutzer_Diskussion:Jensbest
+7. Score: 0.1192 - https://de.wikipedia.org/wiki/DIN-Norm
+8. Score: 0.1187 - https://de.wikipedia.org/wiki/Sammo_Hung_Kam-Bo
+9. Score: 0.1181 - https://de.wikipedia.org/wiki/Pawel_Latuschka
+10. Score: 0.1174 - https://de.wikipedia.org/wiki/Hermann_Merchel
+
+TOP 10 SCHLECHTESTE URLS:
+1. Score: 0.0451 - https://de.wikipedia.org/wiki/980er
+2. Score: 0.0447 - https://de.wikipedia.org/wiki/16._September
+3. Score: 0.0447 - https://de.wikipedia.org/wiki/25._September
+4. Score: 0.0433 - https://de.wikipedia.org/wiki/Benutzer_Diskussion:Leiflive
+5. Score: 0.0420 - https://de.wikipedia.org/wiki/13._Dezember
+6. Score: 0.0405 - https://de.wikipedia.org/wiki/8._Oktober
+7. Score: 0.0397 - https://de.wikipedia.org/wiki/30._November
+8. Score: 0.0360 - https://de.wikipedia.org/wiki/Benutzer_Diskussion:Fiver,_der_Hellseher
+9. Score: 0.0350 - https://de.wikipedia.org/wiki/August_2025
+10. Score: 0.0202 - https://de.wikipedia.org/wiki/Mein_Kampf_(Begriffskl%C3%A4rung)
+
+============================================================
+

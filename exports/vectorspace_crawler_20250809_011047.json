@@ -1,0 +1,3950 @@
+{
+  "summary": {
+    "spider": "vectorspace_crawler",
+    "timestamp": "20250809_011047",
+    "total_execution_time_in_seconds": 33.765895,
+    "total_pages_visited": 250,
+    "total_relevant_found": 250,
+    "average_harvest_rate": 1.0,
+    "average_relevance": 0.12394918052579026,
+    "relevance_calculation_time": 0.6391675472259521,
+    "evaluation_log": [
+      {
+        "batch_number": 2,
+        "pages_visited": 1,
+        "relevant_pages_found": 1,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.05764359448200492,
+        "execution_time_in_seconds": 0.971068,
+        "avg_frontier_position": 5.593220338983051,
+        "new_urls_added": 59,
+        "relevance_calculation_time": 0.0014922618865966797
+      },
+      {
+        "batch_number": 3,
+        "pages_visited": 2,
+        "relevant_pages_found": 2,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.05396368789809276,
+        "execution_time_in_seconds": 1.188345,
+        "avg_frontier_position": 31.9,
+        "new_urls_added": 30,
+        "relevance_calculation_time": 0.002809286117553711
+      },
+      {
+        "batch_number": 4,
+        "pages_visited": 3,
+        "relevant_pages_found": 3,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.06682430752664749,
+        "execution_time_in_seconds": 1.32195,
+        "avg_frontier_position": 8.581395348837209,
+        "new_urls_added": 86,
+        "relevance_calculation_time": 0.004172325134277344
+      },
+      {
+        "batch_number": 5,
+        "pages_visited": 4,
+        "relevant_pages_found": 4,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.09727660949589823,
+        "execution_time_in_seconds": 1.432041,
+        "avg_frontier_position": 11.340425531914894,
+        "new_urls_added": 141,
+        "relevance_calculation_time": 0.008189916610717773
+      },
+      {
+        "batch_number": 9,
+        "pages_visited": 8,
+        "relevant_pages_found": 8,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.09703105876490771,
+        "execution_time_in_seconds": 2.413604,
+        "avg_frontier_position": 554.8855311355311,
+        "new_urls_added": 2184,
+        "relevance_calculation_time": 0.017317771911621094
+      },
+      {
+        "batch_number": 9,
+        "pages_visited": 8,
+        "relevant_pages_found": 8,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.09703105876490771,
+        "execution_time_in_seconds": 2.414748,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.017317771911621094
+      },
+      {
+        "batch_number": 9,
+        "pages_visited": 8,
+        "relevant_pages_found": 8,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.09703105876490771,
+        "execution_time_in_seconds": 2.41559,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.017317771911621094
+      },
+      {
+        "batch_number": 9,
+        "pages_visited": 8,
+        "relevant_pages_found": 8,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.09703105876490771,
+        "execution_time_in_seconds": 2.416393,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.017317771911621094
+      },
+      {
+        "batch_number": 17,
+        "pages_visited": 16,
+        "relevant_pages_found": 16,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.09659182714068111,
+        "execution_time_in_seconds": 7.166472,
+        "avg_frontier_position": 578.8679245283018,
+        "new_urls_added": 742,
+        "relevance_calculation_time": 0.03241920471191406
+      },
+      {
+        "batch_number": 17,
+        "pages_visited": 16,
+        "relevant_pages_found": 16,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.09659182714068111,
+        "execution_time_in_seconds": 7.167399,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.03241920471191406
+      },
+      {
+        "batch_number": 17,
+        "pages_visited": 16,
+        "relevant_pages_found": 16,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.09659182714068111,
+        "execution_time_in_seconds": 7.168297,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.03241920471191406
+      },
+      {
+        "batch_number": 17,
+        "pages_visited": 16,
+        "relevant_pages_found": 16,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.09659182714068111,
+        "execution_time_in_seconds": 7.169187,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.03241920471191406
+      },
+      {
+        "batch_number": 17,
+        "pages_visited": 16,
+        "relevant_pages_found": 16,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.09659182714068111,
+        "execution_time_in_seconds": 7.170012,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.03241920471191406
+      },
+      {
+        "batch_number": 17,
+        "pages_visited": 16,
+        "relevant_pages_found": 16,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.09659182714068111,
+        "execution_time_in_seconds": 7.170812,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.03241920471191406
+      },
+      {
+        "batch_number": 17,
+        "pages_visited": 16,
+        "relevant_pages_found": 16,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.09659182714068111,
+        "execution_time_in_seconds": 7.171592,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.03241920471191406
+      },
+      {
+        "batch_number": 17,
+        "pages_visited": 16,
+        "relevant_pages_found": 16,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.09659182714068111,
+        "execution_time_in_seconds": 7.172395,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.03241920471191406
+      },
+      {
+        "batch_number": 25,
+        "pages_visited": 24,
+        "relevant_pages_found": 24,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.10531234471048619,
+        "execution_time_in_seconds": 8.064276,
+        "avg_frontier_position": 712.6015037593985,
+        "new_urls_added": 133,
+        "relevance_calculation_time": 0.052413225173950195
+      },
+      {
+        "batch_number": 25,
+        "pages_visited": 24,
+        "relevant_pages_found": 24,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.10531234471048619,
+        "execution_time_in_seconds": 8.06548,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.052413225173950195
+      },
+      {
+        "batch_number": 25,
+        "pages_visited": 24,
+        "relevant_pages_found": 24,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.10531234471048619,
+        "execution_time_in_seconds": 8.066421,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.052413225173950195
+      },
+      {
+        "batch_number": 25,
+        "pages_visited": 24,
+        "relevant_pages_found": 24,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.10531234471048619,
+        "execution_time_in_seconds": 8.067257,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.052413225173950195
+      },
+      {
+        "batch_number": 25,
+        "pages_visited": 24,
+        "relevant_pages_found": 24,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.10531234471048619,
+        "execution_time_in_seconds": 8.068059,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.052413225173950195
+      },
+      {
+        "batch_number": 25,
+        "pages_visited": 24,
+        "relevant_pages_found": 24,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.10531234471048619,
+        "execution_time_in_seconds": 8.068881,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.052413225173950195
+      },
+      {
+        "batch_number": 25,
+        "pages_visited": 24,
+        "relevant_pages_found": 24,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.10531234471048619,
+        "execution_time_in_seconds": 8.069736,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.052413225173950195
+      },
+      {
+        "batch_number": 25,
+        "pages_visited": 24,
+        "relevant_pages_found": 24,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.10531234471048619,
+        "execution_time_in_seconds": 8.070666,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.052413225173950195
+      },
+      {
+        "batch_number": 30,
+        "pages_visited": 29,
+        "relevant_pages_found": 29,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.09955472250184876,
+        "execution_time_in_seconds": 8.329522,
+        "avg_frontier_position": 783.4125,
+        "new_urls_added": 80,
+        "relevance_calculation_time": 0.05830860137939453
+      },
+      {
+        "batch_number": 30,
+        "pages_visited": 29,
+        "relevant_pages_found": 29,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.09955472250184876,
+        "execution_time_in_seconds": 8.330438,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.05830860137939453
+      },
+      {
+        "batch_number": 30,
+        "pages_visited": 29,
+        "relevant_pages_found": 29,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.09955472250184876,
+        "execution_time_in_seconds": 8.331262,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.05830860137939453
+      },
+      {
+        "batch_number": 30,
+        "pages_visited": 29,
+        "relevant_pages_found": 29,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.09955472250184876,
+        "execution_time_in_seconds": 8.332058,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.05830860137939453
+      },
+      {
+        "batch_number": 30,
+        "pages_visited": 29,
+        "relevant_pages_found": 29,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.09955472250184876,
+        "execution_time_in_seconds": 8.332832,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.05830860137939453
+      },
+      {
+        "batch_number": 31,
+        "pages_visited": 30,
+        "relevant_pages_found": 30,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.10224637295982766,
+        "execution_time_in_seconds": 9.365686,
+        "avg_frontier_position": 1.8421052631578947,
+        "new_urls_added": 19,
+        "relevance_calculation_time": 0.08239197731018066
+      },
+      {
+        "batch_number": 35,
+        "pages_visited": 34,
+        "relevant_pages_found": 34,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.10305831654960206,
+        "execution_time_in_seconds": 9.556276,
+        "avg_frontier_position": 541.515625,
+        "new_urls_added": 64,
+        "relevance_calculation_time": 0.08883047103881836
+      },
+      {
+        "batch_number": 35,
+        "pages_visited": 34,
+        "relevant_pages_found": 34,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.10305831654960206,
+        "execution_time_in_seconds": 9.557286,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.08883047103881836
+      },
+      {
+        "batch_number": 35,
+        "pages_visited": 34,
+        "relevant_pages_found": 34,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.10305831654960206,
+        "execution_time_in_seconds": 9.558042,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.08883047103881836
+      },
+      {
+        "batch_number": 35,
+        "pages_visited": 34,
+        "relevant_pages_found": 34,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.10305831654960206,
+        "execution_time_in_seconds": 9.558798,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.08883047103881836
+      },
+      {
+        "batch_number": 43,
+        "pages_visited": 42,
+        "relevant_pages_found": 42,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.10880498741005476,
+        "execution_time_in_seconds": 10.505949,
+        "avg_frontier_position": 213.62962962962962,
+        "new_urls_added": 135,
+        "relevance_calculation_time": 0.11834502220153809
+      },
+      {
+        "batch_number": 43,
+        "pages_visited": 42,
+        "relevant_pages_found": 42,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.10880498741005476,
+        "execution_time_in_seconds": 10.50723,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.11834502220153809
+      },
+      {
+        "batch_number": 43,
+        "pages_visited": 42,
+        "relevant_pages_found": 42,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.10880498741005476,
+        "execution_time_in_seconds": 10.508161,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.11834502220153809
+      },
+      {
+        "batch_number": 43,
+        "pages_visited": 42,
+        "relevant_pages_found": 42,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.10880498741005476,
+        "execution_time_in_seconds": 10.509039,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.11834502220153809
+      },
+      {
+        "batch_number": 43,
+        "pages_visited": 42,
+        "relevant_pages_found": 42,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.10880498741005476,
+        "execution_time_in_seconds": 10.509987,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.11834502220153809
+      },
+      {
+        "batch_number": 43,
+        "pages_visited": 42,
+        "relevant_pages_found": 42,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.10880498741005476,
+        "execution_time_in_seconds": 10.511161,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.11834502220153809
+      },
+      {
+        "batch_number": 43,
+        "pages_visited": 42,
+        "relevant_pages_found": 42,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.10880498741005476,
+        "execution_time_in_seconds": 10.511999,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.11834502220153809
+      },
+      {
+        "batch_number": 43,
+        "pages_visited": 42,
+        "relevant_pages_found": 42,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.10880498741005476,
+        "execution_time_in_seconds": 10.512796,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.11834502220153809
+      },
+      {
+        "batch_number": 49,
+        "pages_visited": 48,
+        "relevant_pages_found": 48,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.11211486583143025,
+        "execution_time_in_seconds": 11.591112,
+        "avg_frontier_position": 297.0388349514563,
+        "new_urls_added": 103,
+        "relevance_calculation_time": 0.13300228118896484
+      },
+      {
+        "batch_number": 49,
+        "pages_visited": 48,
+        "relevant_pages_found": 48,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.11211486583143025,
+        "execution_time_in_seconds": 11.592221,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.13300228118896484
+      },
+      {
+        "batch_number": 49,
+        "pages_visited": 48,
+        "relevant_pages_found": 48,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.11211486583143025,
+        "execution_time_in_seconds": 11.593224,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.13300228118896484
+      },
+      {
+        "batch_number": 49,
+        "pages_visited": 48,
+        "relevant_pages_found": 48,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.11211486583143025,
+        "execution_time_in_seconds": 11.59409,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.13300228118896484
+      },
+      {
+        "batch_number": 49,
+        "pages_visited": 48,
+        "relevant_pages_found": 48,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.11211486583143025,
+        "execution_time_in_seconds": 11.594903,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.13300228118896484
+      },
+      {
+        "batch_number": 49,
+        "pages_visited": 48,
+        "relevant_pages_found": 48,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.11211486583143025,
+        "execution_time_in_seconds": 11.595712,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.13300228118896484
+      },
+      {
+        "batch_number": 57,
+        "pages_visited": 56,
+        "relevant_pages_found": 56,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.1165115580765667,
+        "execution_time_in_seconds": 13.122678,
+        "avg_frontier_position": 205.16176470588235,
+        "new_urls_added": 136,
+        "relevance_calculation_time": 0.1629328727722168
+      },
+      {
+        "batch_number": 57,
+        "pages_visited": 56,
+        "relevant_pages_found": 56,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.1165115580765667,
+        "execution_time_in_seconds": 13.123645,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.1629328727722168
+      },
+      {
+        "batch_number": 57,
+        "pages_visited": 56,
+        "relevant_pages_found": 56,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.1165115580765667,
+        "execution_time_in_seconds": 13.124505,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.1629328727722168
+      },
+      {
+        "batch_number": 57,
+        "pages_visited": 56,
+        "relevant_pages_found": 56,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.1165115580765667,
+        "execution_time_in_seconds": 13.125415,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.1629328727722168
+      },
+      {
+        "batch_number": 57,
+        "pages_visited": 56,
+        "relevant_pages_found": 56,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.1165115580765667,
+        "execution_time_in_seconds": 13.126419,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.1629328727722168
+      },
+      {
+        "batch_number": 57,
+        "pages_visited": 56,
+        "relevant_pages_found": 56,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.1165115580765667,
+        "execution_time_in_seconds": 13.127977,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.1629328727722168
+      },
+      {
+        "batch_number": 57,
+        "pages_visited": 56,
+        "relevant_pages_found": 56,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.1165115580765667,
+        "execution_time_in_seconds": 13.129589,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.1629328727722168
+      },
+      {
+        "batch_number": 57,
+        "pages_visited": 56,
+        "relevant_pages_found": 56,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.1165115580765667,
+        "execution_time_in_seconds": 13.131109,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.1629328727722168
+      },
+      {
+        "batch_number": 64,
+        "pages_visited": 63,
+        "relevant_pages_found": 63,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.12013757846053762,
+        "execution_time_in_seconds": 13.687886,
+        "avg_frontier_position": 116.47413793103448,
+        "new_urls_added": 116,
+        "relevance_calculation_time": 0.1773824691772461
+      },
+      {
+        "batch_number": 64,
+        "pages_visited": 63,
+        "relevant_pages_found": 63,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.12013757846053762,
+        "execution_time_in_seconds": 13.689028,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.1773824691772461
+      },
+      {
+        "batch_number": 64,
+        "pages_visited": 63,
+        "relevant_pages_found": 63,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.12013757846053762,
+        "execution_time_in_seconds": 13.689991,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.1773824691772461
+      },
+      {
+        "batch_number": 64,
+        "pages_visited": 63,
+        "relevant_pages_found": 63,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.12013757846053762,
+        "execution_time_in_seconds": 13.690834,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.1773824691772461
+      },
+      {
+        "batch_number": 64,
+        "pages_visited": 63,
+        "relevant_pages_found": 63,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.12013757846053762,
+        "execution_time_in_seconds": 13.691677,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.1773824691772461
+      },
+      {
+        "batch_number": 64,
+        "pages_visited": 63,
+        "relevant_pages_found": 63,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.12013757846053762,
+        "execution_time_in_seconds": 13.692555,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.1773824691772461
+      },
+      {
+        "batch_number": 64,
+        "pages_visited": 63,
+        "relevant_pages_found": 63,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.12013757846053762,
+        "execution_time_in_seconds": 13.693351,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.1773824691772461
+      },
+      {
+        "batch_number": 70,
+        "pages_visited": 69,
+        "relevant_pages_found": 69,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.12157739314971265,
+        "execution_time_in_seconds": 14.268961,
+        "avg_frontier_position": 242.74528301886792,
+        "new_urls_added": 106,
+        "relevance_calculation_time": 0.1923511028289795
+      },
+      {
+        "batch_number": 70,
+        "pages_visited": 69,
+        "relevant_pages_found": 69,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.12157739314971265,
+        "execution_time_in_seconds": 14.270221,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.1923511028289795
+      },
+      {
+        "batch_number": 70,
+        "pages_visited": 69,
+        "relevant_pages_found": 69,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.12157739314971265,
+        "execution_time_in_seconds": 14.271127,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.1923511028289795
+      },
+      {
+        "batch_number": 70,
+        "pages_visited": 69,
+        "relevant_pages_found": 69,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.12157739314971265,
+        "execution_time_in_seconds": 14.272024,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.1923511028289795
+      },
+      {
+        "batch_number": 70,
+        "pages_visited": 69,
+        "relevant_pages_found": 69,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.12157739314971265,
+        "execution_time_in_seconds": 14.272824,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.1923511028289795
+      },
+      {
+        "batch_number": 70,
+        "pages_visited": 69,
+        "relevant_pages_found": 69,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.12157739314971265,
+        "execution_time_in_seconds": 14.273665,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.1923511028289795
+      },
+      {
+        "batch_number": 78,
+        "pages_visited": 77,
+        "relevant_pages_found": 77,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.12682186539811488,
+        "execution_time_in_seconds": 17.011566,
+        "avg_frontier_position": 104.40972222222223,
+        "new_urls_added": 144,
+        "relevance_calculation_time": 0.2643320560455322
+      },
+      {
+        "batch_number": 78,
+        "pages_visited": 77,
+        "relevant_pages_found": 77,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.12682186539811488,
+        "execution_time_in_seconds": 17.012696,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.2643320560455322
+      },
+      {
+        "batch_number": 78,
+        "pages_visited": 77,
+        "relevant_pages_found": 77,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.12682186539811488,
+        "execution_time_in_seconds": 17.013563,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.2643320560455322
+      },
+      {
+        "batch_number": 78,
+        "pages_visited": 77,
+        "relevant_pages_found": 77,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.12682186539811488,
+        "execution_time_in_seconds": 17.014408,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.2643320560455322
+      },
+      {
+        "batch_number": 78,
+        "pages_visited": 77,
+        "relevant_pages_found": 77,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.12682186539811488,
+        "execution_time_in_seconds": 17.015349,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.2643320560455322
+      },
+      {
+        "batch_number": 78,
+        "pages_visited": 77,
+        "relevant_pages_found": 77,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.12682186539811488,
+        "execution_time_in_seconds": 17.016668,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.2643320560455322
+      },
+      {
+        "batch_number": 78,
+        "pages_visited": 77,
+        "relevant_pages_found": 77,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.12682186539811488,
+        "execution_time_in_seconds": 17.018333,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.2643320560455322
+      },
+      {
+        "batch_number": 78,
+        "pages_visited": 77,
+        "relevant_pages_found": 77,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.12682186539811488,
+        "execution_time_in_seconds": 17.019884,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.2643320560455322
+      },
+      {
+        "batch_number": 85,
+        "pages_visited": 84,
+        "relevant_pages_found": 84,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.13012390992845782,
+        "execution_time_in_seconds": 17.940483,
+        "avg_frontier_position": 104.18032786885246,
+        "new_urls_added": 122,
+        "relevance_calculation_time": 0.28873372077941895
+      },
+      {
+        "batch_number": 85,
+        "pages_visited": 84,
+        "relevant_pages_found": 84,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.13012390992845782,
+        "execution_time_in_seconds": 17.941406,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.28873372077941895
+      },
+      {
+        "batch_number": 85,
+        "pages_visited": 84,
+        "relevant_pages_found": 84,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.13012390992845782,
+        "execution_time_in_seconds": 17.942272,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.28873372077941895
+      },
+      {
+        "batch_number": 85,
+        "pages_visited": 84,
+        "relevant_pages_found": 84,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.13012390992845782,
+        "execution_time_in_seconds": 17.943151,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.28873372077941895
+      },
+      {
+        "batch_number": 85,
+        "pages_visited": 84,
+        "relevant_pages_found": 84,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.13012390992845782,
+        "execution_time_in_seconds": 17.943963,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.28873372077941895
+      },
+      {
+        "batch_number": 85,
+        "pages_visited": 84,
+        "relevant_pages_found": 84,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.13012390992845782,
+        "execution_time_in_seconds": 17.944814,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.28873372077941895
+      },
+      {
+        "batch_number": 85,
+        "pages_visited": 84,
+        "relevant_pages_found": 84,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.13012390992845782,
+        "execution_time_in_seconds": 17.945661,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.28873372077941895
+      },
+      {
+        "batch_number": 86,
+        "pages_visited": 85,
+        "relevant_pages_found": 85,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.12913605621330568,
+        "execution_time_in_seconds": 18.223358,
+        "avg_frontier_position": 2639.75,
+        "new_urls_added": 16,
+        "relevance_calculation_time": 0.28988003730773926
+      },
+      {
+        "batch_number": 93,
+        "pages_visited": 92,
+        "relevant_pages_found": 92,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.1289134379777412,
+        "execution_time_in_seconds": 18.846336,
+        "avg_frontier_position": 330.8487394957983,
+        "new_urls_added": 119,
+        "relevance_calculation_time": 0.3033468723297119
+      },
+      {
+        "batch_number": 93,
+        "pages_visited": 92,
+        "relevant_pages_found": 92,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.1289134379777412,
+        "execution_time_in_seconds": 18.847297,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.3033468723297119
+      },
+      {
+        "batch_number": 93,
+        "pages_visited": 92,
+        "relevant_pages_found": 92,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.1289134379777412,
+        "execution_time_in_seconds": 18.848223,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.3033468723297119
+      },
+      {
+        "batch_number": 93,
+        "pages_visited": 92,
+        "relevant_pages_found": 92,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.1289134379777412,
+        "execution_time_in_seconds": 18.849184,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.3033468723297119
+      },
+      {
+        "batch_number": 93,
+        "pages_visited": 92,
+        "relevant_pages_found": 92,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.1289134379777412,
+        "execution_time_in_seconds": 18.85005,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.3033468723297119
+      },
+      {
+        "batch_number": 93,
+        "pages_visited": 92,
+        "relevant_pages_found": 92,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.1289134379777412,
+        "execution_time_in_seconds": 18.850883,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.3033468723297119
+      },
+      {
+        "batch_number": 93,
+        "pages_visited": 92,
+        "relevant_pages_found": 92,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.1289134379777412,
+        "execution_time_in_seconds": 18.851737,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.3033468723297119
+      },
+      {
+        "batch_number": 95,
+        "pages_visited": 94,
+        "relevant_pages_found": 94,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.1293693780654481,
+        "execution_time_in_seconds": 19.090317,
+        "avg_frontier_position": 472.44444444444446,
+        "new_urls_added": 36,
+        "relevance_calculation_time": 0.30899691581726074
+      },
+      {
+        "batch_number": 95,
+        "pages_visited": 94,
+        "relevant_pages_found": 94,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.1293693780654481,
+        "execution_time_in_seconds": 19.091222,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.30899691581726074
+      },
+      {
+        "batch_number": 102,
+        "pages_visited": 101,
+        "relevant_pages_found": 101,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.13114591696948555,
+        "execution_time_in_seconds": 19.795437,
+        "avg_frontier_position": 92.92561983471074,
+        "new_urls_added": 121,
+        "relevance_calculation_time": 0.3315749168395996
+      },
+      {
+        "batch_number": 102,
+        "pages_visited": 101,
+        "relevant_pages_found": 101,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.13114591696948555,
+        "execution_time_in_seconds": 19.79702,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.3315749168395996
+      },
+      {
+        "batch_number": 102,
+        "pages_visited": 101,
+        "relevant_pages_found": 101,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.13114591696948555,
+        "execution_time_in_seconds": 19.79789,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.3315749168395996
+      },
+      {
+        "batch_number": 102,
+        "pages_visited": 101,
+        "relevant_pages_found": 101,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.13114591696948555,
+        "execution_time_in_seconds": 19.798793,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.3315749168395996
+      },
+      {
+        "batch_number": 102,
+        "pages_visited": 101,
+        "relevant_pages_found": 101,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.13114591696948555,
+        "execution_time_in_seconds": 19.799589,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.3315749168395996
+      },
+      {
+        "batch_number": 102,
+        "pages_visited": 101,
+        "relevant_pages_found": 101,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.13114591696948555,
+        "execution_time_in_seconds": 19.800405,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.3315749168395996
+      },
+      {
+        "batch_number": 102,
+        "pages_visited": 101,
+        "relevant_pages_found": 101,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.13114591696948555,
+        "execution_time_in_seconds": 19.801174,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.3315749168395996
+      },
+      {
+        "batch_number": 106,
+        "pages_visited": 105,
+        "relevant_pages_found": 105,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.13210657962917316,
+        "execution_time_in_seconds": 20.115093,
+        "avg_frontier_position": 2.6176470588235294,
+        "new_urls_added": 68,
+        "relevance_calculation_time": 0.3437323570251465
+      },
+      {
+        "batch_number": 106,
+        "pages_visited": 105,
+        "relevant_pages_found": 105,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.13210657962917316,
+        "execution_time_in_seconds": 20.116079,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.3437323570251465
+      },
+      {
+        "batch_number": 106,
+        "pages_visited": 105,
+        "relevant_pages_found": 105,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.13210657962917316,
+        "execution_time_in_seconds": 20.116917,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.3437323570251465
+      },
+      {
+        "batch_number": 106,
+        "pages_visited": 105,
+        "relevant_pages_found": 105,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.13210657962917316,
+        "execution_time_in_seconds": 20.117952,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.3437323570251465
+      },
+      {
+        "batch_number": 114,
+        "pages_visited": 113,
+        "relevant_pages_found": 113,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.1279475772506638,
+        "execution_time_in_seconds": 20.353901,
+        "avg_frontier_position": 968.8943089430894,
+        "new_urls_added": 123,
+        "relevance_calculation_time": 0.3531160354614258
+      },
+      {
+        "batch_number": 114,
+        "pages_visited": 113,
+        "relevant_pages_found": 113,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.1279475772506638,
+        "execution_time_in_seconds": 20.354795,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.3531160354614258
+      },
+      {
+        "batch_number": 114,
+        "pages_visited": 113,
+        "relevant_pages_found": 113,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.1279475772506638,
+        "execution_time_in_seconds": 20.355657,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.3531160354614258
+      },
+      {
+        "batch_number": 114,
+        "pages_visited": 113,
+        "relevant_pages_found": 113,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.1279475772506638,
+        "execution_time_in_seconds": 20.356511,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.3531160354614258
+      },
+      {
+        "batch_number": 114,
+        "pages_visited": 113,
+        "relevant_pages_found": 113,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.1279475772506638,
+        "execution_time_in_seconds": 20.357334,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.3531160354614258
+      },
+      {
+        "batch_number": 114,
+        "pages_visited": 113,
+        "relevant_pages_found": 113,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.1279475772506638,
+        "execution_time_in_seconds": 20.358122,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.3531160354614258
+      },
+      {
+        "batch_number": 114,
+        "pages_visited": 113,
+        "relevant_pages_found": 113,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.1279475772506638,
+        "execution_time_in_seconds": 20.359118,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.3531160354614258
+      },
+      {
+        "batch_number": 114,
+        "pages_visited": 113,
+        "relevant_pages_found": 113,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.1279475772506638,
+        "execution_time_in_seconds": 20.3602,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.3531160354614258
+      },
+      {
+        "batch_number": 119,
+        "pages_visited": 118,
+        "relevant_pages_found": 118,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.12761630420791076,
+        "execution_time_in_seconds": 20.904862,
+        "avg_frontier_position": 878.6170212765958,
+        "new_urls_added": 94,
+        "relevance_calculation_time": 0.36451172828674316
+      },
+      {
+        "batch_number": 119,
+        "pages_visited": 118,
+        "relevant_pages_found": 118,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.12761630420791076,
+        "execution_time_in_seconds": 20.905727,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.36451172828674316
+      },
+      {
+        "batch_number": 119,
+        "pages_visited": 118,
+        "relevant_pages_found": 118,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.12761630420791076,
+        "execution_time_in_seconds": 20.906557,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.36451172828674316
+      },
+      {
+        "batch_number": 119,
+        "pages_visited": 118,
+        "relevant_pages_found": 118,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.12761630420791076,
+        "execution_time_in_seconds": 20.90737,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.36451172828674316
+      },
+      {
+        "batch_number": 119,
+        "pages_visited": 118,
+        "relevant_pages_found": 118,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.12761630420791076,
+        "execution_time_in_seconds": 20.908173,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.36451172828674316
+      },
+      {
+        "batch_number": 124,
+        "pages_visited": 123,
+        "relevant_pages_found": 123,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.12716972577694977,
+        "execution_time_in_seconds": 21.836672,
+        "avg_frontier_position": 419.6385542168675,
+        "new_urls_added": 83,
+        "relevance_calculation_time": 0.37371039390563965
+      },
+      {
+        "batch_number": 124,
+        "pages_visited": 123,
+        "relevant_pages_found": 123,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.12716972577694977,
+        "execution_time_in_seconds": 21.837768,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.37371039390563965
+      },
+      {
+        "batch_number": 124,
+        "pages_visited": 123,
+        "relevant_pages_found": 123,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.12716972577694977,
+        "execution_time_in_seconds": 21.838654,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.37371039390563965
+      },
+      {
+        "batch_number": 124,
+        "pages_visited": 123,
+        "relevant_pages_found": 123,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.12716972577694977,
+        "execution_time_in_seconds": 21.839621,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.37371039390563965
+      },
+      {
+        "batch_number": 124,
+        "pages_visited": 123,
+        "relevant_pages_found": 123,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.12716972577694977,
+        "execution_time_in_seconds": 21.840681,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.37371039390563965
+      },
+      {
+        "batch_number": 131,
+        "pages_visited": 130,
+        "relevant_pages_found": 130,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.1263767519202398,
+        "execution_time_in_seconds": 22.403411,
+        "avg_frontier_position": 603.5798319327731,
+        "new_urls_added": 119,
+        "relevance_calculation_time": 0.3858201503753662
+      },
+      {
+        "batch_number": 131,
+        "pages_visited": 130,
+        "relevant_pages_found": 130,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.1263767519202398,
+        "execution_time_in_seconds": 22.404519,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.3858201503753662
+      },
+      {
+        "batch_number": 131,
+        "pages_visited": 130,
+        "relevant_pages_found": 130,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.1263767519202398,
+        "execution_time_in_seconds": 22.405507,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.3858201503753662
+      },
+      {
+        "batch_number": 131,
+        "pages_visited": 130,
+        "relevant_pages_found": 130,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.1263767519202398,
+        "execution_time_in_seconds": 22.406408,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.3858201503753662
+      },
+      {
+        "batch_number": 131,
+        "pages_visited": 130,
+        "relevant_pages_found": 130,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.1263767519202398,
+        "execution_time_in_seconds": 22.407306,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.3858201503753662
+      },
+      {
+        "batch_number": 131,
+        "pages_visited": 130,
+        "relevant_pages_found": 130,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.1263767519202398,
+        "execution_time_in_seconds": 22.408133,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.3858201503753662
+      },
+      {
+        "batch_number": 131,
+        "pages_visited": 130,
+        "relevant_pages_found": 130,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.1263767519202398,
+        "execution_time_in_seconds": 22.408984,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.3858201503753662
+      },
+      {
+        "batch_number": 139,
+        "pages_visited": 138,
+        "relevant_pages_found": 138,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.12746120516221224,
+        "execution_time_in_seconds": 22.922704,
+        "avg_frontier_position": 183.9083969465649,
+        "new_urls_added": 131,
+        "relevance_calculation_time": 0.4017183780670166
+      },
+      {
+        "batch_number": 139,
+        "pages_visited": 138,
+        "relevant_pages_found": 138,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.12746120516221224,
+        "execution_time_in_seconds": 22.923836,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.4017183780670166
+      },
+      {
+        "batch_number": 139,
+        "pages_visited": 138,
+        "relevant_pages_found": 138,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.12746120516221224,
+        "execution_time_in_seconds": 22.924682,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.4017183780670166
+      },
+      {
+        "batch_number": 139,
+        "pages_visited": 138,
+        "relevant_pages_found": 138,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.12746120516221224,
+        "execution_time_in_seconds": 22.925505,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.4017183780670166
+      },
+      {
+        "batch_number": 139,
+        "pages_visited": 138,
+        "relevant_pages_found": 138,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.12746120516221224,
+        "execution_time_in_seconds": 22.926316,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.4017183780670166
+      },
+      {
+        "batch_number": 139,
+        "pages_visited": 138,
+        "relevant_pages_found": 138,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.12746120516221224,
+        "execution_time_in_seconds": 22.927143,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.4017183780670166
+      },
+      {
+        "batch_number": 139,
+        "pages_visited": 138,
+        "relevant_pages_found": 138,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.12746120516221224,
+        "execution_time_in_seconds": 22.928067,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.4017183780670166
+      },
+      {
+        "batch_number": 139,
+        "pages_visited": 138,
+        "relevant_pages_found": 138,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.12746120516221224,
+        "execution_time_in_seconds": 22.928888,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.4017183780670166
+      },
+      {
+        "batch_number": 147,
+        "pages_visited": 146,
+        "relevant_pages_found": 146,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.1262992020108674,
+        "execution_time_in_seconds": 23.787833,
+        "avg_frontier_position": 950.4090909090909,
+        "new_urls_added": 132,
+        "relevance_calculation_time": 0.42047548294067383
+      },
+      {
+        "batch_number": 147,
+        "pages_visited": 146,
+        "relevant_pages_found": 146,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.1262992020108674,
+        "execution_time_in_seconds": 23.789108,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.42047548294067383
+      },
+      {
+        "batch_number": 147,
+        "pages_visited": 146,
+        "relevant_pages_found": 146,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.1262992020108674,
+        "execution_time_in_seconds": 23.789994,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.42047548294067383
+      },
+      {
+        "batch_number": 147,
+        "pages_visited": 146,
+        "relevant_pages_found": 146,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.1262992020108674,
+        "execution_time_in_seconds": 23.790879,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.42047548294067383
+      },
+      {
+        "batch_number": 147,
+        "pages_visited": 146,
+        "relevant_pages_found": 146,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.1262992020108674,
+        "execution_time_in_seconds": 23.791715,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.42047548294067383
+      },
+      {
+        "batch_number": 147,
+        "pages_visited": 146,
+        "relevant_pages_found": 146,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.1262992020108674,
+        "execution_time_in_seconds": 23.792541,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.42047548294067383
+      },
+      {
+        "batch_number": 147,
+        "pages_visited": 146,
+        "relevant_pages_found": 146,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.1262992020108674,
+        "execution_time_in_seconds": 23.79337,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.42047548294067383
+      },
+      {
+        "batch_number": 147,
+        "pages_visited": 146,
+        "relevant_pages_found": 146,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.1262992020108674,
+        "execution_time_in_seconds": 23.794204,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.42047548294067383
+      },
+      {
+        "batch_number": 155,
+        "pages_visited": 154,
+        "relevant_pages_found": 154,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.12424524676822656,
+        "execution_time_in_seconds": 24.158593,
+        "avg_frontier_position": 1286.141791044776,
+        "new_urls_added": 134,
+        "relevance_calculation_time": 0.433687686920166
+      },
+      {
+        "batch_number": 155,
+        "pages_visited": 154,
+        "relevant_pages_found": 154,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.12424524676822656,
+        "execution_time_in_seconds": 24.159569,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.433687686920166
+      },
+      {
+        "batch_number": 155,
+        "pages_visited": 154,
+        "relevant_pages_found": 154,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.12424524676822656,
+        "execution_time_in_seconds": 24.160478,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.433687686920166
+      },
+      {
+        "batch_number": 155,
+        "pages_visited": 154,
+        "relevant_pages_found": 154,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.12424524676822656,
+        "execution_time_in_seconds": 24.162075,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.433687686920166
+      },
+      {
+        "batch_number": 155,
+        "pages_visited": 154,
+        "relevant_pages_found": 154,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.12424524676822656,
+        "execution_time_in_seconds": 24.163618,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.433687686920166
+      },
+      {
+        "batch_number": 155,
+        "pages_visited": 154,
+        "relevant_pages_found": 154,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.12424524676822656,
+        "execution_time_in_seconds": 24.16503,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.433687686920166
+      },
+      {
+        "batch_number": 155,
+        "pages_visited": 154,
+        "relevant_pages_found": 154,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.12424524676822656,
+        "execution_time_in_seconds": 24.166194,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.433687686920166
+      },
+      {
+        "batch_number": 155,
+        "pages_visited": 154,
+        "relevant_pages_found": 154,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.12424524676822656,
+        "execution_time_in_seconds": 24.167052,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.433687686920166
+      },
+      {
+        "batch_number": 163,
+        "pages_visited": 162,
+        "relevant_pages_found": 162,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.1240292338232998,
+        "execution_time_in_seconds": 24.845195,
+        "avg_frontier_position": 337.03007518796994,
+        "new_urls_added": 133,
+        "relevance_calculation_time": 0.44840359687805176
+      },
+      {
+        "batch_number": 163,
+        "pages_visited": 162,
+        "relevant_pages_found": 162,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.1240292338232998,
+        "execution_time_in_seconds": 24.846161,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.44840359687805176
+      },
+      {
+        "batch_number": 163,
+        "pages_visited": 162,
+        "relevant_pages_found": 162,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.1240292338232998,
+        "execution_time_in_seconds": 24.847023,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.44840359687805176
+      },
+      {
+        "batch_number": 163,
+        "pages_visited": 162,
+        "relevant_pages_found": 162,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.1240292338232998,
+        "execution_time_in_seconds": 24.847838,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.44840359687805176
+      },
+      {
+        "batch_number": 163,
+        "pages_visited": 162,
+        "relevant_pages_found": 162,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.1240292338232998,
+        "execution_time_in_seconds": 24.84863,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.44840359687805176
+      },
+      {
+        "batch_number": 163,
+        "pages_visited": 162,
+        "relevant_pages_found": 162,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.1240292338232998,
+        "execution_time_in_seconds": 24.849423,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.44840359687805176
+      },
+      {
+        "batch_number": 163,
+        "pages_visited": 162,
+        "relevant_pages_found": 162,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.1240292338232998,
+        "execution_time_in_seconds": 24.850201,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.44840359687805176
+      },
+      {
+        "batch_number": 163,
+        "pages_visited": 162,
+        "relevant_pages_found": 162,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.1240292338232998,
+        "execution_time_in_seconds": 24.850998,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.44840359687805176
+      },
+      {
+        "batch_number": 167,
+        "pages_visited": 166,
+        "relevant_pages_found": 166,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.12438854016390231,
+        "execution_time_in_seconds": 25.384928,
+        "avg_frontier_position": 600.044776119403,
+        "new_urls_added": 67,
+        "relevance_calculation_time": 0.4570121765136719
+      },
+      {
+        "batch_number": 167,
+        "pages_visited": 166,
+        "relevant_pages_found": 166,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.12438854016390231,
+        "execution_time_in_seconds": 25.385863,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.4570121765136719
+      },
+      {
+        "batch_number": 167,
+        "pages_visited": 166,
+        "relevant_pages_found": 166,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.12438854016390231,
+        "execution_time_in_seconds": 25.386778,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.4570121765136719
+      },
+      {
+        "batch_number": 167,
+        "pages_visited": 166,
+        "relevant_pages_found": 166,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.12438854016390231,
+        "execution_time_in_seconds": 25.387647,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.4570121765136719
+      },
+      {
+        "batch_number": 174,
+        "pages_visited": 173,
+        "relevant_pages_found": 173,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.12449037096071516,
+        "execution_time_in_seconds": 25.889965,
+        "avg_frontier_position": 144.72033898305085,
+        "new_urls_added": 118,
+        "relevance_calculation_time": 0.47119903564453125
+      },
+      {
+        "batch_number": 174,
+        "pages_visited": 173,
+        "relevant_pages_found": 173,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.12449037096071516,
+        "execution_time_in_seconds": 25.89107,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.47119903564453125
+      },
+      {
+        "batch_number": 174,
+        "pages_visited": 173,
+        "relevant_pages_found": 173,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.12449037096071516,
+        "execution_time_in_seconds": 25.892103,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.47119903564453125
+      },
+      {
+        "batch_number": 174,
+        "pages_visited": 173,
+        "relevant_pages_found": 173,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.12449037096071516,
+        "execution_time_in_seconds": 25.892919,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.47119903564453125
+      },
+      {
+        "batch_number": 174,
+        "pages_visited": 173,
+        "relevant_pages_found": 173,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.12449037096071516,
+        "execution_time_in_seconds": 25.893774,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.47119903564453125
+      },
+      {
+        "batch_number": 174,
+        "pages_visited": 173,
+        "relevant_pages_found": 173,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.12449037096071516,
+        "execution_time_in_seconds": 25.894606,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.47119903564453125
+      },
+      {
+        "batch_number": 174,
+        "pages_visited": 173,
+        "relevant_pages_found": 173,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.12449037096071516,
+        "execution_time_in_seconds": 25.895386,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.47119903564453125
+      },
+      {
+        "batch_number": 182,
+        "pages_visited": 181,
+        "relevant_pages_found": 181,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.12413615203485709,
+        "execution_time_in_seconds": 26.74032,
+        "avg_frontier_position": 335.52592592592595,
+        "new_urls_added": 135,
+        "relevance_calculation_time": 0.4906165599822998
+      },
+      {
+        "batch_number": 182,
+        "pages_visited": 181,
+        "relevant_pages_found": 181,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.12413615203485709,
+        "execution_time_in_seconds": 26.741248,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.4906165599822998
+      },
+      {
+        "batch_number": 182,
+        "pages_visited": 181,
+        "relevant_pages_found": 181,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.12413615203485709,
+        "execution_time_in_seconds": 26.742178,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.4906165599822998
+      },
+      {
+        "batch_number": 182,
+        "pages_visited": 181,
+        "relevant_pages_found": 181,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.12413615203485709,
+        "execution_time_in_seconds": 26.743038,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.4906165599822998
+      },
+      {
+        "batch_number": 182,
+        "pages_visited": 181,
+        "relevant_pages_found": 181,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.12413615203485709,
+        "execution_time_in_seconds": 26.743895,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.4906165599822998
+      },
+      {
+        "batch_number": 182,
+        "pages_visited": 181,
+        "relevant_pages_found": 181,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.12413615203485709,
+        "execution_time_in_seconds": 26.744831,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.4906165599822998
+      },
+      {
+        "batch_number": 182,
+        "pages_visited": 181,
+        "relevant_pages_found": 181,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.12413615203485709,
+        "execution_time_in_seconds": 26.745667,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.4906165599822998
+      },
+      {
+        "batch_number": 182,
+        "pages_visited": 181,
+        "relevant_pages_found": 181,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.12413615203485709,
+        "execution_time_in_seconds": 26.746528,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.4906165599822998
+      },
+      {
+        "batch_number": 190,
+        "pages_visited": 189,
+        "relevant_pages_found": 189,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.12381840264259544,
+        "execution_time_in_seconds": 27.375341,
+        "avg_frontier_position": 260.3333333333333,
+        "new_urls_added": 132,
+        "relevance_calculation_time": 0.5053534507751465
+      },
+      {
+        "batch_number": 190,
+        "pages_visited": 189,
+        "relevant_pages_found": 189,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.12381840264259544,
+        "execution_time_in_seconds": 27.376362,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.5053534507751465
+      },
+      {
+        "batch_number": 190,
+        "pages_visited": 189,
+        "relevant_pages_found": 189,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.12381840264259544,
+        "execution_time_in_seconds": 27.377284,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.5053534507751465
+      },
+      {
+        "batch_number": 190,
+        "pages_visited": 189,
+        "relevant_pages_found": 189,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.12381840264259544,
+        "execution_time_in_seconds": 27.378552,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.5053534507751465
+      },
+      {
+        "batch_number": 190,
+        "pages_visited": 189,
+        "relevant_pages_found": 189,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.12381840264259544,
+        "execution_time_in_seconds": 27.379508,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.5053534507751465
+      },
+      {
+        "batch_number": 190,
+        "pages_visited": 189,
+        "relevant_pages_found": 189,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.12381840264259544,
+        "execution_time_in_seconds": 27.380347,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.5053534507751465
+      },
+      {
+        "batch_number": 190,
+        "pages_visited": 189,
+        "relevant_pages_found": 189,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.12381840264259544,
+        "execution_time_in_seconds": 27.381181,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.5053534507751465
+      },
+      {
+        "batch_number": 190,
+        "pages_visited": 189,
+        "relevant_pages_found": 189,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.12381840264259544,
+        "execution_time_in_seconds": 27.382059,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.5053534507751465
+      },
+      {
+        "batch_number": 198,
+        "pages_visited": 197,
+        "relevant_pages_found": 197,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.12410696738713398,
+        "execution_time_in_seconds": 27.729963,
+        "avg_frontier_position": 182.65671641791045,
+        "new_urls_added": 134,
+        "relevance_calculation_time": 0.5188677310943604
+      },
+      {
+        "batch_number": 198,
+        "pages_visited": 197,
+        "relevant_pages_found": 197,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.12410696738713398,
+        "execution_time_in_seconds": 27.730836,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.5188677310943604
+      },
+      {
+        "batch_number": 198,
+        "pages_visited": 197,
+        "relevant_pages_found": 197,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.12410696738713398,
+        "execution_time_in_seconds": 27.731675,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.5188677310943604
+      },
+      {
+        "batch_number": 198,
+        "pages_visited": 197,
+        "relevant_pages_found": 197,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.12410696738713398,
+        "execution_time_in_seconds": 27.732476,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.5188677310943604
+      },
+      {
+        "batch_number": 198,
+        "pages_visited": 197,
+        "relevant_pages_found": 197,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.12410696738713398,
+        "execution_time_in_seconds": 27.733253,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.5188677310943604
+      },
+      {
+        "batch_number": 198,
+        "pages_visited": 197,
+        "relevant_pages_found": 197,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.12410696738713398,
+        "execution_time_in_seconds": 27.734035,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.5188677310943604
+      },
+      {
+        "batch_number": 198,
+        "pages_visited": 197,
+        "relevant_pages_found": 197,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.12410696738713398,
+        "execution_time_in_seconds": 27.734797,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.5188677310943604
+      },
+      {
+        "batch_number": 198,
+        "pages_visited": 197,
+        "relevant_pages_found": 197,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.12410696738713398,
+        "execution_time_in_seconds": 27.735547,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.5188677310943604
+      },
+      {
+        "batch_number": 206,
+        "pages_visited": 205,
+        "relevant_pages_found": 205,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.12381353659005723,
+        "execution_time_in_seconds": 28.333637,
+        "avg_frontier_position": 383.203007518797,
+        "new_urls_added": 133,
+        "relevance_calculation_time": 0.5318975448608398
+      },
+      {
+        "batch_number": 206,
+        "pages_visited": 205,
+        "relevant_pages_found": 205,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.12381353659005723,
+        "execution_time_in_seconds": 28.334636,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.5318975448608398
+      },
+      {
+        "batch_number": 206,
+        "pages_visited": 205,
+        "relevant_pages_found": 205,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.12381353659005723,
+        "execution_time_in_seconds": 28.335519,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.5318975448608398
+      },
+      {
+        "batch_number": 206,
+        "pages_visited": 205,
+        "relevant_pages_found": 205,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.12381353659005723,
+        "execution_time_in_seconds": 28.336397,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.5318975448608398
+      },
+      {
+        "batch_number": 206,
+        "pages_visited": 205,
+        "relevant_pages_found": 205,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.12381353659005723,
+        "execution_time_in_seconds": 28.337256,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.5318975448608398
+      },
+      {
+        "batch_number": 206,
+        "pages_visited": 205,
+        "relevant_pages_found": 205,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.12381353659005723,
+        "execution_time_in_seconds": 28.338082,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.5318975448608398
+      },
+      {
+        "batch_number": 206,
+        "pages_visited": 205,
+        "relevant_pages_found": 205,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.12381353659005723,
+        "execution_time_in_seconds": 28.3389,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.5318975448608398
+      },
+      {
+        "batch_number": 206,
+        "pages_visited": 205,
+        "relevant_pages_found": 205,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.12381353659005723,
+        "execution_time_in_seconds": 28.339698,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.5318975448608398
+      },
+      {
+        "batch_number": 208,
+        "pages_visited": 207,
+        "relevant_pages_found": 207,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.12397737629610994,
+        "execution_time_in_seconds": 28.53555,
+        "avg_frontier_position": 2.0303030303030303,
+        "new_urls_added": 33,
+        "relevance_calculation_time": 0.5345447063446045
+      },
+      {
+        "batch_number": 208,
+        "pages_visited": 207,
+        "relevant_pages_found": 207,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.12397737629610994,
+        "execution_time_in_seconds": 28.536572,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.5345447063446045
+      },
+      {
+        "batch_number": 216,
+        "pages_visited": 215,
+        "relevant_pages_found": 215,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.1238589656241603,
+        "execution_time_in_seconds": 29.2556,
+        "avg_frontier_position": 214.95555555555555,
+        "new_urls_added": 135,
+        "relevance_calculation_time": 0.5513427257537842
+      },
+      {
+        "batch_number": 216,
+        "pages_visited": 215,
+        "relevant_pages_found": 215,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.1238589656241603,
+        "execution_time_in_seconds": 29.257096,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.5513427257537842
+      },
+      {
+        "batch_number": 216,
+        "pages_visited": 215,
+        "relevant_pages_found": 215,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.1238589656241603,
+        "execution_time_in_seconds": 29.258019,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.5513427257537842
+      },
+      {
+        "batch_number": 216,
+        "pages_visited": 215,
+        "relevant_pages_found": 215,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.1238589656241603,
+        "execution_time_in_seconds": 29.258872,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.5513427257537842
+      },
+      {
+        "batch_number": 216,
+        "pages_visited": 215,
+        "relevant_pages_found": 215,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.1238589656241603,
+        "execution_time_in_seconds": 29.259765,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.5513427257537842
+      },
+      {
+        "batch_number": 216,
+        "pages_visited": 215,
+        "relevant_pages_found": 215,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.1238589656241603,
+        "execution_time_in_seconds": 29.260643,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.5513427257537842
+      },
+      {
+        "batch_number": 216,
+        "pages_visited": 215,
+        "relevant_pages_found": 215,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.1238589656241603,
+        "execution_time_in_seconds": 29.26156,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.5513427257537842
+      },
+      {
+        "batch_number": 216,
+        "pages_visited": 215,
+        "relevant_pages_found": 215,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.1238589656241603,
+        "execution_time_in_seconds": 29.262364,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.5513427257537842
+      },
+      {
+        "batch_number": 221,
+        "pages_visited": 220,
+        "relevant_pages_found": 220,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.12359438301876285,
+        "execution_time_in_seconds": 30.323902,
+        "avg_frontier_position": 685.855421686747,
+        "new_urls_added": 83,
+        "relevance_calculation_time": 0.5658247470855713
+      },
+      {
+        "batch_number": 221,
+        "pages_visited": 220,
+        "relevant_pages_found": 220,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.12359438301876285,
+        "execution_time_in_seconds": 30.324866,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.5658247470855713
+      },
+      {
+        "batch_number": 221,
+        "pages_visited": 220,
+        "relevant_pages_found": 220,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.12359438301876285,
+        "execution_time_in_seconds": 30.325808,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.5658247470855713
+      },
+      {
+        "batch_number": 221,
+        "pages_visited": 220,
+        "relevant_pages_found": 220,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.12359438301876285,
+        "execution_time_in_seconds": 30.326678,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.5658247470855713
+      },
+      {
+        "batch_number": 221,
+        "pages_visited": 220,
+        "relevant_pages_found": 220,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.12359438301876285,
+        "execution_time_in_seconds": 30.32757,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.5658247470855713
+      },
+      {
+        "batch_number": 229,
+        "pages_visited": 228,
+        "relevant_pages_found": 228,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.1239934486293665,
+        "execution_time_in_seconds": 31.137787,
+        "avg_frontier_position": 60.08270676691729,
+        "new_urls_added": 133,
+        "relevance_calculation_time": 0.5884361267089844
+      },
+      {
+        "batch_number": 229,
+        "pages_visited": 228,
+        "relevant_pages_found": 228,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.1239934486293665,
+        "execution_time_in_seconds": 31.139159,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.5884361267089844
+      },
+      {
+        "batch_number": 229,
+        "pages_visited": 228,
+        "relevant_pages_found": 228,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.1239934486293665,
+        "execution_time_in_seconds": 31.140365,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.5884361267089844
+      },
+      {
+        "batch_number": 229,
+        "pages_visited": 228,
+        "relevant_pages_found": 228,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.1239934486293665,
+        "execution_time_in_seconds": 31.141234,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.5884361267089844
+      },
+      {
+        "batch_number": 229,
+        "pages_visited": 228,
+        "relevant_pages_found": 228,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.1239934486293665,
+        "execution_time_in_seconds": 31.142097,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.5884361267089844
+      },
+      {
+        "batch_number": 229,
+        "pages_visited": 228,
+        "relevant_pages_found": 228,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.1239934486293665,
+        "execution_time_in_seconds": 31.142979,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.5884361267089844
+      },
+      {
+        "batch_number": 229,
+        "pages_visited": 228,
+        "relevant_pages_found": 228,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.1239934486293665,
+        "execution_time_in_seconds": 31.143799,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.5884361267089844
+      },
+      {
+        "batch_number": 229,
+        "pages_visited": 228,
+        "relevant_pages_found": 228,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.1239934486293665,
+        "execution_time_in_seconds": 31.144624,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.5884361267089844
+      },
+      {
+        "batch_number": 237,
+        "pages_visited": 236,
+        "relevant_pages_found": 236,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.12337957120430486,
+        "execution_time_in_seconds": 31.712183,
+        "avg_frontier_position": 453.1503759398496,
+        "new_urls_added": 133,
+        "relevance_calculation_time": 0.5999557971954346
+      },
+      {
+        "batch_number": 237,
+        "pages_visited": 236,
+        "relevant_pages_found": 236,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.12337957120430486,
+        "execution_time_in_seconds": 31.713344,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.5999557971954346
+      },
+      {
+        "batch_number": 237,
+        "pages_visited": 236,
+        "relevant_pages_found": 236,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.12337957120430486,
+        "execution_time_in_seconds": 31.714479,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.5999557971954346
+      },
+      {
+        "batch_number": 237,
+        "pages_visited": 236,
+        "relevant_pages_found": 236,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.12337957120430486,
+        "execution_time_in_seconds": 31.715355,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.5999557971954346
+      },
+      {
+        "batch_number": 237,
+        "pages_visited": 236,
+        "relevant_pages_found": 236,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.12337957120430486,
+        "execution_time_in_seconds": 31.716185,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.5999557971954346
+      },
+      {
+        "batch_number": 237,
+        "pages_visited": 236,
+        "relevant_pages_found": 236,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.12337957120430486,
+        "execution_time_in_seconds": 31.717011,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.5999557971954346
+      },
+      {
+        "batch_number": 237,
+        "pages_visited": 236,
+        "relevant_pages_found": 236,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.12337957120430486,
+        "execution_time_in_seconds": 31.717819,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.5999557971954346
+      },
+      {
+        "batch_number": 237,
+        "pages_visited": 236,
+        "relevant_pages_found": 236,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.12337957120430486,
+        "execution_time_in_seconds": 31.718789,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.5999557971954346
+      },
+      {
+        "batch_number": 244,
+        "pages_visited": 243,
+        "relevant_pages_found": 243,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.12353424159335291,
+        "execution_time_in_seconds": 32.708724,
+        "avg_frontier_position": 418.46610169491527,
+        "new_urls_added": 118,
+        "relevance_calculation_time": 0.6237401962280273
+      },
+      {
+        "batch_number": 244,
+        "pages_visited": 243,
+        "relevant_pages_found": 243,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.12353424159335291,
+        "execution_time_in_seconds": 32.709876,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.6237401962280273
+      },
+      {
+        "batch_number": 244,
+        "pages_visited": 243,
+        "relevant_pages_found": 243,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.12353424159335291,
+        "execution_time_in_seconds": 32.710927,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.6237401962280273
+      },
+      {
+        "batch_number": 244,
+        "pages_visited": 243,
+        "relevant_pages_found": 243,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.12353424159335291,
+        "execution_time_in_seconds": 32.711957,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.6237401962280273
+      },
+      {
+        "batch_number": 244,
+        "pages_visited": 243,
+        "relevant_pages_found": 243,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.12353424159335291,
+        "execution_time_in_seconds": 32.7129,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.6237401962280273
+      },
+      {
+        "batch_number": 244,
+        "pages_visited": 243,
+        "relevant_pages_found": 243,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.12353424159335291,
+        "execution_time_in_seconds": 32.713854,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.6237401962280273
+      },
+      {
+        "batch_number": 244,
+        "pages_visited": 243,
+        "relevant_pages_found": 243,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.12353424159335291,
+        "execution_time_in_seconds": 32.71478,
+        "avg_frontier_position": 0,
+        "new_urls_added": 0,
+        "relevance_calculation_time": 0.6237401962280273
+      },
+      {
+        "batch_number": 251,
+        "pages_visited": 250,
+        "relevant_pages_found": 250,
+        "harvest_rate": 1.0,
+        "average_relevance": 0.12394918052579026,
+        "execution_time_in_seconds": 33.765887,
+        "avg_frontier_position": 435.8617886178862,
+        "new_urls_added": 123,
+        "relevance_calculation_time": 0.6391675472259521
+      }
+    ],
+    "pages": [
+      {
+        "url": "https://de.wikipedia.org/wiki/Russland",
+        "score": 0.2844359486830185,
+        "title": "Russland – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Digitale_Revolution",
+        "score": 0.23295764209979342,
+        "title": "Digitale Revolution – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Finite-Elemente-Methode",
+        "score": 0.22638442072054993,
+        "title": "Finite-Elemente-Methode – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Turkmenistan",
+        "score": 0.22600805771770463,
+        "title": "Turkmenistan – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Akkumulator",
+        "score": 0.22482940254424452,
+        "title": "Akkumulator – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Rudolf_He%C3%9F",
+        "score": 0.22246315975896233,
+        "title": "Rudolf Heß – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Polen",
+        "score": 0.22091545001408247,
+        "title": "Polen – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Antriebsbatterie",
+        "score": 0.22086458232941938,
+        "title": "Antriebsbatterie – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Zweites_Vatikanisches_Konzil",
+        "score": 0.21934237496779121,
+        "title": "Zweites Vatikanisches Konzil – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Wikipedia:Weblinks",
+        "score": 0.2188614573073146,
+        "title": "Wikipedia:Weblinks – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Korruption",
+        "score": 0.21849683851825694,
+        "title": "Korruption – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/NS-Propaganda",
+        "score": 0.21440739456393415,
+        "title": "Nationalsozialistische Propaganda – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Der_gro%C3%9Fe_Diktator",
+        "score": 0.20790668568598347,
+        "title": "Der große Diktator – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Korea_unter_japanischer_Herrschaft",
+        "score": 0.20641504707974914,
+        "title": "Korea unter japanischer Herrschaft – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Otto_I._(HRR)",
+        "score": 0.20281747644899611,
+        "title": "Otto I. (HRR) – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/20._Jahrhundert",
+        "score": 0.20124221578751864,
+        "title": "20. Jahrhundert – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Pastoral",
+        "score": 0.20077674223342282,
+        "title": "Seelsorge – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Berlin-Blockade",
+        "score": 0.19954776213304093,
+        "title": "Berlin-Blockade – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Adolf_Hitler",
+        "score": 0.19815453391313834,
+        "title": "Adolf Hitler – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/West-Berlin",
+        "score": 0.1973928946241702,
+        "title": "West-Berlin – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Sexueller_Missbrauch",
+        "score": 0.19695009250553575,
+        "title": "Sexueller Missbrauch – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Fu%C3%9Fball-Weltmeisterschaft_2006",
+        "score": 0.1939154466570789,
+        "title": "Fußball-Weltmeisterschaft 2006 – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Gesch%C3%BCtz",
+        "score": 0.19285949073249914,
+        "title": "Geschütz – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Elektrische_Leitf%C3%A4higkeit",
+        "score": 0.1928241969007509,
+        "title": "Elektrische Leitfähigkeit – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Internet",
+        "score": 0.19050325000505658,
+        "title": "Internet – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Zweite_Polnische_Republik",
+        "score": 0.18992083813455052,
+        "title": "Zweite Polnische Republik – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Meinungsfreiheit",
+        "score": 0.18916570027443047,
+        "title": "Meinungsfreiheit – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Liturgie",
+        "score": 0.1891364450103911,
+        "title": "Liturgie – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Atombombenabw%C3%BCrfe_auf_Hiroshima_und_Nagasaki",
+        "score": 0.18897371761723986,
+        "title": "Atombombenabwürfe auf Hiroshima und Nagasaki – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Mein_Kampf",
+        "score": 0.18870679452024708,
+        "title": "Mein Kampf – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Fat_Man",
+        "score": 0.18863351540365042,
+        "title": "Fat Man – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/English_Football_League",
+        "score": 0.1879312858910795,
+        "title": "English Football League – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Zweiter_Japanisch-Chinesischer_Krieg",
+        "score": 0.18784078241893692,
+        "title": "Zweiter Japanisch-Chinesischer Krieg – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Chinesische_Mauer",
+        "score": 0.1857675463459742,
+        "title": "Chinesische Mauer – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Stern_(Zeitschrift)",
+        "score": 0.18521918330998088,
+        "title": "Stern (Zeitschrift) – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Britische_Ostindien-Kompanie",
+        "score": 0.18272245542112178,
+        "title": "Britische Ostindien-Kompanie – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Paul_von_Hindenburg",
+        "score": 0.18243005512967814,
+        "title": "Paul von Hindenburg – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/10._Jahrhundert",
+        "score": 0.18076285998969233,
+        "title": "10. Jahrhundert – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Zweiter_Weltkrieg",
+        "score": 0.18030423624121614,
+        "title": "Zweiter Weltkrieg – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Aljaksandr_Lukaschenka",
+        "score": 0.1758197002111824,
+        "title": "Aljaksandr Lukaschenka – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Zeit_der_Drei_Reiche",
+        "score": 0.1757596146509461,
+        "title": "Zeit der Drei Reiche – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Yuan-Dynastie",
+        "score": 0.17570350890021427,
+        "title": "Yuan-Dynastie – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Tell_Halaf",
+        "score": 0.1747179409501457,
+        "title": "Tell Halaf – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Erster_Weltkrieg",
+        "score": 0.17397876506518728,
+        "title": "Erster Weltkrieg – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Paul_VI.",
+        "score": 0.17388739216345112,
+        "title": "Paul VI. – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Georg_V._(Vereinigtes_K%C3%B6nigreich)",
+        "score": 0.17363828409298065,
+        "title": "Georg V. (Vereinigtes Königreich) – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Radio_Free_Europe/Radio_Liberty",
+        "score": 0.17032993483964629,
+        "title": "Radio Free Europe / Radio Liberty – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/%C4%B0lham_%C6%8Fliyev",
+        "score": 0.16987172512694526,
+        "title": "İlham Əliyev – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Petro_Poroschenko",
+        "score": 0.16927301448582796,
+        "title": "Petro Poroschenko – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Batterie_(Elektrotechnik)",
+        "score": 0.16703594183868836,
+        "title": "Batterie (Elektrotechnik) – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Galvanische_Zelle",
+        "score": 0.16686343475072707,
+        "title": "Galvanische Zelle – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Zwei-Klassen-Medizin",
+        "score": 0.1646497783574259,
+        "title": "Zwei-Klassen-Medizin – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Zweiter_Burenkrieg",
+        "score": 0.16421684361421784,
+        "title": "Zweiter Burenkrieg – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Graeme_English",
+        "score": 0.16346095697305568,
+        "title": "Graeme English – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Parlamentswahl_in_der_Republik_Moldau_April_2009",
+        "score": 0.16145947570367294,
+        "title": "Parlamentswahl in der Republik Moldau April 2009 – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Elo-Zahl",
+        "score": 0.16118157138473319,
+        "title": "Elo-Zahl – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Energiespeicher",
+        "score": 0.1610327212192444,
+        "title": "Energiespeicher – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Wikipedia:Weblinks/Ortsartikel",
+        "score": 0.15998908356492542,
+        "title": "Wikipedia:Weblinks/Ortsartikel – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Russisch-Belarussische_Union",
+        "score": 0.15889770670796213,
+        "title": "Russisch-Belarussische Union – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Agrarsektor",
+        "score": 0.15766907720823534,
+        "title": "Agrarsektor – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/EFL_Championship_2017/18",
+        "score": 0.15685722718372838,
+        "title": "EFL Championship 2017/18 – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Siegel",
+        "score": 0.15626177287228668,
+        "title": "Siegel – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Wikipedia_Diskussion:Weblinks/Ortsartikel",
+        "score": 0.15598435865420007,
+        "title": "Wikipedia Diskussion:Weblinks/Ortsartikel – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Luftkorridor_(Berlin)",
+        "score": 0.1559516910349881,
+        "title": "Luftkorridor (Berlin) – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Schlacht_um_Shanghai_(1932)",
+        "score": 0.15275413254239328,
+        "title": "Schlacht um Shanghai (1932) – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/The_Paris_Review",
+        "score": 0.15150786340051972,
+        "title": "The Paris Review – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Perwy_kanal",
+        "score": 0.1514175421475462,
+        "title": "Perwy kanal – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Drei_Parallelfl%C3%BCsse_Yunnans",
+        "score": 0.15108908289280693,
+        "title": "Drei Parallelflüsse Yunnans – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Sprache_des_Nationalsozialismus",
+        "score": 0.15051612835468028,
+        "title": "Sprache des Nationalsozialismus – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Qualitative_Analyse",
+        "score": 0.15026326688027808,
+        "title": "Qualitative Analyse – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Merriam-Webster%E2%80%99s_Collegiate_Dictionary",
+        "score": 0.1496727734392643,
+        "title": "Merriam-Webster’s Collegiate Dictionary – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Die_Dritte_Welt_im_Zweiten_Weltkrieg",
+        "score": 0.1496407550015736,
+        "title": "Die Dritte Welt im Zweiten Weltkrieg – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Medien_in_Berlin",
+        "score": 0.14879593940267177,
+        "title": "Medien in Berlin – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Baustatik",
+        "score": 0.14834265748562658,
+        "title": "Baustatik – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Weltkrieg",
+        "score": 0.14751173043900995,
+        "title": "Weltkrieg – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Kupfersulfat",
+        "score": 0.1467227127041178,
+        "title": "Kupfersulfat – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Fehlingsche_L%C3%B6sung",
+        "score": 0.14655283860164522,
+        "title": "Fehling-Probe – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Fehling-Probe",
+        "score": 0.14655283860164522,
+        "title": "Fehling-Probe – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/L%C3%B6sung_(Chemie)",
+        "score": 0.14625894092662053,
+        "title": "Lösung (Chemie) – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Pawel_Scheremet",
+        "score": 0.14594114596689264,
+        "title": "Pawel Grigorjewitsch Scheremet – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Pawel_Grigorjewitsch_Scheremet",
+        "score": 0.14594114596689264,
+        "title": "Pawel Grigorjewitsch Scheremet – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Fall_Lisa",
+        "score": 0.1448529218633619,
+        "title": "Fall Lisa – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Clean_Air_Car_Race",
+        "score": 0.14451425525631992,
+        "title": "Clean Air Car Race – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Heinrich_August_Winkler",
+        "score": 0.14376696948605347,
+        "title": "Heinrich August Winkler – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Die_Geschichte_der_Drei_Reiche",
+        "score": 0.14167942244011603,
+        "title": "Die Geschichte der Drei Reiche – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Dord_(Geisterwort)",
+        "score": 0.14157689655714123,
+        "title": "Dord (Geisterwort) – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Deutsches_Reich_in_den_Grenzen_vom_31._Dezember_1937",
+        "score": 0.13974466271985014,
+        "title": "Deutsches Reich in den Grenzen vom 31. Dezember 1937 – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Schlacht_um_Shanghai_(1937)",
+        "score": 0.1395241141897713,
+        "title": "Schlacht um Shanghai (1937) – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/US-Dollar",
+        "score": 0.13911261773483924,
+        "title": "US-Dollar – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Rundfunkpropaganda_im_Zweiten_Weltkrieg",
+        "score": 0.13908770934245712,
+        "title": "Rundfunkpropaganda im Zweiten Weltkrieg – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/U-21-Fu%C3%9Fball-Europameisterschaft_2006",
+        "score": 0.1388082075607342,
+        "title": "U-21-Fußball-Europameisterschaft 2006 – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Pamphlet",
+        "score": 0.13770225373721046,
+        "title": "Pamphlet – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Ingvar_Ambj%C3%B8rnsen",
+        "score": 0.13690939103029728,
+        "title": "Ingvar Ambjørnsen – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Tiefentladung",
+        "score": 0.1367852861320796,
+        "title": "Tiefentladung – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Parteiprogramm",
+        "score": 0.1367518528872034,
+        "title": "Parteiprogramm – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Politiker",
+        "score": 0.13627425738995252,
+        "title": "Politiker – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Gemeinschaft_Unabh%C3%A4ngiger_Staaten",
+        "score": 0.13580857662606624,
+        "title": "Gemeinschaft Unabhängiger Staaten – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Schlacht_um_Taiyuan",
+        "score": 0.13398790063775096,
+        "title": "Schlacht um Taiyuan – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Benutzer_Diskussion:Eva-maria_schmidt",
+        "score": 0.13381948465422513,
+        "title": "Benutzer Diskussion:Eva-maria schmidt – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Elektroanalytik",
+        "score": 0.1320694006006651,
+        "title": "Elektroanalytik – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Diogo_Jota",
+        "score": 0.13171826457251926,
+        "title": "Diogo Jota – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/State_of_the_Art_(Band)",
+        "score": 0.13150498329974925,
+        "title": "State of the Art (Band) – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Chinesische_Universit%C3%A4t_f%C3%BCr_Wissenschaft_und_Technik",
+        "score": 0.13134650088075167,
+        "title": "Chinesische Universität für Wissenschaft und Technik – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Binnenstaat",
+        "score": 0.1313258834419193,
+        "title": "Binnenstaat – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Kleindeutsche_L%C3%B6sung",
+        "score": 0.12947123694363927,
+        "title": "Kleindeutsche Lösung – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Schlacht_von_Modder_River",
+        "score": 0.12875202939879812,
+        "title": "Schlacht von Modder River – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/2020",
+        "score": 0.12794896052268465,
+        "title": "2020 – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Zweiter_Sikh-Krieg",
+        "score": 0.12732616358174298,
+        "title": "Zweiter Sikh-Krieg – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Deutscher_Juristentag",
+        "score": 0.12718544914378943,
+        "title": "Deutscher Juristentag – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Suffragetten",
+        "score": 0.12662824209157852,
+        "title": "Suffragetten – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Tag_der_Erde",
+        "score": 0.12643712851996222,
+        "title": "Tag der Erde – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/General_Electric",
+        "score": 0.12506549764093755,
+        "title": "General Electric – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Three_Kingdoms_%E2%80%93_Der_Krieg_der_drei_K%C3%B6nigreiche",
+        "score": 0.12468466514929924,
+        "title": "Three Kingdoms – Der Krieg der drei Königreiche – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Drei-Sektoren-Theorie",
+        "score": 0.12467831583231498,
+        "title": "Drei-Sektoren-Hypothese – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Drei-Sektoren-Hypothese",
+        "score": 0.12467831583231498,
+        "title": "Drei-Sektoren-Hypothese – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Aleh_Alkajeu",
+        "score": 0.1231940001800699,
+        "title": "Aleh Alkajeu – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Urkunde",
+        "score": 0.1231599087743202,
+        "title": "Urkunde – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Nanaia_Mahuta",
+        "score": 0.12289453430851044,
+        "title": "Nanaia Mahuta – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Oberbefehlshaber",
+        "score": 0.12289192983006272,
+        "title": "Oberbefehlshaber – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Redoxpotential",
+        "score": 0.12272953151685809,
+        "title": "Redoxpotential – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Batterie_(Milit%C3%A4r)",
+        "score": 0.12241026453490778,
+        "title": "Batterie (Militär) – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/%C5%81acinka",
+        "score": 0.12154058727497195,
+        "title": "Łacinka – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Augsburger_Hohes_Friedensfest",
+        "score": 0.12140269422258551,
+        "title": "Augsburger Hohes Friedensfest – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Zentrum_f%C3%BCr_Sonnenenergie-_und_Wasserstoff-Forschung_Baden-W%C3%BCrttemberg",
+        "score": 0.12125598353979139,
+        "title": "Zentrum für Sonnenenergie- und Wasserstoff-Forschung Baden-Württemberg – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Aljaksandr_Turtschyn",
+        "score": 0.12108925110160254,
+        "title": "Aljaksandr Turtschyn – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Benutzer_Diskussion:Jensbest",
+        "score": 0.11950740405131882,
+        "title": "Benutzer Diskussion:Jensbest – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/DIN-Norm",
+        "score": 0.11919890366399036,
+        "title": "DIN-Norm – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Sammo_Hung_Kam-Bo",
+        "score": 0.11865554234761197,
+        "title": "Sammo Hung – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Pawel_Latuschka",
+        "score": 0.11811652854937935,
+        "title": "Pawel Latuschka – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Hermann_Merchel",
+        "score": 0.11739300092007275,
+        "title": "Hermann Merchel – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Art_Directors_Club",
+        "score": 0.11649352607961413,
+        "title": "Art Directors Club – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Fritz_Lobinger",
+        "score": 0.11494005556748188,
+        "title": "Fritz Lobinger – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Angewandte_Forschung",
+        "score": 0.11492420239333517,
+        "title": "Angewandte Wissenschaft – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Commonwealth_Games_2006",
+        "score": 0.1147772251106602,
+        "title": "Commonwealth Games 2006 – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/A123_Systems",
+        "score": 0.11472422865522344,
+        "title": "A123 Systems – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Alter_Freund_des_chinesischen_Volkes",
+        "score": 0.11453621350174487,
+        "title": "Alter Freund des chinesischen Volkes – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Afrikaans",
+        "score": 0.11327420803184776,
+        "title": "Afrikaans – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Portugiesische_Fu%C3%9Fballnationalmannschaft_(U-21-M%C3%A4nner)",
+        "score": 0.11303949040365292,
+        "title": "Portugiesische Fußballnationalmannschaft (U-21-Männer) – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Stand_der_Technik",
+        "score": 0.11280889545697248,
+        "title": "Stand der Technik – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Alexander-Newski-Orden",
+        "score": 0.11240451023390964,
+        "title": "Alexander-Newski-Orden – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Mandschurei-Krise",
+        "score": 0.11194616424687501,
+        "title": "Mandschurei-Krise – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Zwischenfall_an_der_Marco-Polo-Br%C3%BCcke",
+        "score": 0.11091765030497336,
+        "title": "Zwischenfall an der Marco-Polo-Brücke – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Agrarwissenschaft",
+        "score": 0.11062575336763265,
+        "title": "Agrarwissenschaften – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Benutzer_Diskussion:Caelio",
+        "score": 0.11042773564083254,
+        "title": "Benutzer Diskussion:Caelio – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/W%C3%A4ssrige_L%C3%B6sung",
+        "score": 0.11034913201258903,
+        "title": "Wässrige Lösung – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/1910",
+        "score": 0.10876510249564007,
+        "title": "1910 – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Sphragistik",
+        "score": 0.1086417906595551,
+        "title": "Sphragistik – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Nekrolog_2025",
+        "score": 0.10744107800563009,
+        "title": "Nekrolog 2025 – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Schlacht_von_Pingxingguan",
+        "score": 0.10718981646722697,
+        "title": "Schlacht von Pingxingguan – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Wappen_Polens",
+        "score": 0.10685799564112913,
+        "title": "Wappen Polens – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Lydyja_Semenowa",
+        "score": 0.10531164820307193,
+        "title": "Lydyja Semenowa – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Allied_Council_for_Japan",
+        "score": 0.10488286447551043,
+        "title": "Allied Council for Japan – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Free_Art_License",
+        "score": 0.10418393802740633,
+        "title": "Lizenz Freie Kunst – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Lizenz_Freie_Kunst",
+        "score": 0.10418393802740633,
+        "title": "Lizenz Freie Kunst – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Elektrostatik",
+        "score": 0.10409131754897308,
+        "title": "Elektrostatik – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Abdulla_Aripov",
+        "score": 0.10372569521667463,
+        "title": "Abdulla Aripov – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Wikipedia_Diskussion:Statistik",
+        "score": 0.10371347876342893,
+        "title": "Wikipedia Diskussion:Statistik – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Supreme_Commander_for_the_Allied_Powers",
+        "score": 0.10288098070733523,
+        "title": "Supreme Commander for the Allied Powers – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/August_Drechsler",
+        "score": 0.10176031874309016,
+        "title": "August Drechsler – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Ernst_Kahl",
+        "score": 0.10093007544868621,
+        "title": "Ernst Kahl – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Gro%C3%9Fdeutsche_L%C3%B6sung",
+        "score": 0.1006734954718248,
+        "title": "Großdeutsche Lösung – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/DFB-Pokal_1958/59",
+        "score": 0.10019347328081701,
+        "title": "DFB-Pokal 1959 – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Benutzer_Diskussion:Felistoria",
+        "score": 0.09985087441080015,
+        "title": "Benutzer Diskussion:Felistoria – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/State_of_the_art",
+        "score": 0.09941359513043592,
+        "title": "state of the art – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Ulla_Mahrt",
+        "score": 0.09886896765882412,
+        "title": "Ulla Mahrt – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Juan_Jos%C3%A9_Estrada",
+        "score": 0.09877509367830861,
+        "title": "Juan José Estrada – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/%C6%8Fli_%C6%8Fs%C9%99dov",
+        "score": 0.09871556776041993,
+        "title": "Əli Əsədov – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Elektrochemie",
+        "score": 0.09784526830849896,
+        "title": "Elektrochemie – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Adylbek_Kassymalijew",
+        "score": 0.0972673682609855,
+        "title": "Adylbek Kassymalijew – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Financial_Times_Global_500",
+        "score": 0.09683320540709427,
+        "title": "Financial Times Global 500 – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Hein_Driessen",
+        "score": 0.09638471396039233,
+        "title": "Hein Driessen – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Zaibatsu",
+        "score": 0.09587028633467547,
+        "title": "Zaibatsu – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Divide_et_impera",
+        "score": 0.09581387662089431,
+        "title": "Divide et impera – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Liste_der_%E2%80%9EArt_of_Fiction%E2%80%9C-Interviews_des_Paris_Review",
+        "score": 0.09560213601779108,
+        "title": "Liste der „Art of Fiction“-Interviews des Paris Review – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Pawel_Pawlowitsch_Borodin",
+        "score": 0.09520400355680167,
+        "title": "Pawel Pawlowitsch Borodin – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/D%C3%A9partement_Aude",
+        "score": 0.09448719738006338,
+        "title": "Département Aude – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/%C4%B0brahim_Hakk%C4%B1_Pascha",
+        "score": 0.09436295612297005,
+        "title": "İbrahim Hakkı Pascha – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Elektrostatisches_Feld_der_Erde",
+        "score": 0.09404182808036154,
+        "title": "Elektrostatisches Feld der Erde – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Freie_Inhalte",
+        "score": 0.09368690073291941,
+        "title": "Freie Inhalte – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Stempelsiegel",
+        "score": 0.0926917927131528,
+        "title": "Stempelsiegel – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Wikipedia:Statistik",
+        "score": 0.09254554678375693,
+        "title": "Wikipedia:Statistik – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/1945",
+        "score": 0.09139875937083149,
+        "title": "1945 – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Drei-Sterne-Orden",
+        "score": 0.09107171564290985,
+        "title": "Drei-Sterne-Orden – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Technische_Informationsbibliothek",
+        "score": 0.09087437165259797,
+        "title": "TIB – Leibniz-Informationszentrum Technik und Naturwissenschaften – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/TIB_%E2%80%93_Leibniz-Informationszentrum_Technik_und_Naturwissenschaften",
+        "score": 0.09087437165259797,
+        "title": "TIB – Leibniz-Informationszentrum Technik und Naturwissenschaften – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Definition_freier_kultureller_Werke",
+        "score": 0.09084139594390003,
+        "title": "Definition freier kultureller Werke – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Melbourne_Sports_and_Aquatic_Centre",
+        "score": 0.09006115009721039,
+        "title": "Melbourne Sports and Aquatic Centre – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Wahl_zum_neunten_Landtag_von_Sachsen-Anhalt",
+        "score": 0.08971010617291655,
+        "title": "Wahl zum neunten Landtag von Sachsen-Anhalt – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Straffreiheit",
+        "score": 0.08961846369262966,
+        "title": "Impunität – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Teile-und-herrsche-Verfahren",
+        "score": 0.08933931621340671,
+        "title": "Teile-und-herrsche-Verfahren – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/The_March_of_Women",
+        "score": 0.08931721064640807,
+        "title": "The March of the Women – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/The_March_of_the_Women",
+        "score": 0.08931721064640807,
+        "title": "The March of the Women – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Wikipedia:Administratoren/Probleme/Problem_zwischen_5glogger_und_Felistoria",
+        "score": 0.08871125606357848,
+        "title": "Wikipedia:Administratoren/Probleme/Problem zwischen 5glogger und Felistoria – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/%C3%84thiopischer_Kalender",
+        "score": 0.08835713122549699,
+        "title": "Äthiopischer Kalender – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Liste_von_Religionen_und_Weltanschauungen",
+        "score": 0.08822235591236022,
+        "title": "Liste von Religionen und Weltanschauungen – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Olschas_Bektenow",
+        "score": 0.08784724689784773,
+        "title": "Olschas Bektenow – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Ji%C5%99%C3%AD_Krampol",
+        "score": 0.08735055834078796,
+        "title": "Jiří Krampol – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Herbert_Pforr",
+        "score": 0.0871612764885051,
+        "title": "Herbert Pforr – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Belarussische_Republikanische_Junge_Union",
+        "score": 0.08693158328315775,
+        "title": "Belarussische Republikanische Junge Union – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Hartmut_Badenhop",
+        "score": 0.0868680863508623,
+        "title": "Hartmut Badenhop – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Elektrische_Energie",
+        "score": 0.08603354981309656,
+        "title": "Elektrische Energie – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Nina_Dethloff",
+        "score": 0.08579659644874305,
+        "title": "Nina Dethloff – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Shu_Han",
+        "score": 0.08448426847183452,
+        "title": "Shu Han – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Wiktar_Hantschar",
+        "score": 0.08387042329013526,
+        "title": "Wiktar Hantschar – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Benutzer_Diskussion:0815_User_4711",
+        "score": 0.08362225857250735,
+        "title": "Benutzer Diskussion:0815 User 4711 – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Goldene_Europa",
+        "score": 0.08009344633196872,
+        "title": "Goldene Europa – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Siegelwachs",
+        "score": 0.07888391272246764,
+        "title": "Siegelwachs – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/1956",
+        "score": 0.07862717881121983,
+        "title": "1956 – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Drei_nicht-nukleare_Prinzipien",
+        "score": 0.07859367823901361,
+        "title": "Drei nicht-nukleare Prinzipien – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/North_Carolina_Museum_of_Art",
+        "score": 0.07724796577529794,
+        "title": "North Carolina Museum of Art – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Elektrisches_Feld",
+        "score": 0.07585584165568582,
+        "title": "Elektrisches Feld – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Commonwealth_Games_1986",
+        "score": 0.07578219978760331,
+        "title": "Commonwealth Games 1986 – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/1954",
+        "score": 0.07510308152684075,
+        "title": "1954 – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Wikipedia:Wette_f%C3%BCr_2012",
+        "score": 0.074886062569002,
+        "title": "Wikipedia:Wette für 2012 – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Gruppe_(Teileinheit)",
+        "score": 0.07473241367985514,
+        "title": "Gruppe (Teileinheit) – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Wikipedia:Wette_f%C3%BCr_2016",
+        "score": 0.0743690173875295,
+        "title": "Wikipedia:Wette für 2016 – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Allgemeines_Gesetz",
+        "score": 0.0743681463438346,
+        "title": "Allgemeines Gesetz – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Wikipedia:Wette_f%C3%BCr_2020",
+        "score": 0.07433756326155719,
+        "title": "Wikipedia:Wette für 2020 – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Fortune_Global_500",
+        "score": 0.07139349035169132,
+        "title": "Fortune Global 500 – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Fritz_Helmedag",
+        "score": 0.07063289676358767,
+        "title": "Fritz Helmedag – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/1975",
+        "score": 0.06983743016247385,
+        "title": "1975 – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Wikipedia:Wette_f%C3%BCr_2014",
+        "score": 0.06837603770780902,
+        "title": "Wikipedia:Wette für 2014 – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Wikipedia:Wette_f%C3%BCr_2019",
+        "score": 0.0676219985760471,
+        "title": "Wikipedia:Wette für 2019 – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/1965",
+        "score": 0.06103181216592206,
+        "title": "1965 – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Erste_Einheitsfront",
+        "score": 0.060565921887069815,
+        "title": "Erste Einheitsfront – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Wikipedia:Hauptseite",
+        "score": 0.05764359448200492,
+        "title": "Wikipedia – Die freie Enzyklopädie"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Moderne_Physik",
+        "score": 0.057381572226775236,
+        "title": "Moderne Physik – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Wikipedia:Kategorien",
+        "score": 0.056603619025644945,
+        "title": "Wikipedia:Kategorien – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/29._Juli",
+        "score": 0.05573241566396349,
+        "title": "29. Juli – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/9._August",
+        "score": 0.05481018698356928,
+        "title": "9. August – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Benutzer_Diskussion:Einstein19",
+        "score": 0.05457670269768487,
+        "title": "Benutzer Diskussion:Einstein19 – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Wikipedia_Diskussion:Hauptseite",
+        "score": 0.0502837813141806,
+        "title": "Wikipedia Diskussion:Hauptseite – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Liste_der_Mitglieder_der_Liturgischen_Vorbereitungskommission_des_Zweiten_Vatikanischen_Konzils",
+        "score": 0.04800838753348099,
+        "title": "Liste der Mitglieder der Liturgischen Vorbereitungskommission des Zweiten Vatikanischen Konzils – Wi"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/19._Juli",
+        "score": 0.04779107296579434,
+        "title": "19. Juli – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/21._August",
+        "score": 0.046156344140525496,
+        "title": "21. August – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/29._August",
+        "score": 0.04602821286094201,
+        "title": "29. August – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/10._August",
+        "score": 0.04570881378056817,
+        "title": "10. August – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/1870er",
+        "score": 0.04549018051105703,
+        "title": "1870er – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/970er",
+        "score": 0.04509016843528755,
+        "title": "970er – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/990er",
+        "score": 0.04509016843528755,
+        "title": "990er – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/980er",
+        "score": 0.04509016843528755,
+        "title": "980er – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/16._September",
+        "score": 0.044722887626207145,
+        "title": "16. September – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/25._September",
+        "score": 0.0446664680422133,
+        "title": "25. September – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Benutzer_Diskussion:Leiflive",
+        "score": 0.04334213819805341,
+        "title": "Benutzer Diskussion:RaumplanungTV – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/13._Dezember",
+        "score": 0.04200644467553453,
+        "title": "13. Dezember – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/8._Oktober",
+        "score": 0.04053100691768182,
+        "title": "8. Oktober – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/30._November",
+        "score": 0.03965228908404185,
+        "title": "30. November – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Benutzer_Diskussion:Fiver,_der_Hellseher",
+        "score": 0.03602979914533573,
+        "title": "Benutzer Diskussion:Fiver, der Hellseher – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/August_2025",
+        "score": 0.035006709666620145,
+        "title": "August 2025 – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Mein_Kampf_(Begriffskl%C3%A4rung)",
+        "score": 0.020225184429545472,
+        "title": "Mein Kampf (Begriffsklärung) – Wikipedia"
+      }
+    ]
+  }
+}

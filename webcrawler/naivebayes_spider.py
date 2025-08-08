@@ -1,4 +1,4 @@
-from base_spider import BaseTopicalSpider
+from webcrawler.base_spider import BaseTopicalSpider
 from sklearn.naive_bayes import MultinomialNB
 from sklearn.feature_extraction.text import TfidfVectorizer, CountVectorizer
 from sklearn.preprocessing import MaxAbsScaler

@@ -1,4 +1,4 @@
-from base_spider import BaseTopicalSpider
+from webcrawler.base_spider import BaseTopicalSpider
 from collections import Counter
 
 

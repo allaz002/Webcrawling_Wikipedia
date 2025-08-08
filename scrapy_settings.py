@@ -2,8 +2,8 @@
 
 BOT_NAME = 'topical_crawler'
 
-SPIDER_MODULES = ['topical_crawler.spiders']
-NEWSPIDER_MODULE = 'topical_crawler.spiders'
+SPIDER_MODULES = ['topical_crawler.webcrawler']
+NEWSPIDER_MODULE = 'topical_crawler.webcrawler'
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = False

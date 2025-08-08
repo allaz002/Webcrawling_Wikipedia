@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 """
-Skript zur Erstellung von Trainingsdaten für Naive Bayes Spider
-Extrahiert Inhalte von URLs und speichert sie als strukturiertes JSON
+Erstellt Trainingsdaten für Vectorspace Spider und Naive Bayes Spider
+Extrahiert Webinhalte anhand gegebener URLs und speichert sie als JSON Datei
 """
 
 import requests
@@ -13,30 +13,29 @@ import json
 from pathlib import Path
 from datetime import datetime
 
-
 class TrainingDataGenerator:
-    """Generator für Naive Bayes Trainingsdaten"""
+    """Generator für Trainingsdaten"""
 
     def __init__(self, config_file='training_config.ini'):
-        """Initialisiert Generator mit Konfiguration"""
+        """Initialisiert Konfigurationen für Trainingsdaten"""
         self.config = configparser.ConfigParser()
         self.config.read(config_file)
 
-        # Lade Konfiguration
+        # Konfiguration laden
         self.output_path = self.config['PATHS']['OUTPUT_FILE']
         self.backup_dir = self.config['PATHS']['BACKUP_DIR']
         self.user_agent = self.config['SETTINGS']['USER_AGENT']
         self.timeout = int(self.config['SETTINGS']['TIMEOUT'])
         self.min_text_length = int(self.config['SETTINGS']['MIN_TEXT_LENGTH'])
 
-        # Erstelle Verzeichnisse
+        # Verzeichnisse erstellen
         Path(os.path.dirname(self.output_path)).mkdir(parents=True, exist_ok=True)
         Path(self.backup_dir).mkdir(parents=True, exist_ok=True)
 
-        # Headers für Requests
+        # Requests Header
         self.headers = {'User-Agent': self.user_agent}
 
-        # Sammle alle Trainingsdaten
+        # Alle Trainingsdaten sammeln
         self.training_data = []
 
         # Statistiken
@@ -47,35 +46,36 @@ class TrainingDataGenerator:
         }
 
     def extract_content(self, url):
-        """Extrahiert relevanten Inhalt von einer URL"""
+        """Extrahiert relevanten Inhalt anhand gegebener URL"""
         try:
-            # Hole Seite
+            # Seite herunterladen
             response = requests.get(url, headers=self.headers, timeout=self.timeout)
             response.raise_for_status()
 
-            # Parse HTML
+            # HTML parsen
             soup = BeautifulSoup(response.text, 'html.parser')
 
-            # Entferne Script und Style Tags
+            # Script und Style entfernen
             for script in soup(['script', 'style']):
                 script.decompose()
 
-            # Extrahiere Titel
+            # Titel extrahieren
             title = soup.find('title')
             title_text = title.text if title else ''
 
-            # Extrahiere alle Überschriften (h1-h6)
+            # Überschriften extrahieren
             headings = []
             for i in range(1, 7):
                 for heading in soup.find_all(f'h{i}'):
                     headings.append(heading.get_text(strip=True))
             headings_text = ' '.join(headings)
 
-            # Extrahiere Paragraphen
+            # Paragraphen extrahieren
             paragraphs = []
             for p in soup.find_all('p'):
                 text = p.get_text(strip=True)
-                if len(text) > 20:  # Ignoriere sehr kurze Paragraphen
+                # Ignoriere sehr kurze Paragraphen
+                if len(text) > 20:
                     paragraphs.append(text)
             paragraphs_text = ' '.join(paragraphs)
 
@@ -85,12 +85,13 @@ class TrainingDataGenerator:
                 anchor_text = a.get_text(strip=True)
                 if anchor_text and len(anchor_text) > 2:
                     anchors.append(anchor_text)
-            anchors_text = ' '.join(anchors[:50])  # Limitiere auf 50 Ankertexte
+            # Begrenzt auf 50 Ankertexte
+            anchors_text = ' '.join(anchors[:50])
 
-            # Kombiniere alle Inhalte
+            # Alle Inhalte kopieren
             combined_text = f"{title_text} {headings_text} {paragraphs_text} {anchors_text}"
 
-            # Bereinige Text
+            # Text bereinigen
             combined_text = re.sub(r'\s+', ' ', combined_text)
             combined_text = combined_text.strip()
 
@@ -102,56 +103,56 @@ class TrainingDataGenerator:
             return None
 
     def process_urls(self, relevant_urls, irrelevant_urls):
-        """Verarbeitet Listen von URLs und erstellt strukturierte JSON-Trainingsdaten"""
+        """Verarbeitet URLs und speichert Inhalt in JSON Datei"""
 
-        # Backup existierende Datei
+        # Backup, falls Trainingsdaten bereits vorhanden
         if os.path.exists(self.output_path):
             timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
             backup_file = os.path.join(self.backup_dir, f"training_backup_{timestamp}.json")
             os.rename(self.output_path, backup_file)
-            print(f"Existierende Datei gesichert nach: {backup_file}")
+            print(f"Backup von existierenden Daten erstellt und verschoben nach: {backup_file}")
 
-        # Verarbeite relevante URLs (Label = 1)
+        # Relevante URLs mit Label = 1 verarbeiten
         print("\nVerarbeite relevante URLs...")
         for i, url in enumerate(relevant_urls, 1):
             print(f"  [{i}/{len(relevant_urls)}] {url}")
             content = self.extract_content(url)
 
             if content and len(content) >= self.min_text_length:
-                # Füge strukturierten Eintrag hinzu
+                # Eintrag hinzufügen
                 self.training_data.append({
                     "label": 1,
                     "text": content
                 })
                 self.stats['relevant'] += 1
 
-        # Verarbeite irrelevante URLs (Label = 0)
+        # Irrelevante URLs mit Label = 0 verarbeiten
         print("\nVerarbeite irrelevante URLs...")
         for i, url in enumerate(irrelevant_urls, 1):
             print(f"  [{i}/{len(irrelevant_urls)}] {url}")
             content = self.extract_content(url)
 
             if content and len(content) >= self.min_text_length:
-                # Füge strukturierten Eintrag hinzu
+                # Eintrag hinzufügen
                 self.training_data.append({
                     "label": 0,
                     "text": content
                 })
                 self.stats['irrelevant'] += 1
 
-        # Speichere als JSON
+        # Als JSON Datei speichern
         with open(self.output_path, 'w', encoding='utf-8') as f:
             json.dump(self.training_data, f, ensure_ascii=False, indent=2)
 
     def print_statistics(self):
-        """Gibt Statistiken aus"""
+        """Gibt Statistiken über die Erstellung der Trainingsdaten aus"""
         total = self.stats['relevant'] + self.stats['irrelevant']
         print(f"""
 {'=' * 50}
 TRAININGSDATEN ERFOLGREICH ERSTELLT
 {'=' * 50}
 Ausgabedatei: {self.output_path}
-Format: JSON (strukturiert)
+Format: JSON
 Relevante Samples: {self.stats['relevant']}
 Irrelevante Samples: {self.stats['irrelevant']}
 Gesamt: {total}
@@ -163,12 +164,9 @@ Balance: {self.stats['relevant'] / max(1, total) * 100:.1f}% relevant / {self.st
 
 
 def main():
-    """Hauptfunktion mit Beispiel-URLs"""
+    """Hauptfunktion"""
 
-    # HIER IHRE URLs EINFÜGEN!
-    # ========================
-
-    # Relevante URLs (zum Thema KI/Machine Learning)
+    # Relevante URLs mit Label = 1
     relevant_urls = [
         "https://de.wikipedia.org/wiki/K%C3%BCnstliche_Intelligenz",
         "https://de.wikipedia.org/wiki/Maschinelles_Lernen",
@@ -222,7 +220,7 @@ def main():
         "https://de.wikipedia.org/wiki/Random_Forest",
     ]
 
-    # Irrelevante URLs (andere Themen)
+    # Irrelevante URLs mit Label = 0
     irrelevant_urls = [
         "https://de.wikipedia.org/wiki/Deutschland",
         "https://de.wikipedia.org/wiki/Kalifornien",
@@ -276,24 +274,20 @@ def main():
         "https://de.wikipedia.org/wiki/Sehensw%C3%BCrdigkeit"
     ]
 
-    # ========================
-
-    # Erstelle Generator und verarbeite URLs
+    # Erstelle den Generator
     generator = TrainingDataGenerator()
 
     print(f"""
 {'=' * 50}
-TRAININGSDATEN-GENERATOR (JSON Format)
+TRAININGSDATEN-GENERATOR
 {'=' * 50}
 Relevante URLs: {len(relevant_urls)}
 Irrelevante URLs: {len(irrelevant_urls)}
 {'=' * 50}
 """)
 
-    # Verarbeite URLs
+    # Inhalte extrahieren und Erfolg ausgeben
     generator.process_urls(relevant_urls, irrelevant_urls)
-
-    # Zeige Statistiken
     generator.print_statistics()
 
 

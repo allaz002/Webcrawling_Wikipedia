@@ -9,20 +9,24 @@ import os
 from scrapy.crawler import CrawlerProcess
 from scrapy.utils.project import get_project_settings
 
-# Importiere Spider-Klassen
-from keyword_spider import KeywordSpider
-from vectorspace_spider import VectorSpaceSpider
-from naivebayes_spider import NaiveBayesSpider
+project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
+if project_root not in sys.path:
+    sys.path.insert(0, project_root)
 
+from scrapy.crawler import CrawlerProcess
+from scrapy.utils.project import get_project_settings
+from webcrawler.keyword_spider import KeywordSpider
+from webcrawler.vectorspace_spider import VectorSpaceSpider
+from webcrawler.naivebayes_spider import NaiveBayesSpider
 
 def print_usage():
-    """Zeigt Verwendungshinweise"""
+    """Zeigt die Verwendung"""
     print("""
-    Topical Web Crawler - Verwendung:
+    Verwendung:
     
     python run_crawler.py <strategie>
     
-    Verfügbare Strategien:
+    Strategien:
     - keyword     : Keyword-basierte Strategie
     - vectorspace : Vektorraum-Modell mit Cosinus-Ähnlichkeit
     - naivebayes  : Naive Bayes Klassifikation
@@ -57,7 +61,10 @@ def main():
         sys.exit(1)
         
     # Prüfe ob Konfigurationsdatei existiert
-    if not os.path.exists('crawler_config.ini'):
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    config_path = os.path.join(script_dir, '..', 'crawler_config.ini')
+
+    if not os.path.exists(config_path):
         print("Fehler: crawler_config.ini nicht gefunden!")
         print("Bitte erstellen Sie die Konfigurationsdatei.")
         sys.exit(1)

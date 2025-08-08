@@ -88,8 +88,8 @@ class BaseTopicalSpider(scrapy.Spider):
         }
 
         # Verzeichnisse erstellen
-        Path("exports").mkdir(exist_ok=True)
-        Path("reports").mkdir(exist_ok=True)
+        Path("../exports").mkdir(exist_ok=True)
+        Path("../reports").mkdir(exist_ok=True)
 
         # Report-Datei initialisieren (einmalig mit festem Timestamp)
         self.timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")

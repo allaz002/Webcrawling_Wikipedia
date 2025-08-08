@@ -8,8 +8,6 @@ import os
 import glob
 import matplotlib.pyplot as plt
 import matplotlib_venn as venn
-import matplotlib.patches as mpatches
-import numpy as np
 import configparser
 from datetime import datetime
 from pathlib import Path
@@ -203,8 +201,8 @@ class CrawlerPlotter:
         # Relevanz-Bereiche markieren
         ax.axhspan(0, 0.25, alpha=0.1, color='red', label='Irrelevant')
         ax.axhspan(0.25, 0.5, alpha=0.1, color='orange', label='Mäßig relevant')
-        ax.axhspan(0.5, 0.75, alpha=0.1, color='yellow', label='Stark relevant')
-        ax.axhspan(0.75, 1.0, alpha=0.1, color='green', label='Sehr relevant')
+        ax.axhspan(0.5, 0.75, alpha=0.1, color='yellow', label='Sehr relevant')
+        ax.axhspan(0.75, 1.0, alpha=0.1, color='green', label='Vollkommen Relevant')
 
         # Speichern
         filename = f"{self.output_dir}/average_relevance_{self.timestamp}.png"
@@ -629,7 +627,7 @@ class CrawlerPlotter:
         except Exception as e:
             print(f"Fehler bei Overlap Venn Plot: {e}")
 
-        print(f"\nAlle Grafiken wurden im Verzeichnis '{self.output_dir}' gespeichert")
+        print(f"\nGrafiken im Verzeichnis '{self.output_dir}' gespeichert")
 
 def main():
     """Hauptfunktion"""

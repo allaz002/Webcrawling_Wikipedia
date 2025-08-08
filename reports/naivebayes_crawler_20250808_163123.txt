@@ -1,0 +1,57 @@
+
+============================================================
+CRAWLER KONFIGURATION - naivebayes_crawler
+============================================================
+Strategie: NaiveBayesSpider
+Seed URLs: https://de.wikipedia.org/wiki/Wikipedia:Hauptseite
+Batch-Größe: 32
+Max. Seiten: 50000
+Max. relevante Seiten: 5
+Relevanz-Schwellenwert: 0.35
+Max. Laufzeit: 30 Minuten
+Report-Intervall: 30 Sekunden
+
+GEWICHTUNGEN:
+- Link-Gewicht: 0.5
+- Elterndokument-Gewicht: 0.5
+============================================================
+
+Modell-Pfad: models/naive_bayes_model.pkl
+
+
+============================================================
+ABSCHLUSSBERICHT - naivebayes_crawler
+============================================================
+Spider-Name: naivebayes_crawler
+Gesamtlaufzeit: 0:00:01.819552
+Anzahl gecrawlter Seiten: 12
+Anzahl relevanter Seiten: 5
+Anzahl irrelevanter Seiten: 7
+Harvest-Rate: 41.67%
+Durchschnittliche Relevanz: 0.3847
+Gesamte Relevanzbewertungszeit: 0.02 Sekunden
+
+TOP 10 BESTE URLS:
+1. Score: 0.8562 - https://de.wikipedia.org/wiki/Hilbertsche_Probleme
+2. Score: 0.5931 - https://de.wikipedia.org/wiki/Wikipedia_Diskussion:Hauptseite
+3. Score: 0.4326 - https://de.wikipedia.org/wiki/Leo_Windtner
+4. Score: 0.4122 - https://de.wikipedia.org/wiki/Freie_Inhalte
+5. Score: 0.3651 - https://de.wikipedia.org/wiki/Eddie_Palmieri
+
+TOP 10 SCHLECHTESTE URLS:
+1. Score: 0.8562 - https://de.wikipedia.org/wiki/Hilbertsche_Probleme
+2. Score: 0.5931 - https://de.wikipedia.org/wiki/Wikipedia_Diskussion:Hauptseite
+3. Score: 0.4326 - https://de.wikipedia.org/wiki/Leo_Windtner
+4. Score: 0.4122 - https://de.wikipedia.org/wiki/Freie_Inhalte
+5. Score: 0.3651 - https://de.wikipedia.org/wiki/Eddie_Palmieri
+
+============================================================
+
+
+--- ZWISCHENBERICHT [16:31:26] ---
+Laufzeit: 0:00:03.734585
+Harvest-Rate: 44.00%
+Relevante Seiten: 11
+Irrelevante Seiten: 14
+Aktueller Batch: 25
+

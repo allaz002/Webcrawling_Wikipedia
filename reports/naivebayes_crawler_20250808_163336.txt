@@ -1,0 +1,57 @@
+
+============================================================
+CRAWLER KONFIGURATION - naivebayes_crawler
+============================================================
+Strategie: NaiveBayesSpider
+Seed URLs: https://de.wikipedia.org/wiki/Wikipedia:Hauptseite
+Batch-Größe: 32
+Max. Seiten: 50000
+Max. relevante Seiten: 5
+Relevanz-Schwellenwert: 0.35
+Max. Laufzeit: 30 Minuten
+Report-Intervall: 30 Sekunden
+
+GEWICHTUNGEN:
+- Link-Gewicht: 0.5
+- Elterndokument-Gewicht: 0.5
+============================================================
+
+Modell-Pfad: models/naive_bayes_model.pkl
+
+
+============================================================
+ABSCHLUSSBERICHT - naivebayes_crawler
+============================================================
+Spider-Name: naivebayes_crawler
+Gesamtlaufzeit: 0:00:02.175614
+Anzahl gecrawlter Seiten: 13
+Anzahl relevanter Seiten: 5
+Anzahl irrelevanter Seiten: 8
+Harvest-Rate: 38.46%
+Durchschnittliche Relevanz: 0.3721
+Gesamte Relevanzbewertungszeit: 0.03 Sekunden
+
+TOP 10 BESTE URLS:
+1. Score: 0.8562 - https://de.wikipedia.org/wiki/Hilbertsche_Probleme
+2. Score: 0.5931 - https://de.wikipedia.org/wiki/Wikipedia_Diskussion:Hauptseite
+3. Score: 0.4326 - https://de.wikipedia.org/wiki/Leo_Windtner
+4. Score: 0.4222 - https://de.wikipedia.org/wiki/Edward_Omane_Boamah
+5. Score: 0.4122 - https://de.wikipedia.org/wiki/Freie_Inhalte
+
+TOP 10 SCHLECHTESTE URLS:
+1. Score: 0.8562 - https://de.wikipedia.org/wiki/Hilbertsche_Probleme
+2. Score: 0.5931 - https://de.wikipedia.org/wiki/Wikipedia_Diskussion:Hauptseite
+3. Score: 0.4326 - https://de.wikipedia.org/wiki/Leo_Windtner
+4. Score: 0.4222 - https://de.wikipedia.org/wiki/Edward_Omane_Boamah
+5. Score: 0.4122 - https://de.wikipedia.org/wiki/Freie_Inhalte
+
+============================================================
+
+
+--- ZWISCHENBERICHT [16:33:42] ---
+Laufzeit: 0:00:05.364592
+Harvest-Rate: 48.00%
+Relevante Seiten: 12
+Irrelevante Seiten: 13
+Aktueller Batch: 25
+

@@ -88,8 +88,8 @@ class BaseTopicalSpider(scrapy.Spider):
         }
 
         # Verzeichnisse erstellen
-        Path("../exports").mkdir(exist_ok=True)
-        Path("../reports").mkdir(exist_ok=True)
+        Path("exports").mkdir(parents=True, exist_ok=True)
+        Path("reports").mkdir(parents=True, exist_ok=True)
 
         # Report-Datei initialisieren (einmalig mit festem Timestamp)
         self.timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
@@ -476,7 +476,7 @@ TOP 10 BESTE URLS:
         """Ruft externes Plot-Skript auf"""
         try:
             import subprocess
-            subprocess.run([sys.executable, 'create_plots.py'], check=False)
+            subprocess.run([sys.executable, 'scripts/create_plots.py'], check=False)
             print("Grafiken wurden erstellt")
         except Exception as e:
             print(f"Fehler beim Erstellen der Grafiken: {e}")

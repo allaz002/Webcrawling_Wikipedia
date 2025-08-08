@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+
 """
 Erstellt Trainingsdaten für Vectorspace Spider und Naive Bayes Spider
 Extrahiert Webinhalte anhand gegebener URLs und speichert sie als JSON Datei
@@ -12,6 +12,7 @@ import re
 import json
 from pathlib import Path
 from datetime import datetime
+
 
 class TrainingDataGenerator:
     """Generator für Trainingsdaten"""
@@ -274,7 +275,7 @@ def main():
         "https://de.wikipedia.org/wiki/Sehensw%C3%BCrdigkeit"
     ]
 
-    # Erstelle den Generator
+    # Generator erstellen
     generator = TrainingDataGenerator()
 
     print(f"""

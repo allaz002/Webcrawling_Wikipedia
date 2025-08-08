@@ -1,7 +1,6 @@
 
 """
-Skript zur Visualisierung der Crawling-Ergebnisse
-Erstellt Grafiken für wissenschaftliche Analysen
+Visualisiert Ergebnisse vom Crawling in verschiedenen Grafiken
 """
 
 import json
@@ -17,32 +16,32 @@ from pathlib import Path
 
 
 class CrawlerPlotter:
-    """Erstellt Visualisierungen für Crawler-Ergebnisse"""
+    """Visualisiert Ergebnisse der verschiedenen Crawling-Strategien"""
 
     def __init__(self, config_file='crawler_config.ini'):
         """Initialisiert Plotter mit Konfiguration"""
         self.config = configparser.ConfigParser()
         self.config.read(config_file)
 
-        # Lade Konfiguration
+        # Konfiguration laden
         self.create_plots = self.config.getboolean('PLOTTING', 'CREATE_PLOTS', fallback=False)
         self.output_dir = self.config['PLOTTING']['OUTPUT_DIRECTORY']
 
         if not self.create_plots:
-            print("Plotting ist deaktiviert in der Konfiguration")
+            print("Plotting ist deaktiviert")
             return
 
-        # Erstelle Output-Verzeichnis
+        # Output-Verzeichnis erstellen
         Path(self.output_dir).mkdir(parents=True, exist_ok=True)
 
-        # Definiere konsistente Farben für Strategien
+        # Farben für Strategien definieren
         self.colors = {
-            'keyword': '#FF6B6B',  # Rot
-            'vectorspace': '#8B8C0A',  # Olivgrün (passende Sättigung)
-            'naivebayes': '#45B7D1'  # Blau
+            'keyword': '#FF6B6B',       # Rot
+            'vectorspace': '#8B8C0A',   # Olivgrün
+            'naivebayes': '#45B7D1'     # Blau
         }
 
-        # Matplotlib-Einstellungen für wissenschaftliche Darstellung
+        # Plotdarstellung definieren
         plt.rcParams['figure.figsize'] = (10, 6)
         plt.rcParams['font.size'] = 11
         plt.rcParams['axes.labelsize'] = 12
@@ -55,18 +54,18 @@ class CrawlerPlotter:
         # Timestamp für Dateinamen
         self.timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
 
-        # Sammle Daten
+        # Daten sammeln
         self.data = self.load_all_data()
 
     def load_all_data(self):
         """Lädt alle JSON-Dateien aus dem exports Verzeichnis"""
         data = {}
 
-        # Finde alle JSON-Dateien
+        # Alle JSON-Dateien identifizieren
         json_files = glob.glob('exports/*_crawler_*.json')
 
         for file_path in json_files:
-            # Extrahiere Strategie-Namen aus Dateiname
+            # Strategie Namen finden
             filename = os.path.basename(file_path)
             if 'keyword' in filename:
                 strategy = 'keyword'
@@ -77,7 +76,7 @@ class CrawlerPlotter:
             else:
                 continue
 
-            # Lade JSON-Daten
+            # JSON-Daten laden
             try:
                 with open(file_path, 'r', encoding='utf-8') as f:
                     json_data = json.load(f)
@@ -102,11 +101,11 @@ class CrawlerPlotter:
             if not eval_log:
                 continue
 
-            # Extrahiere Daten - X-Achse ist jetzt relevant_pages_found
+            # Daten extrahieren
             relevant_pages = [entry['relevant_pages_found'] for entry in eval_log]
             harvest_rates = [entry['harvest_rate'] for entry in eval_log]
 
-            # Plotte Linie
+            # Linie plotten
             ax.plot(relevant_pages, harvest_rates,
                     color=self.colors[strategy],
                     linewidth=2,
@@ -180,11 +179,11 @@ class CrawlerPlotter:
             if not eval_log:
                 continue
 
-            # Extrahiere Daten - X-Achse ist jetzt relevant_pages_found
+            # Daten extrahieren
             relevant_pages = [entry['relevant_pages_found'] for entry in eval_log]
             avg_relevance = [entry['average_relevance'] for entry in eval_log]
 
-            # Plotte Linie
+            # Linie plotten
             ax.plot(relevant_pages, avg_relevance,
                     color=self.colors[strategy],
                     linewidth=2,
@@ -225,16 +224,16 @@ class CrawlerPlotter:
             if not eval_log:
                 continue
 
-            # Extrahiere Daten
+            # Daten extrahieren
             batch_numbers = [entry.get('batch_number', i) for i, entry in enumerate(eval_log)]
             avg_positions = [entry.get('avg_frontier_position', 0) for entry in eval_log]
 
-            # Filtere Nullwerte
+            # Nullwerte filtern
             valid_data = [(b, p) for b, p in zip(batch_numbers, avg_positions) if p > 0]
             if valid_data:
                 batch_numbers, avg_positions = zip(*valid_data)
 
-                # Aggregiere über 5 Batches für glattere Darstellung
+                # Batches aggregieren
                 aggregation_window = 5
                 aggregated_batches = []
                 aggregated_positions = []
@@ -252,13 +251,13 @@ class CrawlerPlotter:
                         aggregated_batches.append(avg_batch)
                         aggregated_positions.append(avg_pos)
 
-                # Plotte aggregierte Linie mit Interpolation
+                # Linie mit Interpolation plotten
                 if len(aggregated_batches) > 1:
-                    # Verwende cubic interpolation für glattere Kurven
+                    # Cubic interpolation
                     from scipy.interpolate import interp1d
                     import numpy as np
 
-                    # Erstelle interpolierte Kurve
+                    # Interpolierte Kurve erstellen
                     try:
                         # Cubic interpolation wenn genug Punkte
                         if len(aggregated_batches) > 3:
@@ -269,19 +268,19 @@ class CrawlerPlotter:
                             f = interp1d(aggregated_batches, aggregated_positions,
                                          kind='linear', fill_value='extrapolate')
 
-                        # Erstelle feinere X-Achse für glatte Kurve
+                        # Feinere X-Achse für glatte Kurve erstellen
                         x_smooth = np.linspace(min(aggregated_batches),
                                                max(aggregated_batches), 100)
                         y_smooth = f(x_smooth)
 
-                        # Plotte glatte Linie
+                        # Glatte Linie plotten
                         ax.plot(x_smooth, y_smooth,
                                 color=self.colors[strategy],
                                 linewidth=2,
                                 label=f'{strategy.capitalize()} Spider',
                                 alpha=0.8)
 
-                        # Markiere aggregierte Datenpunkte
+                        # Aggregierte Datenpunkte makieren
                         ax.scatter(aggregated_batches, aggregated_positions,
                                    color=self.colors[strategy],
                                    s=30, alpha=0.6, zorder=5)
@@ -326,15 +325,15 @@ class CrawlerPlotter:
         times = []
         colors_list = []
 
-        # Sammle Zeiten für feste Anzahl von Seiten
-        target_pages = 100  # Normalisiere auf 100 Seiten
+        # Zeiten für feste Anzahl von Seiten sammeln
+        target_pages = 100 # Normalisiert auf 100 Seiten
 
         for strategy, strategy_data in self.data.items():
             if 'relevance_calculation_time' in strategy_data:
                 total_time = strategy_data['relevance_calculation_time']
                 total_pages = strategy_data.get('total_pages_visited', 1)
 
-                # Normalisiere auf target_pages
+                # Auf target_pages normalisieren
                 normalized_time = (total_time / total_pages) * target_pages
 
                 strategies.append(strategy.capitalize())
@@ -342,10 +341,10 @@ class CrawlerPlotter:
                 colors_list.append(self.colors[strategy])
 
         if strategies:
-            # Erstelle Balkendiagramm
+            # Balkendiagramm erstellen
             bars = ax.bar(strategies, times, color=colors_list, alpha=0.8, edgecolor='black', linewidth=1.5)
 
-            # Füge Werte über den Balken hinzu
+            # Werte über den Balken hinzufügen
             for bar, time in zip(bars, times):
                 height = bar.get_height()
                 ax.text(bar.get_x() + bar.get_width() / 2., height,
@@ -366,6 +365,7 @@ class CrawlerPlotter:
 
     def create_comparison_table(self):
         """Erstellt Vergleichstabelle der Top/Mittel/Bottom Seiten"""
+
         # Dynamische Figurengröße basierend auf Anzahl Strategien
         num_strategies = len(self.data.keys())
         fig_width = 10 + num_strategies * 2
@@ -373,7 +373,7 @@ class CrawlerPlotter:
         ax.axis('tight')
         ax.axis('off')
 
-        # Sammle Daten für jede Strategie
+        # Daten für jede Strategie sammeln
         table_data = []
         headers = ['Kategorie'] + [s.capitalize() for s in self.data.keys()]
 
@@ -382,11 +382,11 @@ class CrawlerPlotter:
             titles = []
             for i in indices:
                 if i < len(pages):
-                    # Extrahiere sauberen Titel
+                    # Sauberen Titel extrahieren
                     title = pages[i].get('title', 'Kein Titel')
                     # Entferne überflüssige Whitespaces
                     title = ' '.join(title.split())
-                    # Kürze auf maximal 60 Zeichen mit Ellipsis
+                    # Max. 60 zeichen aufnehmen
                     if len(title) > 60:
                         title = title[:57] + '...'
                     titles.append(title)
@@ -394,7 +394,7 @@ class CrawlerPlotter:
                     titles.append('-')
             return titles
 
-        # Sortiere Seiten für jede Strategie
+        # Seiten für jede Strategie sortieren
         sorted_pages_by_strategy = {}
         for strategy, strategy_data in self.data.items():
             if 'pages' in strategy_data:
@@ -403,7 +403,7 @@ class CrawlerPlotter:
                                       reverse=True)
                 sorted_pages_by_strategy[strategy] = sorted_pages
 
-        # Erstelle Zeilen für Top 5
+        # Zeilen für Top 5 erstellen
         for i in range(5):
             row_data = [f'Top {i + 1}']
             for strategy in self.data.keys():
@@ -420,7 +420,7 @@ class CrawlerPlotter:
                     row_data.append('-')
             table_data.append(row_data)
 
-        # Erstelle Zeilen für Mittlere 5
+        # Zeilen für mittlere 5 erstellen
         for i in range(5):
             row_data = [f'Mitte {i + 1}']
             for strategy in self.data.keys():
@@ -439,7 +439,7 @@ class CrawlerPlotter:
                     row_data.append('-')
             table_data.append(row_data)
 
-        # Erstelle Zeilen für Bottom 5
+        # Zeilen für Bottom 5 erstellen
         for i in range(5):
             row_data = [f'Bottom {i + 1}']
             for strategy in self.data.keys():
@@ -458,7 +458,7 @@ class CrawlerPlotter:
                     row_data.append('-')
             table_data.append(row_data)
 
-        # Erstelle Tabelle mit angepassten Spaltenbreiten
+        # Tabelle erstellen
         col_widths = [0.12] + [(0.88 / num_strategies)] * num_strategies
 
         table = ax.table(cellText=table_data,
@@ -470,7 +470,7 @@ class CrawlerPlotter:
         # Formatierung
         table.auto_set_font_size(False)
         table.set_fontsize(8)
-        table.scale(1, 2.5)  # Mehr Höhe für bessere Lesbarkeit
+        table.scale(1, 2.5)
 
         # Farben für Zeilen
         for (row, col), cell in table.get_celld().items():
@@ -481,25 +481,25 @@ class CrawlerPlotter:
                 cell.set_height(0.08)
             else:
                 row_idx = row - 1
-                # Top 5 - Hellgrün
+                # Top 5
                 if row_idx < 5:
-                    cell.set_facecolor('#90EE90')
-                # Mitte 5 - Hellgelb
+                    cell.set_facecolor('#90EE90') # Hellgrün
+                # Mitte 5
                 elif row_idx < 10:
-                    cell.set_facecolor('#FFFFE0')
-                # Bottom 5 - Hellrot
+                    cell.set_facecolor('#FFFFE0') # Hellgelb
+                # Bottom 5
                 else:
-                    cell.set_facecolor('#FFB6C1')
+                    cell.set_facecolor('#FFB6C1') # Hellrot
 
                 cell.set_linewidth(0.5)
 
-                # Dicke Trennlinien zwischen Kategorien
+                # Trennlinie zwischen Kategorien
                 if row_idx in [0, 5, 10]:
                     cell.set_linewidth(2)
 
                 # Textausrichtung
                 cell.set_text_props(linespacing=1.5)
-                cell.PAD = 0.05  # Padding innerhalb der Zelle
+                cell.PAD = 0.05
 
         # Titel
         plt.title('Vergleich der Crawling-Strategien: Top/Mittel/Bottom Artikel\n' +
@@ -514,7 +514,7 @@ class CrawlerPlotter:
 
     def plot_overlap_venn(self):
         """Erstellt Venn-Diagramm für Überlappung der gefundenen Seiten"""
-        # Sammle URLs für jede Strategie
+        # URLs für jede Strategie sammeln
         urls_by_strategy = {}
 
         for strategy, strategy_data in self.data.items():
@@ -530,14 +530,14 @@ class CrawlerPlotter:
         fig, ax = plt.subplots(figsize=(10, 8))
 
         if len(urls_by_strategy) == 3:
-            # 3-Wege Venn-Diagramm
+            # Venndiagramm für 3 Kreise
             sets = [urls_by_strategy.get('keyword', set()),
                     urls_by_strategy.get('vectorspace', set()),
                     urls_by_strategy.get('naivebayes', set())]
 
             labels = ['Keyword', 'VectorSpace', 'NaiveBayes']
 
-            # Erstelle Venn-Diagramm
+            # Venn-Diagramm erstellen
             v = venn.venn3(sets, labels, ax=ax)
 
             # Färbe Kreise
@@ -552,14 +552,14 @@ class CrawlerPlotter:
                 v.get_patch_by_id('001').set_alpha(0.5)
 
         elif len(urls_by_strategy) == 2:
-            # 2-Wege Venn-Diagramm
+            # Venndiagramm für 2 Kreise
             strategies = list(urls_by_strategy.keys())
             sets = [urls_by_strategy[strategies[0]], urls_by_strategy[strategies[1]]]
             labels = [s.capitalize() for s in strategies]
 
             v = venn.venn2(sets, labels, ax=ax)
 
-            # Färbe Kreise
+            # Kreise färben
             if v.get_patch_by_id('10'):
                 v.get_patch_by_id('10').set_color(self.colors[strategies[0]])
                 v.get_patch_by_id('10').set_alpha(0.5)
@@ -567,7 +567,7 @@ class CrawlerPlotter:
                 v.get_patch_by_id('01').set_color(self.colors[strategies[1]])
                 v.get_patch_by_id('01').set_alpha(0.5)
 
-        # Berechne Overlap-Metriken
+        # Overlap berechnen
         all_urls = set()
         for urls in urls_by_strategy.values():
             all_urls.update(urls)
@@ -638,4 +638,4 @@ def main():
 
 
 if __name__ == '__main__':
-    main()  # !/usr/bin/env python
+    main()

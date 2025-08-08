@@ -210,56 +210,36 @@ class VectorSpaceSpider(BaseTopicalSpider):
         Optimierte Vektorraum-Relevanz nur mit Multiplikatoren
         Berechnet gewichtete Vektorsumme und Cosinus-Ähnlichkeit
         """
-        # Initialisiere Null-Vektor mit gleicher Dimension wie Topic-Vektor
-        vector_dim = self.topic_vector.shape[1]
-        combined_vector = np.zeros((1, vector_dim))
-
-        # Verarbeite Titel mit Multiplikator
+        # Texte zusammenführen
+        parts = []
         if title:
-            processed_title = self.preprocess_text(title)
-            if processed_title:
-                try:
-                    title_vector = self.vectorizer.transform([processed_title])
-                    if sp.issparse(title_vector):
-                        title_vector = title_vector.toarray()
-                    combined_vector += title_vector * self.title_multiplier
-                except:
-                    pass
-
-        # Verarbeite Überschriften mit Multiplikator
+            parts.append(self.preprocess_text(title))
         if headings:
-            processed_headings = self.preprocess_text(headings)
-            if processed_headings:
-                try:
-                    heading_vector = self.vectorizer.transform([processed_headings])
-                    if sp.issparse(heading_vector):
-                        heading_vector = heading_vector.toarray()
-                    combined_vector += heading_vector * self.heading_multiplier
-                except:
-                    pass
-
-        # Verarbeite Paragraphen mit Multiplikator
+            parts.append(self.preprocess_text(headings))
         if paragraphs:
-            processed_paragraphs = self.preprocess_text(paragraphs)
-            if processed_paragraphs:
-                try:
-                    paragraph_vector = self.vectorizer.transform([processed_paragraphs])
-                    if sp.issparse(paragraph_vector):
-                        paragraph_vector = paragraph_vector.toarray()
-                    combined_vector += paragraph_vector * self.paragraph_multiplier
-                except:
-                    pass
+            parts.append(self.preprocess_text(paragraphs))
 
-        # Berechne Cosinus-Ähnlichkeit zwischen kombiniertem Vektor und Themenprofil
-        if np.any(combined_vector):
-            similarity = cosine_similarity(combined_vector, self.topic_vector)[0][0]
+        # Wenn nichts da ist, direkte 0 zurückgeben
+        if not parts:
+            return 0.0
 
-            # Neue Score-Transformation für bessere Verteilung
-            # Sigmoid-ähnliche Transformation
-            adjusted_score = self.transform_score(similarity)
+        combined_text = " ".join(parts).strip()
+        if not combined_text:
+            return 0.0
 
-            return float(adjusted_score)
-        return 0.0
+        try:
+            # Vektor für den kombinierten Text erzeugen
+            text_vector = self.vectorizer.transform([combined_text])
+            # Sparse → dense
+            if sp.issparse(text_vector):
+                text_vector = text_vector.toarray()
+
+            # Cosinus-Ähnlichkeit berechnen
+            similarity = cosine_similarity(text_vector, self.topic_vector)[0][0]
+            return float(similarity)
+
+        except Exception:
+            return 0.0
 
 
     def transform_score(self, raw_score, steepness=5, midpoint=0.3):

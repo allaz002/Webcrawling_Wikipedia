@@ -1,0 +1,159 @@
+
+============================================================
+CRAWLER KONFIGURATION - naivebayes_crawler
+============================================================
+Strategie: NaiveBayesSpider
+Seed URLs: https://de.wikipedia.org/wiki/Wikipedia:Hauptseite
+Batch-Größe: 32
+Max. Seiten: 50000
+Max. relevante Seiten: 200
+Relevanz-Schwellenwert: 0.35
+Max. Laufzeit: 30 Minuten
+Report-Intervall: 30 Sekunden
+
+GEWICHTUNGEN:
+- Link-Gewicht: 0.5
+- Elterndokument-Gewicht: 0.5
+============================================================
+
+Modell-Pfad: models/naive_bayes_model.pkl
+
+
+--- ZWISCHENBERICHT [12:48:25] ---
+Laufzeit: 0:00:03.068013
+Harvest-Rate: 40.00%
+Relevante Seiten: 10
+Irrelevante Seiten: 15
+Aktueller Batch: 25
+
+
+--- ZWISCHENBERICHT [12:48:29] ---
+Laufzeit: 0:00:07.706832
+Harvest-Rate: 68.00%
+Relevante Seiten: 34
+Irrelevante Seiten: 16
+Aktueller Batch: 50
+
+
+--- ZWISCHENBERICHT [12:48:33] ---
+Laufzeit: 0:00:11.492386
+Harvest-Rate: 69.33%
+Relevante Seiten: 52
+Irrelevante Seiten: 23
+Aktueller Batch: 75
+
+
+--- ZWISCHENBERICHT [12:48:35] ---
+Laufzeit: 0:00:13.054566
+Harvest-Rate: 72.00%
+Relevante Seiten: 72
+Irrelevante Seiten: 28
+Aktueller Batch: 100
+
+
+--- ZWISCHENBERICHT [12:48:37] ---
+Laufzeit: 0:00:15.177743
+Harvest-Rate: 76.80%
+Relevante Seiten: 96
+Irrelevante Seiten: 29
+Aktueller Batch: 125
+
+
+--- ZWISCHENBERICHT [12:48:40] ---
+Laufzeit: 0:00:18.282716
+Harvest-Rate: 79.33%
+Relevante Seiten: 119
+Irrelevante Seiten: 31
+Aktueller Batch: 150
+
+
+--- ZWISCHENBERICHT [12:48:44] ---
+Laufzeit: 0:00:22.340948
+Harvest-Rate: 81.71%
+Relevante Seiten: 143
+Irrelevante Seiten: 32
+Aktueller Batch: 175
+
+
+--- ZWISCHENBERICHT [12:48:47] ---
+Laufzeit: 0:00:25.569479
+Harvest-Rate: 82.00%
+Relevante Seiten: 164
+Irrelevante Seiten: 36
+Aktueller Batch: 200
+
+
+--- ZWISCHENBERICHT [12:48:49] ---
+Laufzeit: 0:00:27.564731
+Harvest-Rate: 81.78%
+Relevante Seiten: 184
+Irrelevante Seiten: 41
+Aktueller Batch: 225
+
+
+============================================================
+ABSCHLUSSBERICHT - naivebayes_crawler
+============================================================
+Spider-Name: naivebayes_crawler
+Gesamtlaufzeit: 0:00:30.026455
+Anzahl gecrawlter Seiten: 248
+Anzahl relevanter Seiten: 200
+Anzahl irrelevanter Seiten: 48
+Harvest-Rate: 80.65%
+Durchschnittliche Relevanz: 0.5334
+Gesamte Relevanzbewertungszeit: 0.50 Sekunden
+
+TOP 10 BESTE URLS:
+1. Score: 0.9925 - https://de.wikipedia.org/wiki/K%C3%BCnstliche_Intelligenz
+2. Score: 0.9665 - https://de.wikipedia.org/wiki/Enquete-Kommission_K%C3%BCnstliche_Intelligenz
+3. Score: 0.9647 - https://de.wikipedia.org/wiki/Church-Turing-These
+4. Score: 0.9645 - https://de.wikipedia.org/wiki/Google%2B
+5. Score: 0.9628 - https://de.wikipedia.org/wiki/LLL-Algorithmus
+6. Score: 0.9600 - https://de.wikipedia.org/wiki/Open_Data
+7. Score: 0.9519 - https://de.wikipedia.org/wiki/Mensch-Maschine-System
+8. Score: 0.9360 - https://de.wikipedia.org/wiki/Technische_Daten
+9. Score: 0.9355 - https://de.wikipedia.org/wiki/Turing_Award
+10. Score: 0.9297 - https://de.wikipedia.org/wiki/Finite-Elemente-Methode
+
+TOP 10 MITTELFELD URLS:
+1. Score: 0.6213 - https://de.wikipedia.org/wiki/%C3%84hnlichkeitss%C3%A4tze
+2. Score: 0.6176 - https://de.wikipedia.org/wiki/Antiparallelogramm
+3. Score: 0.6158 - https://de.wikipedia.org/wiki/Messtechnik
+4. Score: 0.6135 - https://de.wikipedia.org/wiki/Momentane_%C3%84nderungsrate
+5. Score: 0.6135 - https://de.wikipedia.org/wiki/%C3%84nderungsrate
+6. Score: 0.6116 - https://de.wikipedia.org/wiki/Benutzerin:Alraunenstern
+7. Score: 0.6092 - https://de.wikipedia.org/wiki/Dehn-Invariante
+8. Score: 0.6048 - https://de.wikipedia.org/wiki/Wikipedia:Hauptseite/Archiv/6._September_2024
+9. Score: 0.6043 - https://de.wikipedia.org/wiki/Isomorph
+10. Score: 0.5966 - https://de.wikipedia.org/wiki/Steigung
+
+TOP 10 SCHLECHTESTE URLS:
+1. Score: 0.3741 - https://de.wikipedia.org/wiki/26._September
+2. Score: 0.3715 - https://de.wikipedia.org/wiki/24._September
+3. Score: 0.3679 - https://de.wikipedia.org/wiki/Wikipedia_Diskussion:Hauptseite/Artikel_des_Tages/Vorschl%C3%A4ge
+4. Score: 0.3628 - https://de.wikipedia.org/wiki/Eddie_Palmieri
+5. Score: 0.3627 - https://de.wikipedia.org/wiki/Marthe_Robert
+6. Score: 0.3579 - https://de.wikipedia.org/wiki/Wikipedia:SG%3F
+7. Score: 0.3574 - https://de.wikipedia.org/wiki/Albrecht_von_Preu%C3%9Fen_(1837%E2%80%931906)
+8. Score: 0.3547 - https://de.wikipedia.org/wiki/Gentechnik
+9. Score: 0.3543 - https://de.wikipedia.org/wiki/Partido_Socialista_Unido_de_Venezuela
+10. Score: 0.3521 - https://de.wikipedia.org/wiki/Benutzerin:Agnete
+
+============================================================
+
+
+--- ZWISCHENBERICHT [12:48:54] ---
+Laufzeit: 0:00:32.768289
+Harvest-Rate: 80.40%
+Relevante Seiten: 201
+Irrelevante Seiten: 49
+Aktueller Batch: 250
+
+
+--- ZWISCHENBERICHT [12:48:56] ---
+Laufzeit: 0:00:34.312964
+Harvest-Rate: 80.36%
+Relevante Seiten: 221
+Irrelevante Seiten: 54
+Aktueller Batch: 275
+

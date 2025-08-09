@@ -1,111 +1,103 @@
 from webcrawler.base_spider import BaseTopicalSpider
-from collections import Counter
 
 
 class KeywordSpider(BaseTopicalSpider):
-    """Keyword-basierte Crawling-Strategie"""
+    """
+    Klassischer Boolean Keyword Crawler
+    Nutzt nur Keyword-Präsenz (nicht Frequenz) für binäre Relevanzentscheidungen
+    """
 
     name = 'keyword_crawler'
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
 
-        # Lade Keywords aus Konfiguration (nur Einzelwörter für Performance)
+        # Lade Keywords aus Konfiguration
         keywords_raw = [kw.strip().lower() for kw in
                         self.config['KEYWORD']['KEYWORDS'].split(',')]
-        # Filtere nur Einzelwort-Keywords
-        self.keywords = [kw for kw in keywords_raw if ' ' not in kw]
+        # Als Set für O(1) Lookup-Performance
+        self.keywords = set(kw for kw in keywords_raw if ' ' not in kw)
 
-        # Lade Multiplikatoren aus Konfiguration
-        self.title_multiplier = int(self.config['KEYWORD']['TITLE_MULTIPLIER'])
-        self.heading_multiplier = int(self.config['KEYWORD']['HEADING_MULTIPLIER'])
-        self.paragraph_multiplier = int(self.config['KEYWORD']['PARAGRAPH_MULTIPLIER'])
+        # Gewichtungen aus WEIGHTS Sektion
+        self.title_weight = float(self.config['WEIGHTS']['TITLE_WEIGHT'])
+        self.heading_weight = float(self.config['WEIGHTS']['HEADING_WEIGHT'])
+        self.paragraph_weight = float(self.config['WEIGHTS']['PARAGRAPH_WEIGHT'])
 
-        # Lade Normalisierungsfaktoren aus Konfiguration
-        self.text_norm_factor = float(self.config['KEYWORD']['TEXT_NORM_FACTOR'])
-        self.parent_norm_factor = float(self.config['KEYWORD']['PARENT_NORM_FACTOR'])
+        # Boolean Schwellwerte - angepasst pro Textfeld
+        # Titel: kurze Texte
+        self.title_min = int(self.config['KEYWORD'].get('TITLE_MIN_KEYWORDS', 1))
+        self.title_high = int(self.config['KEYWORD'].get('TITLE_HIGH_KEYWORDS', 2))
 
-        print(f"Keywords (Einzelwörter): {', '.join(self.keywords)}")
-        self.write_to_report(f"Keywords: {', '.join(self.keywords)}\n")
+        # Überschriften: mittlere Länge
+        self.heading_min = int(self.config['KEYWORD'].get('HEADING_MIN_KEYWORDS', 2))
+        self.heading_high = int(self.config['KEYWORD'].get('HEADING_HIGH_KEYWORDS', 4))
+
+        # Paragraphen: lange Texte
+        self.paragraph_min = int(self.config['KEYWORD'].get('PARAGRAPH_MIN_KEYWORDS', 3))
+        self.paragraph_high = int(self.config['KEYWORD'].get('PARAGRAPH_HIGH_KEYWORDS', 6))
+
+        print(f"Boolean Keyword Spider mit {len(self.keywords)} Keywords")
+        print(f"Schwellwerte - Titel: {self.title_min}/{self.title_high}, "
+              f"Headings: {self.heading_min}/{self.heading_high}, "
+              f"Paragraphs: {self.paragraph_min}/{self.paragraph_high}")
+        self.write_to_report(f"Klassisches Boolean-Modell mit {len(self.keywords)} Keywords\n")
+        self.write_to_report(f"Angepasste Schwellwerte pro Textfeld\n")
 
     def calculate_text_relevance(self, text):
         """
-        Berechnet Relevanz basierend auf Keyword-Frequenz mit Python-Bordmitteln
-        Höhere Anzahl von Keyword-Treffern = höherer Score
+        Boolean-Modell: Zählt unique Keywords (Präsenz, nicht Frequenz)
+        Nutzt Paragraph-Schwellwerte als Standard
+        Returns: 0.0 (irrelevant), 0.5 (relevant), 1.0 (hochrelevant)
+        """
+        return self._calculate_boolean_relevance(text, self.paragraph_min, self.paragraph_high)
+
+    def _calculate_boolean_relevance(self, text, min_threshold, high_threshold):
+        """
+        Interne Methode für Boolean-Bewertung mit variablen Schwellwerten
         """
         if not text:
             return 0.0
 
-        # Textvorverarbeitung
         processed_text = self.preprocess_text(text)
-
         if not processed_text:
             return 0.0
 
-        # Tokenisiere und zähle mit Counter
-        words = processed_text.split()
-        word_count = len(words)
+        # Unique Keywords im Text finden
+        words = set(processed_text.split())
+        keywords_found = words.intersection(self.keywords)
+        unique_keyword_count = len(keywords_found)
 
-        if word_count == 0:
-            return 0.0
-
-        # Zähle Keyword-Treffer effizient mit Counter
-        word_counter = Counter(words)
-        total_matches = sum(word_counter[keyword] for keyword in self.keywords)
-
-        # Normalisiere Score (Treffer pro 100 Wörter)
-        normalized_score = (total_matches / word_count) * 100
-
-        # Konfigurierbare Normalisierung
-        return min(1.0, normalized_score / self.text_norm_factor)
+        # Dreistufige Boolean-Entscheidung
+        if unique_keyword_count >= high_threshold:
+            return 1.0  # Hochrelevant
+        elif unique_keyword_count >= min_threshold:
+            return 0.5  # Relevant
+        else:
+            return 0.0  # Irrelevant
 
     def calculate_parent_relevance(self, title, headings, paragraphs):
         """
-        Optimierte Elterndokument-Bewertung mit Python-Bordmitteln
-        Berechnet gewichtete Trefferanzahl / gewichtete Wortanzahl
+        Berechnet gewichtete Relevanz mit angepassten Schwellwerten pro Textfeld
+        Berücksichtigt die unterschiedlichen Textlängen realistisch
         """
-        total_weighted_matches = 0
-        total_weighted_words = 0
+        # Boolean-Bewertung mit feldspezifischen Schwellwerten
+        title_relevance = self._calculate_boolean_relevance(
+            title, self.title_min, self.title_high
+        ) if title else 0.0
 
-        # Verarbeite Titel
-        if title:
-            processed_title = self.preprocess_text(title)
-            if processed_title:
-                words = processed_title.split()
-                word_counter = Counter(words)
-                matches = sum(word_counter[keyword] for keyword in self.keywords)
-                word_count = len(words)
-                total_weighted_matches += matches * self.title_multiplier
-                total_weighted_words += word_count * self.title_multiplier
+        heading_relevance = self._calculate_boolean_relevance(
+            headings, self.heading_min, self.heading_high
+        ) if headings else 0.0
 
-        # Verarbeite Überschriften
-        if headings:
-            processed_headings = self.preprocess_text(headings)
-            if processed_headings:
-                words = processed_headings.split()
-                word_counter = Counter(words)
-                matches = sum(word_counter[keyword] for keyword in self.keywords)
-                word_count = len(words)
-                total_weighted_matches += matches * self.heading_multiplier
-                total_weighted_words += word_count * self.heading_multiplier
+        paragraph_relevance = self._calculate_boolean_relevance(
+            paragraphs, self.paragraph_min, self.paragraph_high
+        ) if paragraphs else 0.0
 
-        # Verarbeite Paragraphen
-        if paragraphs:
-            processed_paragraphs = self.preprocess_text(paragraphs)
-            if processed_paragraphs:
-                words = processed_paragraphs.split()
-                word_counter = Counter(words)
-                matches = sum(word_counter[keyword] for keyword in self.keywords)
-                word_count = len(words)
-                total_weighted_matches += matches * self.paragraph_multiplier
-                total_weighted_words += word_count * self.paragraph_multiplier
+        # Gewichtete Summe (Gewichte summieren sich zu 1.0)
+        weighted_relevance = (
+                self.title_weight * title_relevance +
+                self.heading_weight * heading_relevance +
+                self.paragraph_weight * paragraph_relevance
+        )
 
-        # Berechne finalen Score
-        if total_weighted_words == 0:
-            return 0.0
-
-        # Relevanz = gewichtete Treffer / gewichtete Wörter
-        relevance_score = total_weighted_matches / total_weighted_words
-
-        # Konfigurierbare Normalisierung
-        return min(1.0, relevance_score * self.parent_norm_factor)
+        return min(1.0, weighted_relevance)

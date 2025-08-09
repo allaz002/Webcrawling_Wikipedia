@@ -1,0 +1,134 @@
+
+============================================================
+CRAWLER KONFIGURATION - keyword_crawler
+============================================================
+Strategie: KeywordSpider
+Seed URLs: https://de.wikipedia.org/wiki/Wikipedia:Hauptseite
+Batch-Größe: 16
+Max. Seiten: 50000
+Max. relevante Seiten: 50
+Relevanz-Schwellenwert: 0.1
+Max. Laufzeit: 30 Minuten
+Report-Intervall: 30 Sekunden
+
+GEWICHTUNGEN:
+- Link-Gewicht: 0.9
+- Elterndokument-Gewicht: 0.1
+============================================================
+
+Klassisches Boolean-Modell mit 26 Keywords
+
+Angepasste Schwellwerte pro Textfeld
+
+
+--- ZWISCHENBERICHT [00:06:22] ---
+Laufzeit: 0:00:03.273093
+Harvest-Rate: 0.00%
+Relevante Seiten: 0
+Irrelevante Seiten: 25
+Aktueller Batch: 25
+
+
+--- ZWISCHENBERICHT [00:06:25] ---
+Laufzeit: 0:00:05.762958
+Harvest-Rate: 0.00%
+Relevante Seiten: 0
+Irrelevante Seiten: 50
+Aktueller Batch: 50
+
+
+--- ZWISCHENBERICHT [00:06:27] ---
+Laufzeit: 0:00:07.867826
+Harvest-Rate: 0.00%
+Relevante Seiten: 0
+Irrelevante Seiten: 75
+Aktueller Batch: 75
+
+
+--- ZWISCHENBERICHT [00:06:28] ---
+Laufzeit: 0:00:09.448760
+Harvest-Rate: 1.00%
+Relevante Seiten: 1
+Irrelevante Seiten: 99
+Aktueller Batch: 100
+
+
+--- ZWISCHENBERICHT [00:06:30] ---
+Laufzeit: 0:00:10.881037
+Harvest-Rate: 0.80%
+Relevante Seiten: 1
+Irrelevante Seiten: 124
+Aktueller Batch: 125
+
+
+--- ZWISCHENBERICHT [00:06:31] ---
+Laufzeit: 0:00:11.932748
+Harvest-Rate: 0.67%
+Relevante Seiten: 1
+Irrelevante Seiten: 149
+Aktueller Batch: 150
+
+
+--- ZWISCHENBERICHT [00:06:32] ---
+Laufzeit: 0:00:13.135623
+Harvest-Rate: 0.57%
+Relevante Seiten: 1
+Irrelevante Seiten: 174
+Aktueller Batch: 175
+
+
+--- ZWISCHENBERICHT [00:06:33] ---
+Laufzeit: 0:00:14.311619
+Harvest-Rate: 0.50%
+Relevante Seiten: 1
+Irrelevante Seiten: 199
+Aktueller Batch: 200
+
+
+--- ZWISCHENBERICHT [00:06:35] ---
+Laufzeit: 0:00:15.901973
+Harvest-Rate: 0.44%
+Relevante Seiten: 1
+Irrelevante Seiten: 224
+Aktueller Batch: 225
+
+
+--- ZWISCHENBERICHT [00:06:36] ---
+Laufzeit: 0:00:17.461601
+Harvest-Rate: 0.40%
+Relevante Seiten: 1
+Irrelevante Seiten: 249
+Aktueller Batch: 250
+
+
+--- ZWISCHENBERICHT [00:06:38] ---
+Laufzeit: 0:00:18.762955
+Harvest-Rate: 0.36%
+Relevante Seiten: 1
+Irrelevante Seiten: 274
+Aktueller Batch: 275
+
+
+--- ZWISCHENBERICHT [00:06:39] ---
+Laufzeit: 0:00:19.991663
+Harvest-Rate: 0.33%
+Relevante Seiten: 1
+Irrelevante Seiten: 299
+Aktueller Batch: 300
+
+
+--- ZWISCHENBERICHT [00:06:40] ---
+Laufzeit: 0:00:21.265518
+Harvest-Rate: 0.62%
+Relevante Seiten: 2
+Irrelevante Seiten: 323
+Aktueller Batch: 325
+
+
+--- ZWISCHENBERICHT [00:06:42] ---
+Laufzeit: 0:00:22.855652
+Harvest-Rate: 0.57%
+Relevante Seiten: 2
+Irrelevante Seiten: 348
+Aktueller Batch: 350
+

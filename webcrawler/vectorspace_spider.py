@@ -31,10 +31,10 @@ class VectorSpaceSpider(BaseTopicalSpider):
         if any(r < 0 for r in [self.idf_ratio_irrelevant, self.idf_ratio_moderate, self.idf_ratio_relevant]):
             raise ValueError("IDF-Ratios dürfen nicht negativ sein")
 
-        # TF-IDF Vectorizer
-        vectorizer_config = self.config['VECTORIZER_TFIDF']
+        # TF-IDF Vectorizer - alle Parameter aus VECTORSPACE Sektion
+        vectorizer_config = self.config['VECTORSPACE']
         self.vectorizer = TfidfVectorizer(
-            max_features=int(vectorizer_config['MAX_FEATURES']),
+            max_features=int(vectorizer_config.get('MAX_FEATURES', 1000)),
             ngram_range=(int(vectorizer_config['NGRAM_MIN']),
                          int(vectorizer_config['NGRAM_MAX'])),
             min_df=int(vectorizer_config['MIN_DF']),

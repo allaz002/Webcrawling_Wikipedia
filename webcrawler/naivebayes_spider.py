@@ -53,10 +53,15 @@ class NaiveBayesSpider(BaseTopicalSpider):
             training_data = json.load(f)
 
         for sample in training_data:
+            # Ignoriere mäßig relevante Daten (Label 1)
+            if sample['label'] == 1:
+                continue
+
             processed_text = self.preprocess_text(sample['text'])
             if processed_text:  # Nur nicht-leere Texte
                 texts.append(processed_text)
-                labels.append(sample['label'])
+                # Mappe Label 2 auf 1 für binäre Klassifikation
+                labels.append(1 if sample['label'] == 2 else 0)
 
         if not texts:
             raise ValueError("Keine gültigen Trainingsdaten vorhanden!")
@@ -85,7 +90,10 @@ class NaiveBayesSpider(BaseTopicalSpider):
         with open(self.vectorizer_path, 'wb') as f:
             pickle.dump(self.vectorizer, f)
 
-        print(f"Modell trainiert mit {len(texts)} Beispielen (reine Termhäufigkeiten)")
+        # Statistik ausgeben
+        n_relevant = sum(1 for l in labels if l == 1)
+        n_irrelevant = len(labels) - n_relevant
+        print(f"Modell trainiert mit {len(texts)} Beispielen ({n_relevant} relevant, {n_irrelevant} irrelevant)")
 
     def calculate_text_relevance(self, text):
         """Berechnet Relevanz mittels Naive Bayes Klassifikation"""

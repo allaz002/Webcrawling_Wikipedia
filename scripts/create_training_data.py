@@ -1,4 +1,3 @@
-
 """
 Erstellt Trainingsdaten für Vectorspace Spider und Naive Bayes Spider
 Extrahiert Webinhalte anhand gegebener URLs und speichert sie als JSON Datei
@@ -29,12 +28,14 @@ class TrainingDataGenerator:
         self.timeout = int(self.config['SETTINGS']['TIMEOUT'])
         self.min_text_length = int(self.config['SETTINGS']['MIN_TEXT_LENGTH'])
 
-        # URLs Laden
+        # URLs Laden - drei Kategorien
         relevant_raw = self.config['URLS']['RELEVANT_URLS'].split(',')
+        moderate_raw = self.config['URLS']['MODERATE_URLS'].split(',')
         irrelevant_raw = self.config['URLS']['IRRELEVANT_URLS'].split(',')
-        self.relevant_urls = sorted(list(set([url.strip() for url in relevant_raw if url.strip()])))
-        self.irrelevant_urls = sorted(list(set([url.strip() for url in irrelevant_raw if url.strip()])))
 
+        self.relevant_urls = sorted(list(set([url.strip() for url in relevant_raw if url.strip()])))
+        self.moderate_urls = sorted(list(set([url.strip() for url in moderate_raw if url.strip()])))
+        self.irrelevant_urls = sorted(list(set([url.strip() for url in irrelevant_raw if url.strip()])))
 
         # Verzeichnisse erstellen
         Path(os.path.dirname(self.output_path)).mkdir(parents=True, exist_ok=True)
@@ -49,6 +50,7 @@ class TrainingDataGenerator:
         # Statistiken
         self.stats = {
             'relevant': 0,
+            'moderate': 0,
             'irrelevant': 0,
             'failed': 0
         }
@@ -110,7 +112,7 @@ class TrainingDataGenerator:
             self.stats['failed'] += 1
             return None
 
-    def process_urls(self, relevant_urls, irrelevant_urls):
+    def process_urls(self, irrelevant_urls, moderate_urls, relevant_urls):
         """Verarbeitet URLs und speichert Inhalt in JSON Datei"""
 
         # Backup, falls Trainingsdaten bereits vorhanden
@@ -120,20 +122,6 @@ class TrainingDataGenerator:
             os.rename(self.output_path, backup_file)
             print(f"Backup von existierenden Daten erstellt und verschoben nach: {backup_file}")
 
-        # Relevante URLs mit Label = 1 verarbeiten
-        print("\nVerarbeite relevante URLs...")
-        for i, url in enumerate(relevant_urls, 1):
-            print(f"  [{i}/{len(relevant_urls)}] {url}")
-            content = self.extract_content(url)
-
-            if content and len(content) >= self.min_text_length:
-                # Eintrag hinzufügen
-                self.training_data.append({
-                    "label": 1,
-                    "text": content
-                })
-                self.stats['relevant'] += 1
-
         # Irrelevante URLs mit Label = 0 verarbeiten
         print("\nVerarbeite irrelevante URLs...")
         for i, url in enumerate(irrelevant_urls, 1):
@@ -141,12 +129,37 @@ class TrainingDataGenerator:
             content = self.extract_content(url)
 
             if content and len(content) >= self.min_text_length:
-                # Eintrag hinzufügen
                 self.training_data.append({
                     "label": 0,
                     "text": content
                 })
                 self.stats['irrelevant'] += 1
+
+        # Mäßig relevante URLs mit Label = 1 verarbeiten
+        print("\nVerarbeite mäßig relevante URLs...")
+        for i, url in enumerate(moderate_urls, 1):
+            print(f"  [{i}/{len(moderate_urls)}] {url}")
+            content = self.extract_content(url)
+
+            if content and len(content) >= self.min_text_length:
+                self.training_data.append({
+                    "label": 1,
+                    "text": content
+                })
+                self.stats['moderate'] += 1
+
+        # Voll relevante URLs mit Label = 2 verarbeiten
+        print("\nVerarbeite voll relevante URLs...")
+        for i, url in enumerate(relevant_urls, 1):
+            print(f"  [{i}/{len(relevant_urls)}] {url}")
+            content = self.extract_content(url)
+
+            if content and len(content) >= self.min_text_length:
+                self.training_data.append({
+                    "label": 2,
+                    "text": content
+                })
+                self.stats['relevant'] += 1
 
         # Als JSON Datei speichern
         with open(self.output_path, 'w', encoding='utf-8') as f:
@@ -154,19 +167,22 @@ class TrainingDataGenerator:
 
     def print_statistics(self):
         """Gibt Statistiken über die Erstellung der Trainingsdaten aus"""
-        total = self.stats['relevant'] + self.stats['irrelevant']
+        total = self.stats['relevant'] + self.stats['moderate'] + self.stats['irrelevant']
         print(f"""
 {'=' * 50}
 TRAININGSDATEN ERFOLGREICH ERSTELLT
 {'=' * 50}
 Ausgabedatei: {self.output_path}
 Format: JSON
-Relevante Samples: {self.stats['relevant']}
+Voll relevante Samples: {self.stats['relevant']}
+Mäßig relevante Samples: {self.stats['moderate']}
 Irrelevante Samples: {self.stats['irrelevant']}
 Gesamt: {total}
 Fehlgeschlagen: {self.stats['failed']}
 
-Balance: {self.stats['relevant'] / max(1, total) * 100:.1f}% relevant / {self.stats['irrelevant'] / max(1, total) * 100:.1f}% irrelevant
+Balance: {self.stats['relevant'] / max(1, total) * 100:.1f}% voll relevant / 
+         {self.stats['moderate'] / max(1, total) * 100:.1f}% mäßig relevant / 
+         {self.stats['irrelevant'] / max(1, total) * 100:.1f}% irrelevant
 {'=' * 50}
 """)
 
@@ -181,13 +197,14 @@ def main():
 {'=' * 50}
 TRAININGSDATEN-GENERATOR
 {'=' * 50}
-Relevante URLs: {len(generator.relevant_urls)}
+Voll relevante URLs: {len(generator.relevant_urls)}
+Mäßig relevante URLs: {len(generator.moderate_urls)}
 Irrelevante URLs: {len(generator.irrelevant_urls)}
 {'=' * 50}
 """)
 
     # Inhalte extrahieren und Erfolg ausgeben
-    generator.process_urls(generator.relevant_urls, generator.irrelevant_urls)
+    generator.process_urls(generator.irrelevant_urls, generator.moderate_urls, generator.relevant_urls)
     generator.print_statistics()
 
 

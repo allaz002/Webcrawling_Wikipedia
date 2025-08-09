@@ -1,38 +1,11 @@
 from webcrawler.base_spider import BaseTopicalSpider
 from sklearn.feature_extraction.text import TfidfVectorizer, CountVectorizer
-from sklearn.preprocessing import MaxAbsScaler
 from sklearn.metrics.pairwise import cosine_similarity
 import numpy as np
 import json
 import scipy.sparse as sp
 import random
-
-
-class TfNormVectorizer:
-    """TF-Norm Vektorisierer: f_t,d / max_t' f_t',d"""
-
-    def __init__(self, max_features=1000, ngram_range=(1, 2), min_df=1, max_df=0.95):
-        self.count_vectorizer = CountVectorizer(
-            max_features=max_features,
-            ngram_range=ngram_range,
-            min_df=min_df,
-            max_df=max_df
-        )
-        self.scaler = MaxAbsScaler()
-
-    def fit(self, documents):
-        count_matrix = self.count_vectorizer.fit_transform(documents)
-        self.scaler.fit(count_matrix)
-        return self
-
-    def transform(self, documents):
-        count_matrix = self.count_vectorizer.transform(documents)
-        return self.scaler.transform(count_matrix)
-
-    def fit_transform(self, documents):
-        count_matrix = self.count_vectorizer.fit_transform(documents)
-        return self.scaler.fit_transform(count_matrix)
-
+from sklearn.preprocessing import normalize
 
 class VectorSpaceSpider(BaseTopicalSpider):
     """Vektorraum-Modell mit Cosinus-Ähnlichkeit"""
@@ -42,35 +15,40 @@ class VectorSpaceSpider(BaseTopicalSpider):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
 
-        self.mode = self.config['VECTORSPACE'].get('MODE', 'tf_norm').lower()
+        self.mode = self.config['VECTORSPACE'].get('MODE', 'tf').lower()
         self.relevant_ratio = float(self.config['VECTORSPACE'].get('RELEVANT_RATIO', '1.0'))
+
+        # Bei TF-Modus immer nur relevante Dokumente verwenden
+        if self.mode == 'tf':
+            self.relevant_ratio = 1
 
         # Gewichtungen aus WEIGHTS Sektion
         self.title_weight = float(self.config['WEIGHTS']['TITLE_WEIGHT'])
         self.heading_weight = float(self.config['WEIGHTS']['HEADING_WEIGHT'])
         self.paragraph_weight = float(self.config['WEIGHTS']['PARAGRAPH_WEIGHT'])
 
-        # Initialisiere Vectorizer basierend auf Modus mit separaten Settings
-        if self.mode == 'tf_norm':
-            vectorizer_config = self.config['VECTORIZER_TF_NORM']
-            self.vectorizer = TfNormVectorizer(
+        # Initialisiere Vectorizer basierend auf Modus
+        if self.mode == 'tf':
+            # Reine Termhäufigkeiten ohne Normalisierung
+            vectorizer_config = self.config['VECTORIZER_TF']
+            self.vectorizer = CountVectorizer(
                 max_features=int(vectorizer_config['MAX_FEATURES']),
                 ngram_range=(int(vectorizer_config['NGRAM_MIN']),
                              int(vectorizer_config['NGRAM_MAX'])),
                 min_df=int(vectorizer_config['MIN_DF']),
                 max_df=float(vectorizer_config['MAX_DF'])
             )
-            print("Verwende TF-Norm Vektorisierung")
         else:  # tfidf
+            # TF-IDF ohne automatische Normalisierung
             vectorizer_config = self.config['VECTORIZER_TFIDF']
             self.vectorizer = TfidfVectorizer(
                 max_features=int(vectorizer_config['MAX_FEATURES']),
                 ngram_range=(int(vectorizer_config['NGRAM_MIN']),
                              int(vectorizer_config['NGRAM_MAX'])),
                 min_df=int(vectorizer_config['MIN_DF']),
-                max_df=float(vectorizer_config['MAX_DF'])
+                max_df=float(vectorizer_config['MAX_DF']),
+                norm=None
             )
-            print("Verwende TF-IDF Vektorisierung")
 
         self.load_training_data()
 
@@ -95,7 +73,7 @@ class VectorSpaceSpider(BaseTopicalSpider):
                 else:
                     irrelevant_texts.append(processed_text)
 
-        # Bestimme Trainingsset basierend auf Modus und Ratio
+        # Bestimme Trainingsset basierend auf Ratio
         if self.relevant_ratio < 1.0:
             num_relevant = len(relevant_texts)
             num_irrelevant_needed = int(num_relevant * (1 - self.relevant_ratio) / self.relevant_ratio)
@@ -111,10 +89,14 @@ class VectorSpaceSpider(BaseTopicalSpider):
             training_texts = relevant_texts
             print(f"Training nur mit {len(relevant_texts)} relevanten Dokumenten")
 
-        # Fit Vectorizer und erstelle Themen-Vektor aus relevanten Dokumenten
+
         self.vectorizer.fit(training_texts)
         vectors = self.vectorizer.transform(relevant_texts)
-        self.topic_vector = np.asarray(vectors.mean(axis=0)).reshape(1, -1)
+
+        vectors = normalize(vectors, norm='l2', axis=1)
+        topic_vec = np.asarray(vectors.mean(axis=0)).reshape(1, -1)
+
+        self.topic_vector = normalize(topic_vec, norm='l2', axis=1)
 
     def calculate_text_relevance(self, text):
         """Berechnet Cosinus-Ähnlichkeit zwischen Text und Themenprofil"""
@@ -126,11 +108,12 @@ class VectorSpaceSpider(BaseTopicalSpider):
             return 0.0
 
         try:
-            text_vector = self.vectorizer.transform([processed_text])
-            if sp.issparse(text_vector):
-                text_vector = text_vector.toarray()
+            text_vector = self.vectorizer.transform([processed_text])  # bleibt sparse
+            if hasattr(text_vector, "nnz") and text_vector.nnz == 0:
+                return 0.0
 
-            return float(cosine_similarity(text_vector, self.topic_vector)[0][0])
+            # cosine_similarity normalisiert intern, kein extra normalize nötig
+            return float(cosine_similarity(text_vector, self.topic_vector)[0, 0])
         except Exception:
             return 0.0
 

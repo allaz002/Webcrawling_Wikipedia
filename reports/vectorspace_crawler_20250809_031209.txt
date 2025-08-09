@@ -1,0 +1,161 @@
+
+============================================================
+CRAWLER KONFIGURATION - vectorspace_crawler
+============================================================
+Strategie: VectorSpaceSpider
+Seed URLs: https://de.wikipedia.org/wiki/Wikipedia:Hauptseite
+Batch-Größe: 16
+Max. Seiten: 50000
+Max. relevante Seiten: 250
+Relevanz-Schwellenwert: 0.01
+Max. Laufzeit: 30 Minuten
+Report-Intervall: 30 Sekunden
+
+GEWICHTUNGEN:
+- Link-Gewicht: 0.5
+- Elterndokument-Gewicht: 0.5
+============================================================
+
+Modus: tf
+
+Relevant-Ratio: 1
+
+
+--- ZWISCHENBERICHT [03:12:14] ---
+Laufzeit: 0:00:05.042087
+Harvest-Rate: 100.00%
+Relevante Seiten: 25
+Irrelevante Seiten: 0
+Aktueller Batch: 25
+
+
+--- ZWISCHENBERICHT [03:12:17] ---
+Laufzeit: 0:00:08.081815
+Harvest-Rate: 100.00%
+Relevante Seiten: 50
+Irrelevante Seiten: 0
+Aktueller Batch: 50
+
+
+--- ZWISCHENBERICHT [03:12:18] ---
+Laufzeit: 0:00:09.240993
+Harvest-Rate: 100.00%
+Relevante Seiten: 75
+Irrelevante Seiten: 0
+Aktueller Batch: 75
+
+
+--- ZWISCHENBERICHT [03:12:20] ---
+Laufzeit: 0:00:11.320231
+Harvest-Rate: 100.00%
+Relevante Seiten: 100
+Irrelevante Seiten: 0
+Aktueller Batch: 100
+
+
+--- ZWISCHENBERICHT [03:12:22] ---
+Laufzeit: 0:00:13.052477
+Harvest-Rate: 100.00%
+Relevante Seiten: 125
+Irrelevante Seiten: 0
+Aktueller Batch: 125
+
+
+--- ZWISCHENBERICHT [03:12:23] ---
+Laufzeit: 0:00:14.049615
+Harvest-Rate: 100.00%
+Relevante Seiten: 150
+Irrelevante Seiten: 0
+Aktueller Batch: 150
+
+
+--- ZWISCHENBERICHT [03:12:24] ---
+Laufzeit: 0:00:15.350262
+Harvest-Rate: 100.00%
+Relevante Seiten: 175
+Irrelevante Seiten: 0
+Aktueller Batch: 175
+
+
+--- ZWISCHENBERICHT [03:12:26] ---
+Laufzeit: 0:00:16.665869
+Harvest-Rate: 100.00%
+Relevante Seiten: 200
+Irrelevante Seiten: 0
+Aktueller Batch: 200
+
+
+--- ZWISCHENBERICHT [03:12:27] ---
+Laufzeit: 0:00:18.145285
+Harvest-Rate: 100.00%
+Relevante Seiten: 225
+Irrelevante Seiten: 0
+Aktueller Batch: 225
+
+
+--- ZWISCHENBERICHT [03:12:29] ---
+Laufzeit: 0:00:19.604725
+Harvest-Rate: 100.00%
+Relevante Seiten: 250
+Irrelevante Seiten: 0
+Aktueller Batch: 250
+
+
+============================================================
+ABSCHLUSSBERICHT - vectorspace_crawler
+============================================================
+Spider-Name: vectorspace_crawler
+Gesamtlaufzeit: 0:00:19.605181
+Anzahl gecrawlter Seiten: 250
+Anzahl relevanter Seiten: 250
+Anzahl irrelevanter Seiten: 0
+Harvest-Rate: 100.00%
+Durchschnittliche Relevanz: 0.2348
+Gesamte Relevanzbewertungszeit: 0.56 Sekunden
+
+TOP 10 BESTE URLS:
+1. Score: 0.5598 - https://de.wikipedia.org/wiki/K%C3%BCnstliche_Intelligenz
+2. Score: 0.4134 - https://de.wikipedia.org/wiki/Barometer
+3. Score: 0.4062 - https://de.wikipedia.org/wiki/Mobiltelefon
+4. Score: 0.3947 - https://de.wikipedia.org/wiki/Chaos_Computer_Club
+5. Score: 0.3921 - https://de.wikipedia.org/wiki/%C3%84gypten
+6. Score: 0.3885 - https://de.wikipedia.org/wiki/Bolivien
+7. Score: 0.3858 - https://de.wikipedia.org/wiki/Leipzig
+8. Score: 0.3711 - https://de.wikipedia.org/wiki/Okinawa
+9. Score: 0.3698 - https://de.wikipedia.org/wiki/Postleitzahl_(Deutschland)
+10. Score: 0.3681 - https://de.wikipedia.org/wiki/Karlsruhe
+
+TOP 10 MITTELFELD URLS:
+1. Score: 0.2377 - https://de.wikipedia.org/wiki/Internationale_Opiumkonferenz
+2. Score: 0.2373 - https://de.wikipedia.org/wiki/Neue_Partei_Daichi
+3. Score: 0.2354 - https://de.wikipedia.org/wiki/Gesprochene_Sprache
+4. Score: 0.2341 - https://de.wikipedia.org/wiki/Yomiuri_Shimbun
+5. Score: 0.2328 - https://de.wikipedia.org/wiki/K%C3%BCnstliche_Insel
+6. Score: 0.2323 - https://de.wikipedia.org/wiki/The_Economist
+7. Score: 0.2319 - https://de.wikipedia.org/wiki/Weltgipfel_f%C3%BCr_nachhaltige_Entwicklung
+8. Score: 0.2319 - https://de.wikipedia.org/wiki/Weltgipfel_f%C3%BCr_nachhaltige_Entwicklung_2002
+9. Score: 0.2319 - https://de.wikipedia.org/wiki/World_Summit_on_Sustainable_Development
+10. Score: 0.2285 - https://de.wikipedia.org/wiki/Beweis_(Recht)
+
+TOP 10 SCHLECHTESTE URLS:
+1. Score: 0.0769 - https://de.wikipedia.org/wiki/1945
+2. Score: 0.0673 - https://de.wikipedia.org/wiki/Inselkette
+3. Score: 0.0666 - https://de.wikipedia.org/wiki/August_2025
+4. Score: 0.0537 - https://de.wikipedia.org/wiki/1975
+5. Score: 0.0453 - https://de.wikipedia.org/wiki/Potsdam_(Begriffskl%C3%A4rung)
+6. Score: 0.0414 - https://de.wikipedia.org/wiki/9._August
+7. Score: 0.0334 - https://de.wikipedia.org/wiki/1965
+8. Score: 0.0331 - https://de.wikipedia.org/wiki/Trope
+9. Score: 0.0243 - https://de.wikipedia.org/wiki/Isesaki
+10. Score: 0.0138 - https://de.wikipedia.org/wiki/BSW_(Begriffskl%C3%A4rung)
+
+============================================================
+
+
+--- ZWISCHENBERICHT [03:12:32] ---
+Laufzeit: 0:00:23.000945
+Harvest-Rate: 100.00%
+Relevante Seiten: 275
+Irrelevante Seiten: 0
+Aktueller Batch: 275
+

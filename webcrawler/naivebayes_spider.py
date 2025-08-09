@@ -1,6 +1,6 @@
 from webcrawler.base_spider import BaseTopicalSpider
 from sklearn.naive_bayes import MultinomialNB
-from sklearn.feature_extraction.text import TfidfVectorizer, CountVectorizer
+from sklearn.feature_extraction.text import CountVectorizer
 import pickle
 import os
 import json
@@ -8,7 +8,7 @@ import numpy as np
 
 
 class NaiveBayesSpider(BaseTopicalSpider):
-    """Naive Bayes Klassifikations-Strategie"""
+    """Naive Bayes Klassifikations-Strategie mit reinen Termhäufigkeiten"""
 
     name = 'naivebayes_crawler'
 
@@ -19,8 +19,6 @@ class NaiveBayesSpider(BaseTopicalSpider):
         self.vectorizer_path = self.config['NAIVEBAYES']['VECTORIZER_PATH']
         self.training_data_path = self.config['NAIVEBAYES']['TRAINING_DATA_PATH']
 
-        self.mode = self.config['NAIVEBAYES'].get('MODE', 'tf').lower()
-
         # Gewichtungen aus WEIGHTS Sektion
         self.title_weight = float(self.config['WEIGHTS']['TITLE_WEIGHT'])
         self.heading_weight = float(self.config['WEIGHTS']['HEADING_WEIGHT'])
@@ -28,7 +26,8 @@ class NaiveBayesSpider(BaseTopicalSpider):
 
         self.load_or_train_model()
 
-        print(f"Naive Bayes Modell geladen/trainiert im {self.mode} Modus")
+        print("Naive Bayes Modell geladen/trainiert mit reinen Termhäufigkeiten (TF)")
+        self.write_to_report("Naive Bayes verwendet reine Termhäufigkeiten (TF)\n")
         self.write_to_report(f"Modell-Pfad: {self.model_path}\n")
 
     def load_or_train_model(self):
@@ -43,8 +42,8 @@ class NaiveBayesSpider(BaseTopicalSpider):
             self.train_model()
 
     def train_model(self):
-        """Trainiert Naive Bayes Klassifikator"""
-        print("Trainiere neues Naive Bayes Modell...")
+        """Trainiert Naive Bayes Klassifikator mit reinen Termhäufigkeiten"""
+        print("Trainiere neues Naive Bayes Modell mit reinen Termhäufigkeiten...")
 
         # Lade und verarbeite Trainingsdaten
         texts = []
@@ -62,30 +61,15 @@ class NaiveBayesSpider(BaseTopicalSpider):
         if not texts:
             raise ValueError("Keine gültigen Trainingsdaten vorhanden!")
 
-        # Initialisiere Vectorizer basierend auf Modus
-        if self.mode == 'tf':
-            # Reine Termhäufigkeiten ohne Normalisierung
-            vectorizer_config = self.config['VECTORIZER_TF_NORM']
-            self.vectorizer = CountVectorizer(
-                max_features=int(vectorizer_config['MAX_FEATURES']),
-                ngram_range=(int(vectorizer_config['NGRAM_MIN']),
-                             int(vectorizer_config['NGRAM_MAX'])),
-                min_df=int(vectorizer_config['MIN_DF']),
-                max_df=float(vectorizer_config['MAX_DF'])
-            )
-            print("Verwende reine Termhäufigkeiten (TF) ohne Normalisierung")
-        else:  # tfidf
-            # TF-IDF mit L2-Normalisierung (Standard)
-            vectorizer_config = self.config['VECTORIZER_TFIDF']
-            self.vectorizer = TfidfVectorizer(
-                max_features=int(vectorizer_config['MAX_FEATURES']),
-                ngram_range=(int(vectorizer_config['NGRAM_MIN']),
-                             int(vectorizer_config['NGRAM_MAX'])),
-                min_df=int(vectorizer_config['MIN_DF']),
-                max_df=float(vectorizer_config['MAX_DF']),
-                norm='l2'  # Dokumentweise L2-Normalisierung
-            )
-            print("Verwende TF-IDF mit dokumentweiser L2-Normalisierung")
+        # CountVectorizer mit Parametern direkt aus NAIVEBAYES Sektion
+        vectorizer_config = self.config['NAIVEBAYES']
+        self.vectorizer = CountVectorizer(
+            max_features=int(vectorizer_config['MAX_FEATURES']),
+            ngram_range=(int(vectorizer_config['NGRAM_MIN']),
+                         int(vectorizer_config['NGRAM_MAX'])),
+            min_df=int(vectorizer_config['MIN_DF']),
+            max_df=float(vectorizer_config['MAX_DF'])
+        )
 
         # Vektorisiere und trainiere
         X = self.vectorizer.fit_transform(texts)
@@ -101,7 +85,7 @@ class NaiveBayesSpider(BaseTopicalSpider):
         with open(self.vectorizer_path, 'wb') as f:
             pickle.dump(self.vectorizer, f)
 
-        print(f"Modell trainiert mit {len(texts)} Beispielen")
+        print(f"Modell trainiert mit {len(texts)} Beispielen (reine Termhäufigkeiten)")
 
     def calculate_text_relevance(self, text):
         """Berechnet Relevanz mittels Naive Bayes Klassifikation"""

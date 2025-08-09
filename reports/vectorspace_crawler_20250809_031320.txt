@@ -1,0 +1,161 @@
+
+============================================================
+CRAWLER KONFIGURATION - vectorspace_crawler
+============================================================
+Strategie: VectorSpaceSpider
+Seed URLs: https://de.wikipedia.org/wiki/Wikipedia:Hauptseite
+Batch-Größe: 16
+Max. Seiten: 50000
+Max. relevante Seiten: 250
+Relevanz-Schwellenwert: 0.01
+Max. Laufzeit: 30 Minuten
+Report-Intervall: 30 Sekunden
+
+GEWICHTUNGEN:
+- Link-Gewicht: 0.5
+- Elterndokument-Gewicht: 0.5
+============================================================
+
+Modus: tf
+
+Relevant-Ratio: 1
+
+
+--- ZWISCHENBERICHT [03:13:24] ---
+Laufzeit: 0:00:03.877206
+Harvest-Rate: 100.00%
+Relevante Seiten: 25
+Irrelevante Seiten: 0
+Aktueller Batch: 25
+
+
+--- ZWISCHENBERICHT [03:13:26] ---
+Laufzeit: 0:00:05.584883
+Harvest-Rate: 100.00%
+Relevante Seiten: 50
+Irrelevante Seiten: 0
+Aktueller Batch: 50
+
+
+--- ZWISCHENBERICHT [03:13:27] ---
+Laufzeit: 0:00:06.832929
+Harvest-Rate: 100.00%
+Relevante Seiten: 75
+Irrelevante Seiten: 0
+Aktueller Batch: 75
+
+
+--- ZWISCHENBERICHT [03:13:28] ---
+Laufzeit: 0:00:08.376275
+Harvest-Rate: 100.00%
+Relevante Seiten: 100
+Irrelevante Seiten: 0
+Aktueller Batch: 100
+
+
+--- ZWISCHENBERICHT [03:13:30] ---
+Laufzeit: 0:00:09.742207
+Harvest-Rate: 100.00%
+Relevante Seiten: 125
+Irrelevante Seiten: 0
+Aktueller Batch: 125
+
+
+--- ZWISCHENBERICHT [03:13:31] ---
+Laufzeit: 0:00:11.270003
+Harvest-Rate: 100.00%
+Relevante Seiten: 150
+Irrelevante Seiten: 0
+Aktueller Batch: 150
+
+
+--- ZWISCHENBERICHT [03:13:33] ---
+Laufzeit: 0:00:12.628551
+Harvest-Rate: 100.00%
+Relevante Seiten: 175
+Irrelevante Seiten: 0
+Aktueller Batch: 175
+
+
+--- ZWISCHENBERICHT [03:13:35] ---
+Laufzeit: 0:00:15.242210
+Harvest-Rate: 100.00%
+Relevante Seiten: 200
+Irrelevante Seiten: 0
+Aktueller Batch: 200
+
+
+--- ZWISCHENBERICHT [03:13:37] ---
+Laufzeit: 0:00:16.816040
+Harvest-Rate: 100.00%
+Relevante Seiten: 225
+Irrelevante Seiten: 0
+Aktueller Batch: 225
+
+
+--- ZWISCHENBERICHT [03:13:38] ---
+Laufzeit: 0:00:18.139007
+Harvest-Rate: 100.00%
+Relevante Seiten: 250
+Irrelevante Seiten: 0
+Aktueller Batch: 250
+
+
+============================================================
+ABSCHLUSSBERICHT - vectorspace_crawler
+============================================================
+Spider-Name: vectorspace_crawler
+Gesamtlaufzeit: 0:00:18.139504
+Anzahl gecrawlter Seiten: 250
+Anzahl relevanter Seiten: 250
+Anzahl irrelevanter Seiten: 0
+Harvest-Rate: 100.00%
+Durchschnittliche Relevanz: 0.3431
+Gesamte Relevanzbewertungszeit: 0.55 Sekunden
+
+TOP 10 BESTE URLS:
+1. Score: 0.4413 - https://de.wikipedia.org/wiki/K%C3%BCnstliche_Intelligenz
+2. Score: 0.4375 - https://de.wikipedia.org/wiki/Wikipedia:Hauptseite/Archiv/11._Mai_2025
+3. Score: 0.4215 - https://de.wikipedia.org/wiki/Wikipedia:Hauptseite/Archiv/4._August_2023
+4. Score: 0.4204 - https://de.wikipedia.org/wiki/Wikipedia:Hauptseite/Archiv/11._November_2022
+5. Score: 0.4199 - https://de.wikipedia.org/wiki/Ludwig_Schaschek
+6. Score: 0.4167 - https://de.wikipedia.org/wiki/Wikipedia:Hauptseite/Archiv/19._September_2024
+7. Score: 0.4145 - https://de.wikipedia.org/wiki/Wikipedia:Hauptseite/Archiv/8._August_2023
+8. Score: 0.4136 - https://de.wikipedia.org/wiki/Wikipedia:Hauptseite/Archiv/11._November_2024
+9. Score: 0.4135 - https://de.wikipedia.org/wiki/Wikipedia:Helferlein/Rechtschreibpr%C3%BCfung
+10. Score: 0.4131 - https://de.wikipedia.org/wiki/Wikipedia:Hauptseite/Archiv/2._Mai_2024
+
+TOP 10 MITTELFELD URLS:
+1. Score: 0.3612 - https://de.wikipedia.org/wiki/Enzyklop%C3%A4die
+2. Score: 0.3610 - https://de.wikipedia.org/wiki/Juni_2025
+3. Score: 0.3608 - https://de.wikipedia.org/wiki/Team_DSM/Saison_2021
+4. Score: 0.3606 - https://de.wikipedia.org/wiki/Wikipedia:Kurze_Artikel
+5. Score: 0.3602 - https://de.wikipedia.org/wiki/Wahl_zum_neunten_Landtag_von_Sachsen-Anhalt
+6. Score: 0.3585 - https://de.wikipedia.org/wiki/Lorenzo_Priuli_(Patriarch)
+7. Score: 0.3585 - https://de.wikipedia.org/wiki/Wikipedia:Hauptseite/Archiv/21._Oktober_2022
+8. Score: 0.3582 - https://de.wikipedia.org/wiki/Swetlana_Jewgenjewna_Sawizkaja
+9. Score: 0.3570 - https://de.wikipedia.org/wiki/Kleinglattbach
+10. Score: 0.3565 - https://de.wikipedia.org/wiki/Weltweit
+
+TOP 10 SCHLECHTESTE URLS:
+1. Score: 0.2209 - https://de.wikipedia.org/wiki/Erde
+2. Score: 0.2144 - https://de.wikipedia.org/wiki/S%C3%BCdostasienspiele_2001/Billard
+3. Score: 0.2131 - https://de.wikipedia.org/wiki/Super_Mario_Land_2:_6_Golden_Coins
+4. Score: 0.2093 - https://de.wikipedia.org/wiki/Alte_Geschichte
+5. Score: 0.2064 - https://de.wikipedia.org/wiki/Die_Zeit
+6. Score: 0.2032 - https://de.wikipedia.org/wiki/Cupiennius_getazi
+7. Score: 0.1949 - https://de.wikipedia.org/wiki/PDC_World_Darts_Championship_2023
+8. Score: 0.1916 - https://de.wikipedia.org/wiki/Fedor_Holz
+9. Score: 0.1729 - https://de.wikipedia.org/wiki/Leichtathletik-Weltmeisterschaften_2017
+10. Score: 0.1564 - https://de.wikipedia.org/wiki/US-Dollar
+
+============================================================
+
+
+--- ZWISCHENBERICHT [03:13:42] ---
+Laufzeit: 0:00:21.913744
+Harvest-Rate: 100.00%
+Relevante Seiten: 275
+Irrelevante Seiten: 0
+Aktueller Batch: 275
+

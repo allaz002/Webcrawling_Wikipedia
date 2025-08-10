@@ -1,0 +1,161 @@
+
+============================================================
+CRAWLER KONFIGURATION - naivebayes_crawler
+============================================================
+Strategie: NaiveBayesSpider
+Seed URLs: https://de.wikipedia.org/wiki/Wikipedia:Hauptseite
+Batch-Größe: 32
+Max. Seiten: 50000
+Max. relevante Seiten: 250
+Relevanz-Schwellenwert: 0.0
+Max. Laufzeit: 30 Minuten
+Report-Intervall: 30 Sekunden
+
+GEWICHTUNGEN:
+- Link-Gewicht: 0.334
+- Elterndokument-Gewicht: 0.666
+============================================================
+
+Naive Bayes verwendet reine Termhäufigkeiten (TF)
+
+Modell-Pfad: models/naive_bayes_model.pkl
+
+
+--- ZWISCHENBERICHT [19:34:46] ---
+Laufzeit: 0:00:03.170986
+Harvest-Rate: 100.00%
+Relevante Seiten: 25
+Irrelevante Seiten: 0
+Aktueller Batch: 25
+
+
+--- ZWISCHENBERICHT [19:34:48] ---
+Laufzeit: 0:00:04.863879
+Harvest-Rate: 100.00%
+Relevante Seiten: 50
+Irrelevante Seiten: 0
+Aktueller Batch: 50
+
+
+--- ZWISCHENBERICHT [19:34:51] ---
+Laufzeit: 0:00:08.316503
+Harvest-Rate: 100.00%
+Relevante Seiten: 75
+Irrelevante Seiten: 0
+Aktueller Batch: 75
+
+
+--- ZWISCHENBERICHT [19:34:53] ---
+Laufzeit: 0:00:10.402116
+Harvest-Rate: 100.00%
+Relevante Seiten: 100
+Irrelevante Seiten: 0
+Aktueller Batch: 100
+
+
+--- ZWISCHENBERICHT [19:34:55] ---
+Laufzeit: 0:00:11.936680
+Harvest-Rate: 100.00%
+Relevante Seiten: 125
+Irrelevante Seiten: 0
+Aktueller Batch: 125
+
+
+--- ZWISCHENBERICHT [19:34:57] ---
+Laufzeit: 0:00:13.665356
+Harvest-Rate: 100.00%
+Relevante Seiten: 150
+Irrelevante Seiten: 0
+Aktueller Batch: 150
+
+
+--- ZWISCHENBERICHT [19:34:59] ---
+Laufzeit: 0:00:15.802282
+Harvest-Rate: 100.00%
+Relevante Seiten: 175
+Irrelevante Seiten: 0
+Aktueller Batch: 175
+
+
+--- ZWISCHENBERICHT [19:35:00] ---
+Laufzeit: 0:00:17.395557
+Harvest-Rate: 100.00%
+Relevante Seiten: 200
+Irrelevante Seiten: 0
+Aktueller Batch: 200
+
+
+--- ZWISCHENBERICHT [19:35:02] ---
+Laufzeit: 0:00:18.920316
+Harvest-Rate: 100.00%
+Relevante Seiten: 225
+Irrelevante Seiten: 0
+Aktueller Batch: 225
+
+
+--- ZWISCHENBERICHT [19:35:04] ---
+Laufzeit: 0:00:20.537529
+Harvest-Rate: 100.00%
+Relevante Seiten: 250
+Irrelevante Seiten: 0
+Aktueller Batch: 250
+
+
+============================================================
+ABSCHLUSSBERICHT - naivebayes_crawler
+============================================================
+Spider-Name: naivebayes_crawler
+Gesamtlaufzeit: 0:00:20.538055
+Anzahl gecrawlter Seiten: 250
+Anzahl relevanter Seiten: 250
+Anzahl irrelevanter Seiten: 0
+Harvest-Rate: 100.00%
+Durchschnittliche Relevanz: 0.6532
+Gesamte Relevanzbewertungszeit: 0.35 Sekunden
+
+TOP 10 BESTE URLS:
+1. Score: 1.0000 - https://de.wikipedia.org/wiki/Support_Vector_Machine
+2. Score: 1.0000 - https://de.wikipedia.org/wiki/Reinforcement_learning_from_human_feedback
+3. Score: 1.0000 - https://de.wikipedia.org/wiki/Data-Mining
+4. Score: 1.0000 - https://de.wikipedia.org/wiki/Eingabe_(Computer)
+5. Score: 1.0000 - https://de.wikipedia.org/wiki/Maschinelles_Lernen
+6. Score: 1.0000 - https://de.wikipedia.org/wiki/Alan_Turing
+7. Score: 1.0000 - https://de.wikipedia.org/wiki/Eingabe_und_Ausgabe
+8. Score: 0.9999 - https://de.wikipedia.org/wiki/Turing-Test
+9. Score: 0.9999 - https://de.wikipedia.org/wiki/Software-Agent
+10. Score: 0.9999 - https://de.wikipedia.org/wiki/Algorithmus
+
+TOP 10 MITTELFELD URLS:
+1. Score: 0.8286 - https://de.wikipedia.org/wiki/Operative_Entscheidung
+2. Score: 0.8286 - https://de.wikipedia.org/wiki/Konstitutive_Entscheidung
+3. Score: 0.8216 - https://de.wikipedia.org/wiki/CRUD
+4. Score: 0.8156 - https://de.wikipedia.org/wiki/Website
+5. Score: 0.8095 - https://de.wikipedia.org/wiki/Marktforschung
+6. Score: 0.8038 - https://de.wikipedia.org/wiki/Alphabet_Inc.
+7. Score: 0.8026 - https://de.wikipedia.org/wiki/Kerngesch%C3%A4ft
+8. Score: 0.7902 - https://de.wikipedia.org/wiki/Theorie
+9. Score: 0.7688 - https://de.wikipedia.org/wiki/Liste_der_HTTP-Headerfelder
+10. Score: 0.7611 - https://de.wikipedia.org/wiki/Fritz_Pokropp
+
+TOP 10 SCHLECHTESTE URLS:
+1. Score: 0.1274 - https://de.wikipedia.org/wiki/Dublin
+2. Score: 0.1274 - https://de.wikipedia.org/wiki/Alabama
+3. Score: 0.0985 - https://de.wikipedia.org/wiki/Stanford_Research_Institute
+4. Score: 0.0833 - https://de.wikipedia.org/wiki/Nationale_Raumfahrtbeh%C3%B6rde_Chinas
+5. Score: 0.0624 - https://de.wikipedia.org/wiki/Spaltung_(Recht)
+6. Score: 0.0614 - https://de.wikipedia.org/wiki/Nobelpreis_f%C3%BCr_Physik
+7. Score: 0.0358 - https://de.wikipedia.org/wiki/Liste_von_Online-Enzyklop%C3%A4dien
+8. Score: 0.0319 - https://de.wikipedia.org/wiki/Deutschland
+9. Score: 0.0291 - https://de.wikipedia.org/wiki/US-amerikanisch
+10. Score: 0.0005 - https://de.wikipedia.org/wiki/Wikipedia:Statistik/Artikelanzahl_nach_Stadt_in_der_Schweiz
+
+============================================================
+
+
+--- ZWISCHENBERICHT [19:35:08] ---
+Laufzeit: 0:00:24.916374
+Harvest-Rate: 100.00%
+Relevante Seiten: 275
+Irrelevante Seiten: 0
+Aktueller Batch: 275
+

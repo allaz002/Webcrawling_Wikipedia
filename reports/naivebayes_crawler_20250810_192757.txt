@@ -1,0 +1,46 @@
+
+============================================================
+CRAWLER KONFIGURATION - naivebayes_crawler
+============================================================
+Strategie: NaiveBayesSpider
+Seed URLs: https://de.wikipedia.org/wiki/Wikipedia:Hauptseite
+Batch-Größe: 32
+Max. Seiten: 50000
+Max. relevante Seiten: 250
+Relevanz-Schwellenwert: 0.0
+Max. Laufzeit: 30 Minuten
+Report-Intervall: 30 Sekunden
+
+GEWICHTUNGEN:
+- Link-Gewicht: 0.334
+- Elterndokument-Gewicht: 0.666
+============================================================
+
+Naive Bayes verwendet reine Termhäufigkeiten (TF)
+
+Modell-Pfad: models/naive_bayes_model.pkl
+
+
+--- ZWISCHENBERICHT [19:28:00] ---
+Laufzeit: 0:00:03.249736
+Harvest-Rate: 100.00%
+Relevante Seiten: 25
+Irrelevante Seiten: 0
+Aktueller Batch: 25
+
+
+--- ZWISCHENBERICHT [19:28:02] ---
+Laufzeit: 0:00:05.063654
+Harvest-Rate: 100.00%
+Relevante Seiten: 50
+Irrelevante Seiten: 0
+Aktueller Batch: 50
+
+
+--- ZWISCHENBERICHT [19:28:04] ---
+Laufzeit: 0:00:07.594851
+Harvest-Rate: 100.00%
+Relevante Seiten: 75
+Irrelevante Seiten: 0
+Aktueller Batch: 75
+

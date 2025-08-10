@@ -1,0 +1,153 @@
+
+============================================================
+CRAWLER KONFIGURATION - keyword_crawler
+============================================================
+Strategie: KeywordSpider
+Seed URLs: https://de.wikipedia.org/wiki/Wikipedia:Hauptseite
+Batch-Größe: 32
+Max. Seiten: 50000
+Max. relevante Seiten: 250
+Relevanz-Schwellenwert: 0.0
+Max. Laufzeit: 30 Minuten
+Report-Intervall: 30 Sekunden
+
+GEWICHTUNGEN:
+- Link-Gewicht: 0.334
+- Elterndokument-Gewicht: 0.666
+============================================================
+
+Boolean-Modell mit 120 Keywords
+
+Schwellwerte: Anker(1/2), Titel(1/2), Headings(1/2), Paragraphs(2/4)
+
+
+--- ZWISCHENBERICHT [19:26:40] ---
+Laufzeit: 0:00:02.746734
+Harvest-Rate: 100.00%
+Relevante Seiten: 25
+Irrelevante Seiten: 0
+Aktueller Batch: 25
+
+
+--- ZWISCHENBERICHT [19:26:43] ---
+Laufzeit: 0:00:05.421464
+Harvest-Rate: 100.00%
+Relevante Seiten: 50
+Irrelevante Seiten: 0
+Aktueller Batch: 50
+
+
+--- ZWISCHENBERICHT [19:26:45] ---
+Laufzeit: 0:00:07.183369
+Harvest-Rate: 100.00%
+Relevante Seiten: 75
+Irrelevante Seiten: 0
+Aktueller Batch: 75
+
+
+--- ZWISCHENBERICHT [19:26:46] ---
+Laufzeit: 0:00:08.762271
+Harvest-Rate: 100.00%
+Relevante Seiten: 100
+Irrelevante Seiten: 0
+Aktueller Batch: 100
+
+
+--- ZWISCHENBERICHT [19:26:48] ---
+Laufzeit: 0:00:10.730168
+Harvest-Rate: 100.00%
+Relevante Seiten: 125
+Irrelevante Seiten: 0
+Aktueller Batch: 125
+
+
+--- ZWISCHENBERICHT [19:26:50] ---
+Laufzeit: 0:00:12.157413
+Harvest-Rate: 100.00%
+Relevante Seiten: 150
+Irrelevante Seiten: 0
+Aktueller Batch: 150
+
+
+--- ZWISCHENBERICHT [19:26:51] ---
+Laufzeit: 0:00:13.564642
+Harvest-Rate: 100.00%
+Relevante Seiten: 175
+Irrelevante Seiten: 0
+Aktueller Batch: 175
+
+
+--- ZWISCHENBERICHT [19:26:52] ---
+Laufzeit: 0:00:15.033755
+Harvest-Rate: 100.00%
+Relevante Seiten: 200
+Irrelevante Seiten: 0
+Aktueller Batch: 200
+
+
+--- ZWISCHENBERICHT [19:26:54] ---
+Laufzeit: 0:00:16.476304
+Harvest-Rate: 100.00%
+Relevante Seiten: 225
+Irrelevante Seiten: 0
+Aktueller Batch: 225
+
+
+--- ZWISCHENBERICHT [19:26:56] ---
+Laufzeit: 0:00:18.146150
+Harvest-Rate: 100.00%
+Relevante Seiten: 250
+Irrelevante Seiten: 0
+Aktueller Batch: 250
+
+
+============================================================
+ABSCHLUSSBERICHT - keyword_crawler
+============================================================
+Spider-Name: keyword_crawler
+Gesamtlaufzeit: 0:00:18.146760
+Anzahl gecrawlter Seiten: 250
+Anzahl relevanter Seiten: 250
+Anzahl irrelevanter Seiten: 0
+Harvest-Rate: 100.00%
+Durchschnittliche Relevanz: 0.1705
+Gesamte Relevanzbewertungszeit: 0.17 Sekunden
+
+TOP 10 BESTE URLS:
+1. Score: 1.0000 - https://de.wikipedia.org/wiki/Neuronales_Netz
+2. Score: 1.0000 - https://de.wikipedia.org/wiki/Dynamisches_neuronales_Netz
+3. Score: 0.8750 - https://de.wikipedia.org/wiki/K%C3%BCnstliche_Intelligenz
+4. Score: 0.8750 - https://de.wikipedia.org/wiki/Intelligenz
+5. Score: 0.8750 - https://de.wikipedia.org/wiki/Model_View_Controller
+6. Score: 0.7500 - https://de.wikipedia.org/wiki/GPT-4
+7. Score: 0.7500 - https://de.wikipedia.org/wiki/Star_Trek:_Deep_Space_Nine
+8. Score: 0.7500 - https://de.wikipedia.org/wiki/Allgemeines_lineares_Modell
+9. Score: 0.7500 - https://de.wikipedia.org/wiki/Personal_Computer
+10. Score: 0.7500 - https://de.wikipedia.org/wiki/IBM_Personal_Computer
+
+TOP 10 MITTELFELD URLS:
+1. Score: 0.0000 - https://de.wikipedia.org/wiki/7._August
+2. Score: 0.0000 - https://de.wikipedia.org/wiki/Madagaskar
+3. Score: 0.0000 - https://de.wikipedia.org/wiki/6._August
+4. Score: 0.0000 - https://de.wikipedia.org/wiki/Aletta_Jacobs
+5. Score: 0.0000 - https://de.wikipedia.org/wiki/4._August
+6. Score: 0.0000 - https://de.wikipedia.org/wiki/31._August
+7. Score: 0.0000 - https://de.wikipedia.org/wiki/Alexander_Goehr
+8. Score: 0.0000 - https://de.wikipedia.org/wiki/Alessandro_Bonci
+9. Score: 0.0000 - https://de.wikipedia.org/wiki/5._August
+10. Score: 0.0000 - https://de.wikipedia.org/wiki/30._August
+
+TOP 10 SCHLECHTESTE URLS:
+1. Score: 0.0000 - https://de.wikipedia.org/wiki/Christian_Wagner_(Schriftsteller)
+2. Score: 0.0000 - https://de.wikipedia.org/wiki/Ambatondrazaka
+3. Score: 0.0000 - https://de.wikipedia.org/wiki/1911
+4. Score: 0.0000 - https://de.wikipedia.org/wiki/Absolute_Helligkeit
+5. Score: 0.0000 - https://de.wikipedia.org/wiki/1895
+6. Score: 0.0000 - https://de.wikipedia.org/wiki/%C3%96sterreichische_Bundesanleihen
+7. Score: 0.0000 - https://de.wikipedia.org/wiki/Affekt
+8. Score: 0.0000 - https://de.wikipedia.org/wiki/Arte
+9. Score: 0.0000 - https://de.wikipedia.org/wiki/1._April
+10. Score: 0.0000 - https://de.wikipedia.org/wiki/1890
+
+============================================================
+

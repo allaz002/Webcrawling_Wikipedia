@@ -1,0 +1,161 @@
+
+============================================================
+CRAWLER KONFIGURATION - vectorspace_crawler
+============================================================
+Strategie: VectorSpaceSpider
+Seed URLs: https://de.wikipedia.org/wiki/Wikipedia:Hauptseite
+Batch-Größe: 32
+Max. Seiten: 50000
+Max. relevante Seiten: 250
+Relevanz-Schwellenwert: 0.0
+Max. Laufzeit: 30 Minuten
+Report-Intervall: 30 Sekunden
+
+GEWICHTUNGEN:
+- Link-Gewicht: 0.334
+- Elterndokument-Gewicht: 0.666
+============================================================
+
+Modus: TF-IDF
+
+IDF-Ratios: irrelevant=0.50, moderate=0.35, relevant=0.15
+
+
+--- ZWISCHENBERICHT [19:22:59] ---
+Laufzeit: 0:00:03.400404
+Harvest-Rate: 100.00%
+Relevante Seiten: 25
+Irrelevante Seiten: 0
+Aktueller Batch: 25
+
+
+--- ZWISCHENBERICHT [19:23:05] ---
+Laufzeit: 0:00:08.719618
+Harvest-Rate: 100.00%
+Relevante Seiten: 50
+Irrelevante Seiten: 0
+Aktueller Batch: 50
+
+
+--- ZWISCHENBERICHT [19:23:07] ---
+Laufzeit: 0:00:11.480920
+Harvest-Rate: 100.00%
+Relevante Seiten: 75
+Irrelevante Seiten: 0
+Aktueller Batch: 75
+
+
+--- ZWISCHENBERICHT [19:23:09] ---
+Laufzeit: 0:00:13.339126
+Harvest-Rate: 100.00%
+Relevante Seiten: 100
+Irrelevante Seiten: 0
+Aktueller Batch: 100
+
+
+--- ZWISCHENBERICHT [19:23:12] ---
+Laufzeit: 0:00:16.158633
+Harvest-Rate: 100.00%
+Relevante Seiten: 125
+Irrelevante Seiten: 0
+Aktueller Batch: 125
+
+
+--- ZWISCHENBERICHT [19:23:14] ---
+Laufzeit: 0:00:17.793305
+Harvest-Rate: 100.00%
+Relevante Seiten: 150
+Irrelevante Seiten: 0
+Aktueller Batch: 150
+
+
+--- ZWISCHENBERICHT [19:23:15] ---
+Laufzeit: 0:00:19.268015
+Harvest-Rate: 100.00%
+Relevante Seiten: 175
+Irrelevante Seiten: 0
+Aktueller Batch: 175
+
+
+--- ZWISCHENBERICHT [19:23:17] ---
+Laufzeit: 0:00:21.096400
+Harvest-Rate: 100.00%
+Relevante Seiten: 200
+Irrelevante Seiten: 0
+Aktueller Batch: 200
+
+
+--- ZWISCHENBERICHT [19:23:19] ---
+Laufzeit: 0:00:23.022886
+Harvest-Rate: 100.00%
+Relevante Seiten: 225
+Irrelevante Seiten: 0
+Aktueller Batch: 225
+
+
+--- ZWISCHENBERICHT [19:23:21] ---
+Laufzeit: 0:00:24.558937
+Harvest-Rate: 100.00%
+Relevante Seiten: 250
+Irrelevante Seiten: 0
+Aktueller Batch: 250
+
+
+============================================================
+ABSCHLUSSBERICHT - vectorspace_crawler
+============================================================
+Spider-Name: vectorspace_crawler
+Gesamtlaufzeit: 0:00:24.559437
+Anzahl gecrawlter Seiten: 250
+Anzahl relevanter Seiten: 250
+Anzahl irrelevanter Seiten: 0
+Harvest-Rate: 100.00%
+Durchschnittliche Relevanz: 0.0778
+Gesamte Relevanzbewertungszeit: 0.64 Sekunden
+
+TOP 10 BESTE URLS:
+1. Score: 0.4574 - https://de.wikipedia.org/wiki/K%C3%BCnstliche_Intelligenz
+2. Score: 0.3105 - https://de.wikipedia.org/wiki/Verordnung_%C3%BCber_k%C3%BCnstliche_Intelligenz
+3. Score: 0.2455 - https://de.wikipedia.org/wiki/Genetischer_Algorithmus
+4. Score: 0.2363 - https://de.wikipedia.org/wiki/Transformer_(Maschinelles_Lernen)
+5. Score: 0.2160 - https://de.wikipedia.org/wiki/Rekurrentes_neuronales_Netz
+6. Score: 0.1883 - https://de.wikipedia.org/wiki/Google_Brain
+7. Score: 0.1840 - https://de.wikipedia.org/wiki/Maximum-Likelihood-Algorithmus
+8. Score: 0.1787 - https://de.wikipedia.org/wiki/Daten
+9. Score: 0.1725 - https://de.wikipedia.org/wiki/Kombinatorische_Optimierung
+10. Score: 0.1700 - https://de.wikipedia.org/wiki/Lebenslanges_Lernen
+
+TOP 10 MITTELFELD URLS:
+1. Score: 0.0694 - https://de.wikipedia.org/wiki/Margaret_Boden
+2. Score: 0.0694 - https://de.wikipedia.org/wiki/Sittlichkeit
+3. Score: 0.0694 - https://de.wikipedia.org/wiki/Mappa_mundi
+4. Score: 0.0693 - https://de.wikipedia.org/wiki/Fehler
+5. Score: 0.0690 - https://de.wikipedia.org/wiki/Wirbeltiere
+6. Score: 0.0687 - https://de.wikipedia.org/wiki/Zelltyp
+7. Score: 0.0686 - https://de.wikipedia.org/wiki/Russische_Geschichte
+8. Score: 0.0683 - https://de.wikipedia.org/wiki/Staat
+9. Score: 0.0683 - https://de.wikipedia.org/wiki/Lymphatisches_System
+10. Score: 0.0679 - https://de.wikipedia.org/wiki/Sprachen_Guinea-Bissaus
+
+TOP 10 SCHLECHTESTE URLS:
+1. Score: 0.0196 - https://de.wikipedia.org/wiki/Bacalao_(Insel)
+2. Score: 0.0187 - https://de.wikipedia.org/wiki/Brockhaus-Efron
+3. Score: 0.0185 - https://de.wikipedia.org/wiki/1805
+4. Score: 0.0177 - https://de.wikipedia.org/wiki/Quinh%C3%A1mel
+5. Score: 0.0175 - https://de.wikipedia.org/wiki/1500
+6. Score: 0.0156 - https://de.wikipedia.org/wiki/Zentralafrika
+7. Score: 0.0152 - https://de.wikipedia.org/wiki/Wikipedia:Hauptseite/Jahrestage/August/10
+8. Score: 0.0088 - https://de.wikipedia.org/wiki/La_Croix_(Paris)
+9. Score: 0.0065 - https://de.wikipedia.org/wiki/Bischof_von_Urgell
+10. Score: 0.0000 - https://de.wikipedia.org/wiki/Wikipedia:Hauptseite/Verstorbene
+
+============================================================
+
+
+--- ZWISCHENBERICHT [19:23:24] ---
+Laufzeit: 0:00:28.166735
+Harvest-Rate: 100.00%
+Relevante Seiten: 275
+Irrelevante Seiten: 0
+Aktueller Batch: 275
+

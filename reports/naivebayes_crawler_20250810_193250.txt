@@ -1,0 +1,161 @@
+
+============================================================
+CRAWLER KONFIGURATION - naivebayes_crawler
+============================================================
+Strategie: NaiveBayesSpider
+Seed URLs: https://de.wikipedia.org/wiki/Wikipedia:Hauptseite
+Batch-Größe: 32
+Max. Seiten: 50000
+Max. relevante Seiten: 250
+Relevanz-Schwellenwert: 0.0
+Max. Laufzeit: 30 Minuten
+Report-Intervall: 30 Sekunden
+
+GEWICHTUNGEN:
+- Link-Gewicht: 0.334
+- Elterndokument-Gewicht: 0.666
+============================================================
+
+Naive Bayes verwendet reine Termhäufigkeiten (TF)
+
+Modell-Pfad: models/naive_bayes_model.pkl
+
+
+--- ZWISCHENBERICHT [19:32:53] ---
+Laufzeit: 0:00:02.917179
+Harvest-Rate: 100.00%
+Relevante Seiten: 25
+Irrelevante Seiten: 0
+Aktueller Batch: 25
+
+
+--- ZWISCHENBERICHT [19:32:55] ---
+Laufzeit: 0:00:04.728770
+Harvest-Rate: 100.00%
+Relevante Seiten: 50
+Irrelevante Seiten: 0
+Aktueller Batch: 50
+
+
+--- ZWISCHENBERICHT [19:32:57] ---
+Laufzeit: 0:00:06.894896
+Harvest-Rate: 100.00%
+Relevante Seiten: 75
+Irrelevante Seiten: 0
+Aktueller Batch: 75
+
+
+--- ZWISCHENBERICHT [19:33:01] ---
+Laufzeit: 0:00:10.112144
+Harvest-Rate: 100.00%
+Relevante Seiten: 100
+Irrelevante Seiten: 0
+Aktueller Batch: 100
+
+
+--- ZWISCHENBERICHT [19:33:02] ---
+Laufzeit: 0:00:11.533596
+Harvest-Rate: 100.00%
+Relevante Seiten: 125
+Irrelevante Seiten: 0
+Aktueller Batch: 125
+
+
+--- ZWISCHENBERICHT [19:33:04] ---
+Laufzeit: 0:00:13.690642
+Harvest-Rate: 100.00%
+Relevante Seiten: 150
+Irrelevante Seiten: 0
+Aktueller Batch: 150
+
+
+--- ZWISCHENBERICHT [19:33:06] ---
+Laufzeit: 0:00:15.200375
+Harvest-Rate: 100.00%
+Relevante Seiten: 175
+Irrelevante Seiten: 0
+Aktueller Batch: 175
+
+
+--- ZWISCHENBERICHT [19:33:07] ---
+Laufzeit: 0:00:16.918097
+Harvest-Rate: 100.00%
+Relevante Seiten: 200
+Irrelevante Seiten: 0
+Aktueller Batch: 200
+
+
+--- ZWISCHENBERICHT [19:33:09] ---
+Laufzeit: 0:00:18.395310
+Harvest-Rate: 100.00%
+Relevante Seiten: 225
+Irrelevante Seiten: 0
+Aktueller Batch: 225
+
+
+--- ZWISCHENBERICHT [19:33:11] ---
+Laufzeit: 0:00:20.284410
+Harvest-Rate: 100.00%
+Relevante Seiten: 250
+Irrelevante Seiten: 0
+Aktueller Batch: 250
+
+
+============================================================
+ABSCHLUSSBERICHT - naivebayes_crawler
+============================================================
+Spider-Name: naivebayes_crawler
+Gesamtlaufzeit: 0:00:20.284970
+Anzahl gecrawlter Seiten: 250
+Anzahl relevanter Seiten: 250
+Anzahl irrelevanter Seiten: 0
+Harvest-Rate: 100.00%
+Durchschnittliche Relevanz: 0.6713
+Gesamte Relevanzbewertungszeit: 0.35 Sekunden
+
+TOP 10 BESTE URLS:
+1. Score: 1.0000 - https://de.wikipedia.org/wiki/Support-Vector-Maschine
+2. Score: 1.0000 - https://de.wikipedia.org/wiki/Maschine-zu-Maschine-Kommunikation
+3. Score: 1.0000 - https://de.wikipedia.org/wiki/Alan_Turing
+4. Score: 0.9999 - https://de.wikipedia.org/wiki/Turing-Test
+5. Score: 0.9999 - https://de.wikipedia.org/wiki/Software-Agent
+6. Score: 0.9999 - https://de.wikipedia.org/wiki/Algorithmus
+7. Score: 0.9999 - https://de.wikipedia.org/wiki/Berlekamp-Massey-Algorithmus
+8. Score: 0.9999 - https://de.wikipedia.org/wiki/Berlekamp-Algorithmus
+9. Score: 0.9999 - https://de.wikipedia.org/wiki/Google_Fotos
+10. Score: 0.9999 - https://de.wikipedia.org/wiki/IBM-PC-kompatibler_Computer
+
+TOP 10 MITTELFELD URLS:
+1. Score: 0.8318 - https://de.wikipedia.org/wiki/Bitbucket
+2. Score: 0.8307 - https://de.wikipedia.org/wiki/Traceroute
+3. Score: 0.8307 - https://de.wikipedia.org/wiki/Onlinedienst
+4. Score: 0.8261 - https://de.wikipedia.org/wiki/GV_(Unternehmen)
+5. Score: 0.8255 - https://de.wikipedia.org/wiki/Sensor
+6. Score: 0.8169 - https://de.wikipedia.org/wiki/YouTube_Music
+7. Score: 0.8104 - https://de.wikipedia.org/wiki/Rechteck
+8. Score: 0.8092 - https://de.wikipedia.org/wiki/Elektrische_Arbeit
+9. Score: 0.8008 - https://de.wikipedia.org/wiki/Wikipedia:Technik/Cloud/wikihistory
+10. Score: 0.7990 - https://de.wikipedia.org/wiki/Transdisziplinarit%C3%A4t
+
+TOP 10 SCHLECHTESTE URLS:
+1. Score: 0.1274 - https://de.wikipedia.org/wiki/Meinungsfreiheit
+2. Score: 0.1274 - https://de.wikipedia.org/wiki/Die_Simpsons
+3. Score: 0.1274 - https://de.wikipedia.org/wiki/Madagaskar
+4. Score: 0.1274 - https://de.wikipedia.org/wiki/Ausw%C3%A4rtiges_Amt
+5. Score: 0.1034 - https://de.wikipedia.org/wiki/Lassallescher_Allgemeiner_Deutscher_Arbeiterverein
+6. Score: 0.1001 - https://de.wikipedia.org/wiki/Gemeinn%C3%BCtzige_Organisation
+7. Score: 0.0706 - https://de.wikipedia.org/wiki/Ministerium_f%C3%BCr_Arbeit,_Soziales,_Gesundheit_und_Gleichstellung_des_Landes_Sachsen-Anhalt
+8. Score: 0.0654 - https://de.wikipedia.org/wiki/Christian_Science
+9. Score: 0.0378 - https://de.wikipedia.org/wiki/Louis_W._Tordella
+10. Score: 0.0129 - https://de.wikipedia.org/wiki/Atonalit%C3%A4t
+
+============================================================
+
+
+--- ZWISCHENBERICHT [19:33:14] ---
+Laufzeit: 0:00:24.024818
+Harvest-Rate: 100.00%
+Relevante Seiten: 275
+Irrelevante Seiten: 0
+Aktueller Batch: 275
+

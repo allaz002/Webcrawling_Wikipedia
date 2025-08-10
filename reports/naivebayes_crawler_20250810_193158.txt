@@ -1,0 +1,153 @@
+
+============================================================
+CRAWLER KONFIGURATION - naivebayes_crawler
+============================================================
+Strategie: NaiveBayesSpider
+Seed URLs: https://de.wikipedia.org/wiki/Wikipedia:Hauptseite
+Batch-Größe: 32
+Max. Seiten: 50000
+Max. relevante Seiten: 250
+Relevanz-Schwellenwert: 0.0
+Max. Laufzeit: 30 Minuten
+Report-Intervall: 30 Sekunden
+
+GEWICHTUNGEN:
+- Link-Gewicht: 0.334
+- Elterndokument-Gewicht: 0.666
+============================================================
+
+Naive Bayes verwendet reine Termhäufigkeiten (TF)
+
+Modell-Pfad: models/naive_bayes_model.pkl
+
+
+--- ZWISCHENBERICHT [19:32:00] ---
+Laufzeit: 0:00:02.587355
+Harvest-Rate: 100.00%
+Relevante Seiten: 25
+Irrelevante Seiten: 0
+Aktueller Batch: 25
+
+
+--- ZWISCHENBERICHT [19:32:02] ---
+Laufzeit: 0:00:04.664301
+Harvest-Rate: 100.00%
+Relevante Seiten: 50
+Irrelevante Seiten: 0
+Aktueller Batch: 50
+
+
+--- ZWISCHENBERICHT [19:32:06] ---
+Laufzeit: 0:00:08.715157
+Harvest-Rate: 100.00%
+Relevante Seiten: 75
+Irrelevante Seiten: 0
+Aktueller Batch: 75
+
+
+--- ZWISCHENBERICHT [19:32:08] ---
+Laufzeit: 0:00:10.296833
+Harvest-Rate: 100.00%
+Relevante Seiten: 100
+Irrelevante Seiten: 0
+Aktueller Batch: 100
+
+
+--- ZWISCHENBERICHT [19:32:11] ---
+Laufzeit: 0:00:13.064106
+Harvest-Rate: 100.00%
+Relevante Seiten: 125
+Irrelevante Seiten: 0
+Aktueller Batch: 125
+
+
+--- ZWISCHENBERICHT [19:32:12] ---
+Laufzeit: 0:00:14.467201
+Harvest-Rate: 100.00%
+Relevante Seiten: 150
+Irrelevante Seiten: 0
+Aktueller Batch: 150
+
+
+--- ZWISCHENBERICHT [19:32:13] ---
+Laufzeit: 0:00:15.960838
+Harvest-Rate: 100.00%
+Relevante Seiten: 175
+Irrelevante Seiten: 0
+Aktueller Batch: 175
+
+
+--- ZWISCHENBERICHT [19:32:15] ---
+Laufzeit: 0:00:17.635799
+Harvest-Rate: 100.00%
+Relevante Seiten: 200
+Irrelevante Seiten: 0
+Aktueller Batch: 200
+
+
+--- ZWISCHENBERICHT [19:32:17] ---
+Laufzeit: 0:00:19.846382
+Harvest-Rate: 100.00%
+Relevante Seiten: 225
+Irrelevante Seiten: 0
+Aktueller Batch: 225
+
+
+--- ZWISCHENBERICHT [19:32:20] ---
+Laufzeit: 0:00:22.298391
+Harvest-Rate: 100.00%
+Relevante Seiten: 250
+Irrelevante Seiten: 0
+Aktueller Batch: 250
+
+
+============================================================
+ABSCHLUSSBERICHT - naivebayes_crawler
+============================================================
+Spider-Name: naivebayes_crawler
+Gesamtlaufzeit: 0:00:22.299000
+Anzahl gecrawlter Seiten: 250
+Anzahl relevanter Seiten: 250
+Anzahl irrelevanter Seiten: 0
+Harvest-Rate: 100.00%
+Durchschnittliche Relevanz: 0.5831
+Gesamte Relevanzbewertungszeit: 0.35 Sekunden
+
+TOP 10 BESTE URLS:
+1. Score: 1.0000 - https://de.wikipedia.org/wiki/Support_Vector_Machine
+2. Score: 1.0000 - https://de.wikipedia.org/wiki/Deep_Learning
+3. Score: 1.0000 - https://de.wikipedia.org/wiki/Google_Gemini
+4. Score: 1.0000 - https://de.wikipedia.org/wiki/Maschinenlernen
+5. Score: 1.0000 - https://de.wikipedia.org/wiki/Alan_Turing
+6. Score: 0.9999 - https://de.wikipedia.org/wiki/Turing-Test
+7. Score: 0.9999 - https://de.wikipedia.org/wiki/Algorithmus
+8. Score: 0.9999 - https://de.wikipedia.org/wiki/Berlekamp-Algorithmus
+9. Score: 0.9999 - https://de.wikipedia.org/wiki/Booth-Algorithmus
+10. Score: 0.9999 - https://de.wikipedia.org/wiki/Big_Data
+
+TOP 10 MITTELFELD URLS:
+1. Score: 0.7306 - https://de.wikipedia.org/wiki/Motorola_56001
+2. Score: 0.7306 - https://de.wikipedia.org/wiki/Telefonische_Befragung
+3. Score: 0.7293 - https://de.wikipedia.org/wiki/Motorsteuerung
+4. Score: 0.7254 - https://de.wikipedia.org/wiki/Microsoft_Translator
+5. Score: 0.7162 - https://de.wikipedia.org/wiki/Sonneneruption
+6. Score: 0.7097 - https://de.wikipedia.org/wiki/Suggestop%C3%A4die
+7. Score: 0.6983 - https://de.wikipedia.org/wiki/Rick_Gates
+8. Score: 0.6945 - https://de.wikipedia.org/wiki/Trendforschung
+9. Score: 0.6801 - https://de.wikipedia.org/wiki/Kontraindikation
+10. Score: 0.6465 - https://de.wikipedia.org/wiki/MST-Heuristik
+
+TOP 10 SCHLECHTESTE URLS:
+1. Score: 0.0715 - https://de.wikipedia.org/wiki/Liste_der_Navigationssatelliten
+2. Score: 0.0443 - https://de.wikipedia.org/wiki/Deutsche_Telekom
+3. Score: 0.0358 - https://de.wikipedia.org/wiki/Liste_von_Online-Enzyklop%C3%A4dien
+4. Score: 0.0319 - https://de.wikipedia.org/wiki/Mietvertrag_(Deutschland)
+5. Score: 0.0319 - https://de.wikipedia.org/wiki/Urhebergesetz
+6. Score: 0.0198 - https://de.wikipedia.org/wiki/Wasser
+7. Score: 0.0168 - https://de.wikipedia.org/wiki/London
+8. Score: 0.0035 - https://de.wikipedia.org/wiki/Cape_Canaveral_Air_Force_Station
+9. Score: 0.0022 - https://de.wikipedia.org/wiki/Repr%C3%A4sentantenhaus_der_Vereinigten_Staaten
+10. Score: 0.0020 - https://de.wikipedia.org/wiki/Mayes_County
+
+============================================================
+

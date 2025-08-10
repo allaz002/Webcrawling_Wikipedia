@@ -1,0 +1,153 @@
+
+============================================================
+CRAWLER KONFIGURATION - naivebayes_crawler
+============================================================
+Strategie: NaiveBayesSpider
+Seed URLs: https://de.wikipedia.org/wiki/Wikipedia:Hauptseite
+Batch-Größe: 32
+Max. Seiten: 50000
+Max. relevante Seiten: 250
+Relevanz-Schwellenwert: 0.0
+Max. Laufzeit: 30 Minuten
+Report-Intervall: 30 Sekunden
+
+GEWICHTUNGEN:
+- Link-Gewicht: 0.334
+- Elterndokument-Gewicht: 0.666
+============================================================
+
+Naive Bayes verwendet reine Termhäufigkeiten (TF)
+
+Modell-Pfad: models/naive_bayes_model.pkl
+
+
+--- ZWISCHENBERICHT [19:36:38] ---
+Laufzeit: 0:00:03.118156
+Harvest-Rate: 100.00%
+Relevante Seiten: 25
+Irrelevante Seiten: 0
+Aktueller Batch: 25
+
+
+--- ZWISCHENBERICHT [19:36:42] ---
+Laufzeit: 0:00:07.729579
+Harvest-Rate: 100.00%
+Relevante Seiten: 50
+Irrelevante Seiten: 0
+Aktueller Batch: 50
+
+
+--- ZWISCHENBERICHT [19:36:44] ---
+Laufzeit: 0:00:09.761807
+Harvest-Rate: 100.00%
+Relevante Seiten: 75
+Irrelevante Seiten: 0
+Aktueller Batch: 75
+
+
+--- ZWISCHENBERICHT [19:36:46] ---
+Laufzeit: 0:00:11.786228
+Harvest-Rate: 100.00%
+Relevante Seiten: 100
+Irrelevante Seiten: 0
+Aktueller Batch: 100
+
+
+--- ZWISCHENBERICHT [19:36:48] ---
+Laufzeit: 0:00:13.576106
+Harvest-Rate: 100.00%
+Relevante Seiten: 125
+Irrelevante Seiten: 0
+Aktueller Batch: 125
+
+
+--- ZWISCHENBERICHT [19:36:50] ---
+Laufzeit: 0:00:15.151665
+Harvest-Rate: 100.00%
+Relevante Seiten: 150
+Irrelevante Seiten: 0
+Aktueller Batch: 150
+
+
+--- ZWISCHENBERICHT [19:36:51] ---
+Laufzeit: 0:00:16.524938
+Harvest-Rate: 100.00%
+Relevante Seiten: 175
+Irrelevante Seiten: 0
+Aktueller Batch: 175
+
+
+--- ZWISCHENBERICHT [19:36:53] ---
+Laufzeit: 0:00:18.575532
+Harvest-Rate: 100.00%
+Relevante Seiten: 200
+Irrelevante Seiten: 0
+Aktueller Batch: 200
+
+
+--- ZWISCHENBERICHT [19:36:55] ---
+Laufzeit: 0:00:20.393878
+Harvest-Rate: 100.00%
+Relevante Seiten: 225
+Irrelevante Seiten: 0
+Aktueller Batch: 225
+
+
+--- ZWISCHENBERICHT [19:36:57] ---
+Laufzeit: 0:00:22.295723
+Harvest-Rate: 100.00%
+Relevante Seiten: 250
+Irrelevante Seiten: 0
+Aktueller Batch: 250
+
+
+============================================================
+ABSCHLUSSBERICHT - naivebayes_crawler
+============================================================
+Spider-Name: naivebayes_crawler
+Gesamtlaufzeit: 0:00:22.296318
+Anzahl gecrawlter Seiten: 250
+Anzahl relevanter Seiten: 250
+Anzahl irrelevanter Seiten: 0
+Harvest-Rate: 100.00%
+Durchschnittliche Relevanz: 0.6362
+Gesamte Relevanzbewertungszeit: 0.37 Sekunden
+
+TOP 10 BESTE URLS:
+1. Score: 1.0000 - https://de.wikipedia.org/wiki/Deep_Learning
+2. Score: 1.0000 - https://de.wikipedia.org/wiki/Artificial_Intelligence
+3. Score: 0.9999 - https://de.wikipedia.org/wiki/Turing-Test
+4. Score: 0.9999 - https://de.wikipedia.org/wiki/Computer_Vision
+5. Score: 0.9999 - https://de.wikipedia.org/wiki/Projektionsmatrix_(Computer_Vision)
+6. Score: 0.9999 - https://de.wikipedia.org/wiki/Algorithmus
+7. Score: 0.9999 - https://de.wikipedia.org/wiki/Algorithmik
+8. Score: 0.9999 - https://de.wikipedia.org/wiki/Euklidischer_Algorithmus
+9. Score: 0.9999 - https://de.wikipedia.org/wiki/Metropolis-Algorithmus
+10. Score: 0.9999 - https://de.wikipedia.org/wiki/Greedy-Algorithmus
+
+TOP 10 MITTELFELD URLS:
+1. Score: 0.7703 - https://de.wikipedia.org/wiki/Agent_Provocateur
+2. Score: 0.7688 - https://de.wikipedia.org/wiki/Hqx
+3. Score: 0.7688 - https://de.wikipedia.org/wiki/Netzwerkressource
+4. Score: 0.7671 - https://de.wikipedia.org/wiki/Troll_(Netzkultur)
+5. Score: 0.7669 - https://de.wikipedia.org/wiki/Rule_Interchange_Format
+6. Score: 0.7636 - https://de.wikipedia.org/wiki/Craniosacrale_Therapie
+7. Score: 0.7565 - https://de.wikipedia.org/wiki/Digitaler_Signalprozessor
+8. Score: 0.7548 - https://de.wikipedia.org/wiki/Proband
+9. Score: 0.7548 - https://de.wikipedia.org/wiki/Silhouetten-Schnittverfahren
+10. Score: 0.7548 - https://de.wikipedia.org/wiki/Johan_H%C3%A5stad
+
+TOP 10 SCHLECHTESTE URLS:
+1. Score: 0.1171 - https://de.wikipedia.org/wiki/Russischer_%C3%9Cberfall_auf_die_Ukraine_2022
+2. Score: 0.1122 - https://de.wikipedia.org/wiki/Bundespatentgericht_(Deutschland)
+3. Score: 0.1034 - https://de.wikipedia.org/wiki/Lassallescher_Allgemeiner_Deutscher_Arbeiterverein
+4. Score: 0.0849 - https://de.wikipedia.org/wiki/Volksrepublik_China
+5. Score: 0.0829 - https://de.wikipedia.org/wiki/Japan
+6. Score: 0.0445 - https://de.wikipedia.org/wiki/Top-Level-Domain
+7. Score: 0.0337 - https://de.wikipedia.org/wiki/Art_(Biologie)
+8. Score: 0.0264 - https://de.wikipedia.org/wiki/Verteidigungsministerium_des_Vereinigten_K%C3%B6nigreichs
+9. Score: 0.0027 - https://de.wikipedia.org/wiki/Serge_Lang
+10. Score: 0.0008 - https://de.wikipedia.org/wiki/University_of_West_Georgia
+
+============================================================
+

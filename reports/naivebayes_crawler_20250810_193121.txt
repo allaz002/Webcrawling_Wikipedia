@@ -1,0 +1,161 @@
+
+============================================================
+CRAWLER KONFIGURATION - naivebayes_crawler
+============================================================
+Strategie: NaiveBayesSpider
+Seed URLs: https://de.wikipedia.org/wiki/Wikipedia:Hauptseite
+Batch-Größe: 32
+Max. Seiten: 50000
+Max. relevante Seiten: 250
+Relevanz-Schwellenwert: 0.0
+Max. Laufzeit: 30 Minuten
+Report-Intervall: 30 Sekunden
+
+GEWICHTUNGEN:
+- Link-Gewicht: 0.334
+- Elterndokument-Gewicht: 0.666
+============================================================
+
+Naive Bayes verwendet reine Termhäufigkeiten (TF)
+
+Modell-Pfad: models/naive_bayes_model.pkl
+
+
+--- ZWISCHENBERICHT [19:31:24] ---
+Laufzeit: 0:00:02.669819
+Harvest-Rate: 100.00%
+Relevante Seiten: 25
+Irrelevante Seiten: 0
+Aktueller Batch: 25
+
+
+--- ZWISCHENBERICHT [19:31:27] ---
+Laufzeit: 0:00:06.368611
+Harvest-Rate: 100.00%
+Relevante Seiten: 50
+Irrelevante Seiten: 0
+Aktueller Batch: 50
+
+
+--- ZWISCHENBERICHT [19:31:30] ---
+Laufzeit: 0:00:08.586514
+Harvest-Rate: 100.00%
+Relevante Seiten: 75
+Irrelevante Seiten: 0
+Aktueller Batch: 75
+
+
+--- ZWISCHENBERICHT [19:31:31] ---
+Laufzeit: 0:00:10.406081
+Harvest-Rate: 100.00%
+Relevante Seiten: 100
+Irrelevante Seiten: 0
+Aktueller Batch: 100
+
+
+--- ZWISCHENBERICHT [19:31:33] ---
+Laufzeit: 0:00:12.162585
+Harvest-Rate: 100.00%
+Relevante Seiten: 125
+Irrelevante Seiten: 0
+Aktueller Batch: 125
+
+
+--- ZWISCHENBERICHT [19:31:36] ---
+Laufzeit: 0:00:14.632521
+Harvest-Rate: 100.00%
+Relevante Seiten: 150
+Irrelevante Seiten: 0
+Aktueller Batch: 150
+
+
+--- ZWISCHENBERICHT [19:31:37] ---
+Laufzeit: 0:00:16.280057
+Harvest-Rate: 100.00%
+Relevante Seiten: 175
+Irrelevante Seiten: 0
+Aktueller Batch: 175
+
+
+--- ZWISCHENBERICHT [19:31:39] ---
+Laufzeit: 0:00:18.413205
+Harvest-Rate: 100.00%
+Relevante Seiten: 200
+Irrelevante Seiten: 0
+Aktueller Batch: 200
+
+
+--- ZWISCHENBERICHT [19:31:41] ---
+Laufzeit: 0:00:20.367597
+Harvest-Rate: 100.00%
+Relevante Seiten: 225
+Irrelevante Seiten: 0
+Aktueller Batch: 225
+
+
+--- ZWISCHENBERICHT [19:31:43] ---
+Laufzeit: 0:00:22.030537
+Harvest-Rate: 100.00%
+Relevante Seiten: 250
+Irrelevante Seiten: 0
+Aktueller Batch: 250
+
+
+============================================================
+ABSCHLUSSBERICHT - naivebayes_crawler
+============================================================
+Spider-Name: naivebayes_crawler
+Gesamtlaufzeit: 0:00:22.031029
+Anzahl gecrawlter Seiten: 250
+Anzahl relevanter Seiten: 250
+Anzahl irrelevanter Seiten: 0
+Harvest-Rate: 100.00%
+Durchschnittliche Relevanz: 0.5857
+Gesamte Relevanzbewertungszeit: 0.36 Sekunden
+
+TOP 10 BESTE URLS:
+1. Score: 1.0000 - https://de.wikipedia.org/wiki/Support-Vector-Maschine
+2. Score: 1.0000 - https://de.wikipedia.org/wiki/Artificial_Intelligence_Markup_Language
+3. Score: 1.0000 - https://de.wikipedia.org/wiki/Data-Mining
+4. Score: 1.0000 - https://de.wikipedia.org/wiki/Machine_Learning
+5. Score: 1.0000 - https://de.wikipedia.org/wiki/K%C3%BCnstliche_Intelligenz_in_der_Medizin
+6. Score: 1.0000 - https://de.wikipedia.org/wiki/Alan_Turing
+7. Score: 1.0000 - https://de.wikipedia.org/wiki/K%C3%BCnstliche_Intelligenz
+8. Score: 1.0000 - https://de.wikipedia.org/wiki/K%C3%BCnstliche_Intelligenz_in_der_Pflege
+9. Score: 1.0000 - https://de.wikipedia.org/wiki/IBM_Personal_Computer_XT
+10. Score: 0.9999 - https://de.wikipedia.org/wiki/Turing-Test
+
+TOP 10 MITTELFELD URLS:
+1. Score: 0.6953 - https://de.wikipedia.org/wiki/Grundformen_der_Angst
+2. Score: 0.6856 - https://de.wikipedia.org/wiki/Wikipedia:WikiProjekt_Sichten/Statistik
+3. Score: 0.6565 - https://de.wikipedia.org/wiki/Weltraumteleskop
+4. Score: 0.6431 - https://de.wikipedia.org/wiki/Angst
+5. Score: 0.6274 - https://de.wikipedia.org/wiki/Winkel
+6. Score: 0.5685 - https://de.wikipedia.org/wiki/Wirtschaftspolitik
+7. Score: 0.5665 - https://de.wikipedia.org/wiki/Wikipedia:Hauptseite/Archiv
+8. Score: 0.5335 - https://de.wikipedia.org/wiki/Chronologie_der_Hypertext-Technologien
+9. Score: 0.5205 - https://de.wikipedia.org/wiki/Software_in_the_Public_Interest
+10. Score: 0.4994 - https://de.wikipedia.org/wiki/Stranger_from_Venus
+
+TOP 10 SCHLECHTESTE URLS:
+1. Score: 0.1274 - https://de.wikipedia.org/wiki/Madagaskar
+2. Score: 0.1271 - https://de.wikipedia.org/wiki/Wikipedia:Hauptseite/Archiv/14._November_2011
+3. Score: 0.1157 - https://de.wikipedia.org/wiki/20._Dezember
+4. Score: 0.1034 - https://de.wikipedia.org/wiki/Lassallescher_Allgemeiner_Deutscher_Arbeiterverein
+5. Score: 0.1032 - https://de.wikipedia.org/wiki/Literatur
+6. Score: 0.1024 - https://de.wikipedia.org/wiki/13._Januar
+7. Score: 0.0823 - https://de.wikipedia.org/wiki/Gegenstand
+8. Score: 0.0339 - https://de.wikipedia.org/wiki/Liste_der_britischen_Premierminister
+9. Score: 0.0028 - https://de.wikipedia.org/wiki/Paul_Watzlawick
+10. Score: 0.0022 - https://de.wikipedia.org/wiki/Strafgesetzbuch_(DDR)
+
+============================================================
+
+
+--- ZWISCHENBERICHT [19:31:47] ---
+Laufzeit: 0:00:26.213949
+Harvest-Rate: 100.00%
+Relevante Seiten: 275
+Irrelevante Seiten: 0
+Aktueller Batch: 275
+

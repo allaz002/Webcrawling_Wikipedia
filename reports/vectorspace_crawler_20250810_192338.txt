@@ -1,0 +1,161 @@
+
+============================================================
+CRAWLER KONFIGURATION - vectorspace_crawler
+============================================================
+Strategie: VectorSpaceSpider
+Seed URLs: https://de.wikipedia.org/wiki/Wikipedia:Hauptseite
+Batch-Größe: 32
+Max. Seiten: 50000
+Max. relevante Seiten: 250
+Relevanz-Schwellenwert: 0.0
+Max. Laufzeit: 30 Minuten
+Report-Intervall: 30 Sekunden
+
+GEWICHTUNGEN:
+- Link-Gewicht: 0.334
+- Elterndokument-Gewicht: 0.666
+============================================================
+
+Modus: TF-IDF
+
+IDF-Ratios: irrelevant=0.50, moderate=0.40, relevant=0.10
+
+
+--- ZWISCHENBERICHT [19:23:43] ---
+Laufzeit: 0:00:04.467173
+Harvest-Rate: 100.00%
+Relevante Seiten: 25
+Irrelevante Seiten: 0
+Aktueller Batch: 25
+
+
+--- ZWISCHENBERICHT [19:23:47] ---
+Laufzeit: 0:00:08.761098
+Harvest-Rate: 100.00%
+Relevante Seiten: 50
+Irrelevante Seiten: 0
+Aktueller Batch: 50
+
+
+--- ZWISCHENBERICHT [19:23:49] ---
+Laufzeit: 0:00:11.167650
+Harvest-Rate: 100.00%
+Relevante Seiten: 75
+Irrelevante Seiten: 0
+Aktueller Batch: 75
+
+
+--- ZWISCHENBERICHT [19:23:51] ---
+Laufzeit: 0:00:12.976426
+Harvest-Rate: 100.00%
+Relevante Seiten: 100
+Irrelevante Seiten: 0
+Aktueller Batch: 100
+
+
+--- ZWISCHENBERICHT [19:23:53] ---
+Laufzeit: 0:00:15.012160
+Harvest-Rate: 100.00%
+Relevante Seiten: 125
+Irrelevante Seiten: 0
+Aktueller Batch: 125
+
+
+--- ZWISCHENBERICHT [19:23:55] ---
+Laufzeit: 0:00:16.683927
+Harvest-Rate: 100.00%
+Relevante Seiten: 150
+Irrelevante Seiten: 0
+Aktueller Batch: 150
+
+
+--- ZWISCHENBERICHT [19:23:57] ---
+Laufzeit: 0:00:18.875912
+Harvest-Rate: 100.00%
+Relevante Seiten: 175
+Irrelevante Seiten: 0
+Aktueller Batch: 175
+
+
+--- ZWISCHENBERICHT [19:23:58] ---
+Laufzeit: 0:00:20.262954
+Harvest-Rate: 100.00%
+Relevante Seiten: 200
+Irrelevante Seiten: 0
+Aktueller Batch: 200
+
+
+--- ZWISCHENBERICHT [19:24:01] ---
+Laufzeit: 0:00:22.567875
+Harvest-Rate: 100.00%
+Relevante Seiten: 225
+Irrelevante Seiten: 0
+Aktueller Batch: 225
+
+
+--- ZWISCHENBERICHT [19:24:03] ---
+Laufzeit: 0:00:24.620149
+Harvest-Rate: 100.00%
+Relevante Seiten: 250
+Irrelevante Seiten: 0
+Aktueller Batch: 250
+
+
+============================================================
+ABSCHLUSSBERICHT - vectorspace_crawler
+============================================================
+Spider-Name: vectorspace_crawler
+Gesamtlaufzeit: 0:00:24.620731
+Anzahl gecrawlter Seiten: 250
+Anzahl relevanter Seiten: 250
+Anzahl irrelevanter Seiten: 0
+Harvest-Rate: 100.00%
+Durchschnittliche Relevanz: 0.0808
+Gesamte Relevanzbewertungszeit: 0.66 Sekunden
+
+TOP 10 BESTE URLS:
+1. Score: 0.4673 - https://de.wikipedia.org/wiki/K%C3%BCnstliche_Intelligenz
+2. Score: 0.2794 - https://de.wikipedia.org/wiki/%C3%9Cberwachtes_Lernen
+3. Score: 0.2688 - https://de.wikipedia.org/wiki/K%C3%BCnstliche_neuronale_Netzwerke
+4. Score: 0.2209 - https://de.wikipedia.org/wiki/Petri-Netz
+5. Score: 0.2109 - https://de.wikipedia.org/wiki/ARIMA-Modell
+6. Score: 0.2094 - https://de.wikipedia.org/wiki/K%C3%BCnstliches_Neuron
+7. Score: 0.2033 - https://de.wikipedia.org/wiki/Selbst%C3%BCberwachtes_Lernen
+8. Score: 0.2000 - https://de.wikipedia.org/wiki/Un%C3%BCberwachtes_Lernen
+9. Score: 0.1999 - https://de.wikipedia.org/wiki/Turing-Test
+10. Score: 0.1928 - https://de.wikipedia.org/wiki/Zeitreihenanalyse
+
+TOP 10 MITTELFELD URLS:
+1. Score: 0.0717 - https://de.wikipedia.org/wiki/Michael_Collins_(Astronaut)
+2. Score: 0.0713 - https://de.wikipedia.org/wiki/Protestantismus
+3. Score: 0.0712 - https://de.wikipedia.org/wiki/Realit%C3%A4t
+4. Score: 0.0710 - https://de.wikipedia.org/wiki/Homogenit%C3%A4t
+5. Score: 0.0707 - https://de.wikipedia.org/wiki/Freedom_of_Information_Act
+6. Score: 0.0707 - https://de.wikipedia.org/wiki/Neurophysiologie
+7. Score: 0.0707 - https://de.wikipedia.org/wiki/The_Atlantic
+8. Score: 0.0707 - https://de.wikipedia.org/wiki/Makedonische_Sprache
+9. Score: 0.0707 - https://de.wikipedia.org/wiki/FISH-Test
+10. Score: 0.0707 - https://de.wikipedia.org/wiki/Salzburger_Festspiele
+
+TOP 10 SCHLECHTESTE URLS:
+1. Score: 0.0217 - https://de.wikipedia.org/wiki/Uvular
+2. Score: 0.0217 - https://de.wikipedia.org/wiki/Amoron%E2%80%99i_Mania
+3. Score: 0.0204 - https://de.wikipedia.org/wiki/D%C3%A9partement_Aude
+4. Score: 0.0193 - https://de.wikipedia.org/wiki/1805
+5. Score: 0.0190 - https://de.wikipedia.org/wiki/10._Januar
+6. Score: 0.0174 - https://de.wikipedia.org/wiki/Ernst_Schwarz_(Zoologe)
+7. Score: 0.0173 - https://de.wikipedia.org/wiki/1500
+8. Score: 0.0163 - https://de.wikipedia.org/wiki/Vertrag_von_Saint-Germain
+9. Score: 0.0089 - https://de.wikipedia.org/wiki/Nisbett
+10. Score: 0.0063 - https://de.wikipedia.org/wiki/Liste_der_Staatsoberh%C3%A4upter_von_Madagaskar
+
+============================================================
+
+
+--- ZWISCHENBERICHT [19:24:07] ---
+Laufzeit: 0:00:28.450832
+Harvest-Rate: 100.00%
+Relevante Seiten: 275
+Irrelevante Seiten: 0
+Aktueller Batch: 275
+

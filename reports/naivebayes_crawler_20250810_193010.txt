@@ -1,0 +1,161 @@
+
+============================================================
+CRAWLER KONFIGURATION - naivebayes_crawler
+============================================================
+Strategie: NaiveBayesSpider
+Seed URLs: https://de.wikipedia.org/wiki/Wikipedia:Hauptseite
+Batch-Größe: 32
+Max. Seiten: 50000
+Max. relevante Seiten: 250
+Relevanz-Schwellenwert: 0.0
+Max. Laufzeit: 30 Minuten
+Report-Intervall: 30 Sekunden
+
+GEWICHTUNGEN:
+- Link-Gewicht: 0.334
+- Elterndokument-Gewicht: 0.666
+============================================================
+
+Naive Bayes verwendet reine Termhäufigkeiten (TF)
+
+Modell-Pfad: models/naive_bayes_model.pkl
+
+
+--- ZWISCHENBERICHT [19:30:13] ---
+Laufzeit: 0:00:02.698548
+Harvest-Rate: 100.00%
+Relevante Seiten: 25
+Irrelevante Seiten: 0
+Aktueller Batch: 25
+
+
+--- ZWISCHENBERICHT [19:30:15] ---
+Laufzeit: 0:00:04.438145
+Harvest-Rate: 100.00%
+Relevante Seiten: 50
+Irrelevante Seiten: 0
+Aktueller Batch: 50
+
+
+--- ZWISCHENBERICHT [19:30:17] ---
+Laufzeit: 0:00:06.323954
+Harvest-Rate: 100.00%
+Relevante Seiten: 75
+Irrelevante Seiten: 0
+Aktueller Batch: 75
+
+
+--- ZWISCHENBERICHT [19:30:19] ---
+Laufzeit: 0:00:08.244523
+Harvest-Rate: 100.00%
+Relevante Seiten: 100
+Irrelevante Seiten: 0
+Aktueller Batch: 100
+
+
+--- ZWISCHENBERICHT [19:30:20] ---
+Laufzeit: 0:00:10.162298
+Harvest-Rate: 100.00%
+Relevante Seiten: 125
+Irrelevante Seiten: 0
+Aktueller Batch: 125
+
+
+--- ZWISCHENBERICHT [19:30:22] ---
+Laufzeit: 0:00:12.169331
+Harvest-Rate: 100.00%
+Relevante Seiten: 150
+Irrelevante Seiten: 0
+Aktueller Batch: 150
+
+
+--- ZWISCHENBERICHT [19:30:24] ---
+Laufzeit: 0:00:14.083571
+Harvest-Rate: 100.00%
+Relevante Seiten: 175
+Irrelevante Seiten: 0
+Aktueller Batch: 175
+
+
+--- ZWISCHENBERICHT [19:30:26] ---
+Laufzeit: 0:00:15.575016
+Harvest-Rate: 100.00%
+Relevante Seiten: 200
+Irrelevante Seiten: 0
+Aktueller Batch: 200
+
+
+--- ZWISCHENBERICHT [19:30:28] ---
+Laufzeit: 0:00:17.235461
+Harvest-Rate: 100.00%
+Relevante Seiten: 225
+Irrelevante Seiten: 0
+Aktueller Batch: 225
+
+
+--- ZWISCHENBERICHT [19:30:29] ---
+Laufzeit: 0:00:18.652994
+Harvest-Rate: 100.00%
+Relevante Seiten: 250
+Irrelevante Seiten: 0
+Aktueller Batch: 250
+
+
+============================================================
+ABSCHLUSSBERICHT - naivebayes_crawler
+============================================================
+Spider-Name: naivebayes_crawler
+Gesamtlaufzeit: 0:00:18.653535
+Anzahl gecrawlter Seiten: 250
+Anzahl relevanter Seiten: 250
+Anzahl irrelevanter Seiten: 0
+Harvest-Rate: 100.00%
+Durchschnittliche Relevanz: 0.6475
+Gesamte Relevanzbewertungszeit: 0.35 Sekunden
+
+TOP 10 BESTE URLS:
+1. Score: 1.0000 - https://de.wikipedia.org/wiki/Reinforcement_learning_from_human_feedback
+2. Score: 1.0000 - https://de.wikipedia.org/wiki/Google_Gemini
+3. Score: 1.0000 - https://de.wikipedia.org/wiki/Gemini_Digital_Computer
+4. Score: 1.0000 - https://de.wikipedia.org/wiki/Eingabe_(Computer)
+5. Score: 1.0000 - https://de.wikipedia.org/wiki/Digital_Feature_Analysis_Data
+6. Score: 1.0000 - https://de.wikipedia.org/wiki/Alan_Turing
+7. Score: 1.0000 - https://de.wikipedia.org/wiki/Learning_Content_Management_System
+8. Score: 1.0000 - https://de.wikipedia.org/wiki/Eingabe_und_Ausgabe
+9. Score: 1.0000 - https://de.wikipedia.org/wiki/K%C3%BCnstliche_Intelligenz
+10. Score: 1.0000 - https://de.wikipedia.org/wiki/Transformer_(Maschinelles_Lernen)
+
+TOP 10 MITTELFELD URLS:
+1. Score: 0.7752 - https://de.wikipedia.org/wiki/Offenes_System
+2. Score: 0.7688 - https://de.wikipedia.org/wiki/Objektorientiert
+3. Score: 0.7687 - https://de.wikipedia.org/wiki/XML-Deklaration
+4. Score: 0.7684 - https://de.wikipedia.org/wiki/Austauschformat
+5. Score: 0.7610 - https://de.wikipedia.org/wiki/Audiovision
+6. Score: 0.7593 - https://de.wikipedia.org/wiki/Gesellschaft_f%C3%BCr_Informatik
+7. Score: 0.7565 - https://de.wikipedia.org/wiki/Digitaler_Signalprozessor
+8. Score: 0.7563 - https://de.wikipedia.org/wiki/Raum_(Mathematik)
+9. Score: 0.7547 - https://de.wikipedia.org/wiki/Sketchpad
+10. Score: 0.7545 - https://de.wikipedia.org/wiki/Liste_von_Learning-Management-Systemen
+
+TOP 10 SCHLECHTESTE URLS:
+1. Score: 0.1275 - https://de.wikipedia.org/wiki/Peter_Hilton
+2. Score: 0.1274 - https://de.wikipedia.org/wiki/%C5%BBmigr%C3%B3d
+3. Score: 0.1274 - https://de.wikipedia.org/wiki/Bahnhof_Paddington
+4. Score: 0.1274 - https://de.wikipedia.org/wiki/Venus_(Planet)
+5. Score: 0.1274 - https://de.wikipedia.org/wiki/Pogrom
+6. Score: 0.1274 - https://de.wikipedia.org/wiki/Madagaskar
+7. Score: 0.1034 - https://de.wikipedia.org/wiki/Lassallescher_Allgemeiner_Deutscher_Arbeiterverein
+8. Score: 0.0985 - https://de.wikipedia.org/wiki/Stanford_Research_Institute
+9. Score: 0.0452 - https://de.wikipedia.org/wiki/Solar_Maximum_Mission
+10. Score: 0.0375 - https://de.wikipedia.org/wiki/Royal_Albert_Hall
+
+============================================================
+
+
+--- ZWISCHENBERICHT [19:30:34] ---
+Laufzeit: 0:00:23.549517
+Harvest-Rate: 100.00%
+Relevante Seiten: 275
+Irrelevante Seiten: 0
+Aktueller Batch: 275
+

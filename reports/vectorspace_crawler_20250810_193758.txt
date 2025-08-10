@@ -1,0 +1,161 @@
+
+============================================================
+CRAWLER KONFIGURATION - vectorspace_crawler
+============================================================
+Strategie: VectorSpaceSpider
+Seed URLs: https://de.wikipedia.org/wiki/Wikipedia:Hauptseite
+Batch-Größe: 32
+Max. Seiten: 50000
+Max. relevante Seiten: 250
+Relevanz-Schwellenwert: 0.0
+Max. Laufzeit: 30 Minuten
+Report-Intervall: 30 Sekunden
+
+GEWICHTUNGEN:
+- Link-Gewicht: 0.334
+- Elterndokument-Gewicht: 0.666
+============================================================
+
+Modus: TF-IDF
+
+IDF-Ratios: irrelevant=0.50, moderate=0.35, relevant=0.15
+
+
+--- ZWISCHENBERICHT [19:38:01] ---
+Laufzeit: 0:00:03.516758
+Harvest-Rate: 100.00%
+Relevante Seiten: 25
+Irrelevante Seiten: 0
+Aktueller Batch: 25
+
+
+--- ZWISCHENBERICHT [19:38:06] ---
+Laufzeit: 0:00:08.272091
+Harvest-Rate: 100.00%
+Relevante Seiten: 50
+Irrelevante Seiten: 0
+Aktueller Batch: 50
+
+
+--- ZWISCHENBERICHT [19:38:09] ---
+Laufzeit: 0:00:11.220359
+Harvest-Rate: 100.00%
+Relevante Seiten: 75
+Irrelevante Seiten: 0
+Aktueller Batch: 75
+
+
+--- ZWISCHENBERICHT [19:38:11] ---
+Laufzeit: 0:00:13.296475
+Harvest-Rate: 100.00%
+Relevante Seiten: 100
+Irrelevante Seiten: 0
+Aktueller Batch: 100
+
+
+--- ZWISCHENBERICHT [19:38:13] ---
+Laufzeit: 0:00:15.561962
+Harvest-Rate: 100.00%
+Relevante Seiten: 125
+Irrelevante Seiten: 0
+Aktueller Batch: 125
+
+
+--- ZWISCHENBERICHT [19:38:16] ---
+Laufzeit: 0:00:18.066816
+Harvest-Rate: 100.00%
+Relevante Seiten: 150
+Irrelevante Seiten: 0
+Aktueller Batch: 150
+
+
+--- ZWISCHENBERICHT [19:38:18] ---
+Laufzeit: 0:00:19.921267
+Harvest-Rate: 100.00%
+Relevante Seiten: 175
+Irrelevante Seiten: 0
+Aktueller Batch: 175
+
+
+--- ZWISCHENBERICHT [19:38:19] ---
+Laufzeit: 0:00:21.467794
+Harvest-Rate: 100.00%
+Relevante Seiten: 200
+Irrelevante Seiten: 0
+Aktueller Batch: 200
+
+
+--- ZWISCHENBERICHT [19:38:21] ---
+Laufzeit: 0:00:23.535840
+Harvest-Rate: 100.00%
+Relevante Seiten: 225
+Irrelevante Seiten: 0
+Aktueller Batch: 225
+
+
+--- ZWISCHENBERICHT [19:38:23] ---
+Laufzeit: 0:00:25.426979
+Harvest-Rate: 100.00%
+Relevante Seiten: 250
+Irrelevante Seiten: 0
+Aktueller Batch: 250
+
+
+============================================================
+ABSCHLUSSBERICHT - vectorspace_crawler
+============================================================
+Spider-Name: vectorspace_crawler
+Gesamtlaufzeit: 0:00:25.427509
+Anzahl gecrawlter Seiten: 250
+Anzahl relevanter Seiten: 250
+Anzahl irrelevanter Seiten: 0
+Harvest-Rate: 100.00%
+Durchschnittliche Relevanz: 0.0968
+Gesamte Relevanzbewertungszeit: 0.69 Sekunden
+
+TOP 10 BESTE URLS:
+1. Score: 0.4546 - https://de.wikipedia.org/wiki/K%C3%BCnstliche_Intelligenz
+2. Score: 0.3804 - https://de.wikipedia.org/wiki/Maschinelles_Lernen
+3. Score: 0.3804 - https://de.wikipedia.org/wiki/Computational_learning_theory
+4. Score: 0.2893 - https://de.wikipedia.org/wiki/EQ._Emotionale_Intelligenz
+5. Score: 0.2866 - https://de.wikipedia.org/wiki/Emotionale_Intelligenz
+6. Score: 0.2802 - https://de.wikipedia.org/wiki/Ethik_der_K%C3%BCnstlichen_Intelligenz
+7. Score: 0.2668 - https://de.wikipedia.org/wiki/K%C3%BCnstliches_neuronales_Netz
+8. Score: 0.2668 - https://de.wikipedia.org/wiki/K%C3%BCnstliche_neuronale_Netzwerke
+9. Score: 0.2545 - https://de.wikipedia.org/wiki/Best%C3%A4rkendes_Lernen
+10. Score: 0.2533 - https://de.wikipedia.org/wiki/Deep_Learning
+
+TOP 10 MITTELFELD URLS:
+1. Score: 0.0888 - https://de.wikipedia.org/wiki/Cleveland
+2. Score: 0.0879 - https://de.wikipedia.org/wiki/Analyse_%26_kritik
+3. Score: 0.0876 - https://de.wikipedia.org/wiki/Eigenname
+4. Score: 0.0870 - https://de.wikipedia.org/wiki/K%C3%A4rnten
+5. Score: 0.0856 - https://de.wikipedia.org/wiki/Bistum_W%C3%BCrzburg
+6. Score: 0.0849 - https://de.wikipedia.org/wiki/Operationelles_Tideelbe-Modell
+7. Score: 0.0845 - https://de.wikipedia.org/wiki/Algol_60
+8. Score: 0.0843 - https://de.wikipedia.org/wiki/Samuel_P._Huntington
+9. Score: 0.0837 - https://de.wikipedia.org/wiki/Italienischer_Faschismus
+10. Score: 0.0832 - https://de.wikipedia.org/wiki/Limbisches_System
+
+TOP 10 SCHLECHTESTE URLS:
+1. Score: 0.0301 - https://de.wikipedia.org/wiki/Beschluss_(EU)
+2. Score: 0.0298 - https://de.wikipedia.org/wiki/Algol_W
+3. Score: 0.0278 - https://de.wikipedia.org/wiki/Universal_Studios
+4. Score: 0.0264 - https://de.wikipedia.org/wiki/D%C3%A9partement_Aude
+5. Score: 0.0251 - https://de.wikipedia.org/wiki/Nat_Rev_Genet
+6. Score: 0.0212 - https://de.wikipedia.org/wiki/1928
+7. Score: 0.0179 - https://de.wikipedia.org/wiki/1805
+8. Score: 0.0176 - https://de.wikipedia.org/wiki/1500
+9. Score: 0.0168 - https://de.wikipedia.org/wiki/Morondava_(Stadt)
+10. Score: 0.0000 - https://de.wikipedia.org/wiki/Wikipedia:Hauptseite/Verstorbene
+
+============================================================
+
+
+--- ZWISCHENBERICHT [19:38:27] ---
+Laufzeit: 0:00:29.569386
+Harvest-Rate: 100.00%
+Relevante Seiten: 275
+Irrelevante Seiten: 0
+Aktueller Batch: 275
+

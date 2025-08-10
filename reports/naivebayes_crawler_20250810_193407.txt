@@ -1,0 +1,161 @@
+
+============================================================
+CRAWLER KONFIGURATION - naivebayes_crawler
+============================================================
+Strategie: NaiveBayesSpider
+Seed URLs: https://de.wikipedia.org/wiki/Wikipedia:Hauptseite
+Batch-Größe: 32
+Max. Seiten: 50000
+Max. relevante Seiten: 250
+Relevanz-Schwellenwert: 0.0
+Max. Laufzeit: 30 Minuten
+Report-Intervall: 30 Sekunden
+
+GEWICHTUNGEN:
+- Link-Gewicht: 0.334
+- Elterndokument-Gewicht: 0.666
+============================================================
+
+Naive Bayes verwendet reine Termhäufigkeiten (TF)
+
+Modell-Pfad: models/naive_bayes_model.pkl
+
+
+--- ZWISCHENBERICHT [19:34:10] ---
+Laufzeit: 0:00:03.089079
+Harvest-Rate: 100.00%
+Relevante Seiten: 25
+Irrelevante Seiten: 0
+Aktueller Batch: 25
+
+
+--- ZWISCHENBERICHT [19:34:12] ---
+Laufzeit: 0:00:05.398264
+Harvest-Rate: 100.00%
+Relevante Seiten: 50
+Irrelevante Seiten: 0
+Aktueller Batch: 50
+
+
+--- ZWISCHENBERICHT [19:34:15] ---
+Laufzeit: 0:00:07.645505
+Harvest-Rate: 100.00%
+Relevante Seiten: 75
+Irrelevante Seiten: 0
+Aktueller Batch: 75
+
+
+--- ZWISCHENBERICHT [19:34:17] ---
+Laufzeit: 0:00:10.085625
+Harvest-Rate: 100.00%
+Relevante Seiten: 100
+Irrelevante Seiten: 0
+Aktueller Batch: 100
+
+
+--- ZWISCHENBERICHT [19:34:19] ---
+Laufzeit: 0:00:11.968592
+Harvest-Rate: 100.00%
+Relevante Seiten: 125
+Irrelevante Seiten: 0
+Aktueller Batch: 125
+
+
+--- ZWISCHENBERICHT [19:34:21] ---
+Laufzeit: 0:00:13.765471
+Harvest-Rate: 100.00%
+Relevante Seiten: 150
+Irrelevante Seiten: 0
+Aktueller Batch: 150
+
+
+--- ZWISCHENBERICHT [19:34:22] ---
+Laufzeit: 0:00:15.335986
+Harvest-Rate: 100.00%
+Relevante Seiten: 175
+Irrelevante Seiten: 0
+Aktueller Batch: 175
+
+
+--- ZWISCHENBERICHT [19:34:24] ---
+Laufzeit: 0:00:17.303003
+Harvest-Rate: 100.00%
+Relevante Seiten: 200
+Irrelevante Seiten: 0
+Aktueller Batch: 200
+
+
+--- ZWISCHENBERICHT [19:34:26] ---
+Laufzeit: 0:00:18.771881
+Harvest-Rate: 100.00%
+Relevante Seiten: 225
+Irrelevante Seiten: 0
+Aktueller Batch: 225
+
+
+--- ZWISCHENBERICHT [19:34:28] ---
+Laufzeit: 0:00:21.405727
+Harvest-Rate: 100.00%
+Relevante Seiten: 250
+Irrelevante Seiten: 0
+Aktueller Batch: 250
+
+
+============================================================
+ABSCHLUSSBERICHT - naivebayes_crawler
+============================================================
+Spider-Name: naivebayes_crawler
+Gesamtlaufzeit: 0:00:21.406229
+Anzahl gecrawlter Seiten: 250
+Anzahl relevanter Seiten: 250
+Anzahl irrelevanter Seiten: 0
+Harvest-Rate: 100.00%
+Durchschnittliche Relevanz: 0.6353
+Gesamte Relevanzbewertungszeit: 0.37 Sekunden
+
+TOP 10 BESTE URLS:
+1. Score: 1.0000 - https://de.wikipedia.org/wiki/Support-Vector-Maschine
+2. Score: 1.0000 - https://de.wikipedia.org/wiki/Data-Mining
+3. Score: 1.0000 - https://de.wikipedia.org/wiki/Google_Gemini
+4. Score: 1.0000 - https://de.wikipedia.org/wiki/Digital_Feature_Analysis_Data
+5. Score: 1.0000 - https://de.wikipedia.org/wiki/Alan_Turing
+6. Score: 1.0000 - https://de.wikipedia.org/wiki/K%C3%BCnstliche_Intelligenz
+7. Score: 0.9999 - https://de.wikipedia.org/wiki/Maschinelles_Sehen
+8. Score: 0.9999 - https://de.wikipedia.org/wiki/Projektionsmatrix_(Computer_Vision)
+9. Score: 0.9999 - https://de.wikipedia.org/wiki/Algorithmus
+10. Score: 0.9999 - https://de.wikipedia.org/wiki/Zassenhaus-Algorithmus
+
+TOP 10 MITTELFELD URLS:
+1. Score: 0.7667 - https://de.wikipedia.org/wiki/Slashdot-Effekt
+2. Score: 0.7640 - https://de.wikipedia.org/wiki/Grundlagen_der_Mathematik
+3. Score: 0.7602 - https://de.wikipedia.org/wiki/Bra-Ket
+4. Score: 0.7565 - https://de.wikipedia.org/wiki/Digitaler_Signalprozessor
+5. Score: 0.7548 - https://de.wikipedia.org/wiki/TIBCO
+6. Score: 0.7548 - https://de.wikipedia.org/wiki/Prim%C3%A4rforschung
+7. Score: 0.7548 - https://de.wikipedia.org/wiki/Endanwender
+8. Score: 0.7548 - https://de.wikipedia.org/wiki/Endbenutzer
+9. Score: 0.7446 - https://de.wikipedia.org/wiki/Allgemeine_Relativit%C3%A4tstheorie
+10. Score: 0.7439 - https://de.wikipedia.org/wiki/Online-Lexikon
+
+TOP 10 SCHLECHTESTE URLS:
+1. Score: 0.1274 - https://de.wikipedia.org/wiki/Madagaskar
+2. Score: 0.1274 - https://de.wikipedia.org/wiki/Georgia
+3. Score: 0.1274 - https://de.wikipedia.org/wiki/Nuklearkatastrophe_von_Tschernobyl
+4. Score: 0.1103 - https://de.wikipedia.org/wiki/Zeit_Online
+5. Score: 0.1034 - https://de.wikipedia.org/wiki/Lassallescher_Allgemeiner_Deutscher_Arbeiterverein
+6. Score: 0.0774 - https://de.wikipedia.org/wiki/National_Physical_Laboratory
+7. Score: 0.0697 - https://de.wikipedia.org/wiki/Der_Tag,_an_dem_die_Erde_stillstand_(1951)
+8. Score: 0.0257 - https://de.wikipedia.org/wiki/Gr%C3%BCndung_(Recht)
+9. Score: 0.0064 - https://de.wikipedia.org/wiki/Local_Area_Network
+10. Score: 0.0026 - https://de.wikipedia.org/wiki/Fritz_Lang
+
+============================================================
+
+
+--- ZWISCHENBERICHT [19:34:32] ---
+Laufzeit: 0:00:25.314447
+Harvest-Rate: 100.00%
+Relevante Seiten: 275
+Irrelevante Seiten: 0
+Aktueller Batch: 275
+

@@ -1,0 +1,161 @@
+
+============================================================
+CRAWLER KONFIGURATION - vectorspace_crawler
+============================================================
+Strategie: VectorSpaceSpider
+Seed URLs: https://de.wikipedia.org/wiki/Wikipedia:Hauptseite
+Batch-Größe: 32
+Max. Seiten: 50000
+Max. relevante Seiten: 250
+Relevanz-Schwellenwert: 0.0
+Max. Laufzeit: 30 Minuten
+Report-Intervall: 30 Sekunden
+
+GEWICHTUNGEN:
+- Link-Gewicht: 0.334
+- Elterndokument-Gewicht: 0.666
+============================================================
+
+Modus: TF-IDF
+
+IDF-Ratios: irrelevant=0.50, moderate=0.40, relevant=0.10
+
+
+--- ZWISCHENBERICHT [19:24:43] ---
+Laufzeit: 0:00:03.330696
+Harvest-Rate: 100.00%
+Relevante Seiten: 25
+Irrelevante Seiten: 0
+Aktueller Batch: 25
+
+
+--- ZWISCHENBERICHT [19:24:48] ---
+Laufzeit: 0:00:08.072658
+Harvest-Rate: 100.00%
+Relevante Seiten: 50
+Irrelevante Seiten: 0
+Aktueller Batch: 50
+
+
+--- ZWISCHENBERICHT [19:24:50] ---
+Laufzeit: 0:00:10.471116
+Harvest-Rate: 100.00%
+Relevante Seiten: 75
+Irrelevante Seiten: 0
+Aktueller Batch: 75
+
+
+--- ZWISCHENBERICHT [19:24:53] ---
+Laufzeit: 0:00:12.712855
+Harvest-Rate: 100.00%
+Relevante Seiten: 100
+Irrelevante Seiten: 0
+Aktueller Batch: 100
+
+
+--- ZWISCHENBERICHT [19:24:56] ---
+Laufzeit: 0:00:15.799593
+Harvest-Rate: 100.00%
+Relevante Seiten: 125
+Irrelevante Seiten: 0
+Aktueller Batch: 125
+
+
+--- ZWISCHENBERICHT [19:24:58] ---
+Laufzeit: 0:00:18.425669
+Harvest-Rate: 100.00%
+Relevante Seiten: 150
+Irrelevante Seiten: 0
+Aktueller Batch: 150
+
+
+--- ZWISCHENBERICHT [19:25:00] ---
+Laufzeit: 0:00:20.169681
+Harvest-Rate: 100.00%
+Relevante Seiten: 175
+Irrelevante Seiten: 0
+Aktueller Batch: 175
+
+
+--- ZWISCHENBERICHT [19:25:02] ---
+Laufzeit: 0:00:22.412678
+Harvest-Rate: 100.00%
+Relevante Seiten: 200
+Irrelevante Seiten: 0
+Aktueller Batch: 200
+
+
+--- ZWISCHENBERICHT [19:25:04] ---
+Laufzeit: 0:00:24.524761
+Harvest-Rate: 100.00%
+Relevante Seiten: 225
+Irrelevante Seiten: 0
+Aktueller Batch: 225
+
+
+--- ZWISCHENBERICHT [19:25:07] ---
+Laufzeit: 0:00:26.905319
+Harvest-Rate: 100.00%
+Relevante Seiten: 250
+Irrelevante Seiten: 0
+Aktueller Batch: 250
+
+
+============================================================
+ABSCHLUSSBERICHT - vectorspace_crawler
+============================================================
+Spider-Name: vectorspace_crawler
+Gesamtlaufzeit: 0:00:26.905806
+Anzahl gecrawlter Seiten: 250
+Anzahl relevanter Seiten: 250
+Anzahl irrelevanter Seiten: 0
+Harvest-Rate: 100.00%
+Durchschnittliche Relevanz: 0.0847
+Gesamte Relevanzbewertungszeit: 0.77 Sekunden
+
+TOP 10 BESTE URLS:
+1. Score: 0.4650 - https://de.wikipedia.org/wiki/K%C3%BCnstliche_Intelligenz
+2. Score: 0.3866 - https://de.wikipedia.org/wiki/Maschinenlernen
+3. Score: 0.3251 - https://de.wikipedia.org/wiki/Verordnung_%C3%BCber_k%C3%BCnstliche_Intelligenz
+4. Score: 0.3251 - https://de.wikipedia.org/wiki/Gesetz_%C3%BCber_k%C3%BCnstliche_Intelligenz
+5. Score: 0.2969 - https://de.wikipedia.org/wiki/Ethik_der_K%C3%BCnstlichen_Intelligenz
+6. Score: 0.2504 - https://de.wikipedia.org/wiki/Evolution%C3%A4rer_Algorithmus
+7. Score: 0.2504 - https://de.wikipedia.org/wiki/Genetischer_Algorithmus
+8. Score: 0.2097 - https://de.wikipedia.org/wiki/Bayessches_Netz
+9. Score: 0.2056 - https://de.wikipedia.org/wiki/K%C3%BCnstliche_Gravitation
+10. Score: 0.1853 - https://de.wikipedia.org/wiki/Explainable_Artificial_Intelligence
+
+TOP 10 MITTELFELD URLS:
+1. Score: 0.0770 - https://de.wikipedia.org/wiki/Hasan_al-Bann%C4%81
+2. Score: 0.0768 - https://de.wikipedia.org/wiki/Tigrinya_(Sprache)
+3. Score: 0.0763 - https://de.wikipedia.org/wiki/AMC_(Fernsehsender)
+4. Score: 0.0762 - https://de.wikipedia.org/wiki/Paul_Celan
+5. Score: 0.0757 - https://de.wikipedia.org/wiki/Sicherheitsrat_der_Vereinten_Nationen
+6. Score: 0.0757 - https://de.wikipedia.org/wiki/Charles_de_Gaulle
+7. Score: 0.0754 - https://de.wikipedia.org/wiki/H%C3%B6here_S%C3%A4ugetiere
+8. Score: 0.0748 - https://de.wikipedia.org/wiki/Apollo_(Raumschiff)
+9. Score: 0.0746 - https://de.wikipedia.org/wiki/Neues_Testament
+10. Score: 0.0744 - https://de.wikipedia.org/wiki/Artikulation_(Linguistik)
+
+TOP 10 SCHLECHTESTE URLS:
+1. Score: 0.0173 - https://de.wikipedia.org/wiki/Repr%C3%A4sentantenhaus_(Nigeria)
+2. Score: 0.0172 - https://de.wikipedia.org/wiki/1500
+3. Score: 0.0164 - https://de.wikipedia.org/wiki/Kabinett_Baden
+4. Score: 0.0159 - https://de.wikipedia.org/wiki/W%C3%A4d%C3%A4fit_G%C3%A4sgeshi_Wudd_Ennate_Ityop%E2%80%99ya
+5. Score: 0.0159 - https://de.wikipedia.org/wiki/Kap_Helles
+6. Score: 0.0151 - https://de.wikipedia.org/wiki/Diderot_(Begriffskl%C3%A4rung)
+7. Score: 0.0145 - https://de.wikipedia.org/wiki/Lavumisa
+8. Score: 0.0145 - https://de.wikipedia.org/wiki/Wikipedia:Hauptseite/Jahrestage/August/10
+9. Score: 0.0130 - https://de.wikipedia.org/wiki/Wikipedia:Hauptseite/Archiv
+10. Score: 0.0000 - https://de.wikipedia.org/wiki/Wikipedia:Hauptseite/Verstorbene
+
+============================================================
+
+
+--- ZWISCHENBERICHT [19:25:10] ---
+Laufzeit: 0:00:30.424792
+Harvest-Rate: 100.00%
+Relevante Seiten: 275
+Irrelevante Seiten: 0
+Aktueller Batch: 275
+

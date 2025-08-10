@@ -15,12 +15,21 @@ import nltk
 from nltk.corpus import stopwords
 import sys
 import time
-
+import pickle
+import logging
+from twisted.python import log as twisted_log
 
 class BaseTopicalSpider(scrapy.Spider):
     """Basisklasse für alle Topical Crawling Strategien"""
 
     def __init__(self, *args, **kwargs):
+
+        logging.getLogger('scrapy').setLevel(logging.CRITICAL)
+        logging.getLogger('twisted').setLevel(logging.CRITICAL)
+
+        for obs in list(twisted_log.theLogPublisher.observers):
+            twisted_log.removeObserver(obs)
+
         super().__init__(*args, **kwargs)
 
         # Konfiguration laden
@@ -33,20 +42,21 @@ class BaseTopicalSpider(scrapy.Spider):
         self.max_relevant = int(self.config['CRAWLER']['MAX_RELEVANT_PAGES'])
         self.relevance_threshold = float(self.config['CRAWLER']['RELEVANCE_THRESHOLD'])
         self.max_runtime = int(self.config['CRAWLER']['MAX_RUNTIME_MINUTES'])
-        self.report_interval = int(self.config['REPORTING']['REPORT_INTERVAL_SECONDS'])
         self.frontier_max_size = int(self.config['CRAWLER']['FRONTIER_MAX_SIZE'])
+
+        # Flag für finalen Report
+        self.final_report_done = False
 
         # Domain und Namespace Filter aus Config
         self.allowed_domains = [d.strip() for d in self.config['CRAWLER']['ALLOWED_DOMAINS'].split(',')]
         self.ignored_namespaces = [ns.strip() for ns in self.config['CRAWLER']['IGNORED_NAMESPACES'].split(',')]
 
-        # Reporting Konfiguration
-        self.report_pages_interval = int(self.config['REPORTING']['REPORT_PAGES_INTERVAL'])
-        self.report_time_interval = int(self.config['REPORTING']['REPORT_TIME_INTERVAL_SECONDS'])
-
-        # Gewichtungen für Link-Relevanz
+        # Gewichtungen für alle Strategien
         self.link_weight = float(self.config['WEIGHTS']['LINK_WEIGHT'])
         self.parent_weight = float(self.config['WEIGHTS']['PARENT_WEIGHT'])
+        self.title_weight = float(self.config['WEIGHTS']['TITLE_WEIGHT'])
+        self.heading_weight = float(self.config['WEIGHTS']['HEADING_WEIGHT'])
+        self.paragraph_weight = float(self.config['WEIGHTS']['PARAGRAPH_WEIGHT'])
 
         # NLTK deutsche Stoppwörter laden
         try:
@@ -65,9 +75,6 @@ class BaseTopicalSpider(scrapy.Spider):
         self.visited_urls = set()
         self.url_scores = {}  # Cache für URL-Scores
 
-        # Flag für finalen Report
-        self.final_report_written = False
-
         # Batch-Tracking für Evaluierung
         self.current_batch_number = 0
         self.batch_new_urls = []  # URLs die in diesem Batch zur Frontier hinzugefügt wurden
@@ -79,7 +86,6 @@ class BaseTopicalSpider(scrapy.Spider):
             'relevant_pages': 0,
             'irrelevant_pages': 0,
             'start_time': datetime.now(),
-            'last_report': datetime.now(),
             'all_pages': [],  # Für Endstatistik
             'evaluation_log': [],  # Für Evaluierungsdaten
             'total_relevance_sum': 0.0,  # Für Durchschnittsberechnung
@@ -89,71 +95,21 @@ class BaseTopicalSpider(scrapy.Spider):
 
         # Verzeichnisse erstellen
         Path("exports").mkdir(parents=True, exist_ok=True)
-        Path("reports").mkdir(parents=True, exist_ok=True)
 
-        # Report-Datei initialisieren (einmalig mit festem Timestamp)
+        # Export-Datei initialisieren
         self.timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-        self.report_file = f"reports/{self.name}_{self.timestamp}.txt"
         self.export_file = f"exports/{self.name}_{self.timestamp}.json"
 
         self.print_config()
 
-    def log_batch_evaluation(self):
-        """Loggt Evaluierungsdaten nach jedem Batch"""
-        runtime = (datetime.now() - self.stats['start_time']).total_seconds()
-        harvest_rate = self.stats['relevant_pages'] / max(1, self.stats['total_crawled'])
-        avg_relevance = self.stats['total_relevance_sum'] / max(1, self.stats['total_crawled'])
-
-        # Berechne durchschnittliche Position der neuen URLs in der Frontier
-        avg_position = 0
-        if self.batch_positions:
-            avg_position = sum(self.batch_positions) / len(self.batch_positions)
-
-        evaluation_entry = {
-            'batch_number': self.current_batch_number,
-            'pages_visited': self.stats['total_crawled'],
-            'relevant_pages_found': self.stats['relevant_pages'],
-            'harvest_rate': harvest_rate,
-            'average_relevance': avg_relevance,
-            'execution_time_in_seconds': runtime,
-            'avg_frontier_position': avg_position,
-            'new_urls_added': len(self.batch_positions),
-            'relevance_calculation_time': self.stats['relevance_calculation_time']
-        }
-
-        self.stats['evaluation_log'].append(evaluation_entry)
-
-        # Reset für nächsten Batch
-        self.batch_positions = []
-        self.batch_new_urls = []
-
     def print_config(self):
         """Ausgabe der Konfiguration beim Start"""
-        config_text = f"""
-{'=' * 60}
-CRAWLER KONFIGURATION - {self.name}
-{'=' * 60}
-Strategie: {self.__class__.__name__}
-Seed URLs: {', '.join(self.start_urls)}
-Batch-Größe: {self.batch_size}
-Max. Seiten: {self.max_pages}
-Max. relevante Seiten: {self.max_relevant}
-Relevanz-Schwellenwert: {self.relevance_threshold}
-Max. Laufzeit: {self.max_runtime} Minuten
-Report-Intervall: {self.report_interval} Sekunden
-
-GEWICHTUNGEN:
-- Link-Gewicht: {self.link_weight}
-- Elterndokument-Gewicht: {self.parent_weight}
-{'=' * 60}
-"""
-        print(config_text)
-        self.write_to_report(config_text)
-
-    def write_to_report(self, text):
-        """Schreibt Text in die Report-Datei"""
-        with open(self.report_file, 'a', encoding='utf-8') as f:
-            f.write(text + '\n')
+        print(f"\n{'=' * 60}")
+        print(f"CRAWLER START - {self.name}")
+        print(f"Strategie: {self.__class__.__name__}")
+        print(f"Seed URLs: {', '.join(self.start_urls)}")
+        print(f"Batch-Größe: {self.batch_size}, Max. Seiten: {self.max_pages}")
+        print(f"{'=' * 60}\n")
 
     def start_requests(self):
         """Initialisiert Crawler mit Seed-URLs"""
@@ -201,7 +157,9 @@ GEWICHTUNGEN:
 
         # Prüfe Beendigungskriterien
         if self.check_termination():
-            self.print_final_report()
+            if not self.final_report_done:
+                self.final_report_done = True
+                self.print_final_report()
             raise CloseSpider('Beendigungskriterium erreicht')
 
         # Hole Top-N URLs aus Frontier
@@ -269,27 +227,14 @@ GEWICHTUNGEN:
 
             if url not in self.visited_urls and self.is_valid_url(url):
                 # Berechne Link-Relevanz (einmalig pro Link)
-                link_relevance = self.calculate_link_relevance(anchor_text, parent_relevance)
+                link_relevance = self.calculate_combined_relevance(anchor_text, parent_relevance)
                 self.add_to_frontier(url, link_relevance)
 
-        # Periodische Reports
-        self.print_progress_report()
+        # Periodisches Feedback
+        self.print_progress()
 
         # Nächste Batch verarbeiten
         yield from self.process_batch()
-
-    def calculate_link_relevance(self, anchor_text, parent_relevance):
-        """Berechnet gewichtete Link-Relevanz"""
-        anchor_score = self.calculate_text_relevance(anchor_text)
-        return self.link_weight * anchor_score + self.parent_weight * parent_relevance
-
-    def calculate_parent_relevance(self, title, headings, paragraphs):
-        """Abstrakte Methode - muss von Subklassen implementiert werden"""
-        raise NotImplementedError("Subklassen müssen calculate_parent_relevance implementieren")
-
-    def calculate_text_relevance(self, text):
-        """Abstrakte Methode - wird von Subklassen implementiert"""
-        raise NotImplementedError("Subklassen müssen calculate_text_relevance implementieren")
 
     def preprocess_text(self, text):
         """Textvorverarbeitung: Case Folding und Stoppwort-Entfernung mit NLTK"""
@@ -341,10 +286,6 @@ GEWICHTUNGEN:
 
     def check_termination(self):
         """Prüft Beendigungskriterien"""
-        # Verhindere mehrfache Aufrufe nach Beendigung
-        if self.final_report_written:
-            return True
-
         # Zeit-Limit
         runtime = datetime.now() - self.stats['start_time']
         if runtime > timedelta(minutes=self.max_runtime):
@@ -364,37 +305,102 @@ GEWICHTUNGEN:
 
         return False
 
-    def print_progress_report(self):
-        """Gibt Zwischenbericht aus"""
-        now = datetime.now()
-        pages_since_last = self.stats['total_crawled'] % self.report_pages_interval
-        time_since_last = (now - self.stats['last_report']).seconds
+    def calculate_combined_relevance(self, anchor_text, parent_relevance):
+        """Berechnet gewichtete Gesamtrelevanz"""
+        anchor_score = self.calculate_text_relevance(anchor_text)
+        return self.link_weight * anchor_score + self.parent_weight * parent_relevance
 
-        # Report nach Seitenanzahl oder Zeit
-        if pages_since_last == 0 or time_since_last >= self.report_time_interval:
-            runtime = now - self.stats['start_time']
+    def calculate_parent_relevance(self, title, headings, paragraphs):
+        """Berechnet gewichtete Relevanz des Elterndokuments"""
+        # Berechne Scores für jeden Bereich
+        title_score = self.calculate_text_relevance(title) if title else 0.0
+        heading_score = self.calculate_text_relevance(headings) if headings else 0.0
+        paragraph_score = self.calculate_text_relevance(paragraphs) if paragraphs else 0.0
+
+        # Gewichtete Kombination
+        weighted_score = (
+                self.title_weight * title_score +
+                self.heading_weight * heading_score +
+                self.paragraph_weight * paragraph_score
+        )
+
+        return min(1.0, weighted_score)
+
+    def calculate_text_relevance(self, text):
+        """Abstrakte Methode - wird von Subklassen implementiert"""
+        raise NotImplementedError("Subklassen müssen calculate_text_relevance implementieren")
+
+    # Methoden für ML-basierte Strategien
+    def load_or_train_model(self):
+        """Lädt existierendes Modell oder trainiert neues"""
+        if hasattr(self, 'model_path') and hasattr(self, 'vectorizer_path'):
+            if os.path.exists(self.model_path) and os.path.exists(self.vectorizer_path):
+                with open(self.model_path, 'rb') as f:
+                    self.classifier = pickle.load(f)
+                with open(self.vectorizer_path, 'rb') as f:
+                    self.vectorizer = pickle.load(f)
+                print("Existierendes Modell geladen")
+            else:
+                # Lade Trainingsdaten
+                with open(self.training_data_path, 'r', encoding='utf-8') as f:
+                    training_data = json.load(f)
+
+                # Selektiere Labels je nach Strategie
+                texts, labels = self.select_training_labels(training_data)
+
+                # Trainiere Modell
+                self.train_model(texts, labels)
+
+    def select_training_labels(self, training_data):
+        """Wird von Subklassen überschrieben für Label-Selektion"""
+        raise NotImplementedError("ML-Strategien müssen select_training_labels implementieren")
+
+    def train_model(self, texts, labels):
+        """Wird von Subklassen überschrieben für Modell-Training"""
+        raise NotImplementedError("ML-Strategien müssen train_model implementieren")
+
+    def log_batch_evaluation(self):
+        """Loggt Evaluierungsdaten nach jedem Batch"""
+        runtime = (datetime.now() - self.stats['start_time']).total_seconds()
+        harvest_rate = self.stats['relevant_pages'] / max(1, self.stats['total_crawled'])
+        avg_relevance = self.stats['total_relevance_sum'] / max(1, self.stats['total_crawled'])
+
+        # Berechne durchschnittliche Position der neuen URLs in der Frontier
+        avg_position = 0
+        if self.batch_positions:
+            avg_position = sum(self.batch_positions) / len(self.batch_positions)
+
+        evaluation_entry = {
+            'batch_number': self.current_batch_number,
+            'pages_visited': self.stats['total_crawled'],
+            'relevant_pages_found': self.stats['relevant_pages'],
+            'harvest_rate': harvest_rate,
+            'average_relevance': avg_relevance,
+            'execution_time_in_seconds': runtime,
+            'avg_frontier_position': avg_position,
+            'new_urls_added': len(self.batch_positions),
+            'relevance_calculation_time': self.stats['relevance_calculation_time']
+        }
+
+        self.stats['evaluation_log'].append(evaluation_entry)
+
+        # Reset für nächsten Batch
+        self.batch_positions = []
+        self.batch_new_urls = []
+
+    def print_progress(self):
+        """Gibt Fortschritt in Konsole aus"""
+        if self.stats['total_crawled'] % 50 == 0:  # Alle 50 Seiten
+            avg_relevance = self.stats['total_relevance_sum'] / max(1, self.stats['total_crawled'])
             harvest_rate = (self.stats['relevant_pages'] / max(1, self.stats['total_crawled'])) * 100
-
-            report = f"""
---- ZWISCHENBERICHT [{now.strftime('%H:%M:%S')}] ---
-Laufzeit: {runtime}
-Harvest-Rate: {harvest_rate:.2f}%
-Relevante Seiten: {self.stats['relevant_pages']}
-Irrelevante Seiten: {self.stats['irrelevant_pages']}
-Aktueller Batch: {self.current_batch_number}
-"""
-            print(report)
-            self.write_to_report(report)
-            self.stats['last_report'] = now
+            print(f"[Batch {self.current_batch_number}] "
+                  f"Gecrawlt: {self.stats['total_crawled']} | "
+                  f"Relevant: {self.stats['relevant_pages']} | "
+                  f"Harvest: {harvest_rate:.1f}% | "
+                  f"Ø-Relevanz: {avg_relevance:.3f}")
 
     def print_final_report(self):
         """Gibt Abschlussbericht aus und speichert JSON mit Evaluierungsdaten"""
-        # Verhindere mehrfache Ausführung
-        if self.final_report_written:
-            return
-
-        self.final_report_written = True
-
         # Letzte Batch-Evaluierung
         self.log_batch_evaluation()
 
@@ -403,47 +409,35 @@ Aktueller Batch: {self.current_batch_number}
         harvest_rate = (self.stats['relevant_pages'] / max(1, self.stats['total_crawled'])) * 100
         avg_relevance = self.stats['total_relevance_sum'] / max(1, self.stats['total_crawled'])
 
+        print(f"\n{'=' * 60}")
+        print(f"ABSCHLUSS - {self.name}")
+        print(f"Laufzeit: {runtime}")
+        print(f"Gecrawlt: {self.stats['total_crawled']} Seiten")
+        print(f"Relevant: {self.stats['relevant_pages']} ({harvest_rate:.1f}%)")
+        print(f"Ø-Relevanz: {avg_relevance:.4f}")
+        print(f"Export: {self.export_file}")
+        print(f"{'=' * 60}\n")
+
         # Sortiere alle Seiten nach Score
         sorted_pages = sorted(self.stats['all_pages'], key=lambda x: x['score'], reverse=True)
 
-        # Top 10, Mittelfeld 10, Bottom 10
-        top_10 = sorted_pages[:10] if len(sorted_pages) >= 10 else sorted_pages
-        middle_start = max(0, len(sorted_pages) // 2 - 5)
-        middle_10 = sorted_pages[middle_start:middle_start + 10] if len(sorted_pages) >= 20 else []
-        bottom_10 = sorted_pages[-10:] if len(sorted_pages) >= 10 else sorted_pages[-len(sorted_pages):]
+        # Top 5, Median 5, Bottom 5
+        if len(sorted_pages) > 0:
+            print("TOP 5 URLS:")
+            for i, page in enumerate(sorted_pages[:5], 1):
+                print(f"{i}. {page['score']:.4f} - {page['url']}")
 
-        report = f"""
-{'=' * 60}
-ABSCHLUSSBERICHT - {self.name}
-{'=' * 60}
-Spider-Name: {self.name}
-Gesamtlaufzeit: {runtime}
-Anzahl gecrawlter Seiten: {self.stats['total_crawled']}
-Anzahl relevanter Seiten: {self.stats['relevant_pages']}
-Anzahl irrelevanter Seiten: {self.stats['irrelevant_pages']}
-Harvest-Rate: {harvest_rate:.2f}%
-Durchschnittliche Relevanz: {avg_relevance:.4f}
-Gesamte Relevanzbewertungszeit: {self.stats['relevance_calculation_time']:.2f} Sekunden
+            if len(sorted_pages) >= 10:
+                print("\nMEDIAN 5 URLS:")
+                middle = len(sorted_pages) // 2
+                for i, page in enumerate(sorted_pages[middle - 2:middle + 3][:5], 1):
+                    print(f"{i}. {page['score']:.4f} - {page['url']}")
 
-TOP 10 BESTE URLS:
-"""
-        for i, page in enumerate(top_10, 1):
-            report += f"{i}. Score: {page['score']:.4f} - {page['url']}\n"
+                print("\nBOTTOM 5 URLS:")
+                for i, page in enumerate(sorted_pages[-5:], 1):
+                    print(f"{i}. {page['score']:.4f} - {page['url']}")
 
-        if middle_10:
-            report += "\nTOP 10 MITTELFELD URLS:\n"
-            for i, page in enumerate(middle_10, 1):
-                report += f"{i}. Score: {page['score']:.4f} - {page['url']}\n"
-
-        if bottom_10:
-            report += "\nTOP 10 SCHLECHTESTE URLS:\n"
-            for i, page in enumerate(bottom_10, 1):
-                report += f"{i}. Score: {page['score']:.4f} - {page['url']}\n"
-
-        report += f"\n{'=' * 60}\n"
-
-        print(report)
-        self.write_to_report(report)
+            print(f"\n{'=' * 60}\n")
 
         # Exportiere JSON mit Evaluierungsdaten
         relevant_pages = [p for p in sorted_pages if p['score'] >= self.relevance_threshold]
@@ -466,11 +460,14 @@ TOP 10 BESTE URLS:
         with open(self.export_file, 'w', encoding='utf-8') as f:
             json.dump(export_data, f, ensure_ascii=False, indent=2)
 
-        print(f"Relevante Seiten und Evaluierungsdaten exportiert nach: {self.export_file}")
-
-        # Erstelle Plots wenn aktiviert
+        # Erstelle Plots wenn aktiviert (nur einmal!)
         if self.config.getboolean('PLOTTING', 'CREATE_PLOTS', fallback=False):
-            self.create_plots()
+            try:
+                import subprocess
+                subprocess.run([sys.executable, 'scripts/create_plots.py'], check=False)
+                print("Grafiken wurden erstellt")
+            except Exception as e:
+                print(f"Fehler beim Erstellen der Grafiken: {e}")
 
     def create_plots(self):
         """Ruft externes Plot-Skript auf"""

@@ -62,7 +62,9 @@ HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
 USER_AGENT = 'TopicalCrawler/1.0 (+http://example.com/bot)'
 
 # Configure logging
-LOG_LEVEL = 'INFO'
+LOG_STDOUT = False
+LOG_ENABLED = False
+LOG_LEVEL = 'ERROR'
 
 # Memory usage optimization
 REACTOR_THREADPOOL_MAXSIZE = 10

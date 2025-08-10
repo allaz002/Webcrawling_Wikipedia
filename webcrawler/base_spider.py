@@ -33,7 +33,7 @@ class BaseTopicalSpider(scrapy.Spider):
         self.max_relevant = int(self.config['CRAWLER']['MAX_RELEVANT_PAGES'])
         self.relevance_threshold = float(self.config['CRAWLER']['RELEVANCE_THRESHOLD'])
         self.max_runtime = int(self.config['CRAWLER']['MAX_RUNTIME_MINUTES'])
-        self.report_interval = int(self.config['CRAWLER']['REPORT_INTERVAL_SECONDS'])
+        self.report_interval = int(self.config['REPORTING']['REPORT_INTERVAL_SECONDS'])
         self.frontier_max_size = int(self.config['CRAWLER']['FRONTIER_MAX_SIZE'])
 
         # Domain und Namespace Filter aus Config

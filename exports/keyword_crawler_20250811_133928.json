@@ -1,0 +1,5142 @@
+{
+  "summary": {
+    "spider": "keyword_crawler",
+    "timestamp": "20250811_133928",
+    "total_execution_time_in_seconds": 50.942204,
+    "total_pages_visited": 1000,
+    "total_relevant_found": 225,
+    "average_harvest_rate": 0.225,
+    "average_relevance": 0.14025,
+    "pages": [
+      {
+        "url": "https://de.wikipedia.org/wiki/Open_Data",
+        "score": 1.0,
+        "title": "Open Data – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/K%C3%BCnstliche_Intelligenz",
+        "score": 1.0,
+        "title": "Künstliche Intelligenz – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Optimierung_(Mathematik)",
+        "score": 1.0,
+        "title": "Mathematische Optimierung – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Lineare_Regression",
+        "score": 1.0,
+        "title": "Lineare Regression – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Kombinatorische_Optimierung",
+        "score": 1.0,
+        "title": "Kombinatorische Optimierung – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/International_Standard_Industrial_Classification",
+        "score": 1.0,
+        "title": "International Standard Industrial Classification – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Allgemeines_lineares_Modell",
+        "score": 1.0,
+        "title": "Allgemeines lineares Modell – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/String-Matching-Algorithmus",
+        "score": 1.0,
+        "title": "String-Matching-Algorithmus – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Ganzzahlige_lineare_Optimierung",
+        "score": 1.0,
+        "title": "Ganzzahlige lineare Optimierung – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Business_Intelligence",
+        "score": 1.0,
+        "title": "Business Intelligence – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Neuronales_Netz",
+        "score": 1.0,
+        "title": "Neuronales Netz – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Neuronale_Plastizit%C3%A4t",
+        "score": 1.0,
+        "title": "Neuronale Plastizität – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Network",
+        "score": 1.0,
+        "title": "Network – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Regression_mit_stochastischen_Regressoren",
+        "score": 1.0,
+        "title": "Regression mit stochastischen Regressoren – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Nichtlineare_Optimierung",
+        "score": 1.0,
+        "title": "Nichtlineare Optimierung – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Data-Warehouse-Prozess",
+        "score": 1.0,
+        "title": "Data-Warehouse-Prozess – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Foundation_Models",
+        "score": 1.0,
+        "title": "Foundation Models – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/America_Radio_Network",
+        "score": 1.0,
+        "title": "America Radio Network – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Modell",
+        "score": 1.0,
+        "title": "Modell – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Deep_Purple",
+        "score": 1.0,
+        "title": "Deep Purple – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Selbst%C3%BCberwachtes_Lernen",
+        "score": 1.0,
+        "title": "Selbstüberwachtes Lernen – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Modell_(Begriffskl%C3%A4rung)",
+        "score": 1.0,
+        "title": "Modell (Begriffsklärung) – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Aviation_Safety_Network",
+        "score": 1.0,
+        "title": "Aviation Safety Network – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/K%C3%BCnstliche_neuronale_Netzwerke",
+        "score": 1.0,
+        "title": "Künstliches neuronales Netz – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Training",
+        "score": 1.0,
+        "title": "Training – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/E-Learning",
+        "score": 1.0,
+        "title": "E-Learning – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Learning_by_Doing",
+        "score": 1.0,
+        "title": "Learning by Doing – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Enhanced_Data_Rates_for_GSM_Evolution",
+        "score": 1.0,
+        "title": "Enhanced Data Rates for GSM Evolution – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Cocke-Younger-Kasami-Algorithmus",
+        "score": 1.0,
+        "title": "Cocke-Younger-Kasami-Algorithmus – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Committee_for_Accuracy_in_Middle_East_Reporting_in_America",
+        "score": 1.0,
+        "title": "Committee for Accuracy in Middle East Reporting in America – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Skalenfreies_Netz",
+        "score": 1.0,
+        "title": "Skalenfreies Netz – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Next_Generation_Mobile_Networks",
+        "score": 1.0,
+        "title": "Next Generation Mobile Networks – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Bert_Smaak",
+        "score": 1.0,
+        "title": "Bert Smaak – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Deep_Impact_(Sonde)",
+        "score": 1.0,
+        "title": "Deep Impact (Raumsonde) – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/IBM_Personal_Computer_XT",
+        "score": 1.0,
+        "title": "IBM Personal Computer XT – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Colt_Modell_1903_Hammerless",
+        "score": 1.0,
+        "title": "Colt Modell 1903 Hammerless – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Deep_Impact_(Film)",
+        "score": 1.0,
+        "title": "Deep Impact (Film) – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Netze_des_Bundes",
+        "score": 1.0,
+        "title": "Netze des Bundes – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/The_Social_Network",
+        "score": 1.0,
+        "title": "The Social Network – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Computer_History_Museum",
+        "score": 1.0,
+        "title": "Computer History Museum – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/TensorFlow_Processing_Unit",
+        "score": 1.0,
+        "title": "Tensor Processing Unit – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Nine_Network",
+        "score": 1.0,
+        "title": "Nine Network – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Fender_Precision_Bass",
+        "score": 1.0,
+        "title": "Fender Precision Bass – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Tensor_Processing_Unit",
+        "score": 1.0,
+        "title": "Tensor Processing Unit – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Computer-Rollenspiel",
+        "score": 1.0,
+        "title": "Computer-Rollenspiel – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Rage_Against_the_Machine_(Album)",
+        "score": 1.0,
+        "title": "Rage Against the Machine (Album) – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Computer_Emergency_Response_Team",
+        "score": 1.0,
+        "title": "Computer Emergency Response Team – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Lebel_Modell_1886",
+        "score": 1.0,
+        "title": "Lebel Modell 1886 – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Aviation_Safety_Network_WikiBase",
+        "score": 1.0,
+        "title": "Aviation Safety Network – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Tesla_Model_3",
+        "score": 1.0,
+        "title": "Tesla Model 3 – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Apple_Computer",
+        "score": 0.75,
+        "title": "Apple – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Pathfinding",
+        "score": 0.75,
+        "title": "Pathfinding – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Parameter_(Informatik)",
+        "score": 0.75,
+        "title": "Parameter (Informatik) – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Optimierungsproblem",
+        "score": 0.75,
+        "title": "Optimierungsproblem – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Neurologie",
+        "score": 0.75,
+        "title": "Neurologie – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Alpha_Jet",
+        "score": 0.75,
+        "title": "Alpha Jet – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Wirtschaftszweig",
+        "score": 0.75,
+        "title": "Wirtschaftszweig – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Zeichenkette",
+        "score": 0.75,
+        "title": "Zeichenkette – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Dewey_Decimal_Classification",
+        "score": 0.75,
+        "title": "Dewey-Dezimalklassifikation – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/GPT-4",
+        "score": 0.75,
+        "title": "OpenAI – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Wissensmanagement",
+        "score": 0.75,
+        "title": "Wissensmanagement – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Datenbereinigung",
+        "score": 0.75,
+        "title": "Datenbereinigung – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Weiterbildung",
+        "score": 0.75,
+        "title": "Erwachsenen- und Weiterbildung – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/%C3%96kologischer_Fu%C3%9Fabdruck",
+        "score": 0.75,
+        "title": "Ökologischer Fußabdruck – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/DDR",
+        "score": 0.75,
+        "title": "Deutsche Demokratische Republik – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Lernen_am_Modell",
+        "score": 0.75,
+        "title": "Sozialkognitive Lerntheorie – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Vorbild",
+        "score": 0.75,
+        "title": "Vorbild – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Modell-Lernen",
+        "score": 0.75,
+        "title": "Sozialkognitive Lerntheorie – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Bundesrealgymnasium_Innsbruck",
+        "score": 0.75,
+        "title": "Bundesrealgymnasium Innsbruck – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Mac_Pro",
+        "score": 0.75,
+        "title": "Mac Pro – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Intel_Xeon",
+        "score": 0.75,
+        "title": "Intel Xeon – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Apple_Inc.",
+        "score": 0.75,
+        "title": "Apple – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/AMD",
+        "score": 0.75,
+        "title": "AMD – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/8,8-cm-Flak_18/36/37",
+        "score": 0.75,
+        "title": "8,8-cm-Flak 18/36/37 – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Panavia_Tornado",
+        "score": 0.75,
+        "title": "Panavia Tornado – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Patrick_Miller",
+        "score": 0.75,
+        "title": "Patrick Miller – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Enzyklop%C3%A4die",
+        "score": 0.5,
+        "title": "Enzyklopädie – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Cindy_%26_Bert",
+        "score": 0.5,
+        "title": "Cindy & Bert – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Boko_Haram",
+        "score": 0.5,
+        "title": "Boko Haram – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/CD-ROM",
+        "score": 0.5,
+        "title": "CD-ROM – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Per_Anhalter_durch_die_Galaxis_(Film)",
+        "score": 0.5,
+        "title": "Per Anhalter durch die Galaxis (Film) – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Ontologie_(Informatik)",
+        "score": 0.5,
+        "title": "Ontologie (Informatik) – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Nils_Nilsson_(Informatiker)",
+        "score": 0.5,
+        "title": "Nils Nilsson (Informatiker) – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Neurowissenschaften",
+        "score": 0.5,
+        "title": "Neurowissenschaften – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Nick_Bostrom",
+        "score": 0.5,
+        "title": "Nick Bostrom – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Dropout-Men%C3%BC",
+        "score": 0.5,
+        "title": "Dropout-Menü – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Al_Jazeera",
+        "score": 0.5,
+        "title": "Al Jazeera – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Alexander_M%C3%A4dche",
+        "score": 0.5,
+        "title": "Alexander Mädche – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Kamerun",
+        "score": 0.5,
+        "title": "Kamerun – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Norwegen",
+        "score": 0.5,
+        "title": "Norwegen – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Superintelligenz",
+        "score": 0.5,
+        "title": "Superintelligenz – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Ethik",
+        "score": 0.5,
+        "title": "Ethik – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Baeza-Yates-Gonnet-Algorithmus",
+        "score": 0.5,
+        "title": "Baeza-Yates-Gonnet-Algorithmus – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Antwortvariable",
+        "score": 0.5,
+        "title": "Abhängige und unabhängige Variable – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Data-Mart",
+        "score": 0.5,
+        "title": "Data-Mart – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Simplex-Algorithmus",
+        "score": 0.5,
+        "title": "Simplex-Verfahren – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Angewandte_Ethik",
+        "score": 0.5,
+        "title": "Angewandte Ethik – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/River_Deep_%E2%80%93_Mountain_High",
+        "score": 0.5,
+        "title": "River Deep – Mountain High – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Machine_Gun_Kelly_(Musiker)",
+        "score": 0.5,
+        "title": "Machine Gun Kelly (Musiker) – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Automat_(Informatik)",
+        "score": 0.5,
+        "title": "Automat (Informatik) – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Bert_Berns",
+        "score": 0.5,
+        "title": "Bert Berns – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Ethik_in_der_Schauweise_der_Wissenschaften_vom_Menschen_und_von_der_Gesellschaft",
+        "score": 0.5,
+        "title": "Ethik in der Schauweise der Wissenschaften vom Menschen und von der Gesellschaft – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/SECI-Modell",
+        "score": 0.5,
+        "title": "SECI-Modell – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Machine_Gun_Kelly_(Musiker)/Diskografie",
+        "score": 0.5,
+        "title": "Machine Gun Kelly (Musiker)/Diskografie – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Bibliothekarisch-bibliografische_Klassifikation",
+        "score": 0.5,
+        "title": "Bibliothekarisch-bibliografische Klassifikation – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Rechnerarchitektur",
+        "score": 0.5,
+        "title": "Rechnerarchitektur – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/A_priori",
+        "score": 0.5,
+        "title": "a priori – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Global_Geoparks_Network",
+        "score": 0.5,
+        "title": "Global Geoparks Network – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Antarktis",
+        "score": 0.5,
+        "title": "Antarktis – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/A_posteriori",
+        "score": 0.5,
+        "title": "a posteriori – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Deep_Purple_(Begriffskl%C3%A4rung)",
+        "score": 0.5,
+        "title": "Deep Purple (Begriffsklärung) – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Datenfusion",
+        "score": 0.5,
+        "title": "Datenfusion – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Nachdenken",
+        "score": 0.5,
+        "title": "Denken – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Deutsches_Zentrum_f%C3%BCr_Luft-_und_Raumfahrt",
+        "score": 0.5,
+        "title": "Deutsches Zentrum für Luft- und Raumfahrt – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Art_Modell",
+        "score": 0.5,
+        "title": "Art Modell – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Der_Zweck_heiligt_die_Mittel",
+        "score": 0.5,
+        "title": "Liste geflügelter Worte/D – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Aufkl%C3%A4rungsflugzeug",
+        "score": 0.5,
+        "title": "Aufklärungsflugzeug – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Elisabeth_II.",
+        "score": 0.5,
+        "title": "Elisabeth II. – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Wettkampf",
+        "score": 0.5,
+        "title": "Wettkampf – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/%C3%96kosystem",
+        "score": 0.5,
+        "title": "Ökosystem – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Global_Footprint_Network",
+        "score": 0.5,
+        "title": "Global Footprint Network – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Workshop",
+        "score": 0.5,
+        "title": "Workshop – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Volkshochschule",
+        "score": 0.5,
+        "title": "Volkshochschule – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Zweiter_Bildungsweg",
+        "score": 0.5,
+        "title": "Zweiter Bildungsweg – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Multimedia",
+        "score": 0.5,
+        "title": "Multimedia – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Computer_Based_Training",
+        "score": 0.5,
+        "title": "Intelligentes tutorielles System – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Abfluss",
+        "score": 0.5,
+        "title": "Abfluss – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Zehn_Gebote_der_sozialistischen_Moral_und_Ethik",
+        "score": 0.5,
+        "title": "Zehn Gebote der sozialistischen Moral und Ethik – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Abendgymnasium",
+        "score": 0.5,
+        "title": "Abendgymnasium – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/%C3%96sterreichischer_Rundfunk",
+        "score": 0.5,
+        "title": "Österreichischer Rundfunk – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Georg-August-Universit%C3%A4t_G%C3%B6ttingen",
+        "score": 0.5,
+        "title": "Georg-August-Universität Göttingen – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Spiegelneuron",
+        "score": 0.5,
+        "title": "Spiegelneuron – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Bimodale_Verteilung",
+        "score": 0.5,
+        "title": "Bimodale Verteilung – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Intelligentes_tutorielles_System",
+        "score": 0.5,
+        "title": "Intelligentes tutorielles System – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Begabtenf%C3%B6rderung",
+        "score": 0.5,
+        "title": "Begabtenförderung – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Conflict_Intelligence_Team",
+        "score": 0.5,
+        "title": "Conflict Intelligence Team – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Bert_Heller",
+        "score": 0.5,
+        "title": "Bert Heller – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Annexion_der_Krim_2014",
+        "score": 0.5,
+        "title": "Annexion der Krim 2014 – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Aggression",
+        "score": 0.5,
+        "title": "Aggression – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Studierende",
+        "score": 0.5,
+        "title": "Student – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Wladimir_Putin",
+        "score": 0.5,
+        "title": "Wladimir Wladimirowitsch Putin – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Arabische_Israelis",
+        "score": 0.5,
+        "title": "Arabische Israelis – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Technische_Universit%C3%A4t_Berlin",
+        "score": 0.5,
+        "title": "Technische Universität Berlin – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Ho-Chi-Minh-Stadt",
+        "score": 0.5,
+        "title": "Ho-Chi-Minh-Stadt – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/IMDb",
+        "score": 0.5,
+        "title": "IMDb – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Intelligenzija",
+        "score": 0.5,
+        "title": "Intelligenzija – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Hypergraph",
+        "score": 0.5,
+        "title": "Graph (Graphentheorie) – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/10._Jahrhundert",
+        "score": 0.5,
+        "title": "10. Jahrhundert – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Bias",
+        "score": 0.5,
+        "title": "Bias – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Afrikanische_Literatur",
+        "score": 0.5,
+        "title": "Afrikanische Literatur – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/K%C3%B6nigreich_Italien_(1861%E2%80%931946)",
+        "score": 0.5,
+        "title": "Königreich Italien (1861–1946) – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Al_Di_Meola",
+        "score": 0.5,
+        "title": "Al Di Meola – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Browning_Machine_Gun",
+        "score": 0.5,
+        "title": "12,7 × 99 mm NATO – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Peabody_Gewehr_Modell_1867",
+        "score": 0.5,
+        "title": "Peabody Gewehr Modell 1867 – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Abolitionismus",
+        "score": 0.5,
+        "title": "Abolitionismus – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Brunei",
+        "score": 0.5,
+        "title": "Brunei – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Bert_Ambrose",
+        "score": 0.5,
+        "title": "Bert Ambrose – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/FN_Browning_Modell_1903",
+        "score": 0.5,
+        "title": "FN Browning Modell 1903 – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Bert_Franzke",
+        "score": 0.5,
+        "title": "Bert Franzke – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/%C3%96sterreichisch-Ungarische_Monarchie",
+        "score": 0.5,
+        "title": "Österreich-Ungarn – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/American_Dream",
+        "score": 0.5,
+        "title": "American Dream – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Ludwig_van_Beethoven",
+        "score": 0.5,
+        "title": "Ludwig van Beethoven – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Mac_Studio",
+        "score": 0.5,
+        "title": "Mac Studio – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Lyndon_B._Johnson",
+        "score": 0.5,
+        "title": "Lyndon B. Johnson – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Georg_Schicht",
+        "score": 0.5,
+        "title": "Georg Schicht – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/%E1%B8%AAattu%C5%A1a",
+        "score": 0.5,
+        "title": "Ḫattuša – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/ATI-Radeon-HD-2000-Serie",
+        "score": 0.5,
+        "title": "ATI-Radeon-HD-2000-Serie – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Prozessork%C3%BChler",
+        "score": 0.5,
+        "title": "Prozessorkühler – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Apple-II-Modelle",
+        "score": 0.5,
+        "title": "Apple-II-Modelle – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Steve_Jobs",
+        "score": 0.5,
+        "title": "Steve Jobs – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/ATI-Mobility-Radeon-HD-2000-Serie",
+        "score": 0.5,
+        "title": "ATI Mobility Radeon – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Nvidia-Geforce-8-Serie",
+        "score": 0.5,
+        "title": "Nvidia-GeForce-8-Serie – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Abw%C3%A4rme",
+        "score": 0.5,
+        "title": "Abwärme – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Mexiko-Stadt",
+        "score": 0.5,
+        "title": "Mexiko-Stadt – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/32-Bit-Architektur",
+        "score": 0.5,
+        "title": "32-Bit-Architektur – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Abenteuer",
+        "score": 0.5,
+        "title": "Abenteuer – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/%C3%96sterreichische_Geschichte",
+        "score": 0.5,
+        "title": "Geschichte Österreichs – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Bin%C3%A4rpr%C3%A4fix",
+        "score": 0.5,
+        "title": "Binärpräfix – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/TFLOPS",
+        "score": 0.5,
+        "title": "Floating Point Operations Per Second – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Motherboard",
+        "score": 0.5,
+        "title": "Hauptplatine – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Universit%C3%A4t_Stuttgart",
+        "score": 0.5,
+        "title": "Universität Stuttgart – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Explicitly_Parallel_Instruction_Computing",
+        "score": 0.5,
+        "title": "Explicitly Parallel Instruction Computing – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Nationalsozialismus",
+        "score": 0.5,
+        "title": "Nationalsozialismus – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Die_totale_Erinnerung_%E2%80%93_Total_Recall",
+        "score": 0.5,
+        "title": "Die totale Erinnerung – Total Recall – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Neapel",
+        "score": 0.5,
+        "title": "Neapel – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/In-order_execution",
+        "score": 0.5,
+        "title": "Out-of-order execution – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Neandertaler",
+        "score": 0.5,
+        "title": "Neandertaler – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/105-mm-Howitzer_M2,_M2A1,_M101_und_M101A1",
+        "score": 0.5,
+        "title": "105-mm-Howitzer M2, M2A1, M101 und M101A1 – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/%C3%9Cberfall_auf_Polen",
+        "score": 0.5,
+        "title": "Überfall auf Polen – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/%C3%89tablissements_Cambier",
+        "score": 0.5,
+        "title": "Établissements Cambier – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Rage_Against_the_Machine",
+        "score": 0.5,
+        "title": "Rage Against the Machine – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Max_Weber",
+        "score": 0.5,
+        "title": "Max Weber – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/ACOnet",
+        "score": 0.5,
+        "title": "ACOnet – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Total_Recall_(2012)",
+        "score": 0.5,
+        "title": "Total Recall (2012) – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Sharon_Stone",
+        "score": 0.5,
+        "title": "Sharon Stone – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/15-cm-Feldhaubitze_M.14",
+        "score": 0.5,
+        "title": "15-cm-Feldhaubitze M.14 – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Tomasulo-Algorithmus",
+        "score": 0.5,
+        "title": "Tomasulo-Algorithmus – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Wu-Tang_Clan",
+        "score": 0.5,
+        "title": "Wu-Tang Clan – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Wirtschaftssoziologie",
+        "score": 0.5,
+        "title": "Wirtschaftssoziologie – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Robert_Tomasulo",
+        "score": 0.5,
+        "title": "Robert Tomasulo – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Rage_Against_the_Machine/Diskografie",
+        "score": 0.5,
+        "title": "Rage Against the Machine/Diskografie – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Bert_Grund",
+        "score": 0.5,
+        "title": "Bert Grund – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Ober%C3%B6sterreichische_Nachrichten",
+        "score": 0.5,
+        "title": "Oberösterreichische Nachrichten – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/NATO_Intelligence,_Surveillance,_and_Reconnaissance_Force",
+        "score": 0.5,
+        "title": "NATO Intelligence, Surveillance, and Reconnaissance Force – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Alle_kann_ich_nicht_heiraten",
+        "score": 0.5,
+        "title": "Alle kann ich nicht heiraten – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Asa_Briggs",
+        "score": 0.5,
+        "title": "Asa Briggs – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Wirtschaftswissenschaften",
+        "score": 0.5,
+        "title": "Wirtschaftswissenschaft – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Panasonic_Corporation",
+        "score": 0.5,
+        "title": "Panasonic Corporation – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Tri-National_Tornado_Training_Establishment",
+        "score": 0.5,
+        "title": "Tri-National Tornado Training Establishment – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Paul_Gauguin",
+        "score": 0.5,
+        "title": "Paul Gauguin – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Zeitzone",
+        "score": 0.25,
+        "title": "Zeitzone – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Boeing_757",
+        "score": 0.25,
+        "title": "Boeing 757 – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Rodalies_Barcelona",
+        "score": 0.25,
+        "title": "Rodalies Barcelona – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Geopark",
+        "score": 0.25,
+        "title": "Geopark – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Adoption",
+        "score": 0.25,
+        "title": "Adoption – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Schule_f%C3%BCr_Erwachsenenbildung_(Berlin)",
+        "score": 0.25,
+        "title": "Schule für Erwachsenenbildung (Berlin) – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Sprachfamilie",
+        "score": 0.25,
+        "title": "Sprachfamilie – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/%C3%84gyptischer_Kalender",
+        "score": 0.25,
+        "title": "Ägyptischer Kalender – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Af-Klima",
+        "score": 0.25,
+        "title": "Af-Klima – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/AC_Mailand",
+        "score": 0.25,
+        "title": "AC Mailand – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Intel_8080",
+        "score": 0.25,
+        "title": "Intel 8080 – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Liste_der_AMD-Ryzen-Prozessoren",
+        "score": 0.25,
+        "title": "Liste der AMD-Ryzen-Prozessoren – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/AMD-Radeon-400-Serie",
+        "score": 0.25,
+        "title": "AMD-Radeon-400-Serie – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/8,8-cm-Flak_41",
+        "score": 0.25,
+        "title": "8,8-cm-Flak 41 – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Metacritic",
+        "score": 0.25,
+        "title": "Metacritic – Wikipedia"
+      }
+    ],
+    "cpu_ms_per_1000_docs": 7703.125,
+    "memory_p95_mib": 315.80078125,
+    "raw_scores": [
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Wikipedia:Hauptseite"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/11._August"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/N%C3%A9gritude"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Immenhof-Filme"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Michel_Callon"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Karl-Heinz_Bergstr%C3%A4%C3%9Fer"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Holl%C3%A4ndischer_Krieg"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Heidi_Br%C3%BChl"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Marthe_Robert"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Margaret_Boden"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Leucospis_sinensis"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Freie_Inhalte"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/N%E2%80%99Djamena"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Haiti"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/FRETILIN"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/B%C3%BCrgerkrieg_in_Osttimor_1975"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Ende_der_portugiesischen_Herrschaft_auf_Timor"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Die_M%C3%A4dels_vom_Immenhof"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Christiane_K%C3%B6nig"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Bobby_Whitlock"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Bahnhof_Berlin_Gesundbrunnen"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/%C3%81lex_Qui%C3%B1%C3%B3nez"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/Enzyklop%C3%A4die"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/August_2025"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Armagideon_Time"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Apple_I"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Angelika_Meissner"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Alain_Bouchet_(Musiker)"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/%C3%89mile_Gentil"
+      },
+      {
+        "score": 1.0,
+        "url": "https://de.wikipedia.org/wiki/Open_Data"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Abdomen_(Gliederf%C3%BC%C3%9Fer)"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/Cindy_%26_Bert"
+      },
+      {
+        "score": 1.0,
+        "url": "https://de.wikipedia.org/wiki/K%C3%BCnstliche_Intelligenz"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/1888"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/1945"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Bloemfontein"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/%C3%89lie_Lescot"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Brazzaville"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Borkou"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Bornu"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/1._Juli"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/Boko_Haram"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/1975"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Bissau"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Bahnhof_Berlin-Hermsdorf"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Bahnhof_Berlin-Heiligensee"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/ARD"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Bahnhof_Berlin-Halensee"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/AEG"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/1948"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/1932"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Freies_Wissen"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Encyclopaedia_Britannica"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Herders_Conversations-Lexikon"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Haust%C3%BCrgesch%C3%A4ft"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Hauslexikon"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/CD-ROM"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Aulus_Cornelius_Celsus"
+      },
+      {
+        "score": 0.75,
+        "url": "https://de.wikipedia.org/wiki/Apple_Computer"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/Per_Anhalter_durch_die_Galaxis_(Film)"
+      },
+      {
+        "score": 0.75,
+        "url": "https://de.wikipedia.org/wiki/Pathfinding"
+      },
+      {
+        "score": 0.75,
+        "url": "https://de.wikipedia.org/wiki/Parameter_(Informatik)"
+      },
+      {
+        "score": 0.75,
+        "url": "https://de.wikipedia.org/wiki/Optimierungsproblem"
+      },
+      {
+        "score": 1.0,
+        "url": "https://de.wikipedia.org/wiki/Optimierung_(Mathematik)"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/OneRepublic"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/Ontologie_(Informatik)"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Ontologie"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/OHCHR"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/Nils_Nilsson_(Informatiker)"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/Neurowissenschaften"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Neurophysiologie"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/Nick_Bostrom"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Nummer_5_gibt_nicht_auf"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Nummer_5_lebt!"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/Dropout-Men%C3%BC"
+      },
+      {
+        "score": 0.75,
+        "url": "https://de.wikipedia.org/wiki/Neurologie"
+      },
+      {
+        "score": 0.75,
+        "url": "https://de.wikipedia.org/wiki/Alpha_Jet"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/BBC_News"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Distrikt"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/Al_Jazeera"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Borno"
+      },
+      {
+        "score": 0.75,
+        "url": "https://de.wikipedia.org/wiki/Wirtschaftszweig"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Vollzeit%C3%A4quivalent"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Unternehmensf%C3%BChrung"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Unterhaltungselektronik"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Damaturu"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Tim_Cook"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Technologieunternehmen"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Benutzer_Diskussion:Y2kbug"
+      },
+      {
+        "score": 1.0,
+        "url": "https://de.wikipedia.org/wiki/Lineare_Regression"
+      },
+      {
+        "score": 0.75,
+        "url": "https://de.wikipedia.org/wiki/Zeichenkette"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/US-Dollar"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Affen"
+      },
+      {
+        "score": 1.0,
+        "url": "https://de.wikipedia.org/wiki/Kombinatorische_Optimierung"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Maiduguri"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/Alexander_M%C3%A4dche"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Max_Mutzke"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Jimeta"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Nervensystem"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Konsequentialismus"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Levina"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/1933"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/Kamerun"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Rabanus_Maurus"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Polycarbonate"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/-logie"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Combobox"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Schulflugzeug"
+      },
+      {
+        "score": 1.0,
+        "url": "https://de.wikipedia.org/wiki/International_Standard_Industrial_Classification"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Formale_Sprache"
+      },
+      {
+        "score": 1.0,
+        "url": "https://de.wikipedia.org/wiki/Allgemeines_lineares_Modell"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Roman_Lob"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Oeconomische_Encyclop%C3%A4die"
+      },
+      {
+        "score": 1.0,
+        "url": "https://de.wikipedia.org/wiki/String-Matching-Algorithmus"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Ateliers_d%E2%80%99Aviation_Louis_Breguet"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/Norwegen"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/Superintelligenz"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Thomas_Keiderling"
+      },
+      {
+        "score": 1.0,
+        "url": "https://de.wikipedia.org/wiki/Ganzzahlige_lineare_Optimierung"
+      },
+      {
+        "score": 1.0,
+        "url": "https://de.wikipedia.org/wiki/Business_Intelligence"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Theatrum_Vitae_Humanae"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Theodor_Heuss"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/CFA-Franc_BEAC"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/This_Day"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Westliche_Welt"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/Ethik"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Tortenmen%C3%BC"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/%C3%84thiopischer_Kalender"
+      },
+      {
+        "score": 1.0,
+        "url": "https://de.wikipedia.org/wiki/Neuronales_Netz"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/10._Juli"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/%C3%84gyptologie"
+      },
+      {
+        "score": 0.25,
+        "url": "https://de.wikipedia.org/wiki/Zeitzone"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/1920er"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/20._Juli"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/1960er"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/%C3%96sterreichische_Nationalbibliothek"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Werbetrenner"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Al_Bernard"
+      },
+      {
+        "score": 0.75,
+        "url": "https://de.wikipedia.org/wiki/Dewey_Decimal_Classification"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Bokm%C3%A5l"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/Baeza-Yates-Gonnet-Algorithmus"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/Antwortvariable"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/25_v._Chr."
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/1990"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/26._Juli"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/UTC%2B2"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/12._Dezember"
+      },
+      {
+        "score": 0.75,
+        "url": "https://de.wikipedia.org/wiki/GPT-4"
+      },
+      {
+        "score": 0.75,
+        "url": "https://de.wikipedia.org/wiki/Wissensmanagement"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/Data-Mart"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/Simplex-Algorithmus"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/1967"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Achtzigj%C3%A4hriger_Krieg"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/Angewandte_Ethik"
+      },
+      {
+        "score": 1.0,
+        "url": "https://de.wikipedia.org/wiki/Neuronale_Plastizit%C3%A4t"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Adam_und_Eva"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Anton_Zeilinger"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Andrew_Van_Ginkel"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/%C3%96ffentliche_Bibliothek"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Abul_Abbas"
+      },
+      {
+        "score": 1.0,
+        "url": "https://de.wikipedia.org/wiki/Network"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/River_Deep_%E2%80%93_Mountain_High"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/5._Jahrhundert_v._Chr."
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/%C3%84gyptische_Expedition"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Athletics_Integrity_Unit"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Asien"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Variable_(Mathematik)"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Artikel_(Wortart)"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Bahnhof_Berlin-Nikolassee"
+      },
+      {
+        "score": 1.0,
+        "url": "https://de.wikipedia.org/wiki/Regression_mit_stochastischen_Regressoren"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/Machine_Gun_Kelly_(Musiker)"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Bibliotheksklassifikation"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/Automat_(Informatik)"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Athen_(Schiff,_1936)"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/Bert_Berns"
+      },
+      {
+        "score": 1.0,
+        "url": "https://de.wikipedia.org/wiki/Nichtlineare_Optimierung"
+      },
+      {
+        "score": 1.0,
+        "url": "https://de.wikipedia.org/wiki/Data-Warehouse-Prozess"
+      },
+      {
+        "score": 1.0,
+        "url": "https://de.wikipedia.org/wiki/Foundation_Models"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Azoren"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/1._Dezember"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/Ethik_in_der_Schauweise_der_Wissenschaften_vom_Menschen_und_von_der_Gesellschaft"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Adam_und_Eva_(Begriffskl%C3%A4rung)"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Albrecht_VII._von_Habsburg"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Barcelona"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Barghasch_ibn_Said"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/%C3%84quator"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Alvaro_Pascual-Leone"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/SECI-Modell"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Barbara_Kruger"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Belagerung_von_Akkon_(1799)"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/20._Mai"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/1._Jahrtausend_v._Chr."
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/Machine_Gun_Kelly_(Musiker)/Diskografie"
+      },
+      {
+        "score": 1.0,
+        "url": "https://de.wikipedia.org/wiki/America_Radio_Network"
+      },
+      {
+        "score": 0.25,
+        "url": "https://de.wikipedia.org/wiki/Boeing_757"
+      },
+      {
+        "score": 1.0,
+        "url": "https://de.wikipedia.org/wiki/Modell"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/Bibliothekarisch-bibliografische_Klassifikation"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/Rechnerarchitektur"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Albrecht_IV._(Bayern)"
+      },
+      {
+        "score": 1.0,
+        "url": "https://de.wikipedia.org/wiki/Deep_Purple"
+      },
+      {
+        "score": 1.0,
+        "url": "https://de.wikipedia.org/wiki/Selbst%C3%BCberwachtes_Lernen"
+      },
+      {
+        "score": 0.75,
+        "url": "https://de.wikipedia.org/wiki/Datenbereinigung"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/A_priori"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Abby_Hoffman"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/8._November"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/13._November"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/Global_Geoparks_Network"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Carlos_Julio_Arosemena_Tola"
+      },
+      {
+        "score": 0.25,
+        "url": "https://de.wikipedia.org/wiki/Rodalies_Barcelona"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Adam_und_Eva_(D%C3%BCrer)"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Adam_und_Eva_(1956)"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Adam_und_Eva_(1928)"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/10._Mai"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Doppelpunkt"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/%C3%96ffentlicher_Raum"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/Antarktis"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Adam_und_Eva_(1923)"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/A_posteriori"
+      },
+      {
+        "score": 1.0,
+        "url": "https://de.wikipedia.org/wiki/Modell_(Begriffskl%C3%A4rung)"
+      },
+      {
+        "score": 1.0,
+        "url": "https://de.wikipedia.org/wiki/Aviation_Safety_Network"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/1961"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/Deep_Purple_(Begriffskl%C3%A4rung)"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/1799"
+      },
+      {
+        "score": 1.0,
+        "url": "https://de.wikipedia.org/wiki/K%C3%BCnstliche_neuronale_Netzwerke"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Debbie_Harry"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Brotbackautomat"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/%CA%BFAbd_al-%CA%BFAz%C4%ABz_al-Amaw%C4%AB"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/Datenfusion"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/%C3%89lisabeth_Philippe_Marie_H%C3%A9l%C3%A8ne_de_Bourbon"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/%C3%86thelred_(England)"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Alfred_Schirokauer"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/Nachdenken"
+      },
+      {
+        "score": 0.25,
+        "url": "https://de.wikipedia.org/wiki/Geopark"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Chaptal-Erlass"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/%C3%96ffentliche_Einrichtung"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Antarktika"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Dagny_Servaes"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Deutsches_Theater_Berlin"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/%C3%96ffentlicher_Dienst_(Deutschland)"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Alex_Phillips"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Absatz_(Text)"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/Deutsches_Zentrum_f%C3%BCr_Luft-_und_Raumfahrt"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Der_erste_Fr%C3%BChlingstag_(1956)"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/Art_Modell"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/A_posteriori_(Begriffskl%C3%A4rung)"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/Der_Zweck_heiligt_die_Mittel"
+      },
+      {
+        "score": 0.25,
+        "url": "https://de.wikipedia.org/wiki/Adoption"
+      },
+      {
+        "score": 1.0,
+        "url": "https://de.wikipedia.org/wiki/Training"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/Aufkl%C3%A4rungsflugzeug"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/%C3%86lfgifu_von_York"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/1880"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/%C3%96kobilanz"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Abel_Tasman"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Dieter_Grasedieck"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Dschezzar_Pascha"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Ahmad_ibn_Sumait"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Einwohner"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Biblioth%C3%A8que_nationale_de_France"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/%C3%96ffentlich-rechtlich"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/%C3%96ffentliches_Amt"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Vorstellung"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Biosph%C3%A4renreservat"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Englisch-Niederl%C3%A4ndische_Seekriege"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/Elisabeth_II."
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/%C3%84sop"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Wissenssoziologie"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Enfield_Rifled_Musket"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/England"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Engagement_(Theater)"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Englisch-Niederl%C3%A4ndischer_Krieg_(1672%E2%80%931674)"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Trainee"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Empf%C3%A4ngnisverh%C3%BCtung"
+      },
+      {
+        "score": 0.75,
+        "url": "https://de.wikipedia.org/wiki/Weiterbildung"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/Wettkampf"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Vollj%C3%A4hrigkeit"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Engelskirchen"
+      },
+      {
+        "score": 0.75,
+        "url": "https://de.wikipedia.org/wiki/%C3%96kologischer_Fu%C3%9Fabdruck"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/T%C3%A4tigkeit"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Abd%C3%BClhamid_II."
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Trainer"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Zack_(Zeitschrift)"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Trainingswissenschaft"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/%C3%96kosystem"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/An_Essay_Concerning_Humane_Understanding"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Biosph%C3%A4renreservat_Rh%C3%B6n"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/(6594)_Tasman"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Ali_Bey_al-Kabir"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Ambactus"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Felipe_Lara_(S%C3%A4nger)"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Datenfunk"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Felipe_Bardi"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Antibabypille"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Ferien_auf_Immenhof"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Abraham_Duquesne"
+      },
+      {
+        "score": 1.0,
+        "url": "https://de.wikipedia.org/wiki/E-Learning"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/Global_Footprint_Network"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Agger"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Auff%C3%BChrung"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/%C3%96sterreichisches_Deutsch"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/Workshop"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/Volkshochschule"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Fach_(Schauspielkunst)"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Absolvent"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Arnd_Kr%C3%BCger"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Altw%C3%BCrttemberg"
+      },
+      {
+        "score": 1.0,
+        "url": "https://de.wikipedia.org/wiki/Learning_by_Doing"
+      },
+      {
+        "score": 0.25,
+        "url": "https://de.wikipedia.org/wiki/Schule_f%C3%BCr_Erwachsenenbildung_(Berlin)"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/Zweiter_Bildungsweg"
+      },
+      {
+        "score": 0.75,
+        "url": "https://de.wikipedia.org/wiki/DDR"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Freetown"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/%C3%8Eles_de_L%C3%A9rins"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Freedom_House"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Albert_Weinberg"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/%C5%9Eehzade"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Alexa_von_Porembsky"
+      },
+      {
+        "score": 0.25,
+        "url": "https://de.wikipedia.org/wiki/Sprachfamilie"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Don_Benito"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Arte"
+      },
+      {
+        "score": 1.0,
+        "url": "https://de.wikipedia.org/wiki/Enhanced_Data_Rates_for_GSM_Evolution"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Multimodalit%C3%A4t"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/Multimedia"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/Computer_Based_Training"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Gary_Brooker"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/Abfluss"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Gartenstadt_Atlantic"
+      },
+      {
+        "score": 0.75,
+        "url": "https://de.wikipedia.org/wiki/Lernen_am_Modell"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Autorenlesung"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/1500-Meter-Lauf"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Garten-Hortensie"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Fusion_(Wirtschaft)"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/Zehn_Gebote_der_sozialistischen_Moral_und_Ethik"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/Abendgymnasium"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Land_(Deutschland)"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/%E2%80%9EUnerw%C3%BCnschte_ausl%C3%A4ndische_Organisationen%E2%80%9C_in_Russland"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Abitur_f%C3%BCr_Nichtsch%C3%BCler"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Autonome_Gemeinschaften_Spaniens"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Willi_Stoph"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Armer_Konrad"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Abflussganglinie"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Wilhelm_Pieck"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/%C3%96sterreichischer_Rundfunk"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/Georg-August-Universit%C3%A4t_G%C3%B6ttingen"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/A_Whiter_Shade_of_Pale"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/M%C3%BCndung_(Gew%C3%A4sser)"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/%C3%8Ele_Saint-Honorat"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/Spiegelneuron"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/ACM_Multimedia"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Sympathie"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/Bimodale_Verteilung"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Absatzvolumen"
+      },
+      {
+        "score": 0.75,
+        "url": "https://de.wikipedia.org/wiki/Vorbild"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Arbeiter-und-Bauern-Staat"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/Intelligentes_tutorielles_System"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Asteriden"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Sozialverhalten"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/Begabtenf%C3%B6rderung"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/5000-Meter-Lauf"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/Conflict_Intelligence_Team"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/Bert_Heller"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Allgemeiner_Sprachgebrauch"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/%C3%96ffentliche_Verwaltung_f%C3%BCr_das_%C3%B6sterreichische_Rundspruchwesen"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Alte_Ma%C3%9Fe_und_Gewichte"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Gideon_Klein"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Goldmedaille"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Abendgymnasium_Innsbruck"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Guerilla"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Dynamische_Programmierung"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/13._April"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Andalusien"
+      },
+      {
+        "score": 0.75,
+        "url": "https://de.wikipedia.org/wiki/Modell-Lernen"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Automobilhersteller"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Gentianales"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Flie%C3%9Fgeschwindigkeit"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Star_(Person)"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Eudikotyledonen"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Garryales"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Fruchtblatt"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Haifa"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/Annexion_der_Krim_2014"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/Aggression"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Streumunition"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/%C3%96sterreichische_Akademie_der_Wissenschaften"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Johannes-Kepler-Gymnasium_Chemnitz"
+      },
+      {
+        "score": 1.0,
+        "url": "https://de.wikipedia.org/wiki/Cocke-Younger-Kasami-Algorithmus"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Abdachung"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Surgut"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Hans_Baldung"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Hans_Av%C3%A9-Lallemant"
+      },
+      {
+        "score": 0.25,
+        "url": "https://de.wikipedia.org/wiki/%C3%84gyptischer_Kalender"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/Studierende"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Althochdeutsch"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Annexion"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/%C3%84therische_%C3%96le"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Haut-Uele"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Augmentativbildung"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Cultivar"
+      },
+      {
+        "score": 0.75,
+        "url": "https://de.wikipedia.org/wiki/Bundesrealgymnasium_Innsbruck"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Haut-Lomami"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Henrietta_Wentworth,_6._Baroness_Wentworth"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Henri_de_La_Tour_d%E2%80%99Auvergne,_vicomte_de_Turenne"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Best%C3%A4ubung"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/Wladimir_Putin"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Henry_Armetta"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/AG_Vulcan_Stettin"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Akademischer_Grad"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Schemu"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/%C3%84gyptischer_Verwaltungskalender"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Acad%C3%A9mie_des_sciences"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Henry_A._Wallace"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Henry_Arland"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Universit%C3%A4t_Bologna"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Hoher_Kommissar_der_Vereinten_Nationen_f%C3%BCr_Menschenrechte"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Honorarkonsul"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/Arabische_Israelis"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/Technische_Universit%C3%A4t_Berlin"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/Ho-Chi-Minh-Stadt"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Hymne"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/IATA-Flughafencode"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/IAAF_World_Relays_2019"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/IMDb"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/11._September"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/IGY"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/Intelligenzija"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/%C3%89quateur_(Provinz)"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/Hypergraph"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/21._Oktober"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Anemophilie"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/ISO_3166"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/ISO_3166-2"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Ibrahim_Boubacar_Ke%C3%AFta"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Altes_Reich"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/%C3%89lie_Cartan"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Bachelor_of_Engineering"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Ibiza"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Ibrahim_Bey"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Alan_Gardiner"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Allgemeine_Erkl%C3%A4rung_der_Menschenrechte"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Ingrid_L._Ernst"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Auslandsvertretung"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/%C4%90%C3%B4ng_Nam_B%E1%BB%99"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Adolf_Slaby"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/1._Zusatzartikel_zur_Verfassung_der_Vereinigten_Staaten"
+      },
+      {
+        "score": 1.0,
+        "url": "https://de.wikipedia.org/wiki/Committee_for_Accuracy_in_Middle_East_Reporting_in_America"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/1._September"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Alphanumerisch"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/2._September"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Aleia_Hobbs"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Arabische_Schrift"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/1088"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Internet_Engineering_Task_Force"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/%C3%9Cberseed%C3%A9partement"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Alicante"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Bachelor_of_Science"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/%C4%B0znik"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/%C3%89cole_normale_sup%C3%A9rieure_(Paris)"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/%C3%84gypten_in_griechisch-r%C3%B6mischer_Zeit"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Adair_County_(Iowa)"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Jacqueline_Fernandez"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Apostolische_Nuntiatur"
+      },
+      {
+        "score": 1.0,
+        "url": "https://de.wikipedia.org/wiki/Skalenfreies_Netz"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Binsengew%C3%A4chse"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Janheinz_Jahn"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Antonio_Sk%C3%A1rmeta"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Janis_Joplin"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Janko_Jesensk%C3%BD"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Jann-Peter_Janssen"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Alberta"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Janice_Smith"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/1849"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/%C3%9Cbersee-D%C3%A9partement"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/10._Jahrhundert"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/Bias"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/7._Jahrhundert"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/%C3%89cole_des_hautes_%C3%A9tudes_en_sciences_sociales"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/%C3%96kumenisches_Konzil"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Altirische_Sprache"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Alacant%C3%AD"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Johann_Friedrich_I._(Sachsen)"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/3rd_Generation_Partnership_Project"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/10._Zusatzartikel_zur_Verfassung_der_Vereinigten_Staaten"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Albanien"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Johann_Fridolin_M%C3%BCller"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/%C4%90%C3%A0_N%E1%BA%B5ng"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Bahrain"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/1874"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/12._Februar"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/%C3%8Ele-de-France"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Adair_County_Courthouse_(Greenfield)"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/1839"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/John_Helliwell"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/18._Januar"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/%C3%96dland"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/%C3%96kumenische_Bewegung"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/K%C3%A4the_Kollwitz"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Antofagasta"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/Afrikanische_Literatur"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/19._Januar"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/K%C3%B6nigreich_Holland"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/11._Zusatzartikel_zur_Verfassung_der_Vereinigten_Staaten"
+      },
+      {
+        "score": 1.0,
+        "url": "https://de.wikipedia.org/wiki/Next_Generation_Mobile_Networks"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/K%C3%A4tzchen"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/.al"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/K%C3%B6nigreich_Irak"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/K%C3%B6nigreich_Italien_(1861%E2%80%931946)"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Kapit%C3%A4n-General"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/1503"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Kaliber"
+      },
+      {
+        "score": 1.0,
+        "url": "https://de.wikipedia.org/wiki/Bert_Smaak"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/.bh"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/%C3%89cole_pratique_des_hautes_%C3%A9tudes"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Kapit%C3%A4n_Sindbad"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/1864"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Kaperung_eines_australischen_Flugzeugs_am_4._September_1975"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Karl_II._(England)"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Courthouse"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/%C3%89tablissement_public_de_coop%C3%A9ration_intercommunale"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/12._Januar"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Kaperung"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/%C3%84gyptische_Milit%C3%A4rgeschichte"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Altlast"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/%C3%96kumenische_Theologie"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Antofagasta_(Begriffskl%C3%A4rung)"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/Al_Di_Meola"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/1829"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/1867"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Karl_I._(Rum%C3%A4nien)"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/FERT"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/.ac"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/%C3%84hrchen"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Abu_al-Qasim_asch-Schabbi"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/.bz"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Zentralismus"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Kastilien-La_Mancha"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Viktor_Emanuel_III."
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Abraham_Sofaer"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/%C3%89mile_Roux"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/.cr"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/Browning_Machine_Gun"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Kirstie_Alley"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/1860"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/1983"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Bombenanschlag_auf_das_Murrah_Federal_Building_in_Oklahoma_City"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/%C3%89tablissement_public"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Abseilen_(Flugger%C3%A4t)"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Kirchliches_Amt"
+      },
+      {
+        "score": 1.0,
+        "url": "https://de.wikipedia.org/wiki/Deep_Impact_(Sonde)"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/John_McLaughlin_(Musiker)"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/Peabody_Gewehr_Modell_1867"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Kirchhellen"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/1630"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Abel_Guterres"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Abfallbeseitigungsanlage"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/1954"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Antofagasta_(Ichilo)"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/%C3%96kumenischer_Arbeitskreis_evangelischer_und_katholischer_Theologen"
+      },
+      {
+        "score": 1.0,
+        "url": "https://de.wikipedia.org/wiki/IBM_Personal_Computer_XT"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/John_Quincy_Adams"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Johann_Strauss_(Sohn)"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Albacete"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/%C3%9Cbereinkunft"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/1855"
+      },
+      {
+        "score": 1.0,
+        "url": "https://de.wikipedia.org/wiki/Colt_Modell_1903_Hammerless"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/1896"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/%C3%89mile_Duclaux"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Kulturpflanze"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/Abolitionismus"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/1590er"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/.mu"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/Brunei"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/%C3%96kologisch-Demokratische_Partei"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Accademia_Militare_di_Modena"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Amtsbezeichnung"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/L%C3%A4sion"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Abseilen"
+      },
+      {
+        "score": 1.0,
+        "url": "https://de.wikipedia.org/wiki/Deep_Impact_(Film)"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/L%C3%A9a_Seydoux"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/A_Tribute_to_Jack_Johnson"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Landtags-_und_Gemeinderatswahl_in_Wien_1945"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Landst%C3%A4nde"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Landratsamt"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Drall_(Waffe)"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Langston_Hughes"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Langobardische_Sprache"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Landtagswahl_in_K%C3%A4rnten_1945"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Langobarden"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/L%C3%A4ngenma%C3%9F"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/Bert_Ambrose"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/FN_Browning_Modell_1903"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Landshuter_Erbfolgekrieg"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Langes_s"
+      },
+      {
+        "score": 0.25,
+        "url": "https://de.wikipedia.org/wiki/Af-Klima"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/%C3%96kologiebewegung"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/Bert_Franzke"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Ablassen_(Klettern)"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Arzt"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Applikationsschule"
+      },
+      {
+        "score": 1.0,
+        "url": "https://de.wikipedia.org/wiki/Netze_des_Bundes"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/.ph"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Leadbelly"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Le_Nouvelliste_(Haiti)"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Gemeinderatswahl_in_Wien_1919"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Abmessungen"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Bakumatsu"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Vanessa_Redgrave"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/B%C3%B6hmischer_Landtag"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Altbairisch"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Alboin"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Bezirk_Hermagor"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/BUND"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/1._Februar"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Abdellatif_Kechiche"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Le_Papillon_(Ballett)"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Tucker_Smallwood"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Amazonasbecken"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Bassklarinette"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/%C3%84skulapstab"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/%C3%9F"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/ALDB"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Arthur_Miller"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/58_v._Chr."
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Altdorf_(Niederbayern)"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Liste_der_Staatsoberh%C3%A4upter_1975"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Cajun-Akkordeon"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Abe_Masahiro"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/15._Jahrhundert_v._Chr."
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Liste_der_Staatsoberh%C3%A4upter_1967"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Akademie_der_Kriegskunst_(Warschau)"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Apronym"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Acrylnitril-Butadien-Styrol-Copolymer"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Liste_der_Staatsoberh%C3%A4upter_1983"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Liste_der_Staatsoberh%C3%A4upter_1961"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/%C3%96sterreichisch-Ungarische_Monarchie"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/B%C3%B6hmische_Konf%C3%B6deration"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/572"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Liste_der_Staatsoberh%C3%A4upter_1954"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/American_Dream"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Arbeitslosenquote"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Amazonas"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Abensberg_(Altdorf)"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Louwman_Collection"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Alma_Mater"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/48_v._Chr."
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Aklilu_Habte-Wold"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Love_Symbol"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/%E1%B8%AAantili_II."
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/%C3%84olisches_Griechisch"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/Ludwig_van_Beethoven"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/%C3%96sterreichische_Kaiserhymnen"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Luftfeuchtigkeit"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/1,3-Butadien"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Luciano_Castellini"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/%C3%84ra_Diokletians"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Lynn_Jennings"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Abe_(Klan)"
+      },
+      {
+        "score": 1.0,
+        "url": "https://de.wikipedia.org/wiki/The_Social_Network"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Ahmadou_Ahidjo"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Anzahl"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Amazonas_(Begriffskl%C3%A4rung)"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Barkat_Gourad_Hamadou"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Lynette_Fromme"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/M%C3%BChlviertler_Hasenjagd"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/Mac_Studio"
+      },
+      {
+        "score": 0.75,
+        "url": "https://de.wikipedia.org/wiki/Mac_Pro"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Mabel_Wisse_Smit"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/Lyndon_B._Johnson"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/Georg_Schicht"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Aioler"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Abmischung"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/%E1%B8%AAattu%C5%A1a"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/%C3%93scar_Osorio_Hern%C3%A1ndez"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Maas"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/%C3%84ra"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Mabel_Mosquera"
+      },
+      {
+        "score": 0.25,
+        "url": "https://de.wikipedia.org/wiki/AC_Mailand"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/1,2-Butadien"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/12._M%C3%A4rz"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/38_v._Chr."
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Macap%C3%A1"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/University_of_Cambridge"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Amazonas_%E2%80%93_Gefangen_in_der_H%C3%B6lle_des_Dschungels"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Kammermusik"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Abdallah_Mohamed_Kamil"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Absolute_H%C3%A4ufigkeit"
+      },
+      {
+        "score": 0.75,
+        "url": "https://de.wikipedia.org/wiki/Intel_Xeon"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Thunderbolt"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/State_of_the_art"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Augustine_Ngom_Jua"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Marcel_Breuer"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Ampex"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/ATI-Radeon-HD-2000-Serie"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Achaier"
+      },
+      {
+        "score": 0.75,
+        "url": "https://de.wikipedia.org/wiki/Apple_Inc."
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Friso_von_Oranien-Nassau"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/%C3%84gyptisch-Hethitischer_Friedensvertrag"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/%C3%84ra_(Geologie)"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Gewichtheben"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/European_Council_on_Foreign_Relations"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Abenteuerfilm"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Deutsches_Adelsarchiv"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/D%C3%A9partement_Ardennes"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/1._Streichquartett_(Beethoven)"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Ellen_Johnson_Sirleaf"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Advanced_Level"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/1._M%C3%A4rz"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/1950er_Jahre"
+      },
+      {
+        "score": 0.75,
+        "url": "https://de.wikipedia.org/wiki/AMD"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/Prozessork%C3%BChler"
+      },
+      {
+        "score": 0.25,
+        "url": "https://de.wikipedia.org/wiki/Intel_8080"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Kyburg_ZH"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/%C3%84on_(Geologie)"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Amap%C3%A1"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Alexander_M._Poniatoff"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/Apple-II-Modelle"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/34_v._Chr."
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/Steve_Jobs"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Silicon_Valley"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Mauretanien_(Antike)"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/ATI-Mobility-Radeon-HD-2000-Serie"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/%C5%A0uppiluliuma_I."
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Abdominal"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/General_Certificate_of_Education"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Ant%C3%B4nio_de_Sousa_Neto"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Adelsrecht"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/Nvidia-Geforce-8-Serie"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Abenteuerroman"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Almut_M%C3%B6ller"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Maximilian_I._(HRR)"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/Abw%C3%A4rme"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/8-Bit-Architektur"
+      },
+      {
+        "score": 0.25,
+        "url": "https://de.wikipedia.org/wiki/Liste_der_AMD-Ryzen-Prozessoren"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/30_v._Chr."
+      },
+      {
+        "score": 1.0,
+        "url": "https://de.wikipedia.org/wiki/Computer_History_Museum"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Texture_Mapping"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Bermudas"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Reed_College"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Aire_(Aisne)"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Bayerische_Formel"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Shared_Memory"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/OpenCL"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/60_Minutes"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/2._Streichquartett_(Beethoven)"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/Mexiko-Stadt"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Michael_Groepper"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Michael_Horlacher"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Michael_Graves"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Adelsbrief"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Ampere"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/AES-NI"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Michael_Henderson"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Michael_Hanemann"
+      },
+      {
+        "score": 1.0,
+        "url": "https://de.wikipedia.org/wiki/TensorFlow_Processing_Unit"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Volt"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Dissipation"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/%C3%96sterreich_ob_der_Enns"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Transistor"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Ahaus"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/%C3%82ventiure"
+      },
+      {
+        "score": 1.0,
+        "url": "https://de.wikipedia.org/wiki/Nine_Network"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Mil%C3%A1n_F%C3%BCst"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Mission_des_Nations_Unies_pour_la_stabilisation_en_Ha%C3%AFti"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/10._Streichquartett_(Beethoven)"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Missouri_(Schiff)"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Bus_snooping"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Million"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Azteken"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Missouri"
+      },
+      {
+        "score": 1.0,
+        "url": "https://de.wikipedia.org/wiki/Fender_Precision_Bass"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Ampere_(Begriffskl%C3%A4rung)"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/2015"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Albert_Steinr%C3%BCck"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/32-Bit-Architektur"
+      },
+      {
+        "score": 0.25,
+        "url": "https://de.wikipedia.org/wiki/AMD-Radeon-400-Serie"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/1360"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Ahaus_(Begriffskl%C3%A4rung)"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Torus"
+      },
+      {
+        "score": 1.0,
+        "url": "https://de.wikipedia.org/wiki/Tensor_Processing_Unit"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Abrieb"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/Abenteuer"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Motion_Picture_Association_of_America"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Bell_Laboratories"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/%C3%96sterreichische_Geschichte"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Motel"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/Bin%C3%A4rpr%C3%A4fix"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Cache-Koh%C3%A4renz"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/TFLOPS"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/20-mm-Oerlikon-Kanone"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/%C3%9Cbereinkommen_von_Paris"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Ahornholz"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Columbia_(Missouri)"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Alessandro_Volta"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/%C3%89tablissements_Amp%C3%A8re"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Acamapichtli"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/Motherboard"
+      },
+      {
+        "score": 1.0,
+        "url": "https://de.wikipedia.org/wiki/Computer-Rollenspiel"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Donut"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/4._Brandenburgisches_Konzert"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Liste_der_Au%C3%9Fenlager_des_KZ_Mauthausen"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Abriebfestigkeit"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/1960er_Jahre"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Wolfram_von_Eschenbach"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Muschelkalk"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Klientel"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Musikjahr_1992"
+      },
+      {
+        "score": 0.25,
+        "url": "https://de.wikipedia.org/wiki/8,8-cm-Flak_41"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/Universit%C3%A4t_Stuttgart"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/Explicitly_Parallel_Instruction_Computing"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Musikjahr_1991"
+      },
+      {
+        "score": 0.75,
+        "url": "https://de.wikipedia.org/wiki/8,8-cm-Flak_18/36/37"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Accary"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/William_Heard_Kilpatrick"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Autobahnrastst%C3%A4tte"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/AN602"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Nationalmannschaft"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/1._Brandenburgisches_Konzert"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/75-mm-Howitzer_Pack_M1"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Zeitgenosse"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/National_Route_8"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/1391"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Nationalpark_Bayerischer_Wald"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/Nationalsozialismus"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Naturalismus_(Theater)"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Nationalsozialer_Verein"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Auto-Poney"
+      },
+      {
+        "score": 1.0,
+        "url": "https://de.wikipedia.org/wiki/Rage_Against_the_Machine_(Album)"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/08/15_(Redewendung)"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Naturalismus_(Literatur)"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Nationalratswahl_in_%C3%96sterreich_1945"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Nationalratswahl_in_%C3%96sterreich_1975"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Adressat_(Soziale_Arbeit)"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Nature_Climate_Change"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/Die_totale_Erinnerung_%E2%80%93_Total_Recall"
+      },
+      {
+        "score": 1.0,
+        "url": "https://de.wikipedia.org/wiki/Computer_Emergency_Response_Team"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/Neapel"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Alexander_Sergejewitsch_Puschkin"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Autobahnkreuz"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/In-order_execution"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/%C5%A0koda_(Maschinenbau)"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/Neandertaler"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Nekrolog_1975"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/105-mm-Howitzer_M2,_M2A1,_M101_und_M101A1"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Bayerisch_Eisenstein"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Nekrolog_1967"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Adolf_Damaschke"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Neuseel%C3%A4ndische_Fu%C3%9Fballnationalmannschaft"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Neues_Reich"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/%C3%9Cberfall_auf_Polen"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/1381"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Nationalliberale_Partei"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Bew%C3%A4ltigungsstrategie"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/%C3%89tablissements_Cambier"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/Rage_Against_the_Machine"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Alfred_D%C3%B6blin"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/Max_Weber"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/ACOnet"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/08/15_(Band)"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/American_Psychological_Association"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Nichtnewtonsches_Fluid"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/Total_Recall_(2012)"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Nicholas_von_Hoffman"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/%C3%96VP"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Allied_Joint_Force_Command_Naples"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/Sharon_Stone"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Neapel_(Begriffskl%C3%A4rung)"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/15-cm-Feldhaubitze_M.14"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/Tomasulo-Algorithmus"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Altai"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Niederdeutsche_Sprache"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Niederbreitbach"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/17._Juni"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Attilio_Bescap%C3%A8"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Belagerung_der_Halbinsel_Hel"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/3._Buch_Mose"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/%C5%BDelezn%C3%A1_Ruda"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Zweite_Polnische_Republik"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/Wu-Tang_Clan"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Ahhotep_I."
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Westerplatte"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Bertha_Braunthal"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/1920"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Ailloud_%26_Dumond"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Abwehrmechanismus"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/Wirtschaftssoziologie"
+      },
+      {
+        "score": 0.25,
+        "url": "https://de.wikipedia.org/wiki/Metacritic"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/%C3%96VP_Frauen"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Andreas_Borcholte"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/Robert_Tomasulo"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/%C3%96sterreichisch-Ungarische_Artillerie"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Dachsprache"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Allied_Command_Operations"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/Rage_Against_the_Machine/Diskografie"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Wolfgang_J._Mommsen"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/24-cm-M%C3%B6rser_M._98"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Norditalien"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Abihu"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Cha%C5%82upy_(W%C5%82adys%C5%82awowo)"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Nordischer_Krieg_(1674%E2%80%931679)"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/Bert_Grund"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/1._Juni"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Bataillon"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Nordschleswig"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Anthony_Terlazzo"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/Ober%C3%B6sterreichische_Nachrichten"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Benelux"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Cappadonna"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Alfred_Braunthal"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Akteur"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/17._Dynastie"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Arnold_II._von_Wied"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/4Players"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Dorothea_Schittenhelm"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Alfred_Schickel"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Oberster_Gerichtshof_der_Vereinigten_Staaten"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Angriffskrieg"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Bahnstrecke_Reda%E2%80%93Hel"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/NATO_Intelligence,_Surveillance,_and_Reconnaissance_Force"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/%C3%86r%C3%B8"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/L%C4%99bork"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Bajonett"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Albrecht_I._(HRR)"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Ketzer"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/Alle_kann_ich_nicht_heiraten"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/Asa_Briggs"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Australian_Recording_Industry_Association"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Felixdorf"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Admiral_Benelux"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Karl_XI._(Schweden)"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/%C3%96sterreichische_Frauenbewegung_(Organisation)"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/1156"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/4P_(Onlinemagazin)"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Aeronautica_Militare"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/%C3%96sterreichisches_Interregnum"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Karl_X._Gustav"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Olympische_Winterspiele_1964/Eisschnelllauf_%E2%80%93_500_m_(Frauen)"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Olympische_Winterspiele_1964"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Adrian_Hoven"
+      },
+      {
+        "score": 1.0,
+        "url": "https://de.wikipedia.org/wiki/Lebel_Modell_1886"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Aja_I."
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Z%C3%BCrs"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/Wirtschaftswissenschaften"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Willi_Forst"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Bachelor_of_Arts"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/%C5%BBelistrzewo"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Giorgi_III."
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Olympische_Winterspiele_1964/Eisschnelllauf_%E2%80%93_1000_m_(Frauen)"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/1130er"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Milit%C3%A4rflugplatz_Cameri"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Olympische_Winterspiele_1964/Eisschnelllauf_%E2%80%93_1500_m_(Frauen)"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Milit%C3%A4rflugplatz"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Willy_Winterstein"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Overath"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/1%C2%AA_Brigata_Aerea"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Otto_Neurath"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/1655"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Milit%C3%A4rflugplatz_Amendola"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Almaty"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Ove_Joensen"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/%C3%96konom"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Alpe_Rauz"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Andersen_Air_Force_Base"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Ov%C3%ADdio_Amaral"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/1622"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/13._Dynastie"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/%C5%81ebcz"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Pandekten"
+      },
+      {
+        "score": 0.75,
+        "url": "https://de.wikipedia.org/wiki/Panavia_Tornado"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/Panasonic_Corporation"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Alewtina_Pawlowna_Koltschina"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Milit%C3%A4rflugplatz_Grazzanise"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Panc%C3%AD%C5%99"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/%C3%96konom_(Begriffskl%C3%A4rung)"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/A4_(Italien)"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Albertina_Iossifowna_Kolokolzewa"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Bootsmann"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/1184"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Kampf_(Film)"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Britische_Herrschaft_in_%C3%84gypten"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Parlamentarismus"
+      },
+      {
+        "score": 1.0,
+        "url": "https://de.wikipedia.org/wiki/Aviation_Safety_Network_WikiBase"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Ostalpen"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Patrick_Murray_(Sportsch%C3%BCtze)"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Gemelli-Klinik"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/%C3%96sterreichischer_Verband_f%C3%BCr_Siedlungs-_und_Kleingartenwesen"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Almaty_(Begriffskl%C3%A4rung)"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Patrick_Modiano"
+      },
+      {
+        "score": 1.0,
+        "url": "https://de.wikipedia.org/wiki/Tesla_Model_3"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/Tri-National_Tornado_Training_Establishment"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Cortina_d%E2%80%99Ampezzo"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/1612"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Paul_Pagel"
+      },
+      {
+        "score": 0.75,
+        "url": "https://de.wikipedia.org/wiki/Patrick_Miller"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Anker"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Paul_Merker_(Literaturhistoriker)"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Br%C3%BCcke"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Patrick_Metral"
+      },
+      {
+        "score": 0.5,
+        "url": "https://de.wikipedia.org/wiki/Paul_Gauguin"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/1174"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Peter_Ernst_II._von_Mansfeld"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Paulette_Nardal"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Paul_Miller_(Rennfahrer)"
+      },
+      {
+        "score": 0.0,
+        "url": "https://de.wikipedia.org/wiki/Paul_Merwart"
+      }
+    ]
+  }
+}

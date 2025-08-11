@@ -1,0 +1,4197 @@
+{
+  "summary": {
+    "spider": "vectorspace_crawler",
+    "timestamp": "20250811_132744",
+    "total_execution_time_in_seconds": 67.123681,
+    "total_pages_visited": 1000,
+    "total_relevant_found": 36,
+    "average_harvest_rate": 0.036,
+    "average_relevance": 0.07530128757804087,
+    "pages": [
+      {
+        "url": "https://de.wikipedia.org/wiki/K%C3%BCnstliche_Intelligenz",
+        "score": 0.45457776691191903,
+        "title": "Künstliche Intelligenz – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Artificial_Intelligence",
+        "score": 0.45457776691191903,
+        "title": "Künstliche Intelligenz – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Intelligenz",
+        "score": 0.3602811806118882,
+        "title": "Intelligenz – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Existenzielles_Risiko_durch_k%C3%BCnstliche_Intelligenz",
+        "score": 0.3470951653811951,
+        "title": "Existenzielles Risiko durch künstliche Intelligenz – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Verordnung_%C3%BCber_k%C3%BCnstliche_Intelligenz",
+        "score": 0.3134994274750386,
+        "title": "Verordnung über künstliche Intelligenz – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Gesetz_%C3%BCber_k%C3%BCnstliche_Intelligenz",
+        "score": 0.3134994274750386,
+        "title": "Verordnung über künstliche Intelligenz – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Emotionale_Intelligenz",
+        "score": 0.28660110093417535,
+        "title": "Emotionale Intelligenz – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Artificial_General_Intelligence",
+        "score": 0.2735774394190871,
+        "title": "Artificial General Intelligence – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Parameter_(K%C3%BCnstliche_Intelligenz)",
+        "score": 0.2648472720193069,
+        "title": "Parameter (Künstliche Intelligenz) – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Deutsches_Forschungszentrum_f%C3%BCr_K%C3%BCnstliche_Intelligenz",
+        "score": 0.25336754962208474,
+        "title": "Deutsches Forschungszentrum für Künstliche Intelligenz – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Deep_Learning",
+        "score": 0.2532840110352674,
+        "title": "Deep Learning – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Augmented_intelligence",
+        "score": 0.24143806267222395,
+        "title": "Erweiterte Intelligenz – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Technologische_Singularit%C3%A4t",
+        "score": 0.23338007053760748,
+        "title": "Technologische Singularität – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Optimierung_(Mathematik)",
+        "score": 0.21315679990074793,
+        "title": "Mathematische Optimierung – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/SI-Modell",
+        "score": 0.2073071711039322,
+        "title": "SI-Modell – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Statistisches_Modell",
+        "score": 0.20427796494248635,
+        "title": "Statistisches Modell – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Geoffrey_Hinton",
+        "score": 0.19891479287087357,
+        "title": "Geoffrey Hinton – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Regressionsanalyse",
+        "score": 0.19810100022319965,
+        "title": "Regressionsanalyse – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Levenberg-Marquardt-Algorithmus",
+        "score": 0.19410263830066227,
+        "title": "Levenberg-Marquardt-Algorithmus – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Daten",
+        "score": 0.1791171852759414,
+        "title": "Daten – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Entdeckendes_Lernen",
+        "score": 0.17874756583960588,
+        "title": "Entdeckendes Lernen – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/K%C3%BCnstliche_Ern%C3%A4hrung",
+        "score": 0.1771223791650729,
+        "title": "Künstliche Ernährung – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/E-Learning",
+        "score": 0.17569778307800643,
+        "title": "E-Learning – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Probabilistisches_neuronales_Netz",
+        "score": 0.17125995170506378,
+        "title": "Probabilistisches neuronales Netz – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Lotka-Volterra-Gleichung",
+        "score": 0.17080031931007722,
+        "title": "Lotka-Volterra-Gleichungen – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Forschendes_Lernen",
+        "score": 0.16989182028208802,
+        "title": "Forschendes Lernen – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Geschlechtergerechte_Sprache",
+        "score": 0.16823294782731585,
+        "title": "Geschlechtergerechte Sprache – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Dynamisches_System",
+        "score": 0.16696170842157348,
+        "title": "Dynamisches System – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Implizites_Lernen",
+        "score": 0.16422780823626462,
+        "title": "Implizites Lernen – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Neuronales_Netz",
+        "score": 0.16410393999970668,
+        "title": "Neuronales Netz – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Data-Mining",
+        "score": 0.1618765828818521,
+        "title": "Data-Mining – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Mensch",
+        "score": 0.1613635243100778,
+        "title": "Mensch – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Integriertes_Lernen",
+        "score": 0.15502160377445212,
+        "title": "Integriertes Lernen – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Blended-Learning",
+        "score": 0.15502160377445212,
+        "title": "Integriertes Lernen – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/SIS-Modell",
+        "score": 0.1540520591856302,
+        "title": "SIS-Modell – Wikipedia"
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Software-Agent",
+        "score": 0.15101145198302235,
+        "title": "Software-Agent – Wikipedia"
+      }
+    ],
+    "cpu_ms_per_1000_docs": 26500.0,
+    "memory_p95_mib": 333.796875,
+    "raw_scores": [
+      {
+        "score": 0.02589067927941517,
+        "url": "https://de.wikipedia.org/wiki/Wikipedia:Hauptseite"
+      },
+      {
+        "score": 0.05272927362787677,
+        "url": "https://de.wikipedia.org/wiki/Wikipedia_Diskussion:Hauptseite"
+      },
+      {
+        "score": 0.04435766989854351,
+        "url": "https://de.wikipedia.org/wiki/Bobby_Whitlock"
+      },
+      {
+        "score": 0.0399307777891862,
+        "url": "https://de.wikipedia.org/wiki/Holl%C3%A4ndischer_Krieg"
+      },
+      {
+        "score": 0.049951159325960906,
+        "url": "https://de.wikipedia.org/wiki/Angelika_Meissner"
+      },
+      {
+        "score": 0.07791639210393506,
+        "url": "https://de.wikipedia.org/wiki/Heidi_Br%C3%BChl"
+      },
+      {
+        "score": 0.06524366612524901,
+        "url": "https://de.wikipedia.org/wiki/Ende_der_portugiesischen_Herrschaft_auf_Timor"
+      },
+      {
+        "score": 0.07333615225265444,
+        "url": "https://de.wikipedia.org/wiki/Die_M%C3%A4dels_vom_Immenhof"
+      },
+      {
+        "score": 0.07625272735362121,
+        "url": "https://de.wikipedia.org/wiki/FRETILIN"
+      },
+      {
+        "score": 0.03958325957753053,
+        "url": "https://de.wikipedia.org/wiki/Alain_Bouchet_(Musiker)"
+      },
+      {
+        "score": 0.106759210403672,
+        "url": "https://de.wikipedia.org/wiki/Haiti"
+      },
+      {
+        "score": 0.037981297592210715,
+        "url": "https://de.wikipedia.org/wiki/Christiane_K%C3%B6nig"
+      },
+      {
+        "score": 0.06273173753876038,
+        "url": "https://de.wikipedia.org/wiki/B%C3%BCrgerkrieg_in_Osttimor_1975"
+      },
+      {
+        "score": 0.04402127725207987,
+        "url": "https://de.wikipedia.org/wiki/1915"
+      },
+      {
+        "score": 0.07305653024889268,
+        "url": "https://de.wikipedia.org/wiki/1675"
+      },
+      {
+        "score": 0.0304887011999858,
+        "url": "https://de.wikipedia.org/wiki/Marthe_Robert"
+      },
+      {
+        "score": 0.05893367542171942,
+        "url": "https://de.wikipedia.org/wiki/Armagideon_Time"
+      },
+      {
+        "score": 0.14474616626200093,
+        "url": "https://de.wikipedia.org/wiki/Enzyklop%C3%A4die"
+      },
+      {
+        "score": 0.05043677478812866,
+        "url": "https://de.wikipedia.org/wiki/1950"
+      },
+      {
+        "score": 0.03202781659476782,
+        "url": "https://de.wikipedia.org/wiki/Tennessee"
+      },
+      {
+        "score": 0.07274964188286752,
+        "url": "https://de.wikipedia.org/wiki/Stax_Records"
+      },
+      {
+        "score": 0.03773492055489402,
+        "url": "https://de.wikipedia.org/wiki/Millington_(Tennessee)"
+      },
+      {
+        "score": 0.036669455836379754,
+        "url": "https://de.wikipedia.org/wiki/Library_of_Congress_Control_Number"
+      },
+      {
+        "score": 0.07312456469165325,
+        "url": "https://de.wikipedia.org/wiki/Keyboarder"
+      },
+      {
+        "score": 0.09587375484065593,
+        "url": "https://de.wikipedia.org/wiki/Gemeinsame_Normdatei"
+      },
+      {
+        "score": 0.08652611980335087,
+        "url": "https://de.wikipedia.org/wiki/Texas"
+      },
+      {
+        "score": 0.09577043781225883,
+        "url": "https://de.wikipedia.org/wiki/2018"
+      },
+      {
+        "score": 0.05628303427012379,
+        "url": "https://de.wikipedia.org/wiki/Dieter_Borsche"
+      },
+      {
+        "score": 0.05206298709295966,
+        "url": "https://de.wikipedia.org/wiki/Dem_T%C3%A4ter_auf_der_Spur"
+      },
+      {
+        "score": 0.0962233690216501,
+        "url": "https://de.wikipedia.org/wiki/Parlamentswahlen_in_Osttimor_2017"
+      },
+      {
+        "score": 0.10112983908087074,
+        "url": "https://de.wikipedia.org/wiki/Dschinghis_Khan"
+      },
+      {
+        "score": 0.06976934411348064,
+        "url": "https://de.wikipedia.org/wiki/Gut_Rothensande"
+      },
+      {
+        "score": 0.1009031063503483,
+        "url": "https://de.wikipedia.org/wiki/Wikipedia:Defekte_Weblinks"
+      },
+      {
+        "score": 0.07225236295283849,
+        "url": "https://de.wikipedia.org/wiki/Deutschland_beim_Eurovision_Song_Contest"
+      },
+      {
+        "score": 0.06866463687016694,
+        "url": "https://de.wikipedia.org/wiki/Ferien_auf_Immenhof"
+      },
+      {
+        "score": 0.04163706206661426,
+        "url": "https://de.wikipedia.org/wiki/Erdbeben_in_Haiti_2018"
+      },
+      {
+        "score": 0.060967140926419805,
+        "url": "https://de.wikipedia.org/wiki/Disco_(Fernsehsendung)"
+      },
+      {
+        "score": 0.04899662929567333,
+        "url": "https://de.wikipedia.org/wiki/Die_Zwillinge_vom_Immenhof"
+      },
+      {
+        "score": 0.08303895656572337,
+        "url": "https://de.wikipedia.org/wiki/Die_Rudi_Carrell_Show"
+      },
+      {
+        "score": 0.10222746921773788,
+        "url": "https://de.wikipedia.org/wiki/Die_Pyramide_(Fernsehsendung)"
+      },
+      {
+        "score": 0.06720924728498948,
+        "url": "https://de.wikipedia.org/wiki/Die_Fr%C3%BChreifen"
+      },
+      {
+        "score": 0.027933765330005057,
+        "url": "https://de.wikipedia.org/wiki/Nord-Haiti"
+      },
+      {
+        "score": 0.06790186179799165,
+        "url": "https://de.wikipedia.org/wiki/Gescheiterter_Staat"
+      },
+      {
+        "score": 0.024457975716902548,
+        "url": "https://de.wikipedia.org/wiki/Jacob_van_Maerlant"
+      },
+      {
+        "score": 0.07183233132104284,
+        "url": "https://de.wikipedia.org/wiki/Johann_Heinrich_Zedler"
+      },
+      {
+        "score": 0.032686343359338205,
+        "url": "https://de.wikipedia.org/wiki/Johann_Heinrich_Alsted"
+      },
+      {
+        "score": 0.04386882846895562,
+        "url": "https://de.wikipedia.org/wiki/Wilhelm_Pape"
+      },
+      {
+        "score": 0.10338194876079454,
+        "url": "https://de.wikipedia.org/wiki/David_Ricardo"
+      },
+      {
+        "score": 0.05483897672900774,
+        "url": "https://de.wikipedia.org/wiki/Johann_Georg_Kr%C3%BCnitz"
+      },
+      {
+        "score": 0.057691712692777966,
+        "url": "https://de.wikipedia.org/wiki/Johann_Christoph_Wagenseil"
+      },
+      {
+        "score": 0.2532840110352674,
+        "url": "https://de.wikipedia.org/wiki/Deep_Learning"
+      },
+      {
+        "score": 0.036071482642252746,
+        "url": "https://de.wikipedia.org/wiki/Frauenzimmer-Lexicon"
+      },
+      {
+        "score": 0.09948765996486132,
+        "url": "https://de.wikipedia.org/wiki/Encyclop%C3%A9die_ou_Dictionnaire_raisonn%C3%A9_des_sciences,_des_arts_et_des_m%C3%A9tiers"
+      },
+      {
+        "score": 0.04999471939133,
+        "url": "https://de.wikipedia.org/wiki/Cyclopaedia"
+      },
+      {
+        "score": 0.08902408467508764,
+        "url": "https://de.wikipedia.org/wiki/Bertelsmann"
+      },
+      {
+        "score": 0.08269958144701865,
+        "url": "https://de.wikipedia.org/wiki/Zweiter_Weltkrieg"
+      },
+      {
+        "score": 0.08089789681231087,
+        "url": "https://de.wikipedia.org/wiki/Abendland"
+      },
+      {
+        "score": 0.05774998228598418,
+        "url": "https://de.wikipedia.org/wiki/Stil"
+      },
+      {
+        "score": 0.04654131511028768,
+        "url": "https://de.wikipedia.org/wiki/Joachim_Sterck_van_Ringelbergh"
+      },
+      {
+        "score": 0.09134280952991992,
+        "url": "https://de.wikipedia.org/wiki/United_States_Census_2020"
+      },
+      {
+        "score": 0.11729005366425077,
+        "url": "https://de.wikipedia.org/wiki/Linked_Open_Data"
+      },
+      {
+        "score": 0.0555876796268087,
+        "url": "https://de.wikipedia.org/wiki/Raoul_Ardent"
+      },
+      {
+        "score": 0.050034718833027424,
+        "url": "https://de.wikipedia.org/wiki/Pavao_Skali%C4%87"
+      },
+      {
+        "score": 0.06180279344631718,
+        "url": "https://de.wikipedia.org/wiki/Mortimer_Adler"
+      },
+      {
+        "score": 0.10771086994404998,
+        "url": "https://de.wikipedia.org/wiki/D%C3%BCrre_und_Hitze_in_Europa_2018"
+      },
+      {
+        "score": 0.09670186644231407,
+        "url": "https://de.wikipedia.org/wiki/Theodor_Heuss"
+      },
+      {
+        "score": 0.044301575666692856,
+        "url": "https://de.wikipedia.org/wiki/Port-au-Prince"
+      },
+      {
+        "score": 0.05928253453244588,
+        "url": "https://de.wikipedia.org/wiki/Montserrat"
+      },
+      {
+        "score": 0.05161048911437839,
+        "url": "https://de.wikipedia.org/wiki/Geheimpolizei"
+      },
+      {
+        "score": 0.0740674159250495,
+        "url": "https://de.wikipedia.org/wiki/Menschen_vom_Variet%C3%A9"
+      },
+      {
+        "score": 0.044218091340174334,
+        "url": "https://de.wikipedia.org/wiki/Edwidge_Danticat"
+      },
+      {
+        "score": 0.09470998353644941,
+        "url": "https://de.wikipedia.org/wiki/The_Hollies"
+      },
+      {
+        "score": 0.08303895656572337,
+        "url": "https://de.wikipedia.org/wiki/Rudi_Carrell_Show"
+      },
+      {
+        "score": 0.07827278878252157,
+        "url": "https://de.wikipedia.org/wiki/Haushaltsplan"
+      },
+      {
+        "score": 0.032728085570417585,
+        "url": "https://de.wikipedia.org/wiki/Republik_der_Sieben_Vereinigten_Niederlande"
+      },
+      {
+        "score": 0.12345547507009141,
+        "url": "https://de.wikipedia.org/wiki/Naturwissenschaft"
+      },
+      {
+        "score": 0.11085899800307006,
+        "url": "https://de.wikipedia.org/wiki/Ricardo-Modell"
+      },
+      {
+        "score": 0.0653342160270273,
+        "url": "https://de.wikipedia.org/wiki/Eurovision_Song_Contest_1979"
+      },
+      {
+        "score": 0.04508745035634271,
+        "url": "https://de.wikipedia.org/wiki/Verfassung"
+      },
+      {
+        "score": 0.034979652672178146,
+        "url": "https://de.wikipedia.org/wiki/Take_It_Easy,_altes_Haus"
+      },
+      {
+        "score": 0.04836637009927745,
+        "url": "https://de.wikipedia.org/wiki/Ernst_Huberty"
+      },
+      {
+        "score": 0.13362852968906216,
+        "url": "https://de.wikipedia.org/wiki/Suizid"
+      },
+      {
+        "score": 0.045477708204047715,
+        "url": "https://de.wikipedia.org/wiki/J%C3%BCrgen_Roland"
+      },
+      {
+        "score": 0.10749899119754736,
+        "url": "https://de.wikipedia.org/wiki/Himmelbett-Verfahren"
+      },
+      {
+        "score": 0.05609489444661282,
+        "url": "https://de.wikipedia.org/wiki/Ernst_H._Hilbich"
+      },
+      {
+        "score": 0.06090049982311174,
+        "url": "https://de.wikipedia.org/wiki/Wissen_ist_Macht"
+      },
+      {
+        "score": 0.07114787261589274,
+        "url": "https://de.wikipedia.org/wiki/Neue_Westf%C3%A4lische"
+      },
+      {
+        "score": 0.3602811806118882,
+        "url": "https://de.wikipedia.org/wiki/Intelligenz"
+      },
+      {
+        "score": 0.45457776691191903,
+        "url": "https://de.wikipedia.org/wiki/K%C3%BCnstliche_Intelligenz"
+      },
+      {
+        "score": 0.13034325293454507,
+        "url": "https://de.wikipedia.org/wiki/Google_Books"
+      },
+      {
+        "score": 0.1791171852759414,
+        "url": "https://de.wikipedia.org/wiki/Daten"
+      },
+      {
+        "score": 0.05396787913828429,
+        "url": "https://de.wikipedia.org/wiki/The_Lancet"
+      },
+      {
+        "score": 0.05500301660645271,
+        "url": "https://de.wikipedia.org/wiki/Ramona_Lei%C3%9F"
+      },
+      {
+        "score": 0.07847485422859446,
+        "url": "https://de.wikipedia.org/wiki/Christa_Kinshofer"
+      },
+      {
+        "score": 0.05184181080722587,
+        "url": "https://de.wikipedia.org/wiki/Vera_Tschechowa"
+      },
+      {
+        "score": 0.10067694460944995,
+        "url": "https://de.wikipedia.org/wiki/Sat.1"
+      },
+      {
+        "score": 0.02839247834351931,
+        "url": "https://de.wikipedia.org/wiki/United_States_District_Court_for_the_Southern_District_of_New_York"
+      },
+      {
+        "score": 0.10608393825392028,
+        "url": "https://de.wikipedia.org/wiki/Archive.org"
+      },
+      {
+        "score": 0.08432792879604623,
+        "url": "https://de.wikipedia.org/wiki/Wikipedia:Belege"
+      },
+      {
+        "score": 0.07672187537625313,
+        "url": "https://de.wikipedia.org/wiki/Wolfgang_Heichel"
+      },
+      {
+        "score": 0.07385412119470042,
+        "url": "https://de.wikipedia.org/wiki/Blowin%E2%80%99_in_the_Wind"
+      },
+      {
+        "score": 0.055908259290328374,
+        "url": "https://de.wikipedia.org/wiki/Port_Elizabeth"
+      },
+      {
+        "score": 0.05120345468362576,
+        "url": "https://de.wikipedia.org/wiki/Media_Control"
+      },
+      {
+        "score": 0.09833491449958336,
+        "url": "https://de.wikipedia.org/wiki/Jamaika-Sondierungsgespr%C3%A4che_2017"
+      },
+      {
+        "score": 0.0660976605196966,
+        "url": "https://de.wikipedia.org/wiki/Kabinett_Merkel_IV"
+      },
+      {
+        "score": 0.1771223791650729,
+        "url": "https://de.wikipedia.org/wiki/K%C3%BCnstliche_Ern%C3%A4hrung"
+      },
+      {
+        "score": 0.036478265069065555,
+        "url": "https://de.wikipedia.org/wiki/Deutscher_Angelfischerverband"
+      },
+      {
+        "score": 0.0695851252160126,
+        "url": "https://de.wikipedia.org/wiki/Das_Fest_(Karlsruhe)"
+      },
+      {
+        "score": 0.04307310238419768,
+        "url": "https://de.wikipedia.org/wiki/Blume_des_Jahres"
+      },
+      {
+        "score": 0.10012531003133415,
+        "url": "https://de.wikipedia.org/wiki/Ricardo-Viner-Modell"
+      },
+      {
+        "score": 0.12811760024239335,
+        "url": "https://de.wikipedia.org/wiki/Modell"
+      },
+      {
+        "score": 0.05060448435319411,
+        "url": "https://de.wikipedia.org/wiki/Index_Librorum_Prohibitorum"
+      },
+      {
+        "score": 0.08731106461564118,
+        "url": "https://de.wikipedia.org/wiki/Jean-Jacques_Rousseau"
+      },
+      {
+        "score": 0.3134994274750386,
+        "url": "https://de.wikipedia.org/wiki/Verordnung_%C3%BCber_k%C3%BCnstliche_Intelligenz"
+      },
+      {
+        "score": 0.28660110093417535,
+        "url": "https://de.wikipedia.org/wiki/Emotionale_Intelligenz"
+      },
+      {
+        "score": 0.05111852649893825,
+        "url": "https://de.wikipedia.org/wiki/Eidgen%C3%B6ssische_Volksinitiative_%C2%ABJa_zur_Abschaffung_der_Radio-_und_Fernsehgeb%C3%BChren_(Abschaffung_der_Billag-Geb%C3%BChren)%C2%BB"
+      },
+      {
+        "score": 0.012698869866147178,
+        "url": "https://de.wikipedia.org/wiki/Theodor_Heuss_(Begriffskl%C3%A4rung)"
+      },
+      {
+        "score": 0.05991668817060217,
+        "url": "https://de.wikipedia.org/wiki/Vorsatz_(Psychologie)"
+      },
+      {
+        "score": 0.06290447923216469,
+        "url": "https://de.wikipedia.org/wiki/Operation_Millennium"
+      },
+      {
+        "score": 0.026472792790564036,
+        "url": "https://de.wikipedia.org/wiki/Wikipedia:Hinweis_Gesundheitsthemen"
+      },
+      {
+        "score": 0.042560446468896514,
+        "url": "https://de.wikipedia.org/wiki/Thomas_S._Monson"
+      },
+      {
+        "score": 0.13799088335824375,
+        "url": "https://de.wikipedia.org/wiki/Personenbezogene_Daten"
+      },
+      {
+        "score": 0.10437061718919516,
+        "url": "https://de.wikipedia.org/wiki/Das_Erste"
+      },
+      {
+        "score": 0.0805996715746798,
+        "url": "https://de.wikipedia.org/wiki/Walter_Laqueur"
+      },
+      {
+        "score": 0.054223026155007195,
+        "url": "https://de.wikipedia.org/wiki/%C3%84thiopischer_Kalender"
+      },
+      {
+        "score": 0.03861456478221919,
+        "url": "https://de.wikipedia.org/wiki/GMN_TV"
+      },
+      {
+        "score": 0.08480772526793658,
+        "url": "https://de.wikipedia.org/wiki/Hbz-Verbunddatenbank"
+      },
+      {
+        "score": 0.07813988581491947,
+        "url": "https://de.wikipedia.org/wiki/Premierminister_(Osttimor)"
+      },
+      {
+        "score": 0.057738288054069525,
+        "url": "https://de.wikipedia.org/wiki/Partido_Democrata_Crist%C3%A3o_(Osttimor)"
+      },
+      {
+        "score": 0.08731492387888466,
+        "url": "https://de.wikipedia.org/wiki/Abgasnorm"
+      },
+      {
+        "score": 0.10678708001377585,
+        "url": "https://de.wikipedia.org/wiki/Gesellschaft_f%C3%BCr_deutsche_Sprache"
+      },
+      {
+        "score": 0.05530474796933453,
+        "url": "https://de.wikipedia.org/wiki/Barbara_Bush"
+      },
+      {
+        "score": 0.07734060320469811,
+        "url": "https://de.wikipedia.org/wiki/Origin%C3%A4re_Forschung"
+      },
+      {
+        "score": 0.14278380117650713,
+        "url": "https://de.wikipedia.org/wiki/Datenschutz-Grundverordnung"
+      },
+      {
+        "score": 0.09904171131840804,
+        "url": "https://de.wikipedia.org/wiki/Bremen"
+      },
+      {
+        "score": 0.10968291567211316,
+        "url": "https://de.wikipedia.org/wiki/Abhandlung_%C3%BCber_den_Ursprung_und_die_Grundlagen_der_Ungleichheit_unter_den_Menschen"
+      },
+      {
+        "score": 0.09578733084856565,
+        "url": "https://de.wikipedia.org/wiki/Rechtsstaatlichkeit"
+      },
+      {
+        "score": 0.19891479287087357,
+        "url": "https://de.wikipedia.org/wiki/Geoffrey_Hinton"
+      },
+      {
+        "score": 0.10226985014634031,
+        "url": "https://de.wikipedia.org/wiki/Modell_(Begriffskl%C3%A4rung)"
+      },
+      {
+        "score": 0.06892114930355939,
+        "url": "https://de.wikipedia.org/wiki/Anne_Donovan"
+      },
+      {
+        "score": 0.12800696708228484,
+        "url": "https://de.wikipedia.org/wiki/Heckscher-Ohlin-Modell"
+      },
+      {
+        "score": 0.061023374655541696,
+        "url": "https://de.wikipedia.org/wiki/Hochzeit_von_Prinz_Harry_und_Meghan_Markle"
+      },
+      {
+        "score": 0.06280468956769525,
+        "url": "https://de.wikipedia.org/wiki/Margot_Kidder"
+      },
+      {
+        "score": 0.05837097989028021,
+        "url": "https://de.wikipedia.org/wiki/Holger_Biege"
+      },
+      {
+        "score": 0.04229412592917053,
+        "url": "https://de.wikipedia.org/wiki/Jon_Hiseman"
+      },
+      {
+        "score": 0.0845453011444577,
+        "url": "https://de.wikipedia.org/wiki/Frances_H._Arnold"
+      },
+      {
+        "score": 0.04554095993978645,
+        "url": "https://de.wikipedia.org/wiki/Leopold_Ahlsen"
+      },
+      {
+        "score": 0.09943663164681485,
+        "url": "https://de.wikipedia.org/wiki/Kofi_Annan"
+      },
+      {
+        "score": 0.048546760404547196,
+        "url": "https://de.wikipedia.org/wiki/Hitzerekord"
+      },
+      {
+        "score": 0.1332706052344636,
+        "url": "https://de.wikipedia.org/wiki/Mondfinsternis"
+      },
+      {
+        "score": 0.09548810409683398,
+        "url": "https://de.wikipedia.org/wiki/Marke_(Recht)"
+      },
+      {
+        "score": 0.07467863290774453,
+        "url": "https://de.wikipedia.org/wiki/Misstrauensvotum"
+      },
+      {
+        "score": 0.048038872760517416,
+        "url": "https://de.wikipedia.org/wiki/Tradition"
+      },
+      {
+        "score": 0.07645963405809615,
+        "url": "https://de.wikipedia.org/wiki/Posen"
+      },
+      {
+        "score": 0.13931111644262978,
+        "url": "https://de.wikipedia.org/wiki/Nordkorea"
+      },
+      {
+        "score": 0.25336754962208474,
+        "url": "https://de.wikipedia.org/wiki/Deutsches_Forschungszentrum_f%C3%BCr_K%C3%BCnstliche_Intelligenz"
+      },
+      {
+        "score": 0.10484961197587854,
+        "url": "https://de.wikipedia.org/wiki/Parlamentswahl_in_Afghanistan_2018"
+      },
+      {
+        "score": 0.12244735500327036,
+        "url": "https://de.wikipedia.org/wiki/Datenschutzgesetz_(%C3%96sterreich)"
+      },
+      {
+        "score": 0.06744774615145402,
+        "url": "https://de.wikipedia.org/wiki/Roger_Piantoni"
+      },
+      {
+        "score": 0.06447140839557608,
+        "url": "https://de.wikipedia.org/wiki/Verordnung_(EU)_2018/858"
+      },
+      {
+        "score": 0.10772977026601492,
+        "url": "https://de.wikipedia.org/wiki/Star_(Art)"
+      },
+      {
+        "score": 0.16823294782731585,
+        "url": "https://de.wikipedia.org/wiki/Geschlechtergerechte_Sprache"
+      },
+      {
+        "score": 0.055736400716682566,
+        "url": "https://de.wikipedia.org/wiki/Schwarz-gr%C3%BCne_Koalition"
+      },
+      {
+        "score": 0.052836868159690284,
+        "url": "https://de.wikipedia.org/wiki/Tomasz_Sta%C5%84ko"
+      },
+      {
+        "score": 0.06533244746053454,
+        "url": "https://de.wikipedia.org/wiki/Grundrechte"
+      },
+      {
+        "score": 0.08597257828948543,
+        "url": "https://de.wikipedia.org/wiki/Schulmassaker_von_Parkland"
+      },
+      {
+        "score": 0.09265649434989469,
+        "url": "https://de.wikipedia.org/wiki/Born-von-K%C3%A1rm%C3%A1n-Modell"
+      },
+      {
+        "score": 0.09138938078645123,
+        "url": "https://de.wikipedia.org/wiki/Vollst%C3%A4ndige_Konkurrenz"
+      },
+      {
+        "score": 0.09578733084856565,
+        "url": "https://de.wikipedia.org/wiki/Rechtsstaat"
+      },
+      {
+        "score": 0.3470951653811951,
+        "url": "https://de.wikipedia.org/wiki/Existenzielles_Risiko_durch_k%C3%BCnstliche_Intelligenz"
+      },
+      {
+        "score": 0.08458894450597276,
+        "url": "https://de.wikipedia.org/wiki/Wassily_Leontief"
+      },
+      {
+        "score": 0.039924743845023127,
+        "url": "https://de.wikipedia.org/wiki/Die_Peheiros"
+      },
+      {
+        "score": 0.0939381387028349,
+        "url": "https://de.wikipedia.org/wiki/Kwame_Nkrumah_University_of_Science_and_Technology"
+      },
+      {
+        "score": 0.06778576879484882,
+        "url": "https://de.wikipedia.org/wiki/Gitarre"
+      },
+      {
+        "score": 0.05330614838532093,
+        "url": "https://de.wikipedia.org/wiki/Pr%C3%A4sidentschaftswahl_in_den_Vereinigten_Staaten_1992"
+      },
+      {
+        "score": 0.07297961974601039,
+        "url": "https://de.wikipedia.org/wiki/Bower_Award_and_Prize_for_Achievement_in_Science"
+      },
+      {
+        "score": 0.0447117358912949,
+        "url": "https://de.wikipedia.org/wiki/Pr%C3%A4sidentschaftswahl_in_den_Vereinigten_Staaten_1976"
+      },
+      {
+        "score": 0.013469288214465946,
+        "url": "https://de.wikipedia.org/wiki/Liste_der_Bundesstaaten_der_Vereinigten_Staaten_nach_Einwohnerzahl"
+      },
+      {
+        "score": 0.13502026192753364,
+        "url": "https://de.wikipedia.org/wiki/Google_Suche"
+      },
+      {
+        "score": 0.05906943640323492,
+        "url": "https://de.wikipedia.org/wiki/Volksrepublik"
+      },
+      {
+        "score": 0.1265201480859805,
+        "url": "https://de.wikipedia.org/wiki/Sender-Empf%C3%A4nger-Modell"
+      },
+      {
+        "score": 0.12394391221351686,
+        "url": "https://de.wikipedia.org/wiki/Numerische_Mathematik"
+      },
+      {
+        "score": 0.03580844999659025,
+        "url": "https://de.wikipedia.org/wiki/Wappen_Nordkoreas"
+      },
+      {
+        "score": 0.07170566412345275,
+        "url": "https://de.wikipedia.org/wiki/Westminster-System"
+      },
+      {
+        "score": 0.1613635243100778,
+        "url": "https://de.wikipedia.org/wiki/Mensch"
+      },
+      {
+        "score": 0.10112563930893465,
+        "url": "https://de.wikipedia.org/wiki/Mensch-Computer-Interaktion"
+      },
+      {
+        "score": 0.09725721740559916,
+        "url": "https://de.wikipedia.org/wiki/Geschriebene_Sprache"
+      },
+      {
+        "score": 0.05258388998443579,
+        "url": "https://de.wikipedia.org/wiki/Technische_Universit%C3%A4t_Posen"
+      },
+      {
+        "score": 0.06447140839557608,
+        "url": "https://de.wikipedia.org/wiki/Richtlinie_2007/46/EG"
+      },
+      {
+        "score": 0.06688584633277346,
+        "url": "https://de.wikipedia.org/wiki/Ligue_1_2016/17"
+      },
+      {
+        "score": 0.10558732115962835,
+        "url": "https://de.wikipedia.org/wiki/ARGE_Daten"
+      },
+      {
+        "score": 0.04783712611881869,
+        "url": "https://de.wikipedia.org/wiki/Verfassung_der_Demokratischen_Volksrepublik_Korea"
+      },
+      {
+        "score": 0.05160325922623624,
+        "url": "https://de.wikipedia.org/wiki/Verfahrensrecht"
+      },
+      {
+        "score": 0.09952503712220812,
+        "url": "https://de.wikipedia.org/wiki/Preis-Mengen-Diagramm"
+      },
+      {
+        "score": 0.08097128265026936,
+        "url": "https://de.wikipedia.org/wiki/Pr%C3%A4sidentschaftswahl_in_Afghanistan_2019"
+      },
+      {
+        "score": 0.2735774394190871,
+        "url": "https://de.wikipedia.org/wiki/Artificial_General_Intelligence"
+      },
+      {
+        "score": 0.08845299066459006,
+        "url": "https://de.wikipedia.org/wiki/Unabh%C3%A4ngige_Variable"
+      },
+      {
+        "score": 0.11156253386168838,
+        "url": "https://de.wikipedia.org/wiki/Everytown_for_Gun_Safety"
+      },
+      {
+        "score": 0.07574882814255253,
+        "url": "https://de.wikipedia.org/wiki/Handbook_of_the_Birds_of_the_World"
+      },
+      {
+        "score": 0.04373484727373457,
+        "url": "https://de.wikipedia.org/wiki/Personenkraftwagen"
+      },
+      {
+        "score": 0.23338007053760748,
+        "url": "https://de.wikipedia.org/wiki/Technologische_Singularit%C3%A4t"
+      },
+      {
+        "score": 0.09704984894760639,
+        "url": "https://de.wikipedia.org/wiki/Menschliche_Stimme"
+      },
+      {
+        "score": 0.017651596047456683,
+        "url": "https://de.wikipedia.org/wiki/Dry_County"
+      },
+      {
+        "score": 0.16410393999970668,
+        "url": "https://de.wikipedia.org/wiki/Neuronales_Netz"
+      },
+      {
+        "score": 0.09033217559939224,
+        "url": "https://de.wikipedia.org/wiki/Dritte_Person"
+      },
+      {
+        "score": 0.10945777153839281,
+        "url": "https://de.wikipedia.org/wiki/Vier-Seiten-Modell"
+      },
+      {
+        "score": 0.03979901428485837,
+        "url": "https://de.wikipedia.org/wiki/Dalhart_(Texas)"
+      },
+      {
+        "score": 0.06382619869322546,
+        "url": "https://de.wikipedia.org/wiki/Bower_Award_for_Business_Leadership"
+      },
+      {
+        "score": 0.059612821544198134,
+        "url": "https://de.wikipedia.org/wiki/Benjamin_Harrison"
+      },
+      {
+        "score": 0.21315679990074793,
+        "url": "https://de.wikipedia.org/wiki/Optimierung_(Mathematik)"
+      },
+      {
+        "score": 0.06093501902211432,
+        "url": "https://de.wikipedia.org/wiki/Regent_University_College_of_Science_and_Technology"
+      },
+      {
+        "score": 0.05003711673238184,
+        "url": "https://de.wikipedia.org/wiki/Mexikanischer_Unabh%C3%A4ngigkeitskrieg"
+      },
+      {
+        "score": 0.10486706355914155,
+        "url": "https://de.wikipedia.org/wiki/.google"
+      },
+      {
+        "score": 0.0513374176253442,
+        "url": "https://de.wikipedia.org/wiki/Flora"
+      },
+      {
+        "score": 0.07787299157025014,
+        "url": "https://de.wikipedia.org/wiki/Ligue_1_2017/18"
+      },
+      {
+        "score": 0.03885792652512221,
+        "url": "https://de.wikipedia.org/wiki/Florida_Keys"
+      },
+      {
+        "score": 0.12244735500327036,
+        "url": "https://de.wikipedia.org/wiki/Datenschutzgesetz_2000"
+      },
+      {
+        "score": 0.15101145198302235,
+        "url": "https://de.wikipedia.org/wiki/Software-Agent"
+      },
+      {
+        "score": 0.3134994274750386,
+        "url": "https://de.wikipedia.org/wiki/Gesetz_%C3%BCber_k%C3%BCnstliche_Intelligenz"
+      },
+      {
+        "score": 0.042735044344624176,
+        "url": "https://de.wikipedia.org/wiki/Keith_Self"
+      },
+      {
+        "score": 0.12523454560009994,
+        "url": "https://de.wikipedia.org/wiki/Flederm%C3%A4use"
+      },
+      {
+        "score": 0.11410106203077948,
+        "url": "https://de.wikipedia.org/wiki/Philanthropie"
+      },
+      {
+        "score": 0.24143806267222395,
+        "url": "https://de.wikipedia.org/wiki/Augmented_intelligence"
+      },
+      {
+        "score": 0.06137169371796566,
+        "url": "https://de.wikipedia.org/wiki/Nebraska"
+      },
+      {
+        "score": 0.14899659031757,
+        "url": "https://de.wikipedia.org/wiki/Fran%C3%A7ois_Chollet"
+      },
+      {
+        "score": 0.07179265326459154,
+        "url": "https://de.wikipedia.org/wiki/Michigan"
+      },
+      {
+        "score": 0.03798506687552675,
+        "url": "https://de.wikipedia.org/wiki/Rio_Grande"
+      },
+      {
+        "score": 0.07371498430753982,
+        "url": "https://de.wikipedia.org/wiki/Artikulation_(Linguistik)"
+      },
+      {
+        "score": 0.07215610065289908,
+        "url": "https://de.wikipedia.org/wiki/Pr%C3%A4sidentschaftswahl_in_Afghanistan_2009"
+      },
+      {
+        "score": 0.07999292379103572,
+        "url": "https://de.wikipedia.org/wiki/Ulysses_S._Grant"
+      },
+      {
+        "score": 0.19410263830066227,
+        "url": "https://de.wikipedia.org/wiki/Levenberg-Marquardt-Algorithmus"
+      },
+      {
+        "score": 0.07793765318979425,
+        "url": "https://de.wikipedia.org/wiki/Possessiv"
+      },
+      {
+        "score": 0.09952503712220812,
+        "url": "https://de.wikipedia.org/wiki/Marktdiagramm"
+      },
+      {
+        "score": 0.10356354579415288,
+        "url": "https://de.wikipedia.org/wiki/Teotihuac%C3%A1n"
+      },
+      {
+        "score": 0.03719973151809796,
+        "url": "https://de.wikipedia.org/wiki/South_Dakota"
+      },
+      {
+        "score": 0.19810100022319965,
+        "url": "https://de.wikipedia.org/wiki/Regressionsanalyse"
+      },
+      {
+        "score": 0.11602248081874758,
+        "url": "https://de.wikipedia.org/wiki/Organon-Modell"
+      },
+      {
+        "score": 0.05238141475152597,
+        "url": "https://de.wikipedia.org/wiki/Wake"
+      },
+      {
+        "score": 0.08605489559957288,
+        "url": "https://de.wikipedia.org/wiki/Ligue_2_2017/18"
+      },
+      {
+        "score": 0.10932822512618036,
+        "url": "https://de.wikipedia.org/wiki/Domain_Name_System"
+      },
+      {
+        "score": 0.06504677964736061,
+        "url": "https://de.wikipedia.org/wiki/Waco"
+      },
+      {
+        "score": 0.07200915573370174,
+        "url": "https://de.wikipedia.org/wiki/Wald"
+      },
+      {
+        "score": 0.0638850275645824,
+        "url": "https://de.wikipedia.org/wiki/Wacholder"
+      },
+      {
+        "score": 0.06103211552431739,
+        "url": "https://de.wikipedia.org/wiki/Massenpsychologie_und_Ich-Analyse"
+      },
+      {
+        "score": 0.2648472720193069,
+        "url": "https://de.wikipedia.org/wiki/Parameter_(K%C3%BCnstliche_Intelligenz)"
+      },
+      {
+        "score": 0.09092370119155505,
+        "url": "https://de.wikipedia.org/wiki/Neue_Juristische_Wochenschrift"
+      },
+      {
+        "score": 0.04171619924117172,
+        "url": "https://de.wikipedia.org/wiki/Paradies-Paradoxon"
+      },
+      {
+        "score": 0.11247083692922992,
+        "url": "https://de.wikipedia.org/wiki/Herzinfarkt"
+      },
+      {
+        "score": 0.03801804458565297,
+        "url": "https://de.wikipedia.org/wiki/Menschewiki"
+      },
+      {
+        "score": 0.13689057656963366,
+        "url": "https://de.wikipedia.org/wiki/Doppler-Effekt"
+      },
+      {
+        "score": 0.042670785614385975,
+        "url": "https://de.wikipedia.org/wiki/Hansi_Waldherr"
+      },
+      {
+        "score": 0.06117775264205526,
+        "url": "https://de.wikipedia.org/wiki/Universit%C3%A4t_Tokio"
+      },
+      {
+        "score": 0.04805712633996938,
+        "url": "https://de.wikipedia.org/wiki/University_of_Michigan_System"
+      },
+      {
+        "score": 0.0825168289120553,
+        "url": "https://de.wikipedia.org/wiki/Nat%C3%BCrliche_Personen"
+      },
+      {
+        "score": 0.1392609385268987,
+        "url": "https://de.wikipedia.org/wiki/Bernoulli-Effekt"
+      },
+      {
+        "score": 0.11855724972560726,
+        "url": "https://de.wikipedia.org/wiki/Nobelstiftung"
+      },
+      {
+        "score": 0.04781132574296011,
+        "url": "https://de.wikipedia.org/wiki/Omaha_(Volk)"
+      },
+      {
+        "score": 0.20427796494248635,
+        "url": "https://de.wikipedia.org/wiki/Statistisches_Modell"
+      },
+      {
+        "score": 0.04509827781500621,
+        "url": "https://de.wikipedia.org/wiki/Jacob_Sisters"
+      },
+      {
+        "score": 0.059945491758614494,
+        "url": "https://de.wikipedia.org/wiki/Sonja_Kurowsky"
+      },
+      {
+        "score": 0.08016877337608248,
+        "url": "https://de.wikipedia.org/wiki/A_Greek-English_Lexicon"
+      },
+      {
+        "score": 0.13916592408907347,
+        "url": "https://de.wikipedia.org/wiki/Chaos_Computer_Club"
+      },
+      {
+        "score": 0.05920712478376109,
+        "url": "https://de.wikipedia.org/wiki/Finno-ugrische_Sprachen"
+      },
+      {
+        "score": 0.045973595336856674,
+        "url": "https://de.wikipedia.org/wiki/Jaime_de_Mora_y_Arag%C3%B3n"
+      },
+      {
+        "score": 0.06706514616108725,
+        "url": "https://de.wikipedia.org/wiki/Ein_Lied_f%C3%BCr_Br%C3%BCssel"
+      },
+      {
+        "score": 0.08134093492139088,
+        "url": "https://de.wikipedia.org/wiki/Menschenopfer"
+      },
+      {
+        "score": 0.08743888175988851,
+        "url": "https://de.wikipedia.org/wiki/Sukzession_(Biologie)"
+      },
+      {
+        "score": 0.08406088497921885,
+        "url": "https://de.wikipedia.org/wiki/Ligue_2_2018/19"
+      },
+      {
+        "score": 0.017308180379081554,
+        "url": "https://de.wikipedia.org/wiki/4._November"
+      },
+      {
+        "score": 0.1281736813396695,
+        "url": "https://de.wikipedia.org/wiki/Bildgebendes_Verfahren"
+      },
+      {
+        "score": 0.0566290030824154,
+        "url": "https://de.wikipedia.org/wiki/Neue_Zeitschrift_f%C3%BCr_Arbeitsrecht"
+      },
+      {
+        "score": 0.1090836741580945,
+        "url": "https://de.wikipedia.org/wiki/Bild_(Zeitung)"
+      },
+      {
+        "score": 0.04201207442041832,
+        "url": "https://de.wikipedia.org/wiki/Peter_Guralnick"
+      },
+      {
+        "score": 0.14995596227449953,
+        "url": "https://de.wikipedia.org/wiki/Turing_Award"
+      },
+      {
+        "score": 0.026933493612252304,
+        "url": "https://de.wikipedia.org/wiki/Free_and_Fair_Election_Foundation_of_Afghanistan"
+      },
+      {
+        "score": 0.05026705064525974,
+        "url": "https://de.wikipedia.org/wiki/Recht_auf_Leben"
+      },
+      {
+        "score": 0.1392609385268987,
+        "url": "https://de.wikipedia.org/wiki/Bernoulli-Gleichung"
+      },
+      {
+        "score": 0.17125995170506378,
+        "url": "https://de.wikipedia.org/wiki/Probabilistisches_neuronales_Netz"
+      },
+      {
+        "score": 0.027016555622568425,
+        "url": "https://de.wikipedia.org/wiki/Veranschlagung"
+      },
+      {
+        "score": 0.03217173857821288,
+        "url": "https://de.wikipedia.org/wiki/Wikipedia:Formatvorlage_Charts"
+      },
+      {
+        "score": 0.08916764748499839,
+        "url": "https://de.wikipedia.org/wiki/Science"
+      },
+      {
+        "score": 0.053307544845120555,
+        "url": "https://de.wikipedia.org/wiki/Alienabilit%C3%A4t"
+      },
+      {
+        "score": 0.04800920751572693,
+        "url": "https://de.wikipedia.org/wiki/Zytokine"
+      },
+      {
+        "score": 0.10372545833198414,
+        "url": "https://de.wikipedia.org/wiki/Laienhelfer"
+      },
+      {
+        "score": 0.1288559950068106,
+        "url": "https://de.wikipedia.org/wiki/Regul%C3%A4res_statistisches_Modell"
+      },
+      {
+        "score": 0.06403579390641297,
+        "url": "https://de.wikipedia.org/wiki/Kirstie_Alley"
+      },
+      {
+        "score": 0.04678157704156592,
+        "url": "https://de.wikipedia.org/wiki/Heideschulmeister_Uwe_Karsten_(1954)"
+      },
+      {
+        "score": 0.08809174372826534,
+        "url": "https://de.wikipedia.org/wiki/Find_a_Grave"
+      },
+      {
+        "score": 0.10582741132551367,
+        "url": "https://de.wikipedia.org/wiki/Anthropogen"
+      },
+      {
+        "score": 0.07492266689393584,
+        "url": "https://de.wikipedia.org/wiki/Neues_Testament"
+      },
+      {
+        "score": 0.08382390930860839,
+        "url": "https://de.wikipedia.org/wiki/Pageimpression"
+      },
+      {
+        "score": 0.0350001987515483,
+        "url": "https://de.wikipedia.org/wiki/Ballistit"
+      },
+      {
+        "score": 0.09073694024197555,
+        "url": "https://de.wikipedia.org/wiki/Bildgebendes_Verfahren_(Medizin)"
+      },
+      {
+        "score": 0.0826117792062671,
+        "url": "https://de.wikipedia.org/wiki/Ligue_2_2020/21"
+      },
+      {
+        "score": 0.058283546769721514,
+        "url": "https://de.wikipedia.org/wiki/Verbuschung"
+      },
+      {
+        "score": 0.09189441207793955,
+        "url": "https://de.wikipedia.org/wiki/Klatsch"
+      },
+      {
+        "score": 0.10336474351355492,
+        "url": "https://de.wikipedia.org/wiki/Coand%C4%83-Effekt"
+      },
+      {
+        "score": 0.06213150258624142,
+        "url": "https://de.wikipedia.org/wiki/N%C3%BCrnberger_Trichter_Karnevalsgesellschaft"
+      },
+      {
+        "score": 0.07344531254509644,
+        "url": "https://de.wikipedia.org/wiki/Bob_Marley_%26_The_Wailers"
+      },
+      {
+        "score": 0.08372322524321581,
+        "url": "https://de.wikipedia.org/wiki/Fields-Medaille"
+      },
+      {
+        "score": 0.03817115692081785,
+        "url": "https://de.wikipedia.org/wiki/Verlandung"
+      },
+      {
+        "score": 0.12534760505217807,
+        "url": "https://de.wikipedia.org/wiki/Turing_Tarpit"
+      },
+      {
+        "score": 0.02604433470183494,
+        "url": "https://de.wikipedia.org/wiki/Kaufzeitung"
+      },
+      {
+        "score": 0.0798399969604416,
+        "url": "https://de.wikipedia.org/wiki/Marion_Horn"
+      },
+      {
+        "score": 0.09670987051941056,
+        "url": "https://de.wikipedia.org/wiki/Kai_Diekmann"
+      },
+      {
+        "score": 0.10372545833198414,
+        "url": "https://de.wikipedia.org/wiki/Erste_Hilfe"
+      },
+      {
+        "score": 0.04800920751572693,
+        "url": "https://de.wikipedia.org/wiki/Zytokin"
+      },
+      {
+        "score": 0.12562126111801292,
+        "url": "https://de.wikipedia.org/wiki/Peer-Review"
+      },
+      {
+        "score": 0.08412306075004293,
+        "url": "https://de.wikipedia.org/wiki/The_Middle"
+      },
+      {
+        "score": 0.09239154337736294,
+        "url": "https://de.wikipedia.org/wiki/American_Association_for_the_Advancement_of_Science"
+      },
+      {
+        "score": 0.0964976939602957,
+        "url": "https://de.wikipedia.org/wiki/Universit%C3%A4t_Rostock"
+      },
+      {
+        "score": 0.09935958231187683,
+        "url": "https://de.wikipedia.org/wiki/DNA-Analyse"
+      },
+      {
+        "score": 0.07214826737048899,
+        "url": "https://de.wikipedia.org/wiki/Verwandte_sind_auch_Menschen"
+      },
+      {
+        "score": 0.11370150695150175,
+        "url": "https://de.wikipedia.org/wiki/Altgriechisch"
+      },
+      {
+        "score": 0.03869240534437093,
+        "url": "https://de.wikipedia.org/wiki/M%C3%A1rio_Lemos_Pires"
+      },
+      {
+        "score": 0.08140908850202491,
+        "url": "https://de.wikipedia.org/wiki/Wer_singt_f%C3%BCr_Deutschland%3F_(2008)"
+      },
+      {
+        "score": 0.07947522834239029,
+        "url": "https://de.wikipedia.org/wiki/Ligue_1_2020/21"
+      },
+      {
+        "score": 0.06417019651029139,
+        "url": "https://de.wikipedia.org/wiki/Neuaufnahmen_in_das_UNESCO-Kultur-_und_-Naturerbe_1987"
+      },
+      {
+        "score": 0.13453688955112744,
+        "url": "https://de.wikipedia.org/wiki/Elektrische_Impedanz-Tomografie"
+      },
+      {
+        "score": 0.10666709041383383,
+        "url": "https://de.wikipedia.org/wiki/Lasttest_(Computer)"
+      },
+      {
+        "score": 0.06800884261635282,
+        "url": "https://de.wikipedia.org/wiki/Lourdes_Alves_Ara%C3%BAjo"
+      },
+      {
+        "score": 0.06819493057122555,
+        "url": "https://de.wikipedia.org/wiki/Division_2_1965/66"
+      },
+      {
+        "score": 0.055627157982511895,
+        "url": "https://de.wikipedia.org/wiki/Lu%C3%ADs_Maria_Lobato"
+      },
+      {
+        "score": 0.16696170842157348,
+        "url": "https://de.wikipedia.org/wiki/Dynamisches_System"
+      },
+      {
+        "score": 0.07344531254509644,
+        "url": "https://de.wikipedia.org/wiki/The_Wailers"
+      },
+      {
+        "score": 0.08135313184591308,
+        "url": "https://de.wikipedia.org/wiki/Mohamed_Bayo"
+      },
+      {
+        "score": 0.12562126111801292,
+        "url": "https://de.wikipedia.org/wiki/Peer_Review"
+      },
+      {
+        "score": 0.06405017604561569,
+        "url": "https://de.wikipedia.org/wiki/Eduardo_de_Juana"
+      },
+      {
+        "score": 0.09577425971989258,
+        "url": "https://de.wikipedia.org/wiki/Planet_Wissen"
+      },
+      {
+        "score": 0.04196344234152953,
+        "url": "https://de.wikipedia.org/wiki/USL_Dunkerque"
+      },
+      {
+        "score": 0.11639729163336271,
+        "url": "https://de.wikipedia.org/wiki/Benjamin_Netanjahu"
+      },
+      {
+        "score": 0.10602647491018626,
+        "url": "https://de.wikipedia.org/wiki/Magnus-Effekt"
+      },
+      {
+        "score": 0.07652493835760787,
+        "url": "https://de.wikipedia.org/wiki/Bild_am_Sonntag"
+      },
+      {
+        "score": 0.04767815725372956,
+        "url": "https://de.wikipedia.org/wiki/Herrschende_Meinung"
+      },
+      {
+        "score": 0.06496511778110234,
+        "url": "https://de.wikipedia.org/wiki/Leibniz-Institut_f%C3%BCr_Ostseeforschung"
+      },
+      {
+        "score": 0.040854212718563244,
+        "url": "https://de.wikipedia.org/wiki/Nur_die_Liebe_l%C3%A4%C3%9Ft_uns_leben"
+      },
+      {
+        "score": 0.1309725336889873,
+        "url": "https://de.wikipedia.org/wiki/ADNA"
+      },
+      {
+        "score": 0.0906917872705034,
+        "url": "https://de.wikipedia.org/wiki/Indogermanische_Sprachen"
+      },
+      {
+        "score": 0.07091708342237786,
+        "url": "https://de.wikipedia.org/wiki/Friede_sei_mit_Dir"
+      },
+      {
+        "score": 0.17569778307800643,
+        "url": "https://de.wikipedia.org/wiki/E-Learning"
+      },
+      {
+        "score": 0.07936474518089717,
+        "url": "https://de.wikipedia.org/wiki/Zhoukoudian"
+      },
+      {
+        "score": 0.08636080045931284,
+        "url": "https://de.wikipedia.org/wiki/British_Association_for_the_Advancement_of_Science"
+      },
+      {
+        "score": 0.02852671263955811,
+        "url": "https://de.wikipedia.org/wiki/Open_Group"
+      },
+      {
+        "score": 0.058555834431833716,
+        "url": "https://de.wikipedia.org/wiki/Ligue_1_2024/25"
+      },
+      {
+        "score": 0.07627204392942037,
+        "url": "https://de.wikipedia.org/wiki/Inverses_Problem"
+      },
+      {
+        "score": 0.07082172911980342,
+        "url": "https://de.wikipedia.org/wiki/The_Upsetters_(Jamaika)"
+      },
+      {
+        "score": 0.17080031931007722,
+        "url": "https://de.wikipedia.org/wiki/Lotka-Volterra-Gleichung"
+      },
+      {
+        "score": 0.0931865852822633,
+        "url": "https://de.wikipedia.org/wiki/Stresstest"
+      },
+      {
+        "score": 0.0778312601457716,
+        "url": "https://de.wikipedia.org/wiki/Ligue_2_2024/25"
+      },
+      {
+        "score": 0.04355319248968989,
+        "url": "https://de.wikipedia.org/wiki/Peter_Koobs"
+      },
+      {
+        "score": 0.07206231438106651,
+        "url": "https://de.wikipedia.org/wiki/Speicherleck"
+      },
+      {
+        "score": 0.1073552726876946,
+        "url": "https://de.wikipedia.org/wiki/Softwaretest"
+      },
+      {
+        "score": 0.06210725680652614,
+        "url": "https://de.wikipedia.org/wiki/SoapUI"
+      },
+      {
+        "score": 0.03988735864067208,
+        "url": "https://de.wikipedia.org/wiki/Edith_Oss"
+      },
+      {
+        "score": 0.08628836256077016,
+        "url": "https://de.wikipedia.org/wiki/Phonetik"
+      },
+      {
+        "score": 0.1073552726876946,
+        "url": "https://de.wikipedia.org/wiki/Systemtest"
+      },
+      {
+        "score": 0.048837027331377646,
+        "url": "https://de.wikipedia.org/wiki/Informationssendung"
+      },
+      {
+        "score": 0.07821817561878999,
+        "url": "https://de.wikipedia.org/wiki/Royal_Society_for_the_Protection_of_Birds"
+      },
+      {
+        "score": 0.09784960337343021,
+        "url": "https://de.wikipedia.org/wiki/Forschung_aktuell"
+      },
+      {
+        "score": 0.08355086144578426,
+        "url": "https://de.wikipedia.org/wiki/Ligue_2_2023/24"
+      },
+      {
+        "score": 0.06286929543905759,
+        "url": "https://de.wikipedia.org/wiki/Parlamentswahl_in_Israel_2020"
+      },
+      {
+        "score": 0.07333271088292373,
+        "url": "https://de.wikipedia.org/wiki/Hochmittelalter"
+      },
+      {
+        "score": 0.1315751337352385,
+        "url": "https://de.wikipedia.org/wiki/Denisova-Mensch"
+      },
+      {
+        "score": 0.06028739889759059,
+        "url": "https://de.wikipedia.org/wiki/Carlton_Barrett"
+      },
+      {
+        "score": 0.04758330825080941,
+        "url": "https://de.wikipedia.org/wiki/Sonntagszeitung"
+      },
+      {
+        "score": 0.130262423132968,
+        "url": "https://de.wikipedia.org/wiki/Proteine"
+      },
+      {
+        "score": 0.09342239340905037,
+        "url": "https://de.wikipedia.org/wiki/Strickland-Code"
+      },
+      {
+        "score": 0.05187751402825138,
+        "url": "https://de.wikipedia.org/wiki/Roots-Reggae"
+      },
+      {
+        "score": 0.13467891115702418,
+        "url": "https://de.wikipedia.org/wiki/Massive_Open_Online_Course"
+      },
+      {
+        "score": 0.15502160377445212,
+        "url": "https://de.wikipedia.org/wiki/Integriertes_Lernen"
+      },
+      {
+        "score": 0.07425896146154307,
+        "url": "https://de.wikipedia.org/wiki/Korrekt_gestelltes_Problem"
+      },
+      {
+        "score": 0.06404803779905055,
+        "url": "https://de.wikipedia.org/wiki/Ganges"
+      },
+      {
+        "score": 0.022312310008518296,
+        "url": "https://de.wikipedia.org/wiki/Nordchinesische_Ebene"
+      },
+      {
+        "score": 0.10377351201901203,
+        "url": "https://de.wikipedia.org/wiki/Statische_Code-Analyse"
+      },
+      {
+        "score": 0.2073071711039322,
+        "url": "https://de.wikipedia.org/wiki/SI-Modell"
+      },
+      {
+        "score": 0.0681244115675105,
+        "url": "https://de.wikipedia.org/wiki/Coupe_de_France_2023/24"
+      },
+      {
+        "score": 0.07676234614622317,
+        "url": "https://de.wikipedia.org/wiki/F%C3%BCr_ein_paar_Dollar_mehr"
+      },
+      {
+        "score": 0.08585466486968454,
+        "url": "https://de.wikipedia.org/wiki/Gut_zu_wissen"
+      },
+      {
+        "score": 0.07866446871609609,
+        "url": "https://de.wikipedia.org/wiki/Arrangement"
+      },
+      {
+        "score": 0.08368390655592742,
+        "url": "https://de.wikipedia.org/wiki/Ligue_2_2022/23"
+      },
+      {
+        "score": 0.1017197889821827,
+        "url": "https://de.wikipedia.org/wiki/Terroranschl%C3%A4ge_am_11._September_2001"
+      },
+      {
+        "score": 0.12091868769407589,
+        "url": "https://de.wikipedia.org/wiki/Dynamisches_Software-Testverfahren"
+      },
+      {
+        "score": 0.06877697091768457,
+        "url": "https://de.wikipedia.org/wiki/Auditive_Wahrnehmung"
+      },
+      {
+        "score": 0.023420726340029428,
+        "url": "https://de.wikipedia.org/wiki/Bedfordshire"
+      },
+      {
+        "score": 0.1414418581742997,
+        "url": "https://de.wikipedia.org/wiki/Genfluss_archaischer_Menschen_zu_Homo_sapiens"
+      },
+      {
+        "score": 0.01203953175485592,
+        "url": "https://de.wikipedia.org/wiki/1630er"
+      },
+      {
+        "score": 0.1184307480033777,
+        "url": "https://de.wikipedia.org/wiki/Taxonomie"
+      },
+      {
+        "score": 0.13804469115633067,
+        "url": "https://de.wikipedia.org/wiki/Lesen"
+      },
+      {
+        "score": 0.07254982957550951,
+        "url": "https://de.wikipedia.org/wiki/Ligue_1_2022/23"
+      },
+      {
+        "score": 0.06466707526273513,
+        "url": "https://de.wikipedia.org/wiki/The_Hippy_Boys"
+      },
+      {
+        "score": 0.08403866633159807,
+        "url": "https://de.wikipedia.org/wiki/Zelle_(Biologie)"
+      },
+      {
+        "score": 0.15502160377445212,
+        "url": "https://de.wikipedia.org/wiki/Blended-Learning"
+      },
+      {
+        "score": 0.10693805008783358,
+        "url": "https://de.wikipedia.org/wiki/Protein_Data_Bank"
+      },
+      {
+        "score": 0.0402669713944797,
+        "url": "https://de.wikipedia.org/wiki/La%C3%9F_die_Sonne_in_dein_Herz"
+      },
+      {
+        "score": 0.043192688504563245,
+        "url": "https://de.wikipedia.org/wiki/Style_Checker"
+      },
+      {
+        "score": 0.08829914359530583,
+        "url": "https://de.wikipedia.org/wiki/Nauen"
+      },
+      {
+        "score": 0.10666815049096988,
+        "url": "https://de.wikipedia.org/wiki/Joint_Inquiry_into_Intelligence_Community_Activities_before_and_after_the_Terrorist_Attacks_of_September_11,_2001"
+      },
+      {
+        "score": 0.08711779451796098,
+        "url": "https://de.wikipedia.org/wiki/Nekrolog_1675"
+      },
+      {
+        "score": 0.10790644655645865,
+        "url": "https://de.wikipedia.org/wiki/Willi_wills_wissen"
+      },
+      {
+        "score": 0.06253216674132953,
+        "url": "https://de.wikipedia.org/wiki/Salman_Khan_(P%C3%A4dagoge)"
+      },
+      {
+        "score": 0.08367571091905525,
+        "url": "https://de.wikipedia.org/wiki/In_the_Mood"
+      },
+      {
+        "score": 0.04717407100442559,
+        "url": "https://de.wikipedia.org/wiki/Eddie_Floyd"
+      },
+      {
+        "score": 0.12253910347307058,
+        "url": "https://de.wikipedia.org/wiki/Sebastian_Thrun"
+      },
+      {
+        "score": 0.12437498674516227,
+        "url": "https://de.wikipedia.org/wiki/Fu%C3%9Fball-Weltmeisterschaft_2022"
+      },
+      {
+        "score": 0.10360326683519828,
+        "url": "https://de.wikipedia.org/wiki/Zwei_glorreiche_Halunken"
+      },
+      {
+        "score": 0.11095015003301642,
+        "url": "https://de.wikipedia.org/wiki/Multiregionaler_Ursprung_des_modernen_Menschen"
+      },
+      {
+        "score": 0.024161150808121482,
+        "url": "https://de.wikipedia.org/wiki/UTC%E2%88%924"
+      },
+      {
+        "score": 0.06828092578813023,
+        "url": "https://de.wikipedia.org/wiki/Coupe_de_France_2018/19"
+      },
+      {
+        "score": 0.06981333672077697,
+        "url": "https://de.wikipedia.org/wiki/Aserbaidschan_beim_Eurovision_Song_Contest"
+      },
+      {
+        "score": 0.06696315813153655,
+        "url": "https://de.wikipedia.org/wiki/Yoruba_(Ethnie)"
+      },
+      {
+        "score": 0.07359077693213402,
+        "url": "https://de.wikipedia.org/wiki/Wettlaufsituation"
+      },
+      {
+        "score": 0.04307364948385402,
+        "url": "https://de.wikipedia.org/wiki/Kulturrevolution_(Zeitschrift)"
+      },
+      {
+        "score": 0.04000895884505809,
+        "url": "https://de.wikipedia.org/wiki/Terrestrisch"
+      },
+      {
+        "score": 0.1540520591856302,
+        "url": "https://de.wikipedia.org/wiki/SIS-Modell"
+      },
+      {
+        "score": 0.0504520708462407,
+        "url": "https://de.wikipedia.org/wiki/Vormensch"
+      },
+      {
+        "score": 0.045837115748803746,
+        "url": "https://de.wikipedia.org/wiki/Strukturprotein"
+      },
+      {
+        "score": 0.06921173763756848,
+        "url": "https://de.wikipedia.org/wiki/Lesen_(Begriffskl%C3%A4rung)"
+      },
+      {
+        "score": 0.08895868633669382,
+        "url": "https://de.wikipedia.org/wiki/Verordnung_(EU)_2020/852_(Taxonomieverordnung)"
+      },
+      {
+        "score": 0.0648907816980086,
+        "url": "https://de.wikipedia.org/wiki/The_Meters"
+      },
+      {
+        "score": 0.04112706288115674,
+        "url": "https://de.wikipedia.org/wiki/Ghost_(Lied)"
+      },
+      {
+        "score": 0.05614991984559963,
+        "url": "https://de.wikipedia.org/wiki/Kommunalwahlen_in_Brandenburg_2024"
+      },
+      {
+        "score": 0.06177896202075378,
+        "url": "https://de.wikipedia.org/wiki/Hans_Blum_(Komponist)"
+      },
+      {
+        "score": 0.048709951687369864,
+        "url": "https://de.wikipedia.org/wiki/Nucleic_Acids_Research"
+      },
+      {
+        "score": 0.06651791457207766,
+        "url": "https://de.wikipedia.org/wiki/Fritz_Egner"
+      },
+      {
+        "score": 0.02974746938110667,
+        "url": "https://de.wikipedia.org/wiki/GfK_Entertainment"
+      },
+      {
+        "score": 0.055025471004152914,
+        "url": "https://de.wikipedia.org/wiki/Georg_Buschor"
+      },
+      {
+        "score": 0.0719375202908586,
+        "url": "https://de.wikipedia.org/wiki/The_Andrews_Sisters"
+      },
+      {
+        "score": 0.10039063446203816,
+        "url": "https://de.wikipedia.org/wiki/Fu%C3%9Fball-Europameisterschaft_2024"
+      },
+      {
+        "score": 0.08587351818947431,
+        "url": "https://de.wikipedia.org/wiki/Georgien_beim_Eurovision_Song_Contest"
+      },
+      {
+        "score": 0.06827947197343619,
+        "url": "https://de.wikipedia.org/wiki/Time-of-Check-to-Time-of-Use-Problem"
+      },
+      {
+        "score": 0.12941930822945283,
+        "url": "https://de.wikipedia.org/wiki/Google_Glass"
+      },
+      {
+        "score": 0.03979762917639784,
+        "url": "https://de.wikipedia.org/wiki/Utershorst"
+      },
+      {
+        "score": 0.06736275361680533,
+        "url": "https://de.wikipedia.org/wiki/United_States_Senate_Select_Committee_on_Intelligence"
+      },
+      {
+        "score": 0.07125375905904248,
+        "url": "https://de.wikipedia.org/wiki/Institut_f%C3%BCr_Film_und_Bild_in_Wissenschaft_und_Unterricht"
+      },
+      {
+        "score": 0.13893337214906376,
+        "url": "https://de.wikipedia.org/wiki/Personalisiertes_Lernen"
+      },
+      {
+        "score": 0.08310865090892919,
+        "url": "https://de.wikipedia.org/wiki/Niger-Kongo-Sprachen"
+      },
+      {
+        "score": 0.022825024606880434,
+        "url": "https://de.wikipedia.org/wiki/8._September"
+      },
+      {
+        "score": 0.028674700285498927,
+        "url": "https://de.wikipedia.org/wiki/Joachim_Relin"
+      },
+      {
+        "score": 0.06458737327867889,
+        "url": "https://de.wikipedia.org/wiki/Coupe_de_France_2024/25"
+      },
+      {
+        "score": 0.05777636153367454,
+        "url": "https://de.wikipedia.org/wiki/Malta_beim_Eurovision_Song_Contest"
+      },
+      {
+        "score": 0.07122836718160455,
+        "url": "https://de.wikipedia.org/wiki/Booker_T._%26_the_MG%27s"
+      },
+      {
+        "score": 0.08603191489659157,
+        "url": "https://de.wikipedia.org/wiki/Verordnung_(EU)_2019/2088_(Offenlegungsverordnung)"
+      },
+      {
+        "score": 0.06309196606907201,
+        "url": "https://de.wikipedia.org/wiki/Taken_by_a_Stranger"
+      },
+      {
+        "score": 0.051190692223209405,
+        "url": "https://de.wikipedia.org/wiki/T%C3%BCrkei_beim_Eurovision_Song_Contest"
+      },
+      {
+        "score": 0.1359311665694491,
+        "url": "https://de.wikipedia.org/wiki/Alle_Kinder_lernen_lesen"
+      },
+      {
+        "score": 0.059228680619311275,
+        "url": "https://de.wikipedia.org/wiki/WWW_%E2%80%93_Die_Witzigsten_Werbespots_der_Welt"
+      },
+      {
+        "score": 0.08686406265816873,
+        "url": "https://de.wikipedia.org/wiki/Ern%C3%A4hrungs-_und_Landwirtschaftsorganisation"
+      },
+      {
+        "score": 0.0369957155073666,
+        "url": "https://de.wikipedia.org/wiki/Eleonore_Tappert"
+      },
+      {
+        "score": 0.11007204915531885,
+        "url": "https://de.wikipedia.org/wiki/Zeit.de"
+      },
+      {
+        "score": 0.06315909698175567,
+        "url": "https://de.wikipedia.org/wiki/Sylvester_Levay"
+      },
+      {
+        "score": 0.06809607579552751,
+        "url": "https://de.wikipedia.org/wiki/Eukalypten"
+      },
+      {
+        "score": 0.028261532818180023,
+        "url": "https://de.wikipedia.org/wiki/Kommunalwahlen_in_Deutschland_2024"
+      },
+      {
+        "score": 0.09139814067552754,
+        "url": "https://de.wikipedia.org/wiki/Georgische_Sprache"
+      },
+      {
+        "score": 0.05224425366818498,
+        "url": "https://de.wikipedia.org/wiki/The_Woody_Woodpecker_Song"
+      },
+      {
+        "score": 0.08294639659368562,
+        "url": "https://de.wikipedia.org/wiki/The_Birds_and_the_Bees"
+      },
+      {
+        "score": 0.02267426928847943,
+        "url": "https://de.wikipedia.org/wiki/Deckungsgrad"
+      },
+      {
+        "score": 0.03840715714559068,
+        "url": "https://de.wikipedia.org/wiki/Telefon,_Telefon"
+      },
+      {
+        "score": 0.04698710046319533,
+        "url": "https://de.wikipedia.org/wiki/Forst"
+      },
+      {
+        "score": 0.038304073445487,
+        "url": "https://de.wikipedia.org/wiki/Energieholz"
+      },
+      {
+        "score": 0.06619280696545124,
+        "url": "https://de.wikipedia.org/wiki/Copa_Am%C3%A9rica_2024"
+      },
+      {
+        "score": 0.04644638295770025,
+        "url": "https://de.wikipedia.org/wiki/Bundeswaldgesetz"
+      },
+      {
+        "score": 0.0957969943394493,
+        "url": "https://de.wikipedia.org/wiki/Fraunhofer-Institut_f%C3%BCr_Software-_und_Systemtechnik_ISST"
+      },
+      {
+        "score": 0.11796234327063732,
+        "url": "https://de.wikipedia.org/wiki/Google_I/O"
+      },
+      {
+        "score": 0.07164365164705308,
+        "url": "https://de.wikipedia.org/wiki/Kordofanisch"
+      },
+      {
+        "score": 0.08548566191721226,
+        "url": "https://de.wikipedia.org/wiki/Defense_Intelligence_Agency"
+      },
+      {
+        "score": 0.14279983455143652,
+        "url": "https://de.wikipedia.org/wiki/Coaching"
+      },
+      {
+        "score": 0.06234884118260253,
+        "url": "https://de.wikipedia.org/wiki/The_Battle_Hymn_of_the_Republic"
+      },
+      {
+        "score": 0.08057175892704724,
+        "url": "https://de.wikipedia.org/wiki/Verordnung_(EU)_2022/1288_(RTS_zur_Offenlegungsverordnung)"
+      },
+      {
+        "score": 0.08977252991780316,
+        "url": "https://de.wikipedia.org/wiki/Dogon_(Sprache)"
+      },
+      {
+        "score": 0.047529466337923494,
+        "url": "https://de.wikipedia.org/wiki/%C3%87etin_Alp"
+      },
+      {
+        "score": 0.06016785647182003,
+        "url": "https://de.wikipedia.org/wiki/The_Rascals"
+      },
+      {
+        "score": 0.10111474001073309,
+        "url": "https://de.wikipedia.org/wiki/Kompass"
+      },
+      {
+        "score": 0.06477887372942845,
+        "url": "https://de.wikipedia.org/wiki/The_Bird_and_the_Bee"
+      },
+      {
+        "score": 0.07748308695142692,
+        "url": "https://de.wikipedia.org/wiki/The_Busker"
+      },
+      {
+        "score": 0.11007204915531885,
+        "url": "https://de.wikipedia.org/wiki/Die_Zeit"
+      },
+      {
+        "score": 0.08686406265816873,
+        "url": "https://de.wikipedia.org/wiki/Ern%C3%A4hrungs-_und_Landwirtschaftsorganisation_der_Vereinten_Nationen"
+      },
+      {
+        "score": 0.07232777545251276,
+        "url": "https://de.wikipedia.org/wiki/Internationaler_Fonds_f%C3%BCr_landwirtschaftliche_Entwicklung"
+      },
+      {
+        "score": 0.018991262347247392,
+        "url": "https://de.wikipedia.org/wiki/16._Mai"
+      },
+      {
+        "score": 0.066440832895707,
+        "url": "https://de.wikipedia.org/wiki/Coupe_de_France_2022/23"
+      },
+      {
+        "score": 0.09171582015404663,
+        "url": "https://de.wikipedia.org/wiki/Working_for_Water"
+      },
+      {
+        "score": 0.06462525705737134,
+        "url": "https://de.wikipedia.org/wiki/Siemens_Stiftung"
+      },
+      {
+        "score": 0.028395337396144013,
+        "url": "https://de.wikipedia.org/wiki/American_Basketball_League_(1996%E2%80%931998)"
+      },
+      {
+        "score": 0.058046718195474856,
+        "url": "https://de.wikipedia.org/wiki/Gary_Lewis_%26_the_Playboys"
+      },
+      {
+        "score": 0.0315182437141813,
+        "url": "https://de.wikipedia.org/wiki/Copa_Am%C3%A9rica_2024/Spiele"
+      },
+      {
+        "score": 0.04302403910818389,
+        "url": "https://de.wikipedia.org/wiki/Chinesische_Mauer"
+      },
+      {
+        "score": 0.06602626488329863,
+        "url": "https://de.wikipedia.org/wiki/S%C3%BCdkaukasische_Sprachen"
+      },
+      {
+        "score": 0.0888483248356555,
+        "url": "https://de.wikipedia.org/wiki/Impedanzanpassung"
+      },
+      {
+        "score": 0.03538595434229004,
+        "url": "https://de.wikipedia.org/wiki/AS_Cherbourg"
+      },
+      {
+        "score": 0.07548005398454158,
+        "url": "https://de.wikipedia.org/wiki/Marine_Corps_Intelligence_Activity"
+      },
+      {
+        "score": 0.044351695298056104,
+        "url": "https://de.wikipedia.org/wiki/David_L._Boren"
+      },
+      {
+        "score": 0.05311039748114109,
+        "url": "https://de.wikipedia.org/wiki/Robert_Jonquet"
+      },
+      {
+        "score": 0.09808755161823274,
+        "url": "https://de.wikipedia.org/wiki/Virtuelle_Realit%C3%A4t"
+      },
+      {
+        "score": 0.03861649098238847,
+        "url": "https://de.wikipedia.org/wiki/Zertifizierung"
+      },
+      {
+        "score": 0.07033952865778383,
+        "url": "https://de.wikipedia.org/wiki/Malta_Eurovision_Song_Contest_2023"
+      },
+      {
+        "score": 0.10986057871739136,
+        "url": "https://de.wikipedia.org/wiki/Kreiselkompass"
+      },
+      {
+        "score": 0.14301694977975435,
+        "url": "https://de.wikipedia.org/wiki/Action_Learning"
+      },
+      {
+        "score": 0.049562611633300044,
+        "url": "https://de.wikipedia.org/wiki/Strich_(Winkeleinheit)"
+      },
+      {
+        "score": 0.052963123044251575,
+        "url": "https://de.wikipedia.org/wiki/The_Rascals_(englische_Band)"
+      },
+      {
+        "score": 0.0631966274600408,
+        "url": "https://de.wikipedia.org/wiki/Languages_of_the_World/Materials"
+      },
+      {
+        "score": 0.040332214669717044,
+        "url": "https://de.wikipedia.org/wiki/Amt_der_Vereinten_Nationen_f%C3%BCr_die_Koordinierung_humanit%C3%A4rer_Angelegenheiten"
+      },
+      {
+        "score": 0.07199464700247812,
+        "url": "https://de.wikipedia.org/wiki/ZEIT_Sprachen"
+      },
+      {
+        "score": 0.1040307645933185,
+        "url": "https://de.wikipedia.org/wiki/Johnny_Cash"
+      },
+      {
+        "score": 0.04807127123966484,
+        "url": "https://de.wikipedia.org/wiki/Kurt_Calleja"
+      },
+      {
+        "score": 0.054001354048867765,
+        "url": "https://de.wikipedia.org/wiki/Malta"
+      },
+      {
+        "score": 0.054125373371336896,
+        "url": "https://de.wikipedia.org/wiki/Lynn_Chircop"
+      },
+      {
+        "score": 0.041304371044057965,
+        "url": "https://de.wikipedia.org/wiki/Mensur_(Musik)"
+      },
+      {
+        "score": 0.06113645701263069,
+        "url": "https://de.wikipedia.org/wiki/Artur_Brauner"
+      },
+      {
+        "score": 0.043253696163124807,
+        "url": "https://de.wikipedia.org/wiki/Julie_%26_Ludwig"
+      },
+      {
+        "score": 0.17874756583960588,
+        "url": "https://de.wikipedia.org/wiki/Entdeckendes_Lernen"
+      },
+      {
+        "score": 0.05812442679379259,
+        "url": "https://de.wikipedia.org/wiki/Universit%C3%A4t_Cambridge"
+      },
+      {
+        "score": 0.0636414216615678,
+        "url": "https://de.wikipedia.org/wiki/Mandoline"
+      },
+      {
+        "score": 0.06477533897006982,
+        "url": "https://de.wikipedia.org/wiki/Arlen_Specter"
+      },
+      {
+        "score": 0.04170458043944769,
+        "url": "https://de.wikipedia.org/wiki/Marine_Corps_Base_Quantico"
+      },
+      {
+        "score": 0.10696137389219533,
+        "url": "https://de.wikipedia.org/wiki/Stichleitung"
+      },
+      {
+        "score": 0.0593514821354881,
+        "url": "https://de.wikipedia.org/wiki/Es_mu%C3%9F_nicht_immer_Kaviar_sein_(Serie)"
+      },
+      {
+        "score": 0.025938214479507962,
+        "url": "https://de.wikipedia.org/wiki/Lauteninstrument"
+      },
+      {
+        "score": 0.0063355530673313894,
+        "url": "https://de.wikipedia.org/wiki/Espaly-Saint-Marcel"
+      },
+      {
+        "score": 0.07444346454829544,
+        "url": "https://de.wikipedia.org/wiki/Malta_Eurovision_Song_Contest_2018"
+      },
+      {
+        "score": 0.06555095334133644,
+        "url": "https://de.wikipedia.org/wiki/Coupe_de_France_2019/20"
+      },
+      {
+        "score": 0.11627540429273654,
+        "url": "https://de.wikipedia.org/wiki/Learning_by_Doing"
+      },
+      {
+        "score": 0.13517730664639027,
+        "url": "https://de.wikipedia.org/wiki/K%C3%BCnstlicher_Horizont"
+      },
+      {
+        "score": 0.06551587738487441,
+        "url": "https://de.wikipedia.org/wiki/The_Last_Shadow_Puppets"
+      },
+      {
+        "score": 0.05076560664700769,
+        "url": "https://de.wikipedia.org/wiki/Farrar,_Straus_and_Giroux"
+      },
+      {
+        "score": 0.08131314603380421,
+        "url": "https://de.wikipedia.org/wiki/Signature-Modell"
+      },
+      {
+        "score": 0.06830409517909844,
+        "url": "https://de.wikipedia.org/wiki/Gr%C3%BCndungsstadt"
+      },
+      {
+        "score": 0.07974708045596686,
+        "url": "https://de.wikipedia.org/wiki/Hebr%C3%A4ische_Universit%C3%A4t_Jerusalem"
+      },
+      {
+        "score": 0.0475309358184728,
+        "url": "https://de.wikipedia.org/wiki/Ecuadorianische_Fu%C3%9Fballnationalmannschaft"
+      },
+      {
+        "score": 0.14137993161350082,
+        "url": "https://de.wikipedia.org/wiki/Google_Daydream"
+      },
+      {
+        "score": 0.07325826476623093,
+        "url": "https://de.wikipedia.org/wiki/Menschen_im_Hotel_(1959)"
+      },
+      {
+        "score": 0.0316849614660232,
+        "url": "https://de.wikipedia.org/wiki/N%C3%ADveo_Herdade"
+      },
+      {
+        "score": 0.16989182028208802,
+        "url": "https://de.wikipedia.org/wiki/Forschendes_Lernen"
+      },
+      {
+        "score": 0.032689566909918644,
+        "url": "https://de.wikipedia.org/wiki/Batugade"
+      },
+      {
+        "score": 0.06902147985853856,
+        "url": "https://de.wikipedia.org/wiki/Grundrechte_(%C3%96sterreich)"
+      },
+      {
+        "score": 0.09175474049271432,
+        "url": "https://de.wikipedia.org/wiki/Grundrechte_(Schweiz)"
+      },
+      {
+        "score": 0.0534497503820602,
+        "url": "https://de.wikipedia.org/wiki/Carl_Perkins"
+      },
+      {
+        "score": 0.051594273179986605,
+        "url": "https://de.wikipedia.org/wiki/Chattanooga_(Tennessee)"
+      },
+      {
+        "score": 0.06074415107448078,
+        "url": "https://de.wikipedia.org/wiki/Meuterei_im_Morgengrauen"
+      },
+      {
+        "score": 0.03841684564199967,
+        "url": "https://de.wikipedia.org/wiki/Cry!_Cry!_Cry!"
+      },
+      {
+        "score": 0.05907350681703227,
+        "url": "https://de.wikipedia.org/wiki/The_Day_the_Music_Died"
+      },
+      {
+        "score": 0.05209124124241879,
+        "url": "https://de.wikipedia.org/wiki/Sichtflug"
+      },
+      {
+        "score": 0.04500329604147115,
+        "url": "https://de.wikipedia.org/wiki/Open_circuit"
+      },
+      {
+        "score": 0.02675328451696706,
+        "url": "https://de.wikipedia.org/wiki/Lee_Dorsey"
+      },
+      {
+        "score": 0.08367967918113699,
+        "url": "https://de.wikipedia.org/wiki/The_Hooters"
+      },
+      {
+        "score": 0.13017310524924566,
+        "url": "https://de.wikipedia.org/wiki/Lernen_am_Modell"
+      },
+      {
+        "score": 0.021673762922780376,
+        "url": "https://de.wikipedia.org/wiki/14._Oktober"
+      },
+      {
+        "score": 0.0625321844124878,
+        "url": "https://de.wikipedia.org/wiki/Coupe_de_France_2016/17"
+      },
+      {
+        "score": 0.0787629917318505,
+        "url": "https://de.wikipedia.org/wiki/Akademie_f%C3%BCr_die_hebr%C3%A4ische_Sprache"
+      },
+      {
+        "score": 0.0842456171906755,
+        "url": "https://de.wikipedia.org/wiki/Alle_Menschen_werden_Br%C3%BCder"
+      },
+      {
+        "score": 0.06795791486052749,
+        "url": "https://de.wikipedia.org/wiki/Peter_Hinnen"
+      },
+      {
+        "score": 0.06851537333074552,
+        "url": "https://de.wikipedia.org/wiki/Deutsche_Gesellschaft_f%C3%BCr_Hochschuldidaktik"
+      },
+      {
+        "score": 0.058966684300998336,
+        "url": "https://de.wikipedia.org/wiki/Recht_auf_ein_faires_Verfahren"
+      },
+      {
+        "score": 0.06996795445821946,
+        "url": "https://de.wikipedia.org/wiki/Berlin-Haselhorst"
+      },
+      {
+        "score": 0.07018957667026214,
+        "url": "https://de.wikipedia.org/wiki/Peter-Heinz_Seraphim"
+      },
+      {
+        "score": 0.09829899871810073,
+        "url": "https://de.wikipedia.org/wiki/The_Verge"
+      },
+      {
+        "score": 0.05918568466674484,
+        "url": "https://de.wikipedia.org/wiki/X_Factor_Malta_2020"
+      },
+      {
+        "score": 0.08794453716422317,
+        "url": "https://de.wikipedia.org/wiki/Villingen-Schwenningen"
+      },
+      {
+        "score": 0.05178783220316289,
+        "url": "https://de.wikipedia.org/wiki/John_Barrymore"
+      },
+      {
+        "score": 0.08362100834310279,
+        "url": "https://de.wikipedia.org/wiki/Sheffield"
+      },
+      {
+        "score": 0.11122669821156553,
+        "url": "https://de.wikipedia.org/wiki/Unverletzlichkeit_des_Eigentums"
+      },
+      {
+        "score": 0.043013564288015185,
+        "url": "https://de.wikipedia.org/wiki/Sprachenfreiheit"
+      },
+      {
+        "score": 0.0717955536093535,
+        "url": "https://de.wikipedia.org/wiki/Night_of_the_Proms"
+      },
+      {
+        "score": 0.08476442902844586,
+        "url": "https://de.wikipedia.org/wiki/Zentralismus"
+      },
+      {
+        "score": 0.07444085691905208,
+        "url": "https://de.wikipedia.org/wiki/M%C3%A4ander"
+      },
+      {
+        "score": 0.059226396710864444,
+        "url": "https://de.wikipedia.org/wiki/Only_You_(And_You_Alone)"
+      },
+      {
+        "score": 0.10303018929054394,
+        "url": "https://de.wikipedia.org/wiki/Zunft"
+      },
+      {
+        "score": 0.06334296334286886,
+        "url": "https://de.wikipedia.org/wiki/Die_Antwort_kennt_nur_der_Wind"
+      },
+      {
+        "score": 0.01897822992739215,
+        "url": "https://de.wikipedia.org/wiki/Mahananda"
+      },
+      {
+        "score": 0.11183953454792589,
+        "url": "https://de.wikipedia.org/wiki/Iwrit"
+      },
+      {
+        "score": 0.044382937435842665,
+        "url": "https://de.wikipedia.org/wiki/Ingeborg_Lapsien"
+      },
+      {
+        "score": 0.0659683710467974,
+        "url": "https://de.wikipedia.org/wiki/Karl_Florenz"
+      },
+      {
+        "score": 0.05150242045361826,
+        "url": "https://de.wikipedia.org/wiki/Alejandro_Zaffaroni"
+      },
+      {
+        "score": 0.05151303565492743,
+        "url": "https://de.wikipedia.org/wiki/Rockband"
+      },
+      {
+        "score": 0.16422780823626462,
+        "url": "https://de.wikipedia.org/wiki/Implizites_Lernen"
+      },
+      {
+        "score": 0.04856500856591768,
+        "url": "https://de.wikipedia.org/wiki/Joan_Osborne"
+      },
+      {
+        "score": 0.0512646421754705,
+        "url": "https://de.wikipedia.org/wiki/Exerzieren"
+      },
+      {
+        "score": 0.05085888742591749,
+        "url": "https://de.wikipedia.org/wiki/Hemmschwelle"
+      },
+      {
+        "score": 0.08203885564808894,
+        "url": "https://de.wikipedia.org/wiki/Verein_f%C3%BCr_die_Geschichte_Berlins"
+      },
+      {
+        "score": 0.050717191040555075,
+        "url": "https://de.wikipedia.org/wiki/Johnny_B"
+      },
+      {
+        "score": 0.043910416886056514,
+        "url": "https://de.wikipedia.org/wiki/Fluglehrer"
+      },
+      {
+        "score": 0.08240767273574703,
+        "url": "https://de.wikipedia.org/wiki/River_Deep_%E2%80%93_Mountain_High"
+      },
+      {
+        "score": 0.0673337194201136,
+        "url": "https://de.wikipedia.org/wiki/Kommunalwahlen_in_Baden-W%C3%BCrttemberg_2024"
+      },
+      {
+        "score": 0.04596539326690933,
+        "url": "https://de.wikipedia.org/wiki/Yorkshire_and_the_Humber"
+      },
+      {
+        "score": 0.05090596181179349,
+        "url": "https://de.wikipedia.org/wiki/Reichsforschungssiedlung_Haselhorst"
+      },
+      {
+        "score": 0.0725353838527032,
+        "url": "https://de.wikipedia.org/wiki/Orales_osmotisches_System"
+      },
+      {
+        "score": 0.05348710942726734,
+        "url": "https://de.wikipedia.org/wiki/John_Austin_(Rechtsphilosoph)"
+      },
+      {
+        "score": 0.08698047079543977,
+        "url": "https://de.wikipedia.org/wiki/Eigentum_(Deutschland)"
+      },
+      {
+        "score": 0.04901220640258327,
+        "url": "https://de.wikipedia.org/wiki/Stardust_(Lena-Meyer-Landrut-Lied)"
+      },
+      {
+        "score": 0.04778775622615679,
+        "url": "https://de.wikipedia.org/wiki/New_York_(Zeitschrift)"
+      },
+      {
+        "score": 0.06687929702729356,
+        "url": "https://de.wikipedia.org/wiki/Liturgie"
+      },
+      {
+        "score": 0.07357620798805128,
+        "url": "https://de.wikipedia.org/wiki/Yellowknife_(Stadt)"
+      },
+      {
+        "score": 0.07782337910593264,
+        "url": "https://de.wikipedia.org/wiki/Bundesministerium_f%C3%BCr_gesamtdeutsche_Fragen"
+      },
+      {
+        "score": 0.06117775264205526,
+        "url": "https://de.wikipedia.org/wiki/Kaiserliche_Universit%C3%A4t_Tokio"
+      },
+      {
+        "score": 0.02624597305169116,
+        "url": "https://de.wikipedia.org/wiki/Gro%C3%9Fer_M%C3%A4ander"
+      },
+      {
+        "score": 0.10054834992676392,
+        "url": "https://de.wikipedia.org/wiki/Komodowaran"
+      },
+      {
+        "score": 0.03369406956803157,
+        "url": "https://de.wikipedia.org/wiki/Andr%C3%A9_Falcon"
+      },
+      {
+        "score": 0.08198377190577509,
+        "url": "https://de.wikipedia.org/wiki/Freie_Universit%C3%A4t_Berlin"
+      },
+      {
+        "score": 0.09395022116005847,
+        "url": "https://de.wikipedia.org/wiki/Philipps-Universit%C3%A4t_Marburg"
+      },
+      {
+        "score": 0.05723476799343869,
+        "url": "https://de.wikipedia.org/wiki/Maha-Quidan"
+      },
+      {
+        "score": 0.07564933962992693,
+        "url": "https://de.wikipedia.org/wiki/Sprachen_in_Israel"
+      },
+      {
+        "score": 0.04280550601944939,
+        "url": "https://de.wikipedia.org/wiki/Marcus_K%C3%B6nig"
+      },
+      {
+        "score": 0.05964780052272835,
+        "url": "https://de.wikipedia.org/wiki/Standing_in_the_Shadows_of_Motown"
+      },
+      {
+        "score": 0.07371671036081459,
+        "url": "https://de.wikipedia.org/wiki/Liqui%C3%A7%C3%A1_(Gemeinde)"
+      },
+      {
+        "score": 0.08042652048199074,
+        "url": "https://de.wikipedia.org/wiki/Manufahi"
+      },
+      {
+        "score": 0.0742265943271838,
+        "url": "https://de.wikipedia.org/wiki/Satan"
+      },
+      {
+        "score": 0.04940051938208504,
+        "url": "https://de.wikipedia.org/wiki/Das_wissenschaftliche_Bibellexikon_im_Internet"
+      },
+      {
+        "score": 0.10672817078094037,
+        "url": "https://de.wikipedia.org/wiki/Bebauungsplan_(Deutschland)"
+      },
+      {
+        "score": 0.012027588762947346,
+        "url": "https://de.wikipedia.org/wiki/Yellowknife_River"
+      },
+      {
+        "score": 0.03766109418739975,
+        "url": "https://de.wikipedia.org/wiki/Adolf_Zeller"
+      },
+      {
+        "score": 0.10041506330653127,
+        "url": "https://de.wikipedia.org/wiki/Naturschutzrecht"
+      },
+      {
+        "score": 0.06698542353279675,
+        "url": "https://de.wikipedia.org/wiki/Verarbeitung_(Recht)"
+      },
+      {
+        "score": 0.07319784755273341,
+        "url": "https://de.wikipedia.org/wiki/Athapasken-Sprachen"
+      },
+      {
+        "score": 0.07691170904754645,
+        "url": "https://de.wikipedia.org/wiki/Lew_Nikolajewitsch_Tolstoi"
+      },
+      {
+        "score": 0.07782337910593264,
+        "url": "https://de.wikipedia.org/wiki/Bundesministerium_f%C3%BCr_innerdeutsche_Beziehungen"
+      },
+      {
+        "score": 0.025876647673645666,
+        "url": "https://de.wikipedia.org/wiki/Liste_der_Universit%C3%A4ten_und_Hochschulen_in_Japan"
+      },
+      {
+        "score": 0.06195340900982166,
+        "url": "https://de.wikipedia.org/wiki/Discovery-System"
+      },
+      {
+        "score": 0.08591082986448155,
+        "url": "https://de.wikipedia.org/wiki/Die_Linke"
+      },
+      {
+        "score": 0.09387973041797454,
+        "url": "https://de.wikipedia.org/wiki/Wasserkraftwerk"
+      },
+      {
+        "score": 0.018297906325830903,
+        "url": "https://de.wikipedia.org/wiki/UTC%E2%88%927"
+      },
+      {
+        "score": 0.030079532062800507,
+        "url": "https://de.wikipedia.org/wiki/Yellowknife_Airport"
+      },
+      {
+        "score": 0.03930632523505958,
+        "url": "https://de.wikipedia.org/wiki/Yellowknife_(Volk)"
+      },
+      {
+        "score": 0.058104503931968664,
+        "url": "https://de.wikipedia.org/wiki/Fred_Bertelmann"
+      },
+      {
+        "score": 0.07679995903765321,
+        "url": "https://de.wikipedia.org/wiki/Kommunalwahl_in_N%C3%BCrnberg_2020"
+      },
+      {
+        "score": 0.04929868669966693,
+        "url": "https://de.wikipedia.org/wiki/The_Jackson_Five"
+      },
+      {
+        "score": 0.08222048052240563,
+        "url": "https://de.wikipedia.org/wiki/Bahasa_Indonesia"
+      },
+      {
+        "score": 0.0735860520954298,
+        "url": "https://de.wikipedia.org/wiki/Wovon_die_Menschen_leben"
+      },
+      {
+        "score": 0.06459288750091732,
+        "url": "https://de.wikipedia.org/wiki/Der_Mensch_und_die_Biosph%C3%A4re"
+      },
+      {
+        "score": 0.05040744555484597,
+        "url": "https://de.wikipedia.org/wiki/Z-Chromosom"
+      },
+      {
+        "score": 0.07974371595497183,
+        "url": "https://de.wikipedia.org/wiki/Rebellionen_in_Portugiesisch-Timor_(1860%E2%80%931912)"
+      },
+      {
+        "score": 0.0725025246859338,
+        "url": "https://de.wikipedia.org/wiki/Wanra"
+      },
+      {
+        "score": 0.07319784755273341,
+        "url": "https://de.wikipedia.org/wiki/Athapaskische_Sprachen"
+      },
+      {
+        "score": 0.06430043549715578,
+        "url": "https://de.wikipedia.org/wiki/Bar-Ilan-Universit%C3%A4t"
+      },
+      {
+        "score": 0.13483910177564826,
+        "url": "https://de.wikipedia.org/wiki/Wildnis"
+      },
+      {
+        "score": 0.07319368068240396,
+        "url": "https://de.wikipedia.org/wiki/Schadstoff"
+      },
+      {
+        "score": 0.03468413874930561,
+        "url": "https://de.wikipedia.org/wiki/Transliteration"
+      },
+      {
+        "score": 0.0932377486666274,
+        "url": "https://de.wikipedia.org/wiki/Tula"
+      },
+      {
+        "score": 0.08342189076391504,
+        "url": "https://de.wikipedia.org/wiki/Deutsche_Besetzung_Polens_1939%E2%80%931945"
+      },
+      {
+        "score": 0.0570205339128118,
+        "url": "https://de.wikipedia.org/wiki/Treibhausgas-Emissionshandelsgesetz"
+      },
+      {
+        "score": 0.05647689026265093,
+        "url": "https://de.wikipedia.org/wiki/Sandy_Nelson"
+      },
+      {
+        "score": 0.05208935623888358,
+        "url": "https://de.wikipedia.org/wiki/Renewable_and_Sustainable_Energy_Reviews"
+      },
+      {
+        "score": 0.042055689463157214,
+        "url": "https://de.wikipedia.org/wiki/Tolstoi_(Adelsgeschlecht)"
+      },
+      {
+        "score": 0.04431488715829536,
+        "url": "https://de.wikipedia.org/wiki/Mishal_Husain"
+      },
+      {
+        "score": 0.012802188393019656,
+        "url": "https://de.wikipedia.org/wiki/Tolstoi_(Begriffskl%C3%A4rung)"
+      },
+      {
+        "score": 0.101649861087832,
+        "url": "https://de.wikipedia.org/wiki/Waise"
+      },
+      {
+        "score": 0.06519625918760755,
+        "url": "https://de.wikipedia.org/wiki/Links_(politische_Partei)"
+      },
+      {
+        "score": 0.10444799678337584,
+        "url": "https://de.wikipedia.org/wiki/Bundesministerium_f%C3%BCr_Forschung,_Technologie_und_Raumfahrt"
+      },
+      {
+        "score": 0.04343679052005132,
+        "url": "https://de.wikipedia.org/wiki/Bibliothek_2.0"
+      },
+      {
+        "score": 0.06415476832166979,
+        "url": "https://de.wikipedia.org/wiki/Buch_der_Sprichw%C3%B6rter"
+      },
+      {
+        "score": 0.1186031574631686,
+        "url": "https://de.wikipedia.org/wiki/Malaiische_Sprache"
+      },
+      {
+        "score": 0.03965190688919957,
+        "url": "https://de.wikipedia.org/wiki/The_Wilderness_Society"
+      },
+      {
+        "score": 0.054833963633752654,
+        "url": "https://de.wikipedia.org/wiki/Canadian_English"
+      },
+      {
+        "score": 0.062083320143276464,
+        "url": "https://de.wikipedia.org/wiki/Vermischung_(Recht)"
+      },
+      {
+        "score": 0.01598620631106885,
+        "url": "https://de.wikipedia.org/wiki/Liste_der_Nummer-eins-Hits_in_den_USA_(1966)"
+      },
+      {
+        "score": 0.12261517867554877,
+        "url": "https://de.wikipedia.org/wiki/Akkadische_Sprache"
+      },
+      {
+        "score": 0.042086495503371665,
+        "url": "https://de.wikipedia.org/wiki/Sera_Team"
+      },
+      {
+        "score": 0.058479330679986716,
+        "url": "https://de.wikipedia.org/wiki/Watch_Indonesia!"
+      },
+      {
+        "score": 0.04195486879829198,
+        "url": "https://de.wikipedia.org/wiki/The_Jacksons_(Album)"
+      },
+      {
+        "score": 0.0506297814581373,
+        "url": "https://de.wikipedia.org/wiki/Zyanose"
+      },
+      {
+        "score": 0.04905024817407763,
+        "url": "https://de.wikipedia.org/wiki/Widmung_(Recht)"
+      },
+      {
+        "score": 0.06459288750091732,
+        "url": "https://de.wikipedia.org/wiki/Biosph%C3%A4renreservat"
+      },
+      {
+        "score": 0.01171788940492715,
+        "url": "https://de.wikipedia.org/wiki/Wildnis_(Begriffskl%C3%A4rung)"
+      },
+      {
+        "score": 0.06286166190583208,
+        "url": "https://de.wikipedia.org/wiki/Yellowstone-Nationalpark"
+      },
+      {
+        "score": 0.034420753726295814,
+        "url": "https://de.wikipedia.org/wiki/Wilderness_Area_(Vereinigte_Staaten)"
+      },
+      {
+        "score": 0.06601191101415502,
+        "url": "https://de.wikipedia.org/wiki/Unified_Energy_System"
+      },
+      {
+        "score": 0.09624410332890189,
+        "url": "https://de.wikipedia.org/wiki/Gonosom"
+      },
+      {
+        "score": 0.06946640740871024,
+        "url": "https://de.wikipedia.org/wiki/Jewish_Agency_for_Israel"
+      },
+      {
+        "score": 0.06493875011379102,
+        "url": "https://de.wikipedia.org/wiki/Kloster_Montserrat"
+      },
+      {
+        "score": 0.04182347781105751,
+        "url": "https://de.wikipedia.org/wiki/Horst_Keitel"
+      },
+      {
+        "score": 0.07145457583697165,
+        "url": "https://de.wikipedia.org/wiki/Web_of_Science"
+      },
+      {
+        "score": 0.11341076965565675,
+        "url": "https://de.wikipedia.org/wiki/N%C3%BCrnberger_Prozess_gegen_die_Hauptkriegsverbrecher"
+      },
+      {
+        "score": 0.049279986100781804,
+        "url": "https://de.wikipedia.org/wiki/Zentralrussland"
+      },
+      {
+        "score": 0.09474799874891315,
+        "url": "https://de.wikipedia.org/wiki/Wikipedia:Formatvorlage_Sprache"
+      },
+      {
+        "score": 0.07873539641829447,
+        "url": "https://de.wikipedia.org/wiki/Bundestagswahl_1998"
+      },
+      {
+        "score": 0.07475308698417256,
+        "url": "https://de.wikipedia.org/wiki/Jan_and_Dean"
+      },
+      {
+        "score": 0.039995296576219086,
+        "url": "https://de.wikipedia.org/wiki/Deutsche_Emissionshandelsstelle"
+      },
+      {
+        "score": 0.07758472249029941,
+        "url": "https://de.wikipedia.org/wiki/Yala_(Provinz)"
+      },
+      {
+        "score": 0.08666370549297818,
+        "url": "https://de.wikipedia.org/wiki/Westgermanische_Sprachen"
+      },
+      {
+        "score": 0.056134111371785776,
+        "url": "https://de.wikipedia.org/wiki/Eliyahu_Koren"
+      },
+      {
+        "score": 0.07631437045784337,
+        "url": "https://de.wikipedia.org/wiki/Sumerische_Religion"
+      },
+      {
+        "score": 0.04976668939513863,
+        "url": "https://de.wikipedia.org/wiki/Smalltown_Boy"
+      },
+      {
+        "score": 0.059635797748324476,
+        "url": "https://de.wikipedia.org/wiki/Heliopolis"
+      },
+      {
+        "score": 0.04929868669966693,
+        "url": "https://de.wikipedia.org/wiki/The_Jacksons"
+      },
+      {
+        "score": 0.038842690601849715,
+        "url": "https://de.wikipedia.org/wiki/Henry-Mathews-Preis"
+      },
+      {
+        "score": 0.0921937852454573,
+        "url": "https://de.wikipedia.org/wiki/Ausgestorbene_Sprache"
+      },
+      {
+        "score": 0.08459414443871129,
+        "url": "https://de.wikipedia.org/wiki/Funktion_(Objekt)"
+      },
+      {
+        "score": 0.05202565656508783,
+        "url": "https://de.wikipedia.org/wiki/Liquidation"
+      },
+      {
+        "score": 0.0952101984217766,
+        "url": "https://de.wikipedia.org/wiki/Rorschach-Test"
+      },
+      {
+        "score": 0.028920765763385977,
+        "url": "https://de.wikipedia.org/wiki/Ur-Finno-Ugrisch"
+      },
+      {
+        "score": 0.06229581671508234,
+        "url": "https://de.wikipedia.org/wiki/Institute_for_Scientific_Information"
+      },
+      {
+        "score": 0.07430501022353753,
+        "url": "https://de.wikipedia.org/wiki/Natan_Scharanski"
+      },
+      {
+        "score": 0.07233627252974228,
+        "url": "https://de.wikipedia.org/wiki/Biosph%C3%A4renreservat_Flusslandschaft_Elbe-Brandenburg"
+      },
+      {
+        "score": 0.06427824747237995,
+        "url": "https://de.wikipedia.org/wiki/Black-Canyon-of-the-Gunnison-Nationalpark"
+      },
+      {
+        "score": 0.03545164104750496,
+        "url": "https://de.wikipedia.org/wiki/Folsom-Expedition"
+      },
+      {
+        "score": 0.05725680743772535,
+        "url": "https://de.wikipedia.org/wiki/EUROPARC_Deutschland"
+      },
+      {
+        "score": 0.12427910128453892,
+        "url": "https://de.wikipedia.org/wiki/Katalanische_Sprache"
+      },
+      {
+        "score": 0.048277111776150454,
+        "url": "https://de.wikipedia.org/wiki/Londoner_Statut"
+      },
+      {
+        "score": 0.0529219376904625,
+        "url": "https://de.wikipedia.org/wiki/Molecular_Biology_and_Evolution"
+      },
+      {
+        "score": 0.060633861299581426,
+        "url": "https://de.wikipedia.org/wiki/Neue_Berliner_Illustrierte"
+      },
+      {
+        "score": 0.03197134448899845,
+        "url": "https://de.wikipedia.org/wiki/1._M%C3%A4rz"
+      },
+      {
+        "score": 0.050869861701003403,
+        "url": "https://de.wikipedia.org/wiki/Amarna-Zeit"
+      },
+      {
+        "score": 0.0614716370820483,
+        "url": "https://de.wikipedia.org/wiki/Max_H%C3%B6lz._Ein_deutsches_Lehrst%C3%BCck"
+      },
+      {
+        "score": 0.02910336106020777,
+        "url": "https://de.wikipedia.org/wiki/Hemizygotie"
+      },
+      {
+        "score": 0.02950770693683924,
+        "url": "https://de.wikipedia.org/wiki/Die_Jacksons_%E2%80%93_Ein_amerikanischer_Traum"
+      },
+      {
+        "score": 0.05554130648442683,
+        "url": "https://de.wikipedia.org/wiki/Kriegsverbrecherprozess_von_Krasnodar"
+      },
+      {
+        "score": 0.07407136423719145,
+        "url": "https://de.wikipedia.org/wiki/Billy_J._Kramer_%26_the_Dakotas"
+      },
+      {
+        "score": 0.03788428026149303,
+        "url": "https://de.wikipedia.org/wiki/Aufkirchen_(Berg)"
+      },
+      {
+        "score": 0.10951228604027527,
+        "url": "https://de.wikipedia.org/wiki/Teleologie"
+      },
+      {
+        "score": 0.041060040963611724,
+        "url": "https://de.wikipedia.org/wiki/M%C3%BCang"
+      },
+      {
+        "score": 0.028497142585607784,
+        "url": "https://de.wikipedia.org/wiki/Nammu"
+      },
+      {
+        "score": 0.03455070630710718,
+        "url": "https://de.wikipedia.org/wiki/Yala"
+      },
+      {
+        "score": 0.044443265865974135,
+        "url": "https://de.wikipedia.org/wiki/1980"
+      },
+      {
+        "score": 0.09058094875751047,
+        "url": "https://de.wikipedia.org/wiki/3-D-Test_f%C3%BCr_Antisemitismus"
+      },
+      {
+        "score": 0.061810398803129836,
+        "url": "https://de.wikipedia.org/wiki/Der_Henker_von_London_(1963)"
+      },
+      {
+        "score": 0.03430120051900232,
+        "url": "https://de.wikipedia.org/wiki/Wenn_Ludwig_ins_Man%C3%B6ver_zieht"
+      },
+      {
+        "score": 0.06348727190388166,
+        "url": "https://de.wikipedia.org/wiki/Charta_zur_F%C3%B6rderung_der_katalanischen_Sprache"
+      },
+      {
+        "score": 0.0791321636639197,
+        "url": "https://de.wikipedia.org/wiki/Gneis"
+      },
+      {
+        "score": 0.047930197702068626,
+        "url": "https://de.wikipedia.org/wiki/Gro%C3%9Fer_Feuerfalter"
+      },
+      {
+        "score": 0.06668080967290525,
+        "url": "https://de.wikipedia.org/wiki/Naturpark"
+      },
+      {
+        "score": 0.05558346850358563,
+        "url": "https://de.wikipedia.org/wiki/Nationalpark_Hunsr%C3%BCck-Hochwald"
+      },
+      {
+        "score": 0.03171424717705672,
+        "url": "https://de.wikipedia.org/wiki/Naturpark_M%C3%A4rkische_Schweiz"
+      },
+      {
+        "score": 0.06701633692483845,
+        "url": "https://de.wikipedia.org/wiki/Hier_und_heute"
+      },
+      {
+        "score": 0.0639699536473211,
+        "url": "https://de.wikipedia.org/wiki/Zeit_im_Bild_(Zeitschrift)"
+      },
+      {
+        "score": 0.06403664939878805,
+        "url": "https://de.wikipedia.org/wiki/Gefahr"
+      },
+      {
+        "score": 0.05725680743772535,
+        "url": "https://de.wikipedia.org/wiki/Nationale_Naturlandschaften"
+      },
+      {
+        "score": 0.09521494311127698,
+        "url": "https://de.wikipedia.org/wiki/Beriberi"
+      },
+      {
+        "score": 0.08059065584445431,
+        "url": "https://de.wikipedia.org/wiki/The_Coasters"
+      },
+      {
+        "score": 0.10623605116081282,
+        "url": "https://de.wikipedia.org/wiki/Gaskrieg_w%C3%A4hrend_des_Ersten_Weltkrieges"
+      },
+      {
+        "score": 0.042609429514630204,
+        "url": "https://de.wikipedia.org/wiki/Gates-of-the-Arctic-Nationalpark"
+      },
+      {
+        "score": 0.028876794009308666,
+        "url": "https://de.wikipedia.org/wiki/Kabinett_Abela_II"
+      },
+      {
+        "score": 0.043279619386735135,
+        "url": "https://de.wikipedia.org/wiki/Bernhard_Minetti"
+      },
+      {
+        "score": 0.0608626575598193,
+        "url": "https://de.wikipedia.org/wiki/Au%C3%9Ferordentliche_Staatliche_Kommission"
+      },
+      {
+        "score": 0.023640773792705305,
+        "url": "https://de.wikipedia.org/wiki/Hans-Peter_Thielen"
+      },
+      {
+        "score": 0.14478373533304206,
+        "url": "https://de.wikipedia.org/wiki/Urknall"
+      },
+      {
+        "score": 0.046505851707299733,
+        "url": "https://de.wikipedia.org/wiki/Carlos_Borromeu_Duarte"
+      },
+      {
+        "score": 0.07010910083354101,
+        "url": "https://de.wikipedia.org/wiki/Versuch_und_Irrtum"
+      },
+      {
+        "score": 0.09221419378124496,
+        "url": "https://de.wikipedia.org/wiki/International_Physicians_for_the_Prevention_of_Nuclear_War"
+      },
+      {
+        "score": 0.11470950320235494,
+        "url": "https://de.wikipedia.org/wiki/Joseph_McCarthy"
+      },
+      {
+        "score": 0.025135873587227596,
+        "url": "https://de.wikipedia.org/wiki/Radio_NORA"
+      },
+      {
+        "score": 0.04900287793680297,
+        "url": "https://de.wikipedia.org/wiki/Gestein_des_Jahres"
+      },
+      {
+        "score": 0.08534792245859732,
+        "url": "https://de.wikipedia.org/wiki/Ch._Links_Verlag"
+      },
+      {
+        "score": 0.06348727190388166,
+        "url": "https://de.wikipedia.org/wiki/Charta_zur_F%C3%B6rderung_des_Katalanischen"
+      },
+      {
+        "score": 0.041243642206591206,
+        "url": "https://de.wikipedia.org/wiki/Jan_Weiss"
+      },
+      {
+        "score": 0.08077593846604558,
+        "url": "https://de.wikipedia.org/wiki/Grimme-Preis_2014"
+      },
+      {
+        "score": 0.06161595263568498,
+        "url": "https://de.wikipedia.org/wiki/Europawahl_2019"
+      },
+      {
+        "score": 0.05597151857742114,
+        "url": "https://de.wikipedia.org/wiki/Mensch_und_Bestie"
+      },
+      {
+        "score": 0.08940877560463129,
+        "url": "https://de.wikipedia.org/wiki/European_Monitoring_Centre_on_Racism_and_Xenophobia"
+      },
+      {
+        "score": 0.05419126455054733,
+        "url": "https://de.wikipedia.org/wiki/Schirmherr"
+      },
+      {
+        "score": 0.04810643942186531,
+        "url": "https://de.wikipedia.org/wiki/Songs_of_the_Century"
+      },
+      {
+        "score": 0.0710819374893889,
+        "url": "https://de.wikipedia.org/wiki/Versicherte_Person"
+      },
+      {
+        "score": 0.037380657754423785,
+        "url": "https://de.wikipedia.org/wiki/Millowitsch-Theater"
+      },
+      {
+        "score": 0.03741185367300856,
+        "url": "https://de.wikipedia.org/wiki/Liste_der_Naturparks_in_Deutschland"
+      },
+      {
+        "score": 0.07982265837092173,
+        "url": "https://de.wikipedia.org/wiki/Rat_f%C3%BCr_Nachhaltige_Entwicklung"
+      },
+      {
+        "score": 0.07968510594927297,
+        "url": "https://de.wikipedia.org/wiki/Menschen_im_Netz"
+      },
+      {
+        "score": 0.03971354517157287,
+        "url": "https://de.wikipedia.org/wiki/Resorption"
+      },
+      {
+        "score": 0.11007437573523488,
+        "url": "https://de.wikipedia.org/wiki/Oldenburg_(Oldenburg)"
+      },
+      {
+        "score": 0.07379314228504366,
+        "url": "https://de.wikipedia.org/wiki/John_Singer_Sargent"
+      },
+      {
+        "score": 0.1023106635383954,
+        "url": "https://de.wikipedia.org/wiki/Clara_Immerwahr"
+      },
+      {
+        "score": 0.08055123083995691,
+        "url": "https://de.wikipedia.org/wiki/Deutsch-Sowjetischer_Krieg"
+      },
+      {
+        "score": 0.09910335520736491,
+        "url": "https://de.wikipedia.org/wiki/Brute-Force-Methode"
+      },
+      {
+        "score": 0.0692593040115426,
+        "url": "https://de.wikipedia.org/wiki/American_Academy_of_Arts_and_Letters"
+      },
+      {
+        "score": 0.07807920017087185,
+        "url": "https://de.wikipedia.org/wiki/Good_Night,_and_Good_Luck"
+      },
+      {
+        "score": 0.051342091082574044,
+        "url": "https://de.wikipedia.org/wiki/Liste_der_Friedensnobelpreistr%C3%A4ger"
+      },
+      {
+        "score": 0.09221419378124496,
+        "url": "https://de.wikipedia.org/wiki/IPPNW"
+      },
+      {
+        "score": 0.03570604821169153,
+        "url": "https://de.wikipedia.org/wiki/Ukas_43"
+      },
+      {
+        "score": 0.05003609169736938,
+        "url": "https://de.wikipedia.org/wiki/Agentur_der_Europ%C3%A4ischen_Union"
+      },
+      {
+        "score": 0.057024434201980286,
+        "url": "https://de.wikipedia.org/wiki/Oliver_Stokowski"
+      },
+      {
+        "score": 0.07477077239347643,
+        "url": "https://de.wikipedia.org/wiki/Restrisiko_%E2%80%93_Ein_Film_%C3%BCber_Menschen_im_Ma%C3%9Fregelvollzug"
+      },
+      {
+        "score": 0.06737766327244346,
+        "url": "https://de.wikipedia.org/wiki/Verh%C3%A4ltniswahlrecht"
+      },
+      {
+        "score": 0.07385171189848218,
+        "url": "https://de.wikipedia.org/wiki/Louis_Renault_(Jurist)"
+      },
+      {
+        "score": 0.1400377018290439,
+        "url": "https://de.wikipedia.org/wiki/Sitzzuteilungsverfahren"
+      },
+      {
+        "score": 0.08702450924163366,
+        "url": "https://de.wikipedia.org/wiki/Geschichte_des_Alten_%C3%84gypten"
+      },
+      {
+        "score": 0.07346200556269984,
+        "url": "https://de.wikipedia.org/wiki/The_Encyclopedia_of_Science_Fiction"
+      },
+      {
+        "score": 0.08002993268792961,
+        "url": "https://de.wikipedia.org/wiki/Hochschule_f%C3%BCr_Musik_und_Theater_%E2%80%9EFelix_Mendelssohn_Bartholdy%E2%80%9C_Leipzig"
+      },
+      {
+        "score": 0.07648677945953497,
+        "url": "https://de.wikipedia.org/wiki/Software-Industrie"
+      },
+      {
+        "score": 0.09743246975571997,
+        "url": "https://de.wikipedia.org/wiki/Lebensversicherung"
+      },
+      {
+        "score": 0.06505510694420436,
+        "url": "https://de.wikipedia.org/wiki/Corpo_di_spedizione_italiano_in_Russia"
+      },
+      {
+        "score": 0.022059696950777384,
+        "url": "https://de.wikipedia.org/wiki/Neun_Heilige"
+      },
+      {
+        "score": 0.03794525728722391,
+        "url": "https://de.wikipedia.org/wiki/Epoche_(Chronologie)"
+      },
+      {
+        "score": 0.042147473906350756,
+        "url": "https://de.wikipedia.org/wiki/Maggie_Mae_(Schlagers%C3%A4ngerin)"
+      },
+      {
+        "score": 0.10022906664924779,
+        "url": "https://de.wikipedia.org/wiki/Weihnachtshochwasser_2023/2024"
+      },
+      {
+        "score": 0.06374110722153442,
+        "url": "https://de.wikipedia.org/wiki/She_Works_Hard_for_the_Money"
+      },
+      {
+        "score": 0.0712063239192534,
+        "url": "https://de.wikipedia.org/wiki/SWR2_Wissen"
+      },
+      {
+        "score": 0.07546834519510412,
+        "url": "https://de.wikipedia.org/wiki/Sterling_and_Francine_Clark_Art_Institute"
+      },
+      {
+        "score": 0.08547162411598153,
+        "url": "https://de.wikipedia.org/wiki/Pugwash_Conferences_on_Science_and_World_Affairs"
+      },
+      {
+        "score": 0.1204631118027837,
+        "url": "https://de.wikipedia.org/wiki/Kolorektales_Karzinom"
+      },
+      {
+        "score": 0.07899188661061668,
+        "url": "https://de.wikipedia.org/wiki/Institute_for_Advanced_Sustainability_Studies"
+      },
+      {
+        "score": 0.06973582703003325,
+        "url": "https://de.wikipedia.org/wiki/The_Advocate"
+      },
+      {
+        "score": 0.07288530656870514,
+        "url": "https://de.wikipedia.org/wiki/Leiche"
+      },
+      {
+        "score": 0.07177239812014341,
+        "url": "https://de.wikipedia.org/wiki/Originalton"
+      },
+      {
+        "score": 0.059608730533541536,
+        "url": "https://de.wikipedia.org/wiki/Filmjahr_2013"
+      },
+      {
+        "score": 0.047973032037239516,
+        "url": "https://de.wikipedia.org/wiki/Ein_Tag,_der_nie_zu_Ende_geht"
+      },
+      {
+        "score": 0.08767915066195393,
+        "url": "https://de.wikipedia.org/wiki/Center_for_Civil_Liberties"
+      },
+      {
+        "score": 0.07978699132060976,
+        "url": "https://de.wikipedia.org/wiki/Hare/Niemeyer-Verfahren"
+      },
+      {
+        "score": 0.07316053012826086,
+        "url": "https://de.wikipedia.org/wiki/The_BMJ"
+      },
+      {
+        "score": 0.08533570667608183,
+        "url": "https://de.wikipedia.org/wiki/F%C3%BCr_immer_ein_M%C3%B6rder_%E2%80%93_Der_Fall_Ritter"
+      },
+      {
+        "score": 0.06737766327244346,
+        "url": "https://de.wikipedia.org/wiki/Verh%C3%A4ltniswahl"
+      },
+      {
+        "score": 0.05190495461567067,
+        "url": "https://de.wikipedia.org/wiki/Sue_Kaufman_Prize_for_First_Fiction"
+      },
+      {
+        "score": 0.07005803202957618,
+        "url": "https://de.wikipedia.org/wiki/Anwendungssoftware"
+      },
+      {
+        "score": 0.055472587059237105,
+        "url": "https://de.wikipedia.org/wiki/Biometrisches_Risiko"
+      },
+      {
+        "score": 0.06986505481728097,
+        "url": "https://de.wikipedia.org/wiki/British_Science_Fiction_Association_Award"
+      },
+      {
+        "score": 0.07216479330975047,
+        "url": "https://de.wikipedia.org/wiki/Exekutivagentur_f%C3%BCr_Innovation_und_Netze"
+      },
+      {
+        "score": 0.04529169187164456,
+        "url": "https://de.wikipedia.org/wiki/Stiftung_zur_F%C3%B6rderung_von_Bauforschungen"
+      },
+      {
+        "score": 0.06159561251872463,
+        "url": "https://de.wikipedia.org/wiki/Wikipedia:ISBNformalFalsch"
+      },
+      {
+        "score": 0.07440654345221528,
+        "url": "https://de.wikipedia.org/wiki/Meeresoberfl%C3%A4chentemperatur"
+      },
+      {
+        "score": 0.03588586348933975,
+        "url": "https://de.wikipedia.org/wiki/Underwriter_(Versicherungswesen)"
+      },
+      {
+        "score": 0.07131865191305738,
+        "url": "https://de.wikipedia.org/wiki/Tontine"
+      },
+      {
+        "score": 0.018697285936202162,
+        "url": "https://de.wikipedia.org/wiki/17._Mai"
+      },
+      {
+        "score": 0.07512820861327071,
+        "url": "https://de.wikipedia.org/wiki/Paris-Lodron-Universit%C3%A4t_Salzburg"
+      },
+      {
+        "score": 0.06670433459916719,
+        "url": "https://de.wikipedia.org/wiki/Wintereinbruch_in_S%C3%BCddeutschland_Dezember_2023"
+      },
+      {
+        "score": 0.07288530656870514,
+        "url": "https://de.wikipedia.org/wiki/Leichnam"
+      },
+      {
+        "score": 0.04675652834718824,
+        "url": "https://de.wikipedia.org/wiki/Peter_Landesman"
+      },
+      {
+        "score": 0.07899652368156108,
+        "url": "https://de.wikipedia.org/wiki/Mark_G._Lawrence"
+      },
+      {
+        "score": 0.02373436867295073,
+        "url": "https://de.wikipedia.org/wiki/Flagge_Maltas"
+      },
+      {
+        "score": 0.0633084189092369,
+        "url": "https://de.wikipedia.org/wiki/Mickey_Harte"
+      },
+      {
+        "score": 0.05878114770256882,
+        "url": "https://de.wikipedia.org/wiki/Armata_Italiana_in_Russia"
+      },
+      {
+        "score": 0.04181791719845406,
+        "url": "https://de.wikipedia.org/wiki/Internationale_Tonspur"
+      },
+      {
+        "score": 0.09778261860355411,
+        "url": "https://de.wikipedia.org/wiki/Digital_Equipment_Corporation"
+      },
+      {
+        "score": 0.07583681810427038,
+        "url": "https://de.wikipedia.org/wiki/The_Moscow_Times"
+      },
+      {
+        "score": 0.10200357534941923,
+        "url": "https://de.wikipedia.org/wiki/Welt.de"
+      },
+      {
+        "score": 0.047993888337309276,
+        "url": "https://de.wikipedia.org/wiki/British_Medical_Association"
+      },
+      {
+        "score": 0.06883895130330066,
+        "url": "https://de.wikipedia.org/wiki/British_Science_Fiction_Association"
+      },
+      {
+        "score": 0.07512820861327071,
+        "url": "https://de.wikipedia.org/wiki/Universit%C3%A4t_Salzburg"
+      },
+      {
+        "score": 0.04786510225872066,
+        "url": "https://de.wikipedia.org/wiki/16_Uhr_50_ab_Paddington_(Roman)"
+      },
+      {
+        "score": 0.06494654331782931,
+        "url": "https://de.wikipedia.org/wiki/Die_Geburt_einer_Nation"
+      },
+      {
+        "score": 0.05328961069550531,
+        "url": "https://de.wikipedia.org/wiki/Madison_Square_Garden"
+      },
+      {
+        "score": 0.054662867962354804,
+        "url": "https://de.wikipedia.org/wiki/Thomas_Hare_(Jurist)"
+      },
+      {
+        "score": 0.03928730339009074,
+        "url": "https://de.wikipedia.org/wiki/Christopher_Evans_(Autor)"
+      },
+      {
+        "score": 0.05625337685303312,
+        "url": "https://de.wikipedia.org/wiki/Rainer_Tittelbach"
+      },
+      {
+        "score": 0.07950622167882065,
+        "url": "https://de.wikipedia.org/wiki/Salzgitter_AG"
+      },
+      {
+        "score": 0.05073382020125318,
+        "url": "https://de.wikipedia.org/wiki/Grad_(Winkel)"
+      },
+      {
+        "score": 0.06159561251872463,
+        "url": "https://de.wikipedia.org/wiki/Wikipedia:Internationale_Standardbuchnummer"
+      },
+      {
+        "score": 0.13799403665229035,
+        "url": "https://de.wikipedia.org/wiki/Lebensversicherungsmathematik"
+      },
+      {
+        "score": 0.10932095246280671,
+        "url": "https://de.wikipedia.org/wiki/Programmed_Data_Processor"
+      },
+      {
+        "score": 0.06674649974330424,
+        "url": "https://de.wikipedia.org/wiki/Vorwahl_(Politik)"
+      },
+      {
+        "score": 0.05171951533383778,
+        "url": "https://de.wikipedia.org/wiki/Matchbox_(Lied)"
+      },
+      {
+        "score": 0.04637664596175621,
+        "url": "https://de.wikipedia.org/wiki/Standort"
+      },
+      {
+        "score": 0.04347315334981929,
+        "url": "https://de.wikipedia.org/wiki/Museum_of_New_Zealand_Te_Papa_Tongarewa"
+      },
+      {
+        "score": 0.07510832561290066,
+        "url": "https://de.wikipedia.org/wiki/Pionier_(Milit%C3%A4r)"
+      },
+      {
+        "score": 0.06723240954278452,
+        "url": "https://de.wikipedia.org/wiki/Staat_im_Staate"
+      },
+      {
+        "score": 0.048583249091399425,
+        "url": "https://de.wikipedia.org/wiki/UMIT_Tirol"
+      },
+      {
+        "score": 0.0783724464444972,
+        "url": "https://de.wikipedia.org/wiki/KZ_Bergen-Belsen"
+      },
+      {
+        "score": 0.06627546212827312,
+        "url": "https://de.wikipedia.org/wiki/Bert-Donnepp-Preis"
+      },
+      {
+        "score": 0.06385825675396792,
+        "url": "https://de.wikipedia.org/wiki/WNBA"
+      },
+      {
+        "score": 0.08669321488335874,
+        "url": "https://de.wikipedia.org/wiki/PDP-1"
+      },
+      {
+        "score": 0.02007850367476522,
+        "url": "https://de.wikipedia.org/wiki/6._Mai"
+      },
+      {
+        "score": 0.05935371376198591,
+        "url": "https://de.wikipedia.org/wiki/Original_Equipment_Manufacturer"
+      },
+      {
+        "score": 0.03786822415016511,
+        "url": "https://de.wikipedia.org/wiki/Fandom"
+      },
+      {
+        "score": 0.04656251365540311,
+        "url": "https://de.wikipedia.org/wiki/Tom_Harkin"
+      },
+      {
+        "score": 0.05492274634701793,
+        "url": "https://de.wikipedia.org/wiki/McKim,_Mead,_and_White"
+      },
+      {
+        "score": 0.03991478186688892,
+        "url": "https://de.wikipedia.org/wiki/Lyzeum_(Hochschule)"
+      },
+      {
+        "score": 0.047643984806868725,
+        "url": "https://de.wikipedia.org/wiki/Brigitta_Z%C3%B6chling-Jud"
+      },
+      {
+        "score": 0.08812357164071688,
+        "url": "https://de.wikipedia.org/wiki/National_Association_for_the_Advancement_of_Colored_People"
+      },
+      {
+        "score": 0.14674161537241043,
+        "url": "https://de.wikipedia.org/wiki/Google_Earth"
+      },
+      {
+        "score": 0.06674591458502596,
+        "url": "https://de.wikipedia.org/wiki/Lodovico_Antonio_Muratori"
+      },
+      {
+        "score": 0.08212253271117276,
+        "url": "https://de.wikipedia.org/wiki/Beatles_for_Sale"
+      },
+      {
+        "score": 0.06060709058491938,
+        "url": "https://de.wikipedia.org/wiki/Wahl_des_Vorsitzenden_der_japanischen_Demokratischen_Partei"
+      },
+      {
+        "score": 0.06406545859013124,
+        "url": "https://de.wikipedia.org/wiki/Desma_Schuhmaschinen"
+      },
+      {
+        "score": 0.04404244104788368,
+        "url": "https://de.wikipedia.org/wiki/US-Wahl_2024"
+      },
+      {
+        "score": 0.031548132524735054,
+        "url": "https://de.wikipedia.org/wiki/St%C3%A4rke-_und_Ausr%C3%BCstungsnachweisung"
+      },
+      {
+        "score": 0.06301132109421023,
+        "url": "https://de.wikipedia.org/wiki/Christoph_Martin_Wieland"
+      },
+      {
+        "score": 0.04614850264457698,
+        "url": "https://de.wikipedia.org/wiki/Gro%C3%9F_Ilsede"
+      },
+      {
+        "score": 0.02640727215967738,
+        "url": "https://de.wikipedia.org/wiki/Heiliger_Geist"
+      },
+      {
+        "score": 0.04429357690039748,
+        "url": "https://de.wikipedia.org/wiki/Das_Geheimnis_des_Kosmopoliten-Ordens"
+      },
+      {
+        "score": 0.05935371376198591,
+        "url": "https://de.wikipedia.org/wiki/Erstausr%C3%BCster"
+      },
+      {
+        "score": 0.05928453549450553,
+        "url": "https://de.wikipedia.org/wiki/Peter_Turi"
+      },
+      {
+        "score": 0.0738559113770163,
+        "url": "https://de.wikipedia.org/wiki/Dekolonisierung"
+      },
+      {
+        "score": 0.06988819167612513,
+        "url": "https://de.wikipedia.org/wiki/Bernt_Engelmann"
+      },
+      {
+        "score": 0.02357202733364224,
+        "url": "https://de.wikipedia.org/wiki/Datenwort"
+      },
+      {
+        "score": 0.06601981358465003,
+        "url": "https://de.wikipedia.org/wiki/Gedenkorte_in_der_Heidmark"
+      },
+      {
+        "score": 0.07833367594214566,
+        "url": "https://de.wikipedia.org/wiki/Beamtentum"
+      },
+      {
+        "score": 0.08523693146336765,
+        "url": "https://de.wikipedia.org/wiki/Universit%C3%A4t_Augsburg"
+      },
+      {
+        "score": 0.04423095963695686,
+        "url": "https://de.wikipedia.org/wiki/Volker_Lilienthal"
+      },
+      {
+        "score": 0.05492274634701793,
+        "url": "https://de.wikipedia.org/wiki/McKim,_Mead_and_White"
+      },
+      {
+        "score": 0.03644934819498456,
+        "url": "https://de.wikipedia.org/wiki/Ulrike_Kaiser_(Journalistin)"
+      },
+      {
+        "score": 0.019283936288381723,
+        "url": "https://de.wikipedia.org/wiki/7._April"
+      },
+      {
+        "score": 0.04404244104788368,
+        "url": "https://de.wikipedia.org/wiki/Wahlen_in_den_Vereinigten_Staaten_2024"
+      },
+      {
+        "score": 0.14046482442613628,
+        "url": "https://de.wikipedia.org/wiki/Sonnenaufgang"
+      },
+      {
+        "score": 0.023139234425978494,
+        "url": "https://de.wikipedia.org/wiki/Uwe_Kammann"
+      },
+      {
+        "score": 0.09507091825550285,
+        "url": "https://de.wikipedia.org/wiki/Sh%C5%ABgiin-Wahl_2017"
+      },
+      {
+        "score": 0.09640493786912721,
+        "url": "https://de.wikipedia.org/wiki/Google_Earth_Outreach"
+      },
+      {
+        "score": 0.08155256394514424,
+        "url": "https://de.wikipedia.org/wiki/Don_Quijote"
+      },
+      {
+        "score": 0.0823331331255322,
+        "url": "https://de.wikipedia.org/wiki/Achim_(Landkreis_Verden)"
+      },
+      {
+        "score": 0.04430764526753938,
+        "url": "https://de.wikipedia.org/wiki/Afrikanisches_Jahr"
+      },
+      {
+        "score": 0.05710678049616298,
+        "url": "https://de.wikipedia.org/wiki/Peter_Engelbrecht_(Autor)"
+      },
+      {
+        "score": 0.04458414051562493,
+        "url": "https://de.wikipedia.org/wiki/O%C3%9Fmannstedter_Ausgabe"
+      },
+      {
+        "score": 0.058066659152918046,
+        "url": "https://de.wikipedia.org/wiki/Deutsche_Journalistenschule"
+      },
+      {
+        "score": 0.10015773314609733,
+        "url": "https://de.wikipedia.org/wiki/Universit%C3%A4t_des_Saarlandes"
+      },
+      {
+        "score": 0.06693841634760427,
+        "url": "https://de.wikipedia.org/wiki/WNBA_2017"
+      },
+      {
+        "score": 0.08856726169814487,
+        "url": "https://de.wikipedia.org/wiki/Bergen-Belsen-Prozess"
+      },
+      {
+        "score": 0.06385795602632569,
+        "url": "https://de.wikipedia.org/wiki/Beatles_for_Sale_(EP)"
+      },
+      {
+        "score": 0.09275819340261388,
+        "url": "https://de.wikipedia.org/wiki/S%C3%A3o_Tom%C3%A9_und_Pr%C3%ADncipe"
+      },
+      {
+        "score": 0.0689562890519447,
+        "url": "https://de.wikipedia.org/wiki/Republik_Kongo"
+      },
+      {
+        "score": 0.05814433931808763,
+        "url": "https://de.wikipedia.org/wiki/Panorama_(Magazin)"
+      },
+      {
+        "score": 0.052057328716255874,
+        "url": "https://de.wikipedia.org/wiki/Unterwegs_nach_Cold_Mountain"
+      },
+      {
+        "score": 0.06802492893717518,
+        "url": "https://de.wikipedia.org/wiki/Russen"
+      },
+      {
+        "score": 0.04133906452608792,
+        "url": "https://de.wikipedia.org/wiki/Lohheide"
+      },
+      {
+        "score": 0.07796147571918094,
+        "url": "https://de.wikipedia.org/wiki/P.E.N."
+      },
+      {
+        "score": 0.10624747285927465,
+        "url": "https://de.wikipedia.org/wiki/Fraunhofer-Institut_f%C3%BCr_Eingebettete_Systeme_und_Kommunikationstechnik_ESK"
+      },
+      {
+        "score": 0.08220279316625682,
+        "url": "https://de.wikipedia.org/wiki/Beamter_(Deutschland)"
+      },
+      {
+        "score": 0.04577661044162523,
+        "url": "https://de.wikipedia.org/wiki/Frank_Diez"
+      },
+      {
+        "score": 0.028801324583081763,
+        "url": "https://de.wikipedia.org/wiki/Purchase_(New_York)"
+      },
+      {
+        "score": 0.08590221095906447,
+        "url": "https://de.wikipedia.org/wiki/R%C3%BCckf%C3%BChrungsdienst_f%C3%BCr_Fremdenlegion%C3%A4re"
+      },
+      {
+        "score": 0.12122755980825126,
+        "url": "https://de.wikipedia.org/wiki/World_Wide_Fund_for_Nature"
+      },
+      {
+        "score": 0.04549709488200799,
+        "url": "https://de.wikipedia.org/wiki/Sozialdemokratische_Partei_(Japan)"
+      },
+      {
+        "score": 0.040155263737227644,
+        "url": "https://de.wikipedia.org/wiki/Morgenr%C3%B6te"
+      },
+      {
+        "score": 0.10211795090863557,
+        "url": "https://de.wikipedia.org/wiki/Shinz%C5%8D_Abe"
+      },
+      {
+        "score": 0.07611666632125733,
+        "url": "https://de.wikipedia.org/wiki/Bayerische_Landeszentrale_f%C3%BCr_neue_Medien"
+      },
+      {
+        "score": 0.07661500380503905,
+        "url": "https://de.wikipedia.org/wiki/Friedrich-Schiller-Universit%C3%A4t_Jena"
+      },
+      {
+        "score": 0.07602440858935584,
+        "url": "https://de.wikipedia.org/wiki/Sonnenaufgang_%E2%80%93_Lied_von_zwei_Menschen"
+      },
+      {
+        "score": 0.06735651159619344,
+        "url": "https://de.wikipedia.org/wiki/Chemische_Fabrik_Marktredwitz"
+      },
+      {
+        "score": 0.057584220011847057,
+        "url": "https://de.wikipedia.org/wiki/International_Institute_for_Strategic_Studies"
+      },
+      {
+        "score": 0.06994657220207552,
+        "url": "https://de.wikipedia.org/wiki/Karl_der_Gro%C3%9Fe"
+      },
+      {
+        "score": 0.08408623056892378,
+        "url": "https://de.wikipedia.org/wiki/Grandville"
+      },
+      {
+        "score": 0.07981410266078831,
+        "url": "https://de.wikipedia.org/wiki/Cry_for_a_Shadow"
+      },
+      {
+        "score": 0.01725965703086965,
+        "url": "https://de.wikipedia.org/wiki/Zentralafrika"
+      },
+      {
+        "score": 0.07519979200502366,
+        "url": "https://de.wikipedia.org/wiki/German_Institute_for_Global_and_Area_Studies"
+      },
+      {
+        "score": 0.045405709372591696,
+        "url": "https://de.wikipedia.org/wiki/Royal_Warrant_(81/1945)"
+      },
+      {
+        "score": 0.07843623550811746,
+        "url": "https://de.wikipedia.org/wiki/Homburg"
+      },
+      {
+        "score": 0.12225986597173694,
+        "url": "https://de.wikipedia.org/wiki/Lettische_Sprache"
+      },
+      {
+        "score": 0.0723710015717847,
+        "url": "https://de.wikipedia.org/wiki/Rus"
+      },
+      {
+        "score": 0.058625837197434125,
+        "url": "https://de.wikipedia.org/wiki/Peter_Merseburger"
+      },
+      {
+        "score": 0.07796147571918094,
+        "url": "https://de.wikipedia.org/wiki/PEN_International"
+      },
+      {
+        "score": 0.03912861818184833,
+        "url": "https://de.wikipedia.org/wiki/1997"
+      },
+      {
+        "score": 0.10303712490156895,
+        "url": "https://de.wikipedia.org/wiki/Pr%C3%A4fekturparlamentswahl_in_Tokio_2017"
+      },
+      {
+        "score": 0.05616672561525775,
+        "url": "https://de.wikipedia.org/wiki/Nat%C3%BCrliche_Ressource"
+      },
+      {
+        "score": 0.11177172216665199,
+        "url": "https://de.wikipedia.org/wiki/Marine_Stewardship_Council"
+      },
+      {
+        "score": 0.07169770327975962,
+        "url": "https://de.wikipedia.org/wiki/Nationalkomitee_Freies_Deutschland"
+      },
+      {
+        "score": 0.05208094023632346,
+        "url": "https://de.wikipedia.org/wiki/HMU_Health_and_Medical_University"
+      },
+      {
+        "score": 0.05464738822546736,
+        "url": "https://de.wikipedia.org/wiki/Prime_Video"
+      },
+      {
+        "score": 0.04221942703597624,
+        "url": "https://de.wikipedia.org/wiki/The_New_Cambridge_Medieval_History"
+      },
+      {
+        "score": 0.06863755048438064,
+        "url": "https://de.wikipedia.org/wiki/Beizen_(Pflanzenschutz)"
+      },
+      {
+        "score": 0.07260067167162931,
+        "url": "https://de.wikipedia.org/wiki/The_Diplomat"
+      },
+      {
+        "score": 0.04690941201424963,
+        "url": "https://de.wikipedia.org/wiki/National_Book_Award"
+      },
+      {
+        "score": 0.1128180188815721,
+        "url": "https://de.wikipedia.org/wiki/Strategische_Studien"
+      },
+      {
+        "score": 0.031116128753559152,
+        "url": "https://de.wikipedia.org/wiki/Oscar/Beste_Kamera"
+      },
+      {
+        "score": 0.05206296975966464,
+        "url": "https://de.wikipedia.org/wiki/Gangneung"
+      },
+      {
+        "score": 0.08850241673942202,
+        "url": "https://de.wikipedia.org/wiki/Wissenschaftsgeschichte"
+      },
+      {
+        "score": 0.040868464379665265,
+        "url": "https://de.wikipedia.org/wiki/Wettiner"
+      },
+      {
+        "score": 0.050724622849520534,
+        "url": "https://de.wikipedia.org/wiki/Hausmeier"
+      },
+      {
+        "score": 0.09639993420879958,
+        "url": "https://de.wikipedia.org/wiki/Geschichtsbewusstsein"
+      },
+      {
+        "score": 0.07295960272585977,
+        "url": "https://de.wikipedia.org/wiki/The_Ballad_of_John_and_Yoko"
+      },
+      {
+        "score": 0.07438251473564447,
+        "url": "https://de.wikipedia.org/wiki/Beh%C3%B6rde_f%C3%BCr_Wissenschaft,_Forschung_und_Gleichstellung"
+      },
+      {
+        "score": 0.10810050713145208,
+        "url": "https://de.wikipedia.org/wiki/Mario_Vargas_Llosa"
+      },
+      {
+        "score": 0.05645525413606881,
+        "url": "https://de.wikipedia.org/wiki/Gegenpapst"
+      },
+      {
+        "score": 0.043962627686497474,
+        "url": "https://de.wikipedia.org/wiki/Gisela_(%C3%84btissin)"
+      },
+      {
+        "score": 0.09620484530576812,
+        "url": "https://de.wikipedia.org/wiki/John_Ralston_Saul"
+      },
+      {
+        "score": 0.016872999320537044,
+        "url": "https://de.wikipedia.org/wiki/Mediomatriker"
+      },
+      {
+        "score": 0.08231717724395404,
+        "url": "https://de.wikipedia.org/wiki/Ostslawische_Sprachen"
+      },
+      {
+        "score": 0.022071727148488013,
+        "url": "https://de.wikipedia.org/wiki/13._September"
+      },
+      {
+        "score": 0.05262570153128398,
+        "url": "https://de.wikipedia.org/wiki/Flektierende_Sprache"
+      },
+      {
+        "score": 0.08781971426839737,
+        "url": "https://de.wikipedia.org/wiki/Zensus_2022"
+      },
+      {
+        "score": 0.05996858810531518,
+        "url": "https://de.wikipedia.org/wiki/Inhalator"
+      },
+      {
+        "score": 0.08213760194925346,
+        "url": "https://de.wikipedia.org/wiki/Video-on-Demand"
+      },
+      {
+        "score": 0.10395581174262547,
+        "url": "https://de.wikipedia.org/wiki/German_University_of_Digital_Science"
+      },
+      {
+        "score": 0.06539220276859899,
+        "url": "https://de.wikipedia.org/wiki/Seattle"
+      },
+      {
+        "score": 0.0922789324329917,
+        "url": "https://de.wikipedia.org/wiki/Gouverneurswahlen_in_Japan_2017"
+      },
+      {
+        "score": 0.049968400767298395,
+        "url": "https://de.wikipedia.org/wiki/Ruthenien"
+      },
+      {
+        "score": 0.09436088416831442,
+        "url": "https://de.wikipedia.org/wiki/Generalstab"
+      },
+      {
+        "score": 0.05890243322190115,
+        "url": "https://de.wikipedia.org/wiki/John_Gummer"
+      },
+      {
+        "score": 0.09039927921536246,
+        "url": "https://de.wikipedia.org/wiki/Science_and_Technology_Studies"
+      },
+      {
+        "score": 0.05009640293984202,
+        "url": "https://de.wikipedia.org/wiki/Zentrum_f%C3%BCr_die_Analyse_von_Strategien_und_Technologien"
+      },
+      {
+        "score": 0.06034597632349589,
+        "url": "https://de.wikipedia.org/wiki/Raymond_Aron"
+      },
+      {
+        "score": 0.08878369050214786,
+        "url": "https://de.wikipedia.org/wiki/Center_for_Strategic_and_International_Studies"
+      },
+      {
+        "score": 0.05684461650625258,
+        "url": "https://de.wikipedia.org/wiki/Wissensgeschichte"
+      },
+      {
+        "score": 0.10140637809564584,
+        "url": "https://de.wikipedia.org/wiki/Empirische_Sozialforschung"
+      },
+      {
+        "score": 0.040868464379665265,
+        "url": "https://de.wikipedia.org/wiki/Haus_Wettin"
+      },
+      {
+        "score": 0.073303308997499,
+        "url": "https://de.wikipedia.org/wiki/B%C3%BCrgerschaftswahl_in_Hamburg_2020"
+      },
+      {
+        "score": 0.08104050490299405,
+        "url": "https://de.wikipedia.org/wiki/Theoderich_der_Gro%C3%9Fe"
+      },
+      {
+        "score": 0.023696702007316838,
+        "url": "https://de.wikipedia.org/wiki/National_Book_Foundation%E2%80%99s_Literarian_Award"
+      },
+      {
+        "score": 0.08817757519774908,
+        "url": "https://de.wikipedia.org/wiki/Wissenschaftstheorie"
+      },
+      {
+        "score": 0.07827918312796567,
+        "url": "https://de.wikipedia.org/wiki/The_Canadian_Encyclopedia"
+      },
+      {
+        "score": 0.07545216194560055,
+        "url": "https://de.wikipedia.org/wiki/The_Dinner_Party"
+      },
+      {
+        "score": 0.0761405316639727,
+        "url": "https://de.wikipedia.org/wiki/Abendl%C3%A4ndisches_Schisma"
+      },
+      {
+        "score": 0.10730638723025578,
+        "url": "https://de.wikipedia.org/wiki/Altostslawische_Sprache"
+      },
+      {
+        "score": 0.09129728491641073,
+        "url": "https://de.wikipedia.org/wiki/The_Walkabouts"
+      },
+      {
+        "score": 0.04332585282145889,
+        "url": "https://de.wikipedia.org/wiki/Semiha_Yank%C4%B1"
+      },
+      {
+        "score": 0.061422364287990305,
+        "url": "https://de.wikipedia.org/wiki/Palessje"
+      },
+      {
+        "score": 0.030671849677992937,
+        "url": "https://de.wikipedia.org/wiki/Near-Video-on-Demand"
+      },
+      {
+        "score": 0.0682268585366673,
+        "url": "https://de.wikipedia.org/wiki/The_Beatles_Tapes_from_the_David_Wigg_Interviews"
+      },
+      {
+        "score": 0.06022416874744776,
+        "url": "https://de.wikipedia.org/wiki/L%C3%B6sung_(Chemie)"
+      },
+      {
+        "score": 0.04771128516743655,
+        "url": "https://de.wikipedia.org/wiki/Reyhan_Karaca"
+      },
+      {
+        "score": 0.45457776691191903,
+        "url": "https://de.wikipedia.org/wiki/Artificial_Intelligence"
+      },
+      {
+        "score": 0.06255475373247604,
+        "url": "https://de.wikipedia.org/wiki/Nil%C3%BCfer_Yumlu"
+      },
+      {
+        "score": 0.08116080167560277,
+        "url": "https://de.wikipedia.org/wiki/Akteur-Netzwerk-Theorie"
+      },
+      {
+        "score": 0.08781971426839737,
+        "url": "https://de.wikipedia.org/wiki/Volksz%C3%A4hlung_in_Deutschland_2022"
+      },
+      {
+        "score": 0.055870006442133954,
+        "url": "https://de.wikipedia.org/wiki/Commandant_of_the_Marine_Corps"
+      },
+      {
+        "score": 0.03117299368855498,
+        "url": "https://de.wikipedia.org/wiki/Universit%C3%A9_de_Toulouse_II%E2%80%93Le_Mirail"
+      },
+      {
+        "score": 0.05009640293984202,
+        "url": "https://de.wikipedia.org/wiki/Zentrum_f%C3%BCr_Strategie-_und_Technologieanalyse"
+      },
+      {
+        "score": 0.05262570153128398,
+        "url": "https://de.wikipedia.org/wiki/Flektierender_Sprachbau"
+      },
+      {
+        "score": 0.0688425670132816,
+        "url": "https://de.wikipedia.org/wiki/FDP_Hamburg"
+      },
+      {
+        "score": 0.07349806849496025,
+        "url": "https://de.wikipedia.org/wiki/The_Prosopography_of_the_Later_Roman_Empire"
+      },
+      {
+        "score": 0.077148250661777,
+        "url": "https://de.wikipedia.org/wiki/Menschliche_Welt"
+      },
+      {
+        "score": 0.08618435555404927,
+        "url": "https://de.wikipedia.org/wiki/Entscheidung"
+      },
+      {
+        "score": 0.1305379212530147,
+        "url": "https://de.wikipedia.org/wiki/Prozessgenerierte_Daten"
+      },
+      {
+        "score": 0.1618765828818521,
+        "url": "https://de.wikipedia.org/wiki/Data-Mining"
+      },
+      {
+        "score": 0.08867355954545643,
+        "url": "https://de.wikipedia.org/wiki/Humanethologie"
+      },
+      {
+        "score": 0.06745633080388788,
+        "url": "https://de.wikipedia.org/wiki/Peter_Brooke,_Baron_Brooke_of_Sutton_Mandeville"
+      },
+      {
+        "score": 0.038743060573321525,
+        "url": "https://de.wikipedia.org/wiki/Altrussische_Literatur"
+      },
+      {
+        "score": 0.056492076461196375,
+        "url": "https://de.wikipedia.org/wiki/Benedikt_XIII._(Gegenpapst)"
+      },
+      {
+        "score": 0.061113766823984096,
+        "url": "https://de.wikipedia.org/wiki/Journal_for_General_Philosophy_of_Science"
+      },
+      {
+        "score": 0.05010803525045692,
+        "url": "https://de.wikipedia.org/wiki/Bundesanstalt_f%C3%BCr_Stra%C3%9Fenwesen"
+      }
+    ]
+  }
+}

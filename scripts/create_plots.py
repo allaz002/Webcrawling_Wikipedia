@@ -28,7 +28,9 @@ class CrawlerPlotter:
         # Neue Konfigurationsparameter
         self.time_base_pages = int(self.config.get('PLOTTING', 'time_base_pages', fallback='100'))
         self.venn_top_percent = int(self.config.get('PLOTTING', 'venn_top_percent', fallback='20'))
-        self.table_items_per_block = int(self.config.get('PLOTTING', 'table_items_per_block', fallback='5'))
+        self.num_tables = self.config.getint('PLOTTING', 'NUM_TABLES')
+        self.table_pcts = [int(x.strip()) for x in self.config.get('PLOTTING', 'TABLE_PCTS').split(',')]
+        self.table_ns = [int(x.strip()) for x in self.config.get('PLOTTING', 'TABLE_NS').split(',')]
 
         if not self.create_plots:
             print("Plotting ist deaktiviert")
@@ -253,142 +255,99 @@ class CrawlerPlotter:
         plt.close()
         print(f"Speicherbedarf Grafik gespeichert: {filename}")
 
-    def create_comparison_table(self):
-        """Erstellt Vergleichstabelle der Top/Mittel/Bottom Seiten"""
+    def create_quantile_tables(self):
+        """Erstellt mehrere Tabellen ab konfigurierten Perzentilen (aufsteigende Definition)"""
 
-        num_strategies = len([s for s in self.strategy_order if s in self.data])
-        num_rows = self.table_items_per_block * 3
-        fig_width = 10 + num_strategies * 2
-        fig_height = 6 + num_rows * 0.4
-
-        fig, ax = plt.subplots(figsize=(fig_width, fig_height))
-        ax.axis('tight')
-        ax.axis('off')
-
+        # Spaltenüberschriften
         headers = ['Kategorie']
         for strategy in self.strategy_order:
             if strategy in self.data:
                 headers.append(self.strategy_names[strategy])
 
-        table_data = []
-
+        # Titelbereinigung
         def clean_title(title):
-            """Entfernt Wikipedia-Suffix und bereinigt Titel"""
+            """Entfernt Wikipedia-Suffix und kürzt lange Titel"""
             if not title:
                 return 'Kein Titel'
             title = title.replace(' – Wikipedia', '').replace(' - Wikipedia', '')
             title = ' '.join(title.split())
-            if len(title) > 50:
-                title = title[:47] + '...'
-            return title
+            return (title[:47] + '.') if len(title) > 50 else title
 
+        # pro Strategie nach Score (absteigend) sortieren
         sorted_pages_by_strategy = {}
-        for strategy, strategy_data in self.data.items():
-            if 'pages' in strategy_data:
-                sorted_pages = sorted(strategy_data['pages'],
-                                      key=lambda x: x['score'],
-                                      reverse=True)
-                sorted_pages_by_strategy[strategy] = sorted_pages
+        for strategy, sdata in self.data.items():
+            if 'pages' in sdata:
+                sorted_pages_by_strategy[strategy] = sorted(
+                    sdata['pages'], key=lambda x: x['score'], reverse=True
+                )
 
-        for i in range(self.table_items_per_block):
-            row_data = [f'Oberste Ränge {i + 1}']
-            for strategy in self.strategy_order:
-                if strategy not in self.data:
-                    continue
-                if strategy in sorted_pages_by_strategy:
-                    pages = sorted_pages_by_strategy[strategy]
-                    if i < len(pages):
-                        title = clean_title(pages[i].get('title', ''))
-                        score = pages[i].get('score', 0)
-                        row_data.append(f'{title}\n(Relevanzwert: {score:.3f})')
-                    else:
-                        row_data.append('-')
-                else:
-                    row_data.append('-')
-            table_data.append(row_data)
+        # Tabellen erzeugen
+        for t in range(self.num_tables):
+            pct = self.table_pcts[t]
+            count = self.table_ns[t]
 
-        for i in range(self.table_items_per_block):
-            row_data = [f'Mittlere Ränge {i + 1}']
-            for strategy in self.strategy_order:
-                if strategy not in self.data:
-                    continue
-                if strategy in sorted_pages_by_strategy:
+            # Zeilen aufbauen
+            table_data = []
+            for i in range(count):
+                # wissenschaftliches Label (Quantil/Perzentil)
+                row = [f'Rang {i + 1}']
+                for strategy in self.strategy_order:
+                    if strategy not in sorted_pages_by_strategy:
+                        continue
                     pages = sorted_pages_by_strategy[strategy]
-                    median_idx = len(pages) // 2
-                    start_idx = max(0, median_idx - self.table_items_per_block // 2)
+                    n = len(pages)
+                    # Mapping: Perzentil (aufsteigend) -> absteigender Rang
+                    # Q100 => Index 0 (Maximum), Q0 => Index n-1 (Minimum)
+                    start_idx = (n - 1) - int((pct / 100.0) * (n - 1))
                     idx = start_idx + i
-                    if idx < len(pages):
+                    if 0 <= idx < n:
                         title = clean_title(pages[idx].get('title', ''))
-                        score = pages[idx].get('score', 0)
-                        row_data.append(f'{title}\n(Relevanzwert: {score:.3f})')
+                        score = pages[idx].get('score', 0.0)
+                        row.append(f'{title}\n(Relevanzwert: {score:.3f})')
                     else:
-                        row_data.append('-')
+                        row.append('-')
+                table_data.append(row)
+
+            # Figure/Axes
+            num_strategies = len(headers) - 1
+            fig_width = 10 + num_strategies * 2
+            fig_height = 6 + max(1, count) * 0.4
+            fig, ax = plt.subplots(figsize=(fig_width, fig_height))
+            ax.axis('tight')
+            ax.axis('off')
+
+            # Tabelle (ohne Hintergrundfarben)
+            col_widths = [0.15] + [(0.85 / num_strategies)] * num_strategies
+            table = ax.table(cellText=table_data,
+                             colLabels=headers,
+                             cellLoc='left',
+                             loc='center',
+                             colWidths=col_widths)
+
+            table.auto_set_font_size(False)
+            table.set_fontsize(9)
+            table.scale(1, 2.5)
+
+            # Header fett, sonst Standard
+            for (r, c), cell in table.get_celld().items():
+                if r == 0:
+                    cell.set_text_props(weight='bold', size=11)
+                    cell.set_linewidth(1.0)
                 else:
-                    row_data.append('-')
-            table_data.append(row_data)
+                    cell.set_linewidth(0.5)
+                    cell.set_text_props(linespacing=1.5)
+                    cell.PAD = 0.05
 
-        for i in range(self.table_items_per_block):
-            row_data = [f'Unterste Ränge {i + 1}']
-            for strategy in self.strategy_order:
-                if strategy not in self.data:
-                    continue
-                if strategy in sorted_pages_by_strategy:
-                    pages = sorted_pages_by_strategy[strategy]
-                    idx = len(pages) - self.table_items_per_block + i
-                    if idx >= 0 and idx < len(pages):
-                        title = clean_title(pages[idx].get('title', ''))
-                        score = pages[idx].get('score', 0)
-                        row_data.append(f'{title}\n(Relevanzwert: {score:.3f})')
-                    else:
-                        row_data.append('-')
-                else:
-                    row_data.append('-')
-            table_data.append(row_data)
+            # Titel
+            ax.text(0.5, 0.75, f'Relevanzrangliste, Start bei {pct}. Perzentil (Q={pct/100:.2f})',
+                    transform=ax.transAxes, ha='center', va='top',
+                    fontsize=12, fontweight='bold')
 
-        col_widths = [0.15] + [(0.85 / num_strategies)] * num_strategies
-
-        table = ax.table(cellText=table_data,
-                         colLabels=headers,
-                         cellLoc='left',
-                         loc='center',
-                         colWidths=col_widths)
-
-        table.auto_set_font_size(False)
-        table.set_fontsize(9)
-        table.scale(1, 2.5)
-
-        for (row, col), cell in table.get_celld().items():
-            if row == 0:
-                cell.set_facecolor('#4CAF50')
-                cell.set_text_props(weight='bold', color='white', size=11)
-                cell.set_linewidth(1.0)
-                cell.set_height(0.08)
-            else:
-                row_idx = row - 1
-                if row_idx < self.table_items_per_block:
-                    cell.set_facecolor('#90EE90')
-                elif row_idx < 2 * self.table_items_per_block:
-                    cell.set_facecolor('#FFFFE0')
-                else:
-                    cell.set_facecolor('#FFB6C1')
-
-                cell.set_linewidth(0.5)
-                cell.set_text_props(linespacing=1.5)
-                cell.PAD = 0.05
-
-        fig.text(
-            0.5, 0.84,
-            'Ranglistenvergleich der bewerteten Seiten:\n'
-            f'Oberste {self.table_items_per_block}, Medianbereich (±{self.table_items_per_block // 2}) '
-            f'und unterste {self.table_items_per_block} Positionen',
-            ha='center', va='top',
-            fontsize=14, fontweight='bold'
-        )
-
-        filename = f"{self.output_dir}/comparison_table_{self.timestamp}.png"
-        plt.savefig(filename, dpi=300, bbox_inches='tight', pad_inches=0.2)
-        plt.close()
-        print(f"Vergleichstabelle gespeichert: {filename}")
+            # Datei pro Tabelle
+            filename = f"{self.output_dir}/comparison_table_p{pct}_{self.timestamp}.png"
+            plt.savefig(filename, dpi=300, bbox_inches='tight', pad_inches=0.05)
+            plt.close()
+            print(f"Tabelle gespeichert: {filename}")
 
     def plot_overlap_venn(self):
         """Erstellt Venn-Diagramm für Überlappung der Top-K Seiten"""
@@ -503,7 +462,7 @@ class CrawlerPlotter:
         # Erstelle alle Plots
         self.plot_scoring_performance()
         self.plot_memory_usage()
-        self.create_comparison_table()
+        self.create_quantile_tables()
         self.plot_overlap_venn()
 
         print("Alle Visualisierungen wurden erstellt\n")

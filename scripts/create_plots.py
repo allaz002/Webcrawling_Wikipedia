@@ -25,6 +25,11 @@ class CrawlerPlotter:
         self.create_plots = self.config.getboolean('PLOTTING', 'CREATE_PLOTS', fallback=False)
         self.output_dir = self.config['PLOTTING']['OUTPUT_DIRECTORY']
 
+        # Neue Konfigurationsparameter
+        self.time_base_pages = int(self.config.get('PLOTTING', 'time_base_pages', fallback='100'))
+        self.venn_top_percent = int(self.config.get('PLOTTING', 'venn_top_percent', fallback='20'))
+        self.table_items_per_block = int(self.config.get('PLOTTING', 'table_items_per_block', fallback='5'))
+
         if not self.create_plots:
             print("Plotting ist deaktiviert")
             return
@@ -34,9 +39,9 @@ class CrawlerPlotter:
 
         # Farben für Strategien definieren
         self.colors = {
-            'keyword': '#FF6B6B',       # Rot
-            'vectorspace': '#8B8C0A',   # Olivgrün
-            'naivebayes': '#45B7D1'     # Blau
+            'keyword': '#FF6B6B',
+            'vectorspace': '#8B8C0A',
+            'naivebayes': '#45B7D1'
         }
 
         # Deutsche Namen für Strategien
@@ -51,13 +56,14 @@ class CrawlerPlotter:
 
         # Plotdarstellung definieren
         plt.rcParams['figure.figsize'] = (10, 6)
-        plt.rcParams['font.size'] = 11
+        plt.rcParams['font.size'] = 12
         plt.rcParams['axes.labelsize'] = 12
         plt.rcParams['axes.titlesize'] = 14
         plt.rcParams['legend.fontsize'] = 10
         plt.rcParams['figure.dpi'] = 100
         plt.rcParams['savefig.dpi'] = 300
         plt.rcParams['savefig.bbox'] = 'tight'
+        plt.rcParams['axes.labelpad'] = 14
 
         # Timestamp für Dateinamen
         self.timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
@@ -103,121 +109,145 @@ class CrawlerPlotter:
         return required.issubset(self.data.keys())
 
     def plot_scoring_performance(self):
-        """Erstellt gruppiertes Balkendiagramm der Bewertungszeit pro Seite"""
+        """Erstellt Balkendiagramm der Dokumentbewertungszeit"""
         if not self.check_all_strategies_present():
             return
 
-        fig, ax = plt.subplots(figsize=(12, 7))
+        fig, ax = plt.subplots(figsize=(10, 6))
 
         strategies = []
-        doc_times = []  # Dokumentbewertung
-        link_times = []  # Linkbewertung
+        doc_times_ms = []
 
-        # Daten in definierter Reihenfolge sammeln
         for strategy in self.strategy_order:
             if strategy not in self.data:
                 continue
 
             strategy_data = self.data[strategy]
-            if 'cpu_ms_per_1000_docs' not in strategy_data:
-                continue
 
-            # Berechne ms pro einzelner Seite
-            ms_per_page_total = strategy_data['cpu_ms_per_1000_docs'] / 1000
-
-            # Schätze Aufteilung (70% Dokument, 30% Links)
-            doc_time = ms_per_page_total * 0.7
-            link_time = ms_per_page_total * 0.3
+            if 'doc_eval_time_ns' in strategy_data and 'parent_calc_count' in strategy_data:
+                parent_count = strategy_data['parent_calc_count']
+                if parent_count > 0:
+                    doc_time_ns = strategy_data['doc_eval_time_ns']['mean']
+                    doc_time_ms = doc_time_ns / 1_000_000
+                    doc_time_scaled = doc_time_ms * self.time_base_pages
+                else:
+                    doc_time_scaled = 0
+            else:
+                doc_time_scaled = 0
 
             strategies.append(self.strategy_names[strategy])
-            doc_times.append(doc_time)
-            link_times.append(link_time)
+            doc_times_ms.append(doc_time_scaled)
 
         if strategies:
             x = np.arange(len(strategies))
-            width = 0.35
 
-            # Balken für Dokumentbewertung
-            bars1 = ax.bar(x - width/2, doc_times, width,
-                          label='Dokumentbewertung',
-                          color='#4CAF50', alpha=0.8)
+            bars = []
+            for i, strategy in enumerate(self.strategy_order):
+                if strategy not in self.data:
+                    continue
 
-            # Balken für Linkbewertung
-            bars2 = ax.bar(x + width/2, link_times, width,
-                          label='Linkbewertung',
-                          color='#FF9800', alpha=0.8)
+                bar = ax.bar(x[i], doc_times_ms[i], width=0.6,
+                             color=self.colors[strategy], alpha=0.8,
+                             edgecolor='black', linewidth=1.5)
+                bars.append(bar)
 
-            # Werte über den Balken
-            for bar in bars1:
-                height = bar.get_height()
-                ax.text(bar.get_x() + bar.get_width()/2., height,
-                       f'{height:.2f}',
-                       ha='center', va='bottom', fontsize=10)
+                if doc_times_ms[i] > 0:
+                    ax.text(x[i], doc_times_ms[i],
+                            f'{doc_times_ms[i]:.2f}',
+                            ha='center', va='bottom', fontsize=11, fontweight='bold')
 
-            for bar in bars2:
-                height = bar.get_height()
-                ax.text(bar.get_x() + bar.get_width()/2., height,
-                       f'{height:.2f}',
-                       ha='center', va='bottom', fontsize=10)
-
-            # Formatierung
-            ax.set_xlabel('Crawling-Strategie', fontsize=12)
-            ax.set_ylabel('Bewertungszeit [ms/Seite]', fontsize=12)
-            ax.set_title('Durchschnittliche Bewertungszeit pro Seite\n(CPU-Zeit für Dokument- und Linkbewertung)',
-                        fontsize=14, fontweight='bold')
+            ax.set_xlabel('Crawling-Strategie', fontsize=11)
+            ax.set_ylabel(f'Bewertungszeit [ms pro {self.time_base_pages} Seiten]', fontsize=11)
+            ax.set_title(f'Durchschnittliche Dokumentbewertungsdauer',
+                         fontsize=14, fontweight='bold')
             ax.set_xticks(x)
             ax.set_xticklabels(strategies)
-            ax.legend(loc='upper right')
             ax.grid(True, alpha=0.3, linestyle='--', axis='y')
 
-        # Speichern
+            plt.figtext(
+                0.5, -0.05,
+                'Hinweis: Werte beziehen sich ausschließlich auf die Dokumentbewertung.',
+                ha='center', fontsize=10, style='italic'
+            )
+
         filename = f"{self.output_dir}/scoring_performance_{self.timestamp}.png"
         plt.savefig(filename, dpi=300, bbox_inches='tight')
         plt.close()
         print(f"Bewertungszeit Grafik gespeichert: {filename}")
 
     def plot_memory_usage(self):
-        """Erstellt Balkendiagramm des Speicherbedarfs (95. Perzentil)"""
+        """Erstellt Balkendiagramm des zusätzlichen Speicherbedarfs"""
         if not self.check_all_strategies_present():
             return
 
         fig, ax = plt.subplots(figsize=(10, 6))
 
-        # Daten in definierter Reihenfolge sammeln
         strategies = []
-        memories = []
-        colors_list = []
+        doc_memories = []
+        baselines = []
 
         for strategy in self.strategy_order:
             if strategy not in self.data:
                 continue
 
             strategy_data = self.data[strategy]
-            if 'memory_p95_mib' in strategy_data:
-                mem_p95 = strategy_data['memory_p95_mib']
-                strategies.append(self.strategy_names[strategy])
-                memories.append(mem_p95)
-                colors_list.append(self.colors[strategy])
+
+            doc_mem_p95 = 0
+            baseline_p95 = 0
+
+            if 'doc_memory_delta_mib' in strategy_data:
+                doc_mem_p95 = strategy_data['doc_memory_delta_mib'].get('p95', 0)
+
+            if 'doc_memory_baseline_mib' in strategy_data:
+                baseline_p95 = strategy_data['doc_memory_baseline_mib'].get('p95', 0)
+
+            strategies.append(self.strategy_names[strategy])
+            doc_memories.append(doc_mem_p95)
+            baselines.append(baseline_p95)
+
+        max_memory = max(doc_memories) if doc_memories else 0
+        use_kib = max_memory < 1.0
+
+        if use_kib:
+            doc_memories = [m * 1024 for m in doc_memories]
+            baselines = [b * 1024 for b in baselines]
+            unit = 'KiB'
+        else:
+            unit = 'MiB'
 
         if strategies:
-            # Balkendiagramm erstellen
-            bars = ax.bar(strategies, memories, color=colors_list, alpha=0.8, edgecolor='black', linewidth=1.5)
+            x = np.arange(len(strategies))
 
-            # Werte über den Balken hinzufügen
-            for bar, memory in zip(bars, memories):
-                height = bar.get_height()
-                ax.text(bar.get_x() + bar.get_width() / 2., height,
-                        f'{memory:.1f} MiB',
-                        ha='center', va='bottom', fontweight='bold')
+            for i, strategy in enumerate(self.strategy_order):
+                if strategy not in self.data:
+                    continue
 
-            # Formatierung
-            ax.set_xlabel('Crawling-Strategie', fontsize=12)
-            ax.set_ylabel('Speicherbedarf in MiB (95. Perzentil)', fontsize=12)
-            ax.set_title('Speicherbedarf während Bewertungslogik\n(95. Perzentil des RSS)',
-                        fontsize=14, fontweight='bold')
+                bar = ax.bar(x[i], doc_memories[i], width=0.6,
+                             color=self.colors[strategy], alpha=0.8,
+                             edgecolor='black', linewidth=1.5)
+
+                if doc_memories[i] > 0:
+                    ax.text(x[i], doc_memories[i],
+                            f'{doc_memories[i]:.2f}',
+                            ha='center', va='bottom', fontsize=11, fontweight='bold')
+
+            ax.set_xlabel('Crawling-Strategie', fontsize=11)
+            ax.set_ylabel(f'Zusätzlicher Speicherbedarf (p95) [{unit}]', fontsize=11)
+            ax.set_title('Zusätzlicher Speicherbedarf durch die Dokumentbewertung',
+                         fontsize=14, fontweight='bold')
+            ax.set_xticks(x)
+            ax.set_xticklabels(strategies)
             ax.grid(True, alpha=0.3, linestyle='--', axis='y')
 
-        # Speichern
+            baseline_text = f'Basis-Speicherbedarf (p95) in {unit}: '
+            for i, (strat_name, baseline) in enumerate(zip(strategies, baselines)):
+                if i > 0:
+                    baseline_text += ', '
+                baseline_text += f'{strat_name} = {baseline:.1f}'
+
+            combined_text = baseline_text + '\nHinweis: Werte beziehen sich ausschließlich auf die Dokumentbewertung.'
+            plt.figtext(0.5, -0.05, combined_text, ha='center', fontsize=10, style='italic')
+
         filename = f"{self.output_dir}/memory_usage_{self.timestamp}.png"
         plt.savefig(filename, dpi=300, bbox_inches='tight')
         plt.close()
@@ -226,14 +256,15 @@ class CrawlerPlotter:
     def create_comparison_table(self):
         """Erstellt Vergleichstabelle der Top/Mittel/Bottom Seiten"""
 
-        # Dynamische Figurengröße basierend auf Anzahl Strategien
-        num_strategies = len(self.data.keys())
+        num_strategies = len([s for s in self.strategy_order if s in self.data])
+        num_rows = self.table_items_per_block * 3
         fig_width = 10 + num_strategies * 2
-        fig, ax = plt.subplots(figsize=(fig_width, 14))
+        fig_height = 6 + num_rows * 0.4
+
+        fig, ax = plt.subplots(figsize=(fig_width, fig_height))
         ax.axis('tight')
         ax.axis('off')
 
-        # Header in definierter Reihenfolge
         headers = ['Kategorie']
         for strategy in self.strategy_order:
             if strategy in self.data:
@@ -241,21 +272,16 @@ class CrawlerPlotter:
 
         table_data = []
 
-        # Funktion zum Bereinigen des Titels
         def clean_title(title):
             """Entfernt Wikipedia-Suffix und bereinigt Titel"""
             if not title:
                 return 'Kein Titel'
-            # Entferne " – Wikipedia" oder " - Wikipedia"
             title = title.replace(' – Wikipedia', '').replace(' - Wikipedia', '')
-            # Entferne überflüssige Whitespaces
             title = ' '.join(title.split())
-            # Max. 50 Zeichen
             if len(title) > 50:
                 title = title[:47] + '...'
             return title
 
-        # Seiten für jede Strategie sortieren
         sorted_pages_by_strategy = {}
         for strategy, strategy_data in self.data.items():
             if 'pages' in strategy_data:
@@ -264,8 +290,7 @@ class CrawlerPlotter:
                                       reverse=True)
                 sorted_pages_by_strategy[strategy] = sorted_pages
 
-        # Zeilen für oberste Ränge 1-5
-        for i in range(5):
+        for i in range(self.table_items_per_block):
             row_data = [f'Oberste Ränge {i + 1}']
             for strategy in self.strategy_order:
                 if strategy not in self.data:
@@ -282,17 +307,15 @@ class CrawlerPlotter:
                     row_data.append('-')
             table_data.append(row_data)
 
-        # Zeilen für mittlere Ränge (um Median)
-        for i in range(5):
+        for i in range(self.table_items_per_block):
             row_data = [f'Mittlere Ränge {i + 1}']
             for strategy in self.strategy_order:
                 if strategy not in self.data:
                     continue
                 if strategy in sorted_pages_by_strategy:
                     pages = sorted_pages_by_strategy[strategy]
-                    # Berechne Index um Median herum
                     median_idx = len(pages) // 2
-                    start_idx = max(0, median_idx - 2)
+                    start_idx = max(0, median_idx - self.table_items_per_block // 2)
                     idx = start_idx + i
                     if idx < len(pages):
                         title = clean_title(pages[idx].get('title', ''))
@@ -304,16 +327,14 @@ class CrawlerPlotter:
                     row_data.append('-')
             table_data.append(row_data)
 
-        # Zeilen für unterste Ränge 1-5
-        for i in range(5):
+        for i in range(self.table_items_per_block):
             row_data = [f'Unterste Ränge {i + 1}']
             for strategy in self.strategy_order:
                 if strategy not in self.data:
                     continue
                 if strategy in sorted_pages_by_strategy:
                     pages = sorted_pages_by_strategy[strategy]
-                    # Die letzten 5 Seiten
-                    idx = len(pages) - 5 + i
+                    idx = len(pages) - self.table_items_per_block + i
                     if idx >= 0 and idx < len(pages):
                         title = clean_title(pages[idx].get('title', ''))
                         score = pages[idx].get('score', 0)
@@ -324,7 +345,6 @@ class CrawlerPlotter:
                     row_data.append('-')
             table_data.append(row_data)
 
-        # Tabelle erstellen
         col_widths = [0.15] + [(0.85 / num_strategies)] * num_strategies
 
         table = ax.table(cellText=table_data,
@@ -333,61 +353,64 @@ class CrawlerPlotter:
                          loc='center',
                          colWidths=col_widths)
 
-        # Formatierung
         table.auto_set_font_size(False)
-        table.set_fontsize(9)  # Minimal größere Schrift
-        table.scale(1, 2.8)
+        table.set_fontsize(9)
+        table.scale(1, 2.5)
 
-        # Farben für Zeilen
         for (row, col), cell in table.get_celld().items():
-            if row == 0:  # Header
+            if row == 0:
                 cell.set_facecolor('#4CAF50')
-                cell.set_text_props(weight='bold', color='white')
-                cell.set_linewidth(2)
+                cell.set_text_props(weight='bold', color='white', size=11)
+                cell.set_linewidth(1.0)
                 cell.set_height(0.08)
             else:
                 row_idx = row - 1
-                # Oberste Ränge
-                if row_idx < 5:
-                    cell.set_facecolor('#90EE90')  # Hellgrün
-                # Mittlere Ränge
-                elif row_idx < 10:
-                    cell.set_facecolor('#FFFFE0')  # Hellgelb
-                # Unterste Ränge
+                if row_idx < self.table_items_per_block:
+                    cell.set_facecolor('#90EE90')
+                elif row_idx < 2 * self.table_items_per_block:
+                    cell.set_facecolor('#FFFFE0')
                 else:
-                    cell.set_facecolor('#FFB6C1')  # Hellrot
+                    cell.set_facecolor('#FFB6C1')
 
                 cell.set_linewidth(0.5)
-
-                # Trennlinie zwischen Kategorien
-                if row_idx in [0, 5, 10]:
-                    cell.set_linewidth(2)
-
-                # Textausrichtung
                 cell.set_text_props(linespacing=1.5)
                 cell.PAD = 0.05
 
-        # Titel mit Präzisierung
-        plt.title('Vergleich der Crawling-Strategien: Artikel nach Relevanzrang\n' +
-                  'Oberste Ränge: höchste Relevanzwerte | Mittlere Ränge: um Median | Unterste Ränge: niedrigste Relevanzwerte',
-                  fontsize=14, fontweight='bold', pad=20)
+        fig.text(
+            0.5, 0.84,
+            'Ranglistenvergleich der bewerteten Seiten:\n'
+            f'Oberste {self.table_items_per_block}, Medianbereich (±{self.table_items_per_block // 2}) '
+            f'und unterste {self.table_items_per_block} Positionen',
+            ha='center', va='top',
+            fontsize=14, fontweight='bold'
+        )
 
-        # Speichern
         filename = f"{self.output_dir}/comparison_table_{self.timestamp}.png"
-        plt.savefig(filename, dpi=300, bbox_inches='tight')
+        plt.savefig(filename, dpi=300, bbox_inches='tight', pad_inches=0.2)
         plt.close()
         print(f"Vergleichstabelle gespeichert: {filename}")
 
     def plot_overlap_venn(self):
-        """Erstellt Venn-Diagramm für Überlappung der gefundenen Seiten"""
-        # URLs für jede Strategie sammeln
+        """Erstellt Venn-Diagramm für Überlappung der Top-K Seiten"""
+        # URLs für jede Strategie sammeln (Top-K basierend auf Score)
         urls_by_strategy = {}
 
         for strategy, strategy_data in self.data.items():
             if 'pages' not in strategy_data:
                 continue
 
-            urls_by_strategy[strategy] = set([page['url'] for page in strategy_data['pages']])
+            # Sortiere alle bewerteten Seiten nach Score
+            all_pages = sorted(strategy_data['pages'],
+                               key=lambda x: x['score'],
+                               reverse=True)
+
+            # Berechne wie viele Seiten die Top-K% ausmachen
+            num_pages = len(all_pages)
+            top_k_count = max(1, int(num_pages * self.venn_top_percent / 100))
+
+            # Nimm nur die Top-K Seiten
+            top_pages = all_pages[:top_k_count]
+            urls_by_strategy[strategy] = set([page['url'] for page in top_pages])
 
         if len(urls_by_strategy) < 2:
             print("Nicht genug Daten für Overlap-Diagramm")
@@ -417,6 +440,26 @@ class CrawlerPlotter:
                 v.get_patch_by_id('001').set_color(self.colors['naivebayes'])
                 v.get_patch_by_id('001').set_alpha(0.5)
 
+            # Berechne Überlappungsanteile für alle Kombinationen
+            if len(sets) == 3:
+                only_kw = len(sets[0] - sets[1] - sets[2])
+                only_vs = len(sets[1] - sets[0] - sets[2])
+                only_nb = len(sets[2] - sets[0] - sets[1])
+                kw_vs = len(sets[0] & sets[1] - sets[2])
+                kw_nb = len(sets[0] & sets[2] - sets[1])
+                vs_nb = len(sets[1] & sets[2] - sets[0])
+                all_three = len(sets[0] & sets[1] & sets[2])
+
+                # Füge Prozentangaben zu den Labels hinzu
+                for label_id, count in [('100', only_kw), ('010', only_vs), ('001', only_nb),
+                                        ('110', kw_vs), ('101', kw_nb), ('011', vs_nb),
+                                        ('111', all_three)]:
+                    label = v.get_label_by_id(label_id)
+                    if label and count > 0:
+                        total = len(sets[0] | sets[1] | sets[2])
+                        percent = (count / total) * 100 if total > 0 else 0
+                        label.set_text(f'{count}\n({percent:.1f}%)')
+
         elif len(urls_by_strategy) == 2:
             # Venndiagramm für 2 Kreise
             strategies = list(urls_by_strategy.keys())
@@ -439,7 +482,7 @@ class CrawlerPlotter:
             all_urls.update(urls)
 
         # Titel mit Statistiken
-        ax.set_title('Überlappung der gefundenen relevanten Seiten\n' +
+        ax.set_title(f'Überlappung der {self.venn_top_percent}% höchstbewerteten Seiten\n' +
                      f'Gesamt: {len(all_urls)} eindeutige URLs',
                      fontsize=14, fontweight='bold')
 
@@ -464,7 +507,6 @@ class CrawlerPlotter:
         self.plot_overlap_venn()
 
         print("Alle Visualisierungen wurden erstellt\n")
-
 
 if __name__ == "__main__":
     plotter = CrawlerPlotter("crawler_config.ini")

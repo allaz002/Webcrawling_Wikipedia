@@ -18,14 +18,15 @@ import time
 import pickle
 import logging
 from twisted.python import log as twisted_log
-import psutil  # Für Speichermessung
+import psutil
+import numpy as np
 
 
 class BaseTopicalSpider(scrapy.Spider):
     """Basisklasse für alle Topical Crawling Strategien"""
 
     def __init__(self, *args, **kwargs):
-
+        # Logging minimieren
         logging.getLogger('scrapy').setLevel(logging.CRITICAL)
         logging.getLogger('twisted').setLevel(logging.CRITICAL)
 
@@ -80,10 +81,16 @@ class BaseTopicalSpider(scrapy.Spider):
         # Batch-Tracking für Evaluierung
         self.current_batch_number = 0
 
-        # Metriken für Evaluierung
-        self.cpu_time_scoring = 0.0  # CPU-Zeit nur für Scoring (ms)
-        self.memory_samples = []  # RSS-Samples während Bewertung
-        self.page_scores_raw = []  # Rohscores für Plots
+        # Metriken für Dokumentbewertung (in Nanosekunden)
+        self.doc_eval_times_ns = []  # Liste aller Dokumentbewertungszeiten in ns
+        self.parent_calc_count = 0  # Anzahl der Dokumentbewertungen
+
+        # Metriken für Speichermessung (nur Dokumente)
+        self.doc_memory_deltas = []  # Speicherdifferenzen bei Dokumentbewertung
+        self.doc_memory_baselines = []  # Basis-Speicherwerte vor Dokumentbewertung
+
+        # Alle bewerteten Seiten (nicht nur relevante)
+        self.all_evaluated_pages = []  # Für Venn-Diagramm und Tabelle
 
         # Statistiken
         self.stats = {
@@ -91,8 +98,7 @@ class BaseTopicalSpider(scrapy.Spider):
             'relevant_pages': 0,
             'irrelevant_pages': 0,
             'start_time': datetime.now(),
-            'all_pages': [],  # Für Endstatistik
-            'total_relevance_sum': 0.0,  # Für Durchschnittsberechnung
+            'total_relevance_sum': 0.0,
         }
 
         # Verzeichnisse erstellen
@@ -179,65 +185,58 @@ class BaseTopicalSpider(scrapy.Spider):
         headings = ' '.join([h.text for h in soup.find_all(['h1', 'h2', 'h3', 'h4', 'h5', 'h6'])])
         paragraphs = ' '.join([p.text for p in soup.find_all('p')])
 
-        # CPU-Zeit und Speicher-Messung für Relevanzbewertung
-        cpu_start = time.process_time()
-
-        # Speicher-Sample vor Bewertung
+        # Messung für Elterndokument-Bewertung
         process = psutil.Process()
-        mem_before = process.memory_info().rss / (1024 * 1024)  # MiB
 
-        # Berechne Elterndokument-Relevanz
+        # Speicher vor Dokumentbewertung
+        mem_before_parent = process.memory_info().rss / (1024 * 1024)  # MiB
+        self.doc_memory_baselines.append(mem_before_parent)
+
+        # Zeitmessung mit Nanosekunden-Präzision
+        time_start_ns = time.perf_counter_ns()
+
+        # Elterndokument-Relevanz berechnen
         parent_relevance = self.calculate_parent_relevance(title, headings, paragraphs)
 
-        # Speicher-Sample während Bewertung
-        mem_during = process.memory_info().rss / (1024 * 1024)  # MiB
-        self.memory_samples.append(mem_during)
+        # Zeit nach Dokumentbewertung
+        time_end_ns = time.perf_counter_ns()
+        doc_eval_time_ns = time_end_ns - time_start_ns
+        self.doc_eval_times_ns.append(doc_eval_time_ns)
+        self.parent_calc_count += 1
 
-        # CPU-Zeit für Parent-Scoring
-        cpu_parent = time.process_time() - cpu_start
+        # Speicher nach Dokumentbewertung
+        mem_after_parent = process.memory_info().rss / (1024 * 1024)  # MiB
+        mem_delta_parent = mem_after_parent - mem_before_parent
+        self.doc_memory_deltas.append(mem_delta_parent)
 
-        # Speichere Rohscore für spätere Plots
-        self.page_scores_raw.append({
+        # Speichere alle bewerteten Seiten
+        self.all_evaluated_pages.append({
+            'url': response.url,
             'score': parent_relevance,
-            'url': response.url
+            'title': title[:100]
         })
 
-        # CPU-Zeit in ms akkumulieren
-        self.cpu_time_scoring += cpu_parent * 1000
-
-        # Speichere Seite und aktualisiere Statistiken
+        # Aktualisiere Statistiken
         if parent_relevance >= self.relevance_threshold:
             self.stats['relevant_pages'] += 1
-            self.stats['all_pages'].append({
-                'url': response.url,
-                'score': parent_relevance,
-                'title': title[:100]
-            })
         else:
             self.stats['irrelevant_pages'] += 1
 
         # Akkumuliere Relevanz für Durchschnitt
         self.stats['total_relevance_sum'] += parent_relevance
 
-        # Extrahiere und bewerte Links
-        links_cpu_start = time.process_time()
-
+        # Extrahiere und bewerte Links (ohne Zeitmessung)
         for link in soup.find_all('a', href=True):
             url = response.urljoin(link['href'])
             anchor_text = link.text.strip()
 
             if url not in self.visited_urls and self.is_valid_url(url):
-                # Berechne Link-Relevanz
-                link_relevance = self.calculate_combined_relevance(anchor_text, parent_relevance)
+                # Berechne Link-Relevanz ohne Messung
+                anchor_score = self.calculate_text_relevance(anchor_text)
+
+                # Kombinierte Relevanz
+                link_relevance = self.link_weight * anchor_score + self.parent_weight * parent_relevance
                 self.add_to_frontier(url, link_relevance)
-
-        # CPU-Zeit für Link-Scoring
-        cpu_links = time.process_time() - links_cpu_start
-        self.cpu_time_scoring += cpu_links * 1000
-
-        # Speicher-Sample nach Bewertung
-        mem_after = process.memory_info().rss / (1024 * 1024)  # MiB
-        self.memory_samples.append(mem_after)
 
         # Periodisches Feedback
         self.print_progress()
@@ -314,11 +313,6 @@ class BaseTopicalSpider(scrapy.Spider):
 
         return False
 
-    def calculate_combined_relevance(self, anchor_text, parent_relevance):
-        """Berechnet gewichtete Gesamtrelevanz"""
-        anchor_score = self.calculate_text_relevance(anchor_text)
-        return self.link_weight * anchor_score + self.parent_weight * parent_relevance
-
     def calculate_parent_relevance(self, title, headings, paragraphs):
         """Berechnet gewichtete Relevanz des Elterndokuments"""
         # Berechne Scores für jeden Bereich
@@ -379,20 +373,26 @@ class BaseTopicalSpider(scrapy.Spider):
                   f"Harvest: {harvest_rate:.1f}% | "
                   f"Ø-Relevanz: {avg_relevance:.3f}")
 
+    def calculate_percentiles(self, data):
+        """Berechnet Mean, Median, p95 und Max für gegebene Daten"""
+        if not data:
+            return {'mean': 0.0, 'median': 0.0, 'p95': 0.0, 'max': 0.0}
+
+        sorted_data = sorted(data)
+        mean = np.mean(data)  # Mean als Float
+        median = np.median(sorted_data)
+        p95_idx = int(len(sorted_data) * 0.95)
+        p95 = sorted_data[min(p95_idx, len(sorted_data) - 1)]
+        max_val = max(sorted_data)
+
+        return {'mean': float(mean), 'median': median, 'p95': p95, 'max': max_val}
+
     def print_final_report(self):
         """Gibt Abschlussbericht aus und speichert JSON"""
         runtime = datetime.now() - self.stats['start_time']
         runtime_seconds = runtime.total_seconds()
         harvest_rate = (self.stats['relevant_pages'] / max(1, self.stats['total_crawled'])) * 100
         avg_relevance = self.stats['total_relevance_sum'] / max(1, self.stats['total_crawled'])
-
-        # Berechne Speicher p95
-        if self.memory_samples:
-            sorted_samples = sorted(self.memory_samples)
-            p95_idx = int(len(sorted_samples) * 0.95)
-            memory_p95 = sorted_samples[min(p95_idx, len(sorted_samples) - 1)]
-        else:
-            memory_p95 = 0.0
 
         print(f"\n{'=' * 60}")
         print(f"ABSCHLUSS - {self.name}")
@@ -403,8 +403,8 @@ class BaseTopicalSpider(scrapy.Spider):
         print(f"Export: {self.export_file}")
         print(f"{'=' * 60}\n")
 
-        # Sortiere alle Seiten nach Score
-        sorted_pages = sorted(self.stats['all_pages'], key=lambda x: x['score'], reverse=True)
+        # Sortiere alle bewerteten Seiten nach Score
+        sorted_pages = sorted(self.all_evaluated_pages, key=lambda x: x['score'], reverse=True)
 
         # Top 5, Median 5, Bottom 5
         if len(sorted_pages) > 0:
@@ -424,23 +424,37 @@ class BaseTopicalSpider(scrapy.Spider):
 
             print(f"\n{'=' * 60}\n")
 
-        # Exportiere JSON
-        relevant_pages = [p for p in sorted_pages if p['score'] >= self.relevance_threshold]
+        # Berechne Statistiken für Zeitmessungen (in Nanosekunden)
+        doc_eval_stats = self.calculate_percentiles(self.doc_eval_times_ns)
 
+        # Berechne Statistiken für Speichermessungen
+        doc_memory_delta_stats = self.calculate_percentiles(self.doc_memory_deltas)
+        doc_memory_baseline_stats = self.calculate_percentiles(self.doc_memory_baselines)
+
+        # Exportiere JSON
         export_data = {
             'summary': {
                 'spider': self.name,
                 'timestamp': self.timestamp,
-                'total_execution_time_in_seconds': runtime_seconds,
+                'total_execution_time_s': runtime_seconds,
                 'total_pages_visited': self.stats['total_crawled'],
                 'total_relevant_found': self.stats['relevant_pages'],
                 'average_harvest_rate': harvest_rate / 100,
                 'average_relevance': avg_relevance,
-                'pages': relevant_pages,
-                # Metriken für Plots
-                'cpu_ms_per_1000_docs': (self.cpu_time_scoring / max(1, self.stats['total_crawled'])) * 1000,
-                'memory_p95_mib': memory_p95,
-                'raw_scores': self.page_scores_raw
+
+                # Zeitmessungen in Nanosekunden
+                'doc_eval_time_ns': doc_eval_stats,
+                'parent_calc_count': self.parent_calc_count,
+
+                # Speichermessungen
+                'doc_memory_delta_mib': doc_memory_delta_stats,
+                'doc_memory_baseline_mib': doc_memory_baseline_stats,
+
+                # Alle bewerteten Seiten (nicht nur relevante)
+                'pages': sorted_pages,
+
+                # Rohscores für spätere Analyse
+                'raw_scores': [{'url': p['url'], 'score': p['score']} for p in sorted_pages]
             }
         }
 

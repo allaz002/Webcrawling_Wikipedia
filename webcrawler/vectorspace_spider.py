@@ -15,8 +15,9 @@ class VectorSpaceSpider(BaseTopicalSpider):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
 
-        self.model_path = 'models/vectorspace_model.pkl'
-        self.vectorizer_path = 'models/vectorspace_vectorizer.pkl'
+        # Pfade aus Config lesen
+        self.model_path = self.config['VECTORSPACE']['MODEL_PATH']
+        self.vectorizer_path = self.config['VECTORSPACE']['VECTORIZER_PATH']
         self.training_data_path = self.config['VECTORSPACE']['TRAINING_DATA_PATH']
 
         # IDF-Trainingsmischung aus Config
@@ -30,6 +31,11 @@ class VectorSpaceSpider(BaseTopicalSpider):
             raise ValueError(f"IDF-Ratios summieren sich nicht zu 1.0: {ratio_sum}")
 
         self.load_or_train_model()
+
+        # Setze topic_vector aus classifier für VectorSpace
+        if hasattr(self, 'classifier'):
+            self.topic_vector = self.classifier
+
         print("VectorSpace Spider mit TF-IDF initialisiert")
 
     def select_training_labels(self, training_data):
@@ -97,34 +103,17 @@ class VectorSpaceSpider(BaseTopicalSpider):
         topic_vec = np.asarray(vectors.mean(axis=0)).reshape(1, -1)
         self.topic_vector = normalize(topic_vec, norm='l2', axis=1)
 
+        # Speichere als classifier für Kompatibilität mit Basisklasse
+        self.classifier = self.topic_vector
+
         # Speichere Modell
         os.makedirs(os.path.dirname(self.model_path), exist_ok=True)
         with open(self.model_path, 'wb') as f:
-            pickle.dump(self.topic_vector, f)
+            pickle.dump(self.classifier, f)
         with open(self.vectorizer_path, 'wb') as f:
             pickle.dump(self.vectorizer, f)
 
         print(f"Topic-Vektor aus {len(relevant_texts)} relevanten Dokumenten erstellt")
-
-    def load_or_train_model(self):
-        """Lädt existierendes Modell oder trainiert neues"""
-        if os.path.exists(self.model_path) and os.path.exists(self.vectorizer_path):
-            with open(self.model_path, 'rb') as f:
-                self.topic_vector = pickle.load(f)
-            with open(self.vectorizer_path, 'rb') as f:
-                self.vectorizer = pickle.load(f)
-            print("Existierendes Modell geladen")
-        else:
-            # Lade Trainingsdaten
-            import json
-            with open(self.training_data_path, 'r', encoding='utf-8') as f:
-                training_data = json.load(f)
-
-            # Selektiere Labels
-            texts_tuple, _ = self.select_training_labels(training_data)
-
-            # Trainiere Modell
-            self.train_model(texts_tuple, None)
 
     def calculate_text_relevance(self, text):
         """Berechnet Cosinus-Ähnlichkeit zwischen Text und Themenprofil"""

@@ -18,6 +18,8 @@ import time
 import pickle
 import logging
 from twisted.python import log as twisted_log
+import psutil  # Für Speichermessung
+
 
 class BaseTopicalSpider(scrapy.Spider):
     """Basisklasse für alle Topical Crawling Strategien"""
@@ -77,8 +79,11 @@ class BaseTopicalSpider(scrapy.Spider):
 
         # Batch-Tracking für Evaluierung
         self.current_batch_number = 0
-        self.batch_new_urls = []  # URLs die in diesem Batch zur Frontier hinzugefügt wurden
-        self.batch_positions = []  # Positionen der neuen URLs in der Frontier
+
+        # Metriken für Evaluierung
+        self.cpu_time_scoring = 0.0  # CPU-Zeit nur für Scoring (ms)
+        self.memory_samples = []  # RSS-Samples während Bewertung
+        self.page_scores_raw = []  # Rohscores für Plots
 
         # Statistiken
         self.stats = {
@@ -87,10 +92,7 @@ class BaseTopicalSpider(scrapy.Spider):
             'irrelevant_pages': 0,
             'start_time': datetime.now(),
             'all_pages': [],  # Für Endstatistik
-            'evaluation_log': [],  # Für Evaluierungsdaten
             'total_relevance_sum': 0.0,  # Für Durchschnittsberechnung
-            'batch_frontier_positions': [],  # Durchschnittliche Positionen pro Batch
-            'relevance_calculation_time': 0.0  # Zeit für Relevanzbewertung
         }
 
         # Verzeichnisse erstellen
@@ -121,7 +123,7 @@ class BaseTopicalSpider(scrapy.Spider):
         yield from self.process_batch()
 
     def add_to_frontier(self, url, score):
-        """Fügt URL zur Frontier hinzu und trackt Position"""
+        """Fügt URL zur Frontier hinzu"""
         if url not in self.visited_urls and self.is_valid_url(url):
             # Frontier-Größe begrenzen
             if len(self.frontier) >= self.frontier_max_size:
@@ -129,24 +131,9 @@ class BaseTopicalSpider(scrapy.Spider):
                 if score > -self.frontier[0][0]:  # Besserer Score als schlechtester
                     heapq.heapreplace(self.frontier, (-score, url))
                     self.url_scores[url] = score
-                    # Tracke Position (approximiert)
-                    position = self.get_url_position_in_frontier(score)
-                    self.batch_positions.append(position)
             else:
                 heapq.heappush(self.frontier, (-score, url))
                 self.url_scores[url] = score
-                # Tracke Position
-                position = self.get_url_position_in_frontier(score)
-                self.batch_positions.append(position)
-                self.batch_new_urls.append(url)
-
-    def get_url_position_in_frontier(self, score):
-        """Berechnet die Position einer URL in der Frontier basierend auf ihrem Score"""
-        position = 1
-        for neg_score, _ in self.frontier:
-            if -neg_score > score:
-                position += 1
-        return position
 
     def process_batch(self):
         """Verarbeitet nächste Batch aus Frontier"""
@@ -177,10 +164,6 @@ class BaseTopicalSpider(scrapy.Spider):
                 meta={'parent_score': score}
             )
 
-        # Logge Batch-Evaluierung nach Verarbeitung
-        if self.stats['total_crawled'] > 0:  # Nicht beim ersten Aufruf
-            self.log_batch_evaluation()
-
     def parse(self, response):
         """Hauptparser für gecrawlte Seiten"""
         self.stats['total_crawled'] += 1
@@ -196,15 +179,31 @@ class BaseTopicalSpider(scrapy.Spider):
         headings = ' '.join([h.text for h in soup.find_all(['h1', 'h2', 'h3', 'h4', 'h5', 'h6'])])
         paragraphs = ' '.join([p.text for p in soup.find_all('p')])
 
-        # Zeitmessung für Relevanzbewertung
-        calc_start = time.time()
+        # CPU-Zeit und Speicher-Messung für Relevanzbewertung
+        cpu_start = time.process_time()
 
-        # Berechne Elterndokument-Relevanz (nur einmal pro Seite)
+        # Speicher-Sample vor Bewertung
+        process = psutil.Process()
+        mem_before = process.memory_info().rss / (1024 * 1024)  # MiB
+
+        # Berechne Elterndokument-Relevanz
         parent_relevance = self.calculate_parent_relevance(title, headings, paragraphs)
 
-        # Akkumuliere Berechnungszeit
-        calc_time = time.time() - calc_start
-        self.stats['relevance_calculation_time'] += calc_time
+        # Speicher-Sample während Bewertung
+        mem_during = process.memory_info().rss / (1024 * 1024)  # MiB
+        self.memory_samples.append(mem_during)
+
+        # CPU-Zeit für Parent-Scoring
+        cpu_parent = time.process_time() - cpu_start
+
+        # Speichere Rohscore für spätere Plots
+        self.page_scores_raw.append({
+            'score': parent_relevance,
+            'url': response.url
+        })
+
+        # CPU-Zeit in ms akkumulieren
+        self.cpu_time_scoring += cpu_parent * 1000
 
         # Speichere Seite und aktualisiere Statistiken
         if parent_relevance >= self.relevance_threshold:
@@ -221,14 +220,24 @@ class BaseTopicalSpider(scrapy.Spider):
         self.stats['total_relevance_sum'] += parent_relevance
 
         # Extrahiere und bewerte Links
+        links_cpu_start = time.process_time()
+
         for link in soup.find_all('a', href=True):
             url = response.urljoin(link['href'])
             anchor_text = link.text.strip()
 
             if url not in self.visited_urls and self.is_valid_url(url):
-                # Berechne Link-Relevanz (einmalig pro Link)
+                # Berechne Link-Relevanz
                 link_relevance = self.calculate_combined_relevance(anchor_text, parent_relevance)
                 self.add_to_frontier(url, link_relevance)
+
+        # CPU-Zeit für Link-Scoring
+        cpu_links = time.process_time() - links_cpu_start
+        self.cpu_time_scoring += cpu_links * 1000
+
+        # Speicher-Sample nach Bewertung
+        mem_after = process.memory_info().rss / (1024 * 1024)  # MiB
+        self.memory_samples.append(mem_after)
 
         # Periodisches Feedback
         self.print_progress()
@@ -359,35 +368,6 @@ class BaseTopicalSpider(scrapy.Spider):
         """Wird von Subklassen überschrieben für Modell-Training"""
         raise NotImplementedError("ML-Strategien müssen train_model implementieren")
 
-    def log_batch_evaluation(self):
-        """Loggt Evaluierungsdaten nach jedem Batch"""
-        runtime = (datetime.now() - self.stats['start_time']).total_seconds()
-        harvest_rate = self.stats['relevant_pages'] / max(1, self.stats['total_crawled'])
-        avg_relevance = self.stats['total_relevance_sum'] / max(1, self.stats['total_crawled'])
-
-        # Berechne durchschnittliche Position der neuen URLs in der Frontier
-        avg_position = 0
-        if self.batch_positions:
-            avg_position = sum(self.batch_positions) / len(self.batch_positions)
-
-        evaluation_entry = {
-            'batch_number': self.current_batch_number,
-            'pages_visited': self.stats['total_crawled'],
-            'relevant_pages_found': self.stats['relevant_pages'],
-            'harvest_rate': harvest_rate,
-            'average_relevance': avg_relevance,
-            'execution_time_in_seconds': runtime,
-            'avg_frontier_position': avg_position,
-            'new_urls_added': len(self.batch_positions),
-            'relevance_calculation_time': self.stats['relevance_calculation_time']
-        }
-
-        self.stats['evaluation_log'].append(evaluation_entry)
-
-        # Reset für nächsten Batch
-        self.batch_positions = []
-        self.batch_new_urls = []
-
     def print_progress(self):
         """Gibt Fortschritt in Konsole aus"""
         if self.stats['total_crawled'] % 50 == 0:  # Alle 50 Seiten
@@ -400,14 +380,19 @@ class BaseTopicalSpider(scrapy.Spider):
                   f"Ø-Relevanz: {avg_relevance:.3f}")
 
     def print_final_report(self):
-        """Gibt Abschlussbericht aus und speichert JSON mit Evaluierungsdaten"""
-        # Letzte Batch-Evaluierung
-        self.log_batch_evaluation()
-
+        """Gibt Abschlussbericht aus und speichert JSON"""
         runtime = datetime.now() - self.stats['start_time']
         runtime_seconds = runtime.total_seconds()
         harvest_rate = (self.stats['relevant_pages'] / max(1, self.stats['total_crawled'])) * 100
         avg_relevance = self.stats['total_relevance_sum'] / max(1, self.stats['total_crawled'])
+
+        # Berechne Speicher p95
+        if self.memory_samples:
+            sorted_samples = sorted(self.memory_samples)
+            p95_idx = int(len(sorted_samples) * 0.95)
+            memory_p95 = sorted_samples[min(p95_idx, len(sorted_samples) - 1)]
+        else:
+            memory_p95 = 0.0
 
         print(f"\n{'=' * 60}")
         print(f"ABSCHLUSS - {self.name}")
@@ -439,7 +424,7 @@ class BaseTopicalSpider(scrapy.Spider):
 
             print(f"\n{'=' * 60}\n")
 
-        # Exportiere JSON mit Evaluierungsdaten
+        # Exportiere JSON
         relevant_pages = [p for p in sorted_pages if p['score'] >= self.relevance_threshold]
 
         export_data = {
@@ -451,29 +436,24 @@ class BaseTopicalSpider(scrapy.Spider):
                 'total_relevant_found': self.stats['relevant_pages'],
                 'average_harvest_rate': harvest_rate / 100,
                 'average_relevance': avg_relevance,
-                'relevance_calculation_time': self.stats['relevance_calculation_time'],
-                'evaluation_log': self.stats['evaluation_log'],
-                'pages': relevant_pages
+                'pages': relevant_pages,
+                # Metriken für Plots
+                'cpu_ms_per_1000_docs': (self.cpu_time_scoring / max(1, self.stats['total_crawled'])) * 1000,
+                'memory_p95_mib': memory_p95,
+                'raw_scores': self.page_scores_raw
             }
         }
 
         with open(self.export_file, 'w', encoding='utf-8') as f:
             json.dump(export_data, f, ensure_ascii=False, indent=2)
 
-        # Erstelle Plots wenn aktiviert (nur einmal!)
+        # Erstelle Plots wenn aktiviert
         if self.config.getboolean('PLOTTING', 'CREATE_PLOTS', fallback=False):
             try:
                 import subprocess
-                subprocess.run([sys.executable, 'scripts/create_plots.py'], check=False)
+                project_root = os.path.dirname(os.path.dirname(__file__))
+                script_path = os.path.join(project_root, 'scripts', 'create_plots.py')
+                subprocess.run([sys.executable, script_path], check=False, cwd=project_root)
                 print("Grafiken wurden erstellt")
             except Exception as e:
                 print(f"Fehler beim Erstellen der Grafiken: {e}")
-
-    def create_plots(self):
-        """Ruft externes Plot-Skript auf"""
-        try:
-            import subprocess
-            subprocess.run([sys.executable, 'scripts/create_plots.py'], check=False)
-            print("Grafiken wurden erstellt")
-        except Exception as e:
-            print(f"Fehler beim Erstellen der Grafiken: {e}")

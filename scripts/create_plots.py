@@ -15,6 +15,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.calibration import CalibratedClassifierCV
 
 
+
 class CrawlerPlotter:
     """Visualisiert Ergebnisse der verschiedenen Crawling-Strategien"""
 
@@ -34,11 +35,10 @@ class CrawlerPlotter:
         self.table_pcts = [int(x.strip()) for x in self.config.get('PLOTTING', 'TABLE_PCTS').split(',')]
         self.table_ns = [int(x.strip()) for x in self.config.get('PLOTTING', 'TABLE_NS').split(',')]
 
-        # Parameter für kalibrierten Relevanz-Plot
+        # Parameter für Relevanz-Plot
         self.max_pages_on_plot = int(self.config.get('PLOTTING', 'MAX_PAGES', fallback='1000'))
         self.moving_avg_window = int(self.config.get('PLOTTING', 'MOVING_AVG_WINDOW', fallback='50'))
-        self.min_pos_samples = int(self.config.get('PLOTTING', 'MIN_POS_SAMPLES', fallback='50'))
-        self.min_neg_samples = int(self.config.get('PLOTTING', 'MIN_NEG_SAMPLES', fallback='50'))
+
 
         if not self.create_plots:
             print("Plotting ist deaktiviert")
@@ -81,6 +81,8 @@ class CrawlerPlotter:
         # Daten sammeln
         self.data = self.load_all_data()
 
+
+
     def load_all_data(self):
         """Lädt alle JSON-Dateien aus dem exports Verzeichnis"""
         data = {}
@@ -117,7 +119,6 @@ class CrawlerPlotter:
         """Prüft ob alle drei Strategien vorhanden sind"""
         required = set(self.strategy_order)
         return required.issubset(self.data.keys())
-
 
     def plot_scoring_performance(self):
         """Erstellt Balkendiagramm der Dokumentbewertungszeit"""
@@ -460,6 +461,163 @@ class CrawlerPlotter:
         plt.close()
         print(f"Overlap Venn-Diagramm gespeichert: {filename}")
 
+    def plot_relevance_trend(self):
+        """Erstellt Liniendiagramm mit kalibriertem Relevanzverlauf über besuchte Seiten"""
+        if not self.check_all_strategies_present():
+            return
+
+        fig, ax = plt.subplots(figsize=(12, 7))
+
+        # Sammle alle Scores für Kalibrierung
+        all_scores_by_strategy = {}
+        for strategy in self.strategy_order:
+            if strategy in self.data and 'pages' in self.data[strategy]:
+                pages = sorted(self.data[strategy]['pages'], key=lambda x: x.get('visit_idx', 0))
+                all_scores_by_strategy[strategy] = [p['score'] for p in pages[:self.max_pages_on_plot]]
+
+        # Trainiere Kalibrierer für jede Strategie (Platt-Scaling)
+        calibrators = {}
+        for strategy, scores in all_scores_by_strategy.items():
+            if len(scores) < 10:
+                continue
+
+            # Erstelle binäre Labels basierend auf Median-Split
+            median = np.median(scores)
+            labels = [1 if s > median else 0 for s in scores]
+
+            # Trainiere logistische Regression für Kalibrierung
+            X = np.array(scores).reshape(-1, 1)
+            y = np.array(labels)
+
+            lr = LogisticRegression()
+            calibrator = CalibratedClassifierCV(lr, method='sigmoid', cv=3)
+
+            try:
+                # Pseudo-Training für Kalibrierung
+                calibrator.fit(X, y)
+                calibrators[strategy] = calibrator
+            except:
+                # Fallback: Percentile-Transformation
+                calibrators[strategy] = None
+
+        # Plotte kalibrierte Verläufe
+        for strategy in self.strategy_order:
+            if strategy not in self.data:
+                continue
+
+            strategy_data = self.data[strategy]
+
+            if 'pages' not in strategy_data:
+                continue
+
+            # Sortiere Seiten nach Besuchsreihenfolge
+            pages = sorted(strategy_data['pages'], key=lambda x: x.get('visit_idx', 0))
+            pages = pages[:self.max_pages_on_plot]
+
+            if not pages:
+                continue
+
+            # Extrahiere Relevanzwerte
+            scores = np.array([page['score'] for page in pages])
+
+            # Kalibriere Scores
+            if strategy in calibrators and calibrators[strategy] is not None:
+                # Platt-Kalibrierung
+                calibrated_scores = calibrators[strategy].predict_proba(scores.reshape(-1, 1))[:, 1]
+            else:
+                # Fallback: Rang-basierte Transformation
+                ranks = np.argsort(np.argsort(scores))
+                calibrated_scores = ranks / (len(ranks) - 1) if len(ranks) > 1 else scores
+
+            # X-Achse: Seitenindex
+            x_values = list(range(1, len(calibrated_scores) + 1))
+
+            # Gleitender Durchschnitt für bessere Lesbarkeit
+            if len(calibrated_scores) > self.moving_avg_window:
+                smoothed_scores = []
+                for i in range(len(calibrated_scores)):
+                    start = max(0, i - self.moving_avg_window // 2)
+                    end = min(len(calibrated_scores), i + self.moving_avg_window // 2 + 1)
+                    avg = np.mean(calibrated_scores[start:end])
+                    smoothed_scores.append(avg)
+            else:
+                smoothed_scores = list(calibrated_scores)
+
+            # Hauptlinie plotten (durchgezogen)
+            line = ax.plot(x_values, smoothed_scores,
+                           color=self.colors[strategy],
+                           label=self.strategy_names[strategy],
+                           linewidth=2.5,
+                           alpha=0.9,
+                           linestyle='-')[0]
+
+            # Lineare Regression für Trendlinie
+            if len(x_values) > 1:
+                X = np.array(x_values).reshape(-1, 1)
+                y = np.array(smoothed_scores)
+
+                # Berechne lineare Regression
+                coeffs = np.polyfit(x_values, y, 1)
+                trend_line = np.poly1d(coeffs)
+
+                # Trendlinie plotten (gestrichelt, gleiche Farbe)
+                ax.plot(x_values, trend_line(x_values),
+                        color=self.colors[strategy],
+                        linestyle='--',
+                        linewidth=1.5,
+                        alpha=0.4)
+
+        # Legende mit klarer Struktur
+        # Sammle nur Hauptlinien für Legende
+        handles, labels = ax.get_legend_handles_labels()
+        main_lines = [h for h, l in zip(handles, labels) if 'Trend' not in l]
+        main_labels = [l for l in labels if 'Trend' not in l]
+
+        # Füge Erklärung für gestrichelte Linien hinzu
+        from matplotlib.lines import Line2D
+        legend_elements = main_lines + [
+            Line2D([0], [0], color='gray', linestyle='--', linewidth=1.5,
+                   label='Lineare Trendlinie', alpha=0.6)
+        ]
+        legend_labels = main_labels + ['Lineare Trendlinie']
+
+        # Achsenbeschriftung und Titel
+        ax.set_xlabel('Besuchte Seiten', fontsize=12)
+        ax.set_ylabel('Kalibrierte Relevanz [0-1]', fontsize=12)
+        ax.set_title('Entwicklung der Relevanzwerte im Crawling-Verlauf\n' +
+                     f'(Gleitender Durchschnitt über {self.moving_avg_window} Seiten)',
+                     fontsize=14, fontweight='bold')
+
+        # Grid für bessere Lesbarkeit
+        ax.grid(True, alpha=0.3, linestyle=':', linewidth=0.5)
+
+        # Legende positionieren
+        ax.legend(handles=legend_elements, labels=legend_labels,
+                  loc='upper right', framealpha=0.95,
+                  fontsize=10, frameon=True, shadow=True)
+
+        # Y-Achse auf [0, 1] begrenzen
+        ax.set_ylim(-0.05, 1.05)
+
+        # X-Achse anpassen
+        ax.set_xlim(0, min(self.max_pages_on_plot, max([len(self.data[s].get('pages', []))
+                                                        for s in self.data.keys()])))
+
+        # Y-Achse Ticks
+        ax.set_yticks([0, 0.2, 0.4, 0.6, 0.8, 1.0])
+        ax.set_yticklabels(['0.0', '0.2', '0.4', '0.6', '0.8', '1.0'])
+
+        # Hinweis zur Kalibrierung
+        plt.figtext(0.5, -0.05,
+                    'Hinweis: Relevanzwerte wurden mittels Platt-Kalibrierung auf vergleichbare Verteilungen skaliert.',
+                    ha='center', fontsize=10, style='italic')
+
+        # Speichern
+        filename = f"{self.output_dir}/relevance_trend_{self.timestamp}.png"
+        plt.savefig(filename, dpi=300, bbox_inches='tight')
+        plt.close()
+        print(f"Relevanzverlauf Grafik gespeichert: {filename}")
+
     def create_all_plots(self):
         """Erstellt alle Grafiken in der richtigen Reihenfolge"""
         if not self.create_plots:
@@ -473,7 +631,7 @@ class CrawlerPlotter:
         self.plot_memory_usage()
         self.create_quantile_tables()
         self.plot_overlap_venn()
-
+        self.plot_relevance_trend()
         print("Alle Visualisierungen wurden erstellt\n")
 
 

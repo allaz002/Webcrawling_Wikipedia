@@ -11,9 +11,6 @@ import configparser
 from datetime import datetime
 from pathlib import Path
 import numpy as np
-import matplotlib.lines as mlines
-from sklearn.linear_model import LogisticRegression
-from sklearn.calibration import CalibratedClassifierCV
 
 
 
@@ -462,6 +459,8 @@ class CrawlerPlotter:
         if not self.check_all_strategies_present():
             return
 
+        from bisect import bisect_left, bisect_right, insort
+
         # Konfiguration laden
         window_size = int(self.config.get('PLOTTING', 'MOVING_AVG_WINDOW', fallback='50'))
         max_pages = int(self.config.get('PLOTTING', 'MAX_PAGES', fallback='1000'))
@@ -473,6 +472,29 @@ class CrawlerPlotter:
         labels = []
         trend_line = None
         trend_label = None
+
+        def theil_sen_estimator(x, y):
+            """Berechnet robuste Trendlinie mit Theil-Sen Schätzer"""
+            slopes = []
+            n = len(x)
+            # Alle Steigungen zwischen Punktpaaren berechnen
+            for i in range(n - 1):
+                for j in range(i + 1, n):
+                    dx = x[j] - x[i]
+                    if dx != 0:
+                        slopes.append((y[j] - y[i]) / dx)
+
+            if not slopes:
+                return 0.0, 0.0
+
+            # Median der Steigungen
+            median_slope = np.median(slopes)
+            # Intercept über Median der Punkte
+            median_x = np.median(x)
+            median_y = np.median(y)
+            intercept = median_y - median_slope * median_x
+
+            return median_slope, intercept
 
         # Daten für jede Strategie verarbeiten
         for strategy in self.strategy_order:
@@ -490,40 +512,42 @@ class CrawlerPlotter:
             # Nach visit_idx sortieren für zeitliche Reihenfolge
             sorted_pages = sorted(pages, key=lambda x: x.get('visit_idx', 0))
 
-            # Alle Scores für Perzentilberechnung extrahieren
-            all_scores = [p['score'] for p in sorted_pages]
+            # Scores extrahieren und auf max_pages begrenzen
+            scores = [p['score'] for p in sorted_pages[:max_pages]]
 
-            # Perzentilränge mit korrekter Midrank-Behandlung berechnen
-            def calculate_percentile_rank(score, all_values):
-                """Berechnet Perzentilrang mit fairem Midrank für Ties"""
-                less_than = sum(1 for v in all_values if v < score)
-                equal_to = sum(1 for v in all_values if v == score)
-                # Fairer Midrank ohne Bias
-                percentile_rank = (less_than + 0.5 * equal_to) / len(all_values)
-                return percentile_rank
+            # Perzentilränge inkrementell berechnen
+            online_percentiles = []
+            seen_values = []  # Sortierte Liste bisheriger Werte
 
-            # Perzentilränge für alle Seiten berechnen
-            percentile_ranks = [calculate_percentile_rank(score, all_scores)
-                                for score in all_scores]
+            for score in scores:
+                # Position in bisherigen Werten finden
+                left_pos = bisect_left(seen_values, score)
+                right_pos = bisect_right(seen_values, score)
 
-            # Erst nach Perzentilberechnung auf max_pages kürzen
-            percentile_ranks = percentile_ranks[:max_pages]
-            sorted_pages = sorted_pages[:max_pages]
+                # Anzahl bisheriger Werte plus aktueller
+                n = len(seen_values) + 1
 
-            # Trailing Moving Average berechnen
+                # Midrank-Perzentil berechnen
+                percentile = (left_pos + 0.5 * (right_pos - left_pos)) / n
+                online_percentiles.append(percentile)
+
+                # Score in sortierte Liste einfügen
+                insort(seen_values, score)
+
+            # Gleitender Durchschnitt berechnen
             moving_avg = []
-            for i in range(len(percentile_ranks)):
-                # Nur vergangene und aktuelle Werte verwenden (trailing window)
+            for i in range(len(online_percentiles)):
+                # Fenster über vergangene Werte
                 start = max(0, i - window_size + 1)
                 end = i + 1
 
-                window_values = percentile_ranks[start:end]
+                window_values = online_percentiles[start:end]
                 moving_avg.append(np.mean(window_values))
 
             # X-Achse: Anzahl besuchter Seiten
-            x_values = list(range(1, len(percentile_ranks) + 1))
+            x_values = np.array(range(1, len(online_percentiles) + 1))
 
-            # Hauptlinie plotten (Moving Average)
+            # Hauptlinie plotten (gleitender Durchschnitt)
             line, = ax.plot(x_values, moving_avg,
                             color=self.colors[strategy],
                             linewidth=2.5,
@@ -531,28 +555,29 @@ class CrawlerPlotter:
             lines.append(line)
             labels.append(f'{self.strategy_names[strategy]}')
 
-            # Trendlinie auf ungeglätteten Daten berechnen
+            # Trendlinie mit Theil-Sen Schätzer auf Originaldaten
             if len(x_values) > 1:
-                # Lineare Regression auf Original-Perzentilrängen
-                z = np.polyfit(x_values, percentile_ranks, 1)
-                p = np.poly1d(z)
+                # Theil-Sen Regression auf ungeglätteten Perzentilen
+                slope, intercept = theil_sen_estimator(x_values, np.array(online_percentiles))
 
-                # Trendlinie plotten (gestrichelt, dünner, durchsichtig)
-                tl, = ax.plot(x_values, p(x_values),
+                # Trendlinie berechnen
+                trend_y = slope * x_values + intercept
+
+                # Trendlinie plotten
+                tl, = ax.plot(x_values, trend_y,
                               linestyle='--',
                               color=self.colors[strategy],
                               linewidth=1.2,
                               alpha=0.5)
 
-                # Nur einmal einen grauen Proxy für die Legende erzeugen
+                # Nur erste Trendlinie für Legende speichern
                 if trend_line is None:
-                    trend_line = mlines.Line2D([], [], linestyle='--', color='gray',
-                                               linewidth=1.2, alpha=0.5)
-                    trend_label = 'Lineare Trendlinie'
+                    trend_line = tl
+                    trend_label = 'Trendlinie (Theil-Sen)'
 
         # Achsenbeschriftung und Titel
         ax.set_xlabel('Anzahl besuchter Seiten', fontsize=12)
-        ax.set_ylabel('Normalisierter Relevanzwert (Perzentil-Rang)', fontsize=12)
+        ax.set_ylabel('Normalisierter Relevanzwert (Perzentil)', fontsize=12)
         ax.set_title('Vergleich der Relevanztrends über den Crawling-Verlauf',
                      fontsize=14, fontweight='bold')
 
@@ -575,8 +600,8 @@ class CrawlerPlotter:
 
         # Fußnote mit technischen Details
         plt.figtext(0.5, -0.05,
-                    f'Glättung: nachlaufender gleitender Durchschnitt (Fenster = {window_size}). '
-                    f'Gestrichelt: lineare Trends auf den Originaldaten.',
+                    f'Inkrementelle Perzentilberechnung. Glättung: nachlaufender gleitender Durchschnitt (Fenster = {window_size}). '
+                    f'Gestrichelt: Trendlinie (Theil-Sen) auf ungeglätteten Originalwerten.',
                     ha='center', fontsize=10, style='italic')
 
         # Speichern

@@ -575,7 +575,7 @@ class CrawlerPlotter:
 
         # Fußnote mit technischen Details
         plt.figtext(0.5, -0.05,
-                    f'Glättung: Trailing Moving Average (Fenster = {window_size}). '
+                    f'Glättung: nachlaufender gleitender Durchschnitt (Fenster = {window_size}). '
                     f'Gestrichelt: lineare Trends auf den Originaldaten.',
                     ha='center', fontsize=10, style='italic')
 

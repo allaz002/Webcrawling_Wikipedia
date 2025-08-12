@@ -81,6 +81,9 @@ class BaseTopicalSpider(scrapy.Spider):
         # Batch-Tracking für Evaluierung
         self.current_batch_number = 0
 
+        # Besuchsindex für zeitliche Nachvollziehbarkeit
+        self.visit_counter = 0
+
         # Metriken für Dokumentbewertung (in Nanosekunden)
         self.doc_eval_times_ns = []  # Liste aller Dokumentbewertungszeiten in ns
         self.parent_calc_count = 0  # Anzahl der Dokumentbewertungen
@@ -174,6 +177,11 @@ class BaseTopicalSpider(scrapy.Spider):
         """Hauptparser für gecrawlte Seiten"""
         self.stats['total_crawled'] += 1
 
+        # Besuchsindex und Zeitstempel für diese Seite
+        self.visit_counter += 1
+        visit_idx = self.visit_counter
+        visit_ts = datetime.now().isoformat()
+
         # Textinhalte extrahieren
         soup = BeautifulSoup(response.text, 'html.parser')
 
@@ -209,11 +217,13 @@ class BaseTopicalSpider(scrapy.Spider):
         mem_delta_parent = mem_after_parent - mem_before_parent
         self.doc_memory_deltas.append(mem_delta_parent)
 
-        # Speichere alle bewerteten Seiten
+        # Speichere alle bewerteten Seiten mit Besuchsindex und Zeitstempel
         self.all_evaluated_pages.append({
             'url': response.url,
             'score': parent_relevance,
-            'title': title[:100]
+            'title': title[:100],
+            'visit_idx': visit_idx,
+            'visit_ts': visit_ts
         })
 
         # Aktualisiere Statistiken
@@ -450,7 +460,7 @@ class BaseTopicalSpider(scrapy.Spider):
                 'doc_memory_delta_mib': doc_memory_delta_stats,
                 'doc_memory_baseline_mib': doc_memory_baseline_stats,
 
-                # Alle bewerteten Seiten (nicht nur relevante)
+                # Alle bewerteten Seiten mit Besuchsindex und Zeitstempel
                 'pages': sorted_pages,
 
                 # Rohscores für spätere Analyse

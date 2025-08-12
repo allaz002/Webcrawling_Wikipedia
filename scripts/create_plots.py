@@ -444,7 +444,8 @@ class CrawlerPlotter:
             all_urls.update(urls)
 
         # Titel mit Statistiken
-        ax.set_title(f'Überlappung der {self.venn_top_percent}% höchstbewerteten Seiten\n' +
+        lower_percentile = 100 - self.venn_top_percent
+        ax.set_title(f'Schnittmengen der Seiten im {lower_percentile}. bis 100. Perzentil\n' +
                      f'Gesamt: {len(all_urls)} eindeutige URLs',
                      fontsize=14, fontweight='bold')
 
@@ -570,9 +571,12 @@ class CrawlerPlotter:
                               linewidth=1.2,
                               alpha=0.5)
 
-                # Nur erste Trendlinie für Legende speichern
+                # Nur erste Trendlinie für Legende speichern (als graue Linie)
                 if trend_line is None:
-                    trend_line = tl
+                    # Erstelle graue Proxy-Linie für Legende
+                    import matplotlib.lines as mlines
+                    trend_line = mlines.Line2D([], [], linestyle='--', color='gray',
+                                               linewidth=1.2, alpha=0.5)
                     trend_label = 'Trendlinie (Theil-Sen)'
 
         # Achsenbeschriftung und Titel
@@ -600,8 +604,8 @@ class CrawlerPlotter:
 
         # Fußnote mit technischen Details
         plt.figtext(0.5, -0.05,
-                    f'Inkrementelle Perzentilberechnung. Glättung: nachlaufender gleitender Durchschnitt (Fenster = {window_size}). '
-                    f'Gestrichelt: Trendlinie (Theil-Sen) auf ungeglätteten Originalwerten.',
+                    f'Inkrementelle Perzentilberechnung. Glättung: Gleitender Durchschnitt (Fenster = {window_size}). '
+                    f'Gestrichelt: Trendlinien (Theil-Sen Schätzer) auf Originaldaten.',
                     ha='center', fontsize=10, style='italic')
 
         # Speichern

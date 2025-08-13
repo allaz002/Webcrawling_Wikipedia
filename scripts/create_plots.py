@@ -42,9 +42,9 @@ class CrawlerPlotter:
 
         # Farben für Strategien definieren
         self.colors = {
-            'keyword': '#FF6B6B',
-            'vectorspace': '#8B8C0A',
-            'naivebayes': '#45B7D1'
+            'keyword': '#CC6677',
+            'vectorspace': '#228833',
+            'naivebayes': '#4477AA'
         }
 
         # Deutsche Namen für Strategien
@@ -465,6 +465,8 @@ class CrawlerPlotter:
         # Konfiguration laden
         window_size = int(self.config.get('PLOTTING', 'MOVING_AVG_WINDOW', fallback='50'))
         max_pages = int(self.config.get('PLOTTING', 'MAX_PAGES', fallback='1000'))
+        ci_alpha = float(self.config.get('PLOTTING', 'CI_ALPHA', fallback='0.05'))
+        bootstrap_resamples = int(self.config.get('PLOTTING', 'BOOTSTRAP_RESAMPLES', fallback='200'))
 
         fig, ax = plt.subplots(figsize=(12, 7))
 
@@ -535,15 +537,33 @@ class CrawlerPlotter:
                 # Score in sortierte Liste einfügen
                 insort(seen_values, score)
 
-            # Gleitender Durchschnitt berechnen
+            # Gleitender Durchschnitt + Unsicherheitsband (Bootstrap-CI) berechnen
             moving_avg = []
+            lower_band = []
+            upper_band = []
+            rng = np.random.default_rng(42)
+
             for i in range(len(online_percentiles)):
                 # Fenster über vergangene Werte
                 start = max(0, i - window_size + 1)
                 end = i + 1
-
                 window_values = online_percentiles[start:end]
-                moving_avg.append(np.mean(window_values))
+
+                mean_val = float(np.mean(window_values))
+                moving_avg.append(mean_val)
+
+                # 95%-Konfidenzintervall (Bootstrap) des gleitenden Mittels
+                if bootstrap_resamples > 0 and len(window_values) > 1:
+                    m = len(window_values)
+                    idx = rng.integers(0, m, size=(bootstrap_resamples, m))
+                    sample_means = np.mean(np.take(np.array(window_values), idx), axis=1)
+                    lower_q = ci_alpha / 2.0
+                    upper_q = 1.0 - ci_alpha / 2.0
+                    lower_band.append(np.quantile(sample_means, lower_q))
+                    upper_band.append(np.quantile(sample_means, upper_q))
+                else:
+                    lower_band.append(mean_val)
+                    upper_band.append(mean_val)
 
             # X-Achse: Anzahl besuchter Seiten
             x_values = np.array(range(1, len(online_percentiles) + 1))
@@ -551,10 +571,14 @@ class CrawlerPlotter:
             # Hauptlinie plotten (gleitender Durchschnitt)
             line, = ax.plot(x_values, moving_avg,
                             color=self.colors[strategy],
-                            linewidth=2.5,
-                            alpha=0.9)
+                            linewidth=2,
+                            alpha=1)
             lines.append(line)
             labels.append(f'{self.strategy_names[strategy]}')
+
+            # Unsicherheitsband plotten (schmal transparent)
+            ax.fill_between(x_values, lower_band, upper_band,
+                            color=self.colors[strategy], alpha=0.2, linewidth=1)
 
             # Trendlinie mit Theil-Sen Schätzer auf geglätteten Daten
             if len(x_values) > 1:
@@ -568,8 +592,8 @@ class CrawlerPlotter:
                 tl, = ax.plot(x_values, trend_y,
                               linestyle='--',
                               color=self.colors[strategy],
-                              linewidth=1.2,
-                              alpha=0.5)
+                              linewidth=1.5,
+                              alpha=0.6)
 
                 # Nur erste Trendlinie für Legende speichern (als graue Linie)
                 if trend_line is None:
@@ -605,7 +629,8 @@ class CrawlerPlotter:
         # Fußnote mit technischen Details
         plt.figtext(0.5, -0.05,
                     f'Inkrementelle Perzentilberechnung. Glättung: Gleitender Durchschnitt (Fenster = {window_size}). '
-                    f'Gestrichelt: Trendlinien (Theil-Sen Schätzer) auf geglätteten Daten.',
+                    f'Gestrichelt: Trendlinien (Theil-Sen Schätzer) auf geglätteten Daten. '
+                    f'Band: {int((1 - ci_alpha) * 100)}%-Bootstrap-Intervall des gleitenden Mittels (B = {bootstrap_resamples}).',
                     ha='center', fontsize=10, style='italic')
 
         # Speichern

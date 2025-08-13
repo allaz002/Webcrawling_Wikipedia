@@ -556,10 +556,10 @@ class CrawlerPlotter:
             lines.append(line)
             labels.append(f'{self.strategy_names[strategy]}')
 
-            # Trendlinie mit Theil-Sen Schätzer auf Originaldaten
+            # Trendlinie mit Theil-Sen Schätzer auf geglätteten Daten
             if len(x_values) > 1:
-                # Theil-Sen Regression auf ungeglätteten Perzentilen
-                slope, intercept = theil_sen_estimator(x_values, np.array(online_percentiles))
+                # Theil-Sen Regression auf gleitendem Durchschnitt
+                slope, intercept = theil_sen_estimator(x_values, np.array(moving_avg))
 
                 # Trendlinie berechnen
                 trend_y = slope * x_values + intercept
@@ -605,7 +605,7 @@ class CrawlerPlotter:
         # Fußnote mit technischen Details
         plt.figtext(0.5, -0.05,
                     f'Inkrementelle Perzentilberechnung. Glättung: Gleitender Durchschnitt (Fenster = {window_size}). '
-                    f'Gestrichelt: Trendlinien (Theil-Sen Schätzer) auf Originaldaten.',
+                    f'Gestrichelt: Trendlinien (Theil-Sen Schätzer) auf geglätteten Daten.',
                     ha='center', fontsize=10, style='italic')
 
         # Speichern

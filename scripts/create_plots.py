@@ -11,7 +11,8 @@ import configparser
 from datetime import datetime
 from pathlib import Path
 import numpy as np
-
+from urllib.parse import unquote
+import unicodedata
 
 
 class CrawlerPlotter:
@@ -32,6 +33,12 @@ class CrawlerPlotter:
         self.num_tables = self.config.getint('PLOTTING', 'NUM_TABLES')
         self.table_pcts = [int(x.strip()) for x in self.config.get('PLOTTING', 'TABLE_PCTS').split(',')]
         self.table_ns = [int(x.strip()) for x in self.config.get('PLOTTING', 'TABLE_NS').split(',')]
+
+        # GT-basierte Plot-Konfiguration
+        self.precision_max_k = int(self.config.get('PLOTTING', 'PLOT_PRECISION_MAX_K', fallback='500'))
+        self.precision_step = int(self.config.get('PLOTTING', 'PLOT_PRECISION_STEP', fallback='10'))
+        self.harvest_max_pages = int(self.config.get('PLOTTING', 'PLOT_HARVEST_MAX_PAGES', fallback='1000'))
+        self.harvest_trailing_window = int(self.config.get('PLOTTING', 'PLOT_HARVEST_TRAILING_AVG_WINDOW', fallback='50'))
 
         if not self.create_plots:
             print("Plotting ist deaktiviert")
@@ -74,7 +81,43 @@ class CrawlerPlotter:
         # Daten sammeln
         self.data = self.load_all_data()
 
+        # Ground Truth laden
+        self.ground_truth = self.load_ground_truth()
 
+    def clean_title(self, page_data):
+        """Universelle Titel-Normalisierung aus URL oder raw_title"""
+        if 'url' in page_data and page_data['url']:
+            # Titel aus URL extrahieren
+            url = page_data['url']
+            if '/wiki/' in url:
+                title = url.split('/wiki/')[-1]
+                # Prozent-Decodierung und Underscore ersetzen
+                title = unquote(title).replace('_', ' ')
+            else:
+                title = page_data.get('title', '')
+        else:
+            # Fallback auf raw_title
+            title = page_data.get('title', '')
+            # Wikipedia-Suffix entfernen
+            title = title.replace(' – Wikipedia', '').replace(' - Wikipedia', '')
+
+        # Unicode NFC-Normalisierung
+        return unicodedata.normalize('NFC', title)
+
+    def load_ground_truth(self):
+        """Lädt Ground Truth aus JSON-Datei"""
+        gt_path = 'exports/ground_truth.json'
+        try:
+            with open(gt_path, 'r', encoding='utf-8') as f:
+                gt_list = json.load(f)
+                # NFC-Normalisierung für GT-Einträge
+                return set(unicodedata.normalize('NFC', title) for title in gt_list)
+        except FileNotFoundError:
+            print(f"Ground Truth nicht gefunden: {gt_path}")
+            return set()
+        except Exception as e:
+            print(f"Fehler beim Laden der Ground Truth: {e}")
+            return set()
 
     def load_all_data(self):
         """Lädt alle JSON-Dateien aus dem exports Verzeichnis"""
@@ -171,7 +214,7 @@ class CrawlerPlotter:
 
             plt.figtext(
                 0.5, -0.05,
-                'Hinweis: Werte beziehen sich ausschließlich auf die Dokumentbewertung.',
+                'Hinweis: Die Werte beziehen sich ausschließlich auf die Dokumentbewertung und nicht auf die Linkbewertung.',
                 ha='center', fontsize=10, style='italic'
             )
 
@@ -250,7 +293,7 @@ class CrawlerPlotter:
                     baseline_text += ', '
                 baseline_text += f'{strat_name} = {baseline:.1f}'
 
-            combined_text = baseline_text + '\nHinweis: Werte beziehen sich ausschließlich auf die Dokumentbewertung.'
+            combined_text = baseline_text + '\nHinweis: Die Werte beziehen sich ausschließlich auf die Dokumentbewertung und nicht auf die Linkbewertung.'
             plt.figtext(0.5, -0.05, combined_text, ha='center', fontsize=10, style='italic')
 
         filename = f"{self.output_dir}/memory_usage_{self.timestamp}.png"
@@ -628,7 +671,7 @@ class CrawlerPlotter:
 
         # Fußnote mit technischen Details
         plt.figtext(0.5, -0.05,
-                    f'Inkrementelle Perzentilberechnung. Glättung: Gleitender Durchschnitt (Fenster = {window_size}). '
+                    f'Inkrementelle Perzentilberechnung. Glättung: Nachlaufender gleitender Durchschnitt (Fenstergröße = {window_size}).\n'
                     f'Gestrichelt: Trendlinien (Theil-Sen Schätzer) auf geglätteten Daten. '
                     f'Band: {int((1 - ci_alpha) * 100)}%-Bootstrap-Intervall des gleitenden Mittels (B = {bootstrap_resamples}).',
                     ha='center', fontsize=10, style='italic')
@@ -639,6 +682,168 @@ class CrawlerPlotter:
         plt.close()
         print(f"Relevanztrend Grafik gespeichert: {filename}")
 
+    def plot_precision_at_k(self):
+        """Erstellt Liniendiagramm für Precision@K basierend auf Ground Truth"""
+        if not self.ground_truth:
+            print("Ground Truth nicht verfügbar, überspringe Precision@K Plot")
+            return
+
+        fig, ax = plt.subplots(figsize=(12, 7))
+
+        for strategy in self.strategy_order:
+            if strategy not in self.data:
+                continue
+
+            strategy_data = self.data[strategy]
+            if 'pages' not in strategy_data:
+                continue
+
+            # Nach Score sortieren (absteigend)
+            sorted_pages = sorted(strategy_data['pages'],
+                                 key=lambda x: x['score'],
+                                 reverse=True)
+
+            # Precision@K berechnen
+            k_values = []
+            precisions = []
+
+            # K-Werte basierend auf Konfiguration generieren
+            for k in range(self.precision_step, min(len(sorted_pages), self.precision_max_k) + 1, self.precision_step):
+                top_k_pages = sorted_pages[:k]
+                # Titel normalisieren und mit GT abgleichen
+                hits = sum(1 for p in top_k_pages
+                          if self.clean_title(p) in self.ground_truth)
+                precision = hits / k
+
+                k_values.append(k)
+                precisions.append(precision)
+
+            # Auch k=1 hinzufügen falls nicht durch step abgedeckt
+            if self.precision_step > 1 and len(sorted_pages) > 0:
+                hits_at_1 = 1 if self.clean_title(sorted_pages[0]) in self.ground_truth else 0
+                k_values.insert(0, 1)
+                precisions.insert(0, hits_at_1)
+
+            # Linie plotten
+            ax.plot(k_values, precisions,
+                   color=self.colors[strategy],
+                   linewidth=2,
+                   marker='o',
+                   markersize=5,
+                   label=self.strategy_names[strategy],
+                   alpha=0.9)
+
+        # Achsen und Titel
+        ax.set_xlabel('k (Anzahl höchstbewerteter Treffer)', fontsize=12)
+        ax.set_ylabel('Präzision [0; 1]', fontsize=12)
+        ax.set_title('Präzision bei den obersten k Treffern (Precision@k)',
+                    fontsize=14, fontweight='bold')
+
+        # Y-Achse von 0 bis 1
+        ax.set_ylim([0, 1])
+        ax.set_xlim([0, self.precision_max_k])
+
+        # Gitter
+        ax.grid(True, alpha=0.3, linestyle='--')
+
+        # Legende
+        ax.legend(loc='best', framealpha=0.9)
+
+        # Hinweis
+        plt.figtext(0.5, -0.05,
+                   'Hinweis: Die Referenzdaten liegen nur teilweise vor. Die dargestellten Werte stellen eine untere Schranke der tatsächlichen Präzision dar.',
+                   ha='center', fontsize=10, style='italic')
+
+        # Speichern
+        filename = f"{self.output_dir}/precision_at_k_{self.timestamp}.png"
+        plt.savefig(filename, dpi=300, bbox_inches='tight')
+        plt.close()
+        print(f"Precision@K Grafik gespeichert: {filename}")
+
+    def plot_harvest_rate(self):
+        """Erstellt Liniendiagramm für Harvest Rate basierend auf Ground Truth"""
+        if not self.ground_truth:
+            print("Ground Truth nicht verfügbar, überspringe Harvest Rate Plot")
+            return
+
+        fig, ax = plt.subplots(figsize=(12, 7))
+
+        for strategy in self.strategy_order:
+            if strategy not in self.data:
+                continue
+
+            strategy_data = self.data[strategy]
+            if 'pages' not in strategy_data:
+                continue
+
+            # Nach visit_idx sortieren (zeitliche Reihenfolge)
+            sorted_pages = sorted(strategy_data['pages'],
+                                 key=lambda x: x.get('visit_idx', 0))
+
+            # Nur bis max_pages betrachten
+            sorted_pages = sorted_pages[:self.harvest_max_pages]
+
+            # Kumulative Harvest Rate berechnen
+            cumulative_hits = []
+            harvest_rates = []
+
+            for i, page in enumerate(sorted_pages, 1):
+                # Prüfen ob Seite in GT
+                if self.clean_title(page) in self.ground_truth:
+                    cumulative_hits.append((cumulative_hits[-1] if cumulative_hits else 0) + 1)
+                else:
+                    cumulative_hits.append(cumulative_hits[-1] if cumulative_hits else 0)
+
+                harvest_rates.append(cumulative_hits[-1] / i)
+
+            # Trailing Moving Average anwenden
+            if self.harvest_trailing_window > 1 and len(harvest_rates) > self.harvest_trailing_window:
+                smoothed_rates = []
+                for i in range(len(harvest_rates)):
+                    # Fenster über vergangene Werte (trailing)
+                    start = max(0, i - self.harvest_trailing_window + 1)
+                    window = harvest_rates[start:i+1]
+                    smoothed_rates.append(np.mean(window))
+                harvest_rates = smoothed_rates
+
+            # X-Achse: Anzahl besuchter Seiten
+            x_values = list(range(1, len(harvest_rates) + 1))
+
+            # Linie plotten
+            ax.plot(x_values, harvest_rates,
+                   color=self.colors[strategy],
+                   linewidth=2,
+                   label=self.strategy_names[strategy],
+                   alpha=0.9)
+
+        # Achsen und Titel
+        ax.set_xlabel('Anzahl besuchter Seiten', fontsize=12)
+        ax.set_ylabel('Kumulative Trefferquote [0; 1]', fontsize=12)
+        ax.set_title('Kumulative Trefferquote (Harvest Rate)',
+                    fontsize=14, fontweight='bold')
+
+        # Y-Achse immer von 0 bis 1
+        ax.set_ylim([0, 1])
+        ax.set_xlim([0, self.harvest_max_pages])
+
+        # Gitter
+        ax.grid(True, alpha=0.3, linestyle='--')
+
+        # Legende
+        ax.legend(loc='best', framealpha=0.9)
+
+        # Hinweis
+        footnote = f'Glättung: Nachlaufender gleitender Durchschnitt (Fenstergröße = {self.harvest_trailing_window}).\n'
+        footnote += 'Hinweis: Referenzdaten liegen nur teilweise vor. Die dargestellten Werte stellen eine untere Schranke der tatsächlichen kumulativen Trefferquote dar.'
+        plt.figtext(0.5, -0.05, footnote,
+                   ha='center', fontsize=10, style='italic')
+
+        # Speichern
+        filename = f"{self.output_dir}/harvest_rate_{self.timestamp}.png"
+        plt.savefig(filename, dpi=300, bbox_inches='tight')
+        plt.close()
+        print(f"Harvest Rate Grafik gespeichert: {filename}")
+
     def create_all_plots(self):
         """Erstellt alle Grafiken in der richtigen Reihenfolge"""
         if not self.create_plots:
@@ -647,12 +852,14 @@ class CrawlerPlotter:
 
         print("\nErstelle Visualisierungen...")
 
-        # Erstelle alle Plots inklusive der neuen kalibrierten Relevanz
+        # Erstelle alle Plots inklusive der neuen GT-basierten Plots
         self.plot_scoring_performance()
         self.plot_memory_usage()
         self.create_quantile_tables()
         self.plot_overlap_venn()
         self.plot_relevance_trend()
+        self.plot_precision_at_k()
+        self.plot_harvest_rate()
         print("Alle Visualisierungen wurden erstellt\n")
 
 

@@ -17,6 +17,7 @@ class NaiveBayesSpider(BaseTopicalSpider):
         self.model_path = self.config['NAIVEBAYES']['MODEL_PATH']
         self.vectorizer_path = self.config['NAIVEBAYES']['VECTORIZER_PATH']
         self.training_data_path = self.config['NAIVEBAYES']['TRAINING_DATA_PATH']
+        self.alpha = float(self.config['NAIVEBAYES']['ALPHA'])
 
         self.load_or_train_model()
         print("Naive Bayes Modell mit TF geladen/trainiert")
@@ -58,7 +59,7 @@ class NaiveBayesSpider(BaseTopicalSpider):
         X = self.vectorizer.fit_transform(texts)
         y = np.array(labels)
 
-        self.classifier = MultinomialNB(alpha=0.1)
+        self.classifier = MultinomialNB(alpha=self.alpha)
         self.classifier.fit(X, y)
 
         # Speichere Modell

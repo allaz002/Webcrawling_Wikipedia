@@ -17,7 +17,7 @@ import numpy as np
 class CrawlerPlotter:
     """Visualisiert Ergebnisse der verschiedenen Crawling-Strategien"""
 
-    def __init__(self, config_file='crawler_config.ini'):
+    def __init__(self, config_file='plots_config.ini'):
         """Initialisiert Plotter mit Konfiguration"""
         self.config = configparser.ConfigParser()
         self.config.read(config_file)
@@ -632,5 +632,5 @@ class CrawlerPlotter:
 
 
 if __name__ == "__main__":
-    plotter = CrawlerPlotter("crawler_config.ini")
+    plotter = CrawlerPlotter("plots_config.ini")
     plotter.create_all_plots()

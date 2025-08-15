@@ -170,16 +170,17 @@ class BaseTopicalSpider(scrapy.Spider):
 
         # Frontier-Größe prüfen - effizienter mit heappushpop
         if len(self.frontier) >= self.frontier_max_size:
-            # Bei negativen Scores: frontier[0] ist das SCHLECHTESTE Element (größter neg. Score = kleinster echter Score)
-            # Neues Element nur einfügen wenn es besser ist
-            if self.frontier and -score > self.frontier[0][0]:  # Neuer neg. Score kleiner = besser
-                # Ersetze schlechtestes Element direkt
-                old_neg_score, old_url = heapq.heapreplace(self.frontier, (-score, url))
-                old_normalized = self.normalize_url(old_url)
-                self.frontier_urls.discard(old_normalized)
+            new_neg = -score
+            # schlechtestes Element finden (größter negativer Wert)
+            worst_idx, (worst_neg, worst_url) = max(
+                enumerate(self.frontier), key=lambda x: x[1][0]
+            )
+            if new_neg < worst_neg:  # nur ersetzen, wenn neuer besser ist
+                self.frontier_urls.discard(self.normalize_url(worst_url))
+                self.frontier[worst_idx] = (new_neg, url)
                 self.frontier_urls.add(normalized)
+                heapq.heapify(self.frontier)
         else:
-            # Direkt hinzufügen
             heapq.heappush(self.frontier, (-score, url))
             self.frontier_urls.add(normalized)
 

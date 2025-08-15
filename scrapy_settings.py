@@ -79,3 +79,4 @@ RETRY_HTTP_CODES = [500, 502, 503, 504, 408, 429]
 
 # Timeout settings
 DOWNLOAD_TIMEOUT = 15
+DUPEFILTER_CLASS = "scrapy.dupefilters.BaseDupeFilter"
